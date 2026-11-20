@@ -5,9 +5,6 @@
   "extDescription": {
     "message": "Learn a language from any video on the web: live subtitles, colour-matched translations and quizzes, powered by Claude Haiku."
   },
-  "loading": {
-    "message": "Loading…"
-  },
   "noKeyWarning": {
     "message": "Add your Anthropic API key in Settings to get translations and quizzes."
   },
@@ -15,19 +12,13 @@
     "message": "Translation line"
   },
   "trModeBlur": {
-    "message": "Blurred (hover to reveal)"
+    "message": "The translation stays blurred until you hover over it."
   },
   "trModeAlways": {
-    "message": "Always show"
+    "message": "The translation is always shown under the line."
   },
   "trModeClick": {
-    "message": "Only on click"
-  },
-  "trModeBlurLong": {
-    "message": "Blurred: hover to reveal (recommended)"
-  },
-  "trModeClickLong": {
-    "message": "Only when I click a line"
+    "message": "Click a line to see its translation."
   },
   "trModeHelp": {
     "message": "In blurred and always modes every line is translated automatically, and matching colours show which part means what. Lines you reveal in blurred mode go into your quiz."
@@ -39,13 +30,13 @@
     "message": "Settings"
   },
   "statusOnHere": {
-    "message": "Captions are on in this tab."
+    "message": "On in this tab"
   },
   "statusOnOther": {
-    "message": "Captions are on in another tab."
+    "message": "On in another tab"
   },
   "statusOff": {
-    "message": "Captions are off."
+    "message": "Off"
   },
   "startCaptions": {
     "message": "Start captions in this tab"
@@ -55,9 +46,6 @@
   },
   "quizPreparing": {
     "message": "Preparing your quiz…"
-  },
-  "quizProgress": {
-    "message": "Next quiz: $1 / $2 min of watching with speech ($3 lines)"
   },
   "startFailedGeneric": {
     "message": "Could not start."
@@ -78,10 +66,10 @@
     "message": "The language spoken in the videos. Pick the accent closest to the video for better speech recognition."
   },
   "nativeLangLabel": {
-    "message": "Your language (translations and explanations)"
+    "message": "Your language"
   },
   "levelLabel": {
-    "message": "Your level (CEFR), used for quiz difficulty"
+    "message": "Your level"
   },
   "apiKeyLabel": {
     "message": "Anthropic API key"
@@ -105,28 +93,16 @@
     "message": "The site's own subtitles are more accurate and have no delay; turn on subtitles in the language you're learning in the player (CC on YouTube). Speech recognition is for videos without subtitles."
   },
   "framesLabel": {
-    "message": "Embedded players"
-  },
-  "framesGrant": {
-    "message": "Allow reading subtitles in embedded players"
-  },
-  "framesGranted": {
-    "message": "Allowed (click to revoke)"
+    "message": "Read subtitles in embedded players"
   },
   "framesHelp": {
     "message": "Some sites play the video from another site inside an iframe. Reading those subtitles needs access to all sites; without it, speech recognition is used there."
   },
   "quizMinutesLabel": {
-    "message": "Quiz after how many minutes of watching?"
+    "message": "Quiz after"
   },
   "quizMinutesHelp": {
-    "message": "Only time with speech counts; paused or silent parts don't."
-  },
-  "save": {
-    "message": "Save"
-  },
-  "saved": {
-    "message": "Saved. Language and source changes apply the next time you start captions."
+    "message": "Minutes of watching with speech. Paused or silent parts don't count."
   },
   "sameLanguage": {
     "message": "The language you're learning and your language must be different."
@@ -151,9 +127,6 @@
   },
   "score": {
     "message": "$1 / $2 correct"
-  },
-  "quizDone": {
-    "message": "done!"
   },
   "backToVideo": {
     "message": "Back to the video"
@@ -244,5 +217,104 @@
   },
   "errQuizEmpty": {
     "message": "Could not create the quiz."
+  },
+  "openSettings": {
+    "message": "Open settings"
+  },
+  "segBlur": {
+    "message": "Blurred"
+  },
+  "segAlways": {
+    "message": "Always"
+  },
+  "segClick": {
+    "message": "On click"
+  },
+  "nextQuiz": {
+    "message": "Next quiz"
+  },
+  "minutesOf": {
+    "message": "$1 / $2 min"
+  },
+  "linesCollected": {
+    "message": "$1 lines collected so far"
+  },
+  "optionsSubtitle": {
+    "message": "Learn a language from any video. Changes are saved automatically."
+  },
+  "secLanguages": {
+    "message": "Languages"
+  },
+  "secLanguagesHelp": {
+    "message": "Changes apply the next time you start captions."
+  },
+  "nativeLangHelp": {
+    "message": "Translations and explanations are written in this language."
+  },
+  "secApi": {
+    "message": "Claude API"
+  },
+  "show": {
+    "message": "Show"
+  },
+  "hide": {
+    "message": "Hide"
+  },
+  "getKey": {
+    "message": "Get an API key →"
+  },
+  "secSubtitles": {
+    "message": "Subtitles"
+  },
+  "secQuiz": {
+    "message": "Quizzes"
+  },
+  "minUnit": {
+    "message": "min"
+  },
+  "levelHelp": {
+    "message": "Sets how hard the quiz questions are."
+  },
+  "levelA1": {
+    "message": "A1 · Beginner"
+  },
+  "levelA2": {
+    "message": "A2 · Elementary"
+  },
+  "levelB1": {
+    "message": "B1 · Intermediate"
+  },
+  "levelB2": {
+    "message": "B2 · Upper intermediate"
+  },
+  "levelC1": {
+    "message": "C1 · Advanced"
+  },
+  "levelC2": {
+    "message": "C2 · Proficient"
+  },
+  "savedShort": {
+    "message": "Saved"
+  },
+  "answeredOf": {
+    "message": "$1 of $2 answered"
+  },
+  "quizComplete": {
+    "message": "Quiz complete"
+  },
+  "summaryGreat": {
+    "message": "Great work, you followed it closely."
+  },
+  "summaryGood": {
+    "message": "Good job. Check the explanations for the ones you missed."
+  },
+  "summaryKeepGoing": {
+    "message": "Keep going. Rewatching a scene with the translation blurred helps a lot."
+  },
+  "answerCorrect": {
+    "message": "Correct"
+  },
+  "answerWrong": {
+    "message": "Not quite"
   }
 }

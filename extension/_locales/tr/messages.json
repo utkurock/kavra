@@ -5,9 +5,6 @@
   "extDescription": {
     "message": "Webdeki her videodan dil öğren: canlı altyazı, renk eşleşmeli çeviri ve quiz. Claude Haiku ile."
   },
-  "loading": {
-    "message": "Yükleniyor…"
-  },
   "noKeyWarning": {
     "message": "Çeviri ve quiz için Ayarlar'dan Anthropic API anahtarını gir."
   },
@@ -15,19 +12,13 @@
     "message": "Çeviri satırı"
   },
   "trModeBlur": {
-    "message": "Bulanık (üzerine gelince açılır)"
+    "message": "Çeviri, üzerine gelene kadar bulanık kalır."
   },
   "trModeAlways": {
-    "message": "Hep göster"
+    "message": "Çeviri her zaman satırın altında görünür."
   },
   "trModeClick": {
-    "message": "Sadece tıklayınca"
-  },
-  "trModeBlurLong": {
-    "message": "Bulanık: üzerine gelince açılır (önerilen)"
-  },
-  "trModeClickLong": {
-    "message": "Sadece satıra tıklayınca"
+    "message": "Çeviriyi görmek için satıra tıkla."
   },
   "trModeHelp": {
     "message": "Bulanık ve hep göster modlarında her satır otomatik çevrilir; aynı renkler aynı anlamı gösterir. Bulanık modda açıp baktığın satırlar quiz'e girer."
@@ -39,13 +30,13 @@
     "message": "Ayarlar"
   },
   "statusOnHere": {
-    "message": "Bu sekmede altyazı açık."
+    "message": "Bu sekmede açık"
   },
   "statusOnOther": {
-    "message": "Altyazı başka bir sekmede açık."
+    "message": "Başka sekmede açık"
   },
   "statusOff": {
-    "message": "Altyazı kapalı."
+    "message": "Kapalı"
   },
   "startCaptions": {
     "message": "Bu sekmede altyazıyı başlat"
@@ -55,9 +46,6 @@
   },
   "quizPreparing": {
     "message": "Quiz hazırlanıyor…"
-  },
-  "quizProgress": {
-    "message": "Quiz'e kadar: $1 / $2 dk konuşmalı izleme ($3 satır)"
   },
   "startFailedGeneric": {
     "message": "Başlatılamadı."
@@ -78,10 +66,10 @@
     "message": "Videolarda konuşulan dil. Ses tanıma için videoya en yakın aksanı seç."
   },
   "nativeLangLabel": {
-    "message": "Senin dilin (çeviri ve açıklamalar)"
+    "message": "Senin dilin"
   },
   "levelLabel": {
-    "message": "Seviyen (CEFR), quiz zorluğu için"
+    "message": "Seviyen"
   },
   "apiKeyLabel": {
     "message": "Anthropic API anahtarı"
@@ -105,28 +93,16 @@
     "message": "Sitenin altyazısı daha doğru ve gecikmesizdir; oynatıcıda öğrendiğin dildeki altyazıyı aç (YouTube'da CC). Ses tanıma, altyazısı olmayan videolar içindir."
   },
   "framesLabel": {
-    "message": "Gömülü oynatıcılar"
-  },
-  "framesGrant": {
-    "message": "Gömülü oynatıcılardaki altyazıyı okumaya izin ver"
-  },
-  "framesGranted": {
-    "message": "İzin verildi (geri almak için tıkla)"
+    "message": "Gömülü oynatıcılardaki altyazıyı oku"
   },
   "framesHelp": {
     "message": "Bazı siteler videoyu başka bir siteden gömülü (iframe) oynatır. O altyazıları okumak için tüm sitelere erişim izni gerekir; vermezsen bu sitelerde ses tanıma kullanılır."
   },
   "quizMinutesLabel": {
-    "message": "Kaç dakikalık izlemeden sonra quiz gelsin?"
+    "message": "Quiz sıklığı"
   },
   "quizMinutesHelp": {
-    "message": "Sadece konuşma olan süre sayılır; durdurduğun ya da sessiz kısımlar sayılmaz."
-  },
-  "save": {
-    "message": "Kaydet"
-  },
-  "saved": {
-    "message": "Kaydedildi. Dil ve kaynak değişiklikleri altyazı yeniden başlatılınca geçerli olur."
+    "message": "Konuşmalı izleme süresi. Durdurduğun ya da sessiz kısımlar sayılmaz."
   },
   "sameLanguage": {
     "message": "Öğrendiğin dil ile kendi dilin farklı olmalı."
@@ -151,9 +127,6 @@
   },
   "score": {
     "message": "$1 / $2 doğru"
-  },
-  "quizDone": {
-    "message": "bitti!"
   },
   "backToVideo": {
     "message": "Videoya dön"
@@ -244,5 +217,104 @@
   },
   "errQuizEmpty": {
     "message": "Quiz oluşturulamadı."
+  },
+  "openSettings": {
+    "message": "Ayarları aç"
+  },
+  "segBlur": {
+    "message": "Bulanık"
+  },
+  "segAlways": {
+    "message": "Hep açık"
+  },
+  "segClick": {
+    "message": "Tıklayınca"
+  },
+  "nextQuiz": {
+    "message": "Sonraki quiz"
+  },
+  "minutesOf": {
+    "message": "$1 / $2 dk"
+  },
+  "linesCollected": {
+    "message": "Şu ana kadar $1 satır toplandı"
+  },
+  "optionsSubtitle": {
+    "message": "Her videodan dil öğren. Değişiklikler otomatik kaydedilir."
+  },
+  "secLanguages": {
+    "message": "Diller"
+  },
+  "secLanguagesHelp": {
+    "message": "Değişiklikler altyazıyı bir sonraki başlatışında geçerli olur."
+  },
+  "nativeLangHelp": {
+    "message": "Çeviri ve açıklamalar bu dilde yazılır."
+  },
+  "secApi": {
+    "message": "Claude API"
+  },
+  "show": {
+    "message": "Göster"
+  },
+  "hide": {
+    "message": "Gizle"
+  },
+  "getKey": {
+    "message": "API anahtarı al →"
+  },
+  "secSubtitles": {
+    "message": "Altyazılar"
+  },
+  "secQuiz": {
+    "message": "Quiz'ler"
+  },
+  "minUnit": {
+    "message": "dk"
+  },
+  "levelHelp": {
+    "message": "Quiz sorularının zorluğunu belirler."
+  },
+  "levelA1": {
+    "message": "A1 · Başlangıç"
+  },
+  "levelA2": {
+    "message": "A2 · Temel"
+  },
+  "levelB1": {
+    "message": "B1 · Orta"
+  },
+  "levelB2": {
+    "message": "B2 · Orta üstü"
+  },
+  "levelC1": {
+    "message": "C1 · İleri"
+  },
+  "levelC2": {
+    "message": "C2 · Uzman"
+  },
+  "savedShort": {
+    "message": "Kaydedildi"
+  },
+  "answeredOf": {
+    "message": "$1 / $2 cevaplandı"
+  },
+  "quizComplete": {
+    "message": "Quiz tamamlandı"
+  },
+  "summaryGreat": {
+    "message": "Harika, bölümü çok iyi takip etmişsin."
+  },
+  "summaryGood": {
+    "message": "İyi iş. Kaçırdıklarının açıklamalarına göz at."
+  },
+  "summaryKeepGoing": {
+    "message": "Devam et. Bir sahneyi çeviri bulanıkken tekrar izlemek çok işe yarar."
+  },
+  "answerCorrect": {
+    "message": "Doğru"
+  },
+  "answerWrong": {
+    "message": "Yanlış"
   }
 }
