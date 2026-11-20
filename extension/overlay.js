@@ -58,10 +58,16 @@
       .hist-btn:hover, .hist-btn.open, .hist-btn:focus-visible { opacity: 1; }
       .hist-btn:focus-visible { outline: 2px solid #ffd54a; }
       .hist-btn svg { width: 62%; height: 62%; }
-      .hist { pointer-events: auto; max-width: min(92%, 760px); display: flex; flex-direction: column; gap: 2px;
-        padding: 6px; background: rgba(16,16,20,.94); border: 1px solid #3a3a40; border-radius: 10px;
-        box-shadow: 0 6px 24px rgba(0,0,0,.5); font-size: .78em; }
-      .hist.below { flex-direction: column-reverse; } /* the newest line stays next to the subtitles */
+      /* The list is a side panel at the left of the player, so it doesn't cover the subtitles. */
+      .hist { pointer-events: auto; position: fixed; width: min(34cqi, 400px); min-width: 220px; overflow-y: auto;
+        display: flex; flex-direction: column; gap: 2px; padding: 8px 6px 6px; box-sizing: border-box;
+        background: rgba(16,16,20,.9); border: 1px solid #3a3a40; border-radius: 10px;
+        box-shadow: 0 6px 24px rgba(0,0,0,.5); font-size: calc(clamp(12px, 1.4cqi, 16px) * var(--scale, 1));
+        animation: slide-in .18s ease-out; scrollbar-width: thin; }
+      .hist::before { content: attr(aria-label); padding: 0 9px 4px; font-size: 11px; font-weight: 600;
+        letter-spacing: .06em; text-transform: uppercase; color: #8d8d95; }
+      @keyframes slide-in { from { opacity: 0; transform: translateX(-10px); } }
+      @media (prefers-reduced-motion: reduce) { .hist { animation: none; } }
       .hist-item { padding: 4px 9px; border-radius: 6px; color: #fff; cursor: pointer; }
       .hist-item:hover, .hist-item:focus-visible { background: rgba(255,255,255,.08); outline: none; }
       .hist-item .h-trans { font-weight: 500; font-size: .9em; color: #d8d8dc; margin-top: 1px; transition: filter .15s; }
@@ -239,9 +245,9 @@
       Object.assign(host.style, { top: "auto", bottom: `${innerHeight - bottom + height * (inPlayer ? 0.15 : 0.08)}px` });
       upper = false;
     }
-    // Keep the translation card and the history on the side away from the nearest edge.
+    // Keep the translation card on the side away from the nearest edge.
     root.querySelector(".wrap").style.flexDirection = upper ? "column-reverse" : "column";
-    hist.classList.toggle("below", upper);
+    Object.assign(hist.style, { left: `${left + 12}px`, top: `${top + 12}px`, maxHeight: `${Math.max(120, height * 0.75)}px` });
   }
 
   // ---- drag the subtitles up or down; a press without movement is still a click ----
@@ -424,7 +430,8 @@
     return item;
   }
 
-  // Opens while the pointer is on the button or the list; a click (or Enter) keeps it open.
+  // Opens while the pointer is on the button or the list (with time to travel from one to the other);
+  // a click (or Enter) keeps it open.
   function openHistory(how) {
     clearTimeout(histCloseTimer);
     if (histOpen === "pinned" || histOpen === how) return;
@@ -440,7 +447,7 @@
   }
   function closeHistorySoon() {
     clearTimeout(histCloseTimer);
-    if (histOpen === "hover") histCloseTimer = setTimeout(closeHistory, 300);
+    if (histOpen === "hover") histCloseTimer = setTimeout(closeHistory, 700);
   }
   histBtn.addEventListener("pointermove", () => openHistory("hover"));
   histBtn.addEventListener("pointerleave", closeHistorySoon);
