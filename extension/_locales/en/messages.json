@@ -123,7 +123,7 @@
     "message": "Translation"
   },
   "clickHint": {
-    "message": "Click for the translation and notes"
+    "message": "Click for the translation and notes · drag to move"
   },
   "hoverHint": {
     "message": "Hover to reveal the translation"
@@ -553,5 +553,17 @@
   },
   "wrongLanguage": {
     "message": "The audio sounds like $1, not $2. Pick the video's original audio to learn with it."
+  },
+  "subtitlePos": {
+    "message": "Subtitle position"
+  },
+  "posAuto": {
+    "message": "automatic"
+  },
+  "posCustom": {
+    "message": "moved by you"
+  },
+  "resetPos": {
+    "message": "Reset"
   }
 }

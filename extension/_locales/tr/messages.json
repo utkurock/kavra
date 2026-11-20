@@ -123,7 +123,7 @@
     "message": "Çeviri"
   },
   "clickHint": {
-    "message": "Çeviri ve açıklama için tıkla"
+    "message": "Çeviri ve notlar için tıkla · taşımak için sürükle"
   },
   "hoverHint": {
     "message": "Çeviriyi görmek için üzerine gel"
@@ -553,5 +553,17 @@
   },
   "wrongLanguage": {
     "message": "Ses $2 değil, $1 gibi görünüyor. Öğrenmek için videonun orijinal sesini seç."
+  },
+  "subtitlePos": {
+    "message": "Altyazı konumu"
+  },
+  "posAuto": {
+    "message": "otomatik"
+  },
+  "posCustom": {
+    "message": "senin ayarladığın"
+  },
+  "resetPos": {
+    "message": "Sıfırla"
   }
 }

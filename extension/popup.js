@@ -233,6 +233,17 @@ for (const input of document.querySelectorAll('input[name="trMode"]')) {
     chrome.storage.local.set({ trMode: input.value });
   });
 }
+// Subtitles dragged on the video keep their spot until reset here.
+async function showPosition() {
+  const { overlayPos } = await chrome.storage.local.get("overlayPos");
+  const custom = overlayPos != null;
+  $("posState").textContent = t(custom ? "posCustom" : "posAuto");
+  $("resetPos").hidden = !custom;
+}
+$("resetPos").addEventListener("click", async () => {
+  await chrome.storage.local.set({ overlayPos: null });
+  showPosition();
+});
 $("options").addEventListener("click", () => chrome.runtime.openOptionsPage());
 
 (async () => {
@@ -254,5 +265,5 @@ $("options").addEventListener("click", () => chrome.runtime.openOptionsPage());
   showPair(settings);
   $("sheetTarget").value = settings.targetLang;
   $("sheetNative").value = settings.nativeLang;
-  await Promise.all([refresh(), showActivity(), showProviderRow()]);
+  await Promise.all([refresh(), showActivity(), showProviderRow(), showPosition()]);
 })();

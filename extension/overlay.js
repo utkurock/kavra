@@ -1,11 +1,11 @@
-// Subtitle overlay in the captioned tab's top frame: the original line, a colour-matched translation
-// line, and a translation card on click.
+// Subtitle overlay: the original line, a colour-matched translation line, and a translation card on
+// click. It's injected into every frame of the captioned tab; the top frame shows it, except while an
+// embedded player's frame is fullscreen, when that frame's copy takes over (nothing else is drawn then).
 (() => {
   if (window.__kavraOverlay) return;
   window.__kavraOverlay = true;
 
   const { t, getSettings } = globalThis.Kavra;
-  const MAX_FINAL_LINES = 2;
   const STRUGGLE_HOVER_MS = 800;
   const COLORS = ["#ffd54a", "#7fdbff", "#ff9eb5", "#a5e88f", "#ffb36b", "#c9a7ff"];
 
@@ -20,14 +20,14 @@
       .box { max-width: 92%; display: flex; flex-direction: column; align-items: center; gap: 3px; }
       .line { pointer-events: auto; color: #fff; background: rgba(0,0,0,.74); padding: 2px 10px;
         border-radius: 6px; text-align: center; text-shadow: 0 1px 2px #000; }
+      .line { touch-action: none; }
       .orig { cursor: pointer; }
+      .box.dragging .line { cursor: grabbing; }
       .orig:hover, .orig:focus-visible { background: rgba(20,20,20,.92); outline: 2px solid #ffd54a; }
       .old { opacity: .6; font-size: .82em; }
-      .interim { color: #ddd; font-style: italic; }
       .trans { font-weight: 500; font-size: .9em; color: #f2f2f2; transition: filter .15s; }
       .trans.blur { filter: blur(6px); cursor: help; }
       .trans.blur:hover, .trans.blur:focus-visible { filter: none; outline: none; }
-      .trans.pending { color: #aaa; font-size: .7em; }
       .status { font-size: 13px; font-weight: 500; color: #fff; background: rgba(0,0,0,.6);
         padding: 2px 8px; border-radius: 4px; }
       .status.error { background: #b3261e; }
@@ -56,19 +56,28 @@
   const statusEl = root.querySelector(".status");
   card.ariaLabel = t("translation");
 
-  const finals = []; // { text, result, pending, reported }
-  let interim = "";
+  let line = null; // the line on screen: { text, result, pending, reported, error }
+  let anchor = "bottom"; // "top" while the site's own subtitles stay on screen (speech recognition)
+  let customPos = null; // where the user dragged the subtitles: 0 (top) to 1 (bottom) of the player
+  const isTop = window === window.top;
   let trMode = "blur";
   let locales = { orig: "en", trans: "en" }; // for case-insensitive matching
   let cardLine = null;
   let statusTimer;
   let errorShown = "";
 
-  getSettings().then((s) => {
+  getSettings().then(async (s) => {
     trMode = s.trMode;
     locales = { orig: s.targetLang, trans: s.nativeLang };
+    customPos = (await chrome.storage.local.get("overlayPos")).overlayPos ?? null;
     render();
+    place();
   });
+
+  function displaying() {
+    const fs = document.fullscreenElement;
+    return isTop ? !(fs && fs.tagName === "IFRAME") : Boolean(fs);
+  }
 
   // ---- colour matching: give each original chunk and its translated counterpart the same colour ----
   function findRange(text, phrase, locale, taken) {
@@ -120,6 +129,8 @@
     const fs = document.fullscreenElement;
     const parent = fs && fs.tagName !== "VIDEO" && fs.tagName !== "IFRAME" ? fs : document.documentElement;
     if (host.parentNode !== parent) parent.appendChild(host);
+    host.style.display = displaying() ? "block" : "none";
+    if (line && displaying()) translateIfVisible(line);
     place();
   }
 
@@ -135,23 +146,77 @@
     return best?.r;
   }
 
-  // Sit inside the player, above its control bar; fall back to the bottom of the window.
-  function place() {
+  // The visible part of the player, or the whole window in fullscreen or when there's no player.
+  function playerArea() {
     const r = document.fullscreenElement ? null : playerRect();
-    if (!r) {
-      Object.assign(host.style, { left: "0px", width: "100%", bottom: "8%" });
-      return;
-    }
-    const left = Math.max(r.left, 0);
-    const right = Math.min(r.right, innerWidth);
-    const top = Math.max(r.top, 0);
-    const bottom = Math.min(r.bottom, innerHeight);
-    Object.assign(host.style, {
-      left: `${left}px`,
-      width: `${right - left}px`,
-      bottom: `${innerHeight - bottom + (bottom - top) * 0.15}px`,
-    });
+    if (!r) return { left: 0, right: innerWidth, top: 0, bottom: innerHeight, inPlayer: false };
+    return {
+      left: Math.max(r.left, 0),
+      right: Math.min(r.right, innerWidth),
+      top: Math.max(r.top, 0),
+      bottom: Math.min(r.bottom, innerHeight),
+      inPlayer: true,
+    };
   }
+
+  // Where the user dragged it, or automatically: above the player's control bar when Kavra shows the
+  // site's subtitles in their place, near its top when the site's own subtitles stay at the bottom.
+  function place() {
+    const { left, right, top, bottom, inPlayer } = playerArea();
+    const height = bottom - top;
+    Object.assign(host.style, { left: `${left}px`, width: `${right - left}px` });
+    let upper;
+    if (customPos != null) {
+      Object.assign(host.style, { top: `${top + height * customPos - host.offsetHeight / 2}px`, bottom: "auto" });
+      upper = customPos < 0.5;
+    } else if (anchor === "top") {
+      Object.assign(host.style, { top: `${top + height * (inPlayer ? 0.07 : 0.06)}px`, bottom: "auto" });
+      upper = true;
+    } else {
+      Object.assign(host.style, { top: "auto", bottom: `${innerHeight - bottom + height * (inPlayer ? 0.15 : 0.08)}px` });
+      upper = false;
+    }
+    // Keep the translation card on the side away from the nearest edge.
+    root.querySelector(".wrap").style.flexDirection = upper ? "column-reverse" : "column";
+  }
+
+  // ---- drag the subtitles up or down; a press without movement is still a click ----
+  // The pointer leaves the line as soon as it moves, so movement is followed on the whole window.
+  let drag = null;
+  let suppressClick = false;
+  function onDragMove(e) {
+    if (!drag || e.pointerId !== drag.id) return;
+    if (!drag.moved) {
+      if (Math.abs(e.clientY - drag.y) < 5) return;
+      drag.moved = true;
+      box.classList.add("dragging");
+    }
+    e.preventDefault();
+    const { top, bottom } = playerArea();
+    customPos = Math.min(0.95, Math.max(0.05, (e.clientY - top) / (bottom - top)));
+    place();
+  }
+  function endDrag(e) {
+    if (!drag || e.pointerId !== drag.id) return;
+    removeEventListener("pointermove", onDragMove, true);
+    removeEventListener("pointerup", endDrag, true);
+    removeEventListener("pointercancel", endDrag, true);
+    if (drag.moved) {
+      // The click that follows the release must not open the translation card.
+      suppressClick = true;
+      setTimeout(() => (suppressClick = false));
+      box.classList.remove("dragging");
+      chrome.storage.local.set({ overlayPos: customPos });
+    }
+    drag = null;
+  }
+  box.addEventListener("pointerdown", (e) => {
+    if (e.button !== 0 || !e.target.closest(".line")) return;
+    drag = { y: e.clientY, id: e.pointerId, moved: false };
+    addEventListener("pointermove", onDragMove, true);
+    addEventListener("pointerup", endDrag, true);
+    addEventListener("pointercancel", endDrag, true);
+  });
   const placeTimer = setInterval(place, 400); // players move and resize without telling anyone
 
   function div(className, text) {
@@ -161,28 +226,22 @@
     return el;
   }
 
+  // Only the current line and, once it's ready, its translation: no half-heard text, no placeholders.
   function render() {
     box.replaceChildren();
-    finals.forEach((line, i) => {
-      const latest = i === finals.length - 1;
-      const spans = line.result ? colourSpans(line.result, line.text) : null;
-      const orig = paint(div("line orig" + (latest ? "" : " old")), line.text, spans?.orig);
-      orig.tabIndex = 0;
-      orig.title = t("clickHint");
-      orig.addEventListener("click", () => openCard(line));
-      orig.addEventListener("keydown", (e) => e.key === "Enter" && openCard(line));
-      box.appendChild(orig);
-
-      if (!latest || trMode === "click") return;
-      if (line.result) {
-        const trans = paint(div("line trans" + (trMode === "blur" ? " blur" : "")), line.result.translation, spans.trans);
-        if (trMode === "blur") watchStruggle(trans, line);
-        box.appendChild(trans);
-      } else if (line.pending) {
-        box.appendChild(div("line trans pending", t("translating")));
-      }
-    });
-    if (interim) box.appendChild(div("line interim", interim));
+    if (!line) return;
+    const shown = line;
+    const spans = shown.result ? colourSpans(shown.result, shown.text) : null;
+    const orig = paint(div("line orig"), shown.text, spans?.orig);
+    orig.tabIndex = 0;
+    orig.title = t("clickHint");
+    orig.addEventListener("click", () => !suppressClick && openCard(shown));
+    orig.addEventListener("keydown", (e) => e.key === "Enter" && openCard(shown));
+    box.appendChild(orig);
+    if (trMode === "click" || !shown.result) return;
+    const trans = paint(div("line trans" + (trMode === "blur" ? " blur" : "")), shown.result.translation, spans.trans);
+    if (trMode === "blur") watchStruggle(trans, shown);
+    box.appendChild(trans);
   }
 
   // Revealing a blurred line for a moment counts as "needed help" for the quiz.
@@ -213,7 +272,8 @@
   }
 
   // ---- translation ----
-  async function requestTranslation(line, live) {
+  async function requestTranslation(target, live) {
+    const line = target;
     let res;
     try {
       res = await chrome.runtime.sendMessage({ type: "translate", text: line.text, live });
@@ -237,17 +297,18 @@
     chrome.runtime.sendMessage({ type: "media", action }).catch(() => {});
   }
 
-  function openCard(line) {
+  function openCard(target) {
     if (!cardLine) media("pause");
-    cardLine = line;
-    if (!line.result) {
-      line.pending = true;
-      line.error = null;
+    cardLine = target;
+    if (!target.result) {
+      target.pending = true;
+      target.error = null;
     }
     fillCard();
     card.hidden = false;
-    // A click always asks the background too, so the line is remembered for the quiz.
-    requestTranslation(line, false);
+    // Live translations skip the notes, so a click asks for the full version (and the line is
+    // remembered for the quiz).
+    requestTranslation(target, false);
   }
 
   function closeCard() {
@@ -289,18 +350,24 @@
   }
 
   // ---- messages ----
-  function onCaption(text, final) {
-    if (!final) {
-      interim = text;
-    } else {
-      const line = { text, result: null, pending: trMode !== "click" };
-      finals.push(line);
-      if (finals.length > MAX_FINAL_LINES) finals.shift();
-      interim = "";
-      if (line.pending) requestTranslation(line, true);
-    }
+  // Live translations only while the tab is in view, so a video playing in the background costs nothing.
+  function translateIfVisible(target) {
+    if (trMode === "click" || !displaying() || document.visibilityState !== "visible") return;
+    if (target.result || target.pending) return;
+    target.pending = true;
+    requestTranslation(target, true);
+  }
+
+  function onCaption(text, source) {
+    anchor = source === "page" ? "bottom" : "top";
+    line = { text, result: null, pending: false };
+    translateIfVisible(line);
     attach();
     render();
+  }
+
+  function onVisibility() {
+    if (line) translateIfVisible(line);
   }
 
   function teardown(message) {
@@ -312,9 +379,9 @@
     document.removeEventListener("keydown", onKeydown);
     window.__kavraOverlay = false;
     closeCard();
-    finals.length = 0;
-    interim = "";
+    line = null;
     render();
+    document.removeEventListener("visibilitychange", onVisibility);
     if (message) {
       showStatus(message, true);
       setTimeout(() => host.remove(), 8000);
@@ -324,7 +391,7 @@
   }
 
   function onMessage(msg) {
-    if (msg.type === "caption") onCaption(msg.text, msg.final);
+    if (msg.type === "caption") onCaption(msg.text, msg.source);
     else if (msg.type === "status") showStatus(msg.text, msg.error);
     else if (msg.type === "stop") teardown(msg.message);
   }
@@ -335,18 +402,17 @@
       // Lines on screen belong to the old language pair.
       locales = { orig: changes.targetLang?.newValue || locales.orig, trans: changes.nativeLang?.newValue || locales.trans };
       closeCard();
-      finals.length = 0;
-      interim = "";
+      line = null;
       render();
+    }
+    if ("overlayPos" in changes) {
+      customPos = changes.overlayPos.newValue ?? null;
+      place();
     }
     if (!changes.trMode) return;
     trMode = changes.trMode.newValue || "blur";
-    // Lines shown while in click mode have no translation yet.
-    const latest = finals.at(-1);
-    if (trMode !== "click" && latest && !latest.result && !latest.pending) {
-      latest.pending = true;
-      requestTranslation(latest, true);
-    }
+    // A line shown while in click mode has no translation yet.
+    if (line) translateIfVisible(line);
     render();
   }
 
@@ -359,5 +425,6 @@
   document.addEventListener("fullscreenchange", attach);
   addEventListener("resize", place);
   document.addEventListener("keydown", onKeydown);
+  document.addEventListener("visibilitychange", onVisibility);
   attach();
 })();
