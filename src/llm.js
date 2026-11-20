@@ -16,18 +16,17 @@ const TranslationSchema = LiveTranslationSchema.extend({
 });
 const BatchSchema = z.object({ items: z.array(LiveTranslationSchema) });
 
-const QuizSchema = z.object({
-  questions: z.array(
-    z.object({
-      kind: z.enum(["comprehension", "vocabulary", "listening"]),
-      question: z.string(),
-      quote: z.string(),
-      options: z.array(z.string()),
-      correct_index: z.number().int(),
-      explanation: z.string(),
-    })
-  ),
-});
+const question = (kinds) =>
+  z.object({
+    kind: z.enum(kinds),
+    question: z.string(),
+    quote: z.string(),
+    options: z.array(z.string()),
+    correct_index: z.number().int(),
+    explanation: z.string(),
+  });
+const QuizSchema = z.object({ questions: z.array(question(["comprehension", "vocabulary", "listening"])) });
+const WordQuizSchema = z.object({ questions: z.array(question(["vocabulary", "fill", "translation"])) });
 
 // An HTTP failure from an OpenAI-compatible provider; status 0 means the request never got an answer.
 class ProviderError extends Error {
@@ -234,6 +233,41 @@ export async function generateQuiz(lines, struggledLines, settings) {
       `Transcript:\n${lines.join("\n")}\n\n` +
       `Lines the learner needed help with:\n${struggledLines.length ? struggledLines.join("\n") : "(none)"}`,
   });
+  return checkedQuiz(quiz, settings);
+}
+
+// Review questions on lines saved to the word pool, with the translation and notes saved for each.
+export async function generateWordQuiz(words, settings) {
+  const { target, native } = names(settings);
+  const count = Math.min(8, words.length);
+  const quiz = await generateJSON(settings, {
+    schema: WordQuizSchema,
+    maxTokens: 16000,
+    effort: "medium",
+    system:
+      `You are a ${target} teacher. Your learner's native language is ${native} and their ${target} ` +
+      `level is ${settings.level} (CEFR). While watching videos they saved the ${target} lines below to ` +
+      `review later, each with its ${native} translation and notes on harder words. Write ${count} ` +
+      `multiple-choice review questions in ${target}, worded for their level, each on a different line ` +
+      "and mixing three kinds: 'vocabulary' (the meaning of a word or phrase from the line, as used " +
+      "there; prefer the noted phrases), 'fill' (the line with one key word or phrase replaced by ____, " +
+      `choose the missing part) and 'translation' (give the ${native} translation in quotes and ask which ` +
+      `${target} sentence says it; the wrong options differ in meaning, not just in small details). Each ` +
+      "question has exactly 4 options and one correct answer; correct_index is 0-3 and the correct " +
+      "position varies between questions. quote is the saved line the question is based on. explanation " +
+      `explains the answer in ${native} in one or two sentences.`,
+    user: words
+      .map((w, i) => {
+        const notes = (w.notes || []).map((n) => `${n.phrase}: ${n.meaning}`).join("; ");
+        return `${i + 1}. ${w.text}\n   ${native}: ${w.translation}${notes ? `\n   notes: ${notes}` : ""}`;
+      })
+      .join("\n"),
+  });
+  return checkedQuiz(quiz, settings);
+}
+
+// Keeps the questions with a usable answer and tags the quiz with the language it's in.
+function checkedQuiz(quiz, settings) {
   quiz.questions = quiz.questions.filter(
     (q) => q.options.length >= 2 && q.correct_index >= 0 && q.correct_index < q.options.length
   );

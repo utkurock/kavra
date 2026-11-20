@@ -1,8 +1,10 @@
 // Word pool: the lines saved from the translation card, with search, removal and undo.
-const { t, localizePage, languageName, baseLang } = globalThis.Kavra;
+const { t, localizePage, languageName, baseLang, getSettings } = globalThis.Kavra;
+const QUIZ_MIN = 4; // matches the background's minimum
 const $ = (id) => document.getElementById(id);
 const ui = chrome.i18n.getUILanguage();
 let words = [];
+let targetLang = "";
 
 const el = (tag, className, text) => {
   const node = document.createElement(tag);
@@ -54,7 +56,28 @@ function render() {
   $("count").textContent = words.length ? t("wordsCount", words.length) : "";
   $("empty").hidden = shown.length > 0;
   $("empty").textContent = words.length ? t("wordsNoMatch") : t("wordsEmpty");
+  // A quiz uses the lines of the language being learned.
+  const usable = words.filter((w) => baseLang(w.lang) === baseLang(targetLang)).length;
+  $("quiz").disabled = quizBusy || usable < QUIZ_MIN;
+  $("quiz").title = usable < QUIZ_MIN ? t("wordQuizNotEnough", QUIZ_MIN) : "";
 }
+
+// ---- quiz from the word pool ----
+let quizBusy = false;
+function quizStatus(text, bad = false) {
+  $("quizStatus").textContent = text;
+  $("quizStatus").classList.toggle("bad", bad);
+  $("quizStatus").hidden = !text;
+}
+$("quiz").addEventListener("click", async () => {
+  quizBusy = true;
+  render();
+  quizStatus(t("quizPreparing"));
+  const res = await chrome.runtime.sendMessage({ type: "wordQuiz" }).catch(() => null);
+  quizBusy = false;
+  render();
+  quizStatus(res?.ok ? "" : res?.error || t("quizFailed"), !res?.ok);
+});
 
 // Removing takes effect at once; the toast offers to put it back where it was.
 let toastTimer;
@@ -75,13 +98,15 @@ async function removeWord(word, li) {
 
 $("search").addEventListener("input", render);
 chrome.storage.onChanged.addListener((changes, area) => {
-  if (area !== "local" || !changes.words) return;
-  words = changes.words.newValue || [];
+  if (area !== "local" || !(changes.words || changes.targetLang)) return;
+  if (changes.words) words = changes.words.newValue || [];
+  if (changes.targetLang) targetLang = changes.targetLang.newValue;
   render();
 });
 
 (async () => {
   localizePage();
   words = (await chrome.storage.local.get("words")).words || [];
+  targetLang = (await getSettings()).targetLang;
   render();
 })();

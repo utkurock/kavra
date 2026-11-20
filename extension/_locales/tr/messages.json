@@ -631,5 +631,20 @@
   },
   "undo": {
     "message": "Geri al"
+  },
+  "wordQuizButton": {
+    "message": "Bunlardan quiz yap"
+  },
+  "wordQuizNotEnough": {
+    "message": "Quiz için öğrendiğin dilde en az $1 satır kaydet."
+  },
+  "wordQuizTitle": {
+    "message": "Kelime havuzu tekrarı"
+  },
+  "kindFill": {
+    "message": "Boşluk doldur"
+  },
+  "kindTranslation": {
+    "message": "Çeviri"
   }
 }

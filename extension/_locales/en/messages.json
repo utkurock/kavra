@@ -631,5 +631,20 @@
   },
   "undo": {
     "message": "Undo"
+  },
+  "wordQuizButton": {
+    "message": "Quiz me on these"
+  },
+  "wordQuizNotEnough": {
+    "message": "Save at least $1 lines in the language you're learning for a quiz."
+  },
+  "wordQuizTitle": {
+    "message": "Word pool review"
+  },
+  "kindFill": {
+    "message": "Fill the gap"
+  },
+  "kindTranslation": {
+    "message": "Translation"
   }
 }

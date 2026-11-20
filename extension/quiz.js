@@ -1,6 +1,15 @@
 const { t, localizePage } = globalThis.Kavra;
 const $ = (id) => document.getElementById(id);
-const KIND = { comprehension: "kindComprehension", vocabulary: "kindVocabulary", listening: "kindListening" };
+const KIND = {
+  comprehension: "kindComprehension",
+  vocabulary: "kindVocabulary",
+  listening: "kindListening",
+  fill: "kindFill",
+  translation: "kindTranslation",
+};
+// Kinds where showing the quoted line would give the answer away: it fills the gap, or it is the
+// sentence the translation asks for.
+const HIDE_QUOTE = new Set(["listening", "fill", "translation"]);
 const LETTERS = "ABCDEFGH";
 
 function el(tag, className, text) {
@@ -20,6 +29,10 @@ function el(tag, className, text) {
     return;
   }
   const lang = quiz.lang || "";
+  if (quiz.from === "words") {
+    $("title").textContent = t("wordQuizTitle");
+    document.title = t("wordQuizTitle");
+  }
   const total = quiz.questions.length;
   const date = new Date(quiz.createdAt).toLocaleString(chrome.i18n.getUILanguage(), { dateStyle: "medium", timeStyle: "short" });
   $("meta").textContent = `${date} · ${t("questionCount", total)}`;
@@ -52,7 +65,7 @@ function el(tag, className, text) {
     question.id = `q${i}`;
     question.lang = lang;
     card.appendChild(question);
-    if (q.quote && q.kind !== "listening") {
+    if (q.quote && !HIDE_QUOTE.has(q.kind)) {
       const quote = el("p", "quote", q.quote);
       quote.lang = lang;
       card.appendChild(quote);

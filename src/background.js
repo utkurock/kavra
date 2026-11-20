@@ -1,7 +1,7 @@
 // Service worker: owns capture state, picks the caption source, routes captions to the page,
 // and runs translation and quizzes.
 import "../extension/settings.js";
-import { translateLine, translateBatch, generateQuiz, listModels, friendlyError } from "./llm.js";
+import { translateLine, translateBatch, generateQuiz, generateWordQuiz, listModels, friendlyError } from "./llm.js";
 
 const { getSettings, t, dayKey, baseLang, languageName } = globalThis.Kavra;
 const MAX_GAP_MS = 30000; // silence longer than this does not count as watch time
@@ -11,6 +11,8 @@ const CACHE_SIZE = 400;
 const PREFETCH_LOW = 2; // translate ahead once fewer than this many upcoming cues are ready
 const ACTIVITY_DAYS = 400; // days of history kept for the activity view
 const WORDS_MAX = 1000; // lines kept in the word pool
+const WORD_QUIZ_MIN = 4; // saved lines needed for a word pool quiz
+const WORD_QUIZ_PICK = 12; // saved lines a word pool quiz is written from
 
 // ---- persistent state ----
 // session "capture": { tabId, speech, source, video } for the tab being captioned (cleared on browser restart).
@@ -396,6 +398,33 @@ function toggleWord(input) {
 // ---- quiz ----
 let quizRunning = false;
 
+// A quiz on a random handful of lines from the word pool, in the language being learned.
+async function runWordQuiz() {
+  if (quizRunning) return { ok: false, error: t("quizAlreadyRunning") };
+  quizRunning = true;
+  try {
+    const settings = await getSettings();
+    const { words = [] } = await chrome.storage.local.get("words");
+    const pool = words.filter((w) => baseLang(w.lang) === baseLang(settings.targetLang));
+    if (pool.length < WORD_QUIZ_MIN) throw new Error(t("wordQuizNotEnough", WORD_QUIZ_MIN));
+    for (let i = pool.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [pool[i], pool[j]] = [pool[j], pool[i]];
+    }
+    const quiz = await generateWordQuiz(pool.slice(0, WORD_QUIZ_PICK), settings);
+    await chrome.storage.local.set({
+      quiz: { ...quiz, from: "words", answers: [], createdAt: Date.now(), sourceTabId: null },
+    });
+    await recordActivity({ quizzes: 1 });
+    await chrome.tabs.create({ url: "quiz.html" });
+    return { ok: true };
+  } catch (err) {
+    return { ok: false, error: friendlyError(err) };
+  } finally {
+    quizRunning = false;
+  }
+}
+
 // Drops what was collected toward the next quiz: watch time, transcript and looked-up lines.
 const resetQuiz = () => updateProgress((p) => void Object.assign(p, emptyProgress()));
 
@@ -499,6 +528,7 @@ const handlers = {
   quizAnswer: (msg) => answerQuiz(msg.index, msg.choice),
   // overlay.js (the card) / words.js
   toggleWord: (msg) => toggleWord(msg.word || {}),
+  wordQuiz: () => runWordQuiz(),
   // overlay.js / reader.js
   translate: (msg) => handleTranslate(msg.text, msg.live),
   prefetch: async (msg, sender) => (await fromCapturedTab(sender)) && prefetch(msg.texts),

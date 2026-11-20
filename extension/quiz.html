@@ -12,6 +12,8 @@
     padding: 2px 8px; border-radius: 6px; background: var(--accent-soft); color: var(--accent); }
   .kind.vocabulary { background: color-mix(in srgb, var(--hue-1) 18%, transparent); color: var(--warn); }
   .kind.listening { background: color-mix(in srgb, var(--hue-2) 18%, transparent); color: var(--hue-2); }
+  .kind.fill { background: color-mix(in srgb, var(--hue-2) 18%, transparent); color: var(--hue-2); }
+  .kind.translation { background: color-mix(in srgb, #ff9eb5 18%, transparent); color: #ff9eb5; }
   .question { font-size: 17px; font-weight: 650; margin: 10px 0 6px; line-height: 1.4; }
   .quote { color: var(--muted); font-style: italic; border-left: 3px solid var(--line-strong); padding-left: 10px; margin: 8px 0 12px; }
   .options { display: grid; gap: 8px; margin-top: 12px; }
@@ -36,7 +38,7 @@
 </style>
 <main>
   <header class="page-title">
-    <h1 data-i18n="quizTitle"></h1>
+    <h1 id="title" data-i18n="quizTitle"></h1>
     <p class="muted" id="meta"></p>
   </header>
   <div class="sticky" id="progressWrap" hidden>
