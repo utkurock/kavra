@@ -287,15 +287,6 @@
   "answerWrong": {
     "message": "Yanlış"
   },
-  "pillLive": {
-    "message": "Açık"
-  },
-  "pillOther": {
-    "message": "Başka sekmede"
-  },
-  "pillOff": {
-    "message": "Kapalı"
-  },
   "changeLanguages": {
     "message": "Değiştir"
   },

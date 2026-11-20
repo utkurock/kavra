@@ -5,7 +5,7 @@ const $ = (id) => document.getElementById(id);
 const MODE_HINT = { blur: "trModeBlur", always: "trModeAlways", click: "trModeClick" };
 const ui = chrome.i18n.getUILanguage();
 let currentTabId;
-let supported = true; // false on pages extensions can't touch (chrome://, the Web Store, other extensions)
+let supported = true; // false on pages Chrome doesn't let extensions touch (chrome://, the Web Store, other extensions)
 let onboarded = true;
 let state;
 let source = "auto";
@@ -70,8 +70,6 @@ function showPair(settings) {
 async function refresh() {
   state = await chrome.runtime.sendMessage({ type: "getState" });
   const onThisTab = state.activeTabId === currentTabId;
-  $("status").classList.toggle("on", onThisTab);
-  $("statusText").textContent = onThisTab ? t("pillLive") : state.activeTabId ? t("pillOther") : t("pillOff");
   $("toggle").ariaChecked = onThisTab;
   $("toggle").disabled = !supported && !onThisTab;
   $("power").classList.toggle("on", onThisTab);
@@ -245,8 +243,10 @@ $("options").addEventListener("click", () => chrome.runtime.openOptionsPage());
   for (const [id, provider] of Object.entries(PROVIDERS)) $("keyProvider").add(new Option(provider.name, id));
   const [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
   currentTabId = tab?.id;
-  // tab.url is visible here because opening the popup grants activeTab.
-  supported = !tab?.url || (/^(https?|file):/.test(tab.url) && !/^https:\/\/(chromewebstore\.google\.com|chrome\.google\.com\/webstore)/.test(tab.url));
+  // Chrome hides the URL of pages extensions can't touch, so ask it directly: try a no-op script.
+  supported = await chrome.scripting
+    .executeScript({ target: { tabId: currentTabId }, func: () => true })
+    .then(() => true, () => false);
   const settings = await getSettings();
   onboarded = settings.onboarded;
   showMode(settings.trMode);

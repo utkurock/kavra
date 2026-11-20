@@ -287,15 +287,6 @@
   "answerWrong": {
     "message": "Not quite"
   },
-  "pillLive": {
-    "message": "Live"
-  },
-  "pillOther": {
-    "message": "Other tab"
-  },
-  "pillOff": {
-    "message": "Off"
-  },
   "changeLanguages": {
     "message": "Change"
   },
