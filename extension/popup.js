@@ -5,17 +5,34 @@ const $ = (id) => document.getElementById(id);
 const MODE_HINT = { blur: "trModeBlur", always: "trModeAlways", click: "trModeClick" };
 const ui = chrome.i18n.getUILanguage();
 let currentTabId;
+let supported = true; // false on pages extensions can't touch (chrome://, the Web Store, other extensions)
+let onboarded = true;
 let state;
 let source = "auto";
 
-// ---- notices: one slot keeps the overview from growing; an error wins over the missing-key hint ----
+// ---- notices: one slot keeps the overview from growing; an error wins, then setup, then a missing key ----
 let errorText = "";
+let noticeAction = null;
 function showNotice() {
-  const missingKey = state && !state.hasKey;
-  $("notice").hidden = !errorText && !missingKey;
-  $("notice").className = `callout ${errorText ? "bad" : "warn"}`;
-  $("noticeText").textContent = errorText || t("noKeyWarning");
-  $("addKey").hidden = Boolean(errorText);
+  const notice = errorText
+    ? { kind: "bad", text: errorText }
+    : !onboarded
+      ? { kind: "warn", text: t("setupWarning"), action: t("startSetup"), run: openOnboarding }
+      : state && !state.hasKey
+        ? { kind: "warn", text: t("noKeyWarning"), action: t("addKey"), run: () => openKeySheet($("noticeAction")) }
+        : null;
+  $("notice").hidden = !notice;
+  if (!notice) return;
+  $("notice").className = `callout ${notice.kind}`;
+  $("noticeText").textContent = notice.text;
+  $("noticeAction").hidden = !notice.action;
+  $("noticeAction").textContent = notice.action || "";
+  noticeAction = notice.run;
+}
+$("noticeAction").addEventListener("click", () => noticeAction?.());
+function openOnboarding() {
+  chrome.tabs.create({ url: "onboarding.html" });
+  window.close();
 }
 function showError(text) {
   errorText = text;
@@ -55,8 +72,16 @@ async function refresh() {
   const onThisTab = state.activeTabId === currentTabId;
   $("status").classList.toggle("on", onThisTab);
   $("statusText").textContent = onThisTab ? t("pillLive") : state.activeTabId ? t("pillOther") : t("pillOff");
-  $("toggle").textContent = onThisTab ? t("stopCaptions") : t("startCaptions");
-  $("toggle").className = `btn block ${onThisTab ? "danger" : "primary"}`;
+  $("toggle").ariaChecked = onThisTab;
+  $("toggle").disabled = !supported && !onThisTab;
+  $("power").classList.toggle("on", onThisTab);
+  $("powerSub").textContent = onThisTab
+    ? t("subOnHere")
+    : !supported
+      ? t("subUnsupported")
+      : state.activeTabId
+        ? t("subOnOther")
+        : t("subOff");
   showNotice();
 
   const watchedMin = Math.floor(state.watchedMs / 60000);
@@ -182,7 +207,6 @@ $("keySave").addEventListener("click", async () => {
 });
 $("keyInput").addEventListener("keydown", (e) => e.key === "Enter" && $("keySave").click());
 $("changeKey").addEventListener("click", () => openKeySheet($("changeKey")));
-$("addKey").addEventListener("click", () => openKeySheet($("addKey")));
 
 // ---- activity ----
 async function showActivity() {
@@ -221,7 +245,10 @@ $("options").addEventListener("click", () => chrome.runtime.openOptionsPage());
   for (const [id, provider] of Object.entries(PROVIDERS)) $("keyProvider").add(new Option(provider.name, id));
   const [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
   currentTabId = tab?.id;
+  // tab.url is visible here because opening the popup grants activeTab.
+  supported = !tab?.url || (/^(https?|file):/.test(tab.url) && !/^https:\/\/(chromewebstore\.google\.com|chrome\.google\.com\/webstore)/.test(tab.url));
   const settings = await getSettings();
+  onboarded = settings.onboarded;
   showMode(settings.trMode);
   source = settings.source;
   showPair(settings);

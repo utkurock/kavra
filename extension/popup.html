@@ -10,10 +10,23 @@
   .tabs { margin: 0 18px; }
   /* All panels share one grid cell, so switching tabs never changes the popup's size. */
   .panels { display: grid; position: relative; }
-  .panel { grid-area: 1 / 1; display: flex; flex-direction: column; gap: 14px; padding: 16px 18px 18px; }
+  .panel { grid-area: 1 / 1; display: flex; flex-direction: column; gap: 12px; padding: 16px 18px 18px; }
   .panel[inert] { visibility: hidden; }
   .lang-row { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
   .stat .progress { margin-top: 10px; }
+  #panel-overview .stat { padding: 12px 14px 11px; }
+  #panel-overview .stat .num { font-size: 28px; }
+  /* on/off card */
+  .power { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 13px 16px; }
+  .power.on { border-color: rgba(127, 219, 255, .35); }
+  .power-title { display: block; font-weight: 600; font-size: 15px; }
+  .power-switch { appearance: none; flex: none; position: relative; width: 52px; height: 30px; border-radius: 999px; cursor: pointer;
+    border: 1px solid var(--line-strong); background: var(--surface-3); transition: background-color .15s, border-color .15s; }
+  .power-switch::after { content: ""; position: absolute; top: 3px; left: 3px; width: 22px; height: 22px; border-radius: 50%;
+    background: var(--muted); transition: transform .15s, background-color .15s; }
+  .power-switch[aria-checked="true"] { background: var(--hue-2); border-color: var(--hue-2); }
+  .power-switch[aria-checked="true"]::after { transform: translateX(22px); background: var(--bg); }
+  .power-switch:disabled { opacity: .4; cursor: not-allowed; }
   .stats.three { grid-template-columns: repeat(3, 1fr); }
   .stats.three .stat { padding: 12px 12px 11px; }
   .stats.three .num { font-size: 22px; }
@@ -45,10 +58,16 @@
       <span id="pair" class="chip"></span>
       <button id="changeLang" class="link-btn small muted" data-i18n="changeLanguages" aria-haspopup="dialog"></button>
     </div>
-    <button id="toggle" class="btn primary block"></button>
+    <div class="card power" id="power">
+      <div>
+        <span class="power-title" id="powerTitle" data-i18n="captionsHere"></span>
+        <span class="faint small" id="powerSub"></span>
+      </div>
+      <button id="toggle" class="power-switch" role="switch" aria-checked="false" aria-labelledby="powerTitle" aria-describedby="powerSub"></button>
+    </div>
     <div id="notice" class="callout" role="status" hidden>
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 7v6M12 17h.01"/></svg>
-      <span><span id="noticeText"></span> <button id="addKey" class="link-btn" hidden data-i18n="addKey" aria-haspopup="dialog"></button></span>
+      <span><span id="noticeText"></span> <button id="noticeAction" class="link-btn"></button></span>
     </div>
     <div class="stats">
       <div class="stat"><span class="num" id="statMinutes">0</span><span class="lbl" data-i18n="statMinutes"></span></div>
