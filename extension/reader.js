@@ -34,8 +34,11 @@
       emit(text, true);
       // Translate the next few cues ahead of time so they show up without delay.
       const end = Math.max(...active.map((c) => c.endTime));
-      const upcoming = [...(track.cues || [])].filter((c) => c.startTime >= end).slice(0, 3);
-      if (upcoming.length) send({ type: "prefetch", texts: upcoming.map((c) => clean(c.text)).filter(Boolean) });
+      // Only while the tab is in view: a video playing in the background shouldn't spend tokens.
+      const upcoming = [...(track.cues || [])].filter((c) => c.startTime >= end).slice(0, 2);
+      if (upcoming.length && document.visibilityState === "visible") {
+        send({ type: "prefetch", texts: upcoming.map((c) => clean(c.text)).filter(Boolean) });
+      }
     };
     tracks.set(track, { prevMode: track.mode, onCueChange });
     track.mode = "hidden"; // keeps cues flowing but hides the native rendering; our overlay shows them

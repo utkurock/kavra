@@ -7,9 +7,11 @@ import "../extension/settings.js";
 
 const { t, languageName, baseLang, PROVIDERS } = globalThis.Kavra;
 
-const TranslationSchema = z.object({
+const LiveTranslationSchema = z.object({
   translation: z.string(),
   pairs: z.array(z.object({ original: z.string(), translated: z.string() })),
+});
+const TranslationSchema = LiveTranslationSchema.extend({
   notes: z.array(z.object({ phrase: z.string(), meaning: z.string() })),
 });
 
@@ -58,14 +60,16 @@ function anthropicClient(key) {
   return new Anthropic({ apiKey: key, dangerouslyAllowBrowser: true });
 }
 
-async function anthropicJSON(settings, { system, user, schema, maxTokens, effort }) {
+async function anthropicJSON(settings, { system, user, schema, maxTokens, effort, think = true }) {
+  // effort and turning thinking off are set for the default model only; other Claude models differ.
+  const tuned = settings.model === PROVIDERS.anthropic.model;
   const response = await anthropicClient(settings.key).messages.parse({
     model: settings.model,
     max_tokens: maxTokens,
-    // effort is set for the default model only; older Claude models reject it.
+    ...(tuned && !think ? { thinking: { type: "disabled" } } : {}),
     output_config: {
       format: zodOutputFormat(schema),
-      ...(settings.model === PROVIDERS.anthropic.model ? { effort } : {}),
+      ...(tuned ? { effort } : {}),
     },
     system,
     messages: [{ role: "user", content: user }],
@@ -160,12 +164,14 @@ function names(settings) {
   return { target: languageName(settings.targetLang), native: languageName(settings.nativeLang) };
 }
 
-export function translateLine(line, context, settings) {
+// Live lines skip the notes and the model's thinking: a plain translation is quick, cheap work.
+export function translateLine(line, context, settings, { withNotes = false } = {}) {
   const { target, native } = names(settings);
   return generateJSON(settings, {
-    schema: TranslationSchema,
-    maxTokens: 4000,
+    schema: withNotes ? TranslationSchema : LiveTranslationSchema,
+    maxTokens: withNotes ? 2000 : 1000,
     effort: "low",
+    think: false,
     system:
       `You help a learner whose native language is ${native} learn ${target} from videos. The ${target} ` +
       "text comes from video subtitles or automatic speech recognition, so it may lack punctuation or " +
@@ -174,9 +180,11 @@ export function translateLine(line, context, settings) {
       "pairs: split the line into 2-6 meaningful chunks (phrases, not lone articles or fillers) and give " +
       "the matching chunk of your translation for each, so the learner can see which part means what. " +
       "original must be copied exactly from the line and translated exactly from your translation; chunks " +
-      "must not overlap. A one- or two-word line may have a single pair.\n" +
-      "notes: up to 3 idioms, phrasal verbs, slang or less common words from the line, each with its " +
-      `meaning in this context written in ${native}. Leave notes empty if the line is simple.`,
+      "must not overlap. A one- or two-word line may have a single pair." +
+      (withNotes
+        ? "\nnotes: up to 3 idioms, phrasal verbs, slang or less common words from the line, each with its " +
+          `meaning in this context written in ${native}. Leave notes empty if the line is simple.`
+        : ""),
     user: `Preceding lines (context only):\n${context || "(none)"}\n\nLine to translate:\n${line}`,
   });
 }

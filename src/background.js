@@ -46,19 +46,18 @@ function recordActivity(changes) {
 }
 
 // ---- messaging helpers ----
-function toTop(tabId, message) {
-  return chrome.tabs.sendMessage(tabId, message, { frameId: 0 }).catch(() => {}); // tab may be reloading
-}
+// Every frame gets captions and statuses: the overlay in an embedded player's frame takes over when
+// that player goes fullscreen, since nothing outside it is drawn then.
 function toAllFrames(tabId, message) {
-  return chrome.tabs.sendMessage(tabId, message).catch(() => {});
+  return chrome.tabs.sendMessage(tabId, message).catch(() => {}); // tab may be reloading
 }
 
 async function injectScripts(tabId) {
-  await chrome.scripting.executeScript({ target: { tabId }, files: ["settings.js", "overlay.js"] });
-  // Players in cross-origin iframes are readable only with the optional all-sites permission.
+  // Embedded (cross-origin) player frames are reachable only with the optional all-sites permission.
+  const files = ["settings.js", "overlay.js", "reader.js"];
   await chrome.scripting
-    .executeScript({ target: { tabId, allFrames: true }, files: ["settings.js", "reader.js"] })
-    .catch(() => chrome.scripting.executeScript({ target: { tabId }, files: ["settings.js", "reader.js"] }));
+    .executeScript({ target: { tabId, allFrames: true }, files })
+    .catch(() => chrome.scripting.executeScript({ target: { tabId }, files }));
 }
 
 async function closeOffscreen() {
@@ -81,7 +80,7 @@ async function startCaptions(tabId, streamId) {
       justification: "Capture the tab's audio and turn speech into captions.",
     });
   }
-  toTop(tabId, {
+  toAllFrames(tabId, {
     type: "status",
     text: streamId ? t("statusListening") : t("statusWaitingPage"),
   });
@@ -127,7 +126,7 @@ async function inLearningLanguage(text, tabId) {
   if (++mismatchStreak >= 2 && !mismatchWarned) {
     mismatchWarned = true;
     const ui = chrome.i18n.getUILanguage();
-    toTop(tabId, {
+    toAllFrames(tabId, {
       type: "status",
       text: t("wrongLanguage", languageName(baseLang(top.language), ui), languageName(baseLang(targetLang), ui)),
       error: true,
@@ -136,10 +135,18 @@ async function inLearningLanguage(text, tabId) {
   return false;
 }
 
-async function onCaption(text, final, source) {
+// Sound descriptions such as "[music]", "(laughs)" or "♪" aren't speech: nothing to show or translate.
+function spokenText(text) {
+  return text.replace(/\[[^\]]*\]|\([^)]*\)|[♪♫]/g, " ").replace(/\s+/g, " ").trim();
+}
+
+async function onCaption(rawText, final, source) {
   const capture = await getCapture();
-  if (!capture) return;
-  if (final ? !(await inLearningLanguage(text, capture.tabId)) : mismatchStreak >= 2) return;
+  // Half-heard speech keeps changing; only finished lines are shown.
+  if (!capture || !final) return;
+  const text = spokenText(rawText);
+  if (!/\p{L}/u.test(text)) return;
+  if (!(await inLearningLanguage(text, capture.tabId))) return;
   if (source === "page") {
     pageCaptionAt = Date.now();
     if (capture.speech) {
@@ -150,12 +157,10 @@ async function onCaption(text, final, source) {
   } else if (Date.now() - pageCaptionAt < PAGE_CAPTION_HOLD_MS) {
     return;
   }
-  if (final) {
-    if (text === lastFinal) return; // same cue reported twice (re-render, two frames)
-    lastFinal = text;
-  }
-  toTop(capture.tabId, { type: "caption", text, final });
-  if (final) await onFinalCaption(text);
+  if (text === lastFinal) return; // same cue reported twice (re-render, two frames)
+  lastFinal = text;
+  toAllFrames(capture.tabId, { type: "caption", text, source });
+  await onFinalCaption(text);
 }
 
 async function onFinalCaption(text) {
@@ -180,20 +185,21 @@ async function onSpeechError(code, detail) {
     // Site subtitles can still carry the session.
     await closeOffscreen();
     await setCapture({ ...capture, speech: false });
-    toTop(capture.tabId, { type: "status", text: t("speechFallback", error), error: true });
+    toAllFrames(capture.tabId, { type: "status", text: t("speechFallback", error), error: true });
   } else {
     await stopCaptions(error);
   }
 }
 
 // ---- translation (cached; live lines, prefetched cues and clicks share one request per line) ----
-const cache = new Map(); // "provider|model|native|text" -> Promise<result>
+// Live lines are translated without notes (fewer output tokens); a click asks for the full version.
+const cache = new Map(); // "provider|model|native|live-or-full|text" -> Promise<result>
 
-async function translateCached(text, context = "") {
+async function translateCached(text, context = "", withNotes = false) {
   const settings = await getSettings();
-  const key = [settings.provider, settings.model, settings.nativeLang, text].join("|");
+  const key = [settings.provider, settings.model, settings.nativeLang, withNotes ? "full" : "live", text].join("|");
   if (cache.has(key)) return cache.get(key);
-  const promise = translateLine(text, context, settings);
+  const promise = translateLine(text, context, settings, { withNotes });
   cache.set(key, promise);
   promise.catch(() => cache.delete(key));
   if (cache.size > CACHE_SIZE) cache.delete(cache.keys().next().value);
@@ -214,9 +220,9 @@ async function handleTranslate(text, live) {
   const { progress } = await chrome.storage.local.get("progress");
   const lines = progress?.lines || [];
   const idx = lines.lastIndexOf(text);
-  const context = (idx > 0 ? lines.slice(Math.max(0, idx - 3), idx) : []).join("\n");
+  const context = (idx > 0 ? lines.slice(Math.max(0, idx - 2), idx) : []).join("\n");
   try {
-    return { ok: true, ...(await translateCached(text, context)) };
+    return { ok: true, ...(await translateCached(text, context, !live)) };
   } catch (err) {
     return { ok: false, error: friendlyError(err) };
   }
@@ -224,7 +230,7 @@ async function handleTranslate(text, live) {
 
 async function prefetch(texts) {
   if (!(await getSettings()).key) return;
-  for (const text of texts) translateCached(text).catch(() => {});
+  for (const text of texts.map(spokenText).filter((t) => /\p{L}/u.test(t))) translateCached(text).catch(() => {});
 }
 
 // ---- quiz ----
@@ -241,7 +247,7 @@ async function runQuiz() {
   });
   try {
     if (snapshot.lines.length < 3) throw new Error(t("quizNotEnough"));
-    if (capture) toTop(capture.tabId, { type: "status", text: t("quizPreparing") });
+    if (capture) toAllFrames(capture.tabId, { type: "status", text: t("quizPreparing") });
     const quiz = await generateQuiz(snapshot.lines, snapshot.clicked, await getSettings());
     await chrome.storage.local.set({
       quiz: { ...quiz, answers: [], createdAt: Date.now(), sourceTabId: capture?.tabId ?? null },
@@ -257,7 +263,7 @@ async function runQuiz() {
       p.clicked = snapshot.clicked.concat(p.clicked);
     });
     const error = friendlyError(err);
-    if (capture) toTop(capture.tabId, { type: "status", text: t("quizError", error), error: true });
+    if (capture) toAllFrames(capture.tabId, { type: "status", text: t("quizError", error), error: true });
     return { ok: false, error };
   } finally {
     quizRunning = false;
@@ -345,7 +351,7 @@ chrome.storage.onChanged.addListener(async (changes, area) => {
   mismatchWarned = false;
   const lang = changes.targetLang.newValue;
   if (capture.speech) chrome.runtime.sendMessage({ target: "offscreen", type: "setLang", lang }).catch(() => {});
-  toTop(capture.tabId, { type: "status", text: t("languageSwitched", languageName(lang, chrome.i18n.getUILanguage())) });
+  toAllFrames(capture.tabId, { type: "status", text: t("languageSwitched", languageName(lang, chrome.i18n.getUILanguage())) });
 });
 
 // First install: walk through setup.
