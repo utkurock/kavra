@@ -1,6 +1,6 @@
 const { t, getSettings, languageName, baseLang, fillLanguageSelect, localizePage, TARGET_LOCALES, NATIVE_LANGS, PROVIDERS } =
   globalThis.Kavra;
-const { summarize, render } = globalThis.KavraHeatmap;
+const { summarize, waveform } = globalThis.KavraCharts;
 const $ = (id) => document.getElementById(id);
 const MODE_HINT = { blur: "trModeBlur", always: "trModeAlways", click: "trModeClick" };
 const ui = chrome.i18n.getUILanguage();
@@ -213,13 +213,13 @@ async function showActivity() {
   $("actToday").textContent = Math.round(sum.today.ms / 60000);
   $("actStreak").textContent = sum.streak;
   $("actAccuracy").textContent = sum.accuracy == null ? "–" : `${sum.accuracy}%`;
-  render($("heatmap"), activity, {
-    weeks: 18,
-    monthLocale: ui,
+  const start = waveform($("wave"), activity, {
+    count: 30,
     tooltip: (date, day) =>
       t("dayTooltip", date.toLocaleDateString(ui, { day: "numeric", month: "short" }), Math.round(day.ms / 60000), day.correct, day.wrong),
   });
-  $("heatmap").ariaLabel = t("heatmapLabel", Math.round(sum.ms / 60000), sum.activeDays);
+  $("waveStart").textContent = start.toLocaleDateString(ui, { day: "numeric", month: "short" });
+  $("wave").ariaLabel = t("activityLabel", Math.round(sum.ms / 60000), sum.activeDays);
 }
 
 // ---- preferences ----

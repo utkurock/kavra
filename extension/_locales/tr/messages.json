@@ -345,16 +345,10 @@
     "message": "Aktivite"
   },
   "lastWeeks": {
-    "message": "Son 4 ay"
+    "message": "Son 30 gün"
   },
   "seeAllActivity": {
     "message": "Tümünü gör →"
-  },
-  "less": {
-    "message": "Az"
-  },
-  "more": {
-    "message": "Çok"
   },
   "minToday": {
     "message": "dk bugün"
@@ -367,9 +361,6 @@
   },
   "dayTooltip": {
     "message": "$1: $2 dk · $3 doğru, $4 yanlış"
-  },
-  "heatmapLabel": {
-    "message": "$2 aktif günde $1 dakika çalışma"
   },
   "activityTitle": {
     "message": "Aktivite"
@@ -387,7 +378,7 @@
     "message": "$1 doğru · $2 yanlış"
   },
   "lastYear": {
-    "message": "Son 12 ay"
+    "message": "Aylık dakika"
   },
   "last14": {
     "message": "Son 14 gün"
@@ -544,5 +535,17 @@
   },
   "obClose": {
     "message": "Kapat"
+  },
+  "last90": {
+    "message": "Son 90 gün"
+  },
+  "today": {
+    "message": "Bugün"
+  },
+  "monthTooltip": {
+    "message": "$1: $2 dk"
+  },
+  "activityLabel": {
+    "message": "$2 aktif günde $1 dakika çalışma"
   }
 }

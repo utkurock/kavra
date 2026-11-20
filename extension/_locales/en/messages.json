@@ -345,16 +345,10 @@
     "message": "Activity"
   },
   "lastWeeks": {
-    "message": "Last 4 months"
+    "message": "Last 30 days"
   },
   "seeAllActivity": {
     "message": "See all →"
-  },
-  "less": {
-    "message": "Less"
-  },
-  "more": {
-    "message": "More"
   },
   "minToday": {
     "message": "min today"
@@ -367,9 +361,6 @@
   },
   "dayTooltip": {
     "message": "$1: $2 min · $3 correct, $4 wrong"
-  },
-  "heatmapLabel": {
-    "message": "$1 minutes of practice over $2 active days"
   },
   "activityTitle": {
     "message": "Activity"
@@ -387,7 +378,7 @@
     "message": "$1 correct · $2 wrong"
   },
   "lastYear": {
-    "message": "Last 12 months"
+    "message": "Minutes by month"
   },
   "last14": {
     "message": "Last 14 days"
@@ -544,5 +535,17 @@
   },
   "obClose": {
     "message": "Close"
+  },
+  "last90": {
+    "message": "Last 90 days"
+  },
+  "today": {
+    "message": "Today"
+  },
+  "monthTooltip": {
+    "message": "$1: $2 min"
+  },
+  "activityLabel": {
+    "message": "$1 minutes of practice over $2 active days"
   }
 }

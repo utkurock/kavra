@@ -17,7 +17,7 @@ Translations and quizzes are made by the AI provider you choose (Anthropic Claud
   - **Only on click.**
 - **Click to explain.** Clicking a line pauses the video and shows the translation with notes on idioms and harder words.
 - **Quizzes.** After a set amount of watching (20 minutes by default), the video pauses and a 6-question quiz on what was said opens in a new tab. Questions are in the language you're learning and explanations are in yours. Lines you needed help with are used for the vocabulary questions.
-- **Activity history.** A GitHub-style heatmap of the minutes you practised each day, your streak, lines heard and looked up, and quiz answers right and wrong, day by day.
+- **Activity history.** A listening waveform of the minutes you practised each day, monthly totals, your streak, lines heard and looked up, and quiz answers right and wrong, day by day.
 - **Any AI provider.** Each provider keeps its own key and model, and the settings page can load the provider's current model list.
 - The interface is in English or Turkish, following your browser language.
 
@@ -81,8 +81,9 @@ Each translated line is one small request and each quiz is one larger request, b
 | `extension/reader.js` | Runs in every frame: reads the site's subtitles and pauses or resumes videos. |
 | `extension/overlay.js` | The on-video subtitles, blur mode and translation card. |
 | `extension/offscreen.js` | Captures tab audio and runs speech recognition. |
-| `extension/heatmap.js` | Activity totals, streaks and the daily heatmap. |
-| `extension/popup.*`, `options.*`, `quiz.*`, `activity.*` | Toolbar menu, settings, quiz and activity pages. |
+| `extension/charts.js` | Activity totals, streaks, the daily waveform and monthly bars. |
+| `extension/popup.*`, `options.*`, `quiz.*`, `activity.*`, `onboarding.*` | Toolbar menu, settings, quiz, activity and first-run setup pages. |
+| `extension/nav.js` | Top bar shared by the full pages. |
 | `extension/_locales/` | Interface text (`en`, `tr`). |
 
 `npm run build` bundles `src/` with the Anthropic SDK into `extension/background.js`. Run `npm run watch` while developing.

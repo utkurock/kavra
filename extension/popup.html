@@ -32,7 +32,6 @@
   .stats.three .num { font-size: 22px; }
   .stats.three .lbl { font-size: 12px; }
   .panel .footer { margin: auto -18px -18px; }
-  #heatmap { --cell: 15px; }
   /* language sheet slides over the panels */
   .sheet { position: absolute; inset: 0; z-index: 2; background: var(--bg); padding: 16px 18px 18px;
     display: flex; flex-direction: column; gap: 12px; }
@@ -85,9 +84,9 @@
       <span class="card-title" data-i18n="lastWeeks"></span>
       <a href="activity.html" target="_blank" class="small" data-i18n="seeAllActivity"></a>
     </div>
-    <div id="heatmap" class="heatmap" role="img"></div>
-    <div class="hm-legend" aria-hidden="true">
-      <span data-i18n="less"></span><i class="hm-cell" data-level="0"></i><i class="hm-cell" data-level="1"></i><i class="hm-cell" data-level="2"></i><i class="hm-cell" data-level="3"></i><i class="hm-cell" data-level="4"></i><span data-i18n="more"></span>
+    <div>
+      <div id="wave" class="wave" role="img"></div>
+      <div class="wave-axis"><span id="waveStart"></span><span data-i18n="today"></span></div>
     </div>
     <div class="stats three">
       <div class="stat"><span class="num" id="actToday">0</span><span class="lbl" data-i18n="minToday"></span></div>
@@ -150,6 +149,6 @@
   </section>
 </div>
 <script src="settings.js"></script>
-<script src="heatmap.js"></script>
+<script src="charts.js"></script>
 <script src="popup.js"></script>
 </html>

@@ -1,5 +1,5 @@
 const { t, dayKey, localizePage } = globalThis.Kavra;
-const { summarize, render } = globalThis.KavraHeatmap;
+const { summarize, waveform, monthly } = globalThis.KavraCharts;
 const $ = (id) => document.getElementById(id);
 const ui = chrome.i18n.getUILanguage();
 const minutes = (ms) => Math.round(ms / 60000);
@@ -23,13 +23,19 @@ async function show() {
   $("sumAccuracy").textContent = sum.accuracy == null ? "–" : `${sum.accuracy}%`;
   $("sumAnswers").textContent = t("correctWrong", sum.correct, sum.wrong);
 
-  render($("heatmap"), activity, {
-    weeks: 53,
-    monthLocale: ui,
+  const start = waveform($("wave"), activity, {
+    count: 90,
     tooltip: (date, day) =>
       t("dayTooltip", date.toLocaleDateString(ui, { day: "numeric", month: "short" }), minutes(day.ms), day.correct, day.wrong),
   });
-  $("heatmap").ariaLabel = t("heatmapLabel", minutes(sum.ms), sum.activeDays);
+  $("waveStart").textContent = start.toLocaleDateString(ui, { day: "numeric", month: "short" });
+  $("wave").ariaLabel = t("activityLabel", minutes(sum.ms), sum.activeDays);
+  monthly($("months"), activity, {
+    months: 12,
+    locale: ui,
+    tooltip: (date, ms) => t("monthTooltip", date.toLocaleDateString(ui, { month: "long", year: "numeric" }), minutes(ms)),
+  });
+  $("months").ariaLabel = t("lastYear");
 
   // Last 14 days, newest first, with a bar scaled to the busiest day.
   const rows = [];
