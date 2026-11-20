@@ -589,5 +589,14 @@
   },
   "lazyHelp": {
     "message": "In blur mode a line is translated only when you point at it. It uses far fewer tokens; the translation takes a moment to appear, and lines stay uncoloured until then."
+  },
+  "resetQuiz": {
+    "message": "Start over"
+  },
+  "resetQuizConfirm": {
+    "message": "Sure? Reset"
+  },
+  "quizResetNewVideo": {
+    "message": "New video: the quiz starts over."
   }
 }

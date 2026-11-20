@@ -589,5 +589,14 @@
   },
   "lazyHelp": {
     "message": "Bulanık modda bir satır yalnızca üzerine geldiğinde çevrilir. Çok daha az token harcar; çeviri bir an sonra gelir ve satır o zamana kadar renklenmez."
+  },
+  "resetQuiz": {
+    "message": "Sıfırla"
+  },
+  "resetQuizConfirm": {
+    "message": "Emin misin?"
+  },
+  "quizResetNewVideo": {
+    "message": "Yeni video: quiz baştan başlıyor."
   }
 }

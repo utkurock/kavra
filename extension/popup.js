@@ -92,6 +92,7 @@ async function refresh() {
   $("quizBar").firstElementChild.style.width = `${pct}%`;
   $("quizBar").ariaValueNow = pct;
   $("quizNow").disabled = state.quizRunning || !state.hasKey || state.lineCount === 0;
+  $("resetQuiz").disabled = state.quizRunning || (state.lineCount === 0 && state.watchedMs < 60000);
 }
 
 $("toggle").addEventListener("click", async () => {
@@ -122,6 +123,21 @@ $("quizNow").addEventListener("click", async () => {
   $("statQuizLabel").textContent = t("quizPreparing");
   const res = await chrome.runtime.sendMessage({ type: "quizNow" });
   if (!res?.ok) showError(res?.error || t("quizFailed"));
+  refresh();
+});
+
+// Starting over drops the minutes and lines gathered so far, so the first click asks to confirm.
+let resetTimer;
+function armReset(armed) {
+  clearTimeout(resetTimer);
+  $("resetQuiz").classList.toggle("confirm", armed);
+  $("resetQuiz").textContent = t(armed ? "resetQuizConfirm" : "resetQuiz");
+  if (armed) resetTimer = setTimeout(() => armReset(false), 4000);
+}
+$("resetQuiz").addEventListener("click", async () => {
+  if (!$("resetQuiz").classList.contains("confirm")) return armReset(true);
+  armReset(false);
+  await chrome.runtime.sendMessage({ type: "resetQuiz" });
   refresh();
 });
 

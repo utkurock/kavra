@@ -12,7 +12,7 @@ const PREFETCH_LOW = 2; // translate ahead once fewer than this many upcoming cu
 const ACTIVITY_DAYS = 400; // days of history kept for the activity view
 
 // ---- persistent state ----
-// session "capture": { tabId, speech, source } for the tab being captioned (cleared on browser restart).
+// session "capture": { tabId, speech, source, video } for the tab being captioned (cleared on browser restart).
 // local "progress": transcript and watch time collected since the last quiz.
 // local "activity": totals per local day ("YYYY-MM-DD") for the activity view.
 async function getCapture() {
@@ -72,7 +72,8 @@ async function startCaptions(tabId, streamId) {
   await stopCaptions();
   const { targetLang, source } = await getSettings();
   await injectScripts(tabId);
-  await setCapture({ tabId, speech: Boolean(streamId), source });
+  const { url } = await chrome.tabs.get(tabId);
+  await setCapture({ tabId, speech: Boolean(streamId), source, video: videoKey(url) });
   speechListening = true; // a new offscreen document starts listening
   if (streamId) {
     const params = new URLSearchParams({ streamId, lang: targetLang });
@@ -363,6 +364,22 @@ async function prefetch(texts) {
 
 // ---- quiz ----
 let quizRunning = false;
+
+// Drops what was collected toward the next quiz: watch time, transcript and looked-up lines.
+const resetQuiz = () => updateProgress((p) => void Object.assign(p, emptyProgress()));
+
+// The video a page plays, from its address: the hash and parameters for the playback position,
+// playlist place or tracking don't make it another video (YouTube's ?v= does).
+const POSITION_PARAMS = /^(t|start|time_continue|index|pp|si|feature|utm_.*)$/;
+function videoKey(url) {
+  try {
+    const u = new URL(url);
+    const params = [...u.searchParams].filter(([name]) => !POSITION_PARAMS.test(name)).sort();
+    return `${u.origin}${u.pathname}?${new URLSearchParams(params)}`;
+  } catch {
+    return "";
+  }
+}
 async function runQuiz() {
   if (quizRunning) return { ok: false, error: t("quizAlreadyRunning") };
   quizRunning = true;
@@ -445,6 +462,7 @@ const handlers = {
   stop: () => stopCaptions().then(() => ({ ok: true })),
   getState: () => getState(),
   quizNow: () => runQuiz(),
+  resetQuiz: () => resetQuiz().then(() => ({ ok: true })),
   // options.js / quiz.js
   listModels: (msg) => handleListModels(msg.provider, msg.key),
   quizAnswer: (msg) => answerQuiz(msg.index, msg.choice),
@@ -495,8 +513,16 @@ chrome.tabs.onRemoved.addListener(async (tabId) => {
   if ((await getCapture())?.tabId === tabId) await stopCaptions();
 });
 
-// A full page load wipes the injected scripts; tab capture keeps running, so put them back.
 chrome.tabs.onUpdated.addListener(async (tabId, info) => {
-  if (info.status !== "complete" || (await getCapture())?.tabId !== tabId) return;
-  injectScripts(tabId).catch(() => stopCaptions());
+  const capture = await getCapture();
+  if (capture?.tabId !== tabId) return;
+  // Another video in the captioned tab: the quiz starts over, so it doesn't mix the two.
+  const video = info.url && videoKey(info.url);
+  if (video && capture.video && video !== capture.video) {
+    await setCapture({ ...capture, video });
+    await resetQuiz();
+    toAllFrames(tabId, { type: "status", text: t("quizResetNewVideo") });
+  }
+  // A full page load wipes the injected scripts; tab capture keeps running, so put them back.
+  if (info.status === "complete") injectScripts(tabId).catch(() => stopCaptions());
 });

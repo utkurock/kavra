@@ -38,6 +38,9 @@
   .sheet label { display: block; font-size: 13px; color: var(--muted); margin-bottom: 6px; }
   .sheet .actions { margin-top: auto; }
   .error-text { color: var(--bad); font-size: 13px; }
+  .quiz-row { display: flex; gap: 8px; }
+  .quiz-row #quizNow { flex: 1; }
+  #resetQuiz.confirm { background: var(--bad-soft); color: var(--bad); border-color: rgba(244, 124, 124, .35); }
   .seg.compact { padding: 3px; gap: 2px; border-radius: 11px; }
   .seg.compact label { padding: 3px 10px; font-size: 12px; border-radius: 8px; }
 </style>
@@ -78,7 +81,10 @@
         <div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" id="quizBar"><span></span></div>
       </div>
     </div>
-    <button id="quizNow" class="btn secondary block" data-i18n="quizNow"></button>
+    <div class="quiz-row">
+      <button id="quizNow" class="btn secondary" data-i18n="quizNow"></button>
+      <button id="resetQuiz" class="btn secondary" data-i18n="resetQuiz"></button>
+    </div>
   </section>
 
   <section class="panel" id="panel-activity" role="tabpanel" aria-labelledby="tab-activity" inert>
