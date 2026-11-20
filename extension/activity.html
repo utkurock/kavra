@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>activityTitle</title>
+<link rel="stylesheet" href="shared.css">
+<style>
+  main { max-width: 960px; margin: 0 auto; padding: 36px 16px 80px; }
+  .page-head { display: flex; flex-direction: column; gap: 14px; margin-bottom: 24px; }
+  .page-head h1 { font-size: 26px; letter-spacing: -.02em; }
+  .stats.wide { grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); margin-bottom: 16px; }
+  .stat .sub { display: block; color: var(--faint); font-size: 12px; margin-top: 2px; }
+  section.card { margin-bottom: 16px; padding: 18px 20px; }
+  section h2 { font-size: 15px; font-weight: 650; margin-bottom: 14px; }
+  .scroll-x { overflow-x: auto; padding-bottom: 4px; }
+  .heatmap { --cell: 13px; width: max-content; }
+  table { width: 100%; border-collapse: collapse; font-variant-numeric: tabular-nums; min-width: 560px; }
+  th { text-align: left; font-size: 12px; font-weight: 600; color: var(--faint); text-transform: uppercase; letter-spacing: .06em; padding: 0 10px 10px 0; }
+  td { padding: 10px 10px 10px 0; border-top: 1px solid var(--line); font-size: 14px; }
+  td.num, th.num { text-align: right; }
+  .bar { display: flex; align-items: center; gap: 10px; }
+  .bar i { display: block; height: 6px; border-radius: 3px; background: linear-gradient(90deg, var(--hue-1), var(--hue-2)); min-width: 2px; }
+  .ok { color: var(--ok); } .bad { color: var(--bad); }
+  .empty { color: var(--muted); padding: 8px 0; }
+</style>
+<main class="dotted">
+  <header class="page-head">
+    <span class="brand"><img src="icons/logo.svg" alt=""><span data-i18n="extName"></span></span>
+    <div><h1 data-i18n="activityTitle"></h1><p class="muted" data-i18n="activitySubtitle"></p></div>
+  </header>
+
+  <div class="stats wide">
+    <div class="stat"><span class="num" id="sumMinutes">0</span><span class="lbl" data-i18n="totalMinutes"></span></div>
+    <div class="stat"><span class="num" id="sumDays">0</span><span class="lbl" data-i18n="activeDays"></span></div>
+    <div class="stat"><span class="num hue-1" id="sumStreak">0</span><span class="lbl" data-i18n="dayStreak"></span></div>
+    <div class="stat"><span class="num" id="sumLines">0</span><span class="lbl" data-i18n="statLines"></span></div>
+    <div class="stat"><span class="num" id="sumLookedUp">0</span><span class="lbl" data-i18n="statLookedUp"></span></div>
+    <div class="stat"><span class="num hue-2" id="sumAccuracy">–</span><span class="lbl" data-i18n="quizAccuracy"></span><span class="sub" id="sumAnswers"></span></div>
+  </div>
+
+  <section class="card">
+    <h2 data-i18n="lastYear"></h2>
+    <div class="scroll-x"><div id="heatmap" class="heatmap" role="img"></div></div>
+    <div class="hm-legend" aria-hidden="true" style="margin-top:10px">
+      <span data-i18n="less"></span><i class="hm-cell" data-level="0"></i><i class="hm-cell" data-level="1"></i><i class="hm-cell" data-level="2"></i><i class="hm-cell" data-level="3"></i><i class="hm-cell" data-level="4"></i><span data-i18n="more"></span>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2 data-i18n="last14"></h2>
+    <div class="scroll-x">
+      <table>
+        <thead><tr>
+          <th data-i18n="colDate"></th><th data-i18n="colMinutes"></th><th class="num" data-i18n="colLines"></th>
+          <th class="num" data-i18n="colLookedUp"></th><th class="num" data-i18n="colQuizzes"></th>
+          <th class="num" data-i18n="colCorrect"></th><th class="num" data-i18n="colWrong"></th>
+        </tr></thead>
+        <tbody id="days"></tbody>
+      </table>
+    </div>
+    <p id="empty" class="empty" hidden data-i18n="noActivity"></p>
+  </section>
+</main>
+<script src="settings.js"></script>
+<script src="heatmap.js"></script>
+<script src="activity.js"></script>
+</html>

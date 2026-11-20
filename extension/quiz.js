@@ -65,25 +65,31 @@ function el(tag, className, text) {
       answer.lang = lang;
       b.append(el("span", "letter", LETTERS[idx]), answer);
       b.addEventListener("click", () => {
-        const right = idx === q.correct_index;
-        buttons.forEach((x, j) => {
-          x.disabled = true;
-          if (j === q.correct_index) x.classList.add("correct");
-          else if (j === idx) x.classList.add("wrong");
-          else x.classList.add("faded");
-        });
-        const exp = el("div", `exp ${right ? "ok" : "bad"}`);
-        exp.append(el("strong", null, t(right ? "answerCorrect" : "answerWrong")), q.explanation);
-        card.appendChild(exp);
-        answered++;
-        if (right) correct++;
-        updateProgress();
+        chrome.runtime.sendMessage({ type: "quizAnswer", index: i, choice: idx }).catch(() => {});
+        reveal(idx);
       });
       options.appendChild(b);
       return b;
     });
+    // Shows the result of a choice; also used to restore answers when the page is reopened.
+    function reveal(idx) {
+      const right = idx === q.correct_index;
+      buttons.forEach((x, j) => {
+        x.disabled = true;
+        if (j === q.correct_index) x.classList.add("correct");
+        else if (j === idx) x.classList.add("wrong");
+        else x.classList.add("faded");
+      });
+      const exp = el("div", `exp ${right ? "ok" : "bad"}`);
+      exp.append(el("strong", null, t(right ? "answerCorrect" : "answerWrong")), q.explanation);
+      card.appendChild(exp);
+      answered++;
+      if (right) correct++;
+      updateProgress();
+    }
     card.appendChild(options);
     $("list").appendChild(card);
+    if (quiz.answers?.[i] != null) reveal(quiz.answers[i]);
   });
   updateProgress();
 

@@ -102,7 +102,7 @@ input[type="text"], input[type="password"], input[type="number"], select {
 input:hover, select:hover { border-color: var(--faint); }
 .input-group { display: flex; }
 .input-group input { border-top-right-radius: 0; border-bottom-right-radius: 0; font-family: ui-monospace, Menlo, monospace; font-size: 13px; }
-.input-group .btn { border-radius: 0 var(--radius-sm) var(--radius-sm) 0; border-left: 0; padding: 0 14px; }
+.input-group .btn { border-radius: 0 var(--radius-sm) var(--radius-sm) 0; border-left: 0; padding: 0 14px; white-space: nowrap; }
 .suffix { position: relative; }
 .suffix input { padding-right: 46px; }
 .suffix span { position: absolute; right: 12px; top: 50%; transform: translateY(-50%); color: var(--muted); pointer-events: none; }
@@ -162,3 +162,20 @@ input:hover, select:hover { border-color: var(--faint); }
 .tab[aria-selected="true"] { color: var(--fg); }
 .tab[aria-selected="true"]::after { content: ""; position: absolute; left: 22%; right: 22%; bottom: -1px; height: 2px;
   border-radius: 2px; background: var(--muted); }
+
+/* activity heatmap */
+.heatmap { --cell: 13px; --gap: 3px; display: grid; gap: 6px; }
+.hm-months, .hm-grid { display: grid; grid-template-columns: repeat(var(--weeks), var(--cell)); gap: var(--gap); }
+.hm-months { font-size: 11px; color: var(--faint); line-height: 1; height: 11px; }
+.hm-months span { white-space: nowrap; }
+.hm-grid { grid-template-rows: repeat(7, var(--cell)); grid-auto-flow: column; }
+.hm-cell { width: var(--cell); height: var(--cell); border-radius: 3px; background: var(--surface-3); }
+.hm-cell.future { visibility: hidden; }
+.hm-cell[data-level="1"] { background: rgba(127, 219, 255, .22); }
+.hm-cell[data-level="2"] { background: rgba(127, 219, 255, .42); }
+.hm-cell[data-level="3"] { background: rgba(127, 219, 255, .68); }
+.hm-cell[data-level="4"] { background: var(--hue-2); }
+.hm-legend { display: flex; align-items: center; justify-content: flex-end; gap: 3px; font-size: 11.5px; color: var(--faint); }
+.hm-legend .hm-cell { --cell: 11px; }
+.hm-legend span:first-child { margin-right: 4px; }
+.hm-legend span:last-child { margin-left: 4px; }
