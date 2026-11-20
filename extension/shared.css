@@ -224,7 +224,7 @@ body.collapsed .sidebar-foot .collapse svg { transform: rotate(180deg); }
 .appbar .chip svg { width: 15px; height: 15px; }
 .appbar .streak.lit { color: var(--fg); }
 .appbar .streak.lit svg { color: var(--hue-1); }
-body.app > main { grid-column: 2; width: 100%; margin: 0 auto; padding: 40px 40px 96px; }
+body.app > main { grid-column: 2; width: 100%; max-width: 1360px; margin: 0 auto; padding: 36px 40px 96px; }
 
 /* page header: title and description, with the page's main action on the right */
 .page-title { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: end; column-gap: 24px; row-gap: 6px;

@@ -26,6 +26,7 @@ function el(tag, className, text) {
     const empty = el("section", "card empty");
     empty.append(el("p", "muted", t("noQuiz")));
     $("list").appendChild(empty);
+    document.querySelector(".qlayout").classList.add("solo"); // nothing for the side panel to show
     return;
   }
   const lang = quiz.lang || "";

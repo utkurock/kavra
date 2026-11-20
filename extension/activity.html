@@ -5,15 +5,43 @@
 <title>activityTitle</title>
 <link rel="stylesheet" href="shared.css">
 <style>
-  main { max-width: 1000px; }
+  /* dashboard: totals across the top, then panels side by side */
+  .dash { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 20px;
+    grid-template-areas: "stats stats stats stats stats stats" "wave wave wave wave today today"
+      "months months months words words words" "table table table table table table"; }
+  .dash > * { min-width: 0; margin: 0; }
+  .a-stats { grid-area: stats; } .a-wave { grid-area: wave; } .a-today { grid-area: today; }
+  .a-months { grid-area: months; } .a-words { grid-area: words; } .a-table { grid-area: table; }
+  @media (max-width: 1100px) {
+    .dash { grid-template-columns: minmax(0, 1fr); grid-template-areas: "stats" "wave" "today" "months" "words" "table"; }
+  }
+  .section-top { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; margin-bottom: 18px; }
+  .section-top h2 { font-size: 15px; font-weight: 600; }
+  .section-top a { font-size: 13px; color: var(--muted); text-decoration: none; }
+  .section-top a:hover { color: var(--fg); }
+  /* today: the minutes large, the rest as label/value rows */
+  .today-big { display: flex; align-items: baseline; gap: 8px; margin-bottom: 14px; }
+  .today-big .num { font-size: 40px; font-weight: 400; letter-spacing: -.03em; line-height: 1; font-variant-numeric: tabular-nums; }
+  .kv { display: grid; gap: 0; margin: 0; }
+  .kv div { display: flex; justify-content: space-between; padding: 9px 0; border-top: 1px solid var(--line); font-size: 13.5px; }
+  .kv dt { color: var(--muted); }
+  .kv dd { margin: 0; font-variant-numeric: tabular-nums; }
+  .kv dd.zero { color: var(--faint); }
+  /* the latest saved lines */
+  .recent { list-style: none; margin: 0; padding: 0; }
+  .recent li { padding: 10px 0; border-top: 1px solid var(--line); }
+  .recent li:first-child { border-top: 0; padding-top: 0; }
+  .recent .r-orig { font-weight: 600; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .recent .r-trans { color: var(--muted); font-size: 13.5px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .recent-empty { color: var(--muted); font-size: 13.5px; }
   /* the totals as one strip of figures; the cells draw their dividers, the strip clips the outer ones */
-  .stats.wide { grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 0; margin-bottom: 20px; overflow: hidden;
+  .stats.wide { grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 0; overflow: hidden;
     background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); }
   .stats.wide .stat { background: none; border: 0; border-radius: 0; padding: 18px 20px 16px;
     box-shadow: -1px 0 0 var(--line), 0 -1px 0 var(--line); }
   .stats.wide .num { font-size: 28px; }
   .stat .sub { display: block; color: var(--faint); font-size: 12px; margin-top: 2px; }
-  section.card { margin-bottom: 20px; padding: 20px 22px; }
+  section.card { padding: 20px 22px; }
   section.card > h2 { font-size: 15px; font-weight: 600; margin-bottom: 18px; }
   .scroll-x { overflow-x: auto; margin: 0 -22px -20px; }
   table { width: 100%; border-collapse: collapse; font-variant-numeric: tabular-nums; min-width: 600px; }
@@ -36,7 +64,8 @@
     <p class="muted" data-i18n="activitySubtitle"></p>
   </header>
 
-  <div class="stats wide">
+  <div class="dash">
+  <div class="stats wide a-stats">
     <div class="stat"><span class="num" id="sumMinutes">0</span><span class="lbl" data-i18n="totalMinutes"></span></div>
     <div class="stat"><span class="num" id="sumDays">0</span><span class="lbl" data-i18n="activeDays"></span></div>
     <div class="stat"><span class="num hue-1" id="sumStreak">0</span><span class="lbl" data-i18n="dayStreak"></span></div>
@@ -45,18 +74,36 @@
     <div class="stat"><span class="num hue-2" id="sumAccuracy">–</span><span class="lbl" data-i18n="quizAccuracy"></span><span class="sub" id="sumAnswers"></span></div>
   </div>
 
-  <section class="card">
+  <section class="card a-wave">
     <h2 data-i18n="last90"></h2>
     <div id="wave" class="wave" style="--wave-h: 130px" role="img"></div>
     <div class="wave-axis"><span id="waveStart"></span><span data-i18n="today"></span></div>
   </section>
 
-  <section class="card">
+  <section class="card a-today">
+    <h2 data-i18n="today"></h2>
+    <div class="today-big"><span class="num" id="todayMinutes">0</span><span class="muted" data-i18n="colMinutes"></span></div>
+    <dl class="kv">
+      <div><dt data-i18n="colLines"></dt><dd id="todayLines">0</dd></div>
+      <div><dt data-i18n="colLookedUp"></dt><dd id="todayLookedUp">0</dd></div>
+      <div><dt data-i18n="colQuizzes"></dt><dd id="todayQuizzes">0</dd></div>
+      <div><dt data-i18n="colCorrect"></dt><dd id="todayCorrect" class="ok">0</dd></div>
+      <div><dt data-i18n="colWrong"></dt><dd id="todayWrong" class="bad">0</dd></div>
+    </dl>
+  </section>
+
+  <section class="card a-months">
     <h2 data-i18n="lastYear"></h2>
     <div id="months" class="months" role="img"></div>
   </section>
 
-  <section class="card">
+  <section class="card a-words">
+    <div class="section-top"><h2 data-i18n="navWords"></h2><a href="words.html" data-i18n="seeAllActivity"></a></div>
+    <ul class="recent" id="recent"></ul>
+    <p class="recent-empty" id="recentEmpty" hidden data-i18n="wordsEmpty"></p>
+  </section>
+
+  <section class="card a-table">
     <h2 data-i18n="last14"></h2>
     <div class="scroll-x">
       <table>
@@ -70,6 +117,7 @@
     </div>
     <p id="empty" class="empty" hidden data-i18n="noActivity"></p>
   </section>
+  </div>
 </main>
 <script src="settings.js"></script>
 <script src="charts.js"></script>

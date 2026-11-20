@@ -72,9 +72,38 @@ async function show() {
     body.append(tr);
   }
   $("empty").hidden = sum.activeDays > 0;
+
+  // Today's panel.
+  const today = sum.today;
+  $("todayMinutes").textContent = number(minutes(today.ms));
+  for (const [id, n] of [["todayLines", today.lines], ["todayLookedUp", today.lookedUp], ["todayQuizzes", today.quizzes],
+    ["todayCorrect", today.correct], ["todayWrong", today.wrong]]) {
+    $(id).textContent = number(n);
+    $(id).classList.toggle("zero", !n);
+  }
+}
+
+// The latest lines saved to the word pool.
+async function showRecent() {
+  const { words = [] } = await chrome.storage.local.get("words");
+  $("recent").replaceChildren(
+    ...words.slice(0, 5).map((w) => {
+      const li = document.createElement("li");
+      const orig = Object.assign(document.createElement("div"), { className: "r-orig", textContent: w.text, title: w.text });
+      const trans = Object.assign(document.createElement("div"), { className: "r-trans", textContent: w.translation });
+      li.append(orig, trans);
+      return li;
+    })
+  );
+  $("recentEmpty").hidden = words.length > 0;
 }
 
 localizePage();
 show();
+showRecent();
 // Stay current while captions run in another tab.
-chrome.storage.onChanged.addListener((changes, area) => area === "local" && changes.activity && show());
+chrome.storage.onChanged.addListener((changes, area) => {
+  if (area !== "local") return;
+  if (changes.activity) show();
+  if (changes.words) showRecent();
+});

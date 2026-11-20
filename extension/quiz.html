@@ -5,9 +5,20 @@
 <title>quizTitle</title>
 <link rel="stylesheet" href="shared.css">
 <style>
-  main { max-width: 760px; }
-  .sticky { position: sticky; top: var(--topbar-h); z-index: 1; background: var(--bg); padding: 12px 0 16px; margin: -12px 0 8px; }
-  .q { margin-bottom: 14px; padding: 22px 24px; }
+  /* questions as a grid of cards, progress and result in a panel beside them */
+  .qlayout { display: grid; grid-template-columns: minmax(0, 1fr) 300px; gap: 20px; align-items: start; }
+  #list { display: grid; grid-template-columns: repeat(auto-fill, minmax(380px, 1fr)); gap: 20px; align-items: start; }
+  .qlayout.solo, .qlayout.solo #list { grid-template-columns: minmax(0, 1fr); }
+  .qside { position: sticky; top: calc(var(--topbar-h) + 20px); display: grid; gap: 20px; }
+  .qside .card { padding: 20px 22px; }
+  .qside h2 { font-size: 15px; font-weight: 600; margin-bottom: 14px; }
+  .progress-head { display: flex; justify-content: space-between; gap: 10px; margin-bottom: 10px; font-size: 13.5px; }
+  @media (max-width: 1000px) {
+    .qlayout { grid-template-columns: minmax(0, 1fr); }
+    .qside { order: -1; top: var(--topbar-h); z-index: 1; }
+    #list { grid-template-columns: minmax(0, 1fr); }
+  }
+  .q { margin: 0; padding: 22px 24px; }
   /* question kind: a coloured dot and a quiet label */
   .kind { display: inline-flex; align-items: center; gap: 8px; font-size: 12.5px; font-weight: 500; color: var(--muted); --dot: var(--fg); }
   .kind::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: var(--dot); }
@@ -42,18 +53,22 @@
     <h1 id="title" data-i18n="quizTitle"></h1>
     <p class="muted" id="meta"></p>
   </header>
-  <div class="sticky" id="progressWrap" hidden>
-    <div class="row between small" style="margin-bottom:6px"><span id="progressText"></span><span id="scoreText" class="muted"></span></div>
-    <div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" id="progressBar"><span></span></div>
+  <div class="qlayout">
+    <div id="list"></div>
+    <aside class="qside">
+      <section class="card" id="progressWrap" hidden>
+        <div class="progress-head"><span id="progressText"></span><span id="scoreText" class="muted"></span></div>
+        <div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" id="progressBar"><span></span></div>
+      </section>
+      <section id="summary" class="card summary" hidden>
+        <span class="card-title" data-i18n="quizComplete"></span>
+        <span class="big" id="summaryScore"></span>
+        <p class="muted" id="summaryText"></p>
+        <button id="back" class="btn primary" hidden data-i18n="backToVideo"></button>
+        <p class="small muted" id="backError" hidden data-i18n="videoTabClosed"></p>
+      </section>
+    </aside>
   </div>
-  <div id="list"></div>
-  <section id="summary" class="card summary" hidden>
-    <span class="card-title" data-i18n="quizComplete"></span>
-    <span class="big" id="summaryScore"></span>
-    <p class="muted" id="summaryText"></p>
-    <button id="back" class="btn primary" hidden data-i18n="backToVideo"></button>
-    <p class="small muted" id="backError" hidden data-i18n="videoTabClosed"></p>
-  </section>
 </main>
 <script src="settings.js"></script>
 <script src="charts.js"></script>
