@@ -7,7 +7,7 @@
   if (window.__kavraOverlay?.alive?.()) return;
   window.__kavraOverlay = { alive: () => Boolean(chrome.runtime?.id) };
 
-  const { t, getSettings } = globalThis.Kavra;
+  const { t, getSettings, baseLang } = globalThis.Kavra;
   const STRUGGLE_HOVER_MS = 800;
   const HISTORY_SIZE = 5;
   const COLORS = ["#ffd54a", "#7fdbff", "#ff9eb5", "#a5e88f", "#ffb36b", "#c9a7ff"];
@@ -63,6 +63,14 @@
       .card li b { color: #fff; }
       .card .muted { color: #a8a8ae; font-size: 14px; }
       .card .err { color: #ff8a80; }
+      .card .c-actions { display: flex; justify-content: flex-end; margin-top: 12px; }
+      .save { font: inherit; font-size: 13px; font-weight: 600; padding: 5px 12px; border-radius: 999px; cursor: pointer;
+        border: 1px solid #3a3a40; background: #26262b; color: #f2f2f2;
+        transition: background-color .15s, border-color .15s, color .15s, transform .12s; }
+      .save:hover { border-color: #ffd54a; }
+      .save:active { transform: scale(.96); }
+      .save:focus-visible { outline: 2px solid #ffd54a; outline-offset: 2px; }
+      .save.saved { background: rgba(165,232,143,.12); border-color: rgba(165,232,143,.5); color: #a5e88f; }
       .close { position: absolute; top: 4px; right: 6px; border: 0; background: none; font-size: 22px;
         cursor: pointer; color: #bbb; line-height: 1; padding: 4px 6px; }
       .close:focus-visible { outline: 2px solid #ffd54a; }
@@ -158,6 +166,7 @@
     setTextSize(s.textSize);
     historyOn = s.lineHistory;
     locales = { orig: s.targetLang, trans: s.nativeLang };
+    setSaved((await chrome.storage.local.get("words")).words);
     customPos = (await chrome.storage.local.get("overlayPos")).overlayPos ?? null;
     render();
     place();
@@ -579,6 +588,34 @@
     media("resume");
   }
 
+  // ---- word pool: the card can save its line, with the translation and notes ----
+  let saved = new Set(); // "lang|text" of the saved lines
+  const savedKey = (text) => `${baseLang(locales.orig)}|${text}`;
+  function setSaved(words = []) {
+    saved = new Set(words.map((w) => `${baseLang(w.lang)}|${w.text}`));
+  }
+  function saveButton(target) {
+    const button = document.createElement("button");
+    const show = () => {
+      const isSaved = saved.has(savedKey(target.text));
+      button.className = `save${isSaved ? " saved" : ""}`;
+      button.textContent = t(isSaved ? "wordSaved" : "saveWord");
+      button.ariaPressed = String(isSaved);
+    };
+    button.addEventListener("click", async () => {
+      const { translation, notes } = target.result;
+      const res = await chrome.runtime
+        .sendMessage({ type: "toggleWord", word: { text: target.text, translation, notes, lang: locales.orig, url: location.href } })
+        .catch(() => null);
+      if (!res) return;
+      saved[res.saved ? "add" : "delete"](savedKey(target.text));
+      show();
+    });
+    button.refresh = show;
+    show();
+    return button;
+  }
+
   function fillCard() {
     const line = cardLine;
     const close = document.createElement("button");
@@ -603,6 +640,9 @@
         }
         card.appendChild(ul);
       }
+      const actions = div("c-actions");
+      actions.append(saveButton(line));
+      card.appendChild(actions);
     } else if (line.error && !line.pending) {
       card.appendChild(div("err", line.error));
     } else {
@@ -723,6 +763,10 @@
       line = previous = null;
       recent = [];
       render();
+    }
+    if (changes.words) {
+      setSaved(changes.words.newValue);
+      card.querySelector(".save")?.refresh(); // saved or removed elsewhere (the word pool page)
     }
     if (changes.lineHistory) {
       historyOn = changes.lineHistory.newValue ?? true;

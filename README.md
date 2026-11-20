@@ -16,6 +16,7 @@ Translations and quizzes are made by the AI provider you choose (Anthropic Claud
   - **Always show.**
   - **Only on click.**
 - **Click to explain.** Clicking a line pauses the video and shows the translation with notes on idioms and harder words.
+- **Word pool.** The card has a button that saves the line with its translation and notes to your word pool, a page where you can search and remove saved lines.
 - **Quizzes.** After a set amount of watching (20 minutes by default), the video pauses and a 6-question quiz on what was said opens in a new tab. Questions are in the language you're learning and explanations are in yours. Lines you needed help with are used for the vocabulary questions.
 - **Activity history.** A listening waveform of the minutes you practised each day, monthly totals, your streak, lines heard and looked up, and quiz answers right and wrong, day by day.
 - **Any AI provider.** Each provider keeps its own key and model, and the settings page can load the provider's current model list.
@@ -83,7 +84,7 @@ Each translated line is one small request and each quiz is one larger request, b
 | `extension/overlay.js` | The on-video subtitles, blur mode and translation card. |
 | `extension/offscreen.js` | Captures tab audio and runs speech recognition. |
 | `extension/charts.js` | Activity totals, streaks, the daily waveform and monthly bars. |
-| `extension/popup.*`, `options.*`, `quiz.*`, `activity.*`, `onboarding.*` | Toolbar menu, settings, quiz, activity and first-run setup pages. |
+| `extension/popup.*`, `options.*`, `quiz.*`, `activity.*`, `words.*`, `onboarding.*` | Toolbar menu, settings, quiz, activity, word pool and first-run setup pages. |
 | `extension/nav.js` | Top bar shared by the full pages. |
 | `extension/_locales/` | Interface text (`en`, `tr`). |
 

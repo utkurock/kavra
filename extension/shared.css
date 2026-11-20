@@ -98,7 +98,7 @@ a.btn { text-decoration: none; }
 .icon-btn svg { width: 18px; height: 18px; }
 
 /* ---- form controls ---- */
-input[type="text"], input[type="password"], input[type="number"], select {
+input[type="text"], input[type="search"], input[type="password"], input[type="number"], select {
   width: 100%; font: inherit; color: var(--fg); background: var(--surface-2); padding: 9px 12px;
   border: 1px solid var(--line-strong); border-radius: var(--radius-sm); min-height: 40px; }
 input:hover, select:hover { border-color: var(--faint); }

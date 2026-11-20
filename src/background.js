@@ -10,6 +10,7 @@ const PAGE_CAPTION_HOLD_MS = 15000; // after a site caption, ignore speech recog
 const CACHE_SIZE = 400;
 const PREFETCH_LOW = 2; // translate ahead once fewer than this many upcoming cues are ready
 const ACTIVITY_DAYS = 400; // days of history kept for the activity view
+const WORDS_MAX = 1000; // lines kept in the word pool
 
 // ---- persistent state ----
 // session "capture": { tabId, speech, source, video } for the tab being captioned (cleared on browser restart).
@@ -362,6 +363,36 @@ async function prefetch(texts) {
   missing.forEach((text, i) => remember(cacheKey(settings, text, false), batch.then((items) => items[i])).catch(() => {}));
 }
 
+// ---- word pool: lines saved from the translation card, newest first ----
+const wordKey = (w) => `${baseLang(w.lang)}|${w.text}`;
+const str = (value, max) => String(value ?? "").slice(0, max);
+
+// Saves the line, or removes it if it's already saved. An undone removal keeps its date and place.
+function toggleWord(input) {
+  const word = {
+    text: str(input.text, 500),
+    translation: str(input.translation, 1000),
+    notes: (Array.isArray(input.notes) ? input.notes : [])
+      .slice(0, 5)
+      .map((n) => ({ phrase: str(n?.phrase, 200), meaning: str(n?.meaning, 500) })),
+    lang: str(input.lang, 20),
+    url: /^https?:/.test(input.url) ? str(input.url, 2000) : "",
+    savedAt: Number(input.savedAt) || Date.now(),
+  };
+  if (!word.text || !word.lang) return { saved: false };
+  return updateStore("words", () => [], (words) => {
+    const at = words.findIndex((w) => wordKey(w) === wordKey(word));
+    if (at >= 0) {
+      words.splice(at, 1);
+      return { saved: false };
+    }
+    const place = words.findIndex((w) => w.savedAt < word.savedAt);
+    words.splice(place < 0 ? words.length : place, 0, word);
+    words.length = Math.min(words.length, WORDS_MAX);
+    return { saved: true };
+  });
+}
+
 // ---- quiz ----
 let quizRunning = false;
 
@@ -466,6 +497,8 @@ const handlers = {
   // options.js / quiz.js
   listModels: (msg) => handleListModels(msg.provider, msg.key),
   quizAnswer: (msg) => answerQuiz(msg.index, msg.choice),
+  // overlay.js (the card) / words.js
+  toggleWord: (msg) => toggleWord(msg.word || {}),
   // overlay.js / reader.js
   translate: (msg) => handleTranslate(msg.text, msg.live),
   prefetch: async (msg, sender) => (await fromCapturedTab(sender)) && prefetch(msg.texts),

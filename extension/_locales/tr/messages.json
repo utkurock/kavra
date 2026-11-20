@@ -598,5 +598,38 @@
   },
   "quizResetNewVideo": {
     "message": "Yeni video: quiz baştan başlıyor."
+  },
+  "navWords": {
+    "message": "Kelime havuzu"
+  },
+  "wordsSubtitle": {
+    "message": "Çeviri kartından kaydettiğin satırlar, çevirileri ve notlarıyla."
+  },
+  "wordsSearch": {
+    "message": "Kayıtlarda ara"
+  },
+  "wordsCount": {
+    "message": "$1 kayıt"
+  },
+  "wordsEmpty": {
+    "message": "Henüz kayıt yok. Bir altyazı satırına tıkla, açılan kartta “+ Kelime havuzuna ekle”ye bas."
+  },
+  "wordsNoMatch": {
+    "message": "Aramana uyan kayıt yok."
+  },
+  "saveWord": {
+    "message": "+ Kelime havuzuna ekle"
+  },
+  "wordSaved": {
+    "message": "✓ Kelime havuzunda"
+  },
+  "removeWord": {
+    "message": "Sil"
+  },
+  "wordRemoved": {
+    "message": "Silindi."
+  },
+  "undo": {
+    "message": "Geri al"
   }
 }

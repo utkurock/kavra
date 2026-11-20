@@ -598,5 +598,38 @@
   },
   "quizResetNewVideo": {
     "message": "New video: the quiz starts over."
+  },
+  "navWords": {
+    "message": "Word pool"
+  },
+  "wordsSubtitle": {
+    "message": "Lines you saved from the translation card, with their translations and notes."
+  },
+  "wordsSearch": {
+    "message": "Search saved lines"
+  },
+  "wordsCount": {
+    "message": "$1 saved"
+  },
+  "wordsEmpty": {
+    "message": "Nothing saved yet. Click a subtitle line, then “+ Save to word pool” on its card."
+  },
+  "wordsNoMatch": {
+    "message": "No saved line matches your search."
+  },
+  "saveWord": {
+    "message": "+ Save to word pool"
+  },
+  "wordSaved": {
+    "message": "✓ In your word pool"
+  },
+  "removeWord": {
+    "message": "Remove"
+  },
+  "wordRemoved": {
+    "message": "Removed."
+  },
+  "undo": {
+    "message": "Undo"
   }
 }

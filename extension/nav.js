@@ -1,8 +1,9 @@
-// Top bar shared by the full-page views (activity, quiz, settings) so you can move between them.
+// Top bar shared by the full-page views (activity, word pool, quiz, settings) so you can move between them.
 (() => {
   const { t } = globalThis.Kavra;
   const PAGES = [
     ["activity.html", "tabActivity"],
+    ["words.html", "navWords"],
     ["quiz.html", "navQuiz"],
     ["options.html", "settings"],
   ];
