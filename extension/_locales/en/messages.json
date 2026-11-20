@@ -325,5 +325,11 @@
   },
   "footerPrivacy": {
     "message": "Your key stays in this browser"
+  },
+  "tabOverview": {
+    "message": "Overview"
+  },
+  "tabPreferences": {
+    "message": "Preferences"
   }
 }

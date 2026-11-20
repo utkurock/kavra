@@ -325,5 +325,11 @@
   },
   "footerPrivacy": {
     "message": "Anahtarın sadece bu tarayıcıda"
+  },
+  "tabOverview": {
+    "message": "Genel"
+  },
+  "tabPreferences": {
+    "message": "Tercihler"
   }
 }

@@ -5,9 +5,37 @@ let currentTabId;
 let state;
 let source = "auto";
 
+// One notice slot keeps the overview from growing: an error wins over the missing-key hint.
+let errorText = "";
+function showNotice() {
+  const missingKey = state && !state.hasKey;
+  $("notice").hidden = !errorText && !missingKey;
+  $("notice").className = `callout ${errorText ? "bad" : "warn"}`;
+  $("noticeText").textContent = errorText || t("noKeyWarning");
+  $("addKey").hidden = Boolean(errorText);
+}
 function showError(text) {
-  $("error").textContent = text;
-  $("error").hidden = !text;
+  errorText = text;
+  showNotice();
+}
+
+function selectTab(tab) {
+  for (const other of document.querySelectorAll('[role="tab"]')) {
+    const selected = other === tab;
+    other.ariaSelected = selected;
+    other.tabIndex = selected ? 0 : -1;
+    $(other.getAttribute("aria-controls")).inert = !selected;
+  }
+}
+const tabs = [...document.querySelectorAll('[role="tab"]')];
+for (const tab of tabs) {
+  tab.addEventListener("click", () => selectTab(tab));
+  tab.addEventListener("keydown", (e) => {
+    if (e.key !== "ArrowLeft" && e.key !== "ArrowRight") return;
+    const next = tabs[(tabs.indexOf(tab) + (e.key === "ArrowRight" ? 1 : tabs.length - 1)) % tabs.length];
+    selectTab(next);
+    next.focus();
+  });
 }
 
 function showMode(mode) {
@@ -22,7 +50,7 @@ async function refresh() {
   $("statusText").textContent = onThisTab ? t("pillLive") : state.activeTabId ? t("pillOther") : t("pillOff");
   $("toggle").textContent = onThisTab ? t("stopCaptions") : t("startCaptions");
   $("toggle").className = `btn block ${onThisTab ? "danger" : "primary"}`;
-  $("noKey").hidden = state.hasKey;
+  showNotice();
 
   const watchedMin = Math.floor(state.watchedMs / 60000);
   const pct = Math.min(100, Math.round((state.watchedMs / (state.quizMinutes * 60000)) * 100));
