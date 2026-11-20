@@ -559,5 +559,20 @@
   },
   "resetPos": {
     "message": "Reset"
+  },
+  "textSizeLabel": {
+    "message": "Text size"
+  },
+  "textSizeHelp": {
+    "message": "Smaller text leaves room for longer lines on the video."
+  },
+  "sizeSmall": {
+    "message": "Small"
+  },
+  "sizeMedium": {
+    "message": "Medium"
+  },
+  "sizeLarge": {
+    "message": "Large"
   }
 }

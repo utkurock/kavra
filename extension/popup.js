@@ -244,6 +244,9 @@ $("resetPos").addEventListener("click", async () => {
   await chrome.storage.local.set({ overlayPos: null });
   showPosition();
 });
+for (const input of document.querySelectorAll('input[name="textSize"]')) {
+  input.addEventListener("change", () => chrome.storage.local.set({ textSize: input.value }));
+}
 $("options").addEventListener("click", () => chrome.runtime.openOptionsPage());
 
 (async () => {
@@ -261,6 +264,7 @@ $("options").addEventListener("click", () => chrome.runtime.openOptionsPage());
   const settings = await getSettings();
   onboarded = settings.onboarded;
   showMode(settings.trMode);
+  $(`size-${settings.textSize}`).checked = true;
   source = settings.source;
   showPair(settings);
   $("sheetTarget").value = settings.targetLang;

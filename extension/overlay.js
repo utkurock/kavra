@@ -21,7 +21,7 @@
       /* Text scales with the player's width (the host is as wide as the player), not the window. */
       .frame { container-type: inline-size; width: 100%; }
       .wrap { display: flex; flex-direction: column; align-items: center; gap: 8px;
-        font: 600 clamp(13px, 2.3cqi, 24px)/1.35 system-ui, -apple-system, "Segoe UI", sans-serif; }
+        font: 600 calc(clamp(13px, 2.3cqi, 24px) * var(--scale, 1))/1.35 system-ui, -apple-system, "Segoe UI", sans-serif; }
       .box { max-width: 92%; display: flex; flex-direction: column; align-items: center; gap: 3px; }
       .line { pointer-events: auto; color: #fff; background: rgba(0,0,0,.74); padding: 2px 10px;
         border-radius: 6px; text-align: center; text-shadow: 0 1px 2px #000; }
@@ -78,8 +78,12 @@
   let statusTimer;
   let errorShown = "";
 
+  const TEXT_SCALE = { s: 0.8, m: 1, l: 1.2 };
+  const setTextSize = (size) => root.querySelector(".wrap").style.setProperty("--scale", TEXT_SCALE[size] ?? 1);
+
   getSettings().then(async (s) => {
     trMode = s.trMode;
+    setTextSize(s.textSize);
     locales = { orig: s.targetLang, trans: s.nativeLang };
     customPos = (await chrome.storage.local.get("overlayPos")).overlayPos ?? null;
     render();
@@ -502,6 +506,10 @@
       closeCard();
       line = previous = null;
       render();
+    }
+    if (changes.textSize) {
+      setTextSize(changes.textSize.newValue);
+      place();
     }
     if ("overlayPos" in changes) {
       customPos = changes.overlayPos.newValue ?? null;

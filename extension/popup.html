@@ -38,6 +38,8 @@
   .sheet label { display: block; font-size: 13px; color: var(--muted); margin-bottom: 6px; }
   .sheet .actions { margin-top: auto; }
   .error-text { color: var(--bad); font-size: 13px; }
+  .seg.compact { padding: 3px; gap: 2px; border-radius: 11px; }
+  .seg.compact label { padding: 3px 10px; font-size: 12px; border-radius: 8px; }
 </style>
 <div class="dotted">
   <header>
@@ -111,6 +113,14 @@
         <input type="radio" name="trMode" id="m-click" value="click"><label for="m-click" data-i18n="segClick"></label>
       </div>
       <p class="faint small" id="trModeHint"></p>
+      <div class="lang-row">
+        <span class="small muted" id="textSizeTitle" data-i18n="textSizeLabel"></span>
+        <div class="seg compact" role="radiogroup" aria-labelledby="textSizeTitle">
+          <input type="radio" name="textSize" id="size-s" value="s"><label for="size-s" data-i18n="sizeSmall"></label>
+          <input type="radio" name="textSize" id="size-m" value="m"><label for="size-m" data-i18n="sizeMedium"></label>
+          <input type="radio" name="textSize" id="size-l" value="l"><label for="size-l" data-i18n="sizeLarge"></label>
+        </div>
+      </div>
       <div class="lang-row">
         <span class="small muted"><span data-i18n="subtitlePos"></span>: <span id="posState"></span></span>
         <button id="resetPos" class="link-btn small muted" data-i18n="resetPos"></button>

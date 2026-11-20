@@ -35,6 +35,7 @@ globalThis.Kavra ??= (() => {
     quizMinutes: 20,
     source: "auto",
     trMode: "blur",
+    textSize: "m", // subtitle text: "s", "m" or "l"
     provider: "anthropic",
     apiKeys: {}, // provider id -> key, so switching providers keeps each key
     models: {}, // provider id -> model chosen by the user

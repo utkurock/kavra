@@ -559,5 +559,20 @@
   },
   "resetPos": {
     "message": "Sıfırla"
+  },
+  "textSizeLabel": {
+    "message": "Yazı boyutu"
+  },
+  "textSizeHelp": {
+    "message": "Küçük yazı videoda daha uzun satırlara yer açar."
+  },
+  "sizeSmall": {
+    "message": "Küçük"
+  },
+  "sizeMedium": {
+    "message": "Orta"
+  },
+  "sizeLarge": {
+    "message": "Büyük"
   }
 }

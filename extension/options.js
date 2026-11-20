@@ -1,7 +1,7 @@
 const { t, getSettings, baseLang, fillLanguageSelect, localizePage, TARGET_LOCALES, NATIVE_LANGS, LEVELS, PROVIDERS } =
   globalThis.Kavra;
 const $ = (id) => document.getElementById(id);
-const SELECTS = ["targetLang", "nativeLang", "level", "source"];
+const SELECTS = ["targetLang", "nativeLang", "level", "source", "textSize"];
 let settings;
 
 let toastTimer;
