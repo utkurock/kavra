@@ -48,7 +48,7 @@
     <button id="toggle" class="btn primary block"></button>
     <div id="notice" class="callout" role="status" hidden>
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 7v6M12 17h.01"/></svg>
-      <span><span id="noticeText"></span> <button id="addKey" class="link-btn" hidden data-i18n="openSettings"></button></span>
+      <span><span id="noticeText"></span> <button id="addKey" class="link-btn" hidden data-i18n="addKey" aria-haspopup="dialog"></button></span>
     </div>
     <div class="stats">
       <div class="stat"><span class="num" id="statMinutes">0</span><span class="lbl" data-i18n="statMinutes"></span></div>
@@ -80,6 +80,13 @@
 
   <section class="panel" id="panel-prefs" role="tabpanel" aria-labelledby="tab-prefs" inert>
     <div class="stack" style="gap:10px">
+      <div class="card-title" data-i18n="secProvider"></div>
+      <div class="lang-row">
+        <span class="chip"><span id="providerName"></span><span class="faint" id="keyState"></span></span>
+        <button id="changeKey" class="link-btn small muted" data-i18n="changeLanguages" aria-haspopup="dialog"></button>
+      </div>
+    </div>
+    <div class="stack" style="gap:10px">
       <div class="card-title" id="trModeTitle" data-i18n="trModeLabel"></div>
       <div class="seg" role="radiogroup" aria-labelledby="trModeTitle">
         <input type="radio" name="trMode" id="m-blur" value="blur"><label for="m-blur" data-i18n="segBlur"></label>
@@ -104,6 +111,24 @@
     <p id="sheetError" class="error-text" hidden data-i18n="sameLanguage"></p>
     <p class="faint small" data-i18n="secLanguagesHelp"></p>
     <div class="actions"><button id="sheetDone" class="btn primary block" data-i18n="done"></button></div>
+  </section>
+
+  <section class="sheet" id="keySheet" role="dialog" aria-modal="true" aria-labelledby="keySheetTitle" hidden>
+    <div class="card-title" id="keySheetTitle" data-i18n="secProvider"></div>
+    <div><label for="keyProvider" data-i18n="providerLabel"></label><select id="keyProvider"></select></div>
+    <div>
+      <label for="keyInput" data-i18n="apiKeyLabel"></label>
+      <div class="input-group">
+        <input id="keyInput" type="password" autocomplete="off" spellcheck="false">
+        <button type="button" id="keyToggle" class="btn secondary" data-i18n="show"></button>
+      </div>
+    </div>
+    <a id="keyLink" class="small" target="_blank" rel="noopener" data-i18n="getKey"></a>
+    <p class="faint small" data-i18n="footerPrivacy"></p>
+    <div class="actions row">
+      <button id="keyCancel" class="btn secondary" style="flex:1" data-i18n="cancel"></button>
+      <button id="keySave" class="btn primary" style="flex:1" data-i18n="saveKey"></button>
+    </div>
   </section>
 </div>
 <script src="settings.js"></script>

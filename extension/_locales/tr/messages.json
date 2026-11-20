@@ -209,9 +209,6 @@
   "errQuizEmpty": {
     "message": "Quiz oluşturulamadı."
   },
-  "openSettings": {
-    "message": "Ayarları aç"
-  },
   "segBlur": {
     "message": "Bulanık"
   },
@@ -439,5 +436,20 @@
   },
   "navLabel": {
     "message": "Kavra sayfaları"
+  },
+  "addKey": {
+    "message": "Anahtar ekle"
+  },
+  "keyAdded": {
+    "message": "anahtar eklendi"
+  },
+  "keyMissing": {
+    "message": "anahtar yok"
+  },
+  "saveKey": {
+    "message": "Kaydet"
+  },
+  "cancel": {
+    "message": "Vazgeç"
   }
 }

@@ -1,4 +1,4 @@
-const { t, getSettings, languageName, baseLang, fillLanguageSelect, localizePage, TARGET_LOCALES, NATIVE_LANGS } =
+const { t, getSettings, languageName, baseLang, fillLanguageSelect, localizePage, TARGET_LOCALES, NATIVE_LANGS, PROVIDERS } =
   globalThis.Kavra;
 const { summarize, render } = globalThis.KavraHeatmap;
 const $ = (id) => document.getElementById(id);
@@ -102,6 +102,31 @@ $("quizNow").addEventListener("click", async () => {
   refresh();
 });
 
+// ---- sheets: panels over the tabs for quick edits without leaving the popup ----
+const panels = [...document.querySelectorAll(".panel")];
+let openSheetState = null;
+function openSheet(sheet, focus, returnFocus) {
+  openSheetState = { sheet, returnFocus, inert: panels.map((panel) => panel.inert) };
+  for (const panel of panels) panel.inert = true;
+  sheet.hidden = false;
+  focus.focus();
+}
+function closeSheet() {
+  if (!openSheetState) return;
+  const { sheet, returnFocus, inert } = openSheetState;
+  openSheetState = null;
+  sheet.hidden = true;
+  panels.forEach((panel, i) => (panel.inert = inert[i]));
+  returnFocus.focus();
+}
+for (const sheet of document.querySelectorAll(".sheet")) {
+  sheet.addEventListener("keydown", (e) => {
+    if (e.key !== "Escape" || (sheet.id === "langSheet" && !sheetValid())) return;
+    e.preventDefault(); // keep the popup open
+    closeSheet();
+  });
+}
+
 // ---- language sheet ----
 function sheetValid() {
   const same = baseLang($("sheetTarget").value) === $("sheetNative").value;
@@ -114,29 +139,50 @@ async function saveSheet(field, value) {
   await chrome.storage.local.set({ [field]: value });
   showPair(await getSettings());
 }
-const panels = [...document.querySelectorAll(".panel")];
-let inertBeforeSheet = [];
-function openSheet() {
-  inertBeforeSheet = panels.map((panel) => panel.inert);
-  for (const panel of panels) panel.inert = true;
-  $("langSheet").hidden = false;
-  $("sheetTarget").focus();
-}
-function closeSheet() {
-  $("langSheet").hidden = true;
-  panels.forEach((panel, i) => (panel.inert = inertBeforeSheet[i]));
-  $("changeLang").focus();
-}
-$("changeLang").addEventListener("click", openSheet);
+$("changeLang").addEventListener("click", () => openSheet($("langSheet"), $("sheetTarget"), $("changeLang")));
 $("sheetDone").addEventListener("click", closeSheet);
-$("langSheet").addEventListener("keydown", (e) => {
-  if (e.key === "Escape" && sheetValid()) {
-    e.preventDefault(); // keep the popup open
-    closeSheet();
-  }
-});
 $("sheetTarget").addEventListener("change", () => saveSheet("targetLang", $("sheetTarget").value));
 $("sheetNative").addEventListener("change", () => saveSheet("nativeLang", $("sheetNative").value));
+
+// ---- API key sheet: pick a provider and paste its key ----
+let keySettings;
+function showKeyProvider(id) {
+  const provider = PROVIDERS[id];
+  $("keyProvider").value = id;
+  $("keyInput").value = keySettings.apiKeys[id] || "";
+  $("keyInput").placeholder = provider.keyHint;
+  $("keyLink").href = provider.keyUrl;
+}
+async function showProviderRow() {
+  keySettings = await getSettings();
+  $("providerName").textContent = PROVIDERS[keySettings.provider].name;
+  $("keyState").textContent = ` · ${t(keySettings.key ? "keyAdded" : "keyMissing")}`;
+}
+async function openKeySheet(returnFocus) {
+  if (!keySettings) await showProviderRow();
+  showKeyProvider(keySettings.provider);
+  openSheet($("keySheet"), $("keyInput"), returnFocus);
+}
+$("keyProvider").addEventListener("change", () => showKeyProvider($("keyProvider").value));
+$("keyToggle").addEventListener("click", () => {
+  const hidden = $("keyInput").type === "password";
+  $("keyInput").type = hidden ? "text" : "password";
+  $("keyToggle").textContent = hidden ? t("hide") : t("show");
+});
+$("keyCancel").addEventListener("click", closeSheet);
+$("keySave").addEventListener("click", async () => {
+  const provider = $("keyProvider").value;
+  await chrome.storage.local.remove("apiKey"); // single key stored by versions before 0.6
+  await chrome.storage.local.set({
+    provider,
+    apiKeys: { ...keySettings.apiKeys, [provider]: $("keyInput").value.trim() },
+  });
+  closeSheet();
+  await Promise.all([showProviderRow(), refresh()]);
+});
+$("keyInput").addEventListener("keydown", (e) => e.key === "Enter" && $("keySave").click());
+$("changeKey").addEventListener("click", () => openKeySheet($("changeKey")));
+$("addKey").addEventListener("click", () => openKeySheet($("addKey")));
 
 // ---- activity ----
 async function showActivity() {
@@ -166,13 +212,13 @@ for (const input of document.querySelectorAll('input[name="trMode"]')) {
   });
 }
 $("options").addEventListener("click", () => chrome.runtime.openOptionsPage());
-$("addKey").addEventListener("click", () => chrome.runtime.openOptionsPage());
 
 (async () => {
   localizePage();
   $("version").textContent = chrome.runtime.getManifest().version;
   fillLanguageSelect($("sheetTarget"), TARGET_LOCALES);
   fillLanguageSelect($("sheetNative"), NATIVE_LANGS);
+  for (const [id, provider] of Object.entries(PROVIDERS)) $("keyProvider").add(new Option(provider.name, id));
   const [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
   currentTabId = tab?.id;
   const settings = await getSettings();
@@ -181,5 +227,5 @@ $("addKey").addEventListener("click", () => chrome.runtime.openOptionsPage());
   showPair(settings);
   $("sheetTarget").value = settings.targetLang;
   $("sheetNative").value = settings.nativeLang;
-  await Promise.all([refresh(), showActivity()]);
+  await Promise.all([refresh(), showActivity(), showProviderRow()]);
 })();

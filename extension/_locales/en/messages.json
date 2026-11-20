@@ -209,9 +209,6 @@
   "errQuizEmpty": {
     "message": "Could not create the quiz."
   },
-  "openSettings": {
-    "message": "Open settings"
-  },
   "segBlur": {
     "message": "Blurred"
   },
@@ -439,5 +436,20 @@
   },
   "navLabel": {
     "message": "Kavra pages"
+  },
+  "addKey": {
+    "message": "Add key"
+  },
+  "keyAdded": {
+    "message": "key added"
+  },
+  "keyMissing": {
+    "message": "no key"
+  },
+  "saveKey": {
+    "message": "Save"
+  },
+  "cancel": {
+    "message": "Cancel"
   }
 }
