@@ -55,7 +55,7 @@
       // Translate the next cues ahead of time so they show up without delay, but only while the tab is
       // in view: a video playing in the background shouldn't spend tokens.
       const end = Math.max(...active.map((c) => c.endTime));
-      const upcoming = [...(track.cues || [])].filter((c) => c.startTime >= end).slice(0, 2);
+      const upcoming = [...(track.cues || [])].filter((c) => c.startTime >= end).slice(0, 6);
       if (upcoming.length && document.visibilityState === "visible") {
         send({ type: "prefetch", texts: upcoming.map((c) => clean(c.text)).filter(Boolean) });
       }

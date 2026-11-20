@@ -14,6 +14,7 @@ const LiveTranslationSchema = z.object({
 const TranslationSchema = LiveTranslationSchema.extend({
   notes: z.array(z.object({ phrase: z.string(), meaning: z.string() })),
 });
+const BatchSchema = z.object({ items: z.array(LiveTranslationSchema) });
 
 const QuizSchema = z.object({
   questions: z.array(
@@ -164,29 +165,52 @@ function names(settings) {
   return { target: languageName(settings.targetLang), native: languageName(settings.nativeLang) };
 }
 
+function translationSystem(settings, { withNotes = false, batch = false } = {}) {
+  const { target, native } = names(settings);
+  return (
+    `You help a learner whose native language is ${native} learn ${target} from videos. The ${target} ` +
+    "text comes from video subtitles or automatic speech recognition, so it may lack punctuation or " +
+    `contain small mistakes; translate what was most likely said. Give a natural ${native} translation ` +
+    (batch
+      ? "of each numbered line on its own. items has exactly one entry per line, in the same order.\n"
+      : "of the line.\n") +
+    "pairs: split the line into 2-6 meaningful chunks (phrases, not lone articles or fillers) and give " +
+    "the matching chunk of your translation for each, so the learner can see which part means what. " +
+    "original must be copied exactly from the line and translated exactly from your translation; chunks " +
+    "must not overlap. A one- or two-word line may have a single pair." +
+    (withNotes
+      ? "\nnotes: up to 3 idioms, phrasal verbs, slang or less common words from the line, each with its " +
+        `meaning in this context written in ${native}. Leave notes empty if the line is simple.`
+      : "")
+  );
+}
+
 // Live lines skip the notes and the model's thinking: a plain translation is quick, cheap work.
 export function translateLine(line, context, settings, { withNotes = false } = {}) {
-  const { target, native } = names(settings);
   return generateJSON(settings, {
     schema: withNotes ? TranslationSchema : LiveTranslationSchema,
     maxTokens: withNotes ? 2000 : 1000,
     effort: "low",
     think: false,
-    system:
-      `You help a learner whose native language is ${native} learn ${target} from videos. The ${target} ` +
-      "text comes from video subtitles or automatic speech recognition, so it may lack punctuation or " +
-      `contain small mistakes; translate what was most likely said. Give a natural ${native} translation ` +
-      "of the line.\n" +
-      "pairs: split the line into 2-6 meaningful chunks (phrases, not lone articles or fillers) and give " +
-      "the matching chunk of your translation for each, so the learner can see which part means what. " +
-      "original must be copied exactly from the line and translated exactly from your translation; chunks " +
-      "must not overlap. A one- or two-word line may have a single pair." +
-      (withNotes
-        ? "\nnotes: up to 3 idioms, phrasal verbs, slang or less common words from the line, each with its " +
-          `meaning in this context written in ${native}. Leave notes empty if the line is simple.`
-        : ""),
+    system: translationSystem(settings, { withNotes }),
     user: `Preceding lines (context only):\n${context || "(none)"}\n\nLine to translate:\n${line}`,
   });
+}
+
+// Several upcoming lines in one request, so the instructions are sent once for all of them.
+export async function translateBatch(lines, context, settings) {
+  const { items } = await generateJSON(settings, {
+    schema: BatchSchema,
+    maxTokens: 1000 + 400 * lines.length,
+    effort: "low",
+    think: false,
+    system: translationSystem(settings, { batch: true }),
+    user:
+      `Preceding lines (context only):\n${context || "(none)"}\n\n` +
+      `Lines to translate:\n${lines.map((line, i) => `${i + 1}. ${line}`).join("\n")}`,
+  });
+  if (items.length !== lines.length) throw new Error(t("errUnreadable"));
+  return items;
 }
 
 export async function generateQuiz(lines, struggledLines, settings) {

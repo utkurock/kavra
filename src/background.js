@@ -1,13 +1,14 @@
 // Service worker: owns capture state, picks the caption source, routes captions to the page,
 // and runs translation and quizzes.
 import "../extension/settings.js";
-import { translateLine, generateQuiz, listModels, friendlyError } from "./llm.js";
+import { translateLine, translateBatch, generateQuiz, listModels, friendlyError } from "./llm.js";
 
 const { getSettings, t, dayKey, baseLang, languageName } = globalThis.Kavra;
 const MAX_GAP_MS = 30000; // silence longer than this does not count as watch time
 const MIN_QUIZ_LINES = 8;
 const PAGE_CAPTION_HOLD_MS = 15000; // after a site caption, ignore speech recognition this long
 const CACHE_SIZE = 400;
+const PREFETCH_LOW = 2; // translate ahead once fewer than this many upcoming cues are ready
 const ACTIVITY_DAYS = 400; // days of history kept for the activity view
 
 // ---- persistent state ----
@@ -303,15 +304,28 @@ async function onSpeechError(code, detail) {
 // Live lines are translated without notes (fewer output tokens); a click asks for the full version.
 const cache = new Map(); // "provider|model|native|live-or-full|text" -> Promise<result>
 
+const cacheKey = (settings, text, withNotes) =>
+  [settings.provider, settings.model, settings.nativeLang, withNotes ? "full" : "live", text].join("|");
+
+function remember(key, promise) {
+  cache.set(key, promise);
+  promise.catch(() => cache.delete(key)); // a failed line is asked for again next time
+  while (cache.size > CACHE_SIZE) cache.delete(cache.keys().next().value);
+  return promise;
+}
+
 async function translateCached(text, context = "", withNotes = false) {
   const settings = await getSettings();
-  const key = [settings.provider, settings.model, settings.nativeLang, withNotes ? "full" : "live", text].join("|");
-  if (cache.has(key)) return cache.get(key);
-  const promise = translateLine(text, context, settings, { withNotes });
-  cache.set(key, promise);
-  promise.catch(() => cache.delete(key));
-  if (cache.size > CACHE_SIZE) cache.delete(cache.keys().next().value);
-  return promise;
+  const key = cacheKey(settings, text, withNotes);
+  return cache.get(key) ?? remember(key, translateLine(text, context, settings, { withNotes }));
+}
+
+// The last lines heard, as context for a translation.
+async function recentContext(text) {
+  const { progress } = await chrome.storage.local.get("progress");
+  const lines = progress?.lines || [];
+  const idx = text == null ? lines.length : lines.lastIndexOf(text);
+  return (idx > 0 ? lines.slice(Math.max(0, idx - 2), idx) : []).join("\n");
 }
 
 async function markStruggled(text) {
@@ -325,10 +339,7 @@ async function markStruggled(text) {
 
 async function handleTranslate(text, live) {
   if (!live) await markStruggled(text);
-  const { progress } = await chrome.storage.local.get("progress");
-  const lines = progress?.lines || [];
-  const idx = lines.lastIndexOf(text);
-  const context = (idx > 0 ? lines.slice(Math.max(0, idx - 2), idx) : []).join("\n");
+  const context = await recentContext(text);
   try {
     return { ok: true, ...(await translateCached(text, context, !live)) };
   } catch (err) {
@@ -336,9 +347,18 @@ async function handleTranslate(text, live) {
   }
 }
 
+// Upcoming subtitle cues are translated together in one request: the instructions, most of each
+// request, are sent once for several lines. It waits until the cues ready ahead run low, so every
+// request carries a handful of lines. Lines that are only translated when asked for skip this.
 async function prefetch(texts) {
-  if (!(await getSettings()).key) return;
-  for (const text of texts.map(spokenText).filter((t) => /\p{L}/u.test(t))) translateCached(text).catch(() => {});
+  const settings = await getSettings();
+  if (!settings.key || settings.trMode === "click" || (settings.trMode === "blur" && settings.lazyTranslate)) return;
+  const upcoming = [...new Set(texts.map(spokenText).filter((t) => /\p{L}/u.test(t)))];
+  const missing = upcoming.filter((text) => !cache.has(cacheKey(settings, text, false)));
+  if (!upcoming.slice(0, PREFETCH_LOW).some((text) => missing.includes(text))) return;
+  const batch = translateBatch(missing, await recentContext(), settings);
+  batch.catch(() => {});
+  missing.forEach((text, i) => remember(cacheKey(settings, text, false), batch.then((items) => items[i])).catch(() => {}));
 }
 
 // ---- quiz ----
