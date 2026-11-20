@@ -1,0 +1,18 @@
+{
+  "name": "lingo-captions",
+  "version": "0.3.0",
+  "description": "Chrome extension for learning a language from any video: live subtitles, colour-matched translations and quizzes with Claude Haiku",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "build": "esbuild src/background.js --bundle --format=esm --target=chrome116 --minify --outfile=extension/background.js",
+    "watch": "npm run build -- --watch"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^1.11.0",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "esbuild": "^0.28.2"
+  }
+}
