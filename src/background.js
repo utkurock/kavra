@@ -96,6 +96,7 @@ async function stopCaptions(message) {
   pendingSpeech = "";
   clearTimeout(pendingTimer);
   clearTimeout(silenceTimer);
+  videoPaused = false;
   mismatchStreak = 0;
   mismatchWarned = false;
   if (capture) toAllFrames(capture.tabId, { type: "stop", message });
@@ -153,9 +154,20 @@ let pendingSpeech = "";
 let pendingTimer;
 let silenceTimer;
 
+let videoPaused = false;
+
 function onSilence(tabId, ms = SILENCE_MS) {
   clearTimeout(silenceTimer);
+  if (videoPaused) return; // a paused video is silent, but its line should stay to be read
   silenceTimer = setTimeout(() => toAllFrames(tabId, { type: "clear" }), ms);
+}
+
+// Pausing holds the line on screen; playing again lets it go after the usual silence.
+function onPlayback(tabId, paused) {
+  videoPaused = paused;
+  toAllFrames(tabId, { type: "hold", on: paused });
+  if (paused) clearTimeout(silenceTimer);
+  else onSilence(tabId);
 }
 
 function flushSpeech(tabId) {
@@ -372,6 +384,7 @@ const handlers = {
   media: (msg, sender) => sender.tab && toAllFrames(sender.tab.id, { type: "media", action: msg.action }),
   pageCaption: async (msg, sender) => (await fromCapturedTab(sender)) && onCaption(msg.text, msg.final, "page"),
   framesChanged: async (msg, sender) => (await fromCapturedTab(sender)) && injectScripts(sender.tab.id).catch(() => {}),
+  playback: async (msg, sender) => (await fromCapturedTab(sender)) && onPlayback(sender.tab.id, msg.paused),
   pageClear: async (msg, sender) => (await fromCapturedTab(sender)) && onSilence(sender.tab.id),
   // offscreen.js
   caption: (msg) => onCaption(msg.text, msg.final, "speech"),

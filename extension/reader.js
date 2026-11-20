@@ -203,6 +203,14 @@
     wasShowing = visible.length > 0;
   }
 
+  // ---- playback: while a video is paused its subtitles stay on screen ----
+  // Media events don't bubble, so they're caught on the way down.
+  function onPlayback(e) {
+    if (e.target instanceof HTMLVideoElement) send({ type: "playback", paused: e.type === "pause" });
+  }
+  document.addEventListener("pause", onPlayback, true);
+  document.addEventListener("play", onPlayback, true);
+
   // ---- video control (requested by the overlay or before a quiz) ----
   let pausedByUs = [];
   function media(action) {
@@ -259,6 +267,8 @@
     hideStyle?.remove();
     observer?.disconnect();
     releaseAuto();
+    document.removeEventListener("pause", onPlayback, true);
+    document.removeEventListener("play", onPlayback, true);
     try {
       chrome.storage.onChanged.removeListener(onStorage);
       chrome.runtime.onMessage.removeListener(onMessage);
