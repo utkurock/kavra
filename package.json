@@ -1,5 +1,5 @@
 {
-  "name": "lingo-captions",
+  "name": "kavra",
   "version": "0.3.0",
   "description": "Chrome extension for learning a language from any video: live subtitles, colour-matched translations and quizzes with Claude Haiku",
   "private": true,

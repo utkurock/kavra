@@ -1,4 +1,4 @@
-const { t, getSettings, languageName, baseLang, localizePage, TARGET_LOCALES, NATIVE_LANGS, LEVELS } = globalThis.Lingo;
+const { t, getSettings, languageName, baseLang, localizePage, TARGET_LOCALES, NATIVE_LANGS, LEVELS } = globalThis.Kavra;
 const $ = (id) => document.getElementById(id);
 const ALL_SITES = { origins: ["<all_urls>"] };
 const FIELDS = ["targetLang", "nativeLang", "level", "source", "trMode", "quizMinutes"];

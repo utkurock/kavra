@@ -1,6 +1,6 @@
 // Shared by every extension context: pages, content scripts and (bundled into) the service worker.
 // A classic script that may be injected more than once, so it only defines a global once.
-globalThis.Lingo ??= (() => {
+globalThis.Kavra ??= (() => {
   // Languages offered as "the language you're learning", as speech-recognition locales.
   const TARGET_LOCALES = [
     "en-US", "en-GB", "en-AU", "en-IN", "de-DE", "fr-FR", "es-ES", "es-MX", "it-IT", "pt-BR", "pt-PT",

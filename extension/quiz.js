@@ -1,4 +1,4 @@
-const { t, localizePage } = globalThis.Lingo;
+const { t, localizePage } = globalThis.Kavra;
 const $ = (id) => document.getElementById(id);
 const KIND = { comprehension: "kindComprehension", vocabulary: "kindVocabulary", listening: "kindListening" };
 

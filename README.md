@@ -1,4 +1,6 @@
-# Lingo Captions
+# Kavra
+
+*Kavra* is Turkish for "grasp": understand what's said, not just read the translation.
 
 A Chrome extension for learning a language from any video on the web: YouTube, Netflix, or any site with a video player. Pick the language you're learning and your own language. The extension then shows live subtitles with a colour-matched translation underneath, explains a line when you click it, and quizzes you on what you watched.
 

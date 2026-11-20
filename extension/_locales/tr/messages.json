@@ -1,6 +1,6 @@
 {
   "extName": {
-    "message": "Lingo Captions"
+    "message": "Kavra"
   },
   "extDescription": {
     "message": "Webdeki her videodan dil öğren: canlı altyazı, renk eşleşmeli çeviri ve quiz. Claude Haiku ile."
@@ -69,7 +69,7 @@
     "message": "Quiz oluşturulamadı."
   },
   "optionsTitle": {
-    "message": "Lingo Captions ayarları"
+    "message": "Kavra ayarları"
   },
   "targetLangLabel": {
     "message": "Öğrendiğin dil"

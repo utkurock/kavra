@@ -4,7 +4,7 @@ import { z } from "zod";
 import { zodOutputFormat } from "@anthropic-ai/sdk/helpers/zod";
 import "../extension/settings.js";
 
-const { t, languageName, baseLang } = globalThis.Lingo;
+const { t, languageName, baseLang } = globalThis.Kavra;
 const MODEL = "claude-haiku-5-5";
 
 const TranslationSchema = z.object({

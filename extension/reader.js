@@ -1,13 +1,13 @@
 // Runs in every frame of the captioned tab: reads the site's own subtitles and pauses/resumes videos.
 (() => {
-  if (window.__lingoReader) return;
-  window.__lingoReader = true;
+  if (window.__kavraReader) return;
+  window.__kavraReader = true;
 
   const clean = (s) => s.replace(/<[^>]*>/g, " ").replace(/\s+/g, " ").trim();
   const send = (message) => chrome.runtime.sendMessage(message).catch(() => {});
   const emit = (text, final) => send({ type: "pageCaption", text, final });
 
-  const { getSettings, baseLang, languageName } = globalThis.Lingo;
+  const { getSettings, baseLang, languageName } = globalThis.Kavra;
   let isTarget = () => false;
 
   // ---- 1. Standard HTML5 subtitle tracks (<track>, most generic players) ----
@@ -116,7 +116,7 @@
   let scanTimer;
   let domTimer;
   getSettings().then(({ targetLang }) => {
-    if (!window.__lingoReader) return; // stopped meanwhile
+    if (!window.__kavraReader) return; // stopped meanwhile
     // Match tracks of the language being learned by code, or by name when the site gives no code.
     const base = baseLang(targetLang);
     const labels = [languageName(base), languageName(base, base)].map((n) => n.toLowerCase());
@@ -136,7 +136,7 @@
     }
     hideStyle?.remove();
     chrome.runtime.onMessage.removeListener(onMessage);
-    window.__lingoReader = false;
+    window.__kavraReader = false;
   }
 
   function onMessage(msg) {

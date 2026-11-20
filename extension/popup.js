@@ -1,4 +1,4 @@
-const { t, getSettings, languageName, localizePage } = globalThis.Lingo;
+const { t, getSettings, languageName, localizePage } = globalThis.Kavra;
 const $ = (id) => document.getElementById(id);
 let currentTabId;
 let state;

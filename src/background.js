@@ -3,7 +3,7 @@
 import "../extension/settings.js";
 import { translateLine, generateQuiz, friendlyError } from "./claude.js";
 
-const { getSettings, t } = globalThis.Lingo;
+const { getSettings, t } = globalThis.Kavra;
 const MAX_GAP_MS = 30000; // silence longer than this does not count as watch time
 const MIN_QUIZ_LINES = 8;
 const PAGE_CAPTION_HOLD_MS = 15000; // after a site caption, ignore speech recognition this long

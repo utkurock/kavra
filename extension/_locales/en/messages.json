@@ -1,6 +1,6 @@
 {
   "extName": {
-    "message": "Lingo Captions"
+    "message": "Kavra"
   },
   "extDescription": {
     "message": "Learn a language from any video on the web: live subtitles, colour-matched translations and quizzes, powered by Claude Haiku."
@@ -69,7 +69,7 @@
     "message": "Could not create the quiz."
   },
   "optionsTitle": {
-    "message": "Lingo Captions settings"
+    "message": "Kavra settings"
   },
   "targetLangLabel": {
     "message": "Language you're learning"

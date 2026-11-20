@@ -1,10 +1,10 @@
 // Subtitle overlay in the captioned tab's top frame: the original line, a colour-matched translation
 // line, and a translation card on click.
 (() => {
-  if (window.__lingoOverlay) return;
-  window.__lingoOverlay = true;
+  if (window.__kavraOverlay) return;
+  window.__kavraOverlay = true;
 
-  const { t, getSettings } = globalThis.Lingo;
+  const { t, getSettings } = globalThis.Kavra;
   const MAX_FINAL_LINES = 2;
   const STRUGGLE_HOVER_MS = 800;
   const COLORS = ["#ffd54a", "#7fdbff", "#ff9eb5", "#a5e88f", "#ffb36b", "#c9a7ff"];
@@ -276,7 +276,7 @@
     chrome.storage.onChanged.removeListener(onStorage);
     document.removeEventListener("fullscreenchange", attach);
     document.removeEventListener("keydown", onKeydown);
-    window.__lingoOverlay = false;
+    window.__kavraOverlay = false;
     closeCard();
     finals.length = 0;
     interim = "";
