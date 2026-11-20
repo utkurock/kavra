@@ -77,12 +77,6 @@
   "sourceHelp": {
     "message": "The site's own subtitles are more accurate and have no delay; turn on subtitles in the language you're learning in the player (CC on YouTube). Speech recognition is for videos without subtitles."
   },
-  "framesLabel": {
-    "message": "Read subtitles in embedded players"
-  },
-  "framesHelp": {
-    "message": "Some sites play the video from another site inside an iframe. Reading those subtitles needs access to all sites; without it, speech recognition is used there."
-  },
   "quizMinutesLabel": {
     "message": "Quiz after"
   },

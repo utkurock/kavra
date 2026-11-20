@@ -77,12 +77,6 @@
   "sourceHelp": {
     "message": "Sitenin altyazısı daha doğru ve gecikmesizdir; oynatıcıda öğrendiğin dildeki altyazıyı aç (YouTube'da CC). Ses tanıma, altyazısı olmayan videolar içindir."
   },
-  "framesLabel": {
-    "message": "Gömülü oynatıcılardaki altyazıyı oku"
-  },
-  "framesHelp": {
-    "message": "Bazı siteler videoyu başka bir siteden gömülü (iframe) oynatır. O altyazıları okumak için tüm sitelere erişim izni gerekir; vermezsen bu sitelerde ses tanıma kullanılır."
-  },
   "quizMinutesLabel": {
     "message": "Quiz sıklığı"
   },

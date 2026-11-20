@@ -9,7 +9,7 @@ Translations and quizzes are made by the AI provider you choose (Anthropic Claud
 ## Features
 
 - **Any language pair.** For example English → Turkish, German → English or Japanese → Spanish. Choose both languages in Settings.
-- **Works on any site.** The extension reads the site's own subtitles: standard HTML5 `<track>` subtitles, YouTube and Netflix. When a video has no subtitles, it turns the tab's audio into text with Chrome's speech recognition.
+- **Works on any site.** The extension reads the site's own subtitles: HTML5 `<track>` subtitles, YouTube, Netflix, common web players (JW Player, Video.js, Plyr, Shaka, MediaElement, Flowplayer, ArtPlayer, DPlayer, Vidstack, Clappr), and for any other player it finds the element whose text keeps changing over the video. Players embedded from another site are read too. When a video has no subtitles, it turns the tab's audio into text with Chrome's speech recognition.
 - **Colour-matched dual subtitles.** Chunks of the original line and of the translation that mean the same thing share a colour.
 - **Three translation modes:**
   - **Blurred:** the translation stays blurred until you hover over it, so you try to understand first.
@@ -66,7 +66,8 @@ Each translated line is one small request and each quiz is one larger request, b
 ## Limitations
 
 - Recognising speech from tab audio needs a recent version of Chrome. On older versions you'll see an error, and you can still use the site's own subtitles.
-- To read subtitles in players embedded from another site (an iframe), allow **Embedded players** in Settings. Chrome will ask for access to all sites. If the player loads after you start captions, stop and start them again.
+- Chrome asks for access to all sites when you install Kavra, because players are often embedded from another site. Kavra only runs in a tab after you switch subtitles on there.
+- For an unknown player, Kavra needs to see three subtitle lines change before it recognises the subtitle box, so the first lines can come from speech recognition.
 - The YouTube and Netflix readers depend on how those sites build their pages and may need updating when the sites change.
 - If a video inside an `<iframe>` goes fullscreen, the extension's subtitles aren't visible in fullscreen.
 - YouTube's auto-generated subtitles sometimes arrive as two pieces of one sentence.

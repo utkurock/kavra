@@ -1,7 +1,6 @@
 const { t, getSettings, baseLang, fillLanguageSelect, localizePage, TARGET_LOCALES, NATIVE_LANGS, LEVELS, PROVIDERS } =
   globalThis.Kavra;
 const $ = (id) => document.getElementById(id);
-const ALL_SITES = { origins: ["<all_urls>"] };
 const SELECTS = ["targetLang", "nativeLang", "level", "source"];
 let settings;
 
@@ -102,13 +101,6 @@ $("toggleKey").addEventListener("click", () => {
   $("toggleKey").textContent = hidden ? t("hide") : t("show");
 });
 
-$("framesPerm").addEventListener("change", async () => {
-  const want = $("framesPerm").checked;
-  const granted = want ? await chrome.permissions.request(ALL_SITES) : !(await chrome.permissions.remove(ALL_SITES));
-  $("framesPerm").checked = granted;
-  if (granted === want) toast(t("savedShort"));
-});
-
 $("form").addEventListener("submit", (e) => e.preventDefault());
 
 (async () => {
@@ -123,5 +115,4 @@ $("form").addEventListener("submit", (e) => e.preventDefault());
   $("quizMinutes").value = settings.quizMinutes;
   document.querySelector(`input[name="trMode"][value="${settings.trMode}"]`).checked = true;
   showProvider();
-  $("framesPerm").checked = await chrome.permissions.contains(ALL_SITES);
 })();
