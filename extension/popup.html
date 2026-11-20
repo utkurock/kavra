@@ -8,13 +8,24 @@
   body { width: 360px; }
   header { display: flex; align-items: center; justify-content: space-between; padding: 20px 18px 10px; }
   .tabs { margin: 0 18px; }
-  /* Both panels share one grid cell, so switching tabs never changes the popup's size. */
-  .panels { display: grid; }
+  /* All panels share one grid cell, so switching tabs never changes the popup's size. */
+  .panels { display: grid; position: relative; }
   .panel { grid-area: 1 / 1; display: flex; flex-direction: column; gap: 14px; padding: 16px 18px 18px; }
   .panel[inert] { visibility: hidden; }
   .lang-row { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
   .stat .progress { margin-top: 10px; }
+  .stats.three { grid-template-columns: repeat(3, 1fr); }
+  .stats.three .stat { padding: 12px 12px 11px; }
+  .stats.three .num { font-size: 22px; }
+  .stats.three .lbl { font-size: 12px; }
   .panel .footer { margin: auto -18px -18px; }
+  #heatmap { --cell: 15px; }
+  /* language sheet slides over the panels */
+  .sheet { position: absolute; inset: 0; z-index: 2; background: var(--bg); padding: 16px 18px 18px;
+    display: flex; flex-direction: column; gap: 12px; }
+  .sheet label { display: block; font-size: 13px; color: var(--muted); margin-bottom: 6px; }
+  .sheet .actions { margin-top: auto; }
+  .error-text { color: var(--bad); font-size: 13px; }
 </style>
 <div class="dotted">
   <header>
@@ -23,6 +34,7 @@
   </header>
   <div class="tabs" role="tablist">
     <button class="tab" role="tab" id="tab-overview" aria-controls="panel-overview" aria-selected="true" data-i18n="tabOverview"></button>
+    <button class="tab" role="tab" id="tab-activity" aria-controls="panel-activity" aria-selected="false" tabindex="-1" data-i18n="tabActivity"></button>
     <button class="tab" role="tab" id="tab-prefs" aria-controls="panel-prefs" aria-selected="false" tabindex="-1" data-i18n="tabPreferences"></button>
   </div>
 </div>
@@ -31,7 +43,7 @@
   <section class="panel" id="panel-overview" role="tabpanel" aria-labelledby="tab-overview">
     <div class="lang-row">
       <span id="pair" class="chip"></span>
-      <button id="changeLang" class="link-btn small muted" data-i18n="changeLanguages"></button>
+      <button id="changeLang" class="link-btn small muted" data-i18n="changeLanguages" aria-haspopup="dialog"></button>
     </div>
     <button id="toggle" class="btn primary block"></button>
     <div id="notice" class="callout" role="status" hidden>
@@ -48,6 +60,22 @@
       </div>
     </div>
     <button id="quizNow" class="btn secondary block" data-i18n="quizNow"></button>
+  </section>
+
+  <section class="panel" id="panel-activity" role="tabpanel" aria-labelledby="tab-activity" inert>
+    <div class="row between">
+      <span class="card-title" data-i18n="lastWeeks"></span>
+      <a href="activity.html" target="_blank" class="small" data-i18n="seeAllActivity"></a>
+    </div>
+    <div id="heatmap" class="heatmap" role="img"></div>
+    <div class="hm-legend" aria-hidden="true">
+      <span data-i18n="less"></span><i class="hm-cell" data-level="0"></i><i class="hm-cell" data-level="1"></i><i class="hm-cell" data-level="2"></i><i class="hm-cell" data-level="3"></i><i class="hm-cell" data-level="4"></i><span data-i18n="more"></span>
+    </div>
+    <div class="stats three">
+      <div class="stat"><span class="num" id="actToday">0</span><span class="lbl" data-i18n="minToday"></span></div>
+      <div class="stat"><span class="num hue-1" id="actStreak">0</span><span class="lbl" data-i18n="dayStreak"></span></div>
+      <div class="stat"><span class="num hue-2" id="actAccuracy">–</span><span class="lbl" data-i18n="quizAccuracy"></span></div>
+    </div>
   </section>
 
   <section class="panel" id="panel-prefs" role="tabpanel" aria-labelledby="tab-prefs" inert>
@@ -68,7 +96,17 @@
       </nav>
     </footer>
   </section>
+
+  <section class="sheet" id="langSheet" role="dialog" aria-modal="true" aria-labelledby="langSheetTitle" hidden>
+    <div class="card-title" id="langSheetTitle" data-i18n="secLanguages"></div>
+    <div><label for="sheetTarget" data-i18n="targetLangLabel"></label><select id="sheetTarget"></select></div>
+    <div><label for="sheetNative" data-i18n="nativeLangLabel"></label><select id="sheetNative"></select></div>
+    <p id="sheetError" class="error-text" hidden data-i18n="sameLanguage"></p>
+    <p class="faint small" data-i18n="secLanguagesHelp"></p>
+    <div class="actions"><button id="sheetDone" class="btn primary block" data-i18n="done"></button></div>
+  </section>
 </div>
 <script src="settings.js"></script>
+<script src="heatmap.js"></script>
 <script src="popup.js"></script>
 </html>

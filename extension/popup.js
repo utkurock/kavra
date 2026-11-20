@@ -1,11 +1,14 @@
-const { t, getSettings, languageName, baseLang, localizePage } = globalThis.Kavra;
+const { t, getSettings, languageName, baseLang, fillLanguageSelect, localizePage, TARGET_LOCALES, NATIVE_LANGS } =
+  globalThis.Kavra;
+const { summarize, render } = globalThis.KavraHeatmap;
 const $ = (id) => document.getElementById(id);
 const MODE_HINT = { blur: "trModeBlur", always: "trModeAlways", click: "trModeClick" };
+const ui = chrome.i18n.getUILanguage();
 let currentTabId;
 let state;
 let source = "auto";
 
-// One notice slot keeps the overview from growing: an error wins over the missing-key hint.
+// ---- notices: one slot keeps the overview from growing; an error wins over the missing-key hint ----
 let errorText = "";
 function showNotice() {
   const missingKey = state && !state.hasKey;
@@ -19,15 +22,16 @@ function showError(text) {
   showNotice();
 }
 
+// ---- tabs ----
+const tabs = [...document.querySelectorAll('[role="tab"]')];
 function selectTab(tab) {
-  for (const other of document.querySelectorAll('[role="tab"]')) {
+  for (const other of tabs) {
     const selected = other === tab;
     other.ariaSelected = selected;
     other.tabIndex = selected ? 0 : -1;
     $(other.getAttribute("aria-controls")).inert = !selected;
   }
 }
-const tabs = [...document.querySelectorAll('[role="tab"]')];
 for (const tab of tabs) {
   tab.addEventListener("click", () => selectTab(tab));
   tab.addEventListener("keydown", (e) => {
@@ -38,9 +42,12 @@ for (const tab of tabs) {
   });
 }
 
-function showMode(mode) {
-  $(`m-${mode}`).checked = true;
-  $("trModeHint").textContent = t(MODE_HINT[mode]);
+// ---- overview ----
+function showPair(settings) {
+  $("pair").textContent = `${languageName(baseLang(settings.targetLang), ui)} → ${languageName(settings.nativeLang, ui)}`;
+  $("pair").title =
+    `${t("targetLangLabel")}: ${languageName(settings.targetLang, ui)} · ` +
+    `${t("nativeLangLabel")}: ${languageName(settings.nativeLang, ui)}`;
 }
 
 async function refresh() {
@@ -95,6 +102,63 @@ $("quizNow").addEventListener("click", async () => {
   refresh();
 });
 
+// ---- language sheet ----
+function sheetValid() {
+  const same = baseLang($("sheetTarget").value) === $("sheetNative").value;
+  $("sheetError").hidden = !same;
+  $("sheetDone").disabled = same;
+  return !same;
+}
+async function saveSheet(field, value) {
+  if (!sheetValid()) return;
+  await chrome.storage.local.set({ [field]: value });
+  showPair(await getSettings());
+}
+const panels = [...document.querySelectorAll(".panel")];
+let inertBeforeSheet = [];
+function openSheet() {
+  inertBeforeSheet = panels.map((panel) => panel.inert);
+  for (const panel of panels) panel.inert = true;
+  $("langSheet").hidden = false;
+  $("sheetTarget").focus();
+}
+function closeSheet() {
+  $("langSheet").hidden = true;
+  panels.forEach((panel, i) => (panel.inert = inertBeforeSheet[i]));
+  $("changeLang").focus();
+}
+$("changeLang").addEventListener("click", openSheet);
+$("sheetDone").addEventListener("click", closeSheet);
+$("langSheet").addEventListener("keydown", (e) => {
+  if (e.key === "Escape" && sheetValid()) {
+    e.preventDefault(); // keep the popup open
+    closeSheet();
+  }
+});
+$("sheetTarget").addEventListener("change", () => saveSheet("targetLang", $("sheetTarget").value));
+$("sheetNative").addEventListener("change", () => saveSheet("nativeLang", $("sheetNative").value));
+
+// ---- activity ----
+async function showActivity() {
+  const { activity = {} } = await chrome.storage.local.get("activity");
+  const sum = summarize(activity);
+  $("actToday").textContent = Math.round(sum.today.ms / 60000);
+  $("actStreak").textContent = sum.streak;
+  $("actAccuracy").textContent = sum.accuracy == null ? "–" : `${sum.accuracy}%`;
+  render($("heatmap"), activity, {
+    weeks: 18,
+    monthLocale: ui,
+    tooltip: (date, day) =>
+      t("dayTooltip", date.toLocaleDateString(ui, { day: "numeric", month: "short" }), Math.round(day.ms / 60000), day.correct, day.wrong),
+  });
+  $("heatmap").ariaLabel = t("heatmapLabel", Math.round(sum.ms / 60000), sum.activeDays);
+}
+
+// ---- preferences ----
+function showMode(mode) {
+  $(`m-${mode}`).checked = true;
+  $("trModeHint").textContent = t(MODE_HINT[mode]);
+}
 for (const input of document.querySelectorAll('input[name="trMode"]')) {
   input.addEventListener("change", () => {
     showMode(input.value);
@@ -103,18 +167,19 @@ for (const input of document.querySelectorAll('input[name="trMode"]')) {
 }
 $("options").addEventListener("click", () => chrome.runtime.openOptionsPage());
 $("addKey").addEventListener("click", () => chrome.runtime.openOptionsPage());
-$("changeLang").addEventListener("click", () => chrome.runtime.openOptionsPage());
 
 (async () => {
   localizePage();
   $("version").textContent = chrome.runtime.getManifest().version;
+  fillLanguageSelect($("sheetTarget"), TARGET_LOCALES);
+  fillLanguageSelect($("sheetNative"), NATIVE_LANGS);
   const [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
   currentTabId = tab?.id;
   const settings = await getSettings();
   showMode(settings.trMode);
   source = settings.source;
-  const ui = chrome.i18n.getUILanguage();
-  $("pair").textContent = `${languageName(baseLang(settings.targetLang), ui)} → ${languageName(settings.nativeLang, ui)}`;
-  $("pair").title = `${languageName(settings.targetLang, ui)} → ${languageName(settings.nativeLang, ui)}`;
-  await refresh();
+  showPair(settings);
+  $("sheetTarget").value = settings.targetLang;
+  $("sheetNative").value = settings.nativeLang;
+  await Promise.all([refresh(), showActivity()]);
 })();
