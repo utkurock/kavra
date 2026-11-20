@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>optionsTitle</title>
+<link rel="stylesheet" href="shared.css">
+<style> main { max-width: 560px; margin: 32px auto; padding: 0 16px; } .actions { margin-top: 20px; display: flex; gap: 12px; align-items: center; flex-wrap: wrap; } </style>
+<main>
+  <h1 data-i18n="optionsTitle"></h1>
+  <form id="form">
+    <label for="targetLang" data-i18n="targetLangLabel"></label>
+    <select id="targetLang"></select>
+    <p class="muted" data-i18n="targetLangHelp"></p>
+
+    <label for="nativeLang" data-i18n="nativeLangLabel"></label>
+    <select id="nativeLang"></select>
+
+    <label for="level" data-i18n="levelLabel"></label>
+    <select id="level"></select>
+
+    <label for="apiKey" data-i18n="apiKeyLabel"></label>
+    <input id="apiKey" type="password" autocomplete="off" spellcheck="false" placeholder="sk-ant-...">
+    <p class="muted" data-i18n="apiKeyHelp"></p>
+
+    <label for="source" data-i18n="sourceLabel"></label>
+    <select id="source">
+      <option value="auto" data-i18n="sourceAuto"></option>
+      <option value="page" data-i18n="sourcePage"></option>
+      <option value="speech" data-i18n="sourceSpeech"></option>
+    </select>
+    <p class="muted" data-i18n="sourceHelp"></p>
+
+    <label for="trMode" data-i18n="trModeLabel"></label>
+    <select id="trMode">
+      <option value="blur" data-i18n="trModeBlurLong"></option>
+      <option value="always" data-i18n="trModeAlways"></option>
+      <option value="click" data-i18n="trModeClickLong"></option>
+    </select>
+    <p class="muted" data-i18n="trModeHelp"></p>
+
+    <label for="framesPerm" data-i18n="framesLabel"></label>
+    <button type="button" id="framesPerm"></button>
+    <p class="muted" data-i18n="framesHelp"></p>
+
+    <label for="quizMinutes" data-i18n="quizMinutesLabel"></label>
+    <input id="quizMinutes" type="number" min="3" max="180" step="1">
+    <p class="muted" data-i18n="quizMinutesHelp"></p>
+
+    <div class="actions">
+      <button class="primary" type="submit" data-i18n="save"></button>
+      <span id="saved" class="muted" role="status"></span>
+    </div>
+  </form>
+</main>
+<script src="settings.js"></script>
+<script src="options.js"></script>
+</html>

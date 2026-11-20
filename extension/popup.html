@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<meta charset="utf-8">
+<title>extName</title>
+<link rel="stylesheet" href="shared.css">
+<style>
+  body { width: 300px; padding: 14px; }
+  .row { display: flex; gap: 8px; margin-top: 12px; }
+  .row button { flex: 1; }
+  progress { width: 100%; height: 8px; margin-top: 4px; accent-color: var(--accent); }
+  #status { margin: 0 0 4px; }
+</style>
+<h1 data-i18n="extName"></h1>
+<p id="pair" class="muted" style="margin:0 0 8px"></p>
+<p id="status" class="muted" data-i18n="loading"></p>
+<p id="noKey" class="warn" hidden data-i18n="noKeyWarning"></p>
+<button id="toggle" class="primary" style="width:100%"></button>
+<label for="trMode" data-i18n="trModeLabel"></label>
+<select id="trMode">
+  <option value="blur" data-i18n="trModeBlur"></option>
+  <option value="always" data-i18n="trModeAlways"></option>
+  <option value="click" data-i18n="trModeClick"></option>
+</select>
+<div style="margin-top:14px">
+  <div class="muted" id="quizInfo"></div>
+  <progress id="quizBar" max="1" value="0"></progress>
+</div>
+<div class="row">
+  <button id="quizNow" data-i18n="quizNow"></button>
+  <button id="options" data-i18n="settings"></button>
+</div>
+<p id="error" class="warn" hidden></p>
+<script src="settings.js"></script>
+<script src="popup.js"></script>
+</html>
