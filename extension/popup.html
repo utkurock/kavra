@@ -4,32 +4,56 @@
 <title>extName</title>
 <link rel="stylesheet" href="shared.css">
 <style>
-  body { width: 300px; padding: 14px; }
-  .row { display: flex; gap: 8px; margin-top: 12px; }
-  .row button { flex: 1; }
-  progress { width: 100%; height: 8px; margin-top: 4px; accent-color: var(--accent); }
-  #status { margin: 0 0 4px; }
+  body { width: 340px; }
+  header { display: flex; align-items: center; justify-content: space-between; padding: 12px 12px 0 14px; }
+  main { padding: 12px; }
+  .hero { display: flex; flex-direction: column; gap: 12px; }
+  .quiz { display: flex; flex-direction: column; gap: 8px; }
 </style>
-<h1 data-i18n="extName"></h1>
-<p id="pair" class="muted" style="margin:0 0 8px"></p>
-<p id="status" class="muted" data-i18n="loading"></p>
-<p id="noKey" class="warn" hidden data-i18n="noKeyWarning"></p>
-<button id="toggle" class="primary" style="width:100%"></button>
-<label for="trMode" data-i18n="trModeLabel"></label>
-<select id="trMode">
-  <option value="blur" data-i18n="trModeBlur"></option>
-  <option value="always" data-i18n="trModeAlways"></option>
-  <option value="click" data-i18n="trModeClick"></option>
-</select>
-<div style="margin-top:14px">
-  <div class="muted" id="quizInfo"></div>
-  <progress id="quizBar" max="1" value="0"></progress>
-</div>
-<div class="row">
-  <button id="quizNow" data-i18n="quizNow"></button>
-  <button id="options" data-i18n="settings"></button>
-</div>
-<p id="error" class="warn" hidden></p>
+<header>
+  <span class="brand"><img src="icons/logo.svg" alt=""><span data-i18n="extName"></span></span>
+  <button id="options" class="icon-btn" data-i18n-aria-label="settings">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+      <path d="M4 6h10M18 6h2M4 12h4M12 12h8M4 18h12"/><circle cx="16" cy="6" r="2"/><circle cx="10" cy="12" r="2"/><circle cx="18" cy="18" r="2"/>
+    </svg>
+  </button>
+</header>
+<main class="stack">
+  <section class="card hero">
+    <div class="row between">
+      <span id="pair" class="chip"></span>
+      <span id="status" class="status"><span class="dot"></span><span id="statusText"></span></span>
+    </div>
+    <button id="toggle" class="btn primary block"></button>
+  </section>
+
+  <div id="noKey" class="callout warn" hidden>
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 7v6M12 17h.01"/></svg>
+    <span><span data-i18n="noKeyWarning"></span> <button id="addKey" class="link-btn" data-i18n="openSettings"></button></span>
+  </div>
+
+  <section class="card stack" style="gap:10px">
+    <div class="card-title" id="trModeTitle" data-i18n="trModeLabel"></div>
+    <div class="seg" role="radiogroup" aria-labelledby="trModeTitle">
+      <input type="radio" name="trMode" id="m-blur" value="blur"><label for="m-blur" data-i18n="segBlur"></label>
+      <input type="radio" name="trMode" id="m-always" value="always"><label for="m-always" data-i18n="segAlways"></label>
+      <input type="radio" name="trMode" id="m-click" value="click"><label for="m-click" data-i18n="segClick"></label>
+    </div>
+    <p class="muted small" id="trModeHint"></p>
+  </section>
+
+  <section class="card quiz">
+    <div class="row between">
+      <span class="card-title" data-i18n="nextQuiz"></span>
+      <span class="small" id="quizMinutes"></span>
+    </div>
+    <div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" id="quizBar"><span></span></div>
+    <p class="muted small" id="quizInfo"></p>
+    <button id="quizNow" class="btn secondary block" data-i18n="quizNow"></button>
+  </section>
+
+  <div id="error" class="callout bad" role="alert" hidden></div>
+</main>
 <script src="settings.js"></script>
 <script src="popup.js"></script>
 </html>

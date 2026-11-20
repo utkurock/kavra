@@ -1,5 +1,6 @@
-const { t, getSettings, languageName, localizePage } = globalThis.Kavra;
+const { t, getSettings, languageName, baseLang, localizePage } = globalThis.Kavra;
 const $ = (id) => document.getElementById(id);
+const MODE_HINT = { blur: "trModeBlur", always: "trModeAlways", click: "trModeClick" };
 let currentTabId;
 let state;
 let source = "auto";
@@ -9,18 +10,26 @@ function showError(text) {
   $("error").hidden = !text;
 }
 
+function showMode(mode) {
+  $(`m-${mode}`).checked = true;
+  $("trModeHint").textContent = t(MODE_HINT[mode]);
+}
+
 async function refresh() {
   state = await chrome.runtime.sendMessage({ type: "getState" });
   const onThisTab = state.activeTabId === currentTabId;
-  $("status").textContent = onThisTab ? t("statusOnHere") : state.activeTabId ? t("statusOnOther") : t("statusOff");
+  $("status").classList.toggle("on", onThisTab);
+  $("statusText").textContent = onThisTab ? t("statusOnHere") : state.activeTabId ? t("statusOnOther") : t("statusOff");
   $("toggle").textContent = onThisTab ? t("stopCaptions") : t("startCaptions");
+  $("toggle").className = `btn block ${onThisTab ? "danger" : "primary"}`;
   $("noKey").hidden = state.hasKey;
 
   const watchedMin = Math.floor(state.watchedMs / 60000);
-  $("quizInfo").textContent = state.quizRunning
-    ? t("quizPreparing")
-    : t("quizProgress", watchedMin, state.quizMinutes, state.lineCount);
-  $("quizBar").value = Math.min(1, state.watchedMs / (state.quizMinutes * 60000));
+  const pct = Math.min(100, Math.round((state.watchedMs / (state.quizMinutes * 60000)) * 100));
+  $("quizMinutes").textContent = t("minutesOf", watchedMin, state.quizMinutes);
+  $("quizBar").firstElementChild.style.width = `${pct}%`;
+  $("quizBar").ariaValueNow = pct;
+  $("quizInfo").textContent = state.quizRunning ? t("quizPreparing") : t("linesCollected", state.lineCount);
   $("quizNow").disabled = state.quizRunning || !state.hasKey || state.lineCount === 0;
 }
 
@@ -55,17 +64,24 @@ $("quizNow").addEventListener("click", async () => {
   refresh();
 });
 
-$("trMode").addEventListener("change", () => chrome.storage.local.set({ trMode: $("trMode").value }));
+for (const input of document.querySelectorAll('input[name="trMode"]')) {
+  input.addEventListener("change", () => {
+    showMode(input.value);
+    chrome.storage.local.set({ trMode: input.value });
+  });
+}
 $("options").addEventListener("click", () => chrome.runtime.openOptionsPage());
+$("addKey").addEventListener("click", () => chrome.runtime.openOptionsPage());
 
 (async () => {
   localizePage();
   const [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
   currentTabId = tab?.id;
   const settings = await getSettings();
-  $("trMode").value = settings.trMode;
+  showMode(settings.trMode);
   source = settings.source;
   const ui = chrome.i18n.getUILanguage();
-  $("pair").textContent = `${languageName(settings.targetLang, ui)} → ${languageName(settings.nativeLang, ui)}`;
+  $("pair").textContent = `${languageName(baseLang(settings.targetLang), ui)} → ${languageName(settings.nativeLang, ui)}`;
+  $("pair").title = `${languageName(settings.targetLang, ui)} → ${languageName(settings.nativeLang, ui)}`;
   await refresh();
 })();
