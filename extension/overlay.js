@@ -2,8 +2,11 @@
 // click. It's injected into every frame of the captioned tab; the top frame shows it, except while an
 // embedded player's frame is fullscreen, when that frame's copy takes over (nothing else is drawn then).
 (() => {
-  if (window.__kavraOverlay) return;
-  window.__kavraOverlay = true;
+  // A copy left from before the extension was reloaded can't reach the extension any more, so a new
+  // injection replaces it instead of stepping aside.
+  if (window.__kavraOverlay?.alive?.()) return;
+  document.querySelectorAll(":scope > div[style*='2147483647']").forEach((el) => el.remove());
+  window.__kavraOverlay = { alive: () => Boolean(chrome.runtime?.id) };
 
   const { t, getSettings } = globalThis.Kavra;
   const STRUGGLE_HOVER_MS = 800;
@@ -57,6 +60,9 @@
   card.ariaLabel = t("translation");
 
   let line = null; // the line on screen: { text, result, pending, reported, error }
+  let shownAt = 0;
+  let hideTimer;
+  let hovering = false;
   let anchor = "bottom"; // "top" while the site's own subtitles stay on screen (speech recognition)
   let customPos = null; // where the user dragged the subtitles: 0 (top) to 1 (bottom) of the player
   const isTop = window === window.top;
@@ -217,7 +223,15 @@
     addEventListener("pointerup", endDrag, true);
     addEventListener("pointercancel", endDrag, true);
   });
-  const placeTimer = setInterval(place, 400); // players move and resize without telling anyone
+  // Players move and resize without telling anyone; also stop if the extension was reloaded.
+  const placeTimer = setInterval(() => {
+    if (!chrome.runtime?.id) {
+      clearInterval(placeTimer);
+      host.remove();
+      return;
+    }
+    place();
+  }, 400);
 
   function div(className, text) {
     const el = document.createElement("div");
@@ -361,10 +375,31 @@
   function onCaption(text, source) {
     anchor = source === "page" ? "bottom" : "top";
     line = { text, result: null, pending: false };
+    shownAt = Date.now();
+    clearTimeout(hideTimer);
     translateIfVisible(line);
     attach();
     render();
   }
+
+  // Nobody has spoken for a moment: let the line go once it has been up long enough to read, and not
+  // while the reader is pointing at it or has its card open.
+  function onClear() {
+    if (!line) return;
+    const readFor = Math.min(5000, 1800 + line.text.length * 45);
+    clearTimeout(hideTimer);
+    hideTimer = setTimeout(hideLine, Math.max(0, shownAt + readFor - Date.now()));
+  }
+  function hideLine() {
+    if (cardLine || hovering) {
+      hideTimer = setTimeout(hideLine, 800);
+      return;
+    }
+    line = null;
+    render();
+  }
+  box.addEventListener("pointerenter", () => (hovering = true));
+  box.addEventListener("pointerleave", () => (hovering = false));
 
   function onVisibility() {
     if (line) translateIfVisible(line);
@@ -377,7 +412,7 @@
     removeEventListener("resize", place);
     clearInterval(placeTimer);
     document.removeEventListener("keydown", onKeydown);
-    window.__kavraOverlay = false;
+    window.__kavraOverlay = null;
     closeCard();
     line = null;
     render();
@@ -392,6 +427,7 @@
 
   function onMessage(msg) {
     if (msg.type === "caption") onCaption(msg.text, msg.source);
+    else if (msg.type === "clear") onClear();
     else if (msg.type === "status") showStatus(msg.text, msg.error);
     else if (msg.type === "stop") teardown(msg.message);
   }
