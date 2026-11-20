@@ -1,0 +1,248 @@
+{
+  "extName": {
+    "message": "Lingo Captions"
+  },
+  "extDescription": {
+    "message": "Learn a language from any video on the web: live subtitles, colour-matched translations and quizzes, powered by Claude Haiku."
+  },
+  "loading": {
+    "message": "Loading…"
+  },
+  "noKeyWarning": {
+    "message": "Add your Anthropic API key in Settings to get translations and quizzes."
+  },
+  "trModeLabel": {
+    "message": "Translation line"
+  },
+  "trModeBlur": {
+    "message": "Blurred (hover to reveal)"
+  },
+  "trModeAlways": {
+    "message": "Always show"
+  },
+  "trModeClick": {
+    "message": "Only on click"
+  },
+  "trModeBlurLong": {
+    "message": "Blurred: hover to reveal (recommended)"
+  },
+  "trModeClickLong": {
+    "message": "Only when I click a line"
+  },
+  "trModeHelp": {
+    "message": "In blurred and always modes every line is translated automatically, and matching colours show which part means what. Lines you reveal in blurred mode go into your quiz."
+  },
+  "quizNow": {
+    "message": "Quiz me now"
+  },
+  "settings": {
+    "message": "Settings"
+  },
+  "statusOnHere": {
+    "message": "Captions are on in this tab."
+  },
+  "statusOnOther": {
+    "message": "Captions are on in another tab."
+  },
+  "statusOff": {
+    "message": "Captions are off."
+  },
+  "startCaptions": {
+    "message": "Start captions in this tab"
+  },
+  "stopCaptions": {
+    "message": "Stop captions"
+  },
+  "quizPreparing": {
+    "message": "Preparing your quiz…"
+  },
+  "quizProgress": {
+    "message": "Next quiz: $1 / $2 min of watching with speech ($3 lines)"
+  },
+  "startFailedGeneric": {
+    "message": "Could not start."
+  },
+  "startFailed": {
+    "message": "Could not start: $1"
+  },
+  "quizFailed": {
+    "message": "Could not create the quiz."
+  },
+  "optionsTitle": {
+    "message": "Lingo Captions settings"
+  },
+  "targetLangLabel": {
+    "message": "Language you're learning"
+  },
+  "targetLangHelp": {
+    "message": "The language spoken in the videos. Pick the accent closest to the video for better speech recognition."
+  },
+  "nativeLangLabel": {
+    "message": "Your language (translations and explanations)"
+  },
+  "levelLabel": {
+    "message": "Your level (CEFR), used for quiz difficulty"
+  },
+  "apiKeyLabel": {
+    "message": "Anthropic API key"
+  },
+  "apiKeyHelp": {
+    "message": "Stored only in this browser and sent only to api.anthropic.com. Translations and quizzes use Claude Haiku 5.5 and are billed to this key."
+  },
+  "sourceLabel": {
+    "message": "Subtitle source"
+  },
+  "sourceAuto": {
+    "message": "Automatic: the site's subtitles, otherwise speech recognition"
+  },
+  "sourcePage": {
+    "message": "The site's subtitles only"
+  },
+  "sourceSpeech": {
+    "message": "Speech recognition only"
+  },
+  "sourceHelp": {
+    "message": "The site's own subtitles are more accurate and have no delay; turn on subtitles in the language you're learning in the player (CC on YouTube). Speech recognition is for videos without subtitles."
+  },
+  "framesLabel": {
+    "message": "Embedded players"
+  },
+  "framesGrant": {
+    "message": "Allow reading subtitles in embedded players"
+  },
+  "framesGranted": {
+    "message": "Allowed (click to revoke)"
+  },
+  "framesHelp": {
+    "message": "Some sites play the video from another site inside an iframe. Reading those subtitles needs access to all sites; without it, speech recognition is used there."
+  },
+  "quizMinutesLabel": {
+    "message": "Quiz after how many minutes of watching?"
+  },
+  "quizMinutesHelp": {
+    "message": "Only time with speech counts; paused or silent parts don't."
+  },
+  "save": {
+    "message": "Save"
+  },
+  "saved": {
+    "message": "Saved. Language and source changes apply the next time you start captions."
+  },
+  "sameLanguage": {
+    "message": "The language you're learning and your language must be different."
+  },
+  "quizTitle": {
+    "message": "Quiz on what you just watched"
+  },
+  "noQuiz": {
+    "message": "No quiz yet. Watch something with captions on."
+  },
+  "questionCount": {
+    "message": "$1 questions"
+  },
+  "kindComprehension": {
+    "message": "Comprehension"
+  },
+  "kindVocabulary": {
+    "message": "Vocabulary"
+  },
+  "kindListening": {
+    "message": "Listening"
+  },
+  "score": {
+    "message": "$1 / $2 correct"
+  },
+  "quizDone": {
+    "message": "done!"
+  },
+  "backToVideo": {
+    "message": "Back to the video"
+  },
+  "videoTabClosed": {
+    "message": "The video tab was closed."
+  },
+  "translation": {
+    "message": "Translation"
+  },
+  "clickHint": {
+    "message": "Click for the translation and notes"
+  },
+  "hoverHint": {
+    "message": "Hover to reveal the translation"
+  },
+  "translating": {
+    "message": "translating…"
+  },
+  "extensionReloaded": {
+    "message": "The extension was reloaded; refresh the page."
+  },
+  "translationFailed": {
+    "message": "Translation failed."
+  },
+  "closeAndContinue": {
+    "message": "Close and continue"
+  },
+  "statusListening": {
+    "message": "Listening…"
+  },
+  "statusWaitingPage": {
+    "message": "Waiting for the site's subtitles (turn them on in the player)…"
+  },
+  "speechFallback": {
+    "message": "$1 Using the site's subtitles only."
+  },
+  "quizAlreadyRunning": {
+    "message": "A quiz is already being prepared."
+  },
+  "quizNotEnough": {
+    "message": "Not enough speech for a quiz yet; keep watching."
+  },
+  "quizError": {
+    "message": "Quiz error: $1"
+  },
+  "speech_trackUnsupported": {
+    "message": "Speech recognition couldn't use the tab's audio. Update Chrome (recognising tab audio is required)."
+  },
+  "speech_error": {
+    "message": "Speech recognition error: $1"
+  },
+  "speech_noApi": {
+    "message": "This browser has no speech recognition (Web Speech API)."
+  },
+  "speech_captureEnded": {
+    "message": "Tab audio capture ended."
+  },
+  "speech_captureFailed": {
+    "message": "Could not capture the tab's audio: $1"
+  },
+  "errNoKey": {
+    "message": "No API key. Add it in the extension settings."
+  },
+  "errBadKey": {
+    "message": "The API key is invalid."
+  },
+  "errPermission": {
+    "message": "This API key has no access to Claude Haiku."
+  },
+  "errRateLimit": {
+    "message": "Rate limited; try again in a moment."
+  },
+  "errConnection": {
+    "message": "Could not reach the Anthropic API."
+  },
+  "errApi": {
+    "message": "API error ($1): $2"
+  },
+  "errRefusal": {
+    "message": "The model declined this request."
+  },
+  "errTruncated": {
+    "message": "The response was cut off; try again."
+  },
+  "errUnreadable": {
+    "message": "The model's response could not be read."
+  },
+  "errQuizEmpty": {
+    "message": "Could not create the quiz."
+  }
+}

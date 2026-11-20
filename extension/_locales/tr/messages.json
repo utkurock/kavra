@@ -1,0 +1,248 @@
+{
+  "extName": {
+    "message": "Lingo Captions"
+  },
+  "extDescription": {
+    "message": "Webdeki her videodan dil öğren: canlı altyazı, renk eşleşmeli çeviri ve quiz. Claude Haiku ile."
+  },
+  "loading": {
+    "message": "Yükleniyor…"
+  },
+  "noKeyWarning": {
+    "message": "Çeviri ve quiz için Ayarlar'dan Anthropic API anahtarını gir."
+  },
+  "trModeLabel": {
+    "message": "Çeviri satırı"
+  },
+  "trModeBlur": {
+    "message": "Bulanık (üzerine gelince açılır)"
+  },
+  "trModeAlways": {
+    "message": "Hep göster"
+  },
+  "trModeClick": {
+    "message": "Sadece tıklayınca"
+  },
+  "trModeBlurLong": {
+    "message": "Bulanık: üzerine gelince açılır (önerilen)"
+  },
+  "trModeClickLong": {
+    "message": "Sadece satıra tıklayınca"
+  },
+  "trModeHelp": {
+    "message": "Bulanık ve hep göster modlarında her satır otomatik çevrilir; aynı renkler aynı anlamı gösterir. Bulanık modda açıp baktığın satırlar quiz'e girer."
+  },
+  "quizNow": {
+    "message": "Şimdi quiz yap"
+  },
+  "settings": {
+    "message": "Ayarlar"
+  },
+  "statusOnHere": {
+    "message": "Bu sekmede altyazı açık."
+  },
+  "statusOnOther": {
+    "message": "Altyazı başka bir sekmede açık."
+  },
+  "statusOff": {
+    "message": "Altyazı kapalı."
+  },
+  "startCaptions": {
+    "message": "Bu sekmede altyazıyı başlat"
+  },
+  "stopCaptions": {
+    "message": "Altyazıyı durdur"
+  },
+  "quizPreparing": {
+    "message": "Quiz hazırlanıyor…"
+  },
+  "quizProgress": {
+    "message": "Quiz'e kadar: $1 / $2 dk konuşmalı izleme ($3 satır)"
+  },
+  "startFailedGeneric": {
+    "message": "Başlatılamadı."
+  },
+  "startFailed": {
+    "message": "Başlatılamadı: $1"
+  },
+  "quizFailed": {
+    "message": "Quiz oluşturulamadı."
+  },
+  "optionsTitle": {
+    "message": "Lingo Captions ayarları"
+  },
+  "targetLangLabel": {
+    "message": "Öğrendiğin dil"
+  },
+  "targetLangHelp": {
+    "message": "Videolarda konuşulan dil. Ses tanıma için videoya en yakın aksanı seç."
+  },
+  "nativeLangLabel": {
+    "message": "Senin dilin (çeviri ve açıklamalar)"
+  },
+  "levelLabel": {
+    "message": "Seviyen (CEFR), quiz zorluğu için"
+  },
+  "apiKeyLabel": {
+    "message": "Anthropic API anahtarı"
+  },
+  "apiKeyHelp": {
+    "message": "Sadece bu tarayıcıda saklanır ve yalnızca api.anthropic.com'a gönderilir. Çeviri ve quiz Claude Haiku 5.5 ile yapılır, ücreti bu anahtara yansır."
+  },
+  "sourceLabel": {
+    "message": "Altyazı kaynağı"
+  },
+  "sourceAuto": {
+    "message": "Otomatik: sitenin altyazısı, yoksa ses tanıma"
+  },
+  "sourcePage": {
+    "message": "Sadece sitenin altyazısı"
+  },
+  "sourceSpeech": {
+    "message": "Sadece ses tanıma"
+  },
+  "sourceHelp": {
+    "message": "Sitenin altyazısı daha doğru ve gecikmesizdir; oynatıcıda öğrendiğin dildeki altyazıyı aç (YouTube'da CC). Ses tanıma, altyazısı olmayan videolar içindir."
+  },
+  "framesLabel": {
+    "message": "Gömülü oynatıcılar"
+  },
+  "framesGrant": {
+    "message": "Gömülü oynatıcılardaki altyazıyı okumaya izin ver"
+  },
+  "framesGranted": {
+    "message": "İzin verildi (geri almak için tıkla)"
+  },
+  "framesHelp": {
+    "message": "Bazı siteler videoyu başka bir siteden gömülü (iframe) oynatır. O altyazıları okumak için tüm sitelere erişim izni gerekir; vermezsen bu sitelerde ses tanıma kullanılır."
+  },
+  "quizMinutesLabel": {
+    "message": "Kaç dakikalık izlemeden sonra quiz gelsin?"
+  },
+  "quizMinutesHelp": {
+    "message": "Sadece konuşma olan süre sayılır; durdurduğun ya da sessiz kısımlar sayılmaz."
+  },
+  "save": {
+    "message": "Kaydet"
+  },
+  "saved": {
+    "message": "Kaydedildi. Dil ve kaynak değişiklikleri altyazı yeniden başlatılınca geçerli olur."
+  },
+  "sameLanguage": {
+    "message": "Öğrendiğin dil ile kendi dilin farklı olmalı."
+  },
+  "quizTitle": {
+    "message": "İzlediğin bölümden quiz"
+  },
+  "noQuiz": {
+    "message": "Henüz quiz yok. Altyazı açıkken video izle."
+  },
+  "questionCount": {
+    "message": "$1 soru"
+  },
+  "kindComprehension": {
+    "message": "Anlama"
+  },
+  "kindVocabulary": {
+    "message": "Kelime"
+  },
+  "kindListening": {
+    "message": "Dinleme"
+  },
+  "score": {
+    "message": "$1 / $2 doğru"
+  },
+  "quizDone": {
+    "message": "bitti!"
+  },
+  "backToVideo": {
+    "message": "Videoya dön"
+  },
+  "videoTabClosed": {
+    "message": "Video sekmesi kapanmış."
+  },
+  "translation": {
+    "message": "Çeviri"
+  },
+  "clickHint": {
+    "message": "Çeviri ve açıklama için tıkla"
+  },
+  "hoverHint": {
+    "message": "Çeviriyi görmek için üzerine gel"
+  },
+  "translating": {
+    "message": "çevriliyor…"
+  },
+  "extensionReloaded": {
+    "message": "Eklenti yeniden yüklendi, sayfayı yenile."
+  },
+  "translationFailed": {
+    "message": "Çeviri başarısız."
+  },
+  "closeAndContinue": {
+    "message": "Kapat ve devam et"
+  },
+  "statusListening": {
+    "message": "Dinleniyor…"
+  },
+  "statusWaitingPage": {
+    "message": "Sitenin altyazısı bekleniyor (oynatıcıda altyazıyı aç)…"
+  },
+  "speechFallback": {
+    "message": "$1 Sadece sitenin altyazısı kullanılacak."
+  },
+  "quizAlreadyRunning": {
+    "message": "Quiz zaten hazırlanıyor."
+  },
+  "quizNotEnough": {
+    "message": "Quiz için yeterli konuşma yok, biraz daha izle."
+  },
+  "quizError": {
+    "message": "Quiz hatası: $1"
+  },
+  "speech_trackUnsupported": {
+    "message": "Konuşma tanıma sekme sesini alamadı. Chrome'u güncelle (sekme sesinden tanıma desteği gerekli)."
+  },
+  "speech_error": {
+    "message": "Konuşma tanıma hatası: $1"
+  },
+  "speech_noApi": {
+    "message": "Bu tarayıcıda konuşma tanıma (Web Speech API) yok."
+  },
+  "speech_captureEnded": {
+    "message": "Sekme sesi yakalama sona erdi."
+  },
+  "speech_captureFailed": {
+    "message": "Sekme sesi alınamadı: $1"
+  },
+  "errNoKey": {
+    "message": "API anahtarı yok. Eklenti ayarlarından gir."
+  },
+  "errBadKey": {
+    "message": "API anahtarı geçersiz."
+  },
+  "errPermission": {
+    "message": "Bu API anahtarının Claude Haiku'ya erişimi yok."
+  },
+  "errRateLimit": {
+    "message": "Hız limitine takıldın, biraz sonra tekrar dene."
+  },
+  "errConnection": {
+    "message": "Anthropic API'ye bağlanılamadı."
+  },
+  "errApi": {
+    "message": "API hatası ($1): $2"
+  },
+  "errRefusal": {
+    "message": "Model bu isteği yanıtlamadı."
+  },
+  "errTruncated": {
+    "message": "Yanıt yarıda kesildi, tekrar dene."
+  },
+  "errUnreadable": {
+    "message": "Modelden okunabilir yanıt gelmedi."
+  },
+  "errQuizEmpty": {
+    "message": "Quiz oluşturulamadı."
+  }
+}
