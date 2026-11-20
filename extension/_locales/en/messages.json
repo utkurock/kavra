@@ -219,7 +219,7 @@
     "message": "Languages"
   },
   "secLanguagesHelp": {
-    "message": "Changes apply the next time you start captions."
+    "message": "Changes apply right away, even while subtitles are on."
   },
   "nativeLangHelp": {
     "message": "Translations and explanations are written in this language."
@@ -547,5 +547,11 @@
   },
   "activityLabel": {
     "message": "$1 minutes of practice over $2 active days"
+  },
+  "languageSwitched": {
+    "message": "Now listening for $1."
+  },
+  "wrongLanguage": {
+    "message": "The audio sounds like $1, not $2. Pick the video's original audio to learn with it."
   }
 }

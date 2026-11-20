@@ -54,7 +54,14 @@ function listen() {
 }
 
 chrome.runtime.onMessage.addListener((msg) => {
-  if (msg.target !== "offscreen" || msg.type !== "setListening") return;
+  if (msg.target !== "offscreen") return;
+  if (msg.type === "setLang") {
+    // The running session ends and onend restarts recognition with the new language.
+    params.set("lang", msg.lang);
+    rec?.abort();
+    return;
+  }
+  if (msg.type !== "setListening") return;
   listening = msg.on;
   if (!listening) rec?.abort();
   else if (!rec && track && running) listen();

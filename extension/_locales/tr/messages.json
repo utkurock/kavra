@@ -219,7 +219,7 @@
     "message": "Diller"
   },
   "secLanguagesHelp": {
-    "message": "Değişiklikler altyazıyı bir sonraki başlatışında geçerli olur."
+    "message": "Değişiklikler hemen uygulanır, altyazı açıkken bile."
   },
   "nativeLangHelp": {
     "message": "Çeviri ve açıklamalar bu dilde yazılır."
@@ -547,5 +547,11 @@
   },
   "activityLabel": {
     "message": "$2 aktif günde $1 dakika çalışma"
+  },
+  "languageSwitched": {
+    "message": "Artık $1 dinleniyor."
+  },
+  "wrongLanguage": {
+    "message": "Ses $2 değil, $1 gibi görünüyor. Öğrenmek için videonun orijinal sesini seç."
   }
 }

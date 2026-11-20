@@ -3,7 +3,7 @@
 import "../extension/settings.js";
 import { translateLine, generateQuiz, listModels, friendlyError } from "./llm.js";
 
-const { getSettings, t, dayKey } = globalThis.Kavra;
+const { getSettings, t, dayKey, baseLang, languageName } = globalThis.Kavra;
 const MAX_GAP_MS = 30000; // silence longer than this does not count as watch time
 const MIN_QUIZ_LINES = 8;
 const PAGE_CAPTION_HOLD_MS = 15000; // after a site caption, ignore speech recognition this long
@@ -93,6 +93,8 @@ async function stopCaptions(message) {
   await closeOffscreen();
   pageCaptionAt = 0;
   lastFinal = "";
+  mismatchStreak = 0;
+  mismatchWarned = false;
   if (capture) toAllFrames(capture.tabId, { type: "stop", message });
 }
 
@@ -109,9 +111,35 @@ function setSpeechListening(on) {
   chrome.runtime.sendMessage({ target: "offscreen", type: "setListening", on }).catch(() => {});
 }
 
+// Lines in another language than the one being learned (a dubbed audio track, the site's subtitles in
+// the user's own language) are skipped, and after two in a row the user is told why.
+let mismatchStreak = 0;
+let mismatchWarned = false;
+
+async function inLearningLanguage(text, tabId) {
+  const { targetLang } = await getSettings();
+  const result = await chrome.i18n.detectLanguage(text).catch(() => null);
+  const top = result?.isReliable ? result.languages?.[0] : null;
+  if (!top || baseLang(top.language) === baseLang(targetLang)) {
+    mismatchStreak = 0;
+    return true;
+  }
+  if (++mismatchStreak >= 2 && !mismatchWarned) {
+    mismatchWarned = true;
+    const ui = chrome.i18n.getUILanguage();
+    toTop(tabId, {
+      type: "status",
+      text: t("wrongLanguage", languageName(baseLang(top.language), ui), languageName(baseLang(targetLang), ui)),
+      error: true,
+    });
+  }
+  return false;
+}
+
 async function onCaption(text, final, source) {
   const capture = await getCapture();
   if (!capture) return;
+  if (final ? !(await inLearningLanguage(text, capture.tabId)) : mismatchStreak >= 2) return;
   if (source === "page") {
     pageCaptionAt = Date.now();
     if (capture.speech) {
@@ -305,6 +333,19 @@ chrome.runtime.onMessage.addListener((msg, sender, sendResponse) => {
     .then((result) => sendResponse(result))
     .catch((err) => sendResponse({ ok: false, error: friendlyError(err) }));
   return true;
+});
+
+// A new learning language applies to the running session right away.
+chrome.storage.onChanged.addListener(async (changes, area) => {
+  if (area !== "local" || !changes.targetLang) return;
+  const capture = await getCapture();
+  if (!capture) return;
+  lastFinal = "";
+  mismatchStreak = 0;
+  mismatchWarned = false;
+  const lang = changes.targetLang.newValue;
+  if (capture.speech) chrome.runtime.sendMessage({ target: "offscreen", type: "setLang", lang }).catch(() => {});
+  toTop(capture.tabId, { type: "status", text: t("languageSwitched", languageName(lang, chrome.i18n.getUILanguage())) });
 });
 
 // First install: walk through setup.

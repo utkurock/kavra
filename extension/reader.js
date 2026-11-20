@@ -115,25 +115,42 @@
 
   let scanTimer;
   let domTimer;
-  getSettings().then(({ targetLang }) => {
-    if (!window.__kavraReader) return; // stopped meanwhile
-    // Match tracks of the language being learned by code, or by name when the site gives no code.
+
+  function releaseTracks() {
+    for (const [track, { prevMode, onCueChange }] of tracks) {
+      track.removeEventListener("cuechange", onCueChange);
+      track.mode = prevMode;
+    }
+    tracks.clear();
+  }
+
+  // Match tracks of the language being learned by code, or by name when the site gives no code.
+  function useLanguage(targetLang) {
     const base = baseLang(targetLang);
     const labels = [languageName(base), languageName(base, base)].map((n) => n.toLowerCase());
     isTarget = (t) =>
       (t.language ? baseLang(t.language) === base : labels.some((n) => t.label.toLowerCase().includes(n)));
+    releaseTracks();
+    scanVideos();
+  }
+
+  function onStorage(changes, area) {
+    if (area === "local" && changes.targetLang) useLanguage(changes.targetLang.newValue);
+  }
+
+  getSettings().then(({ targetLang }) => {
+    if (!window.__kavraReader) return; // stopped meanwhile
+    useLanguage(targetLang);
     scanTimer = setInterval(scanVideos, 2000);
     domTimer = domSource ? setInterval(pollDom, 250) : null;
-    scanVideos();
+    chrome.storage.onChanged.addListener(onStorage);
   });
 
   function stop() {
     clearInterval(scanTimer);
     clearInterval(domTimer);
-    for (const [track, { prevMode, onCueChange }] of tracks) {
-      track.removeEventListener("cuechange", onCueChange);
-      track.mode = prevMode;
-    }
+    releaseTracks();
+    chrome.storage.onChanged.removeListener(onStorage);
     hideStyle?.remove();
     chrome.runtime.onMessage.removeListener(onMessage);
     window.__kavraReader = false;
