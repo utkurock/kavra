@@ -433,5 +433,11 @@
   },
   "noActivity": {
     "message": "No activity yet. Start captions on a video and it will show up here."
+  },
+  "navQuiz": {
+    "message": "Quiz"
+  },
+  "navLabel": {
+    "message": "Kavra pages"
   }
 }

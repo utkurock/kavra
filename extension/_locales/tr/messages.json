@@ -433,5 +433,11 @@
   },
   "noActivity": {
     "message": "Henüz aktivite yok. Bir videoda altyazıyı başlattığında burada görünecek."
+  },
+  "navQuiz": {
+    "message": "Quiz"
+  },
+  "navLabel": {
+    "message": "Kavra sayfaları"
   }
 }

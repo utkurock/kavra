@@ -5,9 +5,7 @@
 <title>activityTitle</title>
 <link rel="stylesheet" href="shared.css">
 <style>
-  main { max-width: 960px; margin: 0 auto; padding: 36px 16px 80px; }
-  .page-head { display: flex; flex-direction: column; gap: 14px; margin-bottom: 24px; }
-  .page-head h1 { font-size: 26px; letter-spacing: -.02em; }
+  main { max-width: 960px; margin: 0 auto; padding: 32px 16px 80px; }
   .stats.wide { grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); margin-bottom: 16px; }
   .stat .sub { display: block; color: var(--faint); font-size: 12px; margin-top: 2px; }
   section.card { margin-bottom: 16px; padding: 18px 20px; }
@@ -23,10 +21,10 @@
   .ok { color: var(--ok); } .bad { color: var(--bad); }
   .empty { color: var(--muted); padding: 8px 0; }
 </style>
-<main class="dotted">
-  <header class="page-head">
-    <span class="brand"><img src="icons/logo.svg" alt=""><span data-i18n="extName"></span></span>
-    <div><h1 data-i18n="activityTitle"></h1><p class="muted" data-i18n="activitySubtitle"></p></div>
+<main>
+  <header class="page-title">
+    <h1 data-i18n="activityTitle"></h1>
+    <p class="muted" data-i18n="activitySubtitle"></p>
   </header>
 
   <div class="stats wide">
@@ -62,6 +60,7 @@
   </section>
 </main>
 <script src="settings.js"></script>
+<script src="nav.js"></script>
 <script src="heatmap.js"></script>
 <script src="activity.js"></script>
 </html>
