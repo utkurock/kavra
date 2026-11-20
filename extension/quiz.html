@@ -5,26 +5,57 @@
 <title>quizTitle</title>
 <link rel="stylesheet" href="shared.css">
 <style>
-  main { max-width: 680px; margin: 28px auto 60px; padding: 0 16px; }
-  .q { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 16px; margin: 14px 0; }
-  .kind { font-size: 12px; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); }
-  .question { font-size: 16px; font-weight: 600; margin: 4px 0 6px; }
-  .quote { color: var(--muted); font-style: italic; margin: 0 0 10px; }
-  .opt { display: block; width: 100%; text-align: left; margin: 6px 0; }
-  .opt.correct { border-color: var(--ok); color: var(--ok); font-weight: 600; }
-  .opt.wrong { border-color: var(--bad); color: var(--bad); text-decoration: line-through; }
-  .exp { margin-top: 8px; }
-  #score { font-size: 16px; font-weight: 600; }
-  .bar { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; }
+  main { max-width: 720px; margin: 0 auto; padding: 36px 16px 80px; }
+  .page-head { display: flex; flex-direction: column; gap: 14px; margin-bottom: 20px; }
+  .page-head h1 { font-size: 24px; letter-spacing: -.02em; }
+  .sticky { position: sticky; top: 0; z-index: 1; background: var(--bg); padding: 10px 0 14px; margin-bottom: 4px; }
+  .q { margin-bottom: 14px; padding: 18px; }
+  .kind { display: inline-block; font-size: 11.5px; font-weight: 700; letter-spacing: .05em; text-transform: uppercase;
+    padding: 2px 8px; border-radius: 6px; background: var(--accent-soft); color: var(--accent); }
+  .kind.vocabulary { background: color-mix(in srgb, var(--hue-1) 18%, transparent); color: var(--warn); }
+  .kind.listening { background: color-mix(in srgb, var(--hue-2) 18%, transparent); color: var(--hue-2); }
+  .question { font-size: 17px; font-weight: 650; margin: 10px 0 6px; line-height: 1.4; }
+  .quote { color: var(--muted); font-style: italic; border-left: 3px solid var(--line-strong); padding-left: 10px; margin: 8px 0 12px; }
+  .options { display: grid; gap: 8px; margin-top: 12px; }
+  .opt { display: flex; align-items: center; gap: 12px; width: 100%; text-align: left; font: inherit; color: var(--fg);
+    padding: 10px 12px; border-radius: 10px; border: 1px solid var(--line-strong); background: var(--surface); cursor: pointer; }
+  .opt:hover:not(:disabled) { border-color: var(--accent); background: var(--accent-soft); }
+  .opt:disabled { cursor: default; }
+  .opt .letter { flex: none; display: grid; place-items: center; width: 26px; height: 26px; border-radius: 7px;
+    background: var(--surface-2); font-weight: 700; font-size: 13px; color: var(--muted); }
+  .opt.correct { border-color: var(--ok); background: var(--ok-soft); }
+  .opt.correct .letter { background: var(--ok); color: var(--surface); }
+  .opt.wrong { border-color: var(--bad); background: var(--bad-soft); }
+  .opt.wrong .letter { background: var(--bad); color: var(--surface); }
+  .opt.faded { opacity: .55; }
+  .exp { margin-top: 12px; padding: 10px 12px; border-radius: 10px; background: var(--surface-2); font-size: 14px; }
+  .exp strong { display: block; font-size: 12px; text-transform: uppercase; letter-spacing: .05em; margin-bottom: 2px; }
+  .exp.ok strong { color: var(--ok); }
+  .exp.bad strong { color: var(--bad); }
+  .summary { text-align: center; padding: 28px 20px; display: flex; flex-direction: column; align-items: center; gap: 10px; }
+  .summary .big { font-size: 44px; font-weight: 750; letter-spacing: -.03em; line-height: 1; }
+  .empty { text-align: center; padding: 48px 20px; }
 </style>
 <main>
-  <h1 data-i18n="quizTitle"></h1>
-  <p class="muted" id="meta"></p>
-  <div id="list"></div>
-  <div class="bar">
-    <span id="score" role="status"></span>
-    <button id="back" class="primary" hidden data-i18n="backToVideo"></button>
+  <header class="page-head">
+    <span class="brand"><img src="icons/logo.svg" alt=""><span data-i18n="extName"></span></span>
+    <div>
+      <h1 data-i18n="quizTitle"></h1>
+      <p class="muted" id="meta"></p>
+    </div>
+  </header>
+  <div class="sticky" id="progressWrap" hidden>
+    <div class="row between small" style="margin-bottom:6px"><span id="progressText"></span><span id="scoreText" class="muted"></span></div>
+    <div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" id="progressBar"><span></span></div>
   </div>
+  <div id="list"></div>
+  <section id="summary" class="card summary" hidden>
+    <span class="card-title" data-i18n="quizComplete"></span>
+    <span class="big" id="summaryScore"></span>
+    <p class="muted" id="summaryText"></p>
+    <button id="back" class="btn primary" hidden data-i18n="backToVideo"></button>
+    <p class="small muted" id="backError" hidden data-i18n="videoTabClosed"></p>
+  </section>
 </main>
 <script src="settings.js"></script>
 <script src="quiz.js"></script>
