@@ -146,8 +146,8 @@ function spokenText(text) {
 
 // Chrome's recognizer often ends a result after two or three words. Pieces that follow each other
 // closely are joined into one line, which is shown once the speaker pauses or the line gets long.
-const MERGE_PAUSE_MS = 900;
-const MERGE_MAX_WORDS = 14;
+const MERGE_PAUSE_MS = 600;
+const MERGE_MAX_WORDS = 10;
 const SILENCE_MS = 1000; // after this long without speech the overlay lets its line go
 let pendingSpeech = "";
 let pendingTimer;

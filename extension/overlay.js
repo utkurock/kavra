@@ -18,8 +18,10 @@
   root.innerHTML = `
     <style>
       :host { all: initial; }
+      /* Text scales with the player's width (the host is as wide as the player), not the window. */
+      .frame { container-type: inline-size; width: 100%; }
       .wrap { display: flex; flex-direction: column; align-items: center; gap: 8px;
-        font: 600 clamp(16px, 2.1vw, 30px)/1.35 system-ui, -apple-system, "Segoe UI", sans-serif; }
+        font: 600 clamp(13px, 2.3cqi, 24px)/1.35 system-ui, -apple-system, "Segoe UI", sans-serif; }
       .box { max-width: 92%; display: flex; flex-direction: column; align-items: center; gap: 3px; }
       .line { pointer-events: auto; color: #fff; background: rgba(0,0,0,.74); padding: 2px 10px;
         border-radius: 6px; text-align: center; text-shadow: 0 1px 2px #000; }
@@ -27,7 +29,7 @@
       .orig { cursor: pointer; }
       .box.dragging .line { cursor: grabbing; }
       .orig:hover, .orig:focus-visible { background: rgba(20,20,20,.92); outline: 2px solid #ffd54a; }
-      .old { opacity: .6; font-size: .82em; }
+      .old { opacity: .62; font-size: .82em; }
       .trans { font-weight: 500; font-size: .9em; color: #f2f2f2; transition: filter .15s; }
       .trans.blur { filter: blur(6px); cursor: help; }
       .trans.blur:hover, .trans.blur:focus-visible { filter: none; outline: none; }
@@ -48,18 +50,20 @@
       .close:focus-visible { outline: 2px solid #ffd54a; }
       [hidden] { display: none !important; }
     </style>
-    <div class="wrap">
+    <div class="frame"><div class="wrap">
       <div class="card" hidden role="dialog"></div>
       <div class="status" hidden></div>
       <div class="box" aria-live="polite"></div>
-    </div>`;
+    </div></div>`;
 
   const box = root.querySelector(".box");
   const card = root.querySelector(".card");
   const statusEl = root.querySelector(".status");
   card.ariaLabel = t("translation");
 
-  let line = null; // the line on screen: { text, result, pending, reported, error }
+  let line = null; // the newest line on screen: { text, result, pending, reported, error }
+  let previous = null; // the line before it, kept while the same stretch of speech goes on
+  let silenced = false; // a pause in speech was reported since the newest line
   let shownAt = 0;
   let hideTimer;
   let hovering = false;
@@ -248,18 +252,25 @@
     return el;
   }
 
-  // Only the current line and, once it's ready, its translation: no half-heard text, no placeholders.
-  function render() {
-    box.replaceChildren();
-    if (!line) return;
-    const shown = line;
+  // The newest line and, once it's ready, its translation; while someone keeps talking, the line
+  // before it stays above, smaller, so nothing is lost between two quick lines.
+  function origLine(shown, className) {
     const spans = shown.result ? colourSpans(shown.result, shown.text) : null;
-    const orig = paint(div("line orig"), shown.text, spans?.orig);
+    const orig = paint(div(`line orig ${className}`), shown.text, spans?.orig);
     orig.tabIndex = 0;
     orig.title = t("clickHint");
     orig.addEventListener("click", () => !suppressClick && openCard(shown));
     orig.addEventListener("keydown", (e) => e.key === "Enter" && openCard(shown));
-    box.appendChild(orig);
+    return orig;
+  }
+
+  function render() {
+    box.replaceChildren();
+    if (!line) return;
+    if (previous) box.appendChild(origLine(previous, "old"));
+    const shown = line;
+    const spans = shown.result ? colourSpans(shown.result, shown.text) : null;
+    box.appendChild(origLine(shown, ""));
     if (trMode === "click" || !shown.result) return;
     const trans = paint(div("line trans" + (trMode === "blur" ? " blur" : "")), shown.result.translation, spans.trans);
     if (trMode === "blur") watchStruggle(trans, shown);
@@ -382,6 +393,8 @@
 
   function onCaption(text, source) {
     anchor = source === "page" ? "bottom" : "top";
+    previous = line && !silenced ? line : null;
+    silenced = false;
     line = { text, result: null, pending: false };
     shownAt = Date.now();
     clearTimeout(hideTimer);
@@ -393,6 +406,7 @@
   // Nobody has spoken for a moment: let the line go once it has been up long enough to read, and not
   // while the reader is pointing at it or has its card open.
   function onClear() {
+    silenced = true;
     if (!line) return;
     const readFor = Math.min(5000, 1800 + line.text.length * 45);
     clearTimeout(hideTimer);
@@ -404,6 +418,7 @@
       return;
     }
     line = null;
+    previous = null;
     render();
   }
   box.addEventListener("pointerenter", () => (hovering = true));
@@ -422,7 +437,7 @@
     document.removeEventListener("keydown", onKeydown);
     window.__kavraOverlay = null;
     closeCard();
-    line = null;
+    line = previous = null;
     render();
     document.removeEventListener("visibilitychange", onVisibility);
     if (message) {
@@ -446,7 +461,7 @@
       // Lines on screen belong to the old language pair.
       locales = { orig: changes.targetLang?.newValue || locales.orig, trans: changes.nativeLang?.newValue || locales.trans };
       closeCard();
-      line = null;
+      line = previous = null;
       render();
     }
     if ("overlayPos" in changes) {
