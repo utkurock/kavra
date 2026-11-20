@@ -32,7 +32,8 @@
       .old { opacity: .62; font-size: .82em; }
       .trans { font-weight: 500; font-size: .9em; color: #f2f2f2; transition: filter .15s; }
       .trans.blur { filter: blur(6px); cursor: help; }
-      .trans.blur:hover, .trans.blur:focus-visible { filter: none; outline: none; }
+      .trans:focus-visible { outline: none; }
+      .trans.for-old { font-size: .82em; }
       .status { font-size: 13px; font-weight: 500; color: #fff; background: rgba(0,0,0,.6);
         padding: 2px 8px; border-radius: 4px; }
       .status.error { background: #b3261e; }
@@ -67,6 +68,7 @@
   let shownAt = 0;
   let hideTimer;
   let hovering = false;
+  let held = false; // the video is paused: keep the lines up
   let anchor = "bottom"; // "top" while the site's own subtitles stay on screen (speech recognition)
   let customPos = null; // where the user dragged the subtitles: 0 (top) to 1 (bottom) of the player
   const isTop = window === window.top;
@@ -253,7 +255,13 @@
   }
 
   // The newest line and, once it's ready, its translation; while someone keeps talking, the line
-  // before it stays above, smaller, so nothing is lost between two quick lines.
+  // before it stays above, smaller, so nothing is lost between two quick lines. One translation
+  // slot sits under them and shows the translation of whichever line the pointer is on.
+  // Blurred translations open only when the pointer actually moves over a line: a cursor resting
+  // on the video where a new line happens to appear doesn't reveal it.
+  let focusLine = null; // the line whose translation is revealed; null = none
+  let struggleTimer;
+
   function origLine(shown, className) {
     const spans = shown.result ? colourSpans(shown.result, shown.text) : null;
     const orig = paint(div(`line orig ${className}`), shown.text, spans?.orig);
@@ -261,6 +269,8 @@
     orig.title = t("clickHint");
     orig.addEventListener("click", () => !suppressClick && openCard(shown));
     orig.addEventListener("keydown", (e) => e.key === "Enter" && openCard(shown));
+    orig.addEventListener("pointermove", () => reveal(shown));
+    orig.addEventListener("focus", () => reveal(shown));
     return orig;
   }
 
@@ -268,33 +278,54 @@
     box.replaceChildren();
     if (!line) return;
     if (previous) box.appendChild(origLine(previous, "old"));
-    const shown = line;
-    const spans = shown.result ? colourSpans(shown.result, shown.text) : null;
-    box.appendChild(origLine(shown, ""));
-    if (trMode === "click" || !shown.result) return;
-    const trans = paint(div("line trans" + (trMode === "blur" ? " blur" : "")), shown.result.translation, spans.trans);
-    if (trMode === "blur") watchStruggle(trans, shown);
-    box.appendChild(trans);
+    box.appendChild(origLine(line, ""));
+    const slot = div("line trans");
+    slot.tabIndex = 0;
+    slot.title = t("hoverHint");
+    slot.addEventListener("pointermove", () => reveal(focusLine || line));
+    slot.addEventListener("focus", () => reveal(focusLine || line));
+    box.appendChild(slot);
+    renderSlot();
   }
 
-  // Revealing a blurred line for a moment counts as "needed help" for the quiz.
-  function watchStruggle(el, line) {
-    el.tabIndex = 0;
-    el.title = t("hoverHint");
-    let timer;
-    const start = () => {
-      if (line.reported) return;
-      timer = setTimeout(() => {
-        line.reported = true;
-        chrome.runtime.sendMessage({ type: "struggled", text: line.text }).catch(() => {});
-      }, STRUGGLE_HOVER_MS);
-    };
-    const cancel = () => clearTimeout(timer);
-    el.addEventListener("mouseenter", start);
-    el.addEventListener("focus", start);
-    el.addEventListener("mouseleave", cancel);
-    el.addEventListener("blur", cancel);
+  // Fills the slot: the revealed line's translation, else the newest one's (blurred in blur mode).
+  function renderSlot() {
+    const slot = box.querySelector(".trans");
+    if (!slot) return;
+    const target = focusLine === previous || focusLine === line ? focusLine || line : line;
+    if (trMode === "click" || !target?.result) {
+      slot.hidden = true;
+      return;
+    }
+    slot.hidden = false;
+    paint(slot, target.result.translation, colourSpans(target.result, target.text).trans);
+    slot.classList.toggle("blur", trMode === "blur" && !focusLine);
+    slot.classList.toggle("for-old", target === previous);
   }
+
+  function reveal(target) {
+    if (trMode === "click" || focusLine === target) return;
+    focusLine = target;
+    translateIfVisible(target); // a line kept from earlier may not have its translation yet
+    renderSlot();
+    // Revealing a blurred translation for a moment counts as "needed help" for the quiz.
+    clearTimeout(struggleTimer);
+    if (trMode === "blur" && !target.reported) {
+      struggleTimer = setTimeout(() => {
+        target.reported = true;
+        chrome.runtime.sendMessage({ type: "struggled", text: target.text }).catch(() => {});
+      }, STRUGGLE_HOVER_MS);
+    }
+  }
+
+  function conceal() {
+    if (!focusLine) return;
+    focusLine = null;
+    clearTimeout(struggleTimer);
+    renderSlot();
+  }
+  box.addEventListener("pointerleave", conceal);
+  box.addEventListener("focusout", (e) => !box.contains(e.relatedTarget) && conceal());
 
   function showStatus(text, error = false) {
     clearTimeout(statusTimer);
@@ -396,6 +427,8 @@
     previous = line && !silenced ? line : null;
     silenced = false;
     line = { text, result: null, pending: false };
+    focusLine = null; // a new line starts blurred, wherever the cursor is
+    clearTimeout(struggleTimer);
     shownAt = Date.now();
     clearTimeout(hideTimer);
     translateIfVisible(line);
@@ -413,12 +446,14 @@
     hideTimer = setTimeout(hideLine, Math.max(0, shownAt + readFor - Date.now()));
   }
   function hideLine() {
+    if (held) return; // playing again sends a fresh "clear" after a moment of silence
     if (cardLine || hovering) {
       hideTimer = setTimeout(hideLine, 800);
       return;
     }
     line = null;
     previous = null;
+    focusLine = null;
     render();
   }
   box.addEventListener("pointerenter", () => (hovering = true));
@@ -451,6 +486,10 @@
   function onMessage(msg) {
     if (msg.type === "caption") onCaption(msg.text, msg.source);
     else if (msg.type === "clear") onClear();
+    else if (msg.type === "hold") {
+      held = msg.on;
+      if (held) clearTimeout(hideTimer);
+    }
     else if (msg.type === "status") showStatus(msg.text, msg.error);
     else if (msg.type === "stop") teardown(msg.message);
   }
