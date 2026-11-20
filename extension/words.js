@@ -13,49 +13,101 @@ const el = (tag, className, text) => {
   return node;
 };
 
-const TRASH =
+const svg = (paths) =>
   '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" ' +
-  'stroke-linejoin="round" aria-hidden="true"><path d="M3 6h18M8 6V4h8v2M19 6l-1 14H6L5 6M10 11v6M14 11v6"/></svg>';
+  `stroke-linejoin="round" aria-hidden="true">${paths}</svg>`;
+const TRASH = svg('<path d="M3 6h18M8 6V4h8v2M19 6l-1 14H6L5 6M10 11v6M14 11v6"/>');
+const PLAY = svg('<path d="M7 5v14l11-7z"/>');
 
+// Each source site keeps one colour from the palette.
+const SITE_COLOURS = ["var(--hue-2)", "var(--hue-1)", "#ff9eb5", "var(--ok)"];
+function siteColour(host) {
+  let hash = 0;
+  for (const ch of host) hash = (hash * 31 + ch.codePointAt(0)) >>> 0;
+  return SITE_COLOURS[hash % SITE_COLOURS.length];
+}
+const SITE_NAMES = { "youtube.com": "YouTube", "netflix.com": "Netflix" };
+
+// "3 days ago", "yesterday", in the browser's language.
+const relative = new Intl.RelativeTimeFormat(ui, { numeric: "auto" });
+function ago(time) {
+  const days = Math.round((new Date().setHours(0, 0, 0, 0) - new Date(time).setHours(0, 0, 0, 0)) / 86400000);
+  if (days < 7) return relative.format(-days, "day");
+  if (days < 60) return relative.format(-Math.round(days / 7), "week");
+  return new Date(time).toLocaleDateString(ui, { day: "numeric", month: "short", year: "numeric" });
+}
+
+// A saved line as a card: its source and age on top, the line and translation, notes, then actions.
 function item(word, showLang) {
-  const li = el("li", "word");
-  const body = el("div", "w-body");
-  body.append(el("div", "w-orig", word.text), el("div", "w-trans", word.translation));
+  const li = el("li", "card wcard");
+  const top = el("div", "wcard-top");
+  let host = "";
+  try {
+    host = new URL(word.url).hostname.replace(/^www\./, "").replace(/^m\./, "");
+  } catch {
+    // saved without a page address
+  }
+  if (host) {
+    const badge = el("span", "badge");
+    badge.innerHTML = PLAY;
+    badge.append(SITE_NAMES[host] || host);
+    badge.style.setProperty("--c", siteColour(host));
+    top.append(badge);
+  }
+  top.append(el("span", "when", ago(word.savedAt)));
+  li.append(top, el("div", "w-orig", word.text), el("div", "w-trans", word.translation));
   if (word.notes?.length) {
-    const ul = el("ul");
+    const ul = el("ul", "w-notes");
     for (const note of word.notes) {
       const row = el("li");
       row.append(el("b", null, note.phrase), ` — ${note.meaning}`);
       ul.append(row);
     }
-    body.append(ul);
+    li.append(ul);
   }
-  const meta = el("div", "w-meta");
-  meta.append(el("span", null, new Date(word.savedAt).toLocaleDateString(ui, { day: "numeric", month: "short", year: "numeric" })));
-  if (showLang) meta.append(el("span", null, languageName(baseLang(word.lang), ui)));
+  const foot = el("div", "wcard-foot");
+  const facts = [];
+  if (word.notes?.length) facts.push(word.notes.length === 1 ? t("noteCountOne") : t("noteCount", word.notes.length));
+  if (showLang) facts.push(languageName(baseLang(word.lang), ui));
+  foot.append(el("span", "facts", facts.join(" · ")));
+  const actions = el("span", "actions");
   if (word.url) {
-    const link = el("a", null, new URL(word.url).hostname.replace(/^www\./, ""));
+    const link = el("a", "tag", `${t("openVideo")} ↗`);
     Object.assign(link, { href: word.url, target: "_blank", rel: "noopener" });
-    meta.append(link);
+    actions.append(link);
   }
   const remove = el("button", "remove");
   remove.innerHTML = TRASH;
   remove.ariaLabel = remove.title = t("removeWord");
   remove.addEventListener("click", () => removeWord(word, li));
-  const side = el("div", "w-side");
-  side.append(meta, remove);
-  li.append(body, side);
+  actions.append(remove);
+  foot.append(actions);
+  li.append(foot);
   return li;
+}
+
+// ---- tabs: all lines, or only those with notes ----
+let tab = "all";
+const withNotes = (w) => w.notes?.length > 0;
+for (const button of document.querySelectorAll(".segtab")) {
+  button.addEventListener("click", () => {
+    tab = button.dataset.tab;
+    render();
+  });
 }
 
 function render() {
   const query = $("search").value.trim().toLocaleLowerCase(ui);
+  const inTab = tab === "notes" ? words.filter(withNotes) : words;
   const shown = query
-    ? words.filter((w) => [w.text, w.translation, ...(w.notes || []).map((n) => n.phrase)].join(" ").toLocaleLowerCase(ui).includes(query))
-    : words;
+    ? inTab.filter((w) => [w.text, w.translation, ...(w.notes || []).map((n) => n.phrase)].join(" ").toLocaleLowerCase(ui).includes(query))
+    : inTab;
   const showLang = new Set(words.map((w) => baseLang(w.lang))).size > 1;
   $("list").replaceChildren(...shown.map((w) => item(w, showLang)));
-  $("count").textContent = words.length ? t("wordsCount", words.length) : "";
+  for (const button of document.querySelectorAll(".segtab")) {
+    button.ariaSelected = String(button.dataset.tab === tab);
+    button.querySelector(".count").textContent = button.dataset.tab === "notes" ? words.filter(withNotes).length : words.length;
+  }
   $("empty").hidden = shown.length > 0;
   $("emptyText").textContent = words.length ? t("wordsNoMatch") : t("wordsEmpty");
   // A quiz uses the lines of the language being learned.

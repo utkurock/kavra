@@ -646,5 +646,29 @@
   },
   "kindTranslation": {
     "message": "Çeviri"
+  },
+  "streakDays": {
+    "message": "$1 günlük seri"
+  },
+  "collapseSidebar": {
+    "message": "Kenar çubuğunu daralt"
+  },
+  "expandSidebar": {
+    "message": "Kenar çubuğunu genişlet"
+  },
+  "wordsTabAll": {
+    "message": "Tümü"
+  },
+  "wordsTabNotes": {
+    "message": "Notlu"
+  },
+  "noteCount": {
+    "message": "$1 not"
+  },
+  "noteCountOne": {
+    "message": "1 not"
+  },
+  "openVideo": {
+    "message": "Videoya git"
   }
 }

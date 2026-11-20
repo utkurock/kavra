@@ -646,5 +646,29 @@
   },
   "kindTranslation": {
     "message": "Translation"
+  },
+  "streakDays": {
+    "message": "$1-day streak"
+  },
+  "collapseSidebar": {
+    "message": "Collapse sidebar"
+  },
+  "expandSidebar": {
+    "message": "Expand sidebar"
+  },
+  "wordsTabAll": {
+    "message": "All"
+  },
+  "wordsTabNotes": {
+    "message": "With notes"
+  },
+  "noteCount": {
+    "message": "$1 notes"
+  },
+  "noteCountOne": {
+    "message": "1 note"
+  },
+  "openVideo": {
+    "message": "Open video"
   }
 }
