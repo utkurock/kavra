@@ -24,25 +24,39 @@
       .wrap { display: flex; flex-direction: column; align-items: center; gap: 8px;
         font: 600 calc(clamp(13px, 2.3cqi, 24px) * var(--scale, 1))/1.35 system-ui, -apple-system, "Segoe UI", sans-serif; }
       .lines { position: relative; max-width: 92%; }
-      .box { display: flex; flex-direction: column; align-items: center; gap: 3px; }
+      .box { position: relative; display: flex; flex-direction: column; align-items: center; gap: 3px;
+        transition: opacity .2s ease; }
+      .box.leaving { opacity: 0; }
       .line { pointer-events: auto; color: #fff; background: rgba(0,0,0,.74); padding: 2px 10px;
-        border-radius: 6px; text-align: center; text-shadow: 0 1px 2px #000; }
-      .line { touch-action: none; }
-      .orig { cursor: pointer; }
+        border-radius: 6px; text-align: center; text-shadow: 0 1px 2px #000; touch-action: none; }
+      .orig { cursor: pointer; transition: font-size .2s ease, opacity .2s ease, background-color .15s, box-shadow .15s; }
+      .orig.enter { animation: rise .22s cubic-bezier(.2,.7,.3,1); }
+      @keyframes rise { from { opacity: 0; transform: translateY(6px); } }
       .box.dragging .line { cursor: grabbing; }
-      .orig:hover, .orig:focus-visible { background: rgba(20,20,20,.92); outline: 2px solid #ffd54a; }
+      .orig:hover, .orig:focus-visible { background: rgba(20,20,20,.92); box-shadow: 0 0 0 2px #ffd54a; outline: none; }
       .old { opacity: .62; font-size: .82em; }
-      .trans { font-weight: 500; font-size: .9em; color: #f2f2f2; transition: filter .15s; }
+      /* The translation hangs under the lines without taking room, so showing, hiding or changing
+         it never moves the lines; the transparent top border bridges the gap for the pointer. */
+      .trans { position: absolute; top: 100%; left: 50%; transform: translateX(-50%); width: max-content;
+        max-width: 88cqi; border-top: 3px solid transparent; background-clip: padding-box;
+        font-weight: 500; font-size: .9em; color: #f2f2f2; transition: filter .2s ease, opacity .2s ease; }
+      .trans.off { opacity: 0; pointer-events: none; }
       .trans.blur { filter: blur(6px); cursor: help; }
       .trans:focus-visible { outline: none; }
       .trans.for-old { font-size: .82em; }
       .trans.wait { color: #a8a8ae; }
+      .status:not([hidden]) { animation: fade-in .2s ease; }
+      @keyframes fade-in { from { opacity: 0; } }
       .status { font-size: 13px; font-weight: 500; color: #fff; background: rgba(0,0,0,.6);
         padding: 2px 8px; border-radius: 4px; }
       .status.error { background: #b3261e; }
       .card { pointer-events: auto; max-width: min(92%, 760px); background: #1c1c20; color: #f2f2f2;
         border: 1px solid #3a3a40; border-radius: 10px; padding: 12px 16px 12px; position: relative;
-        box-shadow: 0 6px 24px rgba(0,0,0,.5); font-size: 17px; font-weight: 500; line-height: 1.45; }
+        box-shadow: 0 6px 24px rgba(0,0,0,.5); font-size: 17px; font-weight: 500; line-height: 1.45;
+        transition: opacity .14s ease, transform .14s ease; }
+      .card:not([hidden]) { animation: pop .2s cubic-bezier(.2,.7,.3,1); }
+      .card.closing { opacity: 0; transform: translateY(4px) scale(.98); }
+      @keyframes pop { from { opacity: 0; transform: translateY(6px) scale(.98); } }
       .card .c-orig { margin-right: 26px; }
       .card .c-trans { font-size: 19px; font-weight: 700; margin-top: 6px; }
       .card ul { margin: 10px 0 0; padding-left: 18px; font-size: 14.5px; font-weight: 400; color: #d8d8dc; }
@@ -73,6 +87,10 @@
       .hist-item:hover, .hist-item:focus-visible { background: rgba(255,255,255,.08); outline: none; }
       .hist-item .h-trans { font-weight: 500; font-size: .9em; color: #d8d8dc; margin-top: 1px; transition: filter .15s; }
       .hist-item .h-trans.blur { filter: blur(5px); }
+      @media (prefers-reduced-motion: reduce) {
+        .orig.enter, .card:not([hidden]), .status:not([hidden]), .hist { animation: none; }
+        .box, .orig, .trans, .card { transition: none; }
+      }
       [hidden] { display: none !important; }
     </style>
     <div class="frame"><div class="wrap">
@@ -89,6 +107,7 @@
     </div></div>`;
 
   const box = root.querySelector(".box");
+  const linesEl = root.querySelector(".lines");
   const card = root.querySelector(".card");
   const statusEl = root.querySelector(".status");
   const hist = root.querySelector(".hist");
@@ -239,8 +258,11 @@
     Object.assign(host.style, { left: `${left}px`, width: `${right - left}px` });
     let upper;
     if (customPos != null) {
-      Object.assign(host.style, { top: `${top + height * customPos - host.offsetHeight / 2}px`, bottom: "auto" });
+      // In the upper half the position is the lines' top edge, in the lower half their bottom edge,
+      // so a line added or removed grows the block away from the edge instead of moving it.
       upper = customPos < 0.5;
+      const y = top + height * customPos;
+      Object.assign(host.style, upper ? { top: `${y}px`, bottom: "auto" } : { top: "auto", bottom: `${innerHeight - y}px` });
     } else if (anchor === "top") {
       Object.assign(host.style, { top: `${top + height * (inPlayer ? 0.07 : 0.06)}px`, bottom: "auto" });
       upper = true;
@@ -266,7 +288,12 @@
     }
     e.preventDefault();
     const { top, bottom } = playerArea();
-    customPos = Math.min(0.95, Math.max(0.05, (e.clientY - top) / (bottom - top)));
+    const height = bottom - top;
+    // The block follows the pointer from where it was grabbed; its nearer edge is what's kept.
+    const blockTop = e.clientY - drag.grab;
+    const upper = blockTop + drag.height / 2 - top < height / 2;
+    const edge = (upper ? blockTop : blockTop + drag.height) - top;
+    customPos = upper ? Math.min(0.49, Math.max(0.02, edge / height)) : Math.min(0.97, Math.max(0.5, edge / height));
     place();
   }
   function endDrag(e) {
@@ -285,7 +312,8 @@
   }
   box.addEventListener("pointerdown", (e) => {
     if (e.button !== 0 || !e.target.closest(".line")) return;
-    drag = { y: e.clientY, id: e.pointerId, moved: false };
+    const r = linesEl.getBoundingClientRect();
+    drag = { y: e.clientY, id: e.pointerId, moved: false, grab: e.clientY - r.top, height: r.height };
     addEventListener("pointermove", onDragMove, true);
     addEventListener("pointerup", endDrag, true);
     addEventListener("pointercancel", endDrag, true);
@@ -320,47 +348,58 @@
   let focusLine = null; // the line whose translation is revealed; null = none
   let struggleTimer;
 
-  function origLine(shown, className) {
-    const spans = shown.result ? colourSpans(shown.result, shown.text) : null;
-    const orig = paint(div(`line orig ${className}`), shown.text, spans?.orig);
-    orig.tabIndex = 0;
-    orig.title = t("clickHint");
-    orig.addEventListener("click", () => !suppressClick && openCard(shown));
-    orig.addEventListener("keydown", (e) => e.key === "Enter" && openCard(shown));
-    orig.addEventListener("pointermove", () => reveal(shown));
-    orig.addEventListener("focus", () => reveal(shown));
-    return orig;
+  // Each line keeps its element while on screen, so it can animate in, shrink when it becomes the
+  // line before, and take its colours when the translation arrives without being rebuilt.
+  function lineEl(shown) {
+    if (!shown.el) {
+      const el = (shown.el = div("line orig enter"));
+      el.tabIndex = 0;
+      el.title = t("clickHint");
+      el.addEventListener("animationend", () => el.classList.remove("enter"), { once: true });
+      el.addEventListener("click", () => !suppressClick && openCard(shown));
+      el.addEventListener("keydown", (e) => e.key === "Enter" && openCard(shown));
+      el.addEventListener("pointermove", () => reveal(shown));
+      el.addEventListener("focus", () => reveal(shown));
+    }
+    if (shown.painted !== (shown.result ?? null)) {
+      shown.painted = shown.result ?? null;
+      paint(shown.el, shown.text, shown.result ? colourSpans(shown.result, shown.text).orig : []);
+    }
+    shown.el.classList.toggle("old", shown === previous);
+    return shown.el;
+  }
+
+  // One translation slot under the lines, showing the line the pointer is on.
+  const slot = div("line trans off");
+  slot.tabIndex = 0;
+  slot.title = t("hoverHint");
+  slot.addEventListener("pointermove", () => line && reveal(focusLine || line));
+  slot.addEventListener("focus", () => line && reveal(focusLine || line));
+
+  // Puts the given nodes in order, leaving the ones already in place alone.
+  function setChildren(parent, nodes) {
+    nodes.forEach((node, i) => parent.children[i] !== node && parent.insertBefore(node, parent.children[i] || null));
+    while (parent.children.length > nodes.length) parent.lastElementChild.remove();
   }
 
   function render() {
-    box.replaceChildren();
-    if (line) {
-      if (previous) box.appendChild(origLine(previous, "old"));
-      box.appendChild(origLine(line, ""));
-      const slot = div("line trans");
-      slot.tabIndex = 0;
-      slot.title = t("hoverHint");
-      slot.addEventListener("pointermove", () => reveal(focusLine || line));
-      slot.addEventListener("focus", () => reveal(focusLine || line));
-      box.appendChild(slot);
-      renderSlot();
-    }
+    const nodes = line ? [...(previous ? [lineEl(previous)] : []), lineEl(line), slot] : [];
+    setChildren(box, nodes);
+    renderSlot();
     renderHistory();
   }
 
   // Fills the slot: the revealed line's translation, else the newest one's (blurred in blur mode).
   function renderSlot() {
-    const slot = box.querySelector(".trans");
-    if (!slot) return;
+    if (!line) return;
     const target = focusLine === previous || focusLine === line ? focusLine || line : line;
     // A line translated on demand shows that it's coming while the pointer waits on it.
     const waiting = Boolean(focusLine) && target === focusLine && target.pending && !target.result;
     slot.classList.toggle("wait", waiting);
-    if (trMode === "click" || (!target?.result && !waiting)) {
-      slot.hidden = true;
-      return;
-    }
-    slot.hidden = false;
+    // The card shows the translation itself (and below the lines it would sit under this slot).
+    const off = trMode === "click" || Boolean(cardLine) || (!target?.result && !waiting);
+    slot.classList.toggle("off", off);
+    if (off) return;
     if (waiting) {
       slot.textContent = "…";
       slot.classList.remove("blur");
@@ -510,8 +549,11 @@
     chrome.runtime.sendMessage({ type: "media", action }).catch(() => {});
   }
 
+  let cardHideTimer;
   function openCard(target) {
     if (!cardLine) media("pause");
+    clearTimeout(cardHideTimer);
+    card.classList.remove("closing");
     cardLine = target;
     if (!target.result) {
       target.pending = true;
@@ -519,6 +561,7 @@
     }
     fillCard();
     card.hidden = false;
+    renderSlot();
     // Live translations skip the notes, so a click asks for the full version (and the line is
     // remembered for the quiz).
     requestTranslation(target, false);
@@ -527,7 +570,12 @@
   function closeCard() {
     if (!cardLine) return;
     cardLine = null;
-    card.hidden = true;
+    card.classList.add("closing");
+    cardHideTimer = setTimeout(() => {
+      card.hidden = true;
+      card.classList.remove("closing");
+    }, 140);
+    renderSlot();
     media("resume");
   }
 
@@ -584,6 +632,8 @@
     clearTimeout(struggleTimer);
     shownAt = Date.now();
     clearTimeout(hideTimer);
+    clearTimeout(leaveTimer);
+    box.classList.remove("leaving");
     translateIfVisible(line);
     attach();
     render();
@@ -604,11 +654,17 @@
       hideTimer = setTimeout(hideLine, 800);
       return;
     }
-    line = null;
-    previous = null;
-    focusLine = null;
-    render();
+    // Fade out, then let go of the lines (a new line meanwhile cancels this).
+    box.classList.add("leaving");
+    leaveTimer = setTimeout(() => {
+      box.classList.remove("leaving");
+      line = null;
+      previous = null;
+      focusLine = null;
+      render();
+    }, 200);
   }
+  let leaveTimer;
   box.addEventListener("pointerenter", () => (hovering = true));
   box.addEventListener("pointerleave", () => (hovering = false));
 

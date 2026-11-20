@@ -12,6 +12,9 @@
   .panels { display: grid; position: relative; }
   .panel { grid-area: 1 / 1; display: flex; flex-direction: column; gap: 12px; padding: 16px 18px 18px; }
   .panel[inert] { visibility: hidden; }
+  .panel:not([inert]) { animation: panel-in .18s ease; }
+  @keyframes panel-in { from { opacity: 0; transform: translateY(3px); } }
+  @media (prefers-reduced-motion: reduce) { .panel:not([inert]) { animation: none; } }
   .lang-row { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
   .stat .progress { margin-top: 10px; }
   #panel-overview .stat { padding: 12px 14px 11px; }

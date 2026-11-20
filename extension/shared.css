@@ -78,7 +78,8 @@ a:hover { text-decoration-color: var(--fg); }
 /* ---- buttons ---- */
 .btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; font: inherit; font-weight: 600;
   padding: 10px 18px; border-radius: var(--radius-sm); border: 1px solid transparent; cursor: pointer;
-  transition: background-color .15s, border-color .15s, color .15s; }
+  transition: background-color .15s, border-color .15s, color .15s, transform .12s ease; }
+.btn:active:not(:disabled) { transform: scale(.97); }
 .btn.block { width: 100%; }
 a.btn { text-decoration: none; }
 .btn.primary { background: var(--accent); color: var(--accent-fg); }
@@ -112,7 +113,8 @@ input:hover, select:hover { border-color: var(--faint); }
 .seg { display: grid; grid-auto-flow: column; grid-auto-columns: 1fr; padding: 4px; gap: 4px;
   background: var(--bg); border: 1px solid var(--line); border-radius: 14px; }
 .seg input { position: absolute; opacity: 0; pointer-events: none; }
-.seg label { text-align: center; padding: 7px 8px; border-radius: 10px; font-size: 13px; font-weight: 500; color: var(--muted); cursor: pointer; }
+.seg label { text-align: center; padding: 7px 8px; border-radius: 10px; font-size: 13px; font-weight: 500; color: var(--muted); cursor: pointer;
+  transition: background-color .18s ease, color .18s ease; }
 .seg label:hover { color: var(--fg); }
 .seg input:checked + label { background: var(--surface-3); color: var(--fg); }
 .seg input:focus-visible + label { outline: 2px solid var(--hue-2); outline-offset: 1px; }
@@ -151,7 +153,7 @@ input:hover, select:hover { border-color: var(--faint); }
 /* tabs */
 .tabs { display: grid; grid-auto-flow: column; grid-auto-columns: 1fr; border-bottom: 1px solid var(--line); }
 .tab { position: relative; font: inherit; font-size: 14.5px; font-weight: 500; color: var(--faint); background: none;
-  border: 0; padding: 12px 8px; cursor: pointer; }
+  border: 0; padding: 12px 8px; cursor: pointer; transition: color .15s ease; }
 .tab:hover { color: var(--muted); }
 .tab[aria-selected="true"] { color: var(--fg); }
 .tab[aria-selected="true"]::after { content: ""; position: absolute; left: 22%; right: 22%; bottom: -1px; height: 2px;
