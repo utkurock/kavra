@@ -36,6 +36,7 @@ globalThis.Kavra ??= (() => {
     source: "auto",
     trMode: "blur",
     textSize: "m", // subtitle text: "s", "m" or "l"
+    lineHistory: true, // a button by the subtitles that lists the last lines
     provider: "anthropic",
     apiKeys: {}, // provider id -> key, so switching providers keeps each key
     models: {}, // provider id -> model chosen by the user

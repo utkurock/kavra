@@ -574,5 +574,14 @@
   },
   "sizeLarge": {
     "message": "Büyük"
+  },
+  "historyLabel": {
+    "message": "Önceki satırlar"
+  },
+  "historySetting": {
+    "message": "Satır geçmişi"
+  },
+  "historyHelp": {
+    "message": "Altyazının yanındaki düğme son 5 satırı listeler; çevirisini görmek için birinin üzerine gel."
   }
 }

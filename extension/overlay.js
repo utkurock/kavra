@@ -9,6 +9,7 @@
 
   const { t, getSettings } = globalThis.Kavra;
   const STRUGGLE_HOVER_MS = 800;
+  const HISTORY_SIZE = 5;
   const COLORS = ["#ffd54a", "#7fdbff", "#ff9eb5", "#a5e88f", "#ffb36b", "#c9a7ff"];
 
   const host = document.createElement("div");
@@ -22,7 +23,8 @@
       .frame { container-type: inline-size; width: 100%; }
       .wrap { display: flex; flex-direction: column; align-items: center; gap: 8px;
         font: 600 calc(clamp(13px, 2.3cqi, 24px) * var(--scale, 1))/1.35 system-ui, -apple-system, "Segoe UI", sans-serif; }
-      .box { max-width: 92%; display: flex; flex-direction: column; align-items: center; gap: 3px; }
+      .lines { position: relative; max-width: 92%; }
+      .box { display: flex; flex-direction: column; align-items: center; gap: 3px; }
       .line { pointer-events: auto; color: #fff; background: rgba(0,0,0,.74); padding: 2px 10px;
         border-radius: 6px; text-align: center; text-shadow: 0 1px 2px #000; }
       .line { touch-action: none; }
@@ -49,18 +51,43 @@
       .close { position: absolute; top: 4px; right: 6px; border: 0; background: none; font-size: 22px;
         cursor: pointer; color: #bbb; line-height: 1; padding: 4px 6px; }
       .close:focus-visible { outline: 2px solid #ffd54a; }
+      /* line history: a button at the top left of the lines, and the list it opens */
+      .hist-btn { pointer-events: auto; position: absolute; right: 100%; top: 0; margin-right: 6px; width: 1.45em;
+        height: 1.45em; padding: 0; border: 0; border-radius: 50%; display: grid; place-items: center;
+        background: rgba(0,0,0,.6); color: #fff; opacity: .55; cursor: pointer; transition: opacity .15s; }
+      .hist-btn:hover, .hist-btn.open, .hist-btn:focus-visible { opacity: 1; }
+      .hist-btn:focus-visible { outline: 2px solid #ffd54a; }
+      .hist-btn svg { width: 62%; height: 62%; }
+      .hist { pointer-events: auto; max-width: min(92%, 760px); display: flex; flex-direction: column; gap: 2px;
+        padding: 6px; background: rgba(16,16,20,.94); border: 1px solid #3a3a40; border-radius: 10px;
+        box-shadow: 0 6px 24px rgba(0,0,0,.5); font-size: .78em; }
+      .hist.below { flex-direction: column-reverse; } /* the newest line stays next to the subtitles */
+      .hist-item { padding: 4px 9px; border-radius: 6px; color: #fff; cursor: pointer; }
+      .hist-item:hover, .hist-item:focus-visible { background: rgba(255,255,255,.08); outline: none; }
+      .hist-item .h-trans { font-weight: 500; font-size: .9em; color: #d8d8dc; margin-top: 1px; transition: filter .15s; }
+      .hist-item .h-trans.blur { filter: blur(5px); }
       [hidden] { display: none !important; }
     </style>
     <div class="frame"><div class="wrap">
       <div class="card" hidden role="dialog"></div>
       <div class="status" hidden></div>
-      <div class="box" aria-live="polite"></div>
+      <div class="hist" id="hist" hidden role="list"></div>
+      <div class="lines">
+        <button class="hist-btn" hidden aria-expanded="false" aria-controls="hist">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"
+            stroke-linejoin="round" aria-hidden="true"><path d="M3 12a9 9 0 1 0 3-6.7L3 8"/><path d="M3 3v5h5"/><path d="M12 7v5l3 2"/></svg>
+        </button>
+        <div class="box" aria-live="polite"></div>
+      </div>
     </div></div>`;
 
   const box = root.querySelector(".box");
   const card = root.querySelector(".card");
   const statusEl = root.querySelector(".status");
+  const hist = root.querySelector(".hist");
+  const histBtn = root.querySelector(".hist-btn");
   card.ariaLabel = t("translation");
+  hist.ariaLabel = histBtn.ariaLabel = histBtn.title = t("historyLabel");
 
   // Copies left from before an extension reload can't reach the extension any more, yet their
   // fullscreen handler still put their frozen lines back on screen. The live copy takes their hosts
@@ -89,6 +116,11 @@
   let cardLine = null;
   let statusTimer;
   let errorShown = "";
+  let historyOn = true;
+  let recent = []; // the latest lines, newest last; those no longer on screen make up the history
+  let histOpen = false; // false, "hover" (follows the pointer) or "pinned" (opened with a click or key)
+  let histFocus = null; // the history line whose translation is revealed
+  let histCloseTimer;
 
   const TEXT_SCALE = { s: 0.8, m: 1, l: 1.2 };
   const setTextSize = (size) => root.querySelector(".wrap").style.setProperty("--scale", TEXT_SCALE[size] ?? 1);
@@ -96,6 +128,7 @@
   getSettings().then(async (s) => {
     trMode = s.trMode;
     setTextSize(s.textSize);
+    historyOn = s.lineHistory;
     locales = { orig: s.targetLang, trans: s.nativeLang };
     customPos = (await chrome.storage.local.get("overlayPos")).overlayPos ?? null;
     render();
@@ -206,8 +239,9 @@
       Object.assign(host.style, { top: "auto", bottom: `${innerHeight - bottom + height * (inPlayer ? 0.15 : 0.08)}px` });
       upper = false;
     }
-    // Keep the translation card on the side away from the nearest edge.
+    // Keep the translation card and the history on the side away from the nearest edge.
     root.querySelector(".wrap").style.flexDirection = upper ? "column-reverse" : "column";
+    hist.classList.toggle("below", upper);
   }
 
   // ---- drag the subtitles up or down; a press without movement is still a click ----
@@ -291,16 +325,18 @@
 
   function render() {
     box.replaceChildren();
-    if (!line) return;
-    if (previous) box.appendChild(origLine(previous, "old"));
-    box.appendChild(origLine(line, ""));
-    const slot = div("line trans");
-    slot.tabIndex = 0;
-    slot.title = t("hoverHint");
-    slot.addEventListener("pointermove", () => reveal(focusLine || line));
-    slot.addEventListener("focus", () => reveal(focusLine || line));
-    box.appendChild(slot);
-    renderSlot();
+    if (line) {
+      if (previous) box.appendChild(origLine(previous, "old"));
+      box.appendChild(origLine(line, ""));
+      const slot = div("line trans");
+      slot.tabIndex = 0;
+      slot.title = t("hoverHint");
+      slot.addEventListener("pointermove", () => reveal(focusLine || line));
+      slot.addEventListener("focus", () => reveal(focusLine || line));
+      box.appendChild(slot);
+      renderSlot();
+    }
+    renderHistory();
   }
 
   // Fills the slot: the revealed line's translation, else the newest one's (blurred in blur mode).
@@ -323,7 +359,11 @@
     focusLine = target;
     translateIfVisible(target); // a line kept from earlier may not have its translation yet
     renderSlot();
-    // Revealing a blurred translation for a moment counts as "needed help" for the quiz.
+    noteStruggle(target);
+  }
+
+  // Revealing a blurred translation for a moment counts as "needed help" for the quiz.
+  function noteStruggle(target) {
     clearTimeout(struggleTimer);
     if (trMode === "blur" && !target.reported) {
       struggleTimer = setTimeout(() => {
@@ -332,6 +372,81 @@
       }, STRUGGLE_HOVER_MS);
     }
   }
+
+  // ---- line history: the last lines that left the screen, listed from a button by the subtitles ----
+  const pastLines = () => recent.filter((l) => l !== line && l !== previous).slice(-HISTORY_SIZE);
+
+  function renderHistory() {
+    const past = historyOn ? pastLines() : [];
+    if (!past.length) histOpen = false;
+    // The button shows with the subtitles (or while the video is paused), not alone over the video.
+    histBtn.hidden = !past.length || !(line || held || histOpen);
+    histBtn.classList.toggle("open", Boolean(histOpen));
+    histBtn.ariaExpanded = String(Boolean(histOpen));
+    hist.hidden = !histOpen;
+    const focused = root.activeElement?.entry; // keep keyboard focus on its line across a rebuild
+    hist.replaceChildren(...(histOpen ? past.map(histItem) : []));
+    if (focused) [...hist.children].find((el) => el.entry === focused)?.focus();
+  }
+
+  function histItem(entry) {
+    const item = div("hist-item");
+    item.entry = entry;
+    item.role = "listitem";
+    item.tabIndex = 0;
+    item.title = t("clickHint");
+    const spans = entry.result ? colourSpans(entry.result, entry.text) : null;
+    item.append(paint(div("h-orig"), entry.text, spans?.orig));
+    if (trMode !== "click" && entry.result) {
+      const tr = paint(div("h-trans"), entry.result.translation, spans.trans);
+      tr.classList.toggle("blur", trMode === "blur" && histFocus !== entry);
+      item.append(tr);
+    }
+    const focus = () => {
+      if (histFocus === entry || trMode === "click") return;
+      histFocus = entry;
+      translateIfVisible(entry); // shown while in click mode, it has no translation yet
+      noteStruggle(entry);
+      item.querySelector(".h-trans")?.classList.remove("blur");
+    };
+    const blur = () => {
+      if (histFocus !== entry) return;
+      histFocus = null;
+      clearTimeout(struggleTimer);
+      item.querySelector(".h-trans")?.classList.toggle("blur", trMode === "blur");
+    };
+    item.addEventListener("pointermove", focus);
+    item.addEventListener("focus", focus);
+    item.addEventListener("pointerleave", blur);
+    item.addEventListener("blur", blur);
+    item.addEventListener("click", () => openCard(entry));
+    item.addEventListener("keydown", (e) => e.key === "Enter" && openCard(entry));
+    return item;
+  }
+
+  // Opens while the pointer is on the button or the list; a click (or Enter) keeps it open.
+  function openHistory(how) {
+    clearTimeout(histCloseTimer);
+    if (histOpen === "pinned" || histOpen === how) return;
+    histOpen = how;
+    renderHistory();
+  }
+  function closeHistory() {
+    clearTimeout(histCloseTimer);
+    if (!histOpen) return;
+    histOpen = false;
+    histFocus = null;
+    renderHistory();
+  }
+  function closeHistorySoon() {
+    clearTimeout(histCloseTimer);
+    if (histOpen === "hover") histCloseTimer = setTimeout(closeHistory, 300);
+  }
+  histBtn.addEventListener("pointermove", () => openHistory("hover"));
+  histBtn.addEventListener("pointerleave", closeHistorySoon);
+  histBtn.addEventListener("click", () => (histOpen === "pinned" ? closeHistory() : openHistory("pinned")));
+  hist.addEventListener("pointerenter", () => clearTimeout(histCloseTimer));
+  hist.addEventListener("pointerleave", closeHistorySoon);
 
   function conceal() {
     if (!focusLine) return;
@@ -442,6 +557,8 @@
     previous = line && !silenced ? line : null;
     silenced = false;
     line = { text, result: null, pending: false };
+    recent.push(line);
+    if (recent.length > HISTORY_SIZE + 2) recent.shift();
     focusLine = null; // a new line starts blurred, wherever the cursor is
     clearTimeout(struggleTimer);
     shownAt = Date.now();
@@ -462,7 +579,7 @@
   }
   function hideLine() {
     if (held) return; // playing again sends a fresh "clear" after a moment of silence
-    if (cardLine || hovering) {
+    if (cardLine || hovering || histOpen) {
       hideTimer = setTimeout(hideLine, 800);
       return;
     }
@@ -498,6 +615,7 @@
     window.__kavraOverlay = null;
     closeCard();
     line = previous = null;
+    recent = [];
     render();
     if (message) {
       showStatus(message, true);
@@ -513,6 +631,7 @@
     else if (msg.type === "hold") {
       held = msg.on;
       if (held) clearTimeout(hideTimer);
+      renderHistory();
     }
     else if (msg.type === "status") showStatus(msg.text, msg.error);
     else if (msg.type === "stop") teardown(msg.message);
@@ -525,7 +644,12 @@
       locales = { orig: changes.targetLang?.newValue || locales.orig, trans: changes.nativeLang?.newValue || locales.trans };
       closeCard();
       line = previous = null;
+      recent = [];
       render();
+    }
+    if (changes.lineHistory) {
+      historyOn = changes.lineHistory.newValue ?? true;
+      renderHistory();
     }
     if (changes.textSize) {
       setTextSize(changes.textSize.newValue);
@@ -543,7 +667,10 @@
   }
 
   function onKeydown(e) {
-    if (e.key === "Escape") closeCard();
+    if (e.key === "Escape") {
+      closeCard();
+      closeHistory();
+    }
   }
 
   chrome.runtime.onMessage.addListener(onMessage);

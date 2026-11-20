@@ -574,5 +574,14 @@
   },
   "sizeLarge": {
     "message": "Large"
+  },
+  "historyLabel": {
+    "message": "Previous lines"
+  },
+  "historySetting": {
+    "message": "Line history"
+  },
+  "historyHelp": {
+    "message": "A button by the subtitles lists the last 5 lines; point at one for its translation."
   }
 }
