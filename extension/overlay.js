@@ -5,7 +5,6 @@
   // A copy left from before the extension was reloaded can't reach the extension any more, so a new
   // injection replaces it instead of stepping aside.
   if (window.__kavraOverlay?.alive?.()) return;
-  document.querySelectorAll(":scope > div[style*='2147483647']").forEach((el) => el.remove());
   window.__kavraOverlay = { alive: () => Boolean(chrome.runtime?.id) };
 
   const { t, getSettings } = globalThis.Kavra;
@@ -14,6 +13,7 @@
 
   const host = document.createElement("div");
   host.style.cssText = "all: initial; position: fixed; left: 0; width: 100%; bottom: 8%; z-index: 2147483647; pointer-events: none;";
+  host.dataset.kavraOverlay = "";
   const root = host.attachShadow({ mode: "closed" });
   root.innerHTML = `
     <style>
@@ -61,6 +61,18 @@
   const card = root.querySelector(".card");
   const statusEl = root.querySelector(".status");
   card.ariaLabel = t("translation");
+
+  // Copies left from before an extension reload can't reach the extension any more, yet their
+  // fullscreen handler still put their frozen lines back on screen. The live copy takes their hosts
+  // away: marked ones anywhere, and unmarked ones from older versions by the overlay's z-index.
+  function removeStrays() {
+    const strays = [...document.querySelectorAll("[data-kavra-overlay]")];
+    for (const parent of [document.documentElement, document.fullscreenElement]) {
+      if (parent) strays.push(...parent.querySelectorAll(":scope > div[style*='2147483647']:not([data-kavra-overlay])"));
+    }
+    strays.forEach((el) => el !== host && el.remove());
+  }
+  removeStrays();
 
   let line = null; // the newest line on screen: { text, result, pending, reported, error }
   let previous = null; // the line before it, kept while the same stretch of speech goes on
@@ -141,6 +153,8 @@
 
   // ---- rendering ----
   function attach() {
+    if (!chrome.runtime?.id) return retire(); // left from before an extension reload
+    removeStrays();
     // Fullscreen hides everything outside the fullscreen element, so move the overlay inside it.
     const fs = document.fullscreenElement;
     const parent = fs && fs.tagName !== "VIDEO" && fs.tagName !== "IFRAME" ? fs : document.documentElement;
@@ -238,11 +252,8 @@
   // reader and overlay to be injected into them too.
   let frameCount = document.querySelectorAll("iframe").length;
   const placeTimer = setInterval(() => {
-    if (!chrome.runtime?.id) {
-      clearInterval(placeTimer);
-      host.remove();
-      return;
-    }
+    if (!chrome.runtime?.id) return retire();
+    removeStrays();
     place();
     const frames = document.querySelectorAll("iframe").length;
     if (isTop && frames !== frameCount) {
@@ -467,18 +478,27 @@
     if (line) translateIfVisible(line);
   }
 
+  // Page listeners outlive the extension, so a copy that lost it must remove them too.
+  function unlisten() {
+    clearInterval(placeTimer);
+    document.removeEventListener("fullscreenchange", attach);
+    removeEventListener("resize", place);
+    document.removeEventListener("keydown", onKeydown);
+    document.removeEventListener("visibilitychange", onVisibility);
+  }
+  function retire() {
+    unlisten();
+    host.remove();
+  }
+
   function teardown(message) {
     chrome.runtime.onMessage.removeListener(onMessage);
     chrome.storage.onChanged.removeListener(onStorage);
-    document.removeEventListener("fullscreenchange", attach);
-    removeEventListener("resize", place);
-    clearInterval(placeTimer);
-    document.removeEventListener("keydown", onKeydown);
+    unlisten();
     window.__kavraOverlay = null;
     closeCard();
     line = previous = null;
     render();
-    document.removeEventListener("visibilitychange", onVisibility);
     if (message) {
       showStatus(message, true);
       setTimeout(() => host.remove(), 8000);
