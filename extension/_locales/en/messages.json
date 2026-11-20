@@ -3,10 +3,10 @@
     "message": "Kavra"
   },
   "extDescription": {
-    "message": "Learn a language from any video on the web: live subtitles, colour-matched translations and quizzes, powered by Claude Haiku."
+    "message": "Learn a language from any video on the web: live subtitles, colour-matched translations and quizzes, with the AI of your choice."
   },
   "noKeyWarning": {
-    "message": "Add your Anthropic API key in Settings to get translations and quizzes."
+    "message": "Add an API key in Settings to get translations and quizzes."
   },
   "trModeLabel": {
     "message": "Translation line"
@@ -63,10 +63,10 @@
     "message": "Your level"
   },
   "apiKeyLabel": {
-    "message": "Anthropic API key"
+    "message": "API key"
   },
   "apiKeyHelp": {
-    "message": "Stored only in this browser and sent only to api.anthropic.com. Translations and quizzes use Claude Haiku 5.5 and are billed to this key."
+    "message": "Stored only in this browser and sent only to the provider you picked. Each provider keeps its own key."
   },
   "sourceLabel": {
     "message": "Subtitle source"
@@ -186,7 +186,7 @@
     "message": "The API key is invalid."
   },
   "errPermission": {
-    "message": "This API key has no access to Claude Haiku."
+    "message": "This API key can't use this model."
   },
   "errRateLimit": {
     "message": "Rate limited; try again in a moment."
@@ -232,9 +232,6 @@
   },
   "nativeLangHelp": {
     "message": "Translations and explanations are written in this language."
-  },
-  "secApi": {
-    "message": "Claude API"
   },
   "show": {
     "message": "Show"
@@ -331,5 +328,110 @@
   },
   "tabPreferences": {
     "message": "Preferences"
+  },
+  "secProvider": {
+    "message": "AI provider"
+  },
+  "secProviderHelp": {
+    "message": "Translations and quizzes are made by this provider and billed to your key."
+  },
+  "providerLabel": {
+    "message": "Provider"
+  },
+  "modelLabel": {
+    "message": "Model"
+  },
+  "modelHelp": {
+    "message": "Leave empty to use $1. Load models to pick from your provider's current list."
+  },
+  "listModels": {
+    "message": "Load models"
+  },
+  "loadingModels": {
+    "message": "Loading models…"
+  },
+  "modelsLoaded": {
+    "message": "$1 models found. Pick one from the list in the field."
+  },
+  "errModel": {
+    "message": "Model not available: $1 Choose another model in Settings."
+  },
+  "done": {
+    "message": "Done"
+  },
+  "tabActivity": {
+    "message": "Activity"
+  },
+  "lastWeeks": {
+    "message": "Last 4 months"
+  },
+  "seeAllActivity": {
+    "message": "See all →"
+  },
+  "less": {
+    "message": "Less"
+  },
+  "more": {
+    "message": "More"
+  },
+  "minToday": {
+    "message": "min today"
+  },
+  "dayStreak": {
+    "message": "day streak"
+  },
+  "quizAccuracy": {
+    "message": "quiz accuracy"
+  },
+  "dayTooltip": {
+    "message": "$1: $2 min · $3 correct, $4 wrong"
+  },
+  "heatmapLabel": {
+    "message": "$1 minutes of practice over $2 active days"
+  },
+  "activityTitle": {
+    "message": "Activity"
+  },
+  "activitySubtitle": {
+    "message": "Your daily practice. Kept only in this browser."
+  },
+  "totalMinutes": {
+    "message": "minutes watched"
+  },
+  "activeDays": {
+    "message": "active days"
+  },
+  "correctWrong": {
+    "message": "$1 correct · $2 wrong"
+  },
+  "lastYear": {
+    "message": "Last 12 months"
+  },
+  "last14": {
+    "message": "Last 14 days"
+  },
+  "colDate": {
+    "message": "Day"
+  },
+  "colMinutes": {
+    "message": "Minutes"
+  },
+  "colLines": {
+    "message": "Lines"
+  },
+  "colLookedUp": {
+    "message": "Looked up"
+  },
+  "colQuizzes": {
+    "message": "Quizzes"
+  },
+  "colCorrect": {
+    "message": "Correct"
+  },
+  "colWrong": {
+    "message": "Wrong"
+  },
+  "noActivity": {
+    "message": "No activity yet. Start captions on a video and it will show up here."
   }
 }

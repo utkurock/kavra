@@ -3,10 +3,10 @@
     "message": "Kavra"
   },
   "extDescription": {
-    "message": "Webdeki her videodan dil öğren: canlı altyazı, renk eşleşmeli çeviri ve quiz. Claude Haiku ile."
+    "message": "Webdeki her videodan dil öğren: canlı altyazı, renk eşleşmeli çeviri ve quiz, istediğin yapay zekâ ile."
   },
   "noKeyWarning": {
-    "message": "Çeviri ve quiz için Ayarlar'dan Anthropic API anahtarını gir."
+    "message": "Çeviri ve quiz için Ayarlar'dan bir API anahtarı ekle."
   },
   "trModeLabel": {
     "message": "Çeviri satırı"
@@ -63,10 +63,10 @@
     "message": "Seviyen"
   },
   "apiKeyLabel": {
-    "message": "Anthropic API anahtarı"
+    "message": "API anahtarı"
   },
   "apiKeyHelp": {
-    "message": "Sadece bu tarayıcıda saklanır ve yalnızca api.anthropic.com'a gönderilir. Çeviri ve quiz Claude Haiku 5.5 ile yapılır, ücreti bu anahtara yansır."
+    "message": "Sadece bu tarayıcıda saklanır ve yalnızca seçtiğin sağlayıcıya gönderilir. Her sağlayıcının anahtarı ayrı tutulur."
   },
   "sourceLabel": {
     "message": "Altyazı kaynağı"
@@ -186,7 +186,7 @@
     "message": "API anahtarı geçersiz."
   },
   "errPermission": {
-    "message": "Bu API anahtarının Claude Haiku'ya erişimi yok."
+    "message": "Bu API anahtarı bu modeli kullanamıyor."
   },
   "errRateLimit": {
     "message": "Hız limitine takıldın, biraz sonra tekrar dene."
@@ -232,9 +232,6 @@
   },
   "nativeLangHelp": {
     "message": "Çeviri ve açıklamalar bu dilde yazılır."
-  },
-  "secApi": {
-    "message": "Claude API"
   },
   "show": {
     "message": "Göster"
@@ -331,5 +328,110 @@
   },
   "tabPreferences": {
     "message": "Tercihler"
+  },
+  "secProvider": {
+    "message": "Yapay zekâ sağlayıcısı"
+  },
+  "secProviderHelp": {
+    "message": "Çeviri ve quiz'ler bu sağlayıcıyla yapılır, ücreti senin anahtarına yansır."
+  },
+  "providerLabel": {
+    "message": "Sağlayıcı"
+  },
+  "modelLabel": {
+    "message": "Model"
+  },
+  "modelHelp": {
+    "message": "Boş bırakırsan $1 kullanılır. Sağlayıcının güncel listesinden seçmek için modelleri getir."
+  },
+  "listModels": {
+    "message": "Modelleri getir"
+  },
+  "loadingModels": {
+    "message": "Modeller yükleniyor…"
+  },
+  "modelsLoaded": {
+    "message": "$1 model bulundu. Alandaki listeden birini seç."
+  },
+  "errModel": {
+    "message": "Model kullanılamıyor: $1 Ayarlar'dan başka bir model seç."
+  },
+  "done": {
+    "message": "Bitti"
+  },
+  "tabActivity": {
+    "message": "Aktivite"
+  },
+  "lastWeeks": {
+    "message": "Son 4 ay"
+  },
+  "seeAllActivity": {
+    "message": "Tümünü gör →"
+  },
+  "less": {
+    "message": "Az"
+  },
+  "more": {
+    "message": "Çok"
+  },
+  "minToday": {
+    "message": "dk bugün"
+  },
+  "dayStreak": {
+    "message": "günlük seri"
+  },
+  "quizAccuracy": {
+    "message": "quiz doğruluğu"
+  },
+  "dayTooltip": {
+    "message": "$1: $2 dk · $3 doğru, $4 yanlış"
+  },
+  "heatmapLabel": {
+    "message": "$2 aktif günde $1 dakika çalışma"
+  },
+  "activityTitle": {
+    "message": "Aktivite"
+  },
+  "activitySubtitle": {
+    "message": "Günlük çalışman. Sadece bu tarayıcıda tutulur."
+  },
+  "totalMinutes": {
+    "message": "dakika izlendi"
+  },
+  "activeDays": {
+    "message": "aktif gün"
+  },
+  "correctWrong": {
+    "message": "$1 doğru · $2 yanlış"
+  },
+  "lastYear": {
+    "message": "Son 12 ay"
+  },
+  "last14": {
+    "message": "Son 14 gün"
+  },
+  "colDate": {
+    "message": "Gün"
+  },
+  "colMinutes": {
+    "message": "Dakika"
+  },
+  "colLines": {
+    "message": "Satır"
+  },
+  "colLookedUp": {
+    "message": "Bakılan"
+  },
+  "colQuizzes": {
+    "message": "Quiz"
+  },
+  "colCorrect": {
+    "message": "Doğru"
+  },
+  "colWrong": {
+    "message": "Yanlış"
+  },
+  "noActivity": {
+    "message": "Henüz aktivite yok. Bir videoda altyazıyı başlattığında burada görünecek."
   }
 }

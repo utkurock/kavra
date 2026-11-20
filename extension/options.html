@@ -56,14 +56,28 @@
     </section>
 
     <section class="card">
-      <h2 data-i18n="secApi"></h2>
+      <h2 data-i18n="secProvider"></h2>
+      <p class="muted small section-help" data-i18n="secProviderHelp"></p>
+      <div class="field">
+        <div><label for="provider" data-i18n="providerLabel"></label></div>
+        <select id="provider"></select>
+      </div>
       <div class="field wide">
         <div><label for="apiKey" data-i18n="apiKeyLabel"></label><p class="help" data-i18n="apiKeyHelp"></p></div>
         <div class="input-group">
-          <input id="apiKey" type="password" autocomplete="off" spellcheck="false" placeholder="sk-ant-…">
+          <input id="apiKey" type="password" autocomplete="off" spellcheck="false">
           <button type="button" id="toggleKey" class="btn secondary" data-i18n="show"></button>
         </div>
-        <a href="https://console.anthropic.com/settings/keys" target="_blank" rel="noopener" class="small" data-i18n="getKey"></a>
+        <a id="getKey" target="_blank" rel="noopener" class="small" data-i18n="getKey"></a>
+      </div>
+      <div class="field wide">
+        <div><label for="model" data-i18n="modelLabel"></label><p class="help" id="modelHelp"></p></div>
+        <div class="input-group">
+          <input id="model" type="text" list="modelList" autocomplete="off" spellcheck="false">
+          <button type="button" id="loadModels" class="btn secondary" data-i18n="listModels"></button>
+        </div>
+        <datalist id="modelList"></datalist>
+        <p id="modelStatus" class="small muted" role="status"></p>
       </div>
     </section>
 

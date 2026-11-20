@@ -1,17 +1,19 @@
 // Service worker: owns capture state, picks the caption source, routes captions to the page,
 // and runs translation and quizzes.
 import "../extension/settings.js";
-import { translateLine, generateQuiz, friendlyError } from "./claude.js";
+import { translateLine, generateQuiz, listModels, friendlyError } from "./llm.js";
 
-const { getSettings, t } = globalThis.Kavra;
+const { getSettings, t, dayKey } = globalThis.Kavra;
 const MAX_GAP_MS = 30000; // silence longer than this does not count as watch time
 const MIN_QUIZ_LINES = 8;
 const PAGE_CAPTION_HOLD_MS = 15000; // after a site caption, ignore speech recognition this long
 const CACHE_SIZE = 400;
+const ACTIVITY_DAYS = 400; // days of history kept for the activity view
 
 // ---- persistent state ----
 // session "capture": { tabId, speech, source } for the tab being captioned (cleared on browser restart).
 // local "progress": transcript and watch time collected since the last quiz.
+// local "activity": totals per local day ("YYYY-MM-DD") for the activity view.
 async function getCapture() {
   return (await chrome.storage.session.get("capture")).capture || null;
 }
@@ -20,17 +22,27 @@ async function setCapture(capture) {
 }
 
 const emptyProgress = () => ({ lines: [], clicked: [], segmentMs: 0, lastFinalAt: 0 });
-let progressQueue = Promise.resolve();
-// Serializes read-modify-write of progress so bursts of captions don't lose updates.
-function updateProgress(fn) {
-  const run = progressQueue.then(async () => {
-    const progress = (await chrome.storage.local.get("progress")).progress || emptyProgress();
-    const result = await fn(progress);
-    await chrome.storage.local.set({ progress });
+let storeQueue = Promise.resolve();
+// Serializes read-modify-write of stored records so bursts of captions don't lose updates.
+function updateStore(key, init, fn) {
+  const run = storeQueue.then(async () => {
+    const value = (await chrome.storage.local.get(key))[key] || init();
+    const result = await fn(value);
+    await chrome.storage.local.set({ [key]: value });
     return result;
   });
-  progressQueue = run.catch(() => {});
+  storeQueue = run.catch(() => {});
   return run;
+}
+const updateProgress = (fn) => updateStore("progress", emptyProgress, fn);
+
+function recordActivity(changes) {
+  return updateStore("activity", () => ({}), (days) => {
+    const day = (days[dayKey()] ??= { ms: 0, lines: 0, lookedUp: 0, quizzes: 0, correct: 0, wrong: 0 });
+    for (const [field, amount] of Object.entries(changes)) day[field] = (day[field] || 0) + amount;
+    const keys = Object.keys(days).sort();
+    for (const old of keys.slice(0, Math.max(0, keys.length - ACTIVITY_DAYS))) delete days[old];
+  });
 }
 
 // ---- messaging helpers ----
@@ -120,14 +132,16 @@ async function onCaption(text, final, source) {
 
 async function onFinalCaption(text) {
   const { quizMinutes } = await getSettings();
-  const due = await updateProgress((p) => {
+  const { due, watched } = await updateProgress((p) => {
     const now = Date.now();
     const gap = p.lastFinalAt ? now - p.lastFinalAt : 0;
-    p.segmentMs += gap > 0 && gap < MAX_GAP_MS ? gap : 0;
+    const watched = gap > 0 && gap < MAX_GAP_MS ? gap : 0;
+    p.segmentMs += watched;
     p.lastFinalAt = now;
     p.lines.push(text);
-    return p.segmentMs >= quizMinutes * 60000 && p.lines.length >= MIN_QUIZ_LINES;
+    return { due: p.segmentMs >= quizMinutes * 60000 && p.lines.length >= MIN_QUIZ_LINES, watched };
   });
+  await recordActivity({ ms: watched, lines: 1 });
   if (due) runQuiz();
 }
 
@@ -145,11 +159,11 @@ async function onSpeechError(code, detail) {
 }
 
 // ---- translation (cached; live lines, prefetched cues and clicks share one request per line) ----
-const cache = new Map(); // "native|text" -> Promise<result>
+const cache = new Map(); // "provider|model|native|text" -> Promise<result>
 
 async function translateCached(text, context = "") {
   const settings = await getSettings();
-  const key = `${settings.nativeLang}|${text}`;
+  const key = [settings.provider, settings.model, settings.nativeLang, text].join("|");
   if (cache.has(key)) return cache.get(key);
   const promise = translateLine(text, context, settings);
   cache.set(key, promise);
@@ -158,10 +172,13 @@ async function translateCached(text, context = "") {
   return promise;
 }
 
-function markStruggled(text) {
-  return updateProgress((p) => {
-    if (!p.clicked.includes(text)) p.clicked.push(text);
+async function markStruggled(text) {
+  const added = await updateProgress((p) => {
+    if (p.clicked.includes(text)) return false;
+    p.clicked.push(text);
+    return true;
   });
+  if (added) await recordActivity({ lookedUp: 1 });
 }
 
 async function handleTranslate(text, live) {
@@ -178,8 +195,7 @@ async function handleTranslate(text, live) {
 }
 
 async function prefetch(texts) {
-  const { apiKey } = await chrome.storage.local.get("apiKey");
-  if (!apiKey) return;
+  if (!(await getSettings()).key) return;
   for (const text of texts) translateCached(text).catch(() => {});
 }
 
@@ -200,8 +216,9 @@ async function runQuiz() {
     if (capture) toTop(capture.tabId, { type: "status", text: t("quizPreparing") });
     const quiz = await generateQuiz(snapshot.lines, snapshot.clicked, await getSettings());
     await chrome.storage.local.set({
-      quiz: { ...quiz, createdAt: Date.now(), sourceTabId: capture?.tabId ?? null },
+      quiz: { ...quiz, answers: [], createdAt: Date.now(), sourceTabId: capture?.tabId ?? null },
     });
+    await recordActivity({ quizzes: 1 });
     if (capture) toAllFrames(capture.tabId, { type: "media", action: "pause" });
     await chrome.tabs.create({ url: "quiz.html" });
     return { ok: true };
@@ -228,13 +245,31 @@ async function getState() {
   const p = progress || emptyProgress();
   return {
     activeTabId: capture?.tabId ?? null,
-    hasKey: Boolean(settings.apiKey),
+    hasKey: Boolean(settings.key),
     quizMinutes: settings.quizMinutes,
     watchedMs: p.segmentMs,
     lineCount: p.lines.length,
     struggledCount: p.clicked.length,
     quizRunning,
   };
+}
+
+// Stores a quiz answer once (reloading the quiz page can't count it twice) and adds it to today's activity.
+async function answerQuiz(index, choice) {
+  const correct = await updateStore("quiz", () => null, (quiz) => {
+    if (!quiz?.questions[index] || quiz.answers?.[index] != null) return null;
+    (quiz.answers ??= [])[index] = choice;
+    return quiz.questions[index].correct_index === choice;
+  });
+  if (correct != null) await recordActivity(correct ? { correct: 1 } : { wrong: 1 });
+}
+
+async function handleListModels(provider, key) {
+  try {
+    return { ok: true, models: await listModels({ ...(await getSettings()), provider, key }) };
+  } catch (err) {
+    return { ok: false, error: friendlyError(err) };
+  }
 }
 
 // Messages from the captioned tab only count while that tab is being captioned.
@@ -248,6 +283,9 @@ const handlers = {
   stop: () => stopCaptions().then(() => ({ ok: true })),
   getState: () => getState(),
   quizNow: () => runQuiz(),
+  // options.js / quiz.js
+  listModels: (msg) => handleListModels(msg.provider, msg.key),
+  quizAnswer: (msg) => answerQuiz(msg.index, msg.choice),
   // overlay.js / reader.js
   translate: (msg) => handleTranslate(msg.text, msg.live),
   prefetch: async (msg, sender) => (await fromCapturedTab(sender)) && prefetch(msg.texts),

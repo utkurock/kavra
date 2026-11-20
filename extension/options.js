@@ -1,8 +1,9 @@
-const { t, getSettings, languageName, baseLang, localizePage, TARGET_LOCALES, NATIVE_LANGS, LEVELS } = globalThis.Kavra;
+const { t, getSettings, baseLang, fillLanguageSelect, localizePage, TARGET_LOCALES, NATIVE_LANGS, LEVELS, PROVIDERS } =
+  globalThis.Kavra;
 const $ = (id) => document.getElementById(id);
 const ALL_SITES = { origins: ["<all_urls>"] };
 const SELECTS = ["targetLang", "nativeLang", "level", "source"];
-const ui = chrome.i18n.getUILanguage();
+let settings;
 
 let toastTimer;
 function toast(text, bad = false) {
@@ -13,14 +14,10 @@ function toast(text, bad = false) {
   toastTimer = setTimeout(() => $("toast").classList.remove("show"), 1800);
 }
 
-function fillSelect(select, codes, label) {
-  const options = codes.map((code) => [code, label(code)]).sort((a, b) => a[1].localeCompare(b[1], ui));
-  for (const [value, text] of options) select.add(new Option(text, value));
-}
-
 // Settings save as soon as they change.
 async function save(values) {
   await chrome.storage.local.set(values);
+  settings = await getSettings();
   toast(t("savedShort"));
 }
 
@@ -48,7 +45,57 @@ $("quizMinutes").addEventListener("change", () => {
   save({ quizMinutes });
 });
 
-$("apiKey").addEventListener("change", () => save({ apiKey: $("apiKey").value.trim() }));
+// ---- AI provider: each provider keeps its own key and model ----
+function showProvider() {
+  const id = settings.provider;
+  const provider = PROVIDERS[id];
+  $("provider").value = id;
+  $("apiKey").value = settings.apiKeys[id] || "";
+  $("apiKey").placeholder = provider.keyHint;
+  $("getKey").href = provider.keyUrl;
+  $("model").value = settings.models[id] || "";
+  $("model").placeholder = provider.model;
+  $("modelHelp").textContent = t("modelHelp", provider.model);
+  $("modelList").replaceChildren();
+  $("modelStatus").textContent = "";
+}
+
+$("provider").addEventListener("change", async () => {
+  await save({ provider: $("provider").value });
+  showProvider();
+});
+
+$("apiKey").addEventListener("change", async () => {
+  await chrome.storage.local.remove("apiKey"); // single key stored by versions before 0.6
+  save({ apiKeys: { ...settings.apiKeys, [settings.provider]: $("apiKey").value.trim() } });
+});
+
+$("model").addEventListener("change", () => {
+  const models = { ...settings.models };
+  const model = $("model").value.trim();
+  if (model) models[settings.provider] = model;
+  else delete models[settings.provider];
+  save({ models });
+});
+
+$("loadModels").addEventListener("click", async () => {
+  $("loadModels").disabled = true;
+  $("modelStatus").textContent = t("loadingModels");
+  const res = await chrome.runtime.sendMessage({
+    type: "listModels",
+    provider: settings.provider,
+    key: $("apiKey").value.trim(),
+  });
+  $("loadModels").disabled = false;
+  if (!res?.ok) {
+    $("modelStatus").textContent = res?.error || t("errUnreadable");
+    return;
+  }
+  $("modelList").replaceChildren(...res.models.map((id) => new Option(id, id)));
+  $("modelStatus").textContent = t("modelsLoaded", res.models.length);
+  $("model").focus();
+});
+
 $("toggleKey").addEventListener("click", () => {
   const hidden = $("apiKey").type === "password";
   $("apiKey").type = hidden ? "text" : "password";
@@ -66,20 +113,15 @@ $("form").addEventListener("submit", (e) => e.preventDefault());
 
 (async () => {
   localizePage();
-  // The language's own name ("Deutsch") next to the UI-language name helps people find their language.
-  const label = (code) => {
-    const own = languageName(code, code);
-    const local = languageName(code, ui);
-    return own === local ? local : `${local} — ${own}`;
-  };
-  fillSelect($("targetLang"), TARGET_LOCALES, label);
-  fillSelect($("nativeLang"), NATIVE_LANGS, label);
+  fillLanguageSelect($("targetLang"), TARGET_LOCALES);
+  fillLanguageSelect($("nativeLang"), NATIVE_LANGS);
   for (const level of LEVELS) $("level").add(new Option(t(`level${level}`), level));
+  for (const [id, provider] of Object.entries(PROVIDERS)) $("provider").add(new Option(provider.name, id));
 
-  const s = await getSettings();
-  for (const id of SELECTS) $(id).value = s[id];
-  $("quizMinutes").value = s.quizMinutes;
-  $("apiKey").value = s.apiKey || "";
-  document.querySelector(`input[name="trMode"][value="${s.trMode}"]`).checked = true;
+  settings = await getSettings();
+  for (const id of SELECTS) $(id).value = settings[id];
+  $("quizMinutes").value = settings.quizMinutes;
+  document.querySelector(`input[name="trMode"][value="${settings.trMode}"]`).checked = true;
+  showProvider();
   $("framesPerm").checked = await chrome.permissions.contains(ALL_SITES);
 })();
