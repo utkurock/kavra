@@ -39,6 +39,7 @@ for (const input of document.querySelectorAll('input[name="trMode"]')) {
 }
 
 $("lineHistory").addEventListener("change", () => save({ lineHistory: $("lineHistory").checked }));
+$("lazyTranslate").addEventListener("change", () => save({ lazyTranslate: $("lazyTranslate").checked }));
 
 $("quizMinutes").addEventListener("change", () => {
   const quizMinutes = Math.min(180, Math.max(3, Math.round(Number($("quizMinutes").value) || 20)));
@@ -115,6 +116,7 @@ $("form").addEventListener("submit", (e) => e.preventDefault());
   settings = await getSettings();
   for (const id of SELECTS) $(id).value = settings[id];
   $("lineHistory").checked = settings.lineHistory;
+  $("lazyTranslate").checked = settings.lazyTranslate;
   $("quizMinutes").value = settings.quizMinutes;
   document.querySelector(`input[name="trMode"][value="${settings.trMode}"]`).checked = true;
   showProvider();

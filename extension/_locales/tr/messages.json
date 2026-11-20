@@ -21,7 +21,7 @@
     "message": "Çeviriyi görmek için satıra tıkla."
   },
   "trModeHelp": {
-    "message": "Bulanık ve hep göster modlarında her satır otomatik çevrilir; aynı renkler aynı anlamı gösterir. Bulanık modda açıp baktığın satırlar quiz'e girer."
+    "message": "Bulanık mod bir satırı üzerine geldiğinde çevirir (Üzerine gelince çevir kapalıysa her satırı); hep göster modu her satırı çevirir. Aynı renkler aynı anlamı gösterir. Bulanık modda açıp baktığın satırlar quiz'e girer."
   },
   "quizNow": {
     "message": "Şimdi quiz yap"
@@ -583,5 +583,11 @@
   },
   "historyHelp": {
     "message": "Altyazının yanındaki düğme son 5 satırı listeler; çevirisini görmek için birinin üzerine gel."
+  },
+  "lazySetting": {
+    "message": "Üzerine gelince çevir"
+  },
+  "lazyHelp": {
+    "message": "Bulanık modda bir satır yalnızca üzerine geldiğinde çevrilir. Çok daha az token harcar; çeviri bir an sonra gelir ve satır o zamana kadar renklenmez."
   }
 }

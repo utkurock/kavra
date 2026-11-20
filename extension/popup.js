@@ -226,6 +226,7 @@ async function showActivity() {
 function showMode(mode) {
   $(`m-${mode}`).checked = true;
   $("trModeHint").textContent = t(MODE_HINT[mode]);
+  $("lazyTranslate").disabled = mode !== "blur"; // the other modes translate every line or none
 }
 for (const input of document.querySelectorAll('input[name="trMode"]')) {
   input.addEventListener("change", () => {
@@ -244,6 +245,7 @@ $("resetPos").addEventListener("click", async () => {
   await chrome.storage.local.set({ overlayPos: null });
   showPosition();
 });
+$("lazyTranslate").addEventListener("change", () => chrome.storage.local.set({ lazyTranslate: $("lazyTranslate").checked }));
 $("lineHistory").addEventListener("change", () => chrome.storage.local.set({ lineHistory: $("lineHistory").checked }));
 for (const input of document.querySelectorAll('input[name="textSize"]')) {
   input.addEventListener("change", () => chrome.storage.local.set({ textSize: input.value }));
@@ -267,6 +269,7 @@ $("options").addEventListener("click", () => chrome.runtime.openOptionsPage());
   showMode(settings.trMode);
   $(`size-${settings.textSize}`).checked = true;
   $("lineHistory").checked = settings.lineHistory;
+  $("lazyTranslate").checked = settings.lazyTranslate;
   source = settings.source;
   showPair(settings);
   $("sheetTarget").value = settings.targetLang;

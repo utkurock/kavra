@@ -36,6 +36,7 @@
       .trans.blur { filter: blur(6px); cursor: help; }
       .trans:focus-visible { outline: none; }
       .trans.for-old { font-size: .82em; }
+      .trans.wait { color: #a8a8ae; }
       .status { font-size: 13px; font-weight: 500; color: #fff; background: rgba(0,0,0,.6);
         padding: 2px 8px; border-radius: 4px; }
       .status.error { background: #b3261e; }
@@ -118,6 +119,7 @@
   let customPos = null; // where the user dragged the subtitles: 0 (top) to 1 (bottom) of the player
   const isTop = window === window.top;
   let trMode = "blur";
+  let lazy = true; // in blur mode, translate a line only once the pointer is on it
   let locales = { orig: "en", trans: "en" }; // for case-insensitive matching
   let cardLine = null;
   let statusTimer;
@@ -133,6 +135,7 @@
 
   getSettings().then(async (s) => {
     trMode = s.trMode;
+    lazy = s.lazyTranslate;
     setTextSize(s.textSize);
     historyOn = s.lineHistory;
     locales = { orig: s.targetLang, trans: s.nativeLang };
@@ -350,11 +353,19 @@
     const slot = box.querySelector(".trans");
     if (!slot) return;
     const target = focusLine === previous || focusLine === line ? focusLine || line : line;
-    if (trMode === "click" || !target?.result) {
+    // A line translated on demand shows that it's coming while the pointer waits on it.
+    const waiting = Boolean(focusLine) && target === focusLine && target.pending && !target.result;
+    slot.classList.toggle("wait", waiting);
+    if (trMode === "click" || (!target?.result && !waiting)) {
       slot.hidden = true;
       return;
     }
     slot.hidden = false;
+    if (waiting) {
+      slot.textContent = "…";
+      slot.classList.remove("blur");
+      return;
+    }
     paint(slot, target.result.translation, colourSpans(target.result, target.text).trans);
     slot.classList.toggle("blur", trMode === "blur" && !focusLine);
     slot.classList.toggle("for-old", target === previous);
@@ -363,7 +374,7 @@
   function reveal(target) {
     if (trMode === "click" || focusLine === target) return;
     focusLine = target;
-    translateIfVisible(target); // a line kept from earlier may not have its translation yet
+    translateIfVisible(target, true); // asked for now, or a line kept from earlier without one yet
     renderSlot();
     noteStruggle(target);
   }
@@ -411,8 +422,9 @@
     const focus = () => {
       if (histFocus === entry || trMode === "click") return;
       histFocus = entry;
-      translateIfVisible(entry); // shown while in click mode, it has no translation yet
+      translateIfVisible(entry, true); // translated on demand, or shown in click mode: none yet
       noteStruggle(entry);
+      if (entry.pending && !item.querySelector(".h-trans")) item.append(div("h-trans", "…"));
       item.querySelector(".h-trans")?.classList.remove("blur");
     };
     const blur = () => {
@@ -552,8 +564,10 @@
 
   // ---- messages ----
   // Live translations only while the tab is in view, so a video playing in the background costs nothing.
-  function translateIfVisible(target) {
+  // asked: the pointer is on the line. Otherwise lines in blur mode wait for that, if set to.
+  function translateIfVisible(target, asked = false) {
     if (trMode === "click" || !displaying() || document.visibilityState !== "visible") return;
+    if (trMode === "blur" && lazy && !asked) return;
     if (target.result || target.pending) return;
     target.pending = true;
     requestTranslation(target, true);
@@ -666,8 +680,9 @@
       customPos = changes.overlayPos.newValue ?? null;
       place();
     }
-    if (!changes.trMode) return;
-    trMode = changes.trMode.newValue || "blur";
+    if (changes.lazyTranslate) lazy = changes.lazyTranslate.newValue ?? true;
+    if (!changes.trMode && !changes.lazyTranslate) return;
+    trMode = changes.trMode?.newValue || trMode;
     // A line shown while in click mode has no translation yet.
     if (line) translateIfVisible(line);
     render();

@@ -21,7 +21,7 @@
     "message": "Click a line to see its translation."
   },
   "trModeHelp": {
-    "message": "In blurred and always modes every line is translated automatically, and matching colours show which part means what. Lines you reveal in blurred mode go into your quiz."
+    "message": "Blurred mode translates a line when you point at it (or every line, with Translate on hover off); always mode translates every line. Matching colours show which part means what. Lines you reveal in blurred mode go into your quiz."
   },
   "quizNow": {
     "message": "Quiz me now"
@@ -583,5 +583,11 @@
   },
   "historyHelp": {
     "message": "A button by the subtitles lists the last 5 lines; point at one for its translation."
+  },
+  "lazySetting": {
+    "message": "Translate on hover"
+  },
+  "lazyHelp": {
+    "message": "In blur mode a line is translated only when you point at it. It uses far fewer tokens; the translation takes a moment to appear, and lines stay uncoloured until then."
   }
 }
