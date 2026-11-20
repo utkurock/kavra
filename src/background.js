@@ -92,6 +92,9 @@ async function stopCaptions(message) {
   await closeOffscreen();
   pageCaptionAt = 0;
   lastFinal = "";
+  pendingSpeech = "";
+  clearTimeout(pendingTimer);
+  clearTimeout(silenceTimer);
   mismatchStreak = 0;
   mismatchWarned = false;
   if (capture) toAllFrames(capture.tabId, { type: "stop", message });
@@ -140,26 +143,67 @@ function spokenText(text) {
   return text.replace(/\[[^\]]*\]|\([^)]*\)|[♪♫]/g, " ").replace(/\s+/g, " ").trim();
 }
 
+// Chrome's recognizer often ends a result after two or three words. Pieces that follow each other
+// closely are joined into one line, which is shown once the speaker pauses or the line gets long.
+const MERGE_PAUSE_MS = 900;
+const MERGE_MAX_WORDS = 14;
+const SILENCE_MS = 1000; // after this long without speech the overlay lets its line go
+let pendingSpeech = "";
+let pendingTimer;
+let silenceTimer;
+
+function onSilence(tabId, ms = SILENCE_MS) {
+  clearTimeout(silenceTimer);
+  silenceTimer = setTimeout(() => toAllFrames(tabId, { type: "clear" }), ms);
+}
+
+function flushSpeech(tabId) {
+  clearTimeout(pendingTimer);
+  const text = pendingSpeech;
+  pendingSpeech = "";
+  if (text) showCaption(tabId, text, "speech");
+}
+
 async function onCaption(rawText, final, source) {
   const capture = await getCapture();
-  // Half-heard speech keeps changing; only finished lines are shown.
-  if (!capture || !final) return;
-  const text = spokenText(rawText);
-  if (!/\p{L}/u.test(text)) return;
-  if (!(await inLearningLanguage(text, capture.tabId))) return;
+  if (!capture) return;
+  const { tabId } = capture;
   if (source === "page") {
+    if (!final) return;
     pageCaptionAt = Date.now();
+    clearTimeout(silenceTimer); // the site's line is on screen until it says otherwise
     if (capture.speech) {
       setSpeechListening(false);
       clearTimeout(resumeSpeechTimer);
       resumeSpeechTimer = setTimeout(() => setSpeechListening(true), PAGE_CAPTION_HOLD_MS);
     }
-  } else if (Date.now() - pageCaptionAt < PAGE_CAPTION_HOLD_MS) {
+    await showCaption(tabId, rawText, "page");
     return;
   }
+  if (Date.now() - pageCaptionAt < PAGE_CAPTION_HOLD_MS) return;
+  // Any recognition result, finished or not, means someone is still talking.
+  onSilence(tabId);
+  if (!final) {
+    if (pendingSpeech) {
+      clearTimeout(pendingTimer);
+      pendingTimer = setTimeout(() => flushSpeech(tabId), MERGE_PAUSE_MS);
+    }
+    return;
+  }
+  pendingSpeech = pendingSpeech ? `${pendingSpeech} ${rawText}` : rawText;
+  clearTimeout(pendingTimer);
+  if (pendingSpeech.split(/\s+/).length >= MERGE_MAX_WORDS) flushSpeech(tabId);
+  else pendingTimer = setTimeout(() => flushSpeech(tabId), MERGE_PAUSE_MS);
+}
+
+async function showCaption(tabId, rawText, source) {
+  if ((await getCapture())?.tabId !== tabId) return;
+  const text = spokenText(rawText);
+  if (!/\p{L}/u.test(text)) return;
+  if (!(await inLearningLanguage(text, tabId))) return;
   if (text === lastFinal) return; // same cue reported twice (re-render, two frames)
   lastFinal = text;
-  toAllFrames(capture.tabId, { type: "caption", text, source });
+  toAllFrames(tabId, { type: "caption", text, source });
   await onFinalCaption(text);
 }
 
@@ -326,6 +370,7 @@ const handlers = {
   struggled: async (msg, sender) => (await fromCapturedTab(sender)) && markStruggled(msg.text),
   media: (msg, sender) => sender.tab && toAllFrames(sender.tab.id, { type: "media", action: msg.action }),
   pageCaption: async (msg, sender) => (await fromCapturedTab(sender)) && onCaption(msg.text, msg.final, "page"),
+  pageClear: async (msg, sender) => (await fromCapturedTab(sender)) && onSilence(sender.tab.id),
   // offscreen.js
   caption: (msg) => onCaption(msg.text, msg.final, "speech"),
   captionError: (msg) => onSpeechError(msg.code, msg.detail),

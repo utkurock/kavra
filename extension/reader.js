@@ -1,24 +1,37 @@
 // Runs in every frame of the captioned tab: reads the site's own subtitles and pauses/resumes videos.
 (() => {
-  if (window.__kavraReader) return;
-  window.__kavraReader = true;
+  // A copy left from before the extension was reloaded can't reach the extension any more, so a new
+  // injection replaces it instead of stepping aside.
+  if (window.__kavraReader?.alive?.()) return;
+  document.querySelectorAll("style[data-kavra-hide]").forEach((el) => el.remove());
+  window.__kavraReader = { alive: () => Boolean(chrome.runtime?.id) };
 
   const clean = (s) => s.replace(/<[^>]*>/g, " ").replace(/\s+/g, " ").trim();
-  const send = (message) => chrome.runtime.sendMessage(message).catch(() => {});
-  const emit = (text, final) => send({ type: "pageCaption", text, final });
+  const send = (message) => {
+    try {
+      chrome.runtime.sendMessage(message).catch(() => {});
+    } catch {
+      stop(); // the extension was reloaded
+    }
+  };
+  const emit = (text) => send({ type: "pageCaption", text, final: true });
+  // The site's subtitle went away: tells the overlay to let its line go after a moment of silence.
+  const emitClear = () => send({ type: "pageClear" });
 
   const { getSettings, baseLang, languageName } = globalThis.Kavra;
   let isTarget = () => false;
 
-  // ---- 1. Standard HTML5 subtitle tracks (<track>, most generic players) ----
+  // ---- 1. HTML5 subtitle tracks: <track> elements and the tracks many players add for their cues ----
   const tracks = new Map(); // TextTrack -> { prevMode, onCueChange }
 
+  // Prefer the learning language; otherwise follow whatever track is switched on, since lines in
+  // another language are filtered out by language detection later.
   function pickTrack(video) {
     const list = [...video.textTracks].filter((t) => t.kind === "subtitles" || t.kind === "captions");
     return (
       list.find((t) => isTarget(t) && t.mode === "showing") ||
       list.find(isTarget) ||
-      list.find((t) => !t.language && t.mode === "showing")
+      list.find((t) => t.mode === "showing")
     );
   }
 
@@ -28,13 +41,17 @@
     const onCueChange = () => {
       const active = [...(track.activeCues || [])];
       const text = clean(active.map((c) => c.text).join(" "));
-      if (!text) return void (last = "");
+      if (!text) {
+        if (last) emitClear();
+        last = "";
+        return;
+      }
       if (text === last) return;
       last = text;
-      emit(text, true);
-      // Translate the next few cues ahead of time so they show up without delay.
+      emit(text);
+      // Translate the next cues ahead of time so they show up without delay, but only while the tab is
+      // in view: a video playing in the background shouldn't spend tokens.
       const end = Math.max(...active.map((c) => c.endTime));
-      // Only while the tab is in view: a video playing in the background shouldn't spend tokens.
       const upcoming = [...(track.cues || [])].filter((c) => c.startTime >= end).slice(0, 2);
       if (upcoming.length && document.visibilityState === "visible") {
         send({ type: "prefetch", texts: upcoming.map((c) => clean(c.text)).filter(Boolean) });
@@ -52,38 +69,43 @@
     }
   }
 
-  // ---- 2. Sites that draw subtitles into the page instead of using tracks ----
+  // ---- 2. Players that draw subtitles into the page instead of using tracks ----
+  const siteSource = (lineSelector, hideSelector, stableMs) => ({
+    lines: () => [...document.querySelectorAll(lineSelector)].map((el) => el.innerText || el.textContent),
+    hideCss: `${hideSelector} { opacity: 0 !important; }`,
+    stableMs,
+  });
   const DOM_SOURCES = [
-    {
-      host: /(^|\.)youtube(-nocookie)?\.com$/,
-      lines: () => [...document.querySelectorAll(".caption-visual-line")].map((el) => el.textContent),
-      hideCss: ".ytp-caption-window-container { opacity: 0 !important; }",
-      stableMs: 900, // auto-generated captions grow word by word
-    },
-    {
-      host: /(^|\.)netflix\.com$/,
-      lines: () => [...document.querySelectorAll(".player-timedtext-text-container")].map((el) => el.innerText),
-      hideCss: ".player-timedtext { opacity: 0 !important; }",
-      stableMs: 250,
-    },
+    // auto-generated captions grow word by word, so a line counts as finished after a short pause
+    { host: /(^|\.)youtube(-nocookie)?\.com$/, ...siteSource(".caption-visual-line", ".ytp-caption-window-container", 900) },
+    { host: /(^|\.)netflix\.com$/, ...siteSource(".player-timedtext-text-container", ".player-timedtext", 250) },
   ];
-  const domSource = DOM_SOURCES.find((s) => s.host.test(location.hostname));
+  // Caption elements of widely embedded web players (JW Player, Video.js, Plyr, Shaka, MediaElement,
+  // Flowplayer, ArtPlayer, DPlayer, Vidstack, Clappr), used on any other site.
+  const PLAYER_CAPTIONS = [
+    ".jw-text-track-cue", ".vjs-text-track-cue", ".plyr__caption", ".shaka-text-container",
+    ".mejs__captions-text", ".fp-captions", ".art-subtitle", ".dplayer-subtitle",
+    "media-captions [data-part='cue']", ".cc-controls-subtitle",
+  ].join(", ");
+  const domSource =
+    DOM_SOURCES.find((s) => s.host.test(location.hostname)) || siteSource(PLAYER_CAPTIONS, PLAYER_CAPTIONS, 250);
   let hideStyle;
   const seen = new Map(); // visible line text -> first time seen
   const recentFinals = [];
-  let lastInterim = "";
+  let wasShowing = false;
 
   function finalize(text) {
     if (recentFinals.includes(text)) return;
     recentFinals.push(text);
     if (recentFinals.length > 12) recentFinals.shift();
-    emit(text, true);
+    emit(text);
   }
 
   function pollDom() {
     const visible = domSource.lines().map(clean).filter(Boolean);
     if (visible.length && !hideStyle) {
       hideStyle = document.createElement("style");
+      hideStyle.dataset.kavraHide = "";
       hideStyle.textContent = domSource.hideCss;
       document.documentElement.appendChild(hideStyle);
     }
@@ -98,9 +120,8 @@
       if (!seen.has(text)) seen.set(text, now);
       else if (now - seen.get(text) >= domSource.stableMs) finalize(text);
     }
-    const interim = visible.filter((t) => !recentFinals.includes(t)).at(-1) || "";
-    if (interim && interim !== lastInterim) emit(interim, false);
-    lastInterim = interim;
+    if (wasShowing && !visible.length) emitClear();
+    wasShowing = visible.length > 0;
   }
 
   // ---- video control (requested by the overlay or before a quiz) ----
@@ -127,10 +148,12 @@
     tracks.clear();
   }
 
-  // Match tracks of the language being learned by code, or by name when the site gives no code.
+  // Match tracks of the language being learned by code, or by name (in English, in the language
+  // itself, or in the browser's language) when the site gives no code.
   function useLanguage(targetLang) {
     const base = baseLang(targetLang);
-    const labels = [languageName(base), languageName(base, base)].map((n) => n.toLowerCase());
+    const labels = [languageName(base), languageName(base, base), languageName(base, chrome.i18n.getUILanguage())]
+      .map((n) => n.toLowerCase());
     isTarget = (t) =>
       (t.language ? baseLang(t.language) === base : labels.some((n) => t.label.toLowerCase().includes(n)));
     releaseTracks();
@@ -145,7 +168,7 @@
     if (!window.__kavraReader) return; // stopped meanwhile
     useLanguage(targetLang);
     scanTimer = setInterval(scanVideos, 2000);
-    domTimer = domSource ? setInterval(pollDom, 250) : null;
+    domTimer = setInterval(pollDom, 250);
     chrome.storage.onChanged.addListener(onStorage);
   });
 
@@ -153,10 +176,14 @@
     clearInterval(scanTimer);
     clearInterval(domTimer);
     releaseTracks();
-    chrome.storage.onChanged.removeListener(onStorage);
     hideStyle?.remove();
-    chrome.runtime.onMessage.removeListener(onMessage);
-    window.__kavraReader = false;
+    try {
+      chrome.storage.onChanged.removeListener(onStorage);
+      chrome.runtime.onMessage.removeListener(onMessage);
+    } catch {
+      // the extension was reloaded; nothing left to unregister from
+    }
+    window.__kavraReader = null;
   }
 
   function onMessage(msg) {
