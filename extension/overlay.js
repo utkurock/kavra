@@ -224,6 +224,9 @@
     addEventListener("pointercancel", endDrag, true);
   });
   // Players move and resize without telling anyone; also stop if the extension was reloaded.
+  // Player iframes often appear only after a click on "play", so new frames are reported for the
+  // reader and overlay to be injected into them too.
+  let frameCount = document.querySelectorAll("iframe").length;
   const placeTimer = setInterval(() => {
     if (!chrome.runtime?.id) {
       clearInterval(placeTimer);
@@ -231,6 +234,11 @@
       return;
     }
     place();
+    const frames = document.querySelectorAll("iframe").length;
+    if (isTop && frames !== frameCount) {
+      frameCount = frames;
+      chrome.runtime.sendMessage({ type: "framesChanged" }).catch(() => {});
+    }
   }, 400);
 
   function div(className, text) {

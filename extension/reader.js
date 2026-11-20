@@ -23,6 +23,7 @@
 
   // ---- 1. HTML5 subtitle tracks: <track> elements and the tracks many players add for their cues ----
   const tracks = new Map(); // TextTrack -> { prevMode, onCueChange }
+  let trackCueAt = 0; // when a watched track last showed a line
 
   // Prefer the learning language; otherwise follow whatever track is switched on, since lines in
   // another language are filtered out by language detection later.
@@ -46,6 +47,7 @@
         last = "";
         return;
       }
+      trackCueAt = Date.now();
       if (text === last) return;
       last = text;
       emit(text);
@@ -63,6 +65,7 @@
   }
 
   function scanVideos() {
+    watchForPlayers();
     for (const video of document.querySelectorAll("video")) {
       const track = pickTrack(video);
       if (track) watchTrack(track);
@@ -90,6 +93,81 @@
   const domSource =
     DOM_SOURCES.find((s) => s.host.test(location.hostname)) || siteSource(PLAYER_CAPTIONS, PLAYER_CAPTIONS, 250);
   let hideStyle;
+
+  // ---- 3. Any other player: find the element whose text keeps changing over the video ----
+  // Subtitles are text with letters, inside the video's area, that changes every few seconds; the
+  // player's clock ("17:14 / 1:00:14") has no letters and is ignored. After three different lines
+  // the element is taken as the subtitle and read like the known players above.
+  const AUTO_LOCK_CHANGES = 3;
+  let autoEl = null;
+  let autoPrevOpacity = "";
+  let candidates = new WeakMap(); // element -> { last, changes }
+  let observer = null;
+
+  function videoRects() {
+    return [...document.querySelectorAll("video")]
+      .map((v) => v.getBoundingClientRect())
+      .filter((r) => r.width > 200 && r.height > 100);
+  }
+
+  // The element to watch for a changed node: climb while the parent still looks like a caption box.
+  function captionBox(node, video) {
+    let el = node.nodeType === Node.TEXT_NODE ? node.parentElement : node;
+    if (!el || el.closest("video") || el.querySelector?.("video")) return null;
+    for (let parent = el.parentElement; parent && !parent.querySelector("video"); parent = parent.parentElement) {
+      const r = parent.getBoundingClientRect();
+      if (r.height > video.height * 0.4 || clean(parent.innerText || "").length > 300) break;
+      el = parent;
+    }
+    return el;
+  }
+
+  function onMutations(records) {
+    // Something better is already being read: a found caption box, a track with lines, a known player.
+    if (autoEl?.isConnected || Date.now() - trackCueAt < 10000 || hideStyle) return;
+    const videos = videoRects();
+    if (!videos.length) return;
+    for (const record of records) {
+      for (const video of videos) {
+        const el = captionBox(record.target, video);
+        if (!el) continue;
+        const r = el.getBoundingClientRect();
+        const inside = r.width > 0 && r.top >= video.top - 4 && r.bottom <= video.bottom + 4 &&
+          r.left >= video.left - 4 && r.right <= video.right + 4;
+        const text = clean(el.innerText || "");
+        if (!inside || !/\p{L}/u.test(text) || text.length > 300) continue;
+        const seen = candidates.get(el) || { last: "", changes: 0 };
+        if (text !== seen.last) seen.changes++;
+        seen.last = text;
+        candidates.set(el, seen);
+        if (seen.changes >= AUTO_LOCK_CHANGES) {
+          autoEl = el;
+          autoPrevOpacity = el.style.getPropertyValue("opacity");
+          el.style.setProperty("opacity", "0", "important"); // our overlay shows it instead
+          return;
+        }
+      }
+    }
+  }
+
+  function watchForPlayers() {
+    if (observer || !document.querySelector("video")) return;
+    observer = new MutationObserver(onMutations);
+    observer.observe(document.documentElement, { childList: true, subtree: true, characterData: true });
+  }
+
+  function releaseAuto() {
+    if (autoEl) autoEl.style.setProperty("opacity", autoPrevOpacity);
+    autoEl = null;
+    candidates = new WeakMap();
+  }
+
+  function readLines() {
+    const known = domSource.lines();
+    if (known.length) return known;
+    if (autoEl && !autoEl.isConnected) releaseAuto(); // the player rebuilt its caption box
+    return autoEl ? [autoEl.innerText || autoEl.textContent] : [];
+  }
   const seen = new Map(); // visible line text -> first time seen
   const recentFinals = [];
   let wasShowing = false;
@@ -102,8 +180,9 @@
   }
 
   function pollDom() {
-    const visible = domSource.lines().map(clean).filter(Boolean);
-    if (visible.length && !hideStyle) {
+    const known = domSource.lines().map(clean).filter(Boolean);
+    const visible = known.length ? known : readLines().map(clean).filter(Boolean);
+    if (known.length && !hideStyle) {
       hideStyle = document.createElement("style");
       hideStyle.dataset.kavraHide = "";
       hideStyle.textContent = domSource.hideCss;
@@ -169,6 +248,7 @@
     useLanguage(targetLang);
     scanTimer = setInterval(scanVideos, 2000);
     domTimer = setInterval(pollDom, 250);
+    watchForPlayers();
     chrome.storage.onChanged.addListener(onStorage);
   });
 
@@ -177,6 +257,8 @@
     clearInterval(domTimer);
     releaseTracks();
     hideStyle?.remove();
+    observer?.disconnect();
+    releaseAuto();
     try {
       chrome.storage.onChanged.removeListener(onStorage);
       chrome.runtime.onMessage.removeListener(onMessage);

@@ -53,7 +53,8 @@ function toAllFrames(tabId, message) {
 }
 
 async function injectScripts(tabId) {
-  // Embedded (cross-origin) player frames are reachable only with the optional all-sites permission.
+  // Every frame, so players embedded from another site are read too. The scripts skip frames where
+  // they already run, so this is safe to repeat when new frames appear.
   const files = ["settings.js", "overlay.js", "reader.js"];
   await chrome.scripting
     .executeScript({ target: { tabId, allFrames: true }, files })
@@ -370,6 +371,7 @@ const handlers = {
   struggled: async (msg, sender) => (await fromCapturedTab(sender)) && markStruggled(msg.text),
   media: (msg, sender) => sender.tab && toAllFrames(sender.tab.id, { type: "media", action: msg.action }),
   pageCaption: async (msg, sender) => (await fromCapturedTab(sender)) && onCaption(msg.text, msg.final, "page"),
+  framesChanged: async (msg, sender) => (await fromCapturedTab(sender)) && injectScripts(sender.tab.id).catch(() => {}),
   pageClear: async (msg, sender) => (await fromCapturedTab(sender)) && onSilence(sender.tab.id),
   // offscreen.js
   caption: (msg) => onCaption(msg.text, msg.final, "speech"),
