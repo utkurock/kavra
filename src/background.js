@@ -93,7 +93,7 @@ async function stopCaptions(message) {
   await closeOffscreen();
   pageCaptionAt = 0;
   lastFinal = "";
-  pendingSpeech = "";
+  pending = { text: "", source: "speech" };
   clearTimeout(pendingTimer);
   clearTimeout(silenceTimer);
   videoPaused = false;
@@ -142,15 +142,19 @@ async function inLearningLanguage(text, tabId) {
 
 // Sound descriptions such as "[music]", "(laughs)" or "♪" aren't speech: nothing to show or translate.
 function spokenText(text) {
-  return text.replace(/\[[^\]]*\]|\([^)]*\)|[♪♫]/g, " ").replace(/\s+/g, " ").trim();
+  return text.replace(/\[[^\]]*\]|\([^)]*\)|[♪♫]|>>/g, " ").replace(/\s+/g, " ").trim();
 }
 
-// Chrome's recognizer often ends a result after two or three words. Pieces that follow each other
-// closely are joined into one line, which is shown once the speaker pauses or the line gets long.
-const MERGE_PAUSE_MS = 600;
-const MERGE_MAX_WORDS = 10;
+// Lines are built from pieces. Chrome's recognizer ends results after two or three words, and
+// YouTube's auto-generated captions roll in word by word and wrap at the player's width. Pieces are
+// joined into sentences: a line is shown when it ends a sentence, when the speaker pauses, or when it
+// gets long. Ready-made subtitle cues are lines already and skip this.
+const PAUSE_MS = { speech: 600, page: 1200 };
+const MAX_WORDS = { speech: 16, page: 22 };
+const MIN_SENTENCE_WORDS = 3;
+const SENTENCE_END = /[.!?…]["'”’)\]]*$/;
 const SILENCE_MS = 1000; // after this long without speech the overlay lets its line go
-let pendingSpeech = "";
+let pending = { text: "", source: "speech" };
 let pendingTimer;
 let silenceTimer;
 
@@ -170,14 +174,58 @@ function onPlayback(tabId, paused) {
   else onSilence(tabId);
 }
 
-function flushSpeech(tabId) {
-  clearTimeout(pendingTimer);
-  const text = pendingSpeech;
-  pendingSpeech = "";
-  if (text) showCaption(tabId, text, "speech");
+const words = (text) => text.split(/\s+/).filter(Boolean);
+const bare = (word) => word.toLocaleLowerCase().replace(/[^\p{L}\p{N}']/gu, "");
+
+// Appends a piece, dropping the words it repeats from the end of the text so far (rolling captions
+// repeat a word or two when a line wraps).
+function joinPieces(text, piece) {
+  if (!text) return piece;
+  const a = words(text);
+  const b = words(piece);
+  for (let k = Math.min(4, a.length, b.length); k > 0; k--) {
+    if (a.slice(-k).map(bare).join(" ") === b.slice(0, k).map(bare).join(" ")) return [...a, ...b.slice(k)].join(" ");
+  }
+  return `${text} ${piece}`;
 }
 
-async function onCaption(rawText, final, source) {
+function flushPending(tabId) {
+  clearTimeout(pendingTimer);
+  const { text, source } = pending;
+  pending = { text: "", source };
+  if (text) showCaption(tabId, text, source);
+}
+
+// The text up to the first sentence end that leaves at least a few words, and the rest after it
+// ("Yeah." alone is too short to be a line, so it stays with what follows).
+function splitFinished(text) {
+  const ends = /[.!?…]["'”’)\]]*(?=\s+\S)/g;
+  for (let m; (m = ends.exec(text)); ) {
+    const head = text.slice(0, m.index + m[0].length);
+    if (words(head).length >= MIN_SENTENCE_WORDS) return [head, text.slice(head.length).trim()];
+  }
+  return null;
+}
+
+function queuePiece(tabId, piece, source) {
+  // ">>" marks a new speaker in auto-generated captions: the line so far ends there.
+  piece.split(/\s*>>\s*/).forEach((part, i) => {
+    if (i > 0) flushPending(tabId);
+    if (part.trim()) pending = { text: joinPieces(pending.text, part.trim()), source };
+  });
+  // Finished sentences followed by the start of the next go out now; the rest waits for more.
+  for (let parts; (parts = splitFinished(pending.text)); ) {
+    pending.text = parts[1];
+    showCaption(tabId, parts[0], source);
+  }
+  clearTimeout(pendingTimer);
+  const count = words(pending.text).length;
+  if (!count) return;
+  if ((SENTENCE_END.test(pending.text) && count >= MIN_SENTENCE_WORDS) || count >= MAX_WORDS[source]) flushPending(tabId);
+  else pendingTimer = setTimeout(() => flushPending(tabId), PAUSE_MS[source]);
+}
+
+async function onCaption(rawText, final, source, rolling = false) {
   const capture = await getCapture();
   if (!capture) return;
   const { tabId } = capture;
@@ -190,23 +238,26 @@ async function onCaption(rawText, final, source) {
       clearTimeout(resumeSpeechTimer);
       resumeSpeechTimer = setTimeout(() => setSpeechListening(true), PAGE_CAPTION_HOLD_MS);
     }
-    await showCaption(tabId, rawText, "page");
+    if (rolling) {
+      queuePiece(tabId, rawText, "page");
+    } else {
+      flushPending(tabId);
+      await showCaption(tabId, rawText, "page");
+    }
     return;
   }
   if (Date.now() - pageCaptionAt < PAGE_CAPTION_HOLD_MS) return;
   // Any recognition result, finished or not, means someone is still talking.
   onSilence(tabId);
   if (!final) {
-    if (pendingSpeech) {
+    // Still talking: give the line being built more time.
+    if (pending.text) {
       clearTimeout(pendingTimer);
-      pendingTimer = setTimeout(() => flushSpeech(tabId), MERGE_PAUSE_MS);
+      pendingTimer = setTimeout(() => flushPending(tabId), PAUSE_MS[pending.source]);
     }
     return;
   }
-  pendingSpeech = pendingSpeech ? `${pendingSpeech} ${rawText}` : rawText;
-  clearTimeout(pendingTimer);
-  if (pendingSpeech.split(/\s+/).length >= MERGE_MAX_WORDS) flushSpeech(tabId);
-  else pendingTimer = setTimeout(() => flushSpeech(tabId), MERGE_PAUSE_MS);
+  queuePiece(tabId, rawText, "speech");
 }
 
 async function showCaption(tabId, rawText, source) {
@@ -382,7 +433,8 @@ const handlers = {
   prefetch: async (msg, sender) => (await fromCapturedTab(sender)) && prefetch(msg.texts),
   struggled: async (msg, sender) => (await fromCapturedTab(sender)) && markStruggled(msg.text),
   media: (msg, sender) => sender.tab && toAllFrames(sender.tab.id, { type: "media", action: msg.action }),
-  pageCaption: async (msg, sender) => (await fromCapturedTab(sender)) && onCaption(msg.text, msg.final, "page"),
+  pageCaption: async (msg, sender) =>
+    (await fromCapturedTab(sender)) && onCaption(msg.text, msg.final, "page", msg.rolling),
   framesChanged: async (msg, sender) => (await fromCapturedTab(sender)) && injectScripts(sender.tab.id).catch(() => {}),
   playback: async (msg, sender) => (await fromCapturedTab(sender)) && onPlayback(sender.tab.id, msg.paused),
   pageClear: async (msg, sender) => (await fromCapturedTab(sender)) && onSilence(sender.tab.id),

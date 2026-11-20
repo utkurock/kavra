@@ -14,7 +14,8 @@
       stop(); // the extension was reloaded
     }
   };
-  const emit = (text) => send({ type: "pageCaption", text, final: true });
+  // rolling: the text is a piece of captions that roll in word by word, to be joined into sentences.
+  const emit = (text, rolling = false) => send({ type: "pageCaption", text, final: true, rolling });
   // The site's subtitle went away: tells the overlay to let its line go after a moment of silence.
   const emitClear = () => send({ type: "pageClear" });
 
@@ -73,14 +74,15 @@
   }
 
   // ---- 2. Players that draw subtitles into the page instead of using tracks ----
-  const siteSource = (lineSelector, hideSelector, stableMs) => ({
+  const siteSource = (lineSelector, hideSelector, stableMs, rolling = false) => ({
     lines: () => [...document.querySelectorAll(lineSelector)].map((el) => el.innerText || el.textContent),
     hideCss: `${hideSelector} { opacity: 0 !important; }`,
     stableMs,
+    rolling,
   });
   const DOM_SOURCES = [
     // auto-generated captions grow word by word, so a line counts as finished after a short pause
-    { host: /(^|\.)youtube(-nocookie)?\.com$/, ...siteSource(".caption-visual-line", ".ytp-caption-window-container", 900) },
+    { host: /(^|\.)youtube(-nocookie)?\.com$/, ...siteSource(".caption-visual-line", ".ytp-caption-window-container", 900, true) },
     { host: /(^|\.)netflix\.com$/, ...siteSource(".player-timedtext-text-container", ".player-timedtext", 250) },
   ];
   // Caption elements of widely embedded web players (JW Player, Video.js, Plyr, Shaka, MediaElement,
@@ -174,9 +176,12 @@
 
   function finalize(text) {
     if (recentFinals.includes(text)) return;
+    // A line that kept growing after it was sent once: send only what's new.
+    const earlier = recentFinals.findLast((r) => text.startsWith(r));
     recentFinals.push(text);
     if (recentFinals.length > 12) recentFinals.shift();
-    emit(text);
+    const fresh = earlier ? text.slice(earlier.length).trim() : text;
+    if (fresh) emit(fresh, Boolean(domSource.rolling));
   }
 
   function pollDom() {
