@@ -1,0 +1,154 @@
+<!doctype html>
+<html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>obTitle</title>
+<link rel="stylesheet" href="shared.css">
+<style>
+  main { max-width: 680px; margin: 0 auto; padding: 40px 16px 80px; }
+  .top { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 18px; }
+  .steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 6px; margin-bottom: 28px; }
+  .steps span { height: 4px; border-radius: 2px; background: var(--surface-3); transition: background-color .2s; }
+  .steps span.filled { background: linear-gradient(90deg, var(--hue-1), var(--hue-2)); }
+  .step { display: flex; flex-direction: column; gap: 18px; }
+  .step h1 { font-size: 30px; font-weight: 650; letter-spacing: -.025em; line-height: 1.15; }
+  .step h2 { font-size: 24px; font-weight: 650; letter-spacing: -.02em; }
+  .step h1:focus, .step h2:focus { outline: none; }
+  .lead { color: var(--muted); font-size: 15.5px; max-width: 56ch; }
+  .features { display: grid; gap: 10px; }
+  .feature { display: flex; gap: 14px; align-items: flex-start; padding: 14px 16px; }
+  .feature i { flex: none; width: 10px; height: 10px; border-radius: 50%; margin-top: 6px; }
+  .field-label { display: block; font-size: 13px; color: var(--muted); margin-bottom: 6px; }
+  .two { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  .grid { display: grid; gap: 10px; }
+  .grid.levels { grid-template-columns: repeat(3, 1fr); }
+  .grid.providers { grid-template-columns: repeat(3, 1fr); }
+  .grid.modes { grid-template-columns: repeat(3, 1fr); }
+  .choice { position: relative; display: block; padding: 12px 14px; border: 1px solid var(--line-strong); border-radius: 12px;
+    background: var(--surface); cursor: pointer; }
+  .choice:hover { border-color: var(--faint); }
+  .choice input { position: absolute; opacity: 0; pointer-events: none; }
+  .choice strong { display: block; font-size: 14.5px; }
+  .choice span { display: block; color: var(--muted); font-size: 12.5px; margin-top: 2px; }
+  .choice code { font-size: 11.5px; color: var(--faint); }
+  .choice:has(input:checked) { border-color: var(--hue-2); box-shadow: inset 0 0 0 1px var(--hue-2); }
+  .choice:has(input:focus-visible) { outline: 2px solid var(--hue-2); outline-offset: 2px; }
+  .key-row { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+  .key-status { font-size: 13px; }
+  .key-status.ok { color: var(--ok); }
+  .key-status.bad { color: var(--bad); }
+  ol.howto { margin: 0; padding: 0; list-style: none; counter-reset: n; display: grid; gap: 10px; }
+  ol.howto li { counter-increment: n; display: flex; gap: 14px; align-items: flex-start; padding: 14px 16px; }
+  ol.howto li::before { content: counter(n); flex: none; display: grid; place-items: center; width: 26px; height: 26px;
+    border-radius: 8px; background: var(--surface-3); font-weight: 700; font-size: 13px; }
+  .nav { display: flex; gap: 10px; align-items: center; margin-top: 8px; }
+  .nav .spacer { flex: 1; }
+  .error-text { color: var(--bad); font-size: 13px; }
+  .finish { text-align: center; align-items: center; padding: 40px 0; }
+  .finish img { width: 64px; height: 64px; }
+  @media (max-width: 600px) {
+    .two, .grid.levels, .grid.providers, .grid.modes { grid-template-columns: 1fr 1fr; }
+    .grid.modes { grid-template-columns: 1fr; }
+  }
+</style>
+<main class="dotted">
+  <div class="top">
+    <span class="brand"><img src="icons/logo.svg" alt=""><span data-i18n="extName"></span></span>
+    <span class="small faint" id="stepLabel" aria-live="polite"></span>
+  </div>
+  <div class="steps" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+
+  <!-- 1. welcome -->
+  <section class="step" data-step="1">
+    <h1 tabindex="-1" data-i18n="obTitle"></h1>
+    <p class="lead" data-i18n="obWelcomeText"></p>
+    <div class="features">
+      <div class="card feature"><i style="background:var(--hue-1)"></i><span data-i18n="obFeature1"></span></div>
+      <div class="card feature"><i style="background:var(--hue-2)"></i><span data-i18n="obFeature2"></span></div>
+      <div class="card feature"><i style="background:var(--fg)"></i><span data-i18n="obFeature3"></span></div>
+    </div>
+    <div class="nav"><span class="spacer"></span><button class="btn primary" data-next data-i18n="obStart"></button></div>
+  </section>
+
+  <!-- 2. languages and level -->
+  <section class="step" data-step="2" hidden>
+    <h2 tabindex="-1" data-i18n="obLangTitle"></h2>
+    <p class="lead" data-i18n="obLangText"></p>
+    <div class="two">
+      <div><label class="field-label" for="targetLang" data-i18n="targetLangLabel"></label><select id="targetLang"></select></div>
+      <div><label class="field-label" for="nativeLang" data-i18n="nativeLangLabel"></label><select id="nativeLang" aria-describedby="langError"></select></div>
+    </div>
+    <p id="langError" class="error-text" hidden data-i18n="sameLanguage"></p>
+    <div>
+      <span class="field-label" id="levelTitle" data-i18n="levelLabel"></span>
+      <div class="grid levels" role="radiogroup" aria-labelledby="levelTitle" id="levels"></div>
+      <p class="small faint" style="margin-top:8px" data-i18n="obLevelText"></p>
+    </div>
+    <div class="nav">
+      <button class="btn secondary" data-back data-i18n="obBack"></button><span class="spacer"></span>
+      <button class="btn primary" data-next id="langNext" data-i18n="obNext"></button>
+    </div>
+  </section>
+
+  <!-- 3. AI provider and key -->
+  <section class="step" data-step="3" hidden>
+    <h2 tabindex="-1" data-i18n="obAiTitle"></h2>
+    <p class="lead" data-i18n="obAiText"></p>
+    <div class="grid providers" role="radiogroup" aria-label="AI" id="providers"></div>
+    <div>
+      <label class="field-label" for="apiKey" data-i18n="apiKeyLabel"></label>
+      <div class="input-group">
+        <input id="apiKey" type="password" autocomplete="off" spellcheck="false">
+        <button type="button" id="toggleKey" class="btn secondary" data-i18n="show"></button>
+      </div>
+    </div>
+    <div class="key-row">
+      <button type="button" class="btn secondary" id="verifyKey" data-i18n="obVerify"></button>
+      <a id="getKey" target="_blank" rel="noopener" class="small" data-i18n="getKey"></a>
+      <span id="keyStatus" class="key-status" role="status"></span>
+    </div>
+    <p class="small faint" data-i18n="footerPrivacy"></p>
+    <div class="nav">
+      <button class="btn secondary" data-back data-i18n="obBack"></button><span class="spacer"></span>
+      <button class="btn secondary" data-next data-i18n="obSkip" id="skipKey"></button>
+      <button class="btn primary" data-next data-i18n="obNext" id="aiNext"></button>
+    </div>
+  </section>
+
+  <!-- 4. how to use -->
+  <section class="step" data-step="4" hidden>
+    <h2 tabindex="-1" data-i18n="obUseTitle"></h2>
+    <ol class="howto">
+      <li class="card" data-i18n="obUse1"></li>
+      <li class="card" data-i18n="obUse2"></li>
+      <li class="card" data-i18n="obUse3"></li>
+      <li class="card" data-i18n="obUse4"></li>
+    </ol>
+    <div>
+      <span class="field-label" id="modeTitle" data-i18n="obModeTitle"></span>
+      <div class="grid modes" role="radiogroup" aria-labelledby="modeTitle">
+        <label class="choice"><input type="radio" name="trMode" value="blur"><strong data-i18n="segBlur"></strong><span data-i18n="trModeBlur"></span></label>
+        <label class="choice"><input type="radio" name="trMode" value="always"><strong data-i18n="segAlways"></strong><span data-i18n="trModeAlways"></span></label>
+        <label class="choice"><input type="radio" name="trMode" value="click"><strong data-i18n="segClick"></strong><span data-i18n="trModeClick"></span></label>
+      </div>
+    </div>
+    <div class="nav">
+      <button class="btn secondary" data-back data-i18n="obBack"></button><span class="spacer"></span>
+      <button class="btn primary" id="finish" data-i18n="obFinish"></button>
+    </div>
+  </section>
+
+  <!-- done -->
+  <section class="step finish" data-step="5" hidden>
+    <img src="icons/logo.svg" alt="">
+    <h2 tabindex="-1" data-i18n="obDoneTitle"></h2>
+    <p class="lead" data-i18n="obDoneText"></p>
+    <div class="nav">
+      <a class="btn secondary" href="options.html" data-i18n="settings"></a>
+      <button class="btn primary" id="close" data-i18n="obClose"></button>
+    </div>
+  </section>
+</main>
+<script src="settings.js"></script>
+<script src="onboarding.js"></script>
+</html>

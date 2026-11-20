@@ -6,7 +6,7 @@
     "message": "Webdeki her videodan dil öğren: canlı altyazı, renk eşleşmeli çeviri ve quiz, istediğin yapay zekâ ile."
   },
   "noKeyWarning": {
-    "message": "Çeviri ve quiz için Ayarlar'dan bir API anahtarı ekle."
+    "message": "Altyazı anahtarsız da çalışır. Çeviri ve quiz için anahtar ekle."
   },
   "trModeLabel": {
     "message": "Çeviri satırı"
@@ -28,12 +28,6 @@
   },
   "settings": {
     "message": "Ayarlar"
-  },
-  "startCaptions": {
-    "message": "Bu sekmede altyazıyı başlat"
-  },
-  "stopCaptions": {
-    "message": "Altyazıyı durdur"
   },
   "quizPreparing": {
     "message": "Quiz hazırlanıyor…"
@@ -451,5 +445,113 @@
   },
   "cancel": {
     "message": "Vazgeç"
+  },
+  "captionsHere": {
+    "message": "Altyazı"
+  },
+  "subOff": {
+    "message": "Kapalı. Bu sayfa için aç."
+  },
+  "subOnHere": {
+    "message": "Bu sayfada açık."
+  },
+  "subOnOther": {
+    "message": "Başka sekmede açık. Açarsan buraya taşınır."
+  },
+  "subUnsupported": {
+    "message": "Kavra bu sayfada çalışmaz. Bir video sitesi aç."
+  },
+  "setupWarning": {
+    "message": "Kavra'yı bir dakikada kur."
+  },
+  "startSetup": {
+    "message": "Kurulumu başlat"
+  },
+  "rerunSetup": {
+    "message": "Kurulumu yeniden başlat"
+  },
+  "obTitle": {
+    "message": "Kavra'ya hoş geldin"
+  },
+  "obStepOf": {
+    "message": "Adım $1 / $2"
+  },
+  "obWelcomeText": {
+    "message": "Kavra webdeki her videoyu bir dil dersine çevirir. Kurulum yaklaşık bir dakika sürer."
+  },
+  "obFeature1": {
+    "message": "Her sitede canlı altyazı: sitenin kendi altyazısından ya da sesten."
+  },
+  "obFeature2": {
+    "message": "Renk eşleşmeli çeviri: bulanıklaştır, göster ya da notlarıyla aç."
+  },
+  "obFeature3": {
+    "message": "İzlediklerinden quiz ve günlük aktivite geçmişi."
+  },
+  "obStart": {
+    "message": "Başlayalım"
+  },
+  "obLangTitle": {
+    "message": "Hangi dili öğreniyorsun?"
+  },
+  "obLangText": {
+    "message": "Videolarında konuşulan dili ve çevirilerin hangi dilde olacağını seç."
+  },
+  "obLevelText": {
+    "message": "Quiz soruları bu seviyeye göre hazırlanır. Sonra değiştirebilirsin."
+  },
+  "obAiTitle": {
+    "message": "Yapay zekânı seç"
+  },
+  "obAiText": {
+    "message": "Çeviri ve quiz'leri seçtiğin sağlayıcı senin anahtarınla yapar. Altyazı anahtarsız da çalışır, istersen sonra ekleyebilirsin."
+  },
+  "obVerify": {
+    "message": "Anahtarı doğrula"
+  },
+  "obVerifying": {
+    "message": "Kontrol ediliyor…"
+  },
+  "obKeyOk": {
+    "message": "Anahtar çalışıyor."
+  },
+  "obSkip": {
+    "message": "Şimdilik atla"
+  },
+  "obNext": {
+    "message": "Devam"
+  },
+  "obBack": {
+    "message": "Geri"
+  },
+  "obFinish": {
+    "message": "Bitir"
+  },
+  "obUseTitle": {
+    "message": "Kavra nasıl kullanılır"
+  },
+  "obUse1": {
+    "message": "Kavra'yı sabitle: Chrome araç çubuğundaki yapboz simgesine, sonra Kavra'nın yanındaki raptiyeye tıkla."
+  },
+  "obUse2": {
+    "message": "Bir video aç ve öğrendiğin dildeki altyazısını aç (YouTube'da CC)."
+  },
+  "obUse3": {
+    "message": "Kavra simgesine tıkla ve Altyazı anahtarını aç."
+  },
+  "obUse4": {
+    "message": "Bir satıra tıklayınca video durur, çevirisi ve notları açılır. Ayarladığın süre dolunca quiz açılır."
+  },
+  "obModeTitle": {
+    "message": "Çeviriler nasıl görünsün?"
+  },
+  "obDoneTitle": {
+    "message": "Hazırsın"
+  },
+  "obDoneText": {
+    "message": "Bir video aç ve Kavra'yı aç. Her şeyi sonra Ayarlar'dan değiştirebilirsin."
+  },
+  "obClose": {
+    "message": "Kapat"
   }
 }

@@ -6,7 +6,7 @@
     "message": "Learn a language from any video on the web: live subtitles, colour-matched translations and quizzes, with the AI of your choice."
   },
   "noKeyWarning": {
-    "message": "Add an API key in Settings to get translations and quizzes."
+    "message": "Subtitles work without a key. Add one for translations and quizzes."
   },
   "trModeLabel": {
     "message": "Translation line"
@@ -28,12 +28,6 @@
   },
   "settings": {
     "message": "Settings"
-  },
-  "startCaptions": {
-    "message": "Start captions in this tab"
-  },
-  "stopCaptions": {
-    "message": "Stop captions"
   },
   "quizPreparing": {
     "message": "Preparing your quiz…"
@@ -451,5 +445,113 @@
   },
   "cancel": {
     "message": "Cancel"
+  },
+  "captionsHere": {
+    "message": "Subtitles"
+  },
+  "subOff": {
+    "message": "Off. Switch on for this page."
+  },
+  "subOnHere": {
+    "message": "On for this page."
+  },
+  "subOnOther": {
+    "message": "On in another tab. Switching on moves it here."
+  },
+  "subUnsupported": {
+    "message": "Kavra can't run on this page. Open a video site."
+  },
+  "setupWarning": {
+    "message": "Set Kavra up in about a minute."
+  },
+  "startSetup": {
+    "message": "Start setup"
+  },
+  "rerunSetup": {
+    "message": "Run setup again"
+  },
+  "obTitle": {
+    "message": "Welcome to Kavra"
+  },
+  "obStepOf": {
+    "message": "Step $1 of $2"
+  },
+  "obWelcomeText": {
+    "message": "Kavra turns any video on the web into a language lesson. Setup takes about a minute."
+  },
+  "obFeature1": {
+    "message": "Live subtitles on any site, from the site's own subtitles or from the audio."
+  },
+  "obFeature2": {
+    "message": "Colour-matched translations you can blur, show or open with notes."
+  },
+  "obFeature3": {
+    "message": "Quizzes on what you watched, and a daily activity history."
+  },
+  "obStart": {
+    "message": "Let's start"
+  },
+  "obLangTitle": {
+    "message": "Which language are you learning?"
+  },
+  "obLangText": {
+    "message": "Pick the language spoken in your videos and the language you want translations in."
+  },
+  "obLevelText": {
+    "message": "Quiz questions are pitched at this level. You can change it later."
+  },
+  "obAiTitle": {
+    "message": "Choose your AI"
+  },
+  "obAiText": {
+    "message": "Translations and quizzes are made by the provider you choose, with your own key. Subtitles work without one, so you can add it later."
+  },
+  "obVerify": {
+    "message": "Check key"
+  },
+  "obVerifying": {
+    "message": "Checking…"
+  },
+  "obKeyOk": {
+    "message": "The key works."
+  },
+  "obSkip": {
+    "message": "Skip for now"
+  },
+  "obNext": {
+    "message": "Continue"
+  },
+  "obBack": {
+    "message": "Back"
+  },
+  "obFinish": {
+    "message": "Finish"
+  },
+  "obUseTitle": {
+    "message": "How to use Kavra"
+  },
+  "obUse1": {
+    "message": "Pin Kavra: click the puzzle icon in Chrome's toolbar, then the pin next to Kavra."
+  },
+  "obUse2": {
+    "message": "Open a video and turn on its subtitles in the language you're learning (CC on YouTube)."
+  },
+  "obUse3": {
+    "message": "Click the Kavra icon and switch Subtitles on."
+  },
+  "obUse4": {
+    "message": "Click a line to pause and see its translation and notes. A quiz opens after the minutes you set."
+  },
+  "obModeTitle": {
+    "message": "How should translations appear?"
+  },
+  "obDoneTitle": {
+    "message": "You're all set"
+  },
+  "obDoneText": {
+    "message": "Open a video and switch Kavra on. You can change everything later in Settings."
+  },
+  "obClose": {
+    "message": "Close"
   }
 }

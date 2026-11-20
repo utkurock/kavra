@@ -38,6 +38,7 @@ globalThis.Kavra ??= (() => {
     provider: "anthropic",
     apiKeys: {}, // provider id -> key, so switching providers keeps each key
     models: {}, // provider id -> model chosen by the user
+    onboarded: false,
   };
 
   // Adds the active provider's key and model as settings.key / settings.model.

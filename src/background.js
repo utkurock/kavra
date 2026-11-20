@@ -307,6 +307,11 @@ chrome.runtime.onMessage.addListener((msg, sender, sendResponse) => {
   return true;
 });
 
+// First install: walk through setup.
+chrome.runtime.onInstalled.addListener(({ reason }) => {
+  if (reason === chrome.runtime.OnInstalledReason.INSTALL) chrome.tabs.create({ url: "onboarding.html" });
+});
+
 chrome.tabs.onRemoved.addListener(async (tabId) => {
   if ((await getCapture())?.tabId === tabId) await stopCaptions();
 });
