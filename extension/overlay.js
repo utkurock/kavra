@@ -10,14 +10,14 @@
   const COLORS = ["#ffd54a", "#7fdbff", "#ff9eb5", "#a5e88f", "#ffb36b", "#c9a7ff"];
 
   const host = document.createElement("div");
-  host.style.cssText = "all: initial; position: fixed; inset: auto 0 8% 0; z-index: 2147483647; pointer-events: none;";
+  host.style.cssText = "all: initial; position: fixed; left: 0; width: 100%; bottom: 8%; z-index: 2147483647; pointer-events: none;";
   const root = host.attachShadow({ mode: "closed" });
   root.innerHTML = `
     <style>
       :host { all: initial; }
       .wrap { display: flex; flex-direction: column; align-items: center; gap: 8px;
         font: 600 clamp(16px, 2.1vw, 30px)/1.35 system-ui, -apple-system, "Segoe UI", sans-serif; }
-      .box { max-width: min(84vw, 1100px); display: flex; flex-direction: column; align-items: center; gap: 3px; }
+      .box { max-width: 92%; display: flex; flex-direction: column; align-items: center; gap: 3px; }
       .line { pointer-events: auto; color: #fff; background: rgba(0,0,0,.74); padding: 2px 10px;
         border-radius: 6px; text-align: center; text-shadow: 0 1px 2px #000; }
       .orig { cursor: pointer; }
@@ -31,7 +31,7 @@
       .status { font-size: 13px; font-weight: 500; color: #fff; background: rgba(0,0,0,.6);
         padding: 2px 8px; border-radius: 4px; }
       .status.error { background: #b3261e; }
-      .card { pointer-events: auto; max-width: min(84vw, 760px); background: #1c1c20; color: #f2f2f2;
+      .card { pointer-events: auto; max-width: min(92%, 760px); background: #1c1c20; color: #f2f2f2;
         border: 1px solid #3a3a40; border-radius: 10px; padding: 12px 16px 12px; position: relative;
         box-shadow: 0 6px 24px rgba(0,0,0,.5); font-size: 17px; font-weight: 500; line-height: 1.45; }
       .card .c-orig { margin-right: 26px; }
@@ -120,7 +120,39 @@
     const fs = document.fullscreenElement;
     const parent = fs && fs.tagName !== "VIDEO" && fs.tagName !== "IFRAME" ? fs : document.documentElement;
     if (host.parentNode !== parent) parent.appendChild(host);
+    place();
   }
+
+  // The biggest visible player on the page: a <video>, or the iframe a site embeds its player in.
+  function playerRect() {
+    let best = null;
+    for (const el of document.querySelectorAll("video, iframe")) {
+      const r = el.getBoundingClientRect();
+      if (r.width < 240 || r.height < 135 || r.bottom <= 0 || r.top >= innerHeight) continue;
+      const score = r.width * r.height * (el.tagName === "VIDEO" ? 2 : 1); // real videos win over iframes
+      if (!best || score > best.score) best = { r, score };
+    }
+    return best?.r;
+  }
+
+  // Sit inside the player, above its control bar; fall back to the bottom of the window.
+  function place() {
+    const r = document.fullscreenElement ? null : playerRect();
+    if (!r) {
+      Object.assign(host.style, { left: "0px", width: "100%", bottom: "8%" });
+      return;
+    }
+    const left = Math.max(r.left, 0);
+    const right = Math.min(r.right, innerWidth);
+    const top = Math.max(r.top, 0);
+    const bottom = Math.min(r.bottom, innerHeight);
+    Object.assign(host.style, {
+      left: `${left}px`,
+      width: `${right - left}px`,
+      bottom: `${innerHeight - bottom + (bottom - top) * 0.15}px`,
+    });
+  }
+  const placeTimer = setInterval(place, 400); // players move and resize without telling anyone
 
   function div(className, text) {
     const el = document.createElement("div");
@@ -275,6 +307,8 @@
     chrome.runtime.onMessage.removeListener(onMessage);
     chrome.storage.onChanged.removeListener(onStorage);
     document.removeEventListener("fullscreenchange", attach);
+    removeEventListener("resize", place);
+    clearInterval(placeTimer);
     document.removeEventListener("keydown", onKeydown);
     window.__kavraOverlay = false;
     closeCard();
@@ -296,7 +330,16 @@
   }
 
   function onStorage(changes, area) {
-    if (area !== "local" || !changes.trMode) return;
+    if (area !== "local") return;
+    if (changes.targetLang || changes.nativeLang) {
+      // Lines on screen belong to the old language pair.
+      locales = { orig: changes.targetLang?.newValue || locales.orig, trans: changes.nativeLang?.newValue || locales.trans };
+      closeCard();
+      finals.length = 0;
+      interim = "";
+      render();
+    }
+    if (!changes.trMode) return;
     trMode = changes.trMode.newValue || "blur";
     // Lines shown while in click mode have no translation yet.
     const latest = finals.at(-1);
@@ -314,6 +357,7 @@
   chrome.runtime.onMessage.addListener(onMessage);
   chrome.storage.onChanged.addListener(onStorage);
   document.addEventListener("fullscreenchange", attach);
+  addEventListener("resize", place);
   document.addEventListener("keydown", onKeydown);
   attach();
 })();
