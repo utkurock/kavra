@@ -5,16 +5,26 @@
 <title>activityTitle</title>
 <link rel="stylesheet" href="shared.css">
 <style>
-  main { max-width: 960px; margin: 0 auto; padding: 32px 16px 80px; }
-  .stats.wide { grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); margin-bottom: 16px; }
+  main { max-width: 1000px; }
+  /* the totals as one strip of figures; the cells draw their dividers, the strip clips the outer ones */
+  .stats.wide { grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 0; margin-bottom: 20px; overflow: hidden;
+    background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); }
+  .stats.wide .stat { background: none; border: 0; border-radius: 0; padding: 18px 20px 16px;
+    box-shadow: -1px 0 0 var(--line), 0 -1px 0 var(--line); }
+  .stats.wide .num { font-size: 28px; }
   .stat .sub { display: block; color: var(--faint); font-size: 12px; margin-top: 2px; }
-  section.card { margin-bottom: 16px; padding: 18px 20px; }
-  section h2 { font-size: 15px; font-weight: 650; margin-bottom: 14px; }
-  .scroll-x { overflow-x: auto; padding-bottom: 4px; }
-  table { width: 100%; border-collapse: collapse; font-variant-numeric: tabular-nums; min-width: 560px; }
-  th { text-align: left; font-size: 12px; font-weight: 600; color: var(--faint); text-transform: uppercase; letter-spacing: .06em; padding: 0 10px 10px 0; }
-  td { padding: 10px 10px 10px 0; border-top: 1px solid var(--line); font-size: 14px; }
+  section.card { margin-bottom: 20px; padding: 20px 22px; }
+  section.card > h2 { font-size: 15px; font-weight: 600; margin-bottom: 18px; }
+  .scroll-x { overflow-x: auto; margin: 0 -22px -20px; }
+  table { width: 100%; border-collapse: collapse; font-variant-numeric: tabular-nums; min-width: 600px; }
+  th { text-align: left; font-size: 12.5px; font-weight: 500; color: var(--faint); padding: 0 12px 10px; }
+  td { padding: 11px 12px; border-top: 1px solid var(--line); font-size: 14px; }
+  th:first-child, td:first-child { padding-left: 22px; }
+  th:last-child, td:last-child { padding-right: 22px; }
+  tbody tr { transition: background-color .12s; }
+  tbody tr:hover { background: var(--surface-2); }
   td.num, th.num { text-align: right; }
+  td.zero { color: var(--faint); }
   .bar { display: flex; align-items: center; gap: 10px; }
   .bar i { display: block; height: 6px; border-radius: 3px; background: linear-gradient(90deg, var(--hue-1), var(--hue-2)); min-width: 2px; }
   .ok { color: var(--ok); } .bad { color: var(--bad); }

@@ -5,6 +5,9 @@ const ui = chrome.i18n.getUILanguage();
 const minutes = (ms) => Math.round(ms / 60000);
 const number = (n) => n.toLocaleString(ui);
 
+// A number column; zeros are dimmed so the days with something in them stand out.
+const count = (n = 0, tone = "") => cell(number(n), `num ${n ? tone : "zero"}`);
+
 function cell(text, className) {
   const td = document.createElement("td");
   if (className) td.className = className;
@@ -55,16 +58,16 @@ async function show() {
     fill.style.width = `${Math.round(((day.ms || 0) / maxMs) * 120)}px`;
     fill.hidden = !day.ms;
     bar.append(fill, number(minutes(day.ms || 0)));
-    const minutesCell = cell("");
+    const minutesCell = cell("", day.ms ? "" : "zero");
     minutesCell.append(bar);
     tr.append(
       cell(date.toLocaleDateString(ui, { weekday: "short", day: "numeric", month: "short" })),
       minutesCell,
-      cell(number(day.lines || 0), "num"),
-      cell(number(day.lookedUp || 0), "num"),
-      cell(number(day.quizzes || 0), "num"),
-      cell(number(day.correct || 0), "num ok"),
-      cell(number(day.wrong || 0), "num bad")
+      count(day.lines),
+      count(day.lookedUp),
+      count(day.quizzes),
+      count(day.correct, "ok"),
+      count(day.wrong, "bad")
     );
     body.append(tr);
   }

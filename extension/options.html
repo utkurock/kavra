@@ -5,13 +5,16 @@
 <title>optionsTitle</title>
 <link rel="stylesheet" href="shared.css">
 <style>
-  main { max-width: 760px; margin: 0 auto; padding: 32px 16px 80px; }
-  section.card { padding: 4px 20px; margin-bottom: 16px; }
-  section h2 { font-size: 15px; font-weight: 650; padding: 16px 0 4px; }
-  section > .section-help { padding-bottom: 8px; }
+  main { max-width: 960px; }
+  /* each group: its title and description on the left, its settings on the right */
+  form section { display: grid; grid-template-columns: 240px minmax(0, 1fr); gap: 12px 48px; padding: 28px 0;
+    border-top: 1px solid var(--line); }
+  form section:first-child { border-top: 0; padding-top: 0; }
+  .set-head h2 { font-size: 15px; font-weight: 600; margin-bottom: 4px; }
+  .set-body { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 2px 20px; }
   .field { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 300px); gap: 8px 24px; align-items: center;
     padding: 16px 0; border-top: 1px solid var(--line); }
-  section h2 + .field, section .section-help + .field { border-top: 0; }
+  .set-body > .field:first-child { border-top: 0; }
   .field label, .field .label { font-weight: 600; display: block; }
   .field .help { color: var(--muted); font-size: 13px; margin-top: 2px; }
   .field.wide { grid-template-columns: 1fr; }
@@ -25,6 +28,7 @@
   .choice:has(input:checked) { border-color: var(--accent); background: var(--accent-soft); box-shadow: inset 0 0 0 1px var(--accent); }
   .choice:has(input:focus-visible) { outline: 2px solid var(--accent); outline-offset: 2px; }
   .error-text { color: var(--bad); font-size: 13px; margin-top: 6px; }
+  @media (max-width: 900px) { form section { grid-template-columns: minmax(0, 1fr); } }
   @media (max-width: 640px) {
     .field { grid-template-columns: 1fr; }
     .field .end { justify-self: start; }
@@ -34,97 +38,112 @@
 <main>
   <header class="page-title">
     <h1 data-i18n="settings"></h1>
-    <p class="muted"><span data-i18n="optionsSubtitle"></span> <a href="onboarding.html" data-i18n="rerunSetup"></a></p>
+    <p class="muted" data-i18n="optionsSubtitle"></p>
+    <div class="actions"><a class="btn secondary" href="onboarding.html" data-i18n="rerunSetup"></a></div>
   </header>
 
   <form id="form" novalidate>
-    <section class="card">
-      <h2 data-i18n="secLanguages"></h2>
-      <p class="muted small section-help" data-i18n="secLanguagesHelp"></p>
-      <div class="field">
-        <div><label for="targetLang" data-i18n="targetLangLabel"></label><p class="help" data-i18n="targetLangHelp"></p></div>
-        <select id="targetLang"></select>
+    <section>
+      <div class="set-head">
+        <h2 data-i18n="secLanguages"></h2>
+        <p class="muted small" data-i18n="secLanguagesHelp"></p>
       </div>
-      <div class="field">
-        <div><label for="nativeLang" data-i18n="nativeLangLabel"></label><p class="help" data-i18n="nativeLangHelp"></p></div>
-        <div>
-          <select id="nativeLang" aria-describedby="langError"></select>
-          <p id="langError" class="error-text" hidden data-i18n="sameLanguage"></p>
+      <div class="set-body">
+        <div class="field">
+          <div><label for="targetLang" data-i18n="targetLangLabel"></label><p class="help" data-i18n="targetLangHelp"></p></div>
+          <select id="targetLang"></select>
+        </div>
+        <div class="field">
+          <div><label for="nativeLang" data-i18n="nativeLangLabel"></label><p class="help" data-i18n="nativeLangHelp"></p></div>
+          <div>
+            <select id="nativeLang" aria-describedby="langError"></select>
+            <p id="langError" class="error-text" hidden data-i18n="sameLanguage"></p>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="card">
-      <h2 data-i18n="secProvider"></h2>
-      <p class="muted small section-help" data-i18n="secProviderHelp"></p>
-      <div class="field">
-        <div><label for="provider" data-i18n="providerLabel"></label></div>
-        <select id="provider"></select>
+    <section>
+      <div class="set-head">
+        <h2 data-i18n="secProvider"></h2>
+        <p class="muted small" data-i18n="secProviderHelp"></p>
       </div>
-      <div class="field wide">
-        <div><label for="apiKey" data-i18n="apiKeyLabel"></label><p class="help" data-i18n="apiKeyHelp"></p></div>
-        <div class="input-group">
-          <input id="apiKey" type="password" autocomplete="off" spellcheck="false">
-          <button type="button" id="toggleKey" class="btn secondary" data-i18n="show"></button>
+      <div class="set-body">
+        <div class="field">
+          <div><label for="provider" data-i18n="providerLabel"></label></div>
+          <select id="provider"></select>
         </div>
-        <a id="getKey" target="_blank" rel="noopener" class="small" data-i18n="getKey"></a>
-      </div>
-      <div class="field wide">
-        <div><label for="model" data-i18n="modelLabel"></label><p class="help" id="modelHelp"></p></div>
-        <div class="input-group">
-          <input id="model" type="text" list="modelList" autocomplete="off" spellcheck="false">
-          <button type="button" id="loadModels" class="btn secondary" data-i18n="listModels"></button>
+        <div class="field wide">
+          <div><label for="apiKey" data-i18n="apiKeyLabel"></label><p class="help" data-i18n="apiKeyHelp"></p></div>
+          <div class="input-group">
+            <input id="apiKey" type="password" autocomplete="off" spellcheck="false">
+            <button type="button" id="toggleKey" class="btn secondary" data-i18n="show"></button>
+          </div>
+          <a id="getKey" target="_blank" rel="noopener" class="small" data-i18n="getKey"></a>
         </div>
-        <datalist id="modelList"></datalist>
-        <p id="modelStatus" class="small muted" role="status"></p>
+        <div class="field wide">
+          <div><label for="model" data-i18n="modelLabel"></label><p class="help" id="modelHelp"></p></div>
+          <div class="input-group">
+            <input id="model" type="text" list="modelList" autocomplete="off" spellcheck="false">
+            <button type="button" id="loadModels" class="btn secondary" data-i18n="listModels"></button>
+          </div>
+          <datalist id="modelList"></datalist>
+          <p id="modelStatus" class="small muted" role="status"></p>
+        </div>
       </div>
     </section>
 
-    <section class="card">
-      <h2 data-i18n="secSubtitles"></h2>
-      <div class="field">
-        <div><label for="source" data-i18n="sourceLabel"></label><p class="help" data-i18n="sourceHelp"></p></div>
-        <select id="source">
-          <option value="auto" data-i18n="sourceAuto"></option>
-          <option value="page" data-i18n="sourcePage"></option>
-          <option value="speech" data-i18n="sourceSpeech"></option>
-        </select>
+    <section>
+      <div class="set-head">
+        <h2 data-i18n="secSubtitles"></h2>
       </div>
-      <div class="field">
-        <div><label for="textSize" data-i18n="textSizeLabel"></label><p class="help" data-i18n="textSizeHelp"></p></div>
-        <select id="textSize">
-          <option value="s" data-i18n="sizeSmall"></option>
-          <option value="m" data-i18n="sizeMedium"></option>
-          <option value="l" data-i18n="sizeLarge"></option>
-        </select>
-      </div>
-      <div class="field">
-        <div><label for="lineHistory" data-i18n="historySetting"></label><p class="help" data-i18n="historyHelp"></p></div>
-        <input type="checkbox" class="switch end" id="lineHistory">
-      </div>
-      <div class="field wide">
-        <div><span class="label" id="trModeTitle" data-i18n="trModeLabel"></span><p class="help" data-i18n="trModeHelp"></p></div>
-        <div class="choices" role="radiogroup" aria-labelledby="trModeTitle">
-          <label class="choice"><input type="radio" name="trMode" value="blur"><strong data-i18n="segBlur"></strong><span data-i18n="trModeBlur"></span></label>
-          <label class="choice"><input type="radio" name="trMode" value="always"><strong data-i18n="segAlways"></strong><span data-i18n="trModeAlways"></span></label>
-          <label class="choice"><input type="radio" name="trMode" value="click"><strong data-i18n="segClick"></strong><span data-i18n="trModeClick"></span></label>
+      <div class="set-body">  <div class="field">
+          <div><label for="source" data-i18n="sourceLabel"></label><p class="help" data-i18n="sourceHelp"></p></div>
+          <select id="source">
+            <option value="auto" data-i18n="sourceAuto"></option>
+            <option value="page" data-i18n="sourcePage"></option>
+            <option value="speech" data-i18n="sourceSpeech"></option>
+          </select>
         </div>
-      </div>
-      <div class="field">
-        <div><label for="lazyTranslate" data-i18n="lazySetting"></label><p class="help" data-i18n="lazyHelp"></p></div>
-        <input type="checkbox" class="switch end" id="lazyTranslate">
+        <div class="field">
+          <div><label for="textSize" data-i18n="textSizeLabel"></label><p class="help" data-i18n="textSizeHelp"></p></div>
+          <select id="textSize">
+            <option value="s" data-i18n="sizeSmall"></option>
+            <option value="m" data-i18n="sizeMedium"></option>
+            <option value="l" data-i18n="sizeLarge"></option>
+          </select>
+        </div>
+        <div class="field">
+          <div><label for="lineHistory" data-i18n="historySetting"></label><p class="help" data-i18n="historyHelp"></p></div>
+          <input type="checkbox" class="switch end" id="lineHistory">
+        </div>
+        <div class="field wide">
+          <div><span class="label" id="trModeTitle" data-i18n="trModeLabel"></span><p class="help" data-i18n="trModeHelp"></p></div>
+          <div class="choices" role="radiogroup" aria-labelledby="trModeTitle">
+            <label class="choice"><input type="radio" name="trMode" value="blur"><strong data-i18n="segBlur"></strong><span data-i18n="trModeBlur"></span></label>
+            <label class="choice"><input type="radio" name="trMode" value="always"><strong data-i18n="segAlways"></strong><span data-i18n="trModeAlways"></span></label>
+            <label class="choice"><input type="radio" name="trMode" value="click"><strong data-i18n="segClick"></strong><span data-i18n="trModeClick"></span></label>
+          </div>
+        </div>
+        <div class="field">
+          <div><label for="lazyTranslate" data-i18n="lazySetting"></label><p class="help" data-i18n="lazyHelp"></p></div>
+          <input type="checkbox" class="switch end" id="lazyTranslate">
+        </div>
       </div>
     </section>
 
-    <section class="card">
-      <h2 data-i18n="secQuiz"></h2>
-      <div class="field">
-        <div><label for="quizMinutes" data-i18n="quizMinutesLabel"></label><p class="help" data-i18n="quizMinutesHelp"></p></div>
-        <div class="suffix"><input id="quizMinutes" type="number" min="3" max="180" step="1"><span data-i18n="minUnit"></span></div>
+    <section>
+      <div class="set-head">
+        <h2 data-i18n="secQuiz"></h2>
       </div>
-      <div class="field">
-        <div><label for="level" data-i18n="levelLabel"></label><p class="help" data-i18n="levelHelp"></p></div>
-        <select id="level"></select>
+      <div class="set-body">  <div class="field">
+          <div><label for="quizMinutes" data-i18n="quizMinutesLabel"></label><p class="help" data-i18n="quizMinutesHelp"></p></div>
+          <div class="suffix"><input id="quizMinutes" type="number" min="3" max="180" step="1"><span data-i18n="minUnit"></span></div>
+        </div>
+        <div class="field">
+          <div><label for="level" data-i18n="levelLabel"></label><p class="help" data-i18n="levelHelp"></p></div>
+          <select id="level"></select>
+        </div>
       </div>
     </section>
   </form>

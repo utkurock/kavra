@@ -18,8 +18,9 @@ const TRASH =
   'stroke-linejoin="round" aria-hidden="true"><path d="M3 6h18M8 6V4h8v2M19 6l-1 14H6L5 6M10 11v6M14 11v6"/></svg>';
 
 function item(word, showLang) {
-  const li = el("li", "card word");
-  li.append(el("div", "w-orig", word.text), el("div", "w-trans", word.translation));
+  const li = el("li", "word");
+  const body = el("div", "w-body");
+  body.append(el("div", "w-orig", word.text), el("div", "w-trans", word.translation));
   if (word.notes?.length) {
     const ul = el("ul");
     for (const note of word.notes) {
@@ -27,7 +28,7 @@ function item(word, showLang) {
       row.append(el("b", null, note.phrase), ` — ${note.meaning}`);
       ul.append(row);
     }
-    li.append(ul);
+    body.append(ul);
   }
   const meta = el("div", "w-meta");
   meta.append(el("span", null, new Date(word.savedAt).toLocaleDateString(ui, { day: "numeric", month: "short", year: "numeric" })));
@@ -37,12 +38,13 @@ function item(word, showLang) {
     Object.assign(link, { href: word.url, target: "_blank", rel: "noopener" });
     meta.append(link);
   }
-  li.append(meta);
   const remove = el("button", "remove");
   remove.innerHTML = TRASH;
   remove.ariaLabel = remove.title = t("removeWord");
   remove.addEventListener("click", () => removeWord(word, li));
-  li.append(remove);
+  const side = el("div", "w-side");
+  side.append(meta, remove);
+  li.append(body, side);
   return li;
 }
 
@@ -55,7 +57,7 @@ function render() {
   $("list").replaceChildren(...shown.map((w) => item(w, showLang)));
   $("count").textContent = words.length ? t("wordsCount", words.length) : "";
   $("empty").hidden = shown.length > 0;
-  $("empty").textContent = words.length ? t("wordsNoMatch") : t("wordsEmpty");
+  $("emptyText").textContent = words.length ? t("wordsNoMatch") : t("wordsEmpty");
   // A quiz uses the lines of the language being learned.
   const usable = words.filter((w) => baseLang(w.lang) === baseLang(targetLang)).length;
   $("quiz").disabled = quizBusy || usable < QUIZ_MIN;
