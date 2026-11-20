@@ -4,56 +4,61 @@
 <title>extName</title>
 <link rel="stylesheet" href="shared.css">
 <style>
-  body { width: 340px; }
-  header { display: flex; align-items: center; justify-content: space-between; padding: 12px 12px 0 14px; }
-  main { padding: 12px; }
-  .hero { display: flex; flex-direction: column; gap: 12px; }
-  .quiz { display: flex; flex-direction: column; gap: 8px; }
+  body { width: 360px; }
+  header { display: flex; align-items: center; justify-content: space-between; padding: 20px 18px 14px; }
+  main { padding: 4px 18px 18px; }
+  .lang-row { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+  .stat .progress { margin-top: 10px; }
 </style>
-<header>
-  <span class="brand"><img src="icons/logo.svg" alt=""><span data-i18n="extName"></span></span>
-  <button id="options" class="icon-btn" data-i18n-aria-label="settings">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
-      <path d="M4 6h10M18 6h2M4 12h4M12 12h8M4 18h12"/><circle cx="16" cy="6" r="2"/><circle cx="10" cy="12" r="2"/><circle cx="18" cy="18" r="2"/>
-    </svg>
-  </button>
-</header>
-<main class="stack">
-  <section class="card hero">
-    <div class="row between">
+<div class="dotted">
+  <header>
+    <span class="brand"><img src="icons/logo.svg" alt=""><span data-i18n="extName"></span><span class="version" id="version"></span></span>
+    <span id="status" class="pill"><span class="dot"></span><span id="statusText"></span></span>
+  </header>
+
+  <main class="stack" style="gap:14px">
+    <div class="lang-row">
       <span id="pair" class="chip"></span>
-      <span id="status" class="status"><span class="dot"></span><span id="statusText"></span></span>
+      <button id="changeLang" class="link-btn small muted" data-i18n="changeLanguages"></button>
     </div>
     <button id="toggle" class="btn primary block"></button>
-  </section>
 
-  <div id="noKey" class="callout warn" hidden>
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 7v6M12 17h.01"/></svg>
-    <span><span data-i18n="noKeyWarning"></span> <button id="addKey" class="link-btn" data-i18n="openSettings"></button></span>
-  </div>
-
-  <section class="card stack" style="gap:10px">
-    <div class="card-title" id="trModeTitle" data-i18n="trModeLabel"></div>
-    <div class="seg" role="radiogroup" aria-labelledby="trModeTitle">
-      <input type="radio" name="trMode" id="m-blur" value="blur"><label for="m-blur" data-i18n="segBlur"></label>
-      <input type="radio" name="trMode" id="m-always" value="always"><label for="m-always" data-i18n="segAlways"></label>
-      <input type="radio" name="trMode" id="m-click" value="click"><label for="m-click" data-i18n="segClick"></label>
+    <div id="noKey" class="callout warn" hidden>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 7v6M12 17h.01"/></svg>
+      <span><span data-i18n="noKeyWarning"></span> <button id="addKey" class="link-btn" data-i18n="openSettings"></button></span>
     </div>
-    <p class="muted small" id="trModeHint"></p>
-  </section>
 
-  <section class="card quiz">
-    <div class="row between">
-      <span class="card-title" data-i18n="nextQuiz"></span>
-      <span class="small" id="quizMinutes"></span>
+    <div class="stats">
+      <div class="stat"><span class="num" id="statMinutes">0</span><span class="lbl" data-i18n="statMinutes"></span></div>
+      <div class="stat"><span class="num" id="statLines">0</span><span class="lbl" data-i18n="statLines"></span></div>
+      <div class="stat"><span class="num hue-1" id="statLookedUp">0</span><span class="lbl" data-i18n="statLookedUp"></span></div>
+      <div class="stat">
+        <span class="num hue-2" id="statQuizIn">0</span><span class="lbl" id="statQuizLabel"></span>
+        <div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" id="quizBar"><span></span></div>
+      </div>
     </div>
-    <div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" id="quizBar"><span></span></div>
-    <p class="muted small" id="quizInfo"></p>
     <button id="quizNow" class="btn secondary block" data-i18n="quizNow"></button>
-  </section>
 
-  <div id="error" class="callout bad" role="alert" hidden></div>
-</main>
+    <section class="stack" style="gap:10px; margin-top:4px">
+      <div class="card-title" id="trModeTitle" data-i18n="trModeLabel"></div>
+      <div class="seg" role="radiogroup" aria-labelledby="trModeTitle">
+        <input type="radio" name="trMode" id="m-blur" value="blur"><label for="m-blur" data-i18n="segBlur"></label>
+        <input type="radio" name="trMode" id="m-always" value="always"><label for="m-always" data-i18n="segAlways"></label>
+        <input type="radio" name="trMode" id="m-click" value="click"><label for="m-click" data-i18n="segClick"></label>
+      </div>
+      <p class="faint small" id="trModeHint"></p>
+    </section>
+
+    <div id="error" class="callout bad" role="alert" hidden></div>
+  </main>
+</div>
+<footer class="footer">
+  <span data-i18n="footerPrivacy"></span>
+  <nav>
+    <button id="options" class="link-btn" data-i18n="settings"></button>
+    <a href="https://github.com/utkurock/kavra" target="_blank" rel="noopener">GitHub ↗</a>
+  </nav>
+</footer>
 <script src="settings.js"></script>
 <script src="popup.js"></script>
 </html>

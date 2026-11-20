@@ -232,6 +232,7 @@ async function getState() {
     quizMinutes: settings.quizMinutes,
     watchedMs: p.segmentMs,
     lineCount: p.lines.length,
+    struggledCount: p.clicked.length,
     quizRunning,
   };
 }

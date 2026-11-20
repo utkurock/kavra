@@ -29,15 +29,6 @@
   "settings": {
     "message": "Settings"
   },
-  "statusOnHere": {
-    "message": "On in this tab"
-  },
-  "statusOnOther": {
-    "message": "On in another tab"
-  },
-  "statusOff": {
-    "message": "Off"
-  },
   "startCaptions": {
     "message": "Start captions in this tab"
   },
@@ -230,15 +221,6 @@
   "segClick": {
     "message": "On click"
   },
-  "nextQuiz": {
-    "message": "Next quiz"
-  },
-  "minutesOf": {
-    "message": "$1 / $2 min"
-  },
-  "linesCollected": {
-    "message": "$1 lines collected so far"
-  },
   "optionsSubtitle": {
     "message": "Learn a language from any video. Changes are saved automatically."
   },
@@ -316,5 +298,32 @@
   },
   "answerWrong": {
     "message": "Not quite"
+  },
+  "pillLive": {
+    "message": "Live"
+  },
+  "pillOther": {
+    "message": "Other tab"
+  },
+  "pillOff": {
+    "message": "Off"
+  },
+  "changeLanguages": {
+    "message": "Change"
+  },
+  "statMinutes": {
+    "message": "min watched"
+  },
+  "statLines": {
+    "message": "lines heard"
+  },
+  "statLookedUp": {
+    "message": "lines looked up"
+  },
+  "statQuizIn": {
+    "message": "min until quiz"
+  },
+  "footerPrivacy": {
+    "message": "Your key stays in this browser"
   }
 }

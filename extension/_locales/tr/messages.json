@@ -29,15 +29,6 @@
   "settings": {
     "message": "Ayarlar"
   },
-  "statusOnHere": {
-    "message": "Bu sekmede açık"
-  },
-  "statusOnOther": {
-    "message": "Başka sekmede açık"
-  },
-  "statusOff": {
-    "message": "Kapalı"
-  },
   "startCaptions": {
     "message": "Bu sekmede altyazıyı başlat"
   },
@@ -230,15 +221,6 @@
   "segClick": {
     "message": "Tıklayınca"
   },
-  "nextQuiz": {
-    "message": "Sonraki quiz"
-  },
-  "minutesOf": {
-    "message": "$1 / $2 dk"
-  },
-  "linesCollected": {
-    "message": "Şu ana kadar $1 satır toplandı"
-  },
   "optionsSubtitle": {
     "message": "Her videodan dil öğren. Değişiklikler otomatik kaydedilir."
   },
@@ -316,5 +298,32 @@
   },
   "answerWrong": {
     "message": "Yanlış"
+  },
+  "pillLive": {
+    "message": "Açık"
+  },
+  "pillOther": {
+    "message": "Başka sekmede"
+  },
+  "pillOff": {
+    "message": "Kapalı"
+  },
+  "changeLanguages": {
+    "message": "Değiştir"
+  },
+  "statMinutes": {
+    "message": "dk izlendi"
+  },
+  "statLines": {
+    "message": "satır duyuldu"
+  },
+  "statLookedUp": {
+    "message": "satıra baktın"
+  },
+  "statQuizIn": {
+    "message": "dk sonra quiz"
+  },
+  "footerPrivacy": {
+    "message": "Anahtarın sadece bu tarayıcıda"
   }
 }

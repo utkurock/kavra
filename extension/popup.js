@@ -19,17 +19,20 @@ async function refresh() {
   state = await chrome.runtime.sendMessage({ type: "getState" });
   const onThisTab = state.activeTabId === currentTabId;
   $("status").classList.toggle("on", onThisTab);
-  $("statusText").textContent = onThisTab ? t("statusOnHere") : state.activeTabId ? t("statusOnOther") : t("statusOff");
+  $("statusText").textContent = onThisTab ? t("pillLive") : state.activeTabId ? t("pillOther") : t("pillOff");
   $("toggle").textContent = onThisTab ? t("stopCaptions") : t("startCaptions");
   $("toggle").className = `btn block ${onThisTab ? "danger" : "primary"}`;
   $("noKey").hidden = state.hasKey;
 
   const watchedMin = Math.floor(state.watchedMs / 60000);
   const pct = Math.min(100, Math.round((state.watchedMs / (state.quizMinutes * 60000)) * 100));
-  $("quizMinutes").textContent = t("minutesOf", watchedMin, state.quizMinutes);
+  $("statMinutes").textContent = watchedMin;
+  $("statLines").textContent = state.lineCount;
+  $("statLookedUp").textContent = state.struggledCount;
+  $("statQuizIn").textContent = Math.max(0, state.quizMinutes - watchedMin);
+  $("statQuizLabel").textContent = state.quizRunning ? t("quizPreparing") : t("statQuizIn");
   $("quizBar").firstElementChild.style.width = `${pct}%`;
   $("quizBar").ariaValueNow = pct;
-  $("quizInfo").textContent = state.quizRunning ? t("quizPreparing") : t("linesCollected", state.lineCount);
   $("quizNow").disabled = state.quizRunning || !state.hasKey || state.lineCount === 0;
 }
 
@@ -58,7 +61,7 @@ $("toggle").addEventListener("click", async () => {
 $("quizNow").addEventListener("click", async () => {
   showError("");
   $("quizNow").disabled = true;
-  $("quizInfo").textContent = t("quizPreparing");
+  $("statQuizLabel").textContent = t("quizPreparing");
   const res = await chrome.runtime.sendMessage({ type: "quizNow" });
   if (!res?.ok) showError(res?.error || t("quizFailed"));
   refresh();
@@ -72,9 +75,11 @@ for (const input of document.querySelectorAll('input[name="trMode"]')) {
 }
 $("options").addEventListener("click", () => chrome.runtime.openOptionsPage());
 $("addKey").addEventListener("click", () => chrome.runtime.openOptionsPage());
+$("changeLang").addEventListener("click", () => chrome.runtime.openOptionsPage());
 
 (async () => {
   localizePage();
+  $("version").textContent = chrome.runtime.getManifest().version;
   const [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
   currentTabId = tab?.id;
   const settings = await getSettings();
