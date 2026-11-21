@@ -402,7 +402,7 @@
     "message": "Henüz aktivite yok. Bir videoda altyazıyı başlattığında burada görünecek."
   },
   "navQuiz": {
-    "message": "Quiz"
+    "message": "Quizler"
   },
   "navLabel": {
     "message": "Kavra sayfaları"
@@ -670,5 +670,41 @@
   },
   "openVideo": {
     "message": "Videoya git"
+  },
+  "quizzesTitle": {
+    "message": "Quizler"
+  },
+  "quizzesSubtitle": {
+    "message": "İzlediklerinden ve kelime havuzundan hazırlanan quizler. Cevaplamak ya da geri dönüp bakmak için birini aç."
+  },
+  "quizzesTabOpen": {
+    "message": "Bitmemiş"
+  },
+  "quizzesTabDone": {
+    "message": "Tamamlanan"
+  },
+  "quizzesEmpty": {
+    "message": "Henüz quiz yok. Bir süre izledikten sonra biri açılır; kelime havuzundan da quiz hazırlayabilirsin."
+  },
+  "backToQuizzes": {
+    "message": "← Tüm quizler"
+  },
+  "quizNotFound": {
+    "message": "Bu quiz artık yok."
+  },
+  "quizKindVideo": {
+    "message": "Video quizi"
+  },
+  "quizKindWords": {
+    "message": "Kelime tekrarı"
+  },
+  "quizStateNew": {
+    "message": "Yeni"
+  },
+  "quizStateOpen": {
+    "message": "Devam ediyor"
+  },
+  "quizStateDone": {
+    "message": "Tamamlandı"
   }
 }

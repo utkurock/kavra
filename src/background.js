@@ -13,6 +13,7 @@ const ACTIVITY_DAYS = 400; // days of history kept for the activity view
 const WORDS_MAX = 1000; // lines kept in the word pool
 const WORD_QUIZ_MIN = 4; // saved lines needed for a word pool quiz
 const WORD_QUIZ_PICK = 12; // saved lines a word pool quiz is written from
+const QUIZZES_MAX = 50; // quizzes kept in the history
 
 // ---- persistent state ----
 // session "capture": { tabId, speech, source, video } for the tab being captioned (cleared on browser restart).
@@ -398,6 +399,25 @@ function toggleWord(input) {
 // ---- quiz ----
 let quizRunning = false;
 
+// Every quiz is kept in a history, newest first, and opened on its own page.
+async function saveQuiz(quiz, extra) {
+  const id = crypto.randomUUID();
+  await updateStore("quizzes", () => [], (quizzes) => {
+    quizzes.unshift({ ...quiz, ...extra, id, answers: [], createdAt: Date.now() });
+    quizzes.length = Math.min(quizzes.length, QUIZZES_MAX);
+  });
+  await recordActivity({ quizzes: 1 });
+  await chrome.tabs.create({ url: `quiz.html?id=${id}` });
+}
+
+// Versions before 0.8 kept only the latest quiz, under "quiz".
+async function migrateQuiz() {
+  const { quiz } = await chrome.storage.local.get("quiz");
+  if (!quiz?.questions) return;
+  await updateStore("quizzes", () => [], (quizzes) => void quizzes.push({ ...quiz, id: crypto.randomUUID() }));
+  await chrome.storage.local.remove("quiz");
+}
+
 // A quiz on a random handful of lines from the word pool, in the language being learned.
 async function runWordQuiz() {
   if (quizRunning) return { ok: false, error: t("quizAlreadyRunning") };
@@ -412,11 +432,7 @@ async function runWordQuiz() {
       [pool[i], pool[j]] = [pool[j], pool[i]];
     }
     const quiz = await generateWordQuiz(pool.slice(0, WORD_QUIZ_PICK), settings);
-    await chrome.storage.local.set({
-      quiz: { ...quiz, from: "words", answers: [], createdAt: Date.now(), sourceTabId: null },
-    });
-    await recordActivity({ quizzes: 1 });
-    await chrome.tabs.create({ url: "quiz.html" });
+    await saveQuiz(quiz, { from: "words", sourceTabId: null });
     return { ok: true };
   } catch (err) {
     return { ok: false, error: friendlyError(err) };
@@ -454,12 +470,15 @@ async function runQuiz() {
     if (snapshot.lines.length < 3) throw new Error(t("quizNotEnough"));
     if (capture) toAllFrames(capture.tabId, { type: "status", text: t("quizPreparing") });
     const quiz = await generateQuiz(snapshot.lines, snapshot.clicked, await getSettings());
-    await chrome.storage.local.set({
-      quiz: { ...quiz, answers: [], createdAt: Date.now(), sourceTabId: capture?.tabId ?? null },
-    });
-    await recordActivity({ quizzes: 1 });
+    // The video's page title names the quiz in the history.
+    const tab = capture && (await chrome.tabs.get(capture.tabId).catch(() => null));
     if (capture) toAllFrames(capture.tabId, { type: "media", action: "pause" });
-    await chrome.tabs.create({ url: "quiz.html" });
+    await saveQuiz(quiz, {
+      from: "video",
+      title: tab?.title?.slice(0, 200) || "",
+      url: /^https?:/.test(tab?.url) ? tab.url : "",
+      sourceTabId: capture?.tabId ?? null,
+    });
     return { ok: true };
   } catch (err) {
     // Put the transcript back so nothing is lost.
@@ -494,8 +513,9 @@ async function getState() {
 }
 
 // Stores a quiz answer once (reloading the quiz page can't count it twice) and adds it to today's activity.
-async function answerQuiz(index, choice) {
-  const correct = await updateStore("quiz", () => null, (quiz) => {
+async function answerQuiz(id, index, choice) {
+  const correct = await updateStore("quizzes", () => [], (quizzes) => {
+    const quiz = quizzes.find((q) => q.id === id);
     if (!quiz?.questions[index] || quiz.answers?.[index] != null) return null;
     (quiz.answers ??= [])[index] = choice;
     return quiz.questions[index].correct_index === choice;
@@ -525,7 +545,7 @@ const handlers = {
   resetQuiz: () => resetQuiz().then(() => ({ ok: true })),
   // options.js / quiz.js
   listModels: (msg) => handleListModels(msg.provider, msg.key),
-  quizAnswer: (msg) => answerQuiz(msg.index, msg.choice),
+  quizAnswer: (msg) => answerQuiz(msg.id, msg.index, msg.choice),
   // overlay.js (the card) / words.js
   toggleWord: (msg) => toggleWord(msg.word || {}),
   wordQuiz: () => runWordQuiz(),
@@ -570,6 +590,7 @@ chrome.storage.onChanged.addListener(async (changes, area) => {
 // First install: walk through setup.
 chrome.runtime.onInstalled.addListener(({ reason }) => {
   if (reason === chrome.runtime.OnInstalledReason.INSTALL) chrome.tabs.create({ url: "onboarding.html" });
+  else migrateQuiz();
 });
 
 chrome.tabs.onRemoved.addListener(async (tabId) => {

@@ -96,13 +96,14 @@
 
   // ---- live figures ----
   async function refresh() {
-    const [settings, { words = [], quiz, activity = {} }] = await Promise.all([
+    const [settings, { words = [], quizzes = [], activity = {} }] = await Promise.all([
       getSettings(),
-      chrome.storage.local.get(["words", "quiz", "activity"]),
+      chrome.storage.local.get(["words", "quizzes", "activity"]),
     ]);
     const lang = baseLang(settings.targetLang);
     const saved = words.filter((w) => baseLang(w.lang) === lang).length;
-    const open = quiz?.questions ? quiz.questions.length - (quiz.answers || []).filter((a) => a != null).length : 0;
+    // Quizzes with questions left to answer.
+    const open = quizzes.filter((q) => (q.answers || []).filter((a) => a != null).length < q.questions.length).length;
     counts.words.textContent = saved || "";
     counts.quiz.textContent = open > 0 ? open : "";
     pair.lastChild.textContent = `${languageName(lang, ui)} → ${languageName(settings.nativeLang, ui)}`;
@@ -112,6 +113,6 @@
   }
   refresh();
   chrome.storage.onChanged.addListener((changes, area) => {
-    if (area === "local" && ["words", "quiz", "activity", "targetLang", "nativeLang"].some((k) => k in changes)) refresh();
+    if (area === "local" && ["words", "quizzes", "activity", "targetLang", "nativeLang"].some((k) => k in changes)) refresh();
   });
 })();

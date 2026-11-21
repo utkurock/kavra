@@ -1,5 +1,5 @@
 // Word pool: the lines saved from the translation card, with search, removal and undo.
-const { t, localizePage, languageName, baseLang, getSettings } = globalThis.Kavra;
+const { t, localizePage, languageName, baseLang, getSettings, timeAgo } = globalThis.Kavra;
 const QUIZ_MIN = 4; // matches the background's minimum
 const $ = (id) => document.getElementById(id);
 const ui = chrome.i18n.getUILanguage();
@@ -28,15 +28,6 @@ function siteColour(host) {
 }
 const SITE_NAMES = { "youtube.com": "YouTube", "netflix.com": "Netflix" };
 
-// "3 days ago", "yesterday", in the browser's language.
-const relative = new Intl.RelativeTimeFormat(ui, { numeric: "auto" });
-function ago(time) {
-  const days = Math.round((new Date().setHours(0, 0, 0, 0) - new Date(time).setHours(0, 0, 0, 0)) / 86400000);
-  if (days < 7) return relative.format(-days, "day");
-  if (days < 60) return relative.format(-Math.round(days / 7), "week");
-  return new Date(time).toLocaleDateString(ui, { day: "numeric", month: "short", year: "numeric" });
-}
-
 // A saved line as a card: its source and age on top, the line and translation, notes, then actions.
 function item(word, showLang) {
   const li = el("li", "card wcard");
@@ -54,7 +45,7 @@ function item(word, showLang) {
     badge.style.setProperty("--c", siteColour(host));
     top.append(badge);
   }
-  top.append(el("span", "when", ago(word.savedAt)));
+  top.append(el("span", "when", timeAgo(word.savedAt)));
   li.append(top, el("div", "w-orig", word.text), el("div", "w-trans", word.translation));
   if (word.notes?.length) {
     const ul = el("ul", "w-notes");

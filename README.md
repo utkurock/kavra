@@ -17,7 +17,7 @@ Translations and quizzes are made by the AI provider you choose (Anthropic Claud
   - **Only on click.**
 - **Click to explain.** Clicking a line pauses the video and shows the translation with notes on idioms and harder words.
 - **Word pool.** The card has a button that saves the line with its translation and notes to your word pool, a page where you can search and remove saved lines, and take a review quiz on a random handful of them (fill the gap, meaning and translation questions).
-- **Quizzes.** After a set amount of watching (20 minutes by default), the video pauses and a 6-question quiz on what was said opens in a new tab. Questions are in the language you're learning and explanations are in yours. Lines you needed help with are used for the vocabulary questions.
+- **Quizzes.** After a set amount of watching (20 minutes by default), the video pauses and a 6-question quiz on what was said opens in a new tab. Questions are in the language you're learning and explanations are in yours. Lines you needed help with are used for the vocabulary questions. Every quiz is kept on the Quizzes page, where you can finish it later or look back at your answers.
 - **Activity history.** A listening waveform of the minutes you practised each day, monthly totals, your streak, lines heard and looked up, and quiz answers right and wrong, day by day.
 - **Any AI provider.** Each provider keeps its own key and model, and the settings page can load the provider's current model list.
 - The interface is in English or Turkish, following your browser language.

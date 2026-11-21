@@ -402,7 +402,7 @@
     "message": "No activity yet. Start captions on a video and it will show up here."
   },
   "navQuiz": {
-    "message": "Quiz"
+    "message": "Quizzes"
   },
   "navLabel": {
     "message": "Kavra pages"
@@ -670,5 +670,41 @@
   },
   "openVideo": {
     "message": "Open video"
+  },
+  "quizzesTitle": {
+    "message": "Quizzes"
+  },
+  "quizzesSubtitle": {
+    "message": "Quizzes made from what you watched and from your word pool. Open one to answer it or look back at it."
+  },
+  "quizzesTabOpen": {
+    "message": "To finish"
+  },
+  "quizzesTabDone": {
+    "message": "Completed"
+  },
+  "quizzesEmpty": {
+    "message": "No quizzes yet. One opens after you watch for a while, and you can make one from your word pool."
+  },
+  "backToQuizzes": {
+    "message": "← All quizzes"
+  },
+  "quizNotFound": {
+    "message": "This quiz is no longer here."
+  },
+  "quizKindVideo": {
+    "message": "Video quiz"
+  },
+  "quizKindWords": {
+    "message": "Word pool review"
+  },
+  "quizStateNew": {
+    "message": "New"
+  },
+  "quizStateOpen": {
+    "message": "In progress"
+  },
+  "quizStateDone": {
+    "message": "Completed"
   }
 }

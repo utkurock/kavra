@@ -81,6 +81,16 @@ globalThis.Kavra ??= (() => {
     for (const [value, text] of options) select.add(new Option(text, value));
   }
 
+  // "yesterday", "3 days ago", "2 weeks ago", then the date, in the browser's language.
+  function timeAgo(time) {
+    const ui = chrome.i18n.getUILanguage();
+    const relative = new Intl.RelativeTimeFormat(ui, { numeric: "auto" });
+    const days = Math.round((new Date().setHours(0, 0, 0, 0) - new Date(time).setHours(0, 0, 0, 0)) / 86400000);
+    if (days < 7) return relative.format(-days, "day");
+    if (days < 60) return relative.format(-Math.round(days / 7), "week");
+    return new Date(time).toLocaleDateString(ui, { day: "numeric", month: "short", year: "numeric" });
+  }
+
   // Fills elements marked data-i18n / data-i18n-placeholder / data-i18n-aria-label on extension pages.
   function localizePage() {
     document.documentElement.lang = chrome.i18n.getUILanguage();
@@ -92,6 +102,6 @@ globalThis.Kavra ??= (() => {
 
   return {
     TARGET_LOCALES, NATIVE_LANGS, LEVELS, PROVIDERS, DEFAULTS,
-    getSettings, t, baseLang, dayKey, languageName, fillLanguageSelect, localizePage,
+    getSettings, t, baseLang, dayKey, languageName, fillLanguageSelect, localizePage, timeAgo,
   };
 })();

@@ -2,7 +2,7 @@
 <html>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>quizTitle</title>
+<title>quizzesTitle</title>
 <link rel="stylesheet" href="shared.css">
 <style>
   /* questions as a grid of cards, progress and result in a panel beside them */
@@ -47,10 +47,45 @@
   .summary { text-align: center; padding: 28px 20px; display: flex; flex-direction: column; align-items: center; gap: 10px; }
   .summary .big { font-size: 44px; font-weight: 750; letter-spacing: -.03em; line-height: 1; }
   .empty { text-align: center; padding: 48px 20px; }
+  /* overview: every quiz as a card that opens it */
+  .qcards { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 16px; }
+  .qcard { display: flex; flex-direction: column; gap: 6px; height: 100%; padding: 18px 20px 16px; color: var(--fg);
+    text-decoration: none; transition: border-color .15s, background-color .15s; }
+  .qcard:hover { border-color: var(--line-strong); background: color-mix(in srgb, var(--surface-2) 50%, var(--surface)); }
+  .qcard-top { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-bottom: 8px; }
+  .qcard-top .when { font-size: 12.5px; color: var(--faint); white-space: nowrap; }
+  .qcard-title { font-size: 16px; font-weight: 600; line-height: 1.4; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+  .qcard-sub { font-size: 13px; color: var(--muted); }
+  .qcard-foot { display: flex; align-items: center; gap: 12px; margin-top: auto; padding-top: 16px; font-size: 12.5px; color: var(--muted); }
+  .qcard-foot .progress { flex: 1; height: 4px; }
+  .qcard-foot .tag.done { color: var(--ok); border-color: color-mix(in srgb, var(--ok) 40%, transparent); }
+  .qcard-foot .tag.new { color: var(--hue-2); border-color: color-mix(in srgb, var(--hue-2) 40%, transparent); }
+  .back-link { display: inline-flex; align-items: center; gap: 6px; margin-bottom: 18px; font-size: 13.5px; color: var(--muted); text-decoration: none; }
+  .back-link:hover { color: var(--fg); }
 </style>
 <main>
+  <div id="overview" hidden>
+    <header class="page-title">
+      <h1 data-i18n="quizzesTitle"></h1>
+      <p class="muted" data-i18n="quizzesSubtitle"></p>
+      <div class="actions"><a class="btn secondary" href="words.html" data-i18n="navWords"></a></div>
+    </header>
+    <div class="segtabs" role="tablist">
+      <button class="segtab" role="tab" data-tab="all" aria-selected="true"><span data-i18n="wordsTabAll"></span><span class="count"></span></button>
+      <button class="segtab" role="tab" data-tab="open" aria-selected="false"><span data-i18n="quizzesTabOpen"></span><span class="count"></span></button>
+      <button class="segtab" role="tab" data-tab="done" aria-selected="false"><span data-i18n="quizzesTabDone"></span><span class="count"></span></button>
+    </div>
+    <ul id="quizList" class="qcards"></ul>
+    <div id="quizzesEmpty" class="empty-state" hidden>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m8.5 12.2 2.4 2.4 4.6-5"/></svg>
+      <p data-i18n="quizzesEmpty"></p>
+    </div>
+  </div>
+
+  <div id="detail" hidden>
+  <a class="back-link" href="quiz.html" data-i18n="backToQuizzes"></a>
   <header class="page-title">
-    <h1 id="title" data-i18n="quizTitle"></h1>
+    <h1 id="title"></h1>
     <p class="muted" id="meta"></p>
   </header>
   <div class="qlayout">
@@ -68,6 +103,7 @@
         <p class="small muted" id="backError" hidden data-i18n="videoTabClosed"></p>
       </section>
     </aside>
+  </div>
   </div>
 </main>
 <script src="settings.js"></script>
