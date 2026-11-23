@@ -111,8 +111,8 @@ level; Settings changes them later, and progress is kept per language.
   each), the ones not mastered yet first. Build the sentence from shuffled word tiles, or pick the
   word for a gap; a wrong answer comes back a few exercises later. Topics lists the units, to practise
   one on its own.
-- A tab bar on phones and a sidebar on wide screens. On phones the cards and exercises start at the
-  top of the screen, with the level filter folded into one button. Light and dark themes; it can be
+- A tab bar on phones and a sidebar on wide screens. On phones the level filter folds into one
+  button beside the view's tabs, so the cards and exercises get most of the screen. Light and dark themes; it can be
   added to the home screen.
 
 It's plain static files with no build step, no account and no API key. Progress is kept in the
