@@ -182,7 +182,43 @@
      ],
      "answer": 1
     }
-   ]
+   ],
+   "learn": {
+    "explain": {
+     "tr": "Être «olmak», avoir «sahip olmak» demektir. İkisi de çok sık kullanılır ve düzensizdir.\nÖrüntü: je suis, tu es, il est, nous sommes, vous êtes, ils sont / j'ai, tu as, il a, nous avons, vous avez, ils ont.\nFransızca'da yaş, açlık ve susuzluk avoir ile söylenir: j'ai vingt ans, j'ai faim.\nSık hata: «Je suis 20 ans» demek. Doğrusu «J'ai 20 ans».",
+     "en": "Être means 'to be' and avoir means 'to have'. Both are very common and irregular.\nPattern: je suis, tu es, il est, nous sommes, vous êtes, ils sont / j'ai, tu as, il a, nous avons, vous avez, ils ont.\nIn French, age, hunger and thirst use avoir: j'ai vingt ans, j'ai faim.\nCommon mistake: saying 'Je suis 20 ans'. The correct form is 'J'ai 20 ans'."
+    },
+    "examples": [
+     {
+      "text": "Nous sommes en retard.",
+      "native": {
+       "tr": "Geç kaldık.",
+       "en": "We are late."
+      }
+     },
+     {
+      "text": "Elle a un grand jardin.",
+      "native": {
+       "tr": "Onun büyük bir bahçesi var.",
+       "en": "She has a big garden."
+      }
+     },
+     {
+      "text": "Vous avez froid?",
+      "native": {
+       "tr": "Üşüyor musunuz?",
+       "en": "Are you cold?"
+      }
+     },
+     {
+      "text": "Mes parents sont à Paris.",
+      "native": {
+       "tr": "Annemle babam Paris'te.",
+       "en": "My parents are in Paris."
+      }
+     }
+    ]
+   }
   },
   {
    "id": "articles",
@@ -366,7 +402,43 @@
      ],
      "answer": 0
     }
-   ]
+   ],
+   "learn": {
+    "explain": {
+     "tr": "Fransızca'da her isim eril ya da dişildir ve önünde genelde bir artikel durur.\nBelirli: le (eril), la (dişil), les (çoğul). Belirsiz: un, une, des. Ünlüyle başlayan kelimede le/la, l' olur: l'ami.\nİsmin cinsiyetini kelimeyle birlikte öğren: une table, un livre.\nSık hata: Türkçe'de artikel olmadığı için onu unutmak. «J'ai chien» yanlış, «J'ai un chien» doğru.",
+     "en": "Every French noun is masculine or feminine and usually comes with an article.\nDefinite: le (masc.), la (fem.), les (plural). Indefinite: un, une, des. Before a vowel, le/la becomes l': l'ami.\nLearn each noun together with its article: une table, un livre.\nCommon mistake: leaving the article out. 'J'ai chien' is wrong, 'J'ai un chien' is right."
+    },
+    "examples": [
+     {
+      "text": "La voiture est devant la maison.",
+      "native": {
+       "tr": "Araba evin önünde.",
+       "en": "The car is in front of the house."
+      }
+     },
+     {
+      "text": "Je cherche un stylo.",
+      "native": {
+       "tr": "Bir kalem arıyorum.",
+       "en": "I am looking for a pen."
+      }
+     },
+     {
+      "text": "Les enfants jouent dans le parc.",
+      "native": {
+       "tr": "Çocuklar parkta oynuyor.",
+       "en": "The children are playing in the park."
+      }
+     },
+     {
+      "text": "Elle achète des fleurs.",
+      "native": {
+       "tr": "Çiçek satın alıyor.",
+       "en": "She is buying some flowers."
+      }
+     }
+    ]
+   }
   },
   {
    "id": "verbes-er",
@@ -549,7 +621,43 @@
      ],
      "answer": 2
     }
-   ]
+   ],
+   "learn": {
+    "explain": {
+     "tr": "-er ile biten fiiller Fransızca'daki fiillerin çoğunu oluşturur ve düzenli çekilir.\nÖrüntü: -er'i at, ekle: -e, -es, -e, -ons, -ez, -ent. Örnek: parler → je parle, nous parlons, ils parlent.\nBugün konuşma dilinde «ils parlent» sonundaki -ent okunmaz.\nSık hata: «nous» ve «vous» ile de -e eklemek. Doğrusu nous parlons, vous parlez.",
+     "en": "Verbs ending in -er are the largest group in French and follow one regular pattern.\nPattern: drop -er and add -e, -es, -e, -ons, -ez, -ent. Example: parler → je parle, nous parlons, ils parlent.\nThe -ent ending of 'ils parlent' is silent when you speak.\nCommon mistake: using -e with nous and vous. The right forms are nous parlons, vous parlez."
+    },
+    "examples": [
+     {
+      "text": "J'habite à Lyon.",
+      "native": {
+       "tr": "Lyon'da yaşıyorum.",
+       "en": "I live in Lyon."
+      }
+     },
+     {
+      "text": "Nous mangeons à midi.",
+      "native": {
+       "tr": "Öğlen yemek yiyoruz.",
+       "en": "We eat at noon."
+      }
+     },
+     {
+      "text": "Tu aimes le café?",
+      "native": {
+       "tr": "Kahveyi sever misin?",
+       "en": "Do you like coffee?"
+      }
+     },
+     {
+      "text": "Ils travaillent beaucoup.",
+      "native": {
+       "tr": "Çok çalışıyorlar.",
+       "en": "They work a lot."
+      }
+     }
+    ]
+   }
   },
   {
    "id": "negation",
@@ -732,7 +840,43 @@
      ],
      "answer": 2
     }
-   ]
+   ],
+   "learn": {
+    "explain": {
+     "tr": "Olumsuz cümle yapmak için fiilin etrafına ne ... pas koyarsın.\nÖrüntü: özne + ne + fiil + pas. Ünlüyle başlayan fiilden önce ne, n' olur: il n'aime pas.\nKonuşmada çoğu kişi ne'yi söylemez, ama yazıda mutlaka kullan.\nSık hata: yalnızca pas koymak veya ne'yi fiilin sonuna koymak. Doğrusu «Je ne parle pas anglais».",
+     "en": "To make a sentence negative, put ne ... pas around the verb.\nPattern: subject + ne + verb + pas. Before a vowel, ne becomes n': il n'aime pas.\nIn speech many people drop ne, but always use it when writing.\nCommon mistake: using only pas, or putting ne after the verb. The right form is 'Je ne parle pas anglais'."
+    },
+    "examples": [
+     {
+      "text": "Je ne comprends pas.",
+      "native": {
+       "tr": "Anlamıyorum.",
+       "en": "I don't understand."
+      }
+     },
+     {
+      "text": "Elle n'habite pas ici.",
+      "native": {
+       "tr": "O burada yaşamıyor.",
+       "en": "She doesn't live here."
+      }
+     },
+     {
+      "text": "Nous ne mangeons pas de viande.",
+      "native": {
+       "tr": "Et yemiyoruz.",
+       "en": "We don't eat meat."
+      }
+     },
+     {
+      "text": "Ils ne sont pas à la maison.",
+      "native": {
+       "tr": "Evde değiller.",
+       "en": "They are not at home."
+      }
+     }
+    ]
+   }
   },
   {
    "id": "questions",
@@ -917,7 +1061,43 @@
      ],
      "answer": 0
     }
-   ]
+   ],
+   "learn": {
+    "explain": {
+     "tr": "Fransızca'da evet/hayır sorusu kurmanın en kolay yolu cümlenin başına est-ce que koymaktır.\nÖrüntü: Est-ce que + normal cümle? Soru sözcükleri başa gelir: où (nerede), quand (ne zaman), pourquoi (neden), comment (nasıl).\nSes tonunu yükseltmek de yeter: Tu viens? Ünlüden önce est-ce qu' olur.\nSık hata: soru sözcüğünü cümlenin sonuna koymak. Doğrusu «Où est-ce que tu habites?»",
+     "en": "The easiest way to ask a yes/no question in French is to put est-ce que at the start.\nPattern: Est-ce que + normal sentence? Question words go first: où (where), quand (when), pourquoi (why), comment (how).\nRaising your voice also works: Tu viens? Before a vowel it is est-ce qu'.\nCommon mistake: putting the question word at the end. Say 'Où est-ce que tu habites?'"
+    },
+    "examples": [
+     {
+      "text": "Est-ce que tu as faim?",
+      "native": {
+       "tr": "Acıktın mı?",
+       "en": "Are you hungry?"
+      }
+     },
+     {
+      "text": "Où est-ce que vous travaillez?",
+      "native": {
+       "tr": "Nerede çalışıyorsunuz?",
+       "en": "Where do you work?"
+      }
+     },
+     {
+      "text": "Quand est-ce qu'il arrive?",
+      "native": {
+       "tr": "O ne zaman geliyor?",
+       "en": "When does he arrive?"
+      }
+     },
+     {
+      "text": "Pourquoi tu pleures?",
+      "native": {
+       "tr": "Neden ağlıyorsun?",
+       "en": "Why are you crying?"
+      }
+     }
+    ]
+   }
   },
   {
    "id": "futur-proche",
@@ -1100,7 +1280,43 @@
      ],
      "answer": 0
     }
-   ]
+   ],
+   "learn": {
+    "explain": {
+     "tr": "Yakın gelecek, birazdan olacak ya da planlanmış şeyleri anlatır.\nÖrüntü: aller (je vais, tu vas, il va, nous allons, vous allez, ils vont) + fiilin mastarı.\nGünlük konuşmada gelecek zamanın yerine çok kullanılır.\nSık hata: ikinci fiili de çekmek. «Je vais mange» yanlış, doğrusu «Je vais manger».",
+     "en": "The near future describes what is about to happen or what is planned.\nPattern: aller (je vais, tu vas, il va, nous allons, vous allez, ils vont) + infinitive.\nIn everyday speech it is used much more than the real future tense.\nCommon mistake: conjugating the second verb too. 'Je vais mange' is wrong, 'Je vais manger' is right."
+    },
+    "examples": [
+     {
+      "text": "Ce soir, je vais regarder un film.",
+      "native": {
+       "tr": "Bu akşam bir film izleyeceğim.",
+       "en": "Tonight I am going to watch a film."
+      }
+     },
+     {
+      "text": "Il va pleuvoir demain.",
+      "native": {
+       "tr": "Yarın yağmur yağacak.",
+       "en": "It is going to rain tomorrow."
+      }
+     },
+     {
+      "text": "Nous allons visiter Rome.",
+      "native": {
+       "tr": "Roma'yı gezeceğiz.",
+       "en": "We are going to visit Rome."
+      }
+     },
+     {
+      "text": "Tu vas être en retard!",
+      "native": {
+       "tr": "Geç kalacaksın!",
+       "en": "You are going to be late!"
+      }
+     }
+    ]
+   }
   },
   {
    "id": "partitif",
@@ -1283,7 +1499,43 @@
      ],
      "answer": 0
     }
-   ]
+   ],
+   "learn": {
+    "explain": {
+     "tr": "Sayılamayan ya da miktarı belli olmayan şeyler için «biraz» anlamında partitif kullanılır.\nÖrüntü: du (eril), de la (dişil), de l' (ünlüyle başlayan), des (çoğul): du pain, de la soupe, de l'eau.\nOlumsuz cümlede hepsi de / d' olur: je ne mange pas de pain.\nSık hata: Türkçe'deki gibi artikeli atmak. «Je bois café» yanlış, doğrusu «Je bois du café».",
+     "en": "The partitive article means 'some' and is used for things you cannot count or when the amount is not specific.\nPattern: du (masc.), de la (fem.), de l' (before a vowel), des (plural): du pain, de la soupe, de l'eau.\nAfter a negative they all become de / d': je ne mange pas de pain.\nCommon mistake: dropping the article. 'Je bois café' is wrong, 'Je bois du café' is right."
+    },
+    "examples": [
+     {
+      "text": "Je voudrais de la salade.",
+      "native": {
+       "tr": "Biraz salata istiyorum.",
+       "en": "I would like some salad."
+      }
+     },
+     {
+      "text": "Il boit du lait le matin.",
+      "native": {
+       "tr": "Sabahları süt içiyor.",
+       "en": "He drinks milk in the morning."
+      }
+     },
+     {
+      "text": "Nous avons de l'argent.",
+      "native": {
+       "tr": "Paramız var.",
+       "en": "We have some money."
+      }
+     },
+     {
+      "text": "Elle ne mange pas de fromage.",
+      "native": {
+       "tr": "Peynir yemiyor.",
+       "en": "She doesn't eat cheese."
+      }
+     }
+    ]
+   }
   },
   {
    "id": "passe-compose-avoir",
@@ -1466,7 +1718,43 @@
      ],
      "answer": 0
     }
-   ]
+   ],
+   "learn": {
+    "explain": {
+     "tr": "Passé composé, bitmiş geçmiş eylemleri anlatır. Fiillerin çoğu avoir ile kurulur.\nÖrüntü: avoir (j'ai, tu as, il a, nous avons, vous avez, ils ont) + ortaç. -er fiilleri için ortaç -é: manger → mangé.\nOlumsuzda ne ... pas, avoir'ın etrafına gelir: je n'ai pas mangé.\nSık hata: ortacı unutup mastarı kullanmak. «J'ai manger» yanlış, doğrusu «J'ai mangé».",
+     "en": "The passé composé describes finished actions in the past. Most verbs form it with avoir.\nPattern: avoir (j'ai, tu as, il a, nous avons, vous avez, ils ont) + past participle. For -er verbs the participle ends in -é: manger → mangé.\nIn the negative, ne ... pas goes around avoir: je n'ai pas mangé.\nCommon mistake: using the infinitive instead of the participle. 'J'ai manger' is wrong, 'J'ai mangé' is right."
+    },
+    "examples": [
+     {
+      "text": "Hier, j'ai acheté un livre.",
+      "native": {
+       "tr": "Dün bir kitap aldım.",
+       "en": "Yesterday I bought a book."
+      }
+     },
+     {
+      "text": "Elle a fini son travail.",
+      "native": {
+       "tr": "İşini bitirdi.",
+       "en": "She finished her work."
+      }
+     },
+     {
+      "text": "Nous avons regardé un film.",
+      "native": {
+       "tr": "Bir film izledik.",
+       "en": "We watched a film."
+      }
+     },
+     {
+      "text": "Tu n'as pas répondu.",
+      "native": {
+       "tr": "Cevap vermedin.",
+       "en": "You didn't answer."
+      }
+     }
+    ]
+   }
   },
   {
    "id": "passe-compose-etre",
@@ -1649,7 +1937,43 @@
      ],
      "answer": 1
     }
-   ]
+   ],
+   "learn": {
+    "explain": {
+     "tr": "Bazı fiiller, özellikle hareket ve durum değiştirme bildirenler, geçmişte être ile kurulur: aller, venir, arriver, partir, rester, naître.\nÖrüntü: être (je suis, tu es, il est ...) + ortaç. Ortaç özneye uyar: elle est arrivée, ils sont partis.\nKendine dönüşlü fiiller de hep être alır.\nSık hata: «J'ai allé» demek. Doğrusu «Je suis allé(e)».",
+     "en": "Some verbs, mostly movement or change of state, use être in the past: aller, venir, arriver, partir, rester, naître.\nPattern: être (je suis, tu es, il est ...) + past participle. The participle agrees with the subject: elle est arrivée, ils sont partis.\nReflexive verbs also always take être.\nCommon mistake: saying 'J'ai allé'. The right form is 'Je suis allé(e)'."
+    },
+    "examples": [
+     {
+      "text": "Je suis allé au cinéma.",
+      "native": {
+       "tr": "Sinemaya gittim.",
+       "en": "I went to the cinema."
+      }
+     },
+     {
+      "text": "Elle est née en 1995.",
+      "native": {
+       "tr": "1995'te doğdu.",
+       "en": "She was born in 1995."
+      }
+     },
+     {
+      "text": "Nous sommes restés à la maison.",
+      "native": {
+       "tr": "Evde kaldık.",
+       "en": "We stayed at home."
+      }
+     },
+     {
+      "text": "Ils sont arrivés hier soir.",
+      "native": {
+       "tr": "Dün akşam geldiler.",
+       "en": "They arrived last night."
+      }
+     }
+    ]
+   }
   },
   {
    "id": "reflexifs",
@@ -1832,7 +2156,43 @@
      ],
      "answer": 2
     }
-   ]
+   ],
+   "learn": {
+    "explain": {
+     "tr": "Dönüşlü fiiller, eylemin özneye geri döndüğünü gösterir: se lever (kalkmak), se coucher (yatmak), s'appeler (adı olmak).\nÖrüntü: özne + me/te/se/nous/vous/se + fiil: je me lève, tu te lèves, nous nous habillons. Ünlüden önce me, te, se → m', t', s'.\nOlumsuzda ne ... pas, zamir ve fiili birlikte sarar: je ne me lève pas.\nSık hata: zamiri unutmak. «Je lève à sept heures» yanlış, doğrusu «Je me lève à sept heures».",
+     "en": "Reflexive verbs show that the action goes back to the subject: se lever (to get up), se coucher (to go to bed), s'appeler (to be called).\nPattern: subject + me/te/se/nous/vous/se + verb: je me lève, tu te lèves, nous nous habillons. Before a vowel, me, te, se become m', t', s'.\nIn the negative, ne ... pas wraps pronoun and verb together: je ne me lève pas.\nCommon mistake: forgetting the pronoun. 'Je lève à sept heures' is wrong, 'Je me lève à sept heures' is right."
+    },
+    "examples": [
+     {
+      "text": "Je m'appelle Julien.",
+      "native": {
+       "tr": "Benim adım Julien.",
+       "en": "My name is Julien."
+      }
+     },
+     {
+      "text": "Elle se réveille tôt.",
+      "native": {
+       "tr": "Erken uyanıyor.",
+       "en": "She wakes up early."
+      }
+     },
+     {
+      "text": "Nous nous promenons le dimanche.",
+      "native": {
+       "tr": "Pazar günleri yürüyüşe çıkıyoruz.",
+       "en": "We go for a walk on Sundays."
+      }
+     },
+     {
+      "text": "Tu ne te couches pas?",
+      "native": {
+       "tr": "Yatmıyor musun?",
+       "en": "Aren't you going to bed?"
+      }
+     }
+    ]
+   }
   },
   {
    "id": "imparfait-pc",
@@ -2024,7 +2384,43 @@
       "Nous dînions déjà quand elle est arrivée."
      ]
     }
-   ]
+   ],
+   "learn": {
+    "explain": {
+     "tr": "Geçmişte iki zaman kullanırız. Imparfait fon, alışkanlık ve süren durumları anlatır; passé composé tek ve bitmiş olayı.\nÖrüntü: imparfait = nous formunun kökü + -ais, -ais, -ait, -ions, -iez, -aient (nous parlons → je parlais). Passé composé = avoir/être + ortaç.\nSık birleşim: bir eylem sürerken (imparfait) başka bir olay araya girer (passé composé): Je lisais quand il est entré.\nSık hata: alışkanlık için passé composé kullanmak. «Enfant, j'ai joué dehors tous les jours» yerine «je jouais» de.",
+     "en": "French has two main past tenses. The imparfait gives background, habits and ongoing states; the passé composé gives one finished event.\nPattern: imparfait = stem of the nous form + -ais, -ais, -ait, -ions, -iez, -aient (nous parlons → je parlais). Passé composé = avoir/être + participle.\nA common combination: something was going on (imparfait) when an event interrupted it (passé composé): Je lisais quand il est entré.\nCommon mistake: using the passé composé for habits. Say 'Enfant, je jouais dehors' rather than 'j'ai joué'."
+    },
+    "examples": [
+     {
+      "text": "Quand j'étais petit, j'habitais à Nice.",
+      "native": {
+       "tr": "Küçükken Nice'te yaşıyordum.",
+       "en": "When I was little, I lived in Nice."
+      }
+     },
+     {
+      "text": "Il pleuvait quand nous sommes sortis.",
+      "native": {
+       "tr": "Dışarı çıktığımızda yağmur yağıyordu.",
+       "en": "It was raining when we went out."
+      }
+     },
+     {
+      "text": "Elle dormait quand le téléphone a sonné.",
+      "native": {
+       "tr": "Telefon çaldığında uyuyordu.",
+       "en": "She was sleeping when the phone rang."
+      }
+     },
+     {
+      "text": "Hier, j'ai vu Marc, il avait l'air fatigué.",
+      "native": {
+       "tr": "Dün Marc'ı gördüm, yorgun görünüyordu.",
+       "en": "Yesterday I saw Marc, he looked tired."
+      }
+     }
+    ]
+   }
   },
   {
    "id": "futur-simple",
@@ -2210,7 +2606,43 @@
      ],
      "alt": []
     }
-   ]
+   ],
+   "learn": {
+    "explain": {
+     "tr": "Futur simple, daha uzak ya da kesin gelecekten söz ederken kullanılır.\nÖrüntü: mastar + -ai, -as, -a, -ons, -ez, -ont: je parlerai, nous finirons. -re ile biten fiillerde e düşer: prendre → je prendrai.\nDüzensiz kökler: aller → ir-, être → ser-, avoir → aur-, faire → fer-.\nSık hata: düzensiz kökü düzenliymiş gibi kurmak. «J'allerai» yanlış, doğrusu «J'irai».",
+     "en": "The futur simple talks about the more distant or certain future.\nPattern: infinitive + -ai, -as, -a, -ons, -ez, -ont: je parlerai, nous finirons. With -re verbs, drop the final e: prendre → je prendrai.\nIrregular stems: aller → ir-, être → ser-, avoir → aur-, faire → fer-.\nCommon mistake: building an irregular verb as if it were regular. 'J'allerai' is wrong, 'J'irai' is right."
+    },
+    "examples": [
+     {
+      "text": "Demain, il fera beau.",
+      "native": {
+       "tr": "Yarın hava güzel olacak.",
+       "en": "Tomorrow the weather will be nice."
+      }
+     },
+     {
+      "text": "Je t'appellerai ce soir.",
+      "native": {
+       "tr": "Seni bu akşam arayacağım.",
+       "en": "I will call you tonight."
+      }
+     },
+     {
+      "text": "Nous serons là à huit heures.",
+      "native": {
+       "tr": "Saat sekizde orada olacağız.",
+       "en": "We will be there at eight."
+      }
+     },
+     {
+      "text": "Ils voyageront l'été prochain.",
+      "native": {
+       "tr": "Gelecek yaz seyahat edecekler.",
+       "en": "They will travel next summer."
+      }
+     }
+    ]
+   }
   },
   {
    "id": "conditionnel",
@@ -2397,7 +2829,43 @@
       "Nous serions très contents si elle venait."
      ]
     }
-   ]
+   ],
+   "learn": {
+    "explain": {
+     "tr": "Conditionnel nazik istekler, tavsiyeler ve gerçek olmayan durumlar için kullanılır.\nÖrüntü: futur kökü + imparfait ekleri: je voudrais, tu aimerais, nous irions. «Si + imparfait, conditionnel» kalıbı: Si j'avais le temps, je voyagerais.\nJe veux yerine je voudrais demek çok daha kibardır.\nSık hata: si'den sonra da conditionnel kullanmak. «Si j'aurais» yanlış, doğrusu «Si j'avais».",
+     "en": "The conditional is used for polite requests, advice and unreal situations.\nPattern: future stem + imparfait endings: je voudrais, tu aimerais, nous irions. The 'si + imparfait, conditional' pattern: Si j'avais le temps, je voyagerais.\nSaying je voudrais instead of je veux is much more polite.\nCommon mistake: using the conditional after si too. 'Si j'aurais' is wrong, 'Si j'avais' is right."
+    },
+    "examples": [
+     {
+      "text": "Pourriez-vous m'aider, s'il vous plaît?",
+      "native": {
+       "tr": "Bana yardım edebilir misiniz, lütfen?",
+       "en": "Could you help me, please?"
+      }
+     },
+     {
+      "text": "Tu devrais dormir plus.",
+      "native": {
+       "tr": "Daha çok uyumalısın.",
+       "en": "You should sleep more."
+      }
+     },
+     {
+      "text": "Si j'étais riche, j'achèterais une maison.",
+      "native": {
+       "tr": "Zengin olsam bir ev alırdım.",
+       "en": "If I were rich, I would buy a house."
+      }
+     },
+     {
+      "text": "Nous aimerions un café.",
+      "native": {
+       "tr": "Bir kahve isterdik.",
+       "en": "We would like a coffee."
+      }
+     }
+    ]
+   }
   },
   {
    "id": "pronoms-cod-coi",
@@ -2581,7 +3049,43 @@
      ],
      "alt": []
     }
-   ]
+   ],
+   "learn": {
+    "explain": {
+     "tr": "Zamirler, daha önce söylenmiş bir ismin yerine geçer ve tekrarı önler.\nCOD (doğrudan nesne): le, la, les. COI («à + kişi»): lui, leur. Zamir fiilden önce gelir: Je le vois. Je lui parle.\nPassé composé'de zamir avoir'dan önce gelir: Je l'ai vu. Olumsuzda: Je ne le vois pas.\nSık hata: zamiri fiilden sonraya koymak. «Je vois le» yanlış, doğrusu «Je le vois».",
+     "en": "Object pronouns replace a noun that was already mentioned, so you do not repeat it.\nDirect object: le, la, les. Indirect object ('à + person'): lui, leur. The pronoun goes before the verb: Je le vois. Je lui parle.\nIn the passé composé the pronoun comes before avoir: Je l'ai vu. Negative: Je ne le vois pas.\nCommon mistake: putting the pronoun after the verb. 'Je vois le' is wrong, 'Je le vois' is right."
+    },
+    "examples": [
+     {
+      "text": "Je la connais bien.",
+      "native": {
+       "tr": "Onu iyi tanıyorum.",
+       "en": "I know her well."
+      }
+     },
+     {
+      "text": "Il leur téléphone tous les jours.",
+      "native": {
+       "tr": "Onlara her gün telefon ediyor.",
+       "en": "He phones them every day."
+      }
+     },
+     {
+      "text": "Tu as acheté les billets? Oui, je les ai achetés.",
+      "native": {
+       "tr": "Biletleri aldın mı? Evet, onları aldım.",
+       "en": "Did you buy the tickets? Yes, I bought them."
+      }
+     },
+     {
+      "text": "Nous lui donnons un cadeau.",
+      "native": {
+       "tr": "Ona bir hediye veriyoruz.",
+       "en": "We give him a present."
+      }
+     }
+    ]
+   }
   },
   {
    "id": "y-en",
@@ -2767,7 +3271,43 @@
      ],
      "alt": []
     }
-   ]
+   ],
+   "learn": {
+    "explain": {
+     "tr": "Y ve en, iki küçük ama çok işe yarar zamirdir.\nY bir yerin ya da «à + şey»in yerini tutar: Tu vas à Paris? Oui, j'y vais. En «de + şey»in ve miktarın yerini tutar: Tu veux du pain? J'en ai trois.\nİkisi de fiilden önce gelir. Sayı ya da miktar kalır: J'en veux deux.\nSık hata: en'i söyleyip miktarı unutmak ya da zamiri atmak. «J'ai trois» yerine «J'en ai trois».",
+     "en": "Y and en are two small but very useful pronouns.\nY replaces a place or 'à + thing': Tu vas à Paris? Oui, j'y vais. En replaces 'de + thing' and quantities: Tu veux du pain? J'en ai trois.\nBoth go before the verb. A number or quantity stays in the sentence: J'en veux deux.\nCommon mistake: dropping the pronoun when you give a quantity. Say 'J'en ai trois', not 'J'ai trois'."
+    },
+    "examples": [
+     {
+      "text": "Tu penses à ton voyage? Oui, j'y pense.",
+      "native": {
+       "tr": "Yolculuğunu düşünüyor musun? Evet, onu düşünüyorum.",
+       "en": "Are you thinking about your trip? Yes, I am thinking about it."
+      }
+     },
+     {
+      "text": "Il y a du monde, nous y allons demain.",
+      "native": {
+       "tr": "Çok insan var, yarın oraya gidiyoruz.",
+       "en": "It's busy, we are going there tomorrow."
+      }
+     },
+     {
+      "text": "Vous avez des enfants? Oui, nous en avons deux.",
+      "native": {
+       "tr": "Çocuğunuz var mı? Evet, iki tane.",
+       "en": "Do you have children? Yes, we have two."
+      }
+     },
+     {
+      "text": "Elle a besoin d'argent, elle en cherche.",
+      "native": {
+       "tr": "Paraya ihtiyacı var, para arıyor.",
+       "en": "She needs money, she is looking for some."
+      }
+     }
+    ]
+   }
   },
   {
    "id": "pronoms-relatifs",
@@ -2951,7 +3491,43 @@
      ],
      "alt": []
     }
-   ]
+   ],
+   "learn": {
+    "explain": {
+     "tr": "Zamir relatif iki cümleyi tek cümlede birleştirir; Türkçe'deki «-en, -diği» yapısına benzer.\nQui öznenin yerini tutar: L'homme qui parle. Que nesnenin yerini tutar: Le livre que tu lis. Où yer ve zaman, dont «de + isim» içindir: Le film dont je parle.\nQue ünlüden önce qu' olur, qui olmaz.\nSık hata: qui ile que'yi karıştırmak. Qui'den sonra fiil gelir, que'den sonra genelde özne.",
+     "en": "A relative pronoun joins two sentences into one, like 'who', 'that' or 'where' in English.\nQui replaces the subject: L'homme qui parle. Que replaces the object: Le livre que tu lis. Où is for place and time, and dont replaces 'de + noun': Le film dont je parle.\nQue becomes qu' before a vowel, qui never changes.\nCommon mistake: mixing up qui and que. After qui comes a verb, after que usually a subject."
+    },
+    "examples": [
+     {
+      "text": "La femme qui habite ici est médecin.",
+      "native": {
+       "tr": "Burada yaşayan kadın doktor.",
+       "en": "The woman who lives here is a doctor."
+      }
+     },
+     {
+      "text": "Le gâteau que tu as fait est délicieux.",
+      "native": {
+       "tr": "Yaptığın pasta çok lezzetli.",
+       "en": "The cake you made is delicious."
+      }
+     },
+     {
+      "text": "C'est la ville où je suis né.",
+      "native": {
+       "tr": "Burası doğduğum şehir.",
+       "en": "This is the city where I was born."
+      }
+     },
+     {
+      "text": "Voilà le livre dont j'ai besoin.",
+      "native": {
+       "tr": "İşte ihtiyacım olan kitap.",
+       "en": "Here is the book I need."
+      }
+     }
+    ]
+   }
   },
   {
    "id": "subjonctif",
@@ -3139,7 +3715,43 @@
       "Je vais t'expliquer pour que tu comprennes."
      ]
     }
-   ]
+   ],
+   "learn": {
+    "explain": {
+     "tr": "Subjonctif, gereklilik, istek, duygu ve şüphe bildiren ifadelerden sonra kullanılır: il faut que, vouloir que, bien que, pour que.\nÖrüntü: ils formunun kökü + -e, -es, -e, -ions, -iez, -ent: ils parlent → que je parle. Aynı özne için mastar kullanılır: Je veux partir.\nDüzensizler: être → sois, avoir → aie, faire → fasse, aller → aille.\nSık hata: il faut que'den sonra mastar ya da indicatif kullanmak. «Il faut que tu viens» yanlış, doğrusu «Il faut que tu viennes».",
+     "en": "The subjunctive is used after expressions of necessity, wish, emotion and doubt: il faut que, vouloir que, bien que, pour que.\nPattern: stem of the ils form + -e, -es, -e, -ions, -iez, -ent: ils parlent → que je parle. When the subject is the same, use the infinitive: Je veux partir.\nIrregulars: être → sois, avoir → aie, faire → fasse, aller → aille.\nCommon mistake: using the infinitive or the indicative after il faut que. 'Il faut que tu viens' is wrong, 'Il faut que tu viennes' is right."
+    },
+    "examples": [
+     {
+      "text": "Il faut que je finisse ce travail.",
+      "native": {
+       "tr": "Bu işi bitirmem gerekiyor.",
+       "en": "I have to finish this work."
+      }
+     },
+     {
+      "text": "Je veux que tu sois heureux.",
+      "native": {
+       "tr": "Mutlu olmanı istiyorum.",
+       "en": "I want you to be happy."
+      }
+     },
+     {
+      "text": "Bien qu'il pleuve, nous sortons.",
+      "native": {
+       "tr": "Yağmur yağmasına rağmen dışarı çıkıyoruz.",
+       "en": "Although it is raining, we are going out."
+      }
+     },
+     {
+      "text": "Elle part pour que nous puissions parler.",
+      "native": {
+       "tr": "Konuşabilmemiz için gidiyor.",
+       "en": "She is leaving so that we can talk."
+      }
+     }
+    ]
+   }
   },
   {
    "id": "plus-que-parfait",
@@ -3328,7 +3940,43 @@
       "Je serais venu si tu m'avais appelé."
      ]
     }
-   ]
+   ],
+   "learn": {
+    "explain": {
+     "tr": "Plus-que-parfait, başka bir geçmiş olaydan önce olmuş eylemi anlatır; Türkçe'deki «-mişti» gibidir.\nÖrüntü: avoir ya da être imparfait'da (j'avais, tu avais, j'étais ...) + ortaç: j'avais mangé, elle était partie.\nÖn plandaki olay passé composé'dedir: J'avais déjà mangé quand il est arrivé.\nSık hata: ikisini de passé composé'ye koymak, sıra belirsizleşir. Önce olan eylem plus-que-parfait'de olmalı.",
+     "en": "The plus-que-parfait describes something that happened before another past event, like 'had done' in English.\nPattern: avoir or être in the imparfait (j'avais, tu avais, j'étais ...) + past participle: j'avais mangé, elle était partie.\nThe later event is in the passé composé: J'avais déjà mangé quand il est arrivé.\nCommon mistake: putting both in the passé composé, which blurs the order. The earlier action should be in the plus-que-parfait."
+    },
+    "examples": [
+     {
+      "text": "Quand je suis arrivé, le film avait commencé.",
+      "native": {
+       "tr": "Vardığımda film başlamıştı.",
+       "en": "When I arrived, the film had started."
+      }
+     },
+     {
+      "text": "Elle avait déjà fini ses devoirs.",
+      "native": {
+       "tr": "Ödevlerini çoktan bitirmişti.",
+       "en": "She had already finished her homework."
+      }
+     },
+     {
+      "text": "Nous étions partis avant la pluie.",
+      "native": {
+       "tr": "Yağmurdan önce çıkmıştık.",
+       "en": "We had left before the rain."
+      }
+     },
+     {
+      "text": "Il ne m'avait pas dit la vérité.",
+      "native": {
+       "tr": "Bana gerçeği söylememişti.",
+       "en": "He hadn't told me the truth."
+      }
+     }
+    ]
+   }
   },
   {
    "id": "passif",
@@ -3515,7 +4163,43 @@
      ],
      "alt": []
     }
-   ]
+   ],
+   "learn": {
+    "explain": {
+     "tr": "Passif, eylemi yapandan çok eylemden etkilenen şeyi öne çıkarır; Türkçe'deki «yapıldı, kapatıldı» gibidir.\nÖrüntü: être (uygun zamanda) + ortaç, ortaç özneye uyar. Yapan kişi par ile gelir: Le voleur a été arrêté par la police.\nYapan belli değilse par kullanmayabilirsin: La porte est fermée.\nSık hata: ortacı özneye uydurmamak. «Les portes sont fermé» yanlış, doğrusu «Les portes sont fermées».",
+     "en": "The passive puts the focus on the thing that receives the action, like 'was built' or 'is closed' in English.\nPattern: être (in the right tense) + past participle, which agrees with the subject. The doer comes with par: Le voleur a été arrêté par la police.\nIf the doer is unknown you can leave par out: La porte est fermée.\nCommon mistake: not making the participle agree. 'Les portes sont fermé' is wrong, 'Les portes sont fermées' is right."
+    },
+    "examples": [
+     {
+      "text": "Ce pont a été construit en 1900.",
+      "native": {
+       "tr": "Bu köprü 1900'de inşa edildi.",
+       "en": "This bridge was built in 1900."
+      }
+     },
+     {
+      "text": "La réunion est annulée.",
+      "native": {
+       "tr": "Toplantı iptal edildi.",
+       "en": "The meeting is cancelled."
+      }
+     },
+     {
+      "text": "Les clés ont été trouvées par un enfant.",
+      "native": {
+       "tr": "Anahtarlar bir çocuk tarafından bulundu.",
+       "en": "The keys were found by a child."
+      }
+     },
+     {
+      "text": "Elle sera invitée à la fête.",
+      "native": {
+       "tr": "Partiye davet edilecek.",
+       "en": "She will be invited to the party."
+      }
+     }
+    ]
+   }
   },
   {
    "id": "discours-rapporte",
@@ -3700,7 +4384,43 @@
      ],
      "alt": []
     }
-   ]
+   ],
+   "learn": {
+    "explain": {
+     "tr": "Başkasının sözünü aktarırken il a dit que ... / elle a demandé si ... kalıplarını kullanırız.\nGeçmişte aktarırken zaman bir adım geriye kayar: présent → imparfait, futur → conditionnel, passé composé → plus-que-parfait. Evet/hayır sorusu si ile aktarılır.\nÖrnek: «Je viens demain» → Il a dit qu'il venait le lendemain.\nSık hata: zamanı kaydırmamak. «Il a dit qu'il vient» yerine «Il a dit qu'il venait».",
+     "en": "When we report what someone said, we use patterns like il a dit que ... / elle a demandé si ...\nWhen reporting in the past, tenses shift back one step: présent → imparfait, futur → conditionnel, passé composé → plus-que-parfait. Yes/no questions are reported with si.\nExample: 'Je viens demain' → Il a dit qu'il venait le lendemain.\nCommon mistake: not shifting the tense. Say 'Il a dit qu'il venait', not 'Il a dit qu'il vient'."
+    },
+    "examples": [
+     {
+      "text": "Elle a dit qu'elle était fatiguée.",
+      "native": {
+       "tr": "Yorgun olduğunu söyledi.",
+       "en": "She said she was tired."
+      }
+     },
+     {
+      "text": "Il a répondu qu'il viendrait demain.",
+      "native": {
+       "tr": "Yarın geleceğini söyledi.",
+       "en": "He answered that he would come tomorrow."
+      }
+     },
+     {
+      "text": "Je lui ai demandé s'il avait faim.",
+      "native": {
+       "tr": "Ona aç olup olmadığını sordum.",
+       "en": "I asked him whether he was hungry."
+      }
+     },
+     {
+      "text": "Ils ont dit qu'ils avaient déjà mangé.",
+      "native": {
+       "tr": "Çoktan yemek yediklerini söylediler.",
+       "en": "They said they had already eaten."
+      }
+     }
+    ]
+   }
   }
  ]
 }

@@ -182,7 +182,43 @@
      ],
      "answer": 3
     }
-   ]
+   ],
+   "learn": {
+    "explain": {
+     "tr": "ser, kim olduğunu veya ne olduğunu söylerken kullanılır: meslek, uyruk, kalıcı özellikler.\nKalıp: eu sou, você é, nós somos, eles são.\nÖrnek: Eu sou médico. (Ben doktorum.)\nSık hata: Geçici durumlar için ser kullanmak. 'Yorgunum' demek için 'Eu sou cansado' değil, 'Eu estou cansado' denir.",
+     "en": "ser tells who or what someone is: jobs, nationality, lasting traits.\nPattern: eu sou, você é, nós somos, eles são.\nExample: Eu sou médico. (I am a doctor.)\nCommon mistake: using ser for temporary states. To say 'I'm tired' use 'Eu estou cansado', not 'Eu sou cansado'."
+    },
+    "examples": [
+     {
+      "text": "Meu pai é engenheiro.",
+      "native": {
+       "tr": "Babam mühendis.",
+       "en": "My father is an engineer."
+      }
+     },
+     {
+      "text": "Nós somos amigos desde criança.",
+      "native": {
+       "tr": "Biz çocukluktan beri arkadaşız.",
+       "en": "We have been friends since childhood."
+      }
+     },
+     {
+      "text": "Eles são do Rio de Janeiro.",
+      "native": {
+       "tr": "Onlar Rio de Janeiro'lu.",
+       "en": "They are from Rio de Janeiro."
+      }
+     },
+     {
+      "text": "Você é muito simpático.",
+      "native": {
+       "tr": "Sen çok cana yakınsın.",
+       "en": "You are very friendly."
+      }
+     }
+    ]
+   }
   },
   {
    "id": "estar",
@@ -369,7 +405,43 @@
      ],
      "answer": 2
     }
-   ]
+   ],
+   "learn": {
+    "explain": {
+     "tr": "estar, bir yerde olmayı ve geçici durumları anlatır: nerede olduğun, nasıl hissettiğin.\nKalıp: eu estou, você está, nós estamos, eles estão.\nÖrnek: Eu estou no trabalho. (İş yerindeyim.)\nSık hata: ser ile karıştırmak. Yer için hep estar kullan: 'Eu sou em casa' yanlış, 'Eu estou em casa' doğru.",
+     "en": "estar describes where someone is and temporary states, like how you feel.\nPattern: eu estou, você está, nós estamos, eles estão.\nExample: Eu estou no trabalho. (I am at work.)\nCommon mistake: mixing it up with ser. For location always use estar: 'Eu sou em casa' is wrong, 'Eu estou em casa' is right."
+    },
+    "examples": [
+     {
+      "text": "Nós estamos felizes hoje.",
+      "native": {
+       "tr": "Bugün mutluyuz.",
+       "en": "We are happy today."
+      }
+     },
+     {
+      "text": "Onde você está agora?",
+      "native": {
+       "tr": "Şu an neredesin?",
+       "en": "Where are you now?"
+      }
+     },
+     {
+      "text": "Os meninos estão na escola.",
+      "native": {
+       "tr": "Çocuklar okulda.",
+       "en": "The boys are at school."
+      }
+     },
+     {
+      "text": "A sopa está quente.",
+      "native": {
+       "tr": "Çorba sıcak.",
+       "en": "The soup is hot."
+      }
+     }
+    ]
+   }
   },
   {
    "id": "articles",
@@ -552,7 +624,43 @@
      ],
      "answer": 0
     }
-   ]
+   ],
+   "learn": {
+    "explain": {
+     "tr": "Portekizcede her isim eril ya da dişildir ve artikeli de ona göre değişir.\nKalıp: o / um (eril), a / uma (dişil); çoğul: os / as / uns / umas.\nÖrnek: o livro, a casa, os livros, as casas.\nSık hata: Artikeli ismin cinsiyetine uydurmamak. 'A livro' yanlış, 'o livro' doğru. Cinsiyeti ismi öğrenirken artikeliyle birlikte ezberle.",
+     "en": "Every Portuguese noun is masculine or feminine, and its article changes to match.\nPattern: o / um (masculine), a / uma (feminine); plural: os / as / uns / umas.\nExample: o livro, a casa, os livros, as casas.\nCommon mistake: not matching the article to the noun's gender. 'A livro' is wrong, 'o livro' is right. Learn each noun together with its article."
+    },
+    "examples": [
+     {
+      "text": "O carro é novo.",
+      "native": {
+       "tr": "Araba yeni.",
+       "en": "The car is new."
+      }
+     },
+     {
+      "text": "Eu tenho uma irmã.",
+      "native": {
+       "tr": "Bir kız kardeşim var.",
+       "en": "I have a sister."
+      }
+     },
+     {
+      "text": "As crianças gostam do parque.",
+      "native": {
+       "tr": "Çocuklar parkı sever.",
+       "en": "The kids like the park."
+      }
+     },
+     {
+      "text": "Ele comprou um livro.",
+      "native": {
+       "tr": "O bir kitap aldı.",
+       "en": "He bought a book."
+      }
+     }
+    ]
+   }
   },
   {
    "id": "present-ar",
@@ -735,7 +843,43 @@
      ],
      "answer": 0
     }
-   ]
+   ],
+   "learn": {
+    "explain": {
+     "tr": "-ar ile biten fiiller (falar, cantar, trabalhar) şimdiki zamanda düzenli çekimlenir.\nKalıp: kökü al, sonu değiştir: eu -o, você -a, nós -amos, eles -am.\nÖrnek: trabalhar → eu trabalho, nós trabalhamos.\nSık hata: Fiili mastar halinde bırakmak. 'Eu falar' değil, 'Eu falo' denir.",
+     "en": "Verbs ending in -ar (falar, cantar, trabalhar) follow one regular pattern in the present.\nPattern: drop -ar and add: eu -o, você -a, nós -amos, eles -am.\nExample: trabalhar → eu trabalho, nós trabalhamos.\nCommon mistake: leaving the verb in the infinitive. Say 'Eu falo', not 'Eu falar'."
+    },
+    "examples": [
+     {
+      "text": "Eu trabalho em São Paulo.",
+      "native": {
+       "tr": "São Paulo'da çalışıyorum.",
+       "en": "I work in São Paulo."
+      }
+     },
+     {
+      "text": "Ela canta muito bem.",
+      "native": {
+       "tr": "O çok güzel şarkı söyler.",
+       "en": "She sings very well."
+      }
+     },
+     {
+      "text": "Nós estudamos à noite.",
+      "native": {
+       "tr": "Biz akşamları ders çalışırız.",
+       "en": "We study at night."
+      }
+     },
+     {
+      "text": "Eles moram perto da praia.",
+      "native": {
+       "tr": "Onlar plaja yakın oturuyor.",
+       "en": "They live near the beach."
+      }
+     }
+    ]
+   }
   },
   {
    "id": "present-er-ir",
@@ -918,7 +1062,43 @@
      ],
      "answer": 1
     }
-   ]
+   ],
+   "learn": {
+    "explain": {
+     "tr": "-er ve -ir ile biten fiiller şimdiki zamanda neredeyse aynı çekimlenir.\nKalıp: -er: eu -o, você -e, nós -emos, eles -em; -ir: eu -o, você -e, nós -imos, eles -em.\nÖrnek: beber → eu bebo, nós bebemos; partir → eu parto, nós partimos.\nSık hata: -er ve -ir sonlarını -ar gibi çekmek. 'Ela comá' değil, 'Ela come' denir.",
+     "en": "Verbs ending in -er and -ir are conjugated almost the same way in the present.\nPattern: -er: eu -o, você -e, nós -emos, eles -em; -ir: eu -o, você -e, nós -imos, eles -em.\nExample: beber → eu bebo, nós bebemos; partir → eu parto, nós partimos.\nCommon mistake: conjugating -er/-ir verbs like -ar verbs. Say 'Ela come', not 'Ela comá'."
+    },
+    "examples": [
+     {
+      "text": "Eu bebo água todo dia.",
+      "native": {
+       "tr": "Her gün su içerim.",
+       "en": "I drink water every day."
+      }
+     },
+     {
+      "text": "Ela escreve para a avó.",
+      "native": {
+       "tr": "O büyükannesine yazıyor.",
+       "en": "She writes to her grandmother."
+      }
+     },
+     {
+      "text": "Nós partimos às oito.",
+      "native": {
+       "tr": "Biz sekizde yola çıkıyoruz.",
+       "en": "We leave at eight."
+      }
+     },
+     {
+      "text": "Eles vendem frutas na feira.",
+      "native": {
+       "tr": "Onlar pazarda meyve satıyor.",
+       "en": "They sell fruit at the market."
+      }
+     }
+    ]
+   }
   },
   {
    "id": "ter-tem",
@@ -1101,7 +1281,43 @@
      ],
      "answer": 1
     }
-   ]
+   ],
+   "learn": {
+    "explain": {
+     "tr": "ter 'sahip olmak' demektir. Günlük konuşmada 'tem' ayrıca 'var' anlamına da gelir.\nKalıp: eu tenho, você tem, nós temos, eles têm (çoğulda şapkalı ê).\nÖrnek: Tem um banco aqui. (Burada bir banka var.)\nSık hata: Eşyalar için 'ser' veya 'estar' kullanmak. 'Eu sou fome' değil, 'Eu tenho fome' denir. Aç olmak, susamak gibi şeyler ter ile söylenir.",
+     "en": "ter means 'to have'. In everyday speech 'tem' also means 'there is / there are'.\nPattern: eu tenho, você tem, nós temos, eles têm (plural has the accent ê).\nExample: Tem um banco aqui. (There is a bank here.)\nCommon mistake: using ser or estar for things you have. Say 'Eu tenho fome', not 'Eu sou fome'. Hunger, thirst and age use ter."
+    },
+    "examples": [
+     {
+      "text": "Eu tenho sede.",
+      "native": {
+       "tr": "Susadım.",
+       "en": "I am thirsty."
+      }
+     },
+     {
+      "text": "Você tem tempo amanhã?",
+      "native": {
+       "tr": "Yarın vaktin var mı?",
+       "en": "Do you have time tomorrow?"
+      }
+     },
+     {
+      "text": "Eles têm um cachorro grande.",
+      "native": {
+       "tr": "Onların büyük bir köpeği var.",
+       "en": "They have a big dog."
+      }
+     },
+     {
+      "text": "Tem leite na geladeira.",
+      "native": {
+       "tr": "Buzdolabında süt var.",
+       "en": "There is milk in the fridge."
+      }
+     }
+    ]
+   }
   },
   {
    "id": "contractions",
@@ -1284,7 +1500,43 @@
      ],
      "answer": 1
     }
-   ]
+   ],
+   "learn": {
+    "explain": {
+     "tr": "Portekizcede 'em' ve 'de' edatları artikelle birleşir.\nKalıp: em + o = no, em + a = na, de + o = do, de + a = da (çoğulda nos, nas, dos, das).\nÖrnek: Moro no Brasil. Gosto da escola.\nSık hata: Birleştirmeden yazmak. 'Em o Brasil' ve 'de a casa' değil, 'no Brasil' ve 'da casa' denir.",
+     "en": "In Portuguese, the prepositions 'em' and 'de' merge with articles.\nPattern: em + o = no, em + a = na, de + o = do, de + a = da (plurals: nos, nas, dos, das).\nExample: Moro no Brasil. Gosto da escola.\nCommon mistake: writing them apart. Say 'no Brasil' and 'da casa', not 'em o Brasil' and 'de a casa'."
+    },
+    "examples": [
+     {
+      "text": "O livro está na mesa.",
+      "native": {
+       "tr": "Kitap masanın üstünde.",
+       "en": "The book is on the table."
+      }
+     },
+     {
+      "text": "Ela chegou do trabalho.",
+      "native": {
+       "tr": "O işten geldi.",
+       "en": "She came back from work."
+      }
+     },
+     {
+      "text": "Nós moramos no centro da cidade.",
+      "native": {
+       "tr": "Biz şehir merkezinde yaşıyoruz.",
+       "en": "We live downtown."
+      }
+     },
+     {
+      "text": "Eu gosto dos meus vizinhos.",
+      "native": {
+       "tr": "Komşularımı severim.",
+       "en": "I like my neighbors."
+      }
+     }
+    ]
+   }
   },
   {
    "id": "ir-infinitive",
@@ -1467,7 +1719,43 @@
      ],
      "answer": 0
     }
-   ]
+   ],
+   "learn": {
+    "explain": {
+     "tr": "Yakın gelecek, 'ir' fiili artı mastar ile kurulur. Yakında olacak planları anlatır.\nKalıp: eu vou, você vai, nós vamos, eles vão + mastar.\nÖrnek: Eu vou comer agora. (Şimdi yemek yiyeceğim.)\nSık hata: İkinci fiili çekimlemek. 'Eu vou como' değil, 'Eu vou comer' denir. Çekimlenen sadece ir'dir.",
+     "en": "The near future is made with the verb 'ir' plus an infinitive. It talks about plans that will happen soon.\nPattern: eu vou, você vai, nós vamos, eles vão + infinitive.\nExample: Eu vou comer agora. (I am going to eat now.)\nCommon mistake: conjugating the second verb. Say 'Eu vou comer', not 'Eu vou como'. Only ir changes."
+    },
+    "examples": [
+     {
+      "text": "Nós vamos ao cinema hoje à noite.",
+      "native": {
+       "tr": "Bu akşam sinemaya gideceğiz.",
+       "en": "We are going to the movies tonight."
+      }
+     },
+     {
+      "text": "Ela vai estudar português.",
+      "native": {
+       "tr": "O Portekizce çalışacak.",
+       "en": "She is going to study Portuguese."
+      }
+     },
+     {
+      "text": "Eles vão chegar tarde.",
+      "native": {
+       "tr": "Onlar geç gelecek.",
+       "en": "They are going to arrive late."
+      }
+     },
+     {
+      "text": "Você vai ligar para ele?",
+      "native": {
+       "tr": "Onu arayacak mısın?",
+       "en": "Are you going to call him?"
+      }
+     }
+    ]
+   }
   },
   {
    "id": "estar-gerundio",
@@ -1652,7 +1940,43 @@
      ],
      "answer": 1
     }
-   ]
+   ],
+   "learn": {
+    "explain": {
+     "tr": "Şu anda olan bir eylemi anlatmak için estar + gerúndio kullanılır.\nKalıp: estar çekimlenir + fiil kökü + -ndo (-ando, -endo, -indo).\nÖrnek: Ela está cantando. Eles estão comendo.\nSık hata: Gerúndio'yu mastar ile karıştırmak. 'Estou comer' değil, 'Estou comendo' denir. Ayrıca estar yerine ser kullanmayın.",
+     "en": "Use estar + gerund to describe an action happening right now.\nPattern: conjugated estar + verb stem + -ndo (-ando, -endo, -indo).\nExample: Ela está cantando. Eles estão comendo.\nCommon mistake: using the infinitive instead of the gerund. Say 'Estou comendo', not 'Estou comer'. Do not swap estar for ser either."
+    },
+    "examples": [
+     {
+      "text": "Eu estou estudando agora.",
+      "native": {
+       "tr": "Şu an ders çalışıyorum.",
+       "en": "I am studying now."
+      }
+     },
+     {
+      "text": "Ela está falando ao telefone.",
+      "native": {
+       "tr": "O telefonda konuşuyor.",
+       "en": "She is talking on the phone."
+      }
+     },
+     {
+      "text": "Nós estamos esperando o ônibus.",
+      "native": {
+       "tr": "Otobüsü bekliyoruz.",
+       "en": "We are waiting for the bus."
+      }
+     },
+     {
+      "text": "Eles estão dormindo.",
+      "native": {
+       "tr": "Onlar uyuyor.",
+       "en": "They are sleeping."
+      }
+     }
+    ]
+   }
   },
   {
    "id": "preterito",
@@ -1835,7 +2159,43 @@
      ],
      "answer": 1
     }
-   ]
+   ],
+   "learn": {
+    "explain": {
+     "tr": "Pretérito perfeito, bitmiş geçmiş eylemler için kullanılır: dün yaptığın bir şey gibi.\nKalıp: -ar: -ei, -ou, -amos, -aram; -er: -i, -eu, -emos, -eram; -ir: -i, -iu, -imos, -iram.\nÖrnek: Eu falei, ela comeu, eles partiram.\nSık hata: Şimdiki zaman ile karıştırmak. 'Nós falamos' hem 'konuşuruz' hem 'konuştuk' olabilir. Bağlam ve 'ontem' gibi kelimeler yardım eder.",
+     "en": "The pretérito perfeito is for finished actions in the past, like something you did yesterday.\nPattern: -ar: -ei, -ou, -amos, -aram; -er: -i, -eu, -emos, -eram; -ir: -i, -iu, -imos, -iram.\nExample: Eu falei, ela comeu, eles partiram.\nCommon mistake: confusing it with the present. 'Nós falamos' can mean 'we speak' or 'we spoke'. Context and words like 'ontem' help."
+    },
+    "examples": [
+     {
+      "text": "Ontem eu trabalhei até tarde.",
+      "native": {
+       "tr": "Dün geç saate kadar çalıştım.",
+       "en": "Yesterday I worked until late."
+      }
+     },
+     {
+      "text": "Ela bebeu um suco de laranja.",
+      "native": {
+       "tr": "O bir portakal suyu içti.",
+       "en": "She drank an orange juice."
+      }
+     },
+     {
+      "text": "Nós chegamos cedo.",
+      "native": {
+       "tr": "Biz erken geldik.",
+       "en": "We arrived early."
+      }
+     },
+     {
+      "text": "Eles abriram a loja às nove.",
+      "native": {
+       "tr": "Mağazayı dokuzda açtılar.",
+       "en": "They opened the store at nine."
+      }
+     }
+    ]
+   }
   },
   {
    "id": "imperfeito",
@@ -2019,7 +2379,43 @@
      ],
      "answer": 0
     }
-   ]
+   ],
+   "learn": {
+    "explain": {
+     "tr": "Pretérito imperfeito, geçmişteki alışkanlıkları, süren durumları ve betimlemeleri anlatır: 'eskiden ...'.\nKalıp: -ar: -ava, -avam; -er/-ir: -ia, -iam (eu ve você aynı: eu falava, ela falava).\nÖrnek: Eu morava no interior. (Kırsalda yaşardım.)\nSık hata: Bitmiş tek bir olay için kullanmak. Alışkanlık için imperfeito, bir kerelik olay için perfeito kullanılır.",
+     "en": "The pretérito imperfeito describes past habits, ongoing states and descriptions: 'used to ...'.\nPattern: -ar: -ava, -avam; -er/-ir: -ia, -iam (eu and você share a form: eu falava, ela falava).\nExample: Eu morava no interior. (I used to live in the countryside.)\nCommon mistake: using it for a single finished event. Habits take imperfeito, one-time events take perfeito."
+    },
+    "examples": [
+     {
+      "text": "Quando eu era pequeno, brincava na rua.",
+      "native": {
+       "tr": "Küçükken sokakta oynardım.",
+       "en": "When I was little, I used to play in the street."
+      }
+     },
+     {
+      "text": "Minha avó fazia bolo todo domingo.",
+      "native": {
+       "tr": "Büyükannem her pazar kek yapardı.",
+       "en": "My grandmother used to make cake every Sunday."
+      }
+     },
+     {
+      "text": "Nós íamos à praia no verão.",
+      "native": {
+       "tr": "Yazın plaja giderdik.",
+       "en": "We used to go to the beach in the summer."
+      }
+     },
+     {
+      "text": "Fazia muito frio naquela noite.",
+      "native": {
+       "tr": "O gece hava çok soğuktu.",
+       "en": "It was very cold that night."
+      }
+     }
+    ]
+   }
   },
   {
    "id": "perfeito-imperfeito",
@@ -2201,7 +2597,43 @@
      ],
      "answer": 2
     }
-   ]
+   ],
+   "learn": {
+    "explain": {
+     "tr": "İki geçmiş zaman birlikte kullanılır: imperfeito arka planı, perfeito ise o sırada olan olayı anlatır.\nKalıp: imperfeito (süren durum) + quando + perfeito (olay).\nÖrnek: Eu dormia quando o telefone tocou. (Uyuyordum, telefon çaldı.)\nSık hata: İkisini karıştırmak. 'Eu dormi quando ele chegou' garip kalır. Süren eylem imperfeito, kesen olay perfeito olur.",
+     "en": "Two past tenses work together: the imperfeito sets the background, the perfeito gives the event that happened.\nPattern: imperfeito (ongoing situation) + quando + perfeito (event).\nExample: Eu dormia quando o telefone tocou. (I was sleeping when the phone rang.)\nCommon mistake: mixing them up. 'Eu dormi quando ele chegou' sounds odd. The ongoing action is imperfeito, the interrupting event is perfeito."
+    },
+    "examples": [
+     {
+      "text": "Eu cozinhava quando a luz acabou.",
+      "native": {
+       "tr": "Yemek yaparken elektrikler kesildi.",
+       "en": "I was cooking when the power went out."
+      }
+     },
+     {
+      "text": "Ela estudava quando o irmão entrou.",
+      "native": {
+       "tr": "O ders çalışırken erkek kardeşi içeri girdi.",
+       "en": "She was studying when her brother came in."
+      }
+     },
+     {
+      "text": "Chovia muito quando nós saímos.",
+      "native": {
+       "tr": "Çıktığımızda çok yağmur yağıyordu.",
+       "en": "It was raining a lot when we left."
+      }
+     },
+     {
+      "text": "Eles conversavam quando o professor chegou.",
+      "native": {
+       "tr": "Öğretmen geldiğinde onlar sohbet ediyordu.",
+       "en": "They were chatting when the teacher arrived."
+      }
+     }
+    ]
+   }
   },
   {
    "id": "futuro",
@@ -2387,7 +2819,43 @@
      ],
      "answer": 2
     }
-   ]
+   ],
+   "learn": {
+    "explain": {
+     "tr": "Basit gelecek zaman (futuro do presente), planları ve tahminleri biraz resmî bir dille anlatır. Konuşmada çoğu zaman 'vou + mastar' tercih edilir.\nKalıp: mastar + -ei, -á, -emos, -ão.\nÖrnek: Amanhã falarei com ele. (Yarın onunla konuşacağım.)\nSık hata: Kökü değiştirmek. 'Eu falorei' değil, 'Eu falarei' denir. Mastar olduğu gibi kalır, sonuna ek gelir.",
+     "en": "The simple future states plans and predictions in a slightly formal way. In speech people often prefer 'vou + infinitive'.\nPattern: infinitive + -ei, -á, -emos, -ão.\nExample: Amanhã falarei com ele. (Tomorrow I will talk to him.)\nCommon mistake: changing the stem. Say 'Eu falarei', not 'Eu falorei'. The infinitive stays whole and the ending is added."
+    },
+    "examples": [
+     {
+      "text": "No ano que vem, viajarei para Portugal.",
+      "native": {
+       "tr": "Seneye Portekiz'e seyahat edeceğim.",
+       "en": "Next year I will travel to Portugal."
+      }
+     },
+     {
+      "text": "Ela chegará às seis.",
+      "native": {
+       "tr": "O altıda gelecek.",
+       "en": "She will arrive at six."
+      }
+     },
+     {
+      "text": "Nós comeremos juntos amanhã.",
+      "native": {
+       "tr": "Yarın birlikte yemek yiyeceğiz.",
+       "en": "We will eat together tomorrow."
+      }
+     },
+     {
+      "text": "Eles aprenderão rápido.",
+      "native": {
+       "tr": "Onlar hızlı öğrenecekler.",
+       "en": "They will learn quickly."
+      }
+     }
+    ]
+   }
   },
   {
    "id": "condicional",
@@ -2572,7 +3040,43 @@
      ],
      "answer": 1
     }
-   ]
+   ],
+   "learn": {
+    "explain": {
+     "tr": "Condicional, kibar rica ve varsayımlar için kullanılır: 'yapardım, olurdu'.\nKalıp: mastar + -ia, -ia, -iamos, -iam.\nÖrnek: Eu gostaria de um café. (Bir kahve rica ederim.)\nSık hata: Kibar istekte şimdiki zaman kullanmak. 'Eu quero um café' sert kalabilir, 'Eu queria / gostaria' daha nazik olur.",
+     "en": "The conditional is used for polite requests and hypotheses: 'would ...'.\nPattern: infinitive + -ia, -ia, -iamos, -iam.\nExample: Eu gostaria de um café. (I would like a coffee.)\nCommon mistake: using the present for polite requests. 'Eu quero um café' can sound blunt, while 'Eu queria / gostaria' is gentler."
+    },
+    "examples": [
+     {
+      "text": "Você poderia me ajudar, por favor?",
+      "native": {
+       "tr": "Bana yardım edebilir misiniz lütfen?",
+       "en": "Could you help me, please?"
+      }
+     },
+     {
+      "text": "Eu viajaria mais se tivesse dinheiro.",
+      "native": {
+       "tr": "Param olsa daha çok seyahat ederdim.",
+       "en": "I would travel more if I had money."
+      }
+     },
+     {
+      "text": "Nós moraríamos perto do mar.",
+      "native": {
+       "tr": "Biz denize yakın yaşardık.",
+       "en": "We would live near the sea."
+      }
+     },
+     {
+      "text": "Ela disse que chegaria cedo.",
+      "native": {
+       "tr": "O erken geleceğini söyledi.",
+       "en": "She said she would arrive early."
+      }
+     }
+    ]
+   }
   },
   {
    "id": "pronomes-obj",
@@ -2757,7 +3261,43 @@
      ],
      "answer": 2
     }
-   ]
+   ],
+   "learn": {
+    "explain": {
+     "tr": "Nesne zamirleri, fiilin nesnesini tekrar etmeden gösterir: onu, ona, bana.\nKalıp: me (beni/bana), te (seni/sana), o/a (onu), lhe (ona), nos (bizi/bize). Günlük konuşmada çoğu zaman fiilden önce gelir.\nÖrnek: Ela me deu um livro. Eu a vi ontem.\nSık hata: Yanlış zamir seçmek. Doğrudan nesne için o/a, 'ona (vermek)' için lhe kullanılır. Mastarla: comprá-lo.",
+     "en": "Object pronouns stand in for the object of a verb so you do not repeat it: him, her, me.\nPattern: me (me), te (you), o/a (him/her/it), lhe (to him/her), nos (us). In speech they usually come before the verb.\nExample: Ela me deu um livro. Eu a vi ontem.\nCommon mistake: picking the wrong pronoun. Use o/a for the direct object and lhe for 'to him/her'. With infinitives: comprá-lo."
+    },
+    "examples": [
+     {
+      "text": "Ela me ligou ontem.",
+      "native": {
+       "tr": "Dün beni aradı.",
+       "en": "She called me yesterday."
+      }
+     },
+     {
+      "text": "Eu te amo muito.",
+      "native": {
+       "tr": "Seni çok seviyorum.",
+       "en": "I love you very much."
+      }
+     },
+     {
+      "text": "Nós os encontramos no mercado.",
+      "native": {
+       "tr": "Onları markette bulduk.",
+       "en": "We met them at the market."
+      }
+     },
+     {
+      "text": "Ele lhe deu um presente.",
+      "native": {
+       "tr": "Ona bir hediye verdi.",
+       "en": "He gave him a gift."
+      }
+     }
+    ]
+   }
   },
   {
    "id": "imperativo",
@@ -2940,7 +3480,43 @@
      ],
      "answer": 0
     }
-   ]
+   ],
+   "learn": {
+    "explain": {
+     "tr": "Emir kipi, rica, tavsiye ve talimat vermek için kullanılır.\nKalıp: você için şimdiki zaman subjuntivo biçimi: falar → fale, abrir → abra, vir → venha. Olumsuz için başa não gelir.\nÖrnek: Fale mais devagar. Não fume aqui.\nSık hata: Mastarı emir olarak kullanmak ('Falar!'). Doğrusu 'Fale!'. Nazik olmak için 'por favor' ekleyin.",
+     "en": "The imperative is for requests, advice and instructions.\nPattern: for você use the present subjunctive form: falar → fale, abrir → abra, vir → venha. For negatives, put não first.\nExample: Fale mais devagar. Não fume aqui.\nCommon mistake: using the infinitive as a command ('Falar!'). The right form is 'Fale!'. Add 'por favor' to stay polite."
+    },
+    "examples": [
+     {
+      "text": "Abra a janela, por favor.",
+      "native": {
+       "tr": "Lütfen pencereyi aç.",
+       "en": "Open the window, please."
+      }
+     },
+     {
+      "text": "Venha cedo amanhã.",
+      "native": {
+       "tr": "Yarın erken gel.",
+       "en": "Come early tomorrow."
+      }
+     },
+     {
+      "text": "Não esqueça as chaves.",
+      "native": {
+       "tr": "Anahtarları unutma.",
+       "en": "Do not forget the keys."
+      }
+     },
+     {
+      "text": "Coma mais um pouco.",
+      "native": {
+       "tr": "Biraz daha ye.",
+       "en": "Eat a little more."
+      }
+     }
+    ]
+   }
   },
   {
    "id": "subj-presente",
@@ -3123,7 +3699,43 @@
      ],
      "answer": 1
     }
-   ]
+   ],
+   "learn": {
+    "explain": {
+     "tr": "Presente do subjuntivo, istek, şüphe, duygu ve gereklilikten sonra kullanılır: 'espero que', 'quero que', 'é importante que'.\nKalıp: eu formundan -o at, ters ünlüyü ekle: -ar → -e, -er/-ir → -a. Falar → fale, comer → coma.\nÖrnek: Espero que você chegue bem.\nSık hata: 'que'den sonra şimdiki zaman kullanmak. 'Quero que você vem' değil, 'Quero que você venha' denir.",
+     "en": "The present subjunctive follows wishes, doubt, feelings and necessity: 'espero que', 'quero que', 'é importante que'.\nPattern: take the eu form, drop -o, add the opposite vowel: -ar → -e, -er/-ir → -a. Falar → fale, comer → coma.\nExample: Espero que você chegue bem.\nCommon mistake: using the plain present after 'que'. Say 'Quero que você venha', not 'Quero que você vem'."
+    },
+    "examples": [
+     {
+      "text": "Quero que você fale com ela.",
+      "native": {
+       "tr": "Onunla konuşmanı istiyorum.",
+       "en": "I want you to talk to her."
+      }
+     },
+     {
+      "text": "É importante que eles estudem.",
+      "native": {
+       "tr": "Onların ders çalışması önemli.",
+       "en": "It is important that they study."
+      }
+     },
+     {
+      "text": "Espero que ela coma bem.",
+      "native": {
+       "tr": "Umarım iyi yer.",
+       "en": "I hope she eats well."
+      }
+     },
+     {
+      "text": "Duvido que ele venha hoje.",
+      "native": {
+       "tr": "Bugün geleceğinden şüpheliyim.",
+       "en": "I doubt he will come today."
+      }
+     }
+    ]
+   }
   },
   {
    "id": "subj-imperfeito",
@@ -3316,7 +3928,43 @@
      ],
      "answer": 1
     }
-   ]
+   ],
+   "learn": {
+    "explain": {
+     "tr": "Gerçek olmayan ya da pek olası olmayan durumlar için 'se + imperfeito do subjuntivo' kullanılır; sonuç cümlesi condicional olur.\nKalıp: eles formundan -ram at, -sse ekle: falaram → falasse, tivessem → tivesse.\nÖrnek: Se eu tivesse tempo, viajaria.\nSık hata: İki yerde de condicional kullanmak. 'Se eu teria tempo' yanlış, 'Se eu tivesse tempo' doğru.",
+     "en": "For unreal or unlikely situations use 'se + imperfect subjunctive'; the result clause takes the conditional.\nPattern: take the eles past form, drop -ram, add -sse: falaram → falasse, tiveram → tivesse.\nExample: Se eu tivesse tempo, viajaria.\nCommon mistake: using the conditional in both clauses. 'Se eu teria tempo' is wrong, 'Se eu tivesse tempo' is right."
+    },
+    "examples": [
+     {
+      "text": "Se eu fosse rico, compraria um barco.",
+      "native": {
+       "tr": "Zengin olsam bir tekne alırdım.",
+       "en": "If I were rich, I would buy a boat."
+      }
+     },
+     {
+      "text": "Se ela falasse inglês, trabalharia lá.",
+      "native": {
+       "tr": "İngilizce konuşsa orada çalışırdı.",
+       "en": "If she spoke English, she would work there."
+      }
+     },
+     {
+      "text": "Se nós morássemos aqui, seríamos felizes.",
+      "native": {
+       "tr": "Burada yaşasak mutlu olurduk.",
+       "en": "If we lived here, we would be happy."
+      }
+     },
+     {
+      "text": "Se chovesse, ficaríamos em casa.",
+      "native": {
+       "tr": "Yağmur yağsa evde kalırdık.",
+       "en": "If it rained, we would stay home."
+      }
+     }
+    ]
+   }
   },
   {
    "id": "subj-futuro",
@@ -3511,7 +4159,43 @@
      ],
      "answer": 2
     }
-   ]
+   ],
+   "learn": {
+    "explain": {
+     "tr": "Futuro do subjuntivo, gelecekte olabilecek bir şeyi anlatan 'quando, se, assim que, quem' cümlelerinde kullanılır.\nKalıp: eles geçmiş formundan -ram at, -r ekle: falaram → falar, fizeram → fizer, vieram → vier.\nÖrnek: Quando você chegar, me ligue.\nSık hata: Gelecek için quando'dan sonra şimdiki zaman kullanmak. 'Quando você chega' değil, 'Quando você chegar' denir.",
+     "en": "The future subjunctive appears after 'quando, se, assim que, quem' when talking about something that may happen later.\nPattern: take the eles past form, drop -ram, add -r: falaram → falar, fizeram → fizer, vieram → vier.\nExample: Quando você chegar, me ligue.\nCommon mistake: using the present after quando for the future. Say 'Quando você chegar', not 'Quando você chega'."
+    },
+    "examples": [
+     {
+      "text": "Se você quiser, eu ajudo.",
+      "native": {
+       "tr": "İstersen yardım ederim.",
+       "en": "If you want, I will help."
+      }
+     },
+     {
+      "text": "Assim que ela sair, eu te aviso.",
+      "native": {
+       "tr": "O çıkar çıkmaz sana haber veririm.",
+       "en": "As soon as she leaves, I will let you know."
+      }
+     },
+     {
+      "text": "Quando nós formos ao Brasil, vamos visitar Salvador.",
+      "native": {
+       "tr": "Brezilya'ya gittiğimizde Salvador'u gezeceğiz.",
+       "en": "When we go to Brazil, we will visit Salvador."
+      }
+     },
+     {
+      "text": "Quem chegar primeiro pega o melhor lugar.",
+      "native": {
+       "tr": "İlk gelen en iyi yeri alır.",
+       "en": "Whoever arrives first gets the best seat."
+      }
+     }
+    ]
+   }
   },
   {
    "id": "passiva",
@@ -3694,7 +4378,43 @@
      ],
      "answer": 2
     }
-   ]
+   ],
+   "learn": {
+    "explain": {
+     "tr": "Passiva, eylemi yapandan çok olanı ön plana çıkarır: 'yapıldı, yazıldı'.\nKalıp: ser + particípio, özneyle cinsiyet ve sayıda uyumlu; yapan kişi 'por' ile gelir. Ayrıca 'Aqui se vendem frutas' biçimi de yaygındır.\nÖrnek: A casa foi construída por eles.\nSık hata: Particípio'yu uydurmamak. 'As casas foi construído' değil, 'As casas foram construídas' denir.",
+     "en": "The passive puts the focus on what happened rather than who did it: 'was made, was written'.\nPattern: ser + past participle, agreeing in gender and number with the subject; the doer comes with 'por'. 'Aqui se vendem frutas' is also common.\nExample: A casa foi construída por eles.\nCommon mistake: forgetting agreement. Say 'As casas foram construídas', not 'As casas foi construído'."
+    },
+    "examples": [
+     {
+      "text": "O bolo foi feito pela minha mãe.",
+      "native": {
+       "tr": "Kek annem tarafından yapıldı.",
+       "en": "The cake was made by my mother."
+      }
+     },
+     {
+      "text": "As janelas foram abertas ontem.",
+      "native": {
+       "tr": "Pencereler dün açıldı.",
+       "en": "The windows were opened yesterday."
+      }
+     },
+     {
+      "text": "Esta música é cantada em todo o Brasil.",
+      "native": {
+       "tr": "Bu şarkı tüm Brezilya'da söylenir.",
+       "en": "This song is sung all over Brazil."
+      }
+     },
+     {
+      "text": "Aqui se fala português.",
+      "native": {
+       "tr": "Burada Portekizce konuşulur.",
+       "en": "Portuguese is spoken here."
+      }
+     }
+    ]
+   }
   }
  ]
 }

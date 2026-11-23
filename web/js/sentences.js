@@ -1,4 +1,5 @@
-// Sentences: practice that starts right away, like the word cards. Exercises come one after another
+// Sentences: practice that starts right away, like the word cards. The first time a topic comes up, a
+// short lesson on it (an explanation and spoken examples) comes first. Exercises come one after another
 // from the grammar units in the chosen levels (or from one topic, picked in the Topics tab), the ones
 // not mastered yet first. "build" gives a sentence in your language and shuffled word tiles to put in
 // order; "choice" gives a sentence with a gap and a few words for it. A wrong answer comes back a few
@@ -22,6 +23,8 @@ const tiles = (sentence) => sentence.replace(/[.?!,;:¿¡«»]/g, " ").split(/\s
 const same = (a, b) => tiles(a).join(" ").toLowerCase() === tiles(b).join(" ").toLowerCase();
 const native = (item) => pick(item.native, state.native);
 const mastered = () => progress().lessons;
+// Topics whose lesson has been seen, so practice doesn't show it again.
+const learned = () => (progress().learned ??= []);
 
 // German nouns keep their capital letter: taken from the deck, where nouns are shown as "das Haus".
 let nouns = new Set();
@@ -89,23 +92,82 @@ function showTopics(body) {
   grid.append(
     ...shown.map((unit) => {
       const done = (mastered()[unit.id] || []).length;
-      const card = button("unit", null, () => {
-        focus = unit;
-        tab = "practice";
-        render();
-      });
+      const card = button("unit", null, () => (unit.learn ? showLesson(body, unit) : practise(unit)));
       const top = el("div", "unit-top");
       top.append(badge(unit.level), el("span", "unit-count", `${done}/${unit.items.length}`));
       const bar = el("div", "bar");
       const fill = el("span");
       fill.style.width = `${(done / unit.items.length) * 100}%`;
       bar.append(fill);
+      if (unit.basics) top.firstChild.after(el("span", "tag-basics", t("basics")));
       card.append(top, el("span", "unit-title", pick(unit.title, state.native)), el("span", "unit-tip", pick(unit.tip, state.native)), bar);
       if (done === unit.items.length) card.classList.add("complete");
       return card;
     })
   );
   body.replaceChildren(grid);
+}
+
+// Practise one topic on its own.
+function practise(unit) {
+  focus = unit;
+  tab = "practice";
+  render();
+}
+
+// A topic's lesson: the explanation line by line, and examples to read and hear.
+function lessonView(unit) {
+  const box = el("div", "lesson-card");
+  const head = el("div", "lesson-head");
+  head.append(badge(unit.level), el("span", "lesson-kicker", t("newTopic")));
+  box.append(head, el("h2", "lesson-title", pick(unit.title, state.native)));
+  const explain = el("div", "lesson-text");
+  explain.lang = state.native;
+  for (const line of pick(unit.learn.explain, state.native).split("\n").filter(Boolean)) explain.append(el("p", null, line));
+  box.append(explain, el("h3", "lesson-sub", t("examples")));
+  const list = el("ul", "examples");
+  for (const ex of unit.learn.examples) {
+    const li = el("li");
+    const text = el("div", "ex-text");
+    const said = el("span", "ex-said", ex.text);
+    said.lang = state.target;
+    const meaning = el("span", "ex-meaning", native(ex));
+    meaning.lang = state.native;
+    text.append(said, meaning);
+    const listen = button("round-btn", null, () => speak(ex.text));
+    listen.append(icon("speaker"));
+    listen.ariaLabel = listen.title = t("listen");
+    li.append(text, listen);
+    list.append(li);
+  }
+  box.append(list);
+  return box;
+}
+
+const markLearned = (unit) => {
+  if (!learned().includes(unit.id)) learned().push(unit.id);
+  save();
+};
+
+// From the Topics tab: the lesson, then practice on that topic.
+function showLesson(body, unit) {
+  const panel = el("section", "practice");
+  const back = button("chip-btn", t("allTopics"), () => render());
+  back.prepend(icon("back"));
+  const top = el("div", "practice-top");
+  top.append(back);
+  const content = el("div", "exercise enter");
+  content.append(lessonView(unit));
+  const sheet = el("div", "sheet");
+  const inner = el("div", "sheet-inner");
+  inner.append(el("div", "verdict"), button("btn primary big", t("practiseTopic"), () => {
+    markLearned(unit);
+    practise(unit);
+  }));
+  sheet.append(inner);
+  panel.append(top, content, sheet);
+  body.replaceChildren(panel);
+  scrollTo({ top: 0 });
 }
 
 // ---- practice ----
@@ -134,7 +196,7 @@ function startPractice(body) {
   const exercise = el("div", "exercise");
   const verdict = el("div", "verdict");
   verdict.ariaLive = "polite";
-  const check = button("btn primary big", t("check"), () => (s.checked ? next() : grade()));
+  const check = button("btn primary big", t("check"), () => (s.lesson ? startUnit() : s.checked ? next() : grade()));
   const sheet = el("div", "sheet");
   const inner = el("div", "sheet-inner");
   inner.append(verdict, check);
@@ -171,6 +233,9 @@ function next() {
   if (!s.queue.length) s.queue = buildQueue();
   const { unit, i } = s.queue[0];
   const item = unit.items[i];
+  // A topic met for the first time: its lesson first.
+  if (unit.learn && !learned().includes(unit.id)) return showUnitLesson(unit);
+  s.lesson = null;
   s.checked = false;
   s.takeBack = null;
   const { exercise, verdict, check, sheet } = s.els;
@@ -183,6 +248,26 @@ function next() {
   exercise.classList.remove("enter");
   void exercise.offsetWidth; // restart the entrance animation
   exercise.classList.add("enter");
+}
+
+function showUnitLesson(unit) {
+  s.lesson = unit;
+  s.checked = false;
+  const { exercise, verdict, check, sheet } = s.els;
+  paintTop(unit);
+  sheet.className = "sheet";
+  verdict.replaceChildren();
+  check.textContent = t("start");
+  check.disabled = false;
+  exercise.replaceChildren(lessonView(unit));
+  exercise.classList.remove("enter");
+  void exercise.offsetWidth;
+  exercise.classList.add("enter");
+}
+
+function startUnit() {
+  markLearned(s.lesson);
+  next();
 }
 
 // Tiles move from the bank to the answer line and back; a used tile leaves its place in the bank.
@@ -306,7 +391,7 @@ export function sentenceKey(e) {
     if (!s.els.check.disabled) s.els.check.click();
     return true;
   }
-  if (s.checked) return false;
+  if (s.checked || s.lesson) return false;
   if (/^[1-9]$/.test(e.key)) {
     s.els.exercise.querySelectorAll(".option")[Number(e.key) - 1]?.click();
     return true;

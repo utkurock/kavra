@@ -182,7 +182,43 @@
      ],
      "answer": 1
     }
-   ]
+   ],
+   "learn": {
+    "explain": {
+     "tr": "Ispanyolcada her isim eril ya da dişildir ve önünde bir artikel durur.\nBelirli: el (eril), la (dişil); çoğulda los, las. Belirsiz: un, una; çoğulda unos, unas.\nÖrnek kalıp: artikel + isim (el chico, una amiga).\nSık hata: -a ile biten her kelimenin dişil olduğunu sanmak. El día ve el mapa erildir; la mano ise dişildir.",
+     "en": "Every Spanish noun is masculine or feminine and usually comes with an article.\nDefinite: el (masc.), la (fem.); plural los, las. Indefinite: un, una; plural unos, unas.\nPattern: article + noun (el chico, una amiga).\nCommon mistake: thinking every word ending in -a is feminine. El día and el mapa are masculine; la mano is feminine."
+    },
+    "examples": [
+     {
+      "text": "El perro duerme en la cocina.",
+      "native": {
+       "tr": "Köpek mutfakta uyuyor.",
+       "en": "The dog sleeps in the kitchen."
+      }
+     },
+     {
+      "text": "Tengo una hermana y un hermano.",
+      "native": {
+       "tr": "Bir kız kardeşim ve bir erkek kardeşim var.",
+       "en": "I have a sister and a brother."
+      }
+     },
+     {
+      "text": "Las llaves están en la mesa.",
+      "native": {
+       "tr": "Anahtarlar masanın üstünde.",
+       "en": "The keys are on the table."
+      }
+     },
+     {
+      "text": "Necesito unos zapatos nuevos.",
+      "native": {
+       "tr": "Yeni bir ayakkabıya ihtiyacım var.",
+       "en": "I need some new shoes."
+      }
+     }
+    ]
+   }
   },
   {
    "id": "ser-estar",
@@ -365,7 +401,43 @@
      ],
      "answer": 0
     }
-   ]
+   ],
+   "learn": {
+    "explain": {
+     "tr": "İspanyolcada 'olmak' için iki fiil var: ser ve estar.\nSer: kimlik, meslek, köken, özellik (Soy profesor. Es alta). Estar: yer ve geçici durum (Estoy en casa. Está triste).\nKalıp: ser/estar + isim ya da sıfat.\nSık hata: yer söylerken ser kullanmak. 'Madrid'deyim' Estoy en Madrid olur, Soy en Madrid değil.",
+     "en": "Spanish has two verbs for 'to be': ser and estar.\nSer: identity, job, origin, traits (Soy profesor. Es alta). Estar: place and temporary states (Estoy en casa. Está triste).\nPattern: ser/estar + noun or adjective.\nCommon mistake: using ser for location. 'I'm in Madrid' is Estoy en Madrid, not Soy en Madrid."
+    },
+    "examples": [
+     {
+      "text": "Mi madre es médica.",
+      "native": {
+       "tr": "Annem doktor.",
+       "en": "My mother is a doctor."
+      }
+     },
+     {
+      "text": "Hoy estoy muy ocupado.",
+      "native": {
+       "tr": "Bugün çok meşgulum.",
+       "en": "Today I am very busy."
+      }
+     },
+     {
+      "text": "La sopa está fría.",
+      "native": {
+       "tr": "Çorba soğumuş.",
+       "en": "The soup is cold."
+      }
+     },
+     {
+      "text": "Somos de Estambul, pero estamos en Madrid.",
+      "native": {
+       "tr": "İstanbulluyuz ama şu an Madrid'deyiz.",
+       "en": "We are from Istanbul, but we are in Madrid right now."
+      }
+     }
+    ]
+   }
   },
   {
    "id": "present-regular",
@@ -550,7 +622,43 @@
      ],
      "answer": 1
     }
-   ]
+   ],
+   "learn": {
+    "explain": {
+     "tr": "Şimdiki zaman, alışkanlıkları ve şu anki olayları anlatır.\nFiilin sonu (-ar, -er, -ir) atılır, kişiye göre ek gelir: hablar > hablo, hablas, habla, hablamos, habláis, hablan. -er: como, comes; -ir: vivo, vives.\nİspanyolcada özne zamiri (yo, tú) genelde söylenmez, ek kişiyi belli eder.\nSık hata: mastarı olduğu gibi kullanmak (Yo hablar yerine Yo hablo).",
+     "en": "The present tense describes habits and what is happening now.\nDrop -ar, -er or -ir and add the person ending: hablar > hablo, hablas, habla, hablamos, habláis, hablan. -er: como, comes; -ir: vivo, vives.\nSubject pronouns (yo, tú) are usually dropped because the ending shows the person.\nCommon mistake: using the infinitive as is (Yo hablar instead of Yo hablo)."
+    },
+    "examples": [
+     {
+      "text": "Trabajo en una oficina del centro.",
+      "native": {
+       "tr": "Şehir merkezindeki bir ofiste çalışıyorum.",
+       "en": "I work in an office downtown."
+      }
+     },
+     {
+      "text": "Ella bebe agua con el almuerzo.",
+      "native": {
+       "tr": "O öğle yemeğinde su içiyor.",
+       "en": "She drinks water with lunch."
+      }
+     },
+     {
+      "text": "Vivimos cerca del mar.",
+      "native": {
+       "tr": "Denize yakın yaşıyoruz.",
+       "en": "We live near the sea."
+      }
+     },
+     {
+      "text": "¿Tú escribes mucho a tus amigos?",
+      "native": {
+       "tr": "Arkadaşlarına çok yazıyor musun?",
+       "en": "Do you write to your friends a lot?"
+      }
+     }
+    ]
+   }
   },
   {
    "id": "tener-hay",
@@ -733,7 +841,43 @@
      ],
      "answer": 2
     }
-   ]
+   ],
+   "learn": {
+    "explain": {
+     "tr": "Tener 'sahip olmak', hay ise 'var' demektir.\nTener: tengo, tienes, tiene, tenemos, tenéis, tienen. Yaş da tener ile söylenir: Tengo 25 años. Hay hem tekil hem çoğul için aynıdır: Hay un parque / Hay dos parques.\nKalıp: hay + isim; tener + şey.\nSık hata: yaşta ser kullanmak (Soy 25 años). Doğrusu Tengo 25 años; ayrıca hay çoğulda değişmez.",
+     "en": "Tener means 'to have' and hay means 'there is/there are'.\nTener: tengo, tienes, tiene, tenemos, tenéis, tienen. Age uses tener too: Tengo 25 años. Hay stays the same for one or many: Hay un parque / Hay dos parques.\nPattern: hay + noun; tener + thing.\nCommon mistake: using ser for age (Soy 25 años). Say Tengo 25 años, and never pluralize hay."
+    },
+    "examples": [
+     {
+      "text": "Tengo dos gatos en casa.",
+      "native": {
+       "tr": "Evde iki kedim var.",
+       "en": "I have two cats at home."
+      }
+     },
+     {
+      "text": "Mi hermano tiene treinta años.",
+      "native": {
+       "tr": "Erkek kardeşim otuz yaşında.",
+       "en": "My brother is thirty years old."
+      }
+     },
+     {
+      "text": "Hay mucha gente en la plaza.",
+      "native": {
+       "tr": "Meydanda çok insan var.",
+       "en": "There are a lot of people in the square."
+      }
+     },
+     {
+      "text": "No hay leche en la nevera.",
+      "native": {
+       "tr": "Buzdolabında süt yok.",
+       "en": "There is no milk in the fridge."
+      }
+     }
+    ]
+   }
   },
   {
    "id": "ir-a",
@@ -921,7 +1065,43 @@
      ],
      "answer": 2
     }
-   ]
+   ],
+   "learn": {
+    "explain": {
+     "tr": "Ir 'gitmek' demektir; ir a + mastar ise yakın geleceği anlatır ('-ecek').\nIr: voy, vas, va, vamos, vais, van. Kalıp: ir + a + fiil mastarı (Voy a cocinar).\nGidilen yer için de a kullanılır: Voy a la escuela.\nSık hata: a'yı unutmak (Voy comer). Doğrusu Voy a comer.",
+     "en": "Ir means 'to go'; ir a + infinitive expresses the near future ('going to').\nIr: voy, vas, va, vamos, vais, van. Pattern: ir + a + infinitive (Voy a cocinar).\nA also marks the destination: Voy a la escuela.\nCommon mistake: forgetting a (Voy comer). Say Voy a comer."
+    },
+    "examples": [
+     {
+      "text": "Mañana vamos a visitar a mis abuelos.",
+      "native": {
+       "tr": "Yarın büyükanne ve büyükbabamı ziyaret edeceğiz.",
+       "en": "Tomorrow we are going to visit my grandparents."
+      }
+     },
+     {
+      "text": "¿Vas al gimnasio esta tarde?",
+      "native": {
+       "tr": "Bu akşamüstü spora gidiyor musun?",
+       "en": "Are you going to the gym this afternoon?"
+      }
+     },
+     {
+      "text": "Ella va a comprar pan.",
+      "native": {
+       "tr": "O ekmek alacak.",
+       "en": "She is going to buy bread."
+      }
+     },
+     {
+      "text": "Van a llegar tarde al concierto.",
+      "native": {
+       "tr": "Konsere geç kalacaklar.",
+       "en": "They are going to arrive late to the concert."
+      }
+     }
+    ]
+   }
   },
   {
    "id": "gustar",
@@ -1104,7 +1284,43 @@
      ],
      "answer": 0
     }
-   ]
+   ],
+   "learn": {
+    "explain": {
+     "tr": "Gustar 'hoşlanmak, beğenmek' anlamındadır ama 'bana hoş gelir' gibi çalışır.\nKalıp: me/te/le/nos/os/les + gusta (tek şey ya da fiil) / gustan (çoğul şey). Me gusta la música, me gustan los libros, me gusta bailar.\nKişiyi vurgulamak için a mí, a ti... eklenebilir.\nSık hata: Yo gusto la pizza demek. Doğrusu Me gusta la pizza.",
+     "en": "Gustar means 'to like', but it works like 'is pleasing to me'.\nPattern: me/te/le/nos/os/les + gusta (one thing or a verb) / gustan (plural things). Me gusta la música, me gustan los libros, me gusta bailar.\nAdd a mí, a ti... to stress the person.\nCommon mistake: saying Yo gusto la pizza. Say Me gusta la pizza."
+    },
+    "examples": [
+     {
+      "text": "Me gusta mucho el chocolate.",
+      "native": {
+       "tr": "Çikolatayı çok severim.",
+       "en": "I like chocolate a lot."
+      }
+     },
+     {
+      "text": "¿Te gustan las películas de miedo?",
+      "native": {
+       "tr": "Korku filmlerini sever misin?",
+       "en": "Do you like horror movies?"
+      }
+     },
+     {
+      "text": "A mi madre le gusta cocinar.",
+      "native": {
+       "tr": "Annem yemek yapmayı sever.",
+       "en": "My mother likes to cook."
+      }
+     },
+     {
+      "text": "No nos gustan los lunes.",
+      "native": {
+       "tr": "Pazartesileri sevmiyoruz.",
+       "en": "We don't like Mondays."
+      }
+     }
+    ]
+   }
   },
   {
    "id": "reflexivos",
@@ -1289,7 +1505,43 @@
      ],
      "answer": 0
     }
-   ]
+   ],
+   "learn": {
+    "explain": {
+     "tr": "Dönüşlü fiiller, eylemin yapanın kendine döndüğünü gösterir (kalkmak, yıkanmak).\nZamir fiilden önce gelir: me, te, se, nos, os, se. Me levanto, te duchas, se llama Ana. Mastarda ek gelir: levantarse.\nGünlük rutinler için çok kullanılır.\nSık hata: zamiri unutmak (Yo levanto temprano). Doğrusu Me levanto temprano.",
+     "en": "Reflexive verbs show the action returns to the doer (getting up, washing oneself).\nThe pronoun goes before the verb: me, te, se, nos, os, se. Me levanto, te duchas, se llama Ana. The infinitive ends in -se: levantarse.\nVery common in daily routines.\nCommon mistake: dropping the pronoun (Yo levanto temprano). Say Me levanto temprano."
+    },
+    "examples": [
+     {
+      "text": "Me despierto a las seis y media.",
+      "native": {
+       "tr": "Altı buçukta uyanırım.",
+       "en": "I wake up at six thirty."
+      }
+     },
+     {
+      "text": "Mi hermano se afeita por la mañana.",
+      "native": {
+       "tr": "Erkek kardeşim sabahları tıraş olur.",
+       "en": "My brother shaves in the morning."
+      }
+     },
+     {
+      "text": "¿A qué hora te acuestas?",
+      "native": {
+       "tr": "Saat kaçta yatıyorsun?",
+       "en": "What time do you go to bed?"
+      }
+     },
+     {
+      "text": "Nos vestimos rápido para salir.",
+      "native": {
+       "tr": "Çıkmak için hızlıca giyiniyoruz.",
+       "en": "We get dressed quickly to go out."
+      }
+     }
+    ]
+   }
   },
   {
    "id": "indefinido",
@@ -1472,7 +1724,43 @@
      ],
      "answer": 0
     }
-   ]
+   ],
+   "learn": {
+    "explain": {
+     "tr": "Indefinido (pretérito), geçmişte bitmiş olayları anlatır: dün, geçen hafta, 2020'de.\n-ar: hablé, hablaste, habló, hablamos, hablasteis, hablaron. -er/-ir: comí, comiste, comió, comimos, comisteis, comieron.\nÇok kullanılan düzensizler: fui (ir/ser), hice, tuve, estuve.\nSık hata: ek aksanını unutmak; hablo (şimdiki) ile habló (geçmiş) farklıdır.",
+     "en": "The preterite describes finished events in the past: yesterday, last week, in 2020.\n-ar: hablé, hablaste, habló, hablamos, hablasteis, hablaron. -er/-ir: comí, comiste, comió, comimos, comisteis, comieron.\nCommon irregulars: fui (ir/ser), hice, tuve, estuve.\nCommon mistake: missing the accent; hablo (present) and habló (past) are different."
+    },
+    "examples": [
+     {
+      "text": "Ayer compré un libro muy interesante.",
+      "native": {
+       "tr": "Dün çok ilginç bir kitap aldım.",
+       "en": "Yesterday I bought a very interesting book."
+      }
+     },
+     {
+      "text": "El sábado fuimos a la playa.",
+      "native": {
+       "tr": "Cumartesi plaja gittik.",
+       "en": "On Saturday we went to the beach."
+      }
+     },
+     {
+      "text": "Ella salió de casa a las ocho.",
+      "native": {
+       "tr": "O saat sekizde evden çıktı.",
+       "en": "She left home at eight."
+      }
+     },
+     {
+      "text": "¿Qué hiciste el fin de semana?",
+      "native": {
+       "tr": "Hafta sonu ne yaptın?",
+       "en": "What did you do at the weekend?"
+      }
+     }
+    ]
+   }
   },
   {
    "id": "perfecto",
@@ -1655,7 +1943,43 @@
      ],
      "answer": 1
     }
-   ]
+   ],
+   "learn": {
+    "explain": {
+     "tr": "Pretérito perfecto, şimdiyle bağlantılı geçmişi anlatır: hoy, esta semana, ya, todavía no.\nKalıp: haber (he, has, ha, hemos, habéis, han) + participio. -ar > -ado (hablado), -er/-ir > -ido (comido).\nDüzensiz participios: hecho, dicho, visto, escrito, puesto, abierto.\nSık hata: haber ile participio arasına başka kelime koymak; ayrıca tener ile karıştırmak (Tengo comido değil, He comido).",
+     "en": "The present perfect links the past to now: hoy, esta semana, ya, todavía no.\nPattern: haber (he, has, ha, hemos, habéis, han) + past participle. -ar > -ado (hablado), -er/-ir > -ido (comido).\nIrregular participles: hecho, dicho, visto, escrito, puesto, abierto.\nCommon mistake: separating haber and the participle, or using tener (say He comido, not Tengo comido)."
+    },
+    "examples": [
+     {
+      "text": "Esta mañana he bebido dos cafés.",
+      "native": {
+       "tr": "Bu sabah iki kahve içtim.",
+       "en": "This morning I have had two coffees."
+      }
+     },
+     {
+      "text": "¿Ya has hecho la tarea?",
+      "native": {
+       "tr": "Ödevi yaptın mı artık?",
+       "en": "Have you already done your homework?"
+      }
+     },
+     {
+      "text": "Todavía no hemos visto esa serie.",
+      "native": {
+       "tr": "O diziyi henüz izlemedik.",
+       "en": "We haven't seen that series yet."
+      }
+     },
+     {
+      "text": "Mis padres han viajado mucho este año.",
+      "native": {
+       "tr": "Annemle babam bu yıl çok seyahat etti.",
+       "en": "My parents have travelled a lot this year."
+      }
+     }
+    ]
+   }
   },
   {
    "id": "pronombres-od",
@@ -1845,7 +2169,43 @@
      ],
      "answer": 1
     }
-   ]
+   ],
+   "learn": {
+    "explain": {
+     "tr": "Doğrudan nesne zamiri, daha önce geçen nesnenin yerine geçer ve tekrarı önler.\nlo (eril tekil), la (dişil tekil), los, las; kişiler için me, te, nos, os de var. Zamir çekimli fiilden önce gelir: Compro el pan > Lo compro.\nMastar ile fiilin sonuna eklenebilir: Quiero comprarlo.\nSık hata: zamiri fiilden sonra yazmak (Compro lo). Doğrusu Lo compro.",
+     "en": "Direct object pronouns replace an object already mentioned, avoiding repetition.\nlo (masc. sing.), la (fem. sing.), los, las; for people also me, te, nos, os. The pronoun goes before the conjugated verb: Compro el pan > Lo compro.\nWith an infinitive it can attach to the end: Quiero comprarlo.\nCommon mistake: putting it after the verb (Compro lo). Say Lo compro."
+    },
+    "examples": [
+     {
+      "text": "¿Tienes las entradas? Sí, las tengo.",
+      "native": {
+       "tr": "Biletlerin var mı? Evet, bende.",
+       "en": "Do you have the tickets? Yes, I have them."
+      }
+     },
+     {
+      "text": "Mi padre lo lee todos los días.",
+      "native": {
+       "tr": "Babam onu her gün okur.",
+       "en": "My father reads it every day."
+      }
+     },
+     {
+      "text": "No la veo en la lista.",
+      "native": {
+       "tr": "Onu listede göremiyorum.",
+       "en": "I don't see her on the list."
+      }
+     },
+     {
+      "text": "Te llamo luego, ¿vale?",
+      "native": {
+       "tr": "Seni sonra ararım, olur mu?",
+       "en": "I'll call you later, okay?"
+      }
+     }
+    ]
+   }
   },
   {
    "id": "imperfecto-indefinido",
@@ -2035,7 +2395,43 @@
      ],
      "alt": []
     }
-   ]
+   ],
+   "learn": {
+    "explain": {
+     "tr": "İki geçmiş zaman farklı iş görür. Imperfecto: alışkanlık, süregelen durum, arka plan (vivía, era, tenía). Indefinido: bitmiş tek olay (vivió, fue).\nImperfecto: -aba, -abas... (hablaba); -ía, -ías... (comía). Sadece ser, ir, ver düzensiz: era, iba, veía.\nSık kullanım: arka plan imperfecto + olay indefinido (Dormía cuando sonó el teléfono).\nSık hata: iki zamanı birbirine karıştırmak; tekrar eden alışkanlık için indefinido kullanmak.",
+     "en": "The two past tenses do different jobs. Imperfect: habits, ongoing states, background (vivía, era, tenía). Preterite: a single finished event (vivió, fue).\nImperfect: -aba, -abas... (hablaba); -ía, -ías... (comía). Only ser, ir, ver are irregular: era, iba, veía.\nTypical mix: background in imperfect + event in preterite (Dormía cuando sonó el teléfono).\nCommon mistake: using the preterite for repeated habits."
+    },
+    "examples": [
+     {
+      "text": "De niño jugaba al fútbol todos los días.",
+      "native": {
+       "tr": "Çocukken her gün futbol oynardım.",
+       "en": "As a child I played football every day."
+      }
+     },
+     {
+      "text": "Estaba cansada y se acostó temprano.",
+      "native": {
+       "tr": "Yorgundu ve erken yattı.",
+       "en": "She was tired and went to bed early."
+      }
+     },
+     {
+      "text": "Cuando llegamos, ya llovía mucho.",
+      "native": {
+       "tr": "Vardığımızda zaten çok yağmur yağıyordu.",
+       "en": "When we arrived, it was already raining hard."
+      }
+     },
+     {
+      "text": "Ayer vi a Pedro mientras paseaba por el parque.",
+      "native": {
+       "tr": "Dün parkta yürürken Pedro'yu gördüm.",
+       "en": "Yesterday I saw Pedro while I was walking in the park."
+      }
+     }
+    ]
+   }
   },
   {
    "id": "futuro-simple",
@@ -2225,7 +2621,43 @@
      ],
      "alt": []
     }
-   ]
+   ],
+   "learn": {
+    "explain": {
+     "tr": "Futuro simple, gelecekte olacakları, planları ve tahminleri anlatır.\nKalıp: mastar + -é, -ás, -á, -emos, -éis, -án (hablaré, comerás, vivirá). Mastar değişmez, ek eklenir.\nDüzensiz kökler: tendré, haré, diré, podré, saldré, sabré.\nSık hata: düzensiz fiillerde mastarı kullanmak (tenderé yerine tendré). Ayrıca tahmin için de olur: Estará en casa.",
+     "en": "The simple future talks about what will happen, plans and guesses.\nPattern: infinitive + -é, -ás, -á, -emos, -éis, -án (hablaré, comerás, vivirá). Keep the whole infinitive and add the ending.\nIrregular stems: tendré, haré, diré, podré, saldré, sabré.\nCommon mistake: using the infinitive on irregulars (tenderé instead of tendré). It also expresses guesses: Estará en casa."
+    },
+    "examples": [
+     {
+      "text": "El próximo año viajaré a Argentina.",
+      "native": {
+       "tr": "Gelecek yıl Arjantin'e seyahat edeceğim.",
+       "en": "Next year I will travel to Argentina."
+      }
+     },
+     {
+      "text": "Mañana lloverá en el norte.",
+      "native": {
+       "tr": "Yarın kuzeyde yağmur yağacak.",
+       "en": "Tomorrow it will rain in the north."
+      }
+     },
+     {
+      "text": "¿Vendrás a mi fiesta el sábado?",
+      "native": {
+       "tr": "Cumartesi partime gelecek misin?",
+       "en": "Will you come to my party on Saturday?"
+      }
+     },
+     {
+      "text": "Serán las nueve, creo.",
+      "native": {
+       "tr": "Saat dokuz olmuştur herhalde.",
+       "en": "It must be nine o'clock, I think."
+      }
+     }
+    ]
+   }
   },
   {
    "id": "condicional",
@@ -2411,7 +2843,43 @@
      ],
      "alt": []
     }
-   ]
+   ],
+   "learn": {
+    "explain": {
+     "tr": "Condicional, 'olurdu, -erdi' gibi nazik istekler, tavsiyeler ve varsayımlar için kullanılır.\nKalıp: mastar + -ía, -ías, -ía, -íamos, -íais, -ían (viajaría, podrías). Kökler futuro ile aynıdır: tendría, haría, diría.\nÖrnek: ¿Podrías ayudarme? Yo estudiaría más.\nSık hata: düzensiz kökleri unutmak (tenería değil, tendría).",
+     "en": "The conditional expresses polite requests, advice and hypotheticals ('would').\nPattern: infinitive + -ía, -ías, -ía, -íamos, -íais, -ían (viajaría, podrías). Irregular stems match the future: tendría, haría, diría.\nExample: ¿Podrías ayudarme? Yo estudiaría más.\nCommon mistake: missing irregular stems (say tendría, not tenería)."
+    },
+    "examples": [
+     {
+      "text": "¿Podrías cerrar la ventana, por favor?",
+      "native": {
+       "tr": "Pencereyi kapatır mısın lütfen?",
+       "en": "Could you close the window, please?"
+      }
+     },
+     {
+      "text": "Yo, en tu lugar, hablaría con ella.",
+      "native": {
+       "tr": "Senin yerinde olsam onunla konuşurdum.",
+       "en": "In your place, I would talk to her."
+      }
+     },
+     {
+      "text": "Me encantaría conocer Japón.",
+      "native": {
+       "tr": "Japonya'yı görmeyi çok isterdim.",
+       "en": "I would love to see Japan."
+      }
+     },
+     {
+      "text": "Dijo que llegaría a las cinco.",
+      "native": {
+       "tr": "Saat beşte geleceğini söyledi.",
+       "en": "He said he would arrive at five."
+      }
+     }
+    ]
+   }
   },
   {
    "id": "subjuntivo-presente",
@@ -2595,7 +3063,43 @@
      ],
      "alt": []
     }
-   ]
+   ],
+   "learn": {
+    "explain": {
+     "tr": "Subjuntivo, istek, duygu, şüphe ve gereklilik ifadelerinden sonra gelir; iki ayrı özne vardır.\nKalıp: querer/esperar/es importante + que + subjuntivo. -ar fiilleri -e alır (hable), -er/-ir fiilleri -a alır (coma, viva).\nÖrnek: Quiero que vengas. Espero que estés bien.\nSık hata: aynı özne varsa que kullanmak. Quiero comer (ben yerim), ama Quiero que comas (sen ye).",
+     "en": "The subjunctive follows wishes, emotions, doubt and necessity, with two different subjects.\nPattern: querer/esperar/es importante + que + subjunctive. -ar verbs take -e (hable), -er/-ir verbs take -a (coma, viva).\nExample: Quiero que vengas. Espero que estés bien.\nCommon mistake: using que with one subject. Quiero comer (I eat), but Quiero que comas (you eat)."
+    },
+    "examples": [
+     {
+      "text": "Espero que tengas un buen día.",
+      "native": {
+       "tr": "Güzel bir gün geçirmeni umarım.",
+       "en": "I hope you have a good day."
+      }
+     },
+     {
+      "text": "Mi madre quiere que estudie medicina.",
+      "native": {
+       "tr": "Annem tıp okumamı istiyor.",
+       "en": "My mother wants me to study medicine."
+      }
+     },
+     {
+      "text": "Es importante que duermas ocho horas.",
+      "native": {
+       "tr": "Sekiz saat uyuman önemli.",
+       "en": "It is important that you sleep eight hours."
+      }
+     },
+     {
+      "text": "No creo que llueva hoy.",
+      "native": {
+       "tr": "Bugün yağmur yağacağını sanmıyorum.",
+       "en": "I don't think it will rain today."
+      }
+     }
+    ]
+   }
   },
   {
    "id": "imperativo",
@@ -2779,7 +3283,43 @@
      ],
      "alt": []
     }
-   ]
+   ],
+   "learn": {
+    "explain": {
+     "tr": "Imperativo, emir, tavsiye ve rica için kullanılır.\nOlumlu tú: 3. tekil şahıs gibi (habla, come, abre). Olumsuz: no + subjuntivo (no hables, no comas). Düzensiz olumlular: ven, di, haz, ve, pon, sal, sé, ten.\nZamirler olumluda sona eklenir (dímelo), olumsuzda öne gelir (no me lo digas).\nSık hata: olumsuzda olumlu biçimi kullanmak (No habla! yerine No hables).",
+     "en": "The imperative is used for commands, advice and requests.\nAffirmative tú: same as the he/she form (habla, come, abre). Negative: no + subjunctive (no hables, no comas). Irregular affirmatives: ven, di, haz, ve, pon, sal, sé, ten.\nPronouns attach to affirmatives (dímelo) and go before negatives (no me lo digas).\nCommon mistake: using the affirmative form in the negative (say No hables)."
+    },
+    "examples": [
+     {
+      "text": "Escucha bien las instrucciones.",
+      "native": {
+       "tr": "Talimatları iyi dinle.",
+       "en": "Listen carefully to the instructions."
+      }
+     },
+     {
+      "text": "Ven a cenar con nosotros esta noche.",
+      "native": {
+       "tr": "Bu akşam bizimle yemeğe gel.",
+       "en": "Come and have dinner with us tonight."
+      }
+     },
+     {
+      "text": "No olvides las llaves.",
+      "native": {
+       "tr": "Anahtarları unutma.",
+       "en": "Don't forget the keys."
+      }
+     },
+     {
+      "text": "No corras por el pasillo.",
+      "native": {
+       "tr": "Koridorda koşma.",
+       "en": "Don't run in the hallway."
+      }
+     }
+    ]
+   }
   },
   {
    "id": "por-para",
@@ -2962,7 +3502,43 @@
      ],
      "alt": []
     }
-   ]
+   ],
+   "learn": {
+    "explain": {
+     "tr": "Por ve para çoğu zaman 'için' diye çevrilir ama farklı işler görür.\nPara: amaç, alıcı, son tarih, hedef (Estudio para aprender. Es para ti. Para mañana). Por: sebep, bir yerden geçiş, araç, süre, takas (Gracias por todo. Paso por el parque. Por teléfono. Por 10 euros).\nİpucu: 'ne amaçla?' ise para, 'neden/hangi yoldan?' ise por.\nSık hata: sebep için para kullanmak (Gracias para todo değil, por todo).",
+     "en": "Por and para both often translate as 'for', but they do different jobs.\nPara: purpose, recipient, deadline, destination (Estudio para aprender. Es para ti. Para mañana). Por: cause, passing through, means, duration, exchange (Gracias por todo. Paso por el parque. Por teléfono. Por 10 euros).\nTip: 'in order to / who is it for' means para; 'because of / by way of' means por.\nCommon mistake: using para for a cause (say Gracias por todo, not para todo)."
+    },
+    "examples": [
+     {
+      "text": "Este regalo es para mi hermana.",
+      "native": {
+       "tr": "Bu hediye kız kardeşim için.",
+       "en": "This gift is for my sister."
+      }
+     },
+     {
+      "text": "Llegué tarde por el tráfico.",
+      "native": {
+       "tr": "Trafik yüzünden geç kaldım.",
+       "en": "I was late because of the traffic."
+      }
+     },
+     {
+      "text": "Trabajo mucho para ahorrar dinero.",
+      "native": {
+       "tr": "Para biriktirmek için çok çalışıyorum.",
+       "en": "I work a lot to save money."
+      }
+     },
+     {
+      "text": "Pagué veinte euros por esta camisa.",
+      "native": {
+       "tr": "Bu gömlek için yirmi euro ödedim.",
+       "en": "I paid twenty euros for this shirt."
+      }
+     }
+    ]
+   }
   },
   {
    "id": "pronombres-combinados",
@@ -3146,7 +3722,43 @@
      ],
      "alt": []
     }
-   ]
+   ],
+   "learn": {
+    "explain": {
+     "tr": "Iki nesne zamiri bir arada kullanılır: önce dolaylı (me, te, le, nos, os, les), sonra doğrudan (lo, la, los, las). Me lo da = Onu bana veriyor.\nÖzel kural: le/les + lo/la/los/las = se lo/se la... (Le doy el libro > Se lo doy). İkisi arasına hiçbir şey girmez.\nMastarda sona eklenir ve aksan gerekir: dárselo.\nSık hata: le lo demek. Doğrusu se lo.",
+     "en": "Two object pronouns can appear together: indirect first (me, te, le, nos, os, les), then direct (lo, la, los, las). Me lo da = He gives it to me.\nSpecial rule: le/les + lo/la/los/las becomes se lo/se la... (Le doy el libro > Se lo doy). Nothing goes between them.\nWith an infinitive they attach at the end and need an accent: dárselo.\nCommon mistake: saying le lo. Say se lo."
+    },
+    "examples": [
+     {
+      "text": "¿Me prestas tu bolígrafo? Sí, te lo presto.",
+      "native": {
+       "tr": "Kalemini bana ödünç verir misin? Evet, sana veririm.",
+       "en": "Can you lend me your pen? Yes, I'll lend it to you."
+      }
+     },
+     {
+      "text": "Mi tía nos las envió ayer.",
+      "native": {
+       "tr": "Teyzem onları dün bize gönderdi.",
+       "en": "My aunt sent them to us yesterday."
+      }
+     },
+     {
+      "text": "Si necesitas el libro, se lo puedo dar.",
+      "native": {
+       "tr": "Kitaba ihtiyacın varsa onu ona verebilirim.",
+       "en": "If you need the book, I can give it to him."
+      }
+     },
+     {
+      "text": "Quiero contártelo todo.",
+      "native": {
+       "tr": "Sana hepsini anlatmak istiyorum.",
+       "en": "I want to tell you everything."
+      }
+     }
+    ]
+   }
   },
   {
    "id": "relativos",
@@ -3331,7 +3943,43 @@
      ],
      "alt": []
     }
-   ]
+   ],
+   "learn": {
+    "explain": {
+     "tr": "Relativos cümleleri birleştirir ve bir isim hakkında bilgi verir.\nQue: en yaygını (el libro que leo). Donde: yer (la ciudad donde vivo). Quien/quienes: kişi, genelde edatla (la chica con quien hablo). Cuyo: sahiplik (el hombre cuyo hijo es médico). Lo que: 'ne olduğu' (Lo que dices es verdad).\nKalıp: isim + relativo + fiil.\nSık hata: que'yi atlamak; İspanyolcada ilgi zamiri zorunludur (El libro leo değil, el libro que leo).",
+     "en": "Relative words join sentences and give information about a noun.\nQue: the most common (el libro que leo). Donde: places (la ciudad donde vivo). Quien/quienes: people, often after a preposition (la chica con quien hablo). Cuyo: possession (el hombre cuyo hijo es médico). Lo que: 'what' (Lo que dices es verdad).\nPattern: noun + relative + verb.\nCommon mistake: dropping que; Spanish always needs it (el libro que leo, not el libro leo)."
+    },
+    "examples": [
+     {
+      "text": "Esta es la casa donde crecí.",
+      "native": {
+       "tr": "Burası büyüdüğüm ev.",
+       "en": "This is the house where I grew up."
+      }
+     },
+     {
+      "text": "El chico que vive arriba toca la guitarra.",
+      "native": {
+       "tr": "Üst katta oturan çocuk gitar çalıyor.",
+       "en": "The boy who lives upstairs plays the guitar."
+      }
+     },
+     {
+      "text": "No entiendo lo que dices.",
+      "native": {
+       "tr": "Ne dediğini anlamıyorum.",
+       "en": "I don't understand what you are saying."
+      }
+     },
+     {
+      "text": "Conozco a una mujer cuyo perro habla.",
+      "native": {
+       "tr": "Köpeği konuşan bir kadın tanıyorum.",
+       "en": "I know a woman whose dog talks."
+      }
+     }
+    ]
+   }
   },
   {
    "id": "si-subjuntivo-imperfecto",
@@ -3526,7 +4174,43 @@
      ],
      "alt": []
     }
-   ]
+   ],
+   "learn": {
+    "explain": {
+     "tr": "Bu yapı gerçek olmayan ya da pek mümkün olmayan durumları anlatır ('olsaydı, olurdu').\nKalıp: si + imperfecto de subjuntivo (-ra), ... + condicional. Si tuviera tiempo, viajaría. Si yo fuera tú, hablaría con él.\nImperfecto de subjuntivo: üçüncü çoğul pretérito'dan -ron atılır, -ra eklenir (hablaron > hablara, tuvieron > tuviera).\nSık hata: si'den sonra condicional kullanmak (Si tendría tiempo değil, Si tuviera tiempo).",
+     "en": "This structure talks about unreal or unlikely situations ('if I had..., I would...').\nPattern: si + imperfect subjunctive (-ra), ... + conditional. Si tuviera tiempo, viajaría. Si yo fuera tú, hablaría con él.\nImperfect subjunctive: take the ellos preterite, drop -ron, add -ra (hablaron > hablara, tuvieron > tuviera).\nCommon mistake: using the conditional after si (say Si tuviera tiempo, not Si tendría tiempo)."
+    },
+    "examples": [
+     {
+      "text": "Si ganara la lotería, compraría una casa.",
+      "native": {
+       "tr": "Piyangoyu kazansaydım bir ev alırdım.",
+       "en": "If I won the lottery, I would buy a house."
+      }
+     },
+     {
+      "text": "Si fuera más joven, aprendería a surfear.",
+      "native": {
+       "tr": "Daha genç olsaydım sörf öğrenirdim.",
+       "en": "If I were younger, I would learn to surf."
+      }
+     },
+     {
+      "text": "Si tuvieras hambre, comeríamos ahora.",
+      "native": {
+       "tr": "Acıksaydın şimdi yerdik.",
+       "en": "If you were hungry, we would eat now."
+      }
+     },
+     {
+      "text": "Si ellos vivieran aquí, nos verían más.",
+      "native": {
+       "tr": "Burada yaşasalardı, birbirimizi daha çok görürdük.",
+       "en": "If they lived here, we would see each other more."
+      }
+     }
+    ]
+   }
   },
   {
    "id": "estilo-indirecto",
@@ -3710,7 +4394,43 @@
      ],
      "alt": []
     }
-   ]
+   ],
+   "learn": {
+    "explain": {
+     "tr": "Estilo indirecto, başkasının sözünü aktarır: dijo que, preguntó si, explicó que.\nAnlatan fiil geçmişteyse zamanlar bir adım geri gider: presente > imperfecto, futuro > condicional, perfecto > pluscuamperfecto. 'Estoy cansado' > Dijo que estaba cansado.\nSoru: Preguntó si venía. Zamirler ve zaman ifadeleri de değişir (hoy > ese día, mañana > al día siguiente).\nSık hata: zamanı değiştirmeden bırakmak (Dijo que está cansado).",
+     "en": "Reported speech repeats what someone else said: dijo que, preguntó si, explicó que.\nWhen the reporting verb is past, tenses shift back: present > imperfect, future > conditional, perfect > pluperfect. 'Estoy cansado' > Dijo que estaba cansado.\nQuestions: Preguntó si venía. Pronouns and time words change too (hoy > ese día, mañana > al día siguiente).\nCommon mistake: leaving the tense unchanged (Dijo que está cansado)."
+    },
+    "examples": [
+     {
+      "text": "Mi jefe dijo que la reunión empezaba a las diez.",
+      "native": {
+       "tr": "Patronum toplantının ona başladığını söyledi.",
+       "en": "My boss said the meeting started at ten."
+      }
+     },
+     {
+      "text": "Ana me contó que se mudaría a Sevilla.",
+      "native": {
+       "tr": "Ana bana Sevilla'ya taşınacağını anlattı.",
+       "en": "Ana told me she would move to Seville."
+      }
+     },
+     {
+      "text": "Les preguntamos si querían venir con nosotros.",
+      "native": {
+       "tr": "Onlara bizimle gelmek isteyip istemediklerini sorduk.",
+       "en": "We asked them if they wanted to come with us."
+      }
+     },
+     {
+      "text": "Dijeron que ya habían cenado.",
+      "native": {
+       "tr": "Zaten akşam yemeği yediklerini söylediler.",
+       "en": "They said they had already had dinner."
+      }
+     }
+    ]
+   }
   }
  ]
 }

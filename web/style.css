@@ -399,6 +399,21 @@ img, svg { display: block; }
   .sheet { padding: 12px 14px 14px; }
 }
 
+/* a topic's lesson: explanation lines and spoken examples */
+.lesson-card { display: grid; gap: 12px; }
+.lesson-head { display: flex; align-items: center; gap: 8px; }
+.lesson-kicker { font-size: 12.5px; font-weight: 750; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+.lesson-title { font-size: 24px; font-weight: 800; letter-spacing: -.02em; line-height: 1.2; }
+.lesson-text { display: grid; gap: 8px; padding: 14px 16px; border-radius: 16px; background: var(--surface-2); font-size: 16px; line-height: 1.5; }
+.lesson-sub { margin: 6px 0 0; font-size: 13px; font-weight: 750; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+.examples { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+.examples li { display: flex; align-items: center; gap: 10px; padding: 10px 6px 10px 14px; border-radius: 14px; border: 1px solid var(--line); }
+.ex-text { flex: 1; display: grid; }
+.ex-said { font-weight: 650; font-size: 16.5px; }
+.ex-meaning { color: var(--muted); font-size: 14px; }
+.tag-basics { margin-right: auto; margin-left: 8px; font-size: 11.5px; font-weight: 750; padding: 2px 8px; border-radius: 999px;
+  color: var(--primary); background: color-mix(in srgb, var(--primary) 12%, transparent); }
+
 /* ---- onboarding ---- */
 .onboarding { position: fixed; inset: 0; z-index: 60; overflow-y: auto; background: var(--bg);
   padding: env(safe-area-inset-top) 16px env(safe-area-inset-bottom); }

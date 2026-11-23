@@ -154,7 +154,43 @@
       "tr": "Annen evde mi?"
      }
     }
-   ]
+   ],
+   "learn": {
+    "explain": {
+     "tr": "“Be” fiili, kim olduğunu, nasıl olduğunu veya nerede olduğunu söylemek için kullanılır.\nKalıp: I am, he/she/it is, you/we/they are.\nOlumsuz için not ekleriz: She is not (isn't) at home.\nSoru için fiili öne alırız: Are you ready?\nSık yapılan hata: Türkçede “be” gerekmez (“Ben öğrenciyim”), ama İngilizcede unutulmaz: I am a student, “I student” değil.",
+     "en": "The verb “be” tells who or what someone is, how they feel, or where they are.\nPattern: I am, he/she/it is, you/we/they are.\nFor negatives add not: She is not (isn't) at home.\nFor questions, put the verb first: Are you ready?\nCommon mistake: Turkish has no separate word for “be”, so learners say “I student”. Always say: I am a student."
+    },
+    "examples": [
+     {
+      "text": "I am a teacher.",
+      "native": {
+       "tr": "Ben bir öğretmenim.",
+       "en": "I am a teacher."
+      }
+     },
+     {
+      "text": "She is very kind.",
+      "native": {
+       "tr": "O çok nazik.",
+       "en": "She is very kind."
+      }
+     },
+     {
+      "text": "We are at the park.",
+      "native": {
+       "tr": "Biz parktayız.",
+       "en": "We are at the park."
+      }
+     },
+     {
+      "text": "Are they your friends?",
+      "native": {
+       "tr": "Onlar senin arkadaşların mı?",
+       "en": "Are they your friends?"
+      }
+     }
+    ]
+   }
   },
   {
    "id": "be-past",
@@ -309,7 +345,43 @@
       "tr": "Film güzel miydi?"
      }
     }
-   ]
+   ],
+   "learn": {
+    "explain": {
+     "tr": "Geçmişte kim olduğunu, nasıl olduğunu veya nerede olduğunu anlatmak için was/were kullanırız.\nKalıp: I/he/she/it was; you/we/they were.\nOlumsuz: was not (wasn't), were not (weren't). Soru: Were you tired?\nSık yapılan hata: “I were” demek. Doğrusu: I was. “You was” da yanlıştır: You were.",
+     "en": "We use was/were to say who, how or where someone or something was in the past.\nPattern: I/he/she/it was; you/we/they were.\nNegative: was not (wasn't), were not (weren't). Question: Were you tired?\nCommon mistake: saying “I were”. The correct form is I was, and “you was” is wrong too: you were."
+    },
+    "examples": [
+     {
+      "text": "I was sick yesterday.",
+      "native": {
+       "tr": "Dün hastaydım.",
+       "en": "I was sick yesterday."
+      }
+     },
+     {
+      "text": "The film was great.",
+      "native": {
+       "tr": "Film harikaydı.",
+       "en": "The film was great."
+      }
+     },
+     {
+      "text": "We were in Izmir last week.",
+      "native": {
+       "tr": "Geçen hafta İzmir'deydik.",
+       "en": "We were in Izmir last week."
+      }
+     },
+     {
+      "text": "Were you at the party?",
+      "native": {
+       "tr": "Partide miydin?",
+       "en": "Were you at the party?"
+      }
+     }
+    ]
+   }
   },
   {
    "id": "present-continuous",
@@ -464,7 +536,43 @@
       "tr": "Yağmur yağıyor mu?"
      }
     }
-   ]
+   ],
+   "learn": {
+    "explain": {
+     "tr": "Şu anda olan veya bu günlerde süren işler için kullanılır.\nKalıp: am/is/are + fiil-ing (I am working).\nOlumsuz: She is not working. Soru: Are you working?\nSık yapılan hata: am/is/are'i unutmak. “I working” değil, I am working denir.",
+     "en": "We use it for things happening right now or around now.\nPattern: am/is/are + verb-ing (I am working).\nNegative: She is not working. Question: Are you working?\nCommon mistake: forgetting am/is/are. Say I am working, not “I working”."
+    },
+    "examples": [
+     {
+      "text": "I am cooking dinner now.",
+      "native": {
+       "tr": "Şu an akşam yemeği pişiriyorum.",
+       "en": "I am cooking dinner now."
+      }
+     },
+     {
+      "text": "He is watching TV.",
+      "native": {
+       "tr": "O televizyon izliyor.",
+       "en": "He is watching TV."
+      }
+     },
+     {
+      "text": "They are playing football.",
+      "native": {
+       "tr": "Onlar futbol oynuyor.",
+       "en": "They are playing football."
+      }
+     },
+     {
+      "text": "Are you listening to me?",
+      "native": {
+       "tr": "Beni dinliyor musun?",
+       "en": "Are you listening to me?"
+      }
+     }
+    ]
+   }
   },
   {
    "id": "present-simple",
@@ -619,7 +727,43 @@
       "tr": "Kedim süt içer."
      }
     }
-   ]
+   ],
+   "learn": {
+    "explain": {
+     "tr": "Alışkanlıklar, günlük işler ve genel doğrular için kullanılır.\nKalıp: fiilin yalın hali; he/she/it ile -s eklenir (she works).\nOlumsuz ve soru: do/does kullanırız (I do not work. Does she work?). Does varken fiile -s gelmez.\nSık yapılan hata: “She work” demek ya da “Does she works?” demek.",
+     "en": "We use it for habits, daily routines and general facts.\nPattern: the base verb; add -s for he/she/it (she works).\nNegatives and questions use do/does (I do not work. Does she work?). After does, the verb has no -s.\nCommon mistake: saying “She work” or “Does she works?”."
+    },
+    "examples": [
+     {
+      "text": "I drink tea every morning.",
+      "native": {
+       "tr": "Her sabah çay içerim.",
+       "en": "I drink tea every morning."
+      }
+     },
+     {
+      "text": "My brother plays the guitar.",
+      "native": {
+       "tr": "Kardeşim gitar çalar.",
+       "en": "My brother plays the guitar."
+      }
+     },
+     {
+      "text": "They do not eat meat.",
+      "native": {
+       "tr": "Onlar et yemez.",
+       "en": "They do not eat meat."
+      }
+     },
+     {
+      "text": "Does your mother work here?",
+      "native": {
+       "tr": "Annen burada mı çalışıyor?",
+       "en": "Does your mother work here?"
+      }
+     }
+    ]
+   }
   },
   {
    "id": "there-is",
@@ -774,7 +918,43 @@
       "tr": "Evde süt var."
      }
     }
-   ]
+   ],
+   "learn": {
+    "explain": {
+     "tr": "Bir yerde bir şeyin var olduğunu söylemek için kullanılır.\nTekil ve sayılamayan: there is (There is a cat). Çoğul: there are (There are two cats).\nOlumsuz: There is not / There are not. Soru: Is there a bank near here?\nSık yapılan hata: “It has a park” demek. “Burada bir park var” için There is a park here denir.",
+     "en": "We use it to say that something exists somewhere.\nSingular and uncountable: there is (There is a cat). Plural: there are (There are two cats).\nNegative: There is not / There are not. Question: Is there a bank near here?\nCommon mistake: saying “It has a park”. To say a park exists, use There is a park here."
+    },
+    "examples": [
+     {
+      "text": "There is a shop on my street.",
+      "native": {
+       "tr": "Sokağımda bir dükkan var.",
+       "en": "There is a shop on my street."
+      }
+     },
+     {
+      "text": "There are three eggs in the fridge.",
+      "native": {
+       "tr": "Buzdolabında üç yumurta var.",
+       "en": "There are three eggs in the fridge."
+      }
+     },
+     {
+      "text": "There is no milk.",
+      "native": {
+       "tr": "Süt yok.",
+       "en": "There is no milk."
+      }
+     },
+     {
+      "text": "Are there any seats?",
+      "native": {
+       "tr": "Boş yer var mı?",
+       "en": "Are there any seats?"
+      }
+     }
+    ]
+   }
   },
   {
    "id": "questions",
@@ -930,7 +1110,43 @@
       "tr": "Sen nerede yaşıyorsun?"
      }
     }
-   ]
+   ],
+   "learn": {
+    "explain": {
+     "tr": "Soru kelimeleri bilgi istemek için cümlenin başına gelir: what (ne), where (nerede), who (kim), when (ne zaman), why (neden), how (nasıl).\nKalıp: soru kelimesi + do/does/am/is/are + özne + fiil (Where do you live?).\nSık yapılan hata: Türkçedeki gibi soru kelimesini sona koymak. “You live where?” değil, Where do you live? denir.",
+     "en": "Question words start a sentence when you ask for information: what, where, who, when, why, how.\nPattern: question word + do/does/am/is/are + subject + verb (Where do you live?).\nCommon mistake: putting the question word at the end like in Turkish. Say Where do you live?, not “You live where?”."
+    },
+    "examples": [
+     {
+      "text": "What is your name?",
+      "native": {
+       "tr": "Adın ne?",
+       "en": "What is your name?"
+      }
+     },
+     {
+      "text": "Who is that man?",
+      "native": {
+       "tr": "O adam kim?",
+       "en": "Who is that man?"
+      }
+     },
+     {
+      "text": "When does the class start?",
+      "native": {
+       "tr": "Ders ne zaman başlıyor?",
+       "en": "When does the class start?"
+      }
+     },
+     {
+      "text": "Why are you late?",
+      "native": {
+       "tr": "Neden geç kaldın?",
+       "en": "Why are you late?"
+      }
+     }
+    ]
+   }
   },
   {
    "id": "can",
@@ -1085,7 +1301,43 @@
       "tr": "Burada park edebilir miyim?"
      }
     }
-   ]
+   ],
+   "learn": {
+    "explain": {
+     "tr": "“Can” bir şeyi yapabildiğini veya izin olduğunu söyler.\nKalıp: özne + can + fiilin yalın hali (He can swim). Olumsuz: cannot (can't). Soru: Can you help me?\nSık yapılan hata: Fiile -s, to ya da -ing eklemek. “She can to swim” veya “She cans swim” yanlıştır: She can swim.",
+     "en": "“Can” says what you are able to do, or that something is allowed.\nPattern: subject + can + base verb (He can swim). Negative: cannot (can't). Question: Can you help me?\nCommon mistake: adding -s, to or -ing. “She can to swim” and “She cans swim” are wrong: She can swim."
+    },
+    "examples": [
+     {
+      "text": "I can speak a little English.",
+      "native": {
+       "tr": "Biraz İngilizce konuşabiliyorum.",
+       "en": "I can speak a little English."
+      }
+     },
+     {
+      "text": "She can cook very well.",
+      "native": {
+       "tr": "O çok iyi yemek yapabilir.",
+       "en": "She can cook very well."
+      }
+     },
+     {
+      "text": "We can't come tonight.",
+      "native": {
+       "tr": "Bu akşam gelemeyiz.",
+       "en": "We can't come tonight."
+      }
+     },
+     {
+      "text": "Can I open the window?",
+      "native": {
+       "tr": "Pencereyi açabilir miyim?",
+       "en": "Can I open the window?"
+      }
+     }
+    ]
+   }
   },
   {
    "id": "have",
@@ -1240,7 +1492,43 @@
       "tr": "Onların büyük bir evi var."
      }
     }
-   ]
+   ],
+   "learn": {
+    "explain": {
+     "tr": "“Have” sahip olmayı anlatır: bir şeyin, bir ailenin ya da bir hastalığın olması.\nI/you/we/they ile have, he/she/it ile has kullanılır.\nOlumsuz ve soru için do/does gerekir: I do not have a car. Does she have a pen?\nSık yapılan hata: “She have” demek. Doğrusu: She has. Does varken de has değil have gelir.",
+     "en": "“Have” shows possession: owning something, having family, or having an illness.\nUse have with I/you/we/they and has with he/she/it.\nNegatives and questions need do/does: I do not have a car. Does she have a pen?\nCommon mistake: saying “She have”. Say She has. After does, use have, not has."
+    },
+    "examples": [
+     {
+      "text": "I have two brothers.",
+      "native": {
+       "tr": "İki erkek kardeşim var.",
+       "en": "I have two brothers."
+      }
+     },
+     {
+      "text": "She has a new phone.",
+      "native": {
+       "tr": "Onun yeni bir telefonu var.",
+       "en": "She has a new phone."
+      }
+     },
+     {
+      "text": "We do not have time.",
+      "native": {
+       "tr": "Zamanımız yok.",
+       "en": "We do not have time."
+      }
+     },
+     {
+      "text": "Does he have a dog?",
+      "native": {
+       "tr": "Onun köpeği var mı?",
+       "en": "Does he have a dog?"
+      }
+     }
+    ]
+   }
   },
   {
    "id": "past-simple",
@@ -1396,7 +1684,43 @@
       "tr": "Geçen yaz plaja gittiler."
      }
     }
-   ]
+   ],
+   "learn": {
+    "explain": {
+     "tr": "Geçmişte bitmiş olayları anlatmak için kullanılır (yesterday, last week, in 2020).\nDüzenli fiillere -ed eklenir (walk → walked); düzensizlerin özel biçimi vardır (go → went).\nOlumsuz ve soruda did + yalın fiil kullanılır: I did not go. Did you go?\nSık yapılan hata: did varken fiili de geçmişe çevirmek. “Did you went?” değil, Did you go?",
+     "en": "We use it for finished events in the past (yesterday, last week, in 2020).\nRegular verbs take -ed (walk → walked); irregular verbs change form (go → went).\nNegatives and questions use did + base verb: I did not go. Did you go?\nCommon mistake: putting the past form after did. Say Did you go?, not “Did you went?”."
+    },
+    "examples": [
+     {
+      "text": "I watched a film last night.",
+      "native": {
+       "tr": "Dün gece bir film izledim.",
+       "en": "I watched a film last night."
+      }
+     },
+     {
+      "text": "She went to Ankara by bus.",
+      "native": {
+       "tr": "Ankara'ya otobüsle gitti.",
+       "en": "She went to Ankara by bus."
+      }
+     },
+     {
+      "text": "We did not see him.",
+      "native": {
+       "tr": "Onu görmedik.",
+       "en": "We did not see him."
+      }
+     },
+     {
+      "text": "Did they call you yesterday?",
+      "native": {
+       "tr": "Seni dün aradılar mı?",
+       "en": "Did they call you yesterday?"
+      }
+     }
+    ]
+   }
   },
   {
    "id": "going-to",
@@ -1553,7 +1877,43 @@
       "tr": "Beni bekleyecek misin?"
      }
     }
-   ]
+   ],
+   "learn": {
+    "explain": {
+     "tr": "Önceden planladığın şeyleri ve belirtilere dayanan tahminleri anlatır.\nKalıp: am/is/are + going to + fiilin yalın hali (I am going to study).\nOlumsuz: She is not going to come. Soru: Are you going to eat?\nSık yapılan hata: am/is/are'i unutmak ya da to'dan sonra -ing eklemek. “I going to eat” değil, I am going to eat.",
+     "en": "It talks about plans you already made, and predictions based on what you can see.\nPattern: am/is/are + going to + base verb (I am going to study).\nNegative: She is not going to come. Question: Are you going to eat?\nCommon mistake: forgetting am/is/are. Say I am going to eat, not “I going to eat”."
+    },
+    "examples": [
+     {
+      "text": "I am going to call my mother tonight.",
+      "native": {
+       "tr": "Bu akşam annemi arayacağım.",
+       "en": "I am going to call my mother tonight."
+      }
+     },
+     {
+      "text": "They are going to move next month.",
+      "native": {
+       "tr": "Gelecek ay taşınacaklar.",
+       "en": "They are going to move next month."
+      }
+     },
+     {
+      "text": "Look at the sky. It is going to rain.",
+      "native": {
+       "tr": "Gökyüzüne bak. Yağmur yağacak.",
+       "en": "Look at the sky. It is going to rain."
+      }
+     },
+     {
+      "text": "Are you going to buy that bag?",
+      "native": {
+       "tr": "O çantayı alacak mısın?",
+       "en": "Are you going to buy that bag?"
+      }
+     }
+    ]
+   }
   },
   {
    "id": "will",
@@ -1708,7 +2068,43 @@
       "tr": "Bu çantayı taşımama yardım eder misin?"
      }
     }
-   ]
+   ],
+   "learn": {
+    "explain": {
+     "tr": "“Will” anlık kararlar, sözler ve gelecek tahminleri için kullanılır.\nKalıp: özne + will + yalın fiil (I will help you). Olumsuz: will not (won't). Soru: Will you come?\nTüm özneler için aynıdır, -s almaz.\nSık yapılan hata: “He wills go” ya da “will to go” demek. Doğrusu: He will go.",
+     "en": "“Will” is for quick decisions, promises and predictions about the future.\nPattern: subject + will + base verb (I will help you). Negative: will not (won't). Question: Will you come?\nIt is the same for all subjects and never takes -s.\nCommon mistake: saying “He wills go” or “will to go”. Say He will go."
+    },
+    "examples": [
+     {
+      "text": "I will carry that bag for you.",
+      "native": {
+       "tr": "O çantayı senin için taşırım.",
+       "en": "I will carry that bag for you."
+      }
+     },
+     {
+      "text": "It will be sunny tomorrow.",
+      "native": {
+       "tr": "Yarın hava güneşli olacak.",
+       "en": "It will be sunny tomorrow."
+      }
+     },
+     {
+      "text": "I won't tell anyone.",
+      "native": {
+       "tr": "Kimseye söylemeyeceğim.",
+       "en": "I won't tell anyone."
+      }
+     },
+     {
+      "text": "Will you call me later?",
+      "native": {
+       "tr": "Beni sonra arar mısın?",
+       "en": "Will you call me later?"
+      }
+     }
+    ]
+   }
   },
   {
    "id": "comparatives",
@@ -1863,7 +2259,43 @@
       "tr": "O, tanıdığım en nazik insan."
      }
     }
-   ]
+   ],
+   "learn": {
+    "explain": {
+     "tr": "İki şeyi karşılaştırmak için sıfatın karşılaştırma biçimi, en üstünü söylemek için en üstünlük biçimi kullanılır.\nKısa sıfatlar: -er / the -est (tall → taller → the tallest). Uzun sıfatlar: more / the most (more interesting). Karşılaştırmada than gelir.\nSık yapılan hata: “more taller” gibi ikisini birlikte kullanmak. Doğrusu: taller.",
+     "en": "We use comparative forms to compare two things and superlative forms to say which is the most.\nShort adjectives: -er / the -est (tall → taller → the tallest). Long adjectives: more / the most (more interesting). Use than when comparing.\nCommon mistake: mixing both, like “more taller”. Say taller."
+    },
+    "examples": [
+     {
+      "text": "My bag is heavier than yours.",
+      "native": {
+       "tr": "Benim çantam seninkinden daha ağır.",
+       "en": "My bag is heavier than yours."
+      }
+     },
+     {
+      "text": "This book is more interesting than that one.",
+      "native": {
+       "tr": "Bu kitap şundan daha ilginç.",
+       "en": "This book is more interesting than that one."
+      }
+     },
+     {
+      "text": "He is the tallest boy in the class.",
+      "native": {
+       "tr": "O sınıftaki en uzun çocuk.",
+       "en": "He is the tallest boy in the class."
+      }
+     },
+     {
+      "text": "Today is the hottest day of the year.",
+      "native": {
+       "tr": "Bugün yılın en sıcak günü.",
+       "en": "Today is the hottest day of the year."
+      }
+     }
+    ]
+   }
   },
   {
    "id": "must-should",
@@ -2019,7 +2451,43 @@
       "tr": "Öğrenciler sınavda telefon kullanmamalı."
      }
     }
-   ]
+   ],
+   "learn": {
+    "explain": {
+     "tr": "Must ve have to zorunluluğu, should ise tavsiyeyi anlatır.\nKalıp: must/should + yalın fiil (You should rest). Have to fiil gibi çekilir: She has to work.\nDikkat: must not yasak demektir, do not have to ise “zorunda değilsin” demektir. Geçmişte had to kullanılır.\nSık yapılan hata: “must to go” demek. Doğrusu: must go.",
+     "en": "Must and have to show necessity; should gives advice.\nPattern: must/should + base verb (You should rest). Have to changes like a normal verb: She has to work.\nNote: must not means it is forbidden, but do not have to means it is not necessary. In the past, use had to.\nCommon mistake: saying “must to go”. Say must go."
+    },
+    "examples": [
+     {
+      "text": "You should drink more water.",
+      "native": {
+       "tr": "Daha çok su içmelisin.",
+       "en": "You should drink more water."
+      }
+     },
+     {
+      "text": "I have to wake up early tomorrow.",
+      "native": {
+       "tr": "Yarın erken kalkmak zorundayım.",
+       "en": "I have to wake up early tomorrow."
+      }
+     },
+     {
+      "text": "You must not park here.",
+      "native": {
+       "tr": "Buraya park etmemelisin.",
+       "en": "You must not park here."
+      }
+     },
+     {
+      "text": "We don't have to pay.",
+      "native": {
+       "tr": "Ödemek zorunda değiliz.",
+       "en": "We don't have to pay."
+      }
+     }
+    ]
+   }
   },
   {
    "id": "prepositions",
@@ -2173,7 +2641,43 @@
       "tr": "Onunla otobüs durağında buluştum."
      }
     }
-   ]
+   ],
+   "learn": {
+    "explain": {
+     "tr": "In, on ve at zaman ve yer bildirir.\nZaman: at saat için (at nine), on gün için (on Monday), in ay, yıl ve mevsim için (in May).\nYer: at bir nokta (at school), on bir yüzey (on the table), in bir alan veya şehir (in Istanbul).\nSık yapılan hata: Türkçedeki -de/-da eki tek olduğu için hepsini aynı sanmak. “In Monday” değil, on Monday denir.",
+     "en": "In, on and at show time and place.\nTime: at for clock times (at nine), on for days (on Monday), in for months, years and seasons (in May).\nPlace: at for a point (at school), on for a surface (on the table), in for an area or city (in Istanbul).\nCommon mistake: Turkish uses one ending (-de/-da) for all of these, so learners mix them up. Say on Monday, not “in Monday”."
+    },
+    "examples": [
+     {
+      "text": "The meeting is at three o'clock.",
+      "native": {
+       "tr": "Toplantı saat üçte.",
+       "en": "The meeting is at three o'clock."
+      }
+     },
+     {
+      "text": "My birthday is on Friday.",
+      "native": {
+       "tr": "Doğum günüm cuma günü.",
+       "en": "My birthday is on Friday."
+      }
+     },
+     {
+      "text": "It is cold in winter.",
+      "native": {
+       "tr": "Kışın hava soğuk.",
+       "en": "It is cold in winter."
+      }
+     },
+     {
+      "text": "The keys are on the table.",
+      "native": {
+       "tr": "Anahtarlar masanın üstünde.",
+       "en": "The keys are on the table."
+      }
+     }
+    ]
+   }
   },
   {
    "id": "quantifiers",
@@ -2328,7 +2832,43 @@
       "tr": "Bugün hiç param yok."
      }
     }
-   ]
+   ],
+   "learn": {
+    "explain": {
+     "tr": "Some, any, much ve many miktar bildirir.\nOlumlu cümlede some, olumsuz ve soruda any kullanılır. Sayılabilenlerle many (many books), sayılamayanlarla much (much water) gelir.\nSık yapılan hata: “many water” demek. Su sayılamaz, bu yüzden much water denir.",
+     "en": "Some, any, much and many talk about quantity.\nUse some in positive sentences and any in negatives and questions. Use many with countable nouns (many books) and much with uncountable nouns (much water).\nCommon mistake: saying “many water”. Water is uncountable, so say much water."
+    },
+    "examples": [
+     {
+      "text": "I have some friends in London.",
+      "native": {
+       "tr": "Londra'da bazı arkadaşlarım var.",
+       "en": "I have some friends in London."
+      }
+     },
+     {
+      "text": "We don't have any bread.",
+      "native": {
+       "tr": "Hiç ekmeğimiz yok.",
+       "en": "We don't have any bread."
+      }
+     },
+     {
+      "text": "There isn't much time.",
+      "native": {
+       "tr": "Fazla zaman yok.",
+       "en": "There isn't much time."
+      }
+     },
+     {
+      "text": "How many students are in your class?",
+      "native": {
+       "tr": "Sınıfında kaç öğrenci var?",
+       "en": "How many students are in your class?"
+      }
+     }
+    ]
+   }
   },
   {
    "id": "present-perfect",
@@ -2494,7 +3034,43 @@
       "tr": "Kardeşim kapıyı açmadı."
      }
     }
-   ]
+   ],
+   "learn": {
+    "explain": {
+     "tr": "Geçmişte olup şimdiyle bağlantılı olayları, yaşam deneyimlerini ve “henüz/çoktan” durumlarını anlatır.\nKalıp: have/has + üçüncü fiil (V3) (I have finished). Olumsuz: has not. Soru: Have you ever been to Rome?\nZamanı belli geçmiş olaylarda (yesterday) kullanılmaz.\nSık yapılan hata: “I have seen him yesterday” demek. Doğrusu: I saw him yesterday.",
+     "en": "It describes past events connected to now, life experiences, and things “already” or “not yet” done.\nPattern: have/has + past participle (V3) (I have finished). Negative: has not. Question: Have you ever been to Rome?\nDo not use it with a finished time like yesterday.\nCommon mistake: “I have seen him yesterday”. Say I saw him yesterday."
+    },
+    "examples": [
+     {
+      "text": "I have lost my keys.",
+      "native": {
+       "tr": "Anahtarlarımı kaybettim.",
+       "en": "I have lost my keys."
+      }
+     },
+     {
+      "text": "She has already left.",
+      "native": {
+       "tr": "O çoktan gitti.",
+       "en": "She has already left."
+      }
+     },
+     {
+      "text": "We have never been to Spain.",
+      "native": {
+       "tr": "Hiç İspanya'ya gitmedik.",
+       "en": "We have never been to Spain."
+      }
+     },
+     {
+      "text": "Have you finished your homework yet?",
+      "native": {
+       "tr": "Ödevini bitirdin mi?",
+       "en": "Have you finished your homework yet?"
+      }
+     }
+    ]
+   }
   },
   {
    "id": "past-continuous",
@@ -2672,7 +3248,43 @@
       "tr": "Biz çalışırken öğretmen içeri girdi."
      }
     }
-   ]
+   ],
+   "learn": {
+    "explain": {
+     "tr": "Geçmişte belli bir anda devam etmekte olan eylemi anlatır.\nKalıp: was/were + fiil-ing (I was reading). Olumsuz: was not. Soru: Were you sleeping?\nKısa bir olay araya girerse when, uzun iki eylem birlikte sürerse while kullanılır.\nSık yapılan hata: “I was read” demek. Fiile -ing eklemeyi unutma: I was reading.",
+     "en": "It describes an action that was in progress at a certain moment in the past.\nPattern: was/were + verb-ing (I was reading). Negative: was not. Question: Were you sleeping?\nUse when with a short interrupting event, and while for a longer action.\nCommon mistake: saying “I was read”. Add -ing: I was reading."
+    },
+    "examples": [
+     {
+      "text": "I was cooking when you called.",
+      "native": {
+       "tr": "Sen aradığında yemek yapıyordum.",
+       "en": "I was cooking when you called."
+      }
+     },
+     {
+      "text": "They were sleeping at midnight.",
+      "native": {
+       "tr": "Gece yarısı uyuyorlardı.",
+       "en": "They were sleeping at midnight."
+      }
+     },
+     {
+      "text": "It was raining while we were walking.",
+      "native": {
+       "tr": "Yürürken yağmur yağıyordu.",
+       "en": "It was raining while we were walking."
+      }
+     },
+     {
+      "text": "What were you doing at eight?",
+      "native": {
+       "tr": "Saat sekizde ne yapıyordun?",
+       "en": "What were you doing at eight?"
+      }
+     }
+    ]
+   }
   },
   {
    "id": "conditionals",
@@ -2859,7 +3471,43 @@
       "tr": "Hava güneşliyse piknik yaparız."
      }
     }
-   ]
+   ],
+   "learn": {
+    "explain": {
+     "tr": "If cümleleri bir şartı ve sonucunu anlatır.\nGerçek ihtimal: if + şimdiki zaman, will + fiil (If it rains, I will stay home). Hayali durum: if + geçmiş zaman, would + fiil (If I had money, I would travel).\nSık yapılan hata: if'ten sonra will kullanmak. “If it will rain” değil, If it rains denir.",
+     "en": "If sentences describe a condition and its result.\nReal possibility: if + present, will + verb (If it rains, I will stay home). Imaginary situation: if + past, would + verb (If I had money, I would travel).\nCommon mistake: using will after if. Say If it rains, not “If it will rain”."
+    },
+    "examples": [
+     {
+      "text": "If you study, you will pass the exam.",
+      "native": {
+       "tr": "Çalışırsan sınavı geçersin.",
+       "en": "If you study, you will pass the exam."
+      }
+     },
+     {
+      "text": "If I see him, I will tell him.",
+      "native": {
+       "tr": "Onu görürsem ona söylerim.",
+       "en": "If I see him, I will tell him."
+      }
+     },
+     {
+      "text": "If I were rich, I would buy a house.",
+      "native": {
+       "tr": "Zengin olsaydım bir ev alırdım.",
+       "en": "If I were rich, I would buy a house."
+      }
+     },
+     {
+      "text": "She would help you if you asked.",
+      "native": {
+       "tr": "Sorsan sana yardım ederdi.",
+       "en": "She would help you if you asked."
+      }
+     }
+    ]
+   }
   },
   {
    "id": "passive",
@@ -3025,7 +3673,43 @@
       "tr": "Bu film dün gece izlendi mi?"
      }
     }
-   ]
+   ],
+   "learn": {
+    "explain": {
+     "tr": "Edilgen yapı, işi yapandan çok işin kendisi önemliyse kullanılır.\nKalıp: be + üçüncü fiil (V3). Şimdiki zamanda is/are, geçmişte was/were (The cake was eaten).\nİşi yapanı söylemek istersek by ekleriz: The book was written by her.\nSık yapılan hata: be fiilini unutmak. “The door locked” değil, The door is locked denir.",
+     "en": "The passive is used when the action matters more than who did it.\nPattern: be + past participle (V3). Use is/are in the present and was/were in the past (The cake was eaten).\nTo name the doer, add by: The book was written by her.\nCommon mistake: forgetting “be”. Say The door is locked, not “The door locked”."
+    },
+    "examples": [
+     {
+      "text": "English is spoken all over the world.",
+      "native": {
+       "tr": "İngilizce dünyanın her yerinde konuşulur.",
+       "en": "English is spoken all over the world."
+      }
+     },
+     {
+      "text": "The window was broken yesterday.",
+      "native": {
+       "tr": "Pencere dün kırıldı.",
+       "en": "The window was broken yesterday."
+      }
+     },
+     {
+      "text": "These cars are made in Turkey.",
+      "native": {
+       "tr": "Bu arabalar Türkiye'de yapılıyor.",
+       "en": "These cars are made in Turkey."
+      }
+     },
+     {
+      "text": "The letter was sent by my boss.",
+      "native": {
+       "tr": "Mektup patronum tarafından gönderildi.",
+       "en": "The letter was sent by my boss."
+      }
+     }
+    ]
+   }
   },
   {
    "id": "relative-clauses",
@@ -3191,7 +3875,43 @@
       "tr": "Çocukların oynadığı park kapalı."
      }
     }
-   ]
+   ],
+   "learn": {
+    "explain": {
+     "tr": "Bir ismi daha ayrıntılı anlatmak için kullanılır.\nWho kişiler için, which/that şeyler için, where yerler için, whose aitlik için kullanılır: The man who lives here is a doctor.\nİngilizcede ilgi cümlesi isimden sonra gelir, Türkçedeki gibi önce gelmez.\nSık yapılan hata: who'dan sonra kişiyi tekrar etmek. “The man who he lives here” değil, The man who lives here.",
+     "en": "Relative clauses give more detail about a noun.\nUse who for people, which/that for things, where for places and whose for belonging: The man who lives here is a doctor.\nIn English the clause comes after the noun, not before it as in Turkish.\nCommon mistake: repeating the person after who. Say The man who lives here, not “The man who he lives here”."
+    },
+    "examples": [
+     {
+      "text": "The girl who sits next to me is Ayşe.",
+      "native": {
+       "tr": "Yanımda oturan kız Ayşe.",
+       "en": "The girl who sits next to me is Ayşe."
+      }
+     },
+     {
+      "text": "This is the book that I told you about.",
+      "native": {
+       "tr": "Bu, sana anlattığım kitap.",
+       "en": "This is the book that I told you about."
+      }
+     },
+     {
+      "text": "That is the café where we met.",
+      "native": {
+       "tr": "Orası tanıştığımız kafe.",
+       "en": "That is the café where we met."
+      }
+     },
+     {
+      "text": "I know a man whose son is a pilot.",
+      "native": {
+       "tr": "Oğlu pilot olan bir adam tanıyorum.",
+       "en": "I know a man whose son is a pilot."
+      }
+     }
+    ]
+   }
   },
   {
    "id": "reported-speech",
@@ -3357,7 +4077,43 @@
       "tr": "Daha sonra beni arayacaklarını söylediler."
      }
     }
-   ]
+   ],
+   "learn": {
+    "explain": {
+     "tr": "Dolaylı anlatım, birinin söylediğini sonradan aktarmak için kullanılır.\nAktaran fiil geçmişteyse zaman genellikle bir adım geriye gider: am/is → was, will → would, do → did.\nÖrnek: “I am tired” → She said that she was tired.\nSık yapılan hata: Zamanı geri götürmeyi unutmak. “She said she is tired” yerine She said she was tired denir.",
+     "en": "Reported speech tells what someone said earlier.\nWhen the reporting verb is in the past, the tense usually moves one step back: am/is → was, will → would, do → did.\nExample: “I am tired” → She said that she was tired.\nCommon mistake: forgetting to shift the tense. Say She said she was tired, not “She said she is tired”."
+    },
+    "examples": [
+     {
+      "text": "He said that he was busy.",
+      "native": {
+       "tr": "Meşgul olduğunu söyledi.",
+       "en": "He said that he was busy."
+      }
+     },
+     {
+      "text": "She told me that she would come.",
+      "native": {
+       "tr": "Bana geleceğini söyledi.",
+       "en": "She told me that she would come."
+      }
+     },
+     {
+      "text": "They said they didn't know the answer.",
+      "native": {
+       "tr": "Cevabı bilmediklerini söylediler.",
+       "en": "They said they didn't know the answer."
+      }
+     },
+     {
+      "text": "My mother said that dinner was ready.",
+      "native": {
+       "tr": "Annem yemeğin hazır olduğunu söyledi.",
+       "en": "My mother said that dinner was ready."
+      }
+     }
+    ]
+   }
   },
   {
    "id": "wish",
@@ -3523,7 +4279,43 @@
       "tr": "Keşke daha erken çıksaydık."
      }
     }
-   ]
+   ],
+   "learn": {
+    "explain": {
+     "tr": "Wish, istediğin ama olmayan durumlar ve pişmanlıklar için kullanılır.\nŞimdiki durum: I wish + geçmiş zaman (I wish I had more time). Geçmiş pişmanlık: I wish + had + V3 ya da should have + V3 (I should have studied).\nSık yapılan hata: Şimdi için geçmiş zaman kullanmayı yanlış sanmak. “I wish I have a car” değil, I wish I had a car denir.",
+     "en": "Wish is used for things you want but do not have, and for regrets.\nPresent situation: I wish + past tense (I wish I had more time). Past regret: I wish + had + V3, or should have + V3 (I should have studied).\nCommon mistake: using the present tense after wish. Say I wish I had a car, not “I wish I have a car”."
+    },
+    "examples": [
+     {
+      "text": "I wish I could fly.",
+      "native": {
+       "tr": "Keşke uçabilsem.",
+       "en": "I wish I could fly."
+      }
+     },
+     {
+      "text": "I wish I had a bigger house.",
+      "native": {
+       "tr": "Keşke daha büyük bir evim olsaydı.",
+       "en": "I wish I had a bigger house."
+      }
+     },
+     {
+      "text": "She wishes she had called him.",
+      "native": {
+       "tr": "Keşke onu arasaydı.",
+       "en": "She wishes she had called him."
+      }
+     },
+     {
+      "text": "We should have left earlier.",
+      "native": {
+       "tr": "Daha erken çıkmalıydık.",
+       "en": "We should have left earlier."
+      }
+     }
+    ]
+   }
   }
  ]
 }

@@ -175,7 +175,43 @@
      ],
      "alt": []
     }
-   ]
+   ],
+   "learn": {
+    "explain": {
+     "tr": "Essere 'olmak' fiilidir. Kim olduğunu, nereli olduğunu ve nasıl olduğunu söylemek için kullanılır.\nÇekim: io sono, tu sei, lui/lei è, noi siamo, voi siete, loro sono.\nİtalyancada özne zamiri genelde atılır: 'Sono stanco' yeterlidir.\nSık hata: 'sono' hem 'ben...ım' hem 'onlar...dır' demektir; è (olumlu, aksanlı) ile e (ve) karıştırılır.",
+     "en": "Essere means 'to be'. Use it to say who you are, where you are from and how you feel.\nForms: io sono, tu sei, lui/lei è, noi siamo, voi siete, loro sono.\nItalian often drops the subject pronoun: 'Sono stanco' is enough.\nCommon mistake: mixing up è (is) with e (and); the accent matters."
+    },
+    "examples": [
+     {
+      "text": "Sono stanco dopo il lavoro.",
+      "native": {
+       "tr": "İşten sonra yorgunum.",
+       "en": "I am tired after work."
+      }
+     },
+     {
+      "text": "Tu sei molto gentile.",
+      "native": {
+       "tr": "Çok naziksin.",
+       "en": "You are very kind."
+      }
+     },
+     {
+      "text": "Noi siamo a casa questa sera.",
+      "native": {
+       "tr": "Bu akşam evdeyiz.",
+       "en": "We are at home this evening."
+      }
+     },
+     {
+      "text": "Lei è una brava dottoressa.",
+      "native": {
+       "tr": "O iyi bir doktor.",
+       "en": "She is a good doctor."
+      }
+     }
+    ]
+   }
   },
   {
    "id": "avere",
@@ -351,7 +387,43 @@
      ],
      "alt": []
     }
-   ]
+   ],
+   "learn": {
+    "explain": {
+     "tr": "Avere 'sahip olmak' demektir. Eşyaları, aileyi, yaşı ve bazı durumları (açlık, korku) anlatırız.\nÇekim: io ho, tu hai, lui/lei ha, noi abbiamo, voi avete, loro hanno.\nYaş için 'olmak' değil 'avere' kullanılır: 'Ho vent'anni'.\nSık hata: 'Sono vent'anni' demek. Doğrusu 'Ho vent'anni'. Ayrıca h harfi okunmaz.",
+     "en": "Avere means 'to have'. It shows possession, family, age and some feelings like hunger or fear.\nForms: io ho, tu hai, lui/lei ha, noi abbiamo, voi avete, loro hanno.\nFor age Italian uses 'have', not 'be': 'Ho vent'anni'.\nCommon mistake: saying 'Sono vent'anni'. The right form is 'Ho vent'anni'. The h is silent."
+    },
+    "examples": [
+     {
+      "text": "Ho una macchina nuova.",
+      "native": {
+       "tr": "Yeni bir arabam var.",
+       "en": "I have a new car."
+      }
+     },
+     {
+      "text": "Hai fame?",
+      "native": {
+       "tr": "Acıktın mı?",
+       "en": "Are you hungry?"
+      }
+     },
+     {
+      "text": "Abbiamo due gatti a casa.",
+      "native": {
+       "tr": "Evde iki kedimiz var.",
+       "en": "We have two cats at home."
+      }
+     },
+     {
+      "text": "Marco ha trent'anni.",
+      "native": {
+       "tr": "Marco otuz yaşında.",
+       "en": "Marco is thirty years old."
+      }
+     }
+    ]
+   }
   },
   {
    "id": "articoli",
@@ -527,7 +599,43 @@
      ],
      "alt": []
     }
-   ]
+   ],
+   "learn": {
+    "explain": {
+     "tr": "İtalyancada her isim eril ya da dişildir ve önünde bir artikel durur.\nBelirli: il, lo, l' (eril), la, l' (dişil). Belirsiz: un, uno (eril), una, un' (dişil).\nLo/uno; s+ünsüz, z, gn, ps ile başlayan eril kelimelerde kullanılır: lo zaino, uno studente.\nSık hata: 'il zaino' demek; doğrusu 'lo zaino'.",
+     "en": "Every Italian noun is masculine or feminine and usually comes with an article.\nDefinite: il, lo, l' (masc.), la, l' (fem.). Indefinite: un, uno (masc.), una, un' (fem.).\nUse lo/uno before masculine words starting with s+consonant, z, gn or ps: lo zaino, uno studente.\nCommon mistake: saying 'il zaino'; the correct form is 'lo zaino'."
+    },
+    "examples": [
+     {
+      "text": "La mela è sul tavolo.",
+      "native": {
+       "tr": "Elma masanın üstünde.",
+       "en": "The apple is on the table."
+      }
+     },
+     {
+      "text": "Ho uno zaino blu.",
+      "native": {
+       "tr": "Mavi bir sırt çantam var.",
+       "en": "I have a blue backpack."
+      }
+     },
+     {
+      "text": "L'amico di Luca arriva domani.",
+      "native": {
+       "tr": "Luca'nın arkadaşı yarın geliyor.",
+       "en": "Luca's friend arrives tomorrow."
+      }
+     },
+     {
+      "text": "Vorrei una birra, per favore.",
+      "native": {
+       "tr": "Bir bira rica ederim.",
+       "en": "I would like a beer, please."
+      }
+     }
+    ]
+   }
   },
   {
    "id": "presente-are",
@@ -702,7 +810,43 @@
      ],
      "alt": []
     }
-   ]
+   ],
+   "learn": {
+    "explain": {
+     "tr": "-are ile biten fiiller (parlare, mangiare, lavorare) İtalyancada en yaygın gruptur.\nKökü al, sonu değiştir: -o, -i, -a, -iamo, -ate, -ano. Örnek: parlare → parlo, parli, parla.\nŞimdiki zaman hem 'konuşuyorum' hem 'konuşurum' anlamına gelir.\nSık hata: -iamo yerine -amo yazmak; doğrusu 'parliamo', 'mangiamo'.",
+     "en": "Verbs ending in -are (parlare, mangiare, lavorare) are the biggest group in Italian.\nDrop -are and add: -o, -i, -a, -iamo, -ate, -ano. Example: parlare → parlo, parli, parla.\nThe present covers both 'I speak' and 'I am speaking'.\nCommon mistake: writing -amo instead of -iamo; the right form is 'parliamo', 'mangiamo'."
+    },
+    "examples": [
+     {
+      "text": "Lavoro in un ufficio in centro.",
+      "native": {
+       "tr": "Şehir merkezinde bir ofiste çalışıyorum.",
+       "en": "I work in an office downtown."
+      }
+     },
+     {
+      "text": "Tu abiti a Milano?",
+      "native": {
+       "tr": "Sen Milano'da mı oturuyorsun?",
+       "en": "Do you live in Milan?"
+      }
+     },
+     {
+      "text": "Mangiamo la pasta stasera.",
+      "native": {
+       "tr": "Bu akşam makarna yiyoruz.",
+       "en": "We are eating pasta tonight."
+      }
+     },
+     {
+      "text": "Loro studiano inglese ogni giorno.",
+      "native": {
+       "tr": "Onlar her gün İngilizce çalışıyor.",
+       "en": "They study English every day."
+      }
+     }
+    ]
+   }
   },
   {
    "id": "presente-ere-ire",
@@ -877,7 +1021,43 @@
      ],
      "alt": []
     }
-   ]
+   ],
+   "learn": {
+    "explain": {
+     "tr": "-ere (scrivere, leggere) ve -ire (dormire, partire) fiilleri -are'den biraz farklı çekilir.\n-ere: -o, -i, -e, -iamo, -ete, -ono. -ire: -o, -i, -e, -iamo, -ite, -ono.\nBazı -ire fiilleri (capire, finire) -isc- alır: capisco, capisci, capisce, capiscono.\nSık hata: 'io capo' demek; doğrusu 'io capisco'.",
+     "en": "Verbs in -ere (scrivere, leggere) and -ire (dormire, partire) are conjugated a little differently from -are verbs.\n-ere: -o, -i, -e, -iamo, -ete, -ono. -ire: -o, -i, -e, -iamo, -ite, -ono.\nSome -ire verbs (capire, finire) add -isc-: capisco, capisci, capisce, capiscono.\nCommon mistake: saying 'io capo'; the right form is 'io capisco'."
+    },
+    "examples": [
+     {
+      "text": "Leggo un libro prima di dormire.",
+      "native": {
+       "tr": "Uyumadan önce bir kitap okurum.",
+       "en": "I read a book before sleeping."
+      }
+     },
+     {
+      "text": "Tu dormi molto la domenica.",
+      "native": {
+       "tr": "Pazarları çok uyursun.",
+       "en": "You sleep a lot on Sundays."
+      }
+     },
+     {
+      "text": "Finiamo il lavoro alle sei.",
+      "native": {
+       "tr": "İşi altıda bitiriyoruz.",
+       "en": "We finish work at six."
+      }
+     },
+     {
+      "text": "Il treno parte tra cinque minuti.",
+      "native": {
+       "tr": "Tren beş dakika sonra kalkıyor.",
+       "en": "The train leaves in five minutes."
+      }
+     }
+    ]
+   }
   },
   {
    "id": "ce-ci-sono",
@@ -1054,7 +1234,43 @@
      ],
      "alt": []
     }
-   ]
+   ],
+   "learn": {
+    "explain": {
+     "tr": "C'è (tekil) ve ci sono (çoğul) 'var' demektir; bir şeyin bir yerde bulunduğunu söyler.\nOlumsuz yapmak için 'non' fiilin önüne gelir: Non c'è latte. Non ci sono sedie.\nSoru da aynı cümledir, sadece ses tonu değişir: 'C'è un bar qui?'\nSık hata: çoğulda 'c'è' demek. Doğrusu 'ci sono': 'Ci sono tre libri'.",
+     "en": "C'è (singular) and ci sono (plural) mean 'there is' and 'there are'. They say that something exists in a place.\nTo make a negative, put 'non' before the verb: Non c'è latte. Non ci sono sedie.\nA question uses the same words with a rising tone: 'C'è un bar qui?'\nCommon mistake: using 'c'è' with plurals. Say 'Ci sono tre libri'."
+    },
+    "examples": [
+     {
+      "text": "In città c'è un bel museo.",
+      "native": {
+       "tr": "Şehirde güzel bir müze var.",
+       "en": "There is a nice museum in the city."
+      }
+     },
+     {
+      "text": "Ci sono molti turisti in piazza.",
+      "native": {
+       "tr": "Meydanda çok turist var.",
+       "en": "There are many tourists in the square."
+      }
+     },
+     {
+      "text": "Non c'è pane a casa.",
+      "native": {
+       "tr": "Evde ekmek yok.",
+       "en": "There is no bread at home."
+      }
+     },
+     {
+      "text": "Ci sono posti liberi sul treno?",
+      "native": {
+       "tr": "Trende boş yer var mı?",
+       "en": "Are there free seats on the train?"
+      }
+     }
+    ]
+   }
   },
   {
    "id": "preposizioni-articolate",
@@ -1229,7 +1445,43 @@
      ],
      "alt": []
     }
-   ]
+   ],
+   "learn": {
+    "explain": {
+     "tr": "Di, a, da, in, su gibi edatlar belirli artikelle birleşir: a + il = al, in + la = nella.\nÖrnek: del (di+il), alla (a+la), dai (da+i), nello (in+lo), sul (su+il).\nBirleşme sadece belirli artikelle olur: 'in una casa' aynı kalır.\nSık hata: 'a il mercato' yazmak. Doğrusu 'al mercato'. 'Con' ve 'per' genelde ayrı yazılır.",
+     "en": "Prepositions like di, a, da, in, su merge with the definite article: a + il = al, in + la = nella.\nExamples: del (di+il), alla (a+la), dai (da+i), nello (in+lo), sul (su+il).\nThe merge only happens with the definite article: 'in una casa' stays separate.\nCommon mistake: writing 'a il mercato'. The right form is 'al mercato'. 'Con' and 'per' are usually kept separate."
+    },
+    "examples": [
+     {
+      "text": "Il gatto dorme sul divano.",
+      "native": {
+       "tr": "Kedi kanepede uyuyor.",
+       "en": "The cat is sleeping on the sofa."
+      }
+     },
+     {
+      "text": "Torniamo dalla spiaggia alle otto.",
+      "native": {
+       "tr": "Saat sekizde plajdan dönüyoruz.",
+       "en": "We come back from the beach at eight."
+      }
+     },
+     {
+      "text": "Il libro è nello zaino.",
+      "native": {
+       "tr": "Kitap sırt çantasında.",
+       "en": "The book is in the backpack."
+      }
+     },
+     {
+      "text": "Questa è la casa dei miei nonni.",
+      "native": {
+       "tr": "Bu benim büyükanne ve büyükbabamın evi.",
+       "en": "This is my grandparents' house."
+      }
+     }
+    ]
+   }
   },
   {
    "id": "passato-avere",
@@ -1404,7 +1656,43 @@
      ],
      "alt": []
     }
-   ]
+   ],
+   "learn": {
+    "explain": {
+     "tr": "Passato prossimo bitmiş geçmiş olayları anlatır. Çoğu fiille 'avere' + participio passato kurulur.\nÖrnek: ho mangiato, hai parlato, abbiamo capito. Participio: -are → -ato, -ere → -uto, -ire → -ito.\nBazı participi düzensizdir: fare → fatto, scrivere → scritto, vedere → visto.\nSık hata: 'ho mangio' demek. Doğrusu 'ho mangiato'.",
+     "en": "The passato prossimo tells about finished past events. Most verbs use 'avere' + past participle.\nExamples: ho mangiato, hai parlato, abbiamo capito. Participle: -are → -ato, -ere → -uto, -ire → -ito.\nSome participles are irregular: fare → fatto, scrivere → scritto, vedere → visto.\nCommon mistake: saying 'ho mangio'. The right form is 'ho mangiato'."
+    },
+    "examples": [
+     {
+      "text": "Ieri ho visto un bel film.",
+      "native": {
+       "tr": "Dün güzel bir film izledim.",
+       "en": "Yesterday I watched a nice movie."
+      }
+     },
+     {
+      "text": "Hai già finito il compito?",
+      "native": {
+       "tr": "Ödevi çoktan bitirdin mi?",
+       "en": "Have you already finished the homework?"
+      }
+     },
+     {
+      "text": "Abbiamo comprato il pane stamattina.",
+      "native": {
+       "tr": "Bu sabah ekmek aldık.",
+       "en": "We bought bread this morning."
+      }
+     },
+     {
+      "text": "Lei ha scritto una lettera a sua madre.",
+      "native": {
+       "tr": "O annesine bir mektup yazdı.",
+       "en": "She wrote a letter to her mother."
+      }
+     }
+    ]
+   }
   },
   {
    "id": "passato-essere",
@@ -1579,7 +1867,43 @@
      ],
      "alt": []
     }
-   ]
+   ],
+   "learn": {
+    "explain": {
+     "tr": "Hareket ve değişim fiilleri (andare, venire, partire, nascere) passato prossimo'da 'essere' alır.\nKalıp: essere + participio. Katılımcı özneyle uyum sağlar: lui è andato, lei è andata, loro sono andati.\nÖrnek: sono arrivato/arrivata, siamo partiti/partite.\nSık hata: 'ho andato' demek. Doğrusu 'sono andato'; ve uyumu unutmak: 'Maria è andato' yanlış.",
+     "en": "Verbs of movement and change (andare, venire, partire, nascere) take 'essere' in the passato prossimo.\nPattern: essere + participle. The participle agrees with the subject: lui è andato, lei è andata, loro sono andati.\nExamples: sono arrivato/arrivata, siamo partiti/partite.\nCommon mistake: saying 'ho andato'. Use 'sono andato', and do not forget agreement: 'Maria è andato' is wrong."
+    },
+    "examples": [
+     {
+      "text": "Maria è arrivata alle nove.",
+      "native": {
+       "tr": "Maria dokuzda geldi.",
+       "en": "Maria arrived at nine."
+      }
+     },
+     {
+      "text": "Siamo partiti presto stamattina.",
+      "native": {
+       "tr": "Bu sabah erken yola çıktık.",
+       "en": "We left early this morning."
+      }
+     },
+     {
+      "text": "Sei stato a Roma l'anno scorso?",
+      "native": {
+       "tr": "Geçen yıl Roma'da bulundun mu?",
+       "en": "Were you in Rome last year?"
+      }
+     },
+     {
+      "text": "I miei amici sono usciti dopo cena.",
+      "native": {
+       "tr": "Arkadaşlarım yemekten sonra dışarı çıktı.",
+       "en": "My friends went out after dinner."
+      }
+     }
+    ]
+   }
   },
   {
    "id": "riflessivi",
@@ -1754,7 +2078,43 @@
      ],
      "alt": []
     }
-   ]
+   ],
+   "learn": {
+    "explain": {
+     "tr": "Reflexive fiiller işin kişinin kendine yapıldığını gösterir: svegliarsi, lavarsi, chiamarsi.\nKalıp: mi, ti, si, ci, vi, si fiilin önüne gelir: mi alzo, ti lavi, si veste.\nGünlük rutinleri anlatırken çok kullanılır.\nSık hata: zamiri unutmak. 'Io alzo alle sette' değil, 'Mi alzo alle sette'.",
+     "en": "Reflexive verbs show that the action is done to oneself: svegliarsi, lavarsi, chiamarsi.\nPattern: mi, ti, si, ci, vi, si goes before the verb: mi alzo, ti lavi, si veste.\nThey are very common for daily routines.\nCommon mistake: forgetting the pronoun. Not 'Io alzo alle sette' but 'Mi alzo alle sette'."
+    },
+    "examples": [
+     {
+      "text": "Mi sveglio alle sette ogni mattina.",
+      "native": {
+       "tr": "Her sabah yedide uyanırım.",
+       "en": "I wake up at seven every morning."
+      }
+     },
+     {
+      "text": "Ti lavi i denti prima di dormire?",
+      "native": {
+       "tr": "Yatmadan önce dişlerini fırçalıyor musun?",
+       "en": "Do you brush your teeth before sleeping?"
+      }
+     },
+     {
+      "text": "Luca si veste in fretta.",
+      "native": {
+       "tr": "Luca aceleyle giyiniyor.",
+       "en": "Luca gets dressed in a hurry."
+      }
+     },
+     {
+      "text": "Ci divertiamo molto alle feste.",
+      "native": {
+       "tr": "Partilerde çok eğleniriz.",
+       "en": "We have a lot of fun at parties."
+      }
+     }
+    ]
+   }
   },
   {
    "id": "imperfetto-passato",
@@ -1940,7 +2300,43 @@
      ],
      "answer": 2
     }
-   ]
+   ],
+   "learn": {
+    "explain": {
+     "tr": "Imperfetto alışkanlıkları, süregelen durumları ve arka planı anlatır. Passato prossimo bitmiş tek olayı.\nImperfetto: -avo, -avi, -ava, -avamo, -avate, -avano (-are); -evo, -ivo benzer.\nÖrnek: 'Pioveva (arka plan) quando sono uscito (olay)'.\nSık hata: alışkanlık için passato prossimo kullanmak: 'Da piccolo ho giocato sempre' yerine 'giocavo sempre'.",
+     "en": "The imperfetto describes habits, ongoing states and background. The passato prossimo describes a single finished event.\nImperfetto: -avo, -avi, -ava, -avamo, -avate, -avano (-are); -evo, -ivo are similar.\nExample: 'Pioveva (background) quando sono uscito (event)'.\nCommon mistake: using passato prossimo for habits: say 'giocavo sempre', not 'Da piccolo ho giocato sempre'."
+    },
+    "examples": [
+     {
+      "text": "Da bambina abitavo in campagna.",
+      "native": {
+       "tr": "Çocukken kırda yaşardım.",
+       "en": "As a girl I lived in the countryside."
+      }
+     },
+     {
+      "text": "Mentre cucinavo, è suonato il telefono.",
+      "native": {
+       "tr": "Yemek yaparken telefon çaldı.",
+       "en": "While I was cooking, the phone rang."
+      }
+     },
+     {
+      "text": "Ogni estate andavamo dai nonni.",
+      "native": {
+       "tr": "Her yaz büyükanne ve büyükbabamıza giderdik.",
+       "en": "Every summer we went to our grandparents."
+      }
+     },
+     {
+      "text": "Faceva freddo e nevicava.",
+      "native": {
+       "tr": "Hava soğuktu ve kar yağıyordu.",
+       "en": "It was cold and snowing."
+      }
+     }
+    ]
+   }
   },
   {
    "id": "futuro-semplice",
@@ -2126,7 +2522,43 @@
      ],
      "answer": 2
     }
-   ]
+   ],
+   "learn": {
+    "explain": {
+     "tr": "Futuro semplice gelecekteki planları ve tahminleri anlatır.\nKök + -ò, -ai, -à, -emo, -ete, -anno. -are fiillerinde a → e olur: parlare → parlerò.\nDüzensizler: essere → sarò, avere → avrò, andare → andrò, fare → farò.\nSık hata: 'parlarò' yazmak. Doğrusu 'parlerò'.",
+     "en": "The futuro semplice talks about future plans and guesses.\nStem + -ò, -ai, -à, -emo, -ete, -anno. In -are verbs a → e: parlare → parlerò.\nIrregulars: essere → sarò, avere → avrò, andare → andrò, fare → farò.\nCommon mistake: writing 'parlarò'. The right form is 'parlerò'."
+    },
+    "examples": [
+     {
+      "text": "Domani farò la spesa.",
+      "native": {
+       "tr": "Yarın alışveriş yapacağım.",
+       "en": "Tomorrow I will do the shopping."
+      }
+     },
+     {
+      "text": "Lui sarà a casa alle otto.",
+      "native": {
+       "tr": "O saat sekizde evde olacak.",
+       "en": "He will be at home at eight."
+      }
+     },
+     {
+      "text": "Il prossimo anno viaggeremo in Spagna.",
+      "native": {
+       "tr": "Gelecek yıl İspanya'ya seyahat edeceğiz.",
+       "en": "Next year we will travel to Spain."
+      }
+     },
+     {
+      "text": "Che ore saranno? Saranno le dieci.",
+      "native": {
+       "tr": "Saat kaçtır? Saat on olmuştur.",
+       "en": "What time can it be? It must be ten."
+      }
+     }
+    ]
+   }
   },
   {
    "id": "condizionale-presente",
@@ -2308,7 +2740,43 @@
      ],
      "answer": 1
     }
-   ]
+   ],
+   "learn": {
+    "explain": {
+     "tr": "Condizionale nazik istekler, öneriler ve hayali durumlar için kullanılır.\nFuturo kökü + -ei, -esti, -ebbe, -emmo, -este, -ebbero: vorrei, potresti, vorrebbe.\nKibar olmak için 'Voglio un caffè' yerine 'Vorrei un caffè' deriz.\nSık hata: 'Voglio' ile sipariş vermek (çok sert). 'Vorrei' veya 'Potrei avere' kullanın.",
+     "en": "The conditional is used for polite requests, advice and imagined situations.\nFuture stem + -ei, -esti, -ebbe, -emmo, -este, -ebbero: vorrei, potresti, vorrebbe.\nTo be polite, say 'Vorrei un caffè' instead of 'Voglio un caffè'.\nCommon mistake: ordering with 'Voglio' (sounds blunt). Use 'Vorrei' or 'Potrei avere'."
+    },
+    "examples": [
+     {
+      "text": "Potresti aprire la finestra, per favore?",
+      "native": {
+       "tr": "Pencereyi açabilir misin lütfen?",
+       "en": "Could you open the window, please?"
+      }
+     },
+     {
+      "text": "Vorremmo un tavolo per due.",
+      "native": {
+       "tr": "İki kişilik bir masa istiyoruz.",
+       "en": "We would like a table for two."
+      }
+     },
+     {
+      "text": "Dovresti dormire di più.",
+      "native": {
+       "tr": "Daha çok uyumalısın.",
+       "en": "You should sleep more."
+      }
+     },
+     {
+      "text": "Mi piacerebbe vivere al mare.",
+      "native": {
+       "tr": "Denizin kenarında yaşamak isterdim.",
+       "en": "I would love to live by the sea."
+      }
+     }
+    ]
+   }
   },
   {
    "id": "pronomi-oggetto",
@@ -2490,7 +2958,43 @@
      ],
      "answer": 1
     }
-   ]
+   ],
+   "learn": {
+    "explain": {
+     "tr": "Nesne zamirleri ismin yerine geçer. Direkt: lo, la, li, le (onu, onları). Endirekt: gli, le (ona).\nFiilin önüne gelir: 'Vedo Marco' → 'Lo vedo'. 'Telefono a Anna' → 'Le telefono'.\nPassato prossimo'da participio zamirle uyumlu olur: 'L'ho vista'.\nSık hata: 'lo' ve 'gli' karıştırmak. 'Gli parlo' (ona konuşuyorum), 'lo vedo' (onu görüyorum).",
+     "en": "Object pronouns replace a noun. Direct: lo, la, li, le (him/her/them). Indirect: gli, le (to him/her).\nThey go before the verb: 'Vedo Marco' → 'Lo vedo'. 'Telefono ad Anna' → 'Le telefono'.\nIn the passato prossimo the participle agrees with a direct pronoun: 'L'ho vista'.\nCommon mistake: mixing up 'lo' and 'gli'. 'Gli parlo' (I talk to him), 'Lo vedo' (I see him)."
+    },
+    "examples": [
+     {
+      "text": "La chiamo ogni sera.",
+      "native": {
+       "tr": "Onu her akşam arıyorum.",
+       "en": "I call her every evening."
+      }
+     },
+     {
+      "text": "Gli ho dato il libro ieri.",
+      "native": {
+       "tr": "Ona kitabı dün verdim.",
+       "en": "I gave him the book yesterday."
+      }
+     },
+     {
+      "text": "Li vedi spesso?",
+      "native": {
+       "tr": "Onları sık görüyor musun?",
+       "en": "Do you see them often?"
+      }
+     },
+     {
+      "text": "Le scrivo un messaggio adesso.",
+      "native": {
+       "tr": "Şimdi ona bir mesaj yazıyorum.",
+       "en": "I am writing her a message now."
+      }
+     }
+    ]
+   }
   },
   {
    "id": "ci-ne",
@@ -2672,7 +3176,43 @@
      ],
      "answer": 1
     }
-   ]
+   ],
+   "learn": {
+    "explain": {
+     "tr": "Ci 'oraya/orada' demektir. Ne ise 'ondan, ondan bir miktar' anlamına gelir.\nCi yer yerine geçer: 'Vai a Roma?' → 'Sì, ci vado.' Ne miktar yerine: 'Hai due fratelli?' → 'Sì, ne ho due.'\nİkisi de fiilin önüne gelir.\nSık hata: 'ne' kullanırken miktarı atlamak. 'Ne ho' değil, 'Ne ho due / tre / molti'.",
+     "en": "Ci means 'there'. Ne means 'of it/of them' and is used with quantities.\nCi replaces a place: 'Vai a Roma?' → 'Sì, ci vado.' Ne replaces a quantity: 'Hai due fratelli?' → 'Sì, ne ho due.'\nBoth go before the verb.\nCommon mistake: dropping the quantity with 'ne'. Say 'Ne ho due / tre / molti'."
+    },
+    "examples": [
+     {
+      "text": "Vai in palestra? Sì, ci vado stasera.",
+      "native": {
+       "tr": "Spora gidiyor musun? Evet, bu akşam gidiyorum.",
+       "en": "Are you going to the gym? Yes, I'm going tonight."
+      }
+     },
+     {
+      "text": "Quanti caffè bevi? Ne bevo tre.",
+      "native": {
+       "tr": "Kaç kahve içiyorsun? Üç tane içiyorum.",
+       "en": "How many coffees do you drink? I drink three."
+      }
+     },
+     {
+      "text": "Ci siamo stati l'estate scorsa.",
+      "native": {
+       "tr": "Geçen yaz oradaydık.",
+       "en": "We were there last summer."
+      }
+     },
+     {
+      "text": "Hai della frutta? Sì, ne ho un po'.",
+      "native": {
+       "tr": "Meyven var mı? Evet, biraz var.",
+       "en": "Do you have any fruit? Yes, I have some."
+      }
+     }
+    ]
+   }
   },
   {
    "id": "imperativo",
@@ -2854,7 +3394,43 @@
      ],
      "answer": 2
     }
-   ]
+   ],
+   "learn": {
+    "explain": {
+     "tr": "Imperativo emir ve rica için kullanılır: yemek tarifleri, tavsiyeler, uyarılar.\nTu: parla, scrivi, dormi. Voi: parlate, scrivete, dormite. Noi: parliamo.\nOlumsuz 'tu' için 'non + mastar': Non parlare! Diğer kişilerde non + aynı form.\nSık hata: 'Non parla!' demek. Doğrusu 'Non parlare!' (tu için).",
+     "en": "The imperative is used for commands, requests, recipes and advice.\nTu: parla, scrivi, dormi. Voi: parlate, scrivete, dormite. Noi: parliamo.\nNegative 'tu' uses 'non + infinitive': Non parlare! Other persons keep the same form after non.\nCommon mistake: saying 'Non parla!'. The right form is 'Non parlare!' (for tu)."
+    },
+    "examples": [
+     {
+      "text": "Apri la porta, per favore.",
+      "native": {
+       "tr": "Kapıyı aç lütfen.",
+       "en": "Open the door, please."
+      }
+     },
+     {
+      "text": "Aspettate qui un momento.",
+      "native": {
+       "tr": "Burada bir dakika bekleyin.",
+       "en": "Wait here a moment."
+      }
+     },
+     {
+      "text": "Non dimenticare le chiavi!",
+      "native": {
+       "tr": "Anahtarları unutma!",
+       "en": "Don't forget the keys!"
+      }
+     },
+     {
+      "text": "Andiamo al cinema stasera!",
+      "native": {
+       "tr": "Bu akşam sinemaya gidelim!",
+       "en": "Let's go to the cinema tonight!"
+      }
+     }
+    ]
+   }
   },
   {
    "id": "relativi-che-cui",
@@ -3038,7 +3614,43 @@
      ],
      "answer": 0
     }
-   ]
+   ],
+   "learn": {
+    "explain": {
+     "tr": "Che ve cui iki cümleyi birleştirir. Che özne ya da nesne olabilir ve edatsız kullanılır: 'L'uomo che parla'.\nCui edatla birlikte gelir: di cui, a cui, con cui, in cui. 'La ragazza con cui lavoro'.\nÖrnek: 'Il film di cui parli è bello.'\nSık hata: 'Il film che parli' demek. Doğrusu 'di cui parli' (fiil 'parlare di' ister).",
+     "en": "Che and cui link two sentences. Che can be subject or object and never takes a preposition: 'L'uomo che parla'.\nCui comes with a preposition: di cui, a cui, con cui, in cui. 'La ragazza con cui lavoro'.\nExample: 'Il film di cui parli è bello.'\nCommon mistake: saying 'Il film che parli'. The right form is 'di cui parli' (the verb needs 'di')."
+    },
+    "examples": [
+     {
+      "text": "La donna che abita qui è mia zia.",
+      "native": {
+       "tr": "Burada oturan kadın benim teyzem.",
+       "en": "The woman who lives here is my aunt."
+      }
+     },
+     {
+      "text": "Questo è l'amico con cui viaggio.",
+      "native": {
+       "tr": "Bu, birlikte seyahat ettiğim arkadaş.",
+       "en": "This is the friend I travel with."
+      }
+     },
+     {
+      "text": "La città in cui sono nato è piccola.",
+      "native": {
+       "tr": "Doğduğum şehir küçük.",
+       "en": "The city where I was born is small."
+      }
+     },
+     {
+      "text": "Ho perso il telefono che mi hai regalato.",
+      "native": {
+       "tr": "Bana hediye ettiğin telefonu kaybettim.",
+       "en": "I lost the phone you gave me."
+      }
+     }
+    ]
+   }
   },
   {
    "id": "congiuntivo-presente",
@@ -3220,7 +3832,43 @@
      ],
      "answer": 2
     }
-   ]
+   ],
+   "learn": {
+    "explain": {
+     "tr": "Congiuntivo görüş, şüphe, umut ve duygu bildiren ifadelerden sonra gelir: penso che, spero che, credo che.\nKalıp: -are → -i, -i, -i, -iamo, -iate, -ino. -ere/-ire → -a, -a, -a, -iamo, -iate, -ano. Essere: sia; avere: abbia.\nÖzne aynıysa mastar: 'Spero di venire'. Farklıysa congiuntivo: 'Spero che tu venga'.\nSık hata: 'Penso che è' demek. Doğrusu 'Penso che sia'.",
+     "en": "The subjunctive follows expressions of opinion, doubt, hope and emotion: penso che, spero che, credo che.\nPattern: -are → -i, -i, -i, -iamo, -iate, -ino. -ere/-ire → -a, -a, -a, -iamo, -iate, -ano. Essere: sia; avere: abbia.\nSame subject → infinitive: 'Spero di venire'. Different subject → subjunctive: 'Spero che tu venga'.\nCommon mistake: saying 'Penso che è'. The right form is 'Penso che sia'."
+    },
+    "examples": [
+     {
+      "text": "Credo che Anna abbia ragione.",
+      "native": {
+       "tr": "Anna'nın haklı olduğunu düşünüyorum.",
+       "en": "I believe Anna is right."
+      }
+     },
+     {
+      "text": "Spero che tu stia meglio.",
+      "native": {
+       "tr": "Umarım daha iyisindir.",
+       "en": "I hope you feel better."
+      }
+     },
+     {
+      "text": "Voglio che loro vengano alla festa.",
+      "native": {
+       "tr": "Onların partiye gelmesini istiyorum.",
+       "en": "I want them to come to the party."
+      }
+     },
+     {
+      "text": "Non penso che sia difficile.",
+      "native": {
+       "tr": "Zor olduğunu sanmıyorum.",
+       "en": "I don't think it is difficult."
+      }
+     }
+    ]
+   }
   },
   {
    "id": "periodo-ipotetico",
@@ -3416,7 +4064,43 @@
      ],
      "answer": 0
     }
-   ]
+   ],
+   "learn": {
+    "explain": {
+     "tr": "Periodo ipotetico 'eğer' cümleleridir. Gerçek ihtimal: se + presente → presente/futuro.\nHayali durum: se + congiuntivo imperfetto → condizionale presente.\nÖrnek: 'Se avessi tempo, viaggerei di più.' Imperfetto congiuntivo: avessi, fossi, facessi.\nSık hata: 'Se avrei tempo' demek. Se'den sonra condizionale gelmez: 'Se avessi tempo'.",
+     "en": "Hypothetical sentences are 'if' sentences. A real possibility: se + present → present/future.\nAn unreal situation: se + imperfect subjunctive → present conditional.\nExample: 'Se avessi tempo, viaggerei di più.' Imperfect subjunctive: avessi, fossi, facessi.\nCommon mistake: saying 'Se avrei tempo'. The conditional never follows 'se': say 'Se avessi tempo'."
+    },
+    "examples": [
+     {
+      "text": "Se piove, resto a casa.",
+      "native": {
+       "tr": "Yağmur yağarsa evde kalırım.",
+       "en": "If it rains, I stay at home."
+      }
+     },
+     {
+      "text": "Se fossi ricco, comprerei una barca.",
+      "native": {
+       "tr": "Zengin olsam bir tekne alırdım.",
+       "en": "If I were rich, I would buy a boat."
+      }
+     },
+     {
+      "text": "Se studiassi di più, passeresti l'esame.",
+      "native": {
+       "tr": "Daha çok çalışsan sınavı geçerdin.",
+       "en": "If you studied more, you would pass the exam."
+      }
+     },
+     {
+      "text": "Se potessimo, partiremmo subito.",
+      "native": {
+       "tr": "Yapabilsek hemen giderdik.",
+       "en": "If we could, we would leave right away."
+      }
+     }
+    ]
+   }
   },
   {
    "id": "passivo",
@@ -3598,7 +4282,43 @@
      ],
      "answer": 0
     }
-   ]
+   ],
+   "learn": {
+    "explain": {
+     "tr": "Passivo işi yapandan çok yapılan şeyi öne çıkarır: 'Il ponte è stato costruito'.\nKalıp: essere + participio. Katılımcı özneyle uyum sağlar. Yapan kişi 'da' ile gelir: 'da un architetto'.\nZamana göre essere değişir: è costruito, era costruito, è stato costruito, sarà costruito.\nSık hata: 'è costruita' yerine uyumsuz yazmak; 'La casa è costruito' yanlış, 'La casa è costruita' doğru.",
+     "en": "The passive puts the focus on what is done rather than who does it: 'Il ponte è stato costruito'.\nPattern: essere + participle. The participle agrees with the subject. The doer comes with 'da': 'da un architetto'.\nChange 'essere' for the tense: è costruito, era costruito, è stato costruito, sarà costruito.\nCommon mistake: forgetting agreement; 'La casa è costruito' is wrong, 'La casa è costruita' is right."
+    },
+    "examples": [
+     {
+      "text": "La lettera è scritta da Marco.",
+      "native": {
+       "tr": "Mektup Marco tarafından yazılmış.",
+       "en": "The letter is written by Marco."
+      }
+     },
+     {
+      "text": "Le pizze sono fatte a mano.",
+      "native": {
+       "tr": "Pizzalar elle yapılır.",
+       "en": "The pizzas are made by hand."
+      }
+     },
+     {
+      "text": "Il museo è stato aperto nel 2010.",
+      "native": {
+       "tr": "Müze 2010'da açıldı.",
+       "en": "The museum was opened in 2010."
+      }
+     },
+     {
+      "text": "La cena sarà preparata dal cuoco.",
+      "native": {
+       "tr": "Akşam yemeğini aşçı hazırlayacak.",
+       "en": "The dinner will be prepared by the cook."
+      }
+     }
+    ]
+   }
   }
  ]
 }

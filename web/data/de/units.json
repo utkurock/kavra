@@ -177,7 +177,43 @@
      ],
      "answer": 1
     }
-   ]
+   ],
+   "learn": {
+    "explain": {
+     "tr": "sein (olmak) ve haben (sahip olmak) Almancanın en önemli iki fiilidir; kendini tanıtırken ve sahiplik anlatırken kullanırız.\nKalıp: ich bin / du bist / er ist / wir sind; ich habe / du hast / er hat / wir haben.\nBu fiiller düzensizdir, ezberlemek gerekir.\nSık yapılan hata: yaş için 'Ich habe 20 Jahre' demek. Doğrusu: 'Ich bin 20 Jahre alt.'",
+     "en": "sein (to be) and haben (to have) are the two most important German verbs: we use them to describe ourselves and to say what we own.\nPattern: ich bin / du bist / er ist / wir sind; ich habe / du hast / er hat / wir haben.\nThey are irregular, so you simply have to learn them.\nCommon mistake: saying 'Ich habe 20 Jahre' for age. Correct: 'Ich bin 20 Jahre alt.'"
+    },
+    "examples": [
+     {
+      "text": "Sie ist Lehrerin.",
+      "native": {
+       "tr": "O öğretmen.",
+       "en": "She is a teacher."
+      }
+     },
+     {
+      "text": "Habt ihr Hunger?",
+      "native": {
+       "tr": "Acıktınız mı?",
+       "en": "Are you hungry?"
+      }
+     },
+     {
+      "text": "Ich habe heute keine Zeit.",
+      "native": {
+       "tr": "Bugün vaktim yok.",
+       "en": "I don't have time today."
+      }
+     },
+     {
+      "text": "Wir sind in Berlin.",
+      "native": {
+       "tr": "Biz Berlin'deyiz.",
+       "en": "We are in Berlin."
+      }
+     }
+    ]
+   }
   },
   {
    "id": "artikel",
@@ -353,7 +389,43 @@
      ],
      "alt": []
     }
-   ]
+   ],
+   "learn": {
+    "explain": {
+     "tr": "Almancada her ismin bir artikeli vardır: der (eril), die (dişil), das (nötr).\nBelirsiz artikel: ein (der/das için), eine (die için). Çoğulda belirsiz artikel yoktur.\nArtikeli ismin kendisiyle birlikte öğren: der Tisch, die Lampe, das Haus.\nSık yapılan hata: artikeli mantıkla tahmin etmek. Cinsiyet çoğu zaman rastgeledir: das Mädchen nötrdür.",
+     "en": "Every German noun has an article: der (masculine), die (feminine), das (neuter).\nIndefinite article: ein (for der/das nouns), eine (for die nouns). There is no indefinite article in the plural.\nLearn the article together with the noun: der Tisch, die Lampe, das Haus.\nCommon mistake: guessing the gender by logic. It is often arbitrary: das Mädchen (girl) is neuter."
+    },
+    "examples": [
+     {
+      "text": "Der Apfel ist rot.",
+      "native": {
+       "tr": "Elma kırmızı.",
+       "en": "The apple is red."
+      }
+     },
+     {
+      "text": "Die Katze schläft auf dem Sofa.",
+      "native": {
+       "tr": "Kedi koltukta uyuyor.",
+       "en": "The cat is sleeping on the sofa."
+      }
+     },
+     {
+      "text": "Das Kind spielt im Garten.",
+      "native": {
+       "tr": "Çocuk bahçede oynuyor.",
+       "en": "The child is playing in the garden."
+      }
+     },
+     {
+      "text": "Ich habe eine Schwester und einen Bruder.",
+      "native": {
+       "tr": "Bir kız kardeşim ve bir erkek kardeşim var.",
+       "en": "I have a sister and a brother."
+      }
+     }
+    ]
+   }
   },
   {
    "id": "praesens",
@@ -531,7 +603,43 @@
      ],
      "answer": 1
     }
-   ]
+   ],
+   "learn": {
+    "explain": {
+     "tr": "Şimdiki zaman, bugün yaptığımız veya sık yaptığımız şeyleri anlatır; geleceği de anlatabilir.\nKalıp: fiilin kökü (-en atılır) + son ek: ich -e, du -st, er/sie -t, wir -en, ihr -t, sie -en.\nÖrnek: lernen → ich lerne, du lernst, er lernt.\nSık yapılan hata: ek koymayı unutmak (ör. 'Er lernen'). Özneye uygun eki ekle: 'Er lernt.'",
+     "en": "The present tense tells what is happening now, what you do regularly, and it can also talk about the near future.\nPattern: verb stem (drop -en) + ending: ich -e, du -st, er/sie -t, wir -en, ihr -t, sie -en.\nExample: lernen → ich lerne, du lernst, er lernt.\nCommon mistake: leaving the infinitive after any subject (e.g. 'Er lernen'). Match the ending: 'Er lernt.'"
+    },
+    "examples": [
+     {
+      "text": "Ich wohne in Istanbul.",
+      "native": {
+       "tr": "İstanbul'da yaşıyorum.",
+       "en": "I live in Istanbul."
+      }
+     },
+     {
+      "text": "Du kochst sehr gut.",
+      "native": {
+       "tr": "Çok iyi yemek yapıyorsun.",
+       "en": "You cook very well."
+      }
+     },
+     {
+      "text": "Wir spielen jeden Samstag Fußball.",
+      "native": {
+       "tr": "Her cumartesi futbol oynuyoruz.",
+       "en": "We play football every Saturday."
+      }
+     },
+     {
+      "text": "Sie trinkt gern Tee.",
+      "native": {
+       "tr": "O çay içmeyi sever.",
+       "en": "She likes drinking tea."
+      }
+     }
+    ]
+   }
   },
   {
    "id": "wortstellung",
@@ -713,7 +821,43 @@
      ],
      "answer": 1
     }
-   ]
+   ],
+   "learn": {
+    "explain": {
+     "tr": "Almanca cümlede çekimli fiil her zaman 2. sıradadır; 1. sırada ne olursa olsun.\nKalıp: Konu / başka bir öğe + fiil + diğerleri. Başa zaman getirirsen özne fiilden sonra gelir: Heute gehe ich ...\nSoru kelimeli sorularda fiil soru kelimesinden hemen sonra gelir: Wo wohnst du?\nSık yapılan hata: 'Heute ich gehe ...' demek. Doğrusu: 'Heute gehe ich ...'",
+     "en": "In a German sentence the conjugated verb is always in second position, whatever stands in first position.\nPattern: first element + verb + the rest. If you start with a time word, the subject moves after the verb: Heute gehe ich ...\nIn questions with a question word, the verb follows it directly: Wo wohnst du?\nCommon mistake: 'Heute ich gehe ...'. Correct: 'Heute gehe ich ...'"
+    },
+    "examples": [
+     {
+      "text": "Morgen fahre ich nach Hamburg.",
+      "native": {
+       "tr": "Yarın Hamburg'a gidiyorum.",
+       "en": "Tomorrow I'm going to Hamburg."
+      }
+     },
+     {
+      "text": "Was machst du am Wochenende?",
+      "native": {
+       "tr": "Hafta sonu ne yapıyorsun?",
+       "en": "What are you doing at the weekend?"
+      }
+     },
+     {
+      "text": "Am Abend sehen wir einen Film.",
+      "native": {
+       "tr": "Akşam bir film izliyoruz.",
+       "en": "In the evening we watch a film."
+      }
+     },
+     {
+      "text": "Wann kommt der Bus?",
+      "native": {
+       "tr": "Otobüs ne zaman geliyor?",
+       "en": "When does the bus come?"
+      }
+     }
+    ]
+   }
   },
   {
    "id": "negation",
@@ -891,7 +1035,43 @@
      ],
      "answer": 1
     }
-   ]
+   ],
+   "learn": {
+    "explain": {
+     "tr": "Almancada olumsuzluk için iki kelime vardır: kein ve nicht.\nkein/keine: önünde artikel olmayan veya ein/eine olan isimlerin olumsuzu: Ich habe keine Zeit.\nnicht: fiilleri, sıfatları ve tüm cümleyi olumsuz yapar: Er ist nicht müde.\nSık yapılan hata: 'Ich habe nicht Zeit' demek. İsimle kein kullan: 'Ich habe keine Zeit.'",
+     "en": "German has two ways to negate: kein and nicht.\nkein/keine negates a noun that has no article or has ein/eine: Ich habe keine Zeit.\nnicht negates verbs, adjectives and whole sentences: Er ist nicht müde.\nCommon mistake: 'Ich habe nicht Zeit'. With a noun use kein: 'Ich habe keine Zeit.'"
+    },
+    "examples": [
+     {
+      "text": "Ich habe keinen Hunger.",
+      "native": {
+       "tr": "Aç değilim.",
+       "en": "I'm not hungry."
+      }
+     },
+     {
+      "text": "Das Essen ist nicht teuer.",
+      "native": {
+       "tr": "Yemek pahalı değil.",
+       "en": "The food is not expensive."
+      }
+     },
+     {
+      "text": "Sie kommt heute nicht.",
+      "native": {
+       "tr": "O bugün gelmiyor.",
+       "en": "She isn't coming today."
+      }
+     },
+     {
+      "text": "Wir haben kein Auto.",
+      "native": {
+       "tr": "Bizim arabamız yok.",
+       "en": "We don't have a car."
+      }
+     }
+    ]
+   }
   },
   {
    "id": "akkusativ",
@@ -1069,7 +1249,43 @@
      ],
      "answer": 1
     }
-   ]
+   ],
+   "learn": {
+    "explain": {
+     "tr": "Akkusativ, cümlede doğrudan nesne olan ismin halidir: kimi veya neyi?\nKalıp: sadece eril değişir: der → den, ein → einen. die, das ve çoğul aynı kalır.\nÖrnek: Ich sehe den Mann. Ich kaufe einen Tisch.\nSık yapılan hata: eril nesnede değişmemek ('Ich sehe der Mann'). Doğrusu: 'Ich sehe den Mann.'",
+     "en": "The accusative is the case of the direct object: who or what is being acted on?\nPattern: only masculine changes: der → den, ein → einen. die, das and plurals stay the same.\nExample: Ich sehe den Mann. Ich kaufe einen Tisch.\nCommon mistake: not changing a masculine object ('Ich sehe der Mann'). Correct: 'Ich sehe den Mann.'"
+    },
+    "examples": [
+     {
+      "text": "Ich kaufe einen Kuchen.",
+      "native": {
+       "tr": "Bir pasta alıyorum.",
+       "en": "I'm buying a cake."
+      }
+     },
+     {
+      "text": "Er liebt den Sommer.",
+      "native": {
+       "tr": "O yazı seviyor.",
+       "en": "He loves the summer."
+      }
+     },
+     {
+      "text": "Kennst du den Lehrer?",
+      "native": {
+       "tr": "Öğretmeni tanıyor musun?",
+       "en": "Do you know the teacher?"
+      }
+     },
+     {
+      "text": "Wir brauchen einen Stuhl.",
+      "native": {
+       "tr": "Bir sandalyeye ihtiyacımız var.",
+       "en": "We need a chair."
+      }
+     }
+    ]
+   }
   },
   {
    "id": "modalverben",
@@ -1249,7 +1465,43 @@
      ],
      "answer": 2
     }
-   ]
+   ],
+   "learn": {
+    "explain": {
+     "tr": "Modalverben (können, müssen, wollen, dürfen, sollen, möchten) yeteneği, zorunluluğu, isteği ve izni anlatır.\nKalıp: Modalverb (2. sırada, çekimli) + ... + Infinitiv (cümle sonunda).\nÖrnek: Ich muss heute arbeiten. Er kann gut schwimmen.\nSık yapılan hata: ana fiili de çekmek ('Ich muss arbeite'). Ana fiil sonda ve mastar halinde kalır: 'arbeiten'.",
+     "en": "Modal verbs (können, müssen, wollen, dürfen, sollen, möchten) express ability, necessity, wishes and permission.\nPattern: modal verb (conjugated, second place) + ... + infinitive at the end.\nExample: Ich muss heute arbeiten. Er kann gut schwimmen.\nCommon mistake: conjugating the main verb too ('Ich muss arbeite'). The main verb stays at the end in the infinitive: 'arbeiten'."
+    },
+    "examples": [
+     {
+      "text": "Ich möchte einen Kaffee bestellen.",
+      "native": {
+       "tr": "Bir kahve sipariş etmek istiyorum.",
+       "en": "I would like to order a coffee."
+      }
+     },
+     {
+      "text": "Du darfst hier nicht parken.",
+      "native": {
+       "tr": "Burada park edemezsin.",
+       "en": "You are not allowed to park here."
+      }
+     },
+     {
+      "text": "Wir müssen früh aufstehen.",
+      "native": {
+       "tr": "Erken kalkmamız gerekiyor.",
+       "en": "We have to get up early."
+      }
+     },
+     {
+      "text": "Kannst du mir helfen?",
+      "native": {
+       "tr": "Bana yardım edebilir misin?",
+       "en": "Can you help me?"
+      }
+     }
+    ]
+   }
   },
   {
    "id": "trennbare-verben",
@@ -1429,7 +1681,43 @@
      ],
      "answer": 0
     }
-   ]
+   ],
+   "learn": {
+    "explain": {
+     "tr": "Bazı fiillerin ön eki (auf-, an-, mit-, ein- ...) ayrılır: aufstehen, anrufen, einkaufen.\nKalıp: çekimli fiil 2. sırada + ... + ön ek cümlenin sonunda: Ich stehe um sieben Uhr auf.\nModal fiille veya Nebensatz'ta fiil bütün halinde kalır: Ich muss früh aufstehen.\nSık yapılan hata: ön eki fiilin yanında bırakmak ('Ich aufstehe'). Doğrusu: 'Ich stehe ... auf.'",
+     "en": "Some verbs have a prefix (auf-, an-, mit-, ein- ...) that splits off: aufstehen, anrufen, einkaufen.\nPattern: conjugated verb in second place + ... + prefix at the end: Ich stehe um sieben Uhr auf.\nWith a modal verb or in a subordinate clause the verb stays whole: Ich muss früh aufstehen.\nCommon mistake: keeping the prefix attached ('Ich aufstehe'). Correct: 'Ich stehe ... auf.'"
+    },
+    "examples": [
+     {
+      "text": "Der Zug kommt um acht Uhr an.",
+      "native": {
+       "tr": "Tren saat sekizde geliyor.",
+       "en": "The train arrives at eight o'clock."
+      }
+     },
+     {
+      "text": "Ich rufe dich später an.",
+      "native": {
+       "tr": "Seni sonra arayacağım.",
+       "en": "I'll call you later."
+      }
+     },
+     {
+      "text": "Wir kaufen am Samstag ein.",
+      "native": {
+       "tr": "Cumartesi alışveriş yapıyoruz.",
+       "en": "We go shopping on Saturday."
+      }
+     },
+     {
+      "text": "Kommst du mit ins Kino?",
+      "native": {
+       "tr": "Sinemaya benimle gelir misin?",
+       "en": "Are you coming along to the cinema?"
+      }
+     }
+    ]
+   }
   },
   {
    "id": "perfekt",
@@ -1609,7 +1897,43 @@
      ],
      "answer": 1
     }
-   ]
+   ],
+   "learn": {
+    "explain": {
+     "tr": "Perfekt, konuşma dilinde geçmişte olan şeyleri anlatmak için kullanılır.\nKalıp: haben/sein (2. sırada) + ... + Partizip II (sonda). Örnek: Ich habe Pizza gegessen.\nHareket ve durum değişimi bildiren fiiller sein alır: Ich bin gefahren. Çoğu fiil haben alır.\nSık yapılan hata: yardımcı fiili unutmak ('Ich gegessen'). Doğrusu: 'Ich habe gegessen.'",
+     "en": "The Perfekt is used in speech to talk about things that happened in the past.\nPattern: haben/sein (second place) + ... + past participle (at the end). Example: Ich habe Pizza gegessen.\nVerbs of movement and change of state take sein: Ich bin gefahren. Most other verbs take haben.\nCommon mistake: forgetting the auxiliary ('Ich gegessen'). Correct: 'Ich habe gegessen.'"
+    },
+    "examples": [
+     {
+      "text": "Gestern habe ich einen Film gesehen.",
+      "native": {
+       "tr": "Dün bir film izledim.",
+       "en": "Yesterday I watched a film."
+      }
+     },
+     {
+      "text": "Sie ist nach Hause gegangen.",
+      "native": {
+       "tr": "O eve gitti.",
+       "en": "She went home."
+      }
+     },
+     {
+      "text": "Wir haben lange geschlafen.",
+      "native": {
+       "tr": "Uzun uyuduk.",
+       "en": "We slept for a long time."
+      }
+     },
+     {
+      "text": "Hast du schon gefrühstückt?",
+      "native": {
+       "tr": "Kahvaltı yaptın mı?",
+       "en": "Have you had breakfast yet?"
+      }
+     }
+    ]
+   }
   },
   {
    "id": "dativ",
@@ -1787,7 +2111,43 @@
      ],
      "answer": 1
     }
-   ]
+   ],
+   "learn": {
+    "explain": {
+     "tr": "Dativ, dolaylı nesneyi gösterir (kime?) ve bazı edatlardan sonra gelir.\nKalıp: der/das → dem, die → der, çoğul → den (+ -n). mit, bei, nach, von, zu, aus, seit hep Dativ ister.\nÖrnek: Ich fahre mit dem Bus. Ich gebe dem Kind das Buch.\nSık yapılan hata: 'mit der Bus' demek. Eril isimle doğrusu: 'mit dem Bus.'",
+     "en": "The dative marks the indirect object (to whom?) and follows certain prepositions.\nPattern: der/das → dem, die → der, plural → den (+ -n). mit, bei, nach, von, zu, aus, seit always take the dative.\nExample: Ich fahre mit dem Bus. Ich gebe dem Kind das Buch.\nCommon mistake: 'mit der Bus'. With a masculine noun it is 'mit dem Bus.'"
+    },
+    "examples": [
+     {
+      "text": "Ich wohne bei meiner Tante.",
+      "native": {
+       "tr": "Teyzemde kalıyorum.",
+       "en": "I live at my aunt's place."
+      }
+     },
+     {
+      "text": "Er kommt aus dem Haus.",
+      "native": {
+       "tr": "O evden çıkıyor.",
+       "en": "He comes out of the house."
+      }
+     },
+     {
+      "text": "Wir gehen nach dem Essen spazieren.",
+      "native": {
+       "tr": "Yemekten sonra yürüyüşe çıkıyoruz.",
+       "en": "We go for a walk after dinner."
+      }
+     },
+     {
+      "text": "Ich schenke meiner Mutter Blumen.",
+      "native": {
+       "tr": "Anneme çiçek hediye ediyorum.",
+       "en": "I'm giving my mother flowers."
+      }
+     }
+    ]
+   }
   },
   {
    "id": "praeteritum",
@@ -1968,7 +2328,43 @@
      ],
      "answer": 2
     }
-   ]
+   ],
+   "learn": {
+    "explain": {
+     "tr": "Präteritum, yazıda, hikâyelerde ve haberlerde geçmişi anlatır; konuşmada sein, haben ve modal fiillerde sık kullanılır.\nDüzenli fiiller: kök + -te (kaufen → er kaufte). Düzensizlerin kökü değişir: gehen → ging, sein → war, haben → hatte.\nÖrnek: Gestern war ich müde. Er hatte keine Zeit.\nSık yapılan hata: düzensiz fiile -te eklemek ('gehte'). Doğrusu: 'ging.'",
+     "en": "The Präteritum tells the past in writing, stories and news; in speech it is common with sein, haben and modal verbs.\nRegular verbs: stem + -te (kaufen → er kaufte). Irregular verbs change their stem: gehen → ging, sein → war, haben → hatte.\nExample: Gestern war ich müde. Er hatte keine Zeit.\nCommon mistake: adding -te to an irregular verb ('gehte'). Correct: 'ging.'"
+    },
+    "examples": [
+     {
+      "text": "Als Kind wohnte ich auf dem Land.",
+      "native": {
+       "tr": "Çocukken köyde yaşıyordum.",
+       "en": "As a child I lived in the countryside."
+      }
+     },
+     {
+      "text": "Wir waren letzten Sommer in Spanien.",
+      "native": {
+       "tr": "Geçen yaz İspanya'daydık.",
+       "en": "We were in Spain last summer."
+      }
+     },
+     {
+      "text": "Er ging langsam nach Hause.",
+      "native": {
+       "tr": "O yavaşça eve yürüdü.",
+       "en": "He walked home slowly."
+      }
+     },
+     {
+      "text": "Sie hatte gestern Geburtstag.",
+      "native": {
+       "tr": "Dün onun doğum günüydü.",
+       "en": "It was her birthday yesterday."
+      }
+     }
+    ]
+   }
   },
   {
    "id": "nebensatz-weil-dass",
@@ -2151,7 +2547,43 @@
      ],
      "answer": 0
     }
-   ]
+   ],
+   "learn": {
+    "explain": {
+     "tr": "weil (çünkü), dass (ki) ve wenn (eğer/-dığında) yan cümle başlatır.\nKalıp: Hauptsatz, + weil/dass/wenn + ... + çekimli fiil EN SONDA: Ich bleibe zu Hause, weil ich krank bin.\nYan cümle başta ise, ana cümlede fiil hemen ardından gelir: Wenn es regnet, bleibe ich zu Hause.\nSık yapılan hata: fiili 2. sırada bırakmak ('weil ich bin krank'). Doğrusu: 'weil ich krank bin.'",
+     "en": "weil (because), dass (that) and wenn (if/when) start a subordinate clause.\nPattern: main clause, + weil/dass/wenn + ... + conjugated verb at the VERY END: Ich bleibe zu Hause, weil ich krank bin.\nIf the subordinate clause comes first, the verb of the main clause follows right after it: Wenn es regnet, bleibe ich zu Hause.\nCommon mistake: keeping the verb in second place ('weil ich bin krank'). Correct: 'weil ich krank bin.'"
+    },
+    "examples": [
+     {
+      "text": "Ich lerne Deutsch, weil ich in Deutschland arbeiten möchte.",
+      "native": {
+       "tr": "Almanya'da çalışmak istediğim için Almanca öğreniyorum.",
+       "en": "I'm learning German because I want to work in Germany."
+      }
+     },
+     {
+      "text": "Er sagt, dass er morgen kommt.",
+      "native": {
+       "tr": "Yarın geleceğini söylüyor.",
+       "en": "He says that he is coming tomorrow."
+      }
+     },
+     {
+      "text": "Wenn du Zeit hast, rufe mich an.",
+      "native": {
+       "tr": "Vaktin olursa beni ara.",
+       "en": "If you have time, call me."
+      }
+     },
+     {
+      "text": "Ich weiß nicht, ob sie zu Hause ist.",
+      "native": {
+       "tr": "Evde mi olduğunu bilmiyorum.",
+       "en": "I don't know whether she is at home."
+      }
+     }
+    ]
+   }
   },
   {
    "id": "konjunktiv2",
@@ -2330,7 +2762,43 @@
      ],
      "answer": 2
     }
-   ]
+   ],
+   "learn": {
+    "explain": {
+     "tr": "Konjunktiv II; dilekleri, gerçek olmayan durumları ve kibar rica ve önerileri anlatır.\nKalıp: hätte / wäre / könnte veya würde + ... + mastar (sonda): Ich würde gern reisen.\n'Wenn ich Zeit hätte, würde ich kommen' gibi 'eğer ... olsaydı' cümleleri kurulur.\nSık yapılan hata: gerçek durum için kullanmak. Kibarlık ve hayal içindir: 'Könnten Sie mir helfen?'",
+     "en": "The Konjunktiv II expresses wishes, unreal situations and polite requests or suggestions.\nPattern: hätte / wäre / könnte or würde + ... + infinitive (at the end): Ich würde gern reisen.\nIt builds 'if ... then' sentences: Wenn ich Zeit hätte, würde ich kommen.\nCommon mistake: using it for real facts. It is for politeness and imagination: 'Könnten Sie mir helfen?'"
+    },
+    "examples": [
+     {
+      "text": "Ich hätte gern ein Glas Wasser.",
+      "native": {
+       "tr": "Bir bardak su alabilir miyim?",
+       "en": "I would like a glass of water."
+      }
+     },
+     {
+      "text": "Wenn ich reich wäre, würde ich ein Haus kaufen.",
+      "native": {
+       "tr": "Zengin olsaydım bir ev alırdım.",
+       "en": "If I were rich, I would buy a house."
+      }
+     },
+     {
+      "text": "Könnten Sie das bitte wiederholen?",
+      "native": {
+       "tr": "Bunu lütfen tekrar eder misiniz?",
+       "en": "Could you please repeat that?"
+      }
+     },
+     {
+      "text": "Du solltest mehr schlafen, das wäre besser.",
+      "native": {
+       "tr": "Daha çok uyumalısın, daha iyi olurdu.",
+       "en": "You should sleep more, that would be better."
+      }
+     }
+    ]
+   }
   },
   {
    "id": "reflexive-verben",
@@ -2505,7 +2973,43 @@
      ],
      "answer": 0
     }
-   ]
+   ],
+   "learn": {
+    "explain": {
+     "tr": "Reflexive fiiller, eylemin öznenin kendisine döndüğünü gösterir ve yanında mich, dich, sich gibi bir zamir ister.\nKalıp: ich freue mich, du freust dich, er freut sich, wir freuen uns. Başka bir nesne varsa zamir Dativ olur: Ich wasche mir die Hände.\nÇoğu zaman Türkçedeki -in-/-ik- fiillerine benzer (yıkanmak, sevinmek).\nSık yapılan hata: zamiri unutmak ('Ich freue'). Doğrusu: 'Ich freue mich.'",
+     "en": "Reflexive verbs show the action goes back to the subject and need a pronoun like mich, dich, sich.\nPattern: ich freue mich, du freust dich, er freut sich, wir freuen uns. With another object the pronoun is dative: Ich wasche mir die Hände.\nLearn them as fixed phrases: sich freuen, sich treffen, sich interessieren für.\nCommon mistake: leaving out the pronoun ('Ich freue'). Correct: 'Ich freue mich.'"
+    },
+    "examples": [
+     {
+      "text": "Ich interessiere mich für Musik.",
+      "native": {
+       "tr": "Müzikle ilgileniyorum.",
+       "en": "I'm interested in music."
+      }
+     },
+     {
+      "text": "Wir treffen uns um acht Uhr.",
+      "native": {
+       "tr": "Saat sekizde buluşuyoruz.",
+       "en": "We are meeting at eight o'clock."
+      }
+     },
+     {
+      "text": "Er hat sich schnell angezogen.",
+      "native": {
+       "tr": "O çabucak giyindi.",
+       "en": "He got dressed quickly."
+      }
+     },
+     {
+      "text": "Ich putze mir jeden Morgen die Zähne.",
+      "native": {
+       "tr": "Her sabah dişlerimi fırçalıyorum.",
+       "en": "I brush my teeth every morning."
+      }
+     }
+    ]
+   }
   },
   {
    "id": "relativsaetze",
@@ -2680,7 +3184,43 @@
      ],
      "answer": 0
     }
-   ]
+   ],
+   "learn": {
+    "explain": {
+     "tr": "Relativsatz, bir isim hakkında ek bilgi verir: 'tanıdığım adam' gibi.\nKalıp: isim, + der/die/das/den ... + çekimli fiil sonda. Zamirin cinsiyeti ve sayısı isimden, hali kendi cümlesinden gelir.\nÖrnek: Das ist der Mann, den ich kenne. Das ist die Frau, die hier wohnt.\nSık yapılan hata: fiili 2. sıraya koymak ('..., den ich kenne' yerine 'den kenne ich'). Fiil en sonda olmalı.",
+     "en": "A relative clause gives extra information about a noun, like 'the man I know'.\nPattern: noun, + der/die/das/den ... + conjugated verb at the end. The pronoun takes gender and number from the noun, its case from its own clause.\nExample: Das ist der Mann, den ich kenne. Das ist die Frau, die hier wohnt.\nCommon mistake: putting the verb second ('den kenne ich'). The verb must go last."
+    },
+    "examples": [
+     {
+      "text": "Das Buch, das ich lese, ist spannend.",
+      "native": {
+       "tr": "Okuduğum kitap heyecanlı.",
+       "en": "The book that I'm reading is exciting."
+      }
+     },
+     {
+      "text": "Ich kenne eine Frau, die fünf Sprachen spricht.",
+      "native": {
+       "tr": "Beş dil konuşan bir kadın tanıyorum.",
+       "en": "I know a woman who speaks five languages."
+      }
+     },
+     {
+      "text": "Der Film, den wir gestern gesehen haben, war lustig.",
+      "native": {
+       "tr": "Dün izlediğimiz film komikti.",
+       "en": "The film that we saw yesterday was funny."
+      }
+     },
+     {
+      "text": "Wo ist der Schlüssel, der auf dem Tisch lag?",
+      "native": {
+       "tr": "Masanın üstündeki anahtar nerede?",
+       "en": "Where is the key that was lying on the table?"
+      }
+     }
+    ]
+   }
   },
   {
    "id": "adjektivendungen",
@@ -2855,7 +3395,43 @@
      ],
      "answer": 0
     }
-   ]
+   ],
+   "learn": {
+    "explain": {
+     "tr": "Isimden önce gelen sıfatlar, artikele, cinsiyete ve hale göre ek alır.\nKalıp: belirli artikelden sonra çoğunlukla -e veya -en: der neue Computer, den neuen Computer. ein + sıfat: ein neuer Computer, ein rotes Kleid.\nArtikel cinsiyeti göstermiyorsa, sıfat gösterir (-er, -es).\nSık yapılan hata: ek koymamak ('ein neu Computer'). Doğrusu: 'ein neuer Computer.' Sıfat isimden sonra ek almaz: 'Der Computer ist neu.'",
+     "en": "Adjectives before a noun take an ending that depends on the article, gender and case.\nPattern: after a definite article mostly -e or -en: der neue Computer, den neuen Computer. After ein: ein neuer Computer, ein rotes Kleid.\nIf the article does not show the gender, the adjective does (-er, -es).\nCommon mistake: no ending ('ein neu Computer'). Correct: 'ein neuer Computer.' After the noun there is no ending: 'Der Computer ist neu.'"
+    },
+    "examples": [
+     {
+      "text": "Ich trage eine blaue Jacke.",
+      "native": {
+       "tr": "Mavi bir ceket giyiyorum.",
+       "en": "I'm wearing a blue jacket."
+      }
+     },
+     {
+      "text": "Sie hat einen großen Hund.",
+      "native": {
+       "tr": "Onun büyük bir köpeği var.",
+       "en": "She has a big dog."
+      }
+     },
+     {
+      "text": "Das ist ein interessantes Buch.",
+      "native": {
+       "tr": "Bu ilginç bir kitap.",
+       "en": "This is an interesting book."
+      }
+     },
+     {
+      "text": "Wir wohnen in einer kleinen Stadt.",
+      "native": {
+       "tr": "Küçük bir şehirde yaşıyoruz.",
+       "en": "We live in a small town."
+      }
+     }
+    ]
+   }
   },
   {
    "id": "passiv",
@@ -3030,7 +3606,43 @@
      ],
      "answer": 1
     }
-   ]
+   ],
+   "learn": {
+    "explain": {
+     "tr": "Passiv, işi yapanın değil, yapılan işin önemli olduğu durumlarda kullanılır: 'Ev yapılıyor.'\nKalıp: werden + Partizip II (sonda). Geçmiş: wurde + Partizip II. Modalle: muss repariert werden.\nÖrnek: Das Haus wird gebaut. Das Auto wurde gestern repariert.\nSık yapılan hata: werden yerine sein kullanmak. 'wird gebaut' süreci, 'ist gebaut' sonucu anlatır.",
+     "en": "The passive is used when the action matters more than who does it: 'The house is being built.'\nPattern: werden + past participle (at the end). Past: wurde + past participle. With a modal: muss repariert werden.\nExample: Das Haus wird gebaut. Das Auto wurde gestern repariert.\nCommon mistake: mixing up werden and sein. 'wird gebaut' is the process, 'ist gebaut' is the result."
+    },
+    "examples": [
+     {
+      "text": "Hier wird nicht geraucht.",
+      "native": {
+       "tr": "Burada sigara içilmez.",
+       "en": "Smoking is not allowed here."
+      }
+     },
+     {
+      "text": "Das Essen wird gerade gekocht.",
+      "native": {
+       "tr": "Yemek şu an pişiriliyor.",
+       "en": "The food is being cooked right now."
+      }
+     },
+     {
+      "text": "Der Brief wurde gestern geschickt.",
+      "native": {
+       "tr": "Mektup dün gönderildi.",
+       "en": "The letter was sent yesterday."
+      }
+     },
+     {
+      "text": "Die Hausaufgaben müssen heute gemacht werden.",
+      "native": {
+       "tr": "Ödevlerin bugün yapılması gerekiyor.",
+       "en": "The homework has to be done today."
+      }
+     }
+    ]
+   }
   },
   {
    "id": "genitiv",
@@ -3211,7 +3823,43 @@
      ],
      "answer": 2
     }
-   ]
+   ],
+   "learn": {
+    "explain": {
+     "tr": "Genitiv, sahipliği ve aidiyeti gösterir: 'babamın arabası'.\nKalıp: der/das → des, die → der, çoğul → der. Eril ve nötr isimler -(e)s alır: das Auto meines Vaters.\nwegen, trotz, während, statt edatları Genitiv ister: wegen des Wetters.\nSık yapılan hata: von + Dativ ile yetinmek. Yazıda Genitiv beklenir; konuşmada 'das Auto von meinem Vater' da duyulur.",
+     "en": "The genitive shows possession and belonging: 'my father's car'.\nPattern: der/das → des, die → der, plural → der. Masculine and neuter nouns add -(e)s: das Auto meines Vaters.\nwegen, trotz, während, statt take the genitive: wegen des Wetters.\nCommon mistake: forgetting the -s on the noun. In speech 'das Auto von meinem Vater' is also common."
+    },
+    "examples": [
+     {
+      "text": "Das ist das Fahrrad meiner Schwester.",
+      "native": {
+       "tr": "Bu kız kardeşimin bisikleti.",
+       "en": "This is my sister's bike."
+      }
+     },
+     {
+      "text": "Wegen des Regens bleiben wir zu Hause.",
+      "native": {
+       "tr": "Yağmur yüzünden evde kalıyoruz.",
+       "en": "Because of the rain we're staying at home."
+      }
+     },
+     {
+      "text": "Trotz der Kälte gehen wir spazieren.",
+      "native": {
+       "tr": "Soğuğa rağmen yürüyüşe çıkıyoruz.",
+       "en": "Despite the cold we are going for a walk."
+      }
+     },
+     {
+      "text": "Während des Urlaubs habe ich viel gelesen.",
+      "native": {
+       "tr": "Tatil boyunca çok okudum.",
+       "en": "During the holiday I read a lot."
+      }
+     }
+    ]
+   }
   },
   {
    "id": "indirekte-rede",
@@ -3386,7 +4034,43 @@
      ],
      "answer": 0
     }
-   ]
+   ],
+   "learn": {
+    "explain": {
+     "tr": "Indirekte Rede, birinin söylediğini kendi sözlerinle aktarır; haberlerde ve resmî yazıda sık görülür.\nKalıp: Konjunktiv I: er sei, sie habe, er werde, sie könne. Gövde + -e eki: er komme, sie gehe.\nÖrnek: Er sagt, er sei krank. Sie sagt, sie habe keine Zeit.\nSık yapılan hata: Konjunktiv I ile II'yi karıştırmak. Konjunktiv I çakışırsa (ör. 'sie haben') Konjunktiv II kullanılır: 'sie hätten.'",
+     "en": "Indirect speech reports what someone said in your own words; it is common in news and formal writing.\nPattern: Konjunktiv I: er sei, sie habe, er werde, sie könne. Stem + -e: er komme, sie gehe.\nExample: Er sagt, er sei krank. Sie sagt, sie habe keine Zeit.\nCommon mistake: mixing Konjunktiv I and II. If Konjunktiv I looks like the normal form (e.g. 'sie haben'), use Konjunktiv II: 'sie hätten.'"
+    },
+    "examples": [
+     {
+      "text": "Der Minister sagte, er sei zufrieden.",
+      "native": {
+       "tr": "Bakan memnun olduğunu söyledi.",
+       "en": "The minister said he was satisfied."
+      }
+     },
+     {
+      "text": "Sie erzählt, sie habe lange gearbeitet.",
+      "native": {
+       "tr": "Uzun süre çalıştığını anlatıyor.",
+       "en": "She says she worked for a long time."
+      }
+     },
+     {
+      "text": "Er meint, das Wetter werde besser.",
+      "native": {
+       "tr": "Havanın düzeleceğini düşünüyor.",
+       "en": "He thinks the weather will get better."
+      }
+     },
+     {
+      "text": "Mein Chef sagt, ich könne früher gehen.",
+      "native": {
+       "tr": "Müdürüm erken çıkabileceğimi söylüyor.",
+       "en": "My boss says I can leave earlier."
+      }
+     }
+    ]
+   }
   },
   {
    "id": "infinitiv-mit-zu",
@@ -3561,7 +4245,43 @@
      ],
      "answer": 0
     }
-   ]
+   ],
+   "learn": {
+    "explain": {
+     "tr": "Birçok yapıda fiil, zu + mastar olarak kullanılır; özellikle Es ist wichtig, ... gibi kalıplarda.\nKalıp: ..., zu + Infinitiv (sonda): Es ist wichtig, pünktlich zu sein. Ayrılabilen fiilde zu ortaya girer: aufzustehen.\num ... zu amaç, ohne ... zu 'ohne' (-meden) anlamı verir: Ich lerne, um zu bestehen.\nSık yapılan hata: modal fiilden sonra zu koymak. 'Ich muss zu gehen' yanlış; doğrusu 'Ich muss gehen.'",
+     "en": "Many constructions use zu + infinitive, especially after phrases like Es ist wichtig, ...\nPattern: ..., zu + infinitive (at the end): Es ist wichtig, pünktlich zu sein. With separable verbs zu goes in the middle: aufzustehen.\num ... zu gives purpose, ohne ... zu means 'without': Ich lerne, um zu bestehen.\nCommon mistake: using zu after a modal verb. 'Ich muss zu gehen' is wrong; correct: 'Ich muss gehen.'"
+    },
+    "examples": [
+     {
+      "text": "Ich habe vergessen, dich anzurufen.",
+      "native": {
+       "tr": "Seni aramayı unuttum.",
+       "en": "I forgot to call you."
+      }
+     },
+     {
+      "text": "Er geht ins Café, um Freunde zu treffen.",
+      "native": {
+       "tr": "Arkadaşlarla buluşmak için kafeye gidiyor.",
+       "en": "He goes to the café to meet friends."
+      }
+     },
+     {
+      "text": "Sie ging weg, ohne ein Wort zu sagen.",
+      "native": {
+       "tr": "Tek kelime etmeden gitti.",
+       "en": "She left without saying a word."
+      }
+     },
+     {
+      "text": "Es ist schön, hier zu wohnen.",
+      "native": {
+       "tr": "Burada yaşamak güzel.",
+       "en": "It is nice to live here."
+      }
+     }
+    ]
+   }
   }
  ]
 }
