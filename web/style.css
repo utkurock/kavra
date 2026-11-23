@@ -24,6 +24,13 @@
   --lv-c: #c2417a;
   --shadow: 0 1px 2px rgba(20, 20, 30, .06), 0 8px 24px rgba(20, 20, 30, .06);
   --card-shadow: 0 18px 40px rgba(20, 20, 40, .14);
+  /* liquid glass: a translucent fill, a bright rim and inner highlights, a soft drop shadow */
+  --glass-bg: linear-gradient(180deg, rgba(255, 255, 255, .74), rgba(255, 255, 255, .44));
+  --glass-border: rgba(255, 255, 255, .8);
+  --glass-hi: inset 0 1px 0 rgba(255, 255, 255, .95), inset 0 -1px 1px rgba(255, 255, 255, .4), inset 0 0 0 .5px rgba(20, 20, 40, .06);
+  --glass-shadow: 0 12px 32px rgba(20, 20, 50, .16), 0 2px 6px rgba(20, 20, 50, .08);
+  --glass-active: linear-gradient(180deg, rgba(255, 255, 255, .95), rgba(255, 255, 255, .7));
+  --glass-blur: blur(22px) saturate(180%);
   --radius: 20px;
   --font: ui-rounded, "SF Pro Rounded", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
   --tabbar: 64px;
@@ -53,6 +60,11 @@
     --lv-c: #ff9eb5;
     --shadow: 0 1px 2px rgba(0, 0, 0, .3);
     --card-shadow: 0 22px 50px rgba(0, 0, 0, .5);
+  --glass-bg: linear-gradient(180deg, rgba(70, 70, 84, .5), rgba(30, 30, 38, .42));
+  --glass-border: rgba(255, 255, 255, .14);
+  --glass-hi: inset 0 1px 0 rgba(255, 255, 255, .2), inset 0 -1px 1px rgba(255, 255, 255, .06), inset 0 0 0 .5px rgba(0, 0, 0, .3);
+  --glass-shadow: 0 14px 36px rgba(0, 0, 0, .5), 0 2px 6px rgba(0, 0, 0, .3);
+  --glass-active: linear-gradient(180deg, rgba(255, 255, 255, .2), rgba(255, 255, 255, .08));
   }
 }
 :root[data-theme="dark"] {
@@ -79,12 +91,22 @@
   --lv-c: #ff9eb5;
   --shadow: 0 1px 2px rgba(0, 0, 0, .3);
   --card-shadow: 0 22px 50px rgba(0, 0, 0, .5);
+  --glass-bg: linear-gradient(180deg, rgba(70, 70, 84, .5), rgba(30, 30, 38, .42));
+  --glass-border: rgba(255, 255, 255, .14);
+  --glass-hi: inset 0 1px 0 rgba(255, 255, 255, .2), inset 0 -1px 1px rgba(255, 255, 255, .06), inset 0 0 0 .5px rgba(0, 0, 0, .3);
+  --glass-shadow: 0 14px 36px rgba(0, 0, 0, .5), 0 2px 6px rgba(0, 0, 0, .3);
+  --glass-active: linear-gradient(180deg, rgba(255, 255, 255, .2), rgba(255, 255, 255, .08));
 }
 
 * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
 html { background: var(--bg); }
-body { margin: 0; min-height: 100dvh; background: var(--bg); color: var(--fg); font: 16px/1.5 var(--font);
+body { margin: 0; min-height: 100dvh; background: transparent; color: var(--fg); font: 16px/1.5 var(--font);
   -webkit-font-smoothing: antialiased; overscroll-behavior-y: none; }
+/* soft colour washes behind everything, for the glass to pick up */
+body::before { content: ""; position: fixed; inset: 0; z-index: -1; pointer-events: none;
+  background: radial-gradient(45% 32% at 12% 8%, color-mix(in srgb, var(--lv-b) 20%, transparent), transparent 70%),
+    radial-gradient(40% 30% at 92% 34%, rgba(255, 213, 74, .18), transparent 70%),
+    radial-gradient(48% 34% at 28% 96%, color-mix(in srgb, var(--lv-c) 15%, transparent), transparent 70%); }
 h1, h2, p { margin: 0; }
 button { font: inherit; color: inherit; }
 img, svg { display: block; }
@@ -419,4 +441,36 @@ img, svg { display: block; }
 
 @media (prefers-reduced-motion: reduce) {
   *, *::before { transition: none !important; animation: none !important; }
+}
+
+/* ---- phones: liquid glass — a floating tab bar and glass controls over the colour washes ---- */
+@media (max-width: 899px) {
+  :root { --tabbar: 66px; --tabbar-gap: 12px; }
+  .rail { left: 12px; right: 12px; bottom: calc(env(safe-area-inset-bottom) + var(--tabbar-gap)); padding: 0;
+    border: 1px solid var(--glass-border); border-radius: 30px; background: var(--glass-bg);
+    -webkit-backdrop-filter: var(--glass-blur); backdrop-filter: var(--glass-blur); box-shadow: var(--glass-hi), var(--glass-shadow); }
+  .nav { height: var(--tabbar); padding: 6px; gap: 2px; }
+  .nav-link { border-radius: 24px; transition: color .15s, background .2s; }
+  .nav-link[aria-current="page"] { background: var(--glass-active); box-shadow: var(--glass-hi); }
+  .view { padding-bottom: calc(var(--tabbar) + var(--tabbar-gap) + env(safe-area-inset-bottom) + 28px); }
+  .sheet { bottom: calc(var(--tabbar) + var(--tabbar-gap) + env(safe-area-inset-bottom) + 8px); }
+  .toast { bottom: calc(var(--tabbar) + var(--tabbar-gap) + env(safe-area-inset-bottom) + 14px); }
+
+  .seg, .level-toggle, .levels .chips, .sbtn, .search input {
+    border: 1px solid var(--glass-border); background: var(--glass-bg);
+    -webkit-backdrop-filter: var(--glass-blur); backdrop-filter: var(--glass-blur); box-shadow: var(--glass-hi), var(--glass-shadow); }
+  .seg { border-radius: 18px; }
+  .seg-btn[aria-pressed="true"] { background: var(--glass-active); box-shadow: var(--glass-hi); border-radius: 13px; }
+  .level-toggle { border-radius: 18px; }
+  .levels .chips { border-radius: 22px; }
+  .sbtn { color: var(--c); }
+  .sbtn:active:not(:disabled) { background: color-mix(in srgb, var(--c) 20%, transparent); }
+  .panel, .practice, .word-list, .unit { background: color-mix(in srgb, var(--surface) 82%, transparent);
+    -webkit-backdrop-filter: blur(16px); backdrop-filter: blur(16px); }
+  .sheet { margin: 0 6px 6px; border: 1px solid var(--glass-border); border-radius: 22px; background: var(--glass-bg);
+    -webkit-backdrop-filter: var(--glass-blur); backdrop-filter: var(--glass-blur); box-shadow: var(--glass-hi), var(--glass-shadow); }
+  .sheet.ok { background: color-mix(in srgb, var(--ok) 22%, transparent); border-color: color-mix(in srgb, var(--ok) 35%, var(--glass-border)); }
+  .sheet.bad { background: color-mix(in srgb, var(--bad) 22%, transparent); border-color: color-mix(in srgb, var(--bad) 35%, var(--glass-border)); }
+  .toast { background: var(--glass-bg); color: var(--fg); border: 1px solid var(--glass-border);
+    -webkit-backdrop-filter: var(--glass-blur); backdrop-filter: var(--glass-blur); box-shadow: var(--glass-hi), var(--glass-shadow); }
 }
