@@ -1,0 +1,3716 @@
+{
+ "units": [
+  {
+   "id": "articles",
+   "level": "A1",
+   "title": {
+    "tr": "Artikeller: el, la, un, una",
+    "en": "Articles: el, la, un, una"
+   },
+   "tip": {
+    "tr": "İsimler eril ya da dişildir: el libro, la casa. Belirsiz artikel: un libro, una casa. Çoğul: los, las.",
+    "en": "Nouns are masculine or feminine: el libro, la casa. Indefinite: un libro, una casa. Plural: los, las."
+   },
+   "items": [
+    {
+     "type": "build",
+     "text": "El libro es rojo.",
+     "native": {
+      "tr": "Kitap kırmızı.",
+      "en": "The book is red."
+     },
+     "extra": [
+      "la",
+      "roja",
+      "un"
+     ],
+     "alt": []
+    },
+    {
+     "type": "build",
+     "text": "La casa es grande.",
+     "native": {
+      "tr": "Ev büyük.",
+      "en": "The house is big."
+     },
+     "extra": [
+      "el",
+      "un",
+      "grandes"
+     ],
+     "alt": []
+    },
+    {
+     "type": "build",
+     "text": "Tengo una hermana.",
+     "native": {
+      "tr": "Bir kız kardeşim var.",
+      "en": "I have a sister."
+     },
+     "extra": [
+      "un",
+      "hermano",
+      "la"
+     ],
+     "alt": []
+    },
+    {
+     "type": "build",
+     "text": "Los niños juegan en el parque.",
+     "native": {
+      "tr": "Çocuklar parkta oynuyor.",
+      "en": "The children play in the park."
+     },
+     "extra": [
+      "las",
+      "la",
+      "un"
+     ],
+     "alt": []
+    },
+    {
+     "type": "build",
+     "text": "Quiero un café con leche.",
+     "native": {
+      "tr": "Sütlü bir kahve istiyorum.",
+      "en": "I want a coffee with milk."
+     },
+     "extra": [
+      "una",
+      "el",
+      "los"
+     ],
+     "alt": []
+    },
+    {
+     "type": "build",
+     "text": "Las llaves están en la mesa.",
+     "native": {
+      "tr": "Anahtarlar masanın üstünde.",
+      "en": "The keys are on the table."
+     },
+     "extra": [
+      "los",
+      "el",
+      "un"
+     ],
+     "alt": []
+    },
+    {
+     "type": "build",
+     "text": "Ella es una profesora muy buena.",
+     "native": {
+      "tr": "O çok iyi bir öğretmen.",
+      "en": "She is a very good teacher."
+     },
+     "extra": [
+      "un",
+      "el",
+      "bueno"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "___ agua está fría.",
+     "native": {
+      "tr": "Su soğuk.",
+      "en": "The water is cold."
+     },
+     "options": [
+      "El",
+      "La",
+      "Una",
+      "Un"
+     ],
+     "answer": 0
+    },
+    {
+     "type": "choice",
+     "text": "Tengo ___ perro y dos gatos.",
+     "native": {
+      "tr": "Bir köpeğim ve iki kedim var.",
+      "en": "I have a dog and two cats."
+     },
+     "options": [
+      "una",
+      "la",
+      "un"
+     ],
+     "answer": 2
+    },
+    {
+     "type": "choice",
+     "text": "Veo ___ mapa en la pared.",
+     "native": {
+      "tr": "Duvarda bir harita görüyorum.",
+      "en": "I see a map on the wall."
+     },
+     "options": [
+      "un",
+      "una",
+      "las"
+     ],
+     "answer": 0
+    },
+    {
+     "type": "choice",
+     "text": "___ manos de mi abuela son pequeñas.",
+     "native": {
+      "tr": "Büyükannemin elleri küçük.",
+      "en": "My grandmother's hands are small."
+     },
+     "options": [
+      "Los",
+      "Las",
+      "El"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "choice",
+     "text": "Es ___ día muy bonito.",
+     "native": {
+      "tr": "Çok güzel bir gün.",
+      "en": "It is a very nice day."
+     },
+     "options": [
+      "una",
+      "un",
+      "las",
+      "la"
+     ],
+     "answer": 1
+    }
+   ]
+  },
+  {
+   "id": "ser-estar",
+   "level": "A1",
+   "title": {
+    "tr": "Ser ve estar: soy / estoy",
+    "en": "Ser and estar: soy / estoy"
+   },
+   "tip": {
+    "tr": "Ser kimlik, meslek, köken içindir: Soy de Turquía. Estar yer ve geçici durum içindir: Estoy en casa, estoy cansado.",
+    "en": "Ser is for identity, job, origin: Soy de Turquía. Estar is for place and temporary states: Estoy en casa, estoy cansado."
+   },
+   "items": [
+    {
+     "type": "build",
+     "text": "Yo soy de Turquía.",
+     "native": {
+      "tr": "Ben Türkiyeliyim.",
+      "en": "I am from Turkey."
+     },
+     "extra": [
+      "estoy",
+      "está",
+      "en"
+     ],
+     "alt": []
+    },
+    {
+     "type": "build",
+     "text": "Mi hermano está en casa.",
+     "native": {
+      "tr": "Kardeşim evde.",
+      "en": "My brother is at home."
+     },
+     "extra": [
+      "es",
+      "son",
+      "soy"
+     ],
+     "alt": []
+    },
+    {
+     "type": "build",
+     "text": "La sopa está muy caliente.",
+     "native": {
+      "tr": "Çorba çok sıcak.",
+      "en": "The soup is very hot."
+     },
+     "extra": [
+      "es",
+      "fría",
+      "son"
+     ],
+     "alt": []
+    },
+    {
+     "type": "build",
+     "text": "Ellos son médicos en un hospital.",
+     "native": {
+      "tr": "Onlar bir hastanede doktor.",
+      "en": "They are doctors in a hospital."
+     },
+     "extra": [
+      "están",
+      "somos",
+      "es"
+     ],
+     "alt": []
+    },
+    {
+     "type": "build",
+     "text": "¿Dónde está la estación?",
+     "native": {
+      "tr": "İstasyon nerede?",
+      "en": "Where is the station?"
+     },
+     "extra": [
+      "es",
+      "qué",
+      "estoy"
+     ],
+     "alt": []
+    },
+    {
+     "type": "build",
+     "text": "Hoy estamos muy cansados.",
+     "native": {
+      "tr": "Bugün çok yorgunuz.",
+      "en": "Today we are very tired."
+     },
+     "extra": [
+      "somos",
+      "es",
+      "están"
+     ],
+     "alt": []
+    },
+    {
+     "type": "build",
+     "text": "Mi profesora es muy simpática.",
+     "native": {
+      "tr": "Öğretmenim çok sempatik.",
+      "en": "My teacher is very nice."
+     },
+     "extra": [
+      "está",
+      "estoy",
+      "soy"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Mi padre ___ ingeniero.",
+     "native": {
+      "tr": "Babam mühendis.",
+      "en": "My father is an engineer."
+     },
+     "options": [
+      "es",
+      "está",
+      "estoy"
+     ],
+     "answer": 0
+    },
+    {
+     "type": "choice",
+     "text": "Nosotros ___ en el parque.",
+     "native": {
+      "tr": "Biz parktayız.",
+      "en": "We are in the park."
+     },
+     "options": [
+      "somos",
+      "estamos",
+      "son"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "choice",
+     "text": "Las llaves ___ en la mesa.",
+     "native": {
+      "tr": "Anahtarlar masanın üstünde.",
+      "en": "The keys are on the table."
+     },
+     "options": [
+      "son",
+      "es",
+      "están"
+     ],
+     "answer": 2
+    },
+    {
+     "type": "choice",
+     "text": "Hoy ___ lunes.",
+     "native": {
+      "tr": "Bugün pazartesi.",
+      "en": "Today is Monday."
+     },
+     "options": [
+      "está",
+      "es",
+      "soy",
+      "son"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "choice",
+     "text": "Ana ___ enferma desde ayer.",
+     "native": {
+      "tr": "Ana dünden beri hasta.",
+      "en": "Ana has been ill since yesterday."
+     },
+     "options": [
+      "está",
+      "es",
+      "son"
+     ],
+     "answer": 0
+    }
+   ]
+  },
+  {
+   "id": "present-regular",
+   "level": "A1",
+   "title": {
+    "tr": "Şimdiki zaman: hablo, como, vivo",
+    "en": "Present tense: hablo, como, vivo"
+   },
+   "tip": {
+    "tr": "-ar, -er, -ir fiilleri ekle çekilir: hablo, hablas, habla, hablamos, habláis, hablan.",
+    "en": "Regular verbs take endings: hablo, hablas, habla, hablamos, habláis, hablan (and likewise -er / -ir verbs)."
+   },
+   "items": [
+    {
+     "type": "build",
+     "text": "Yo hablo español todos los días.",
+     "native": {
+      "tr": "Her gün İspanyolca konuşuyorum.",
+      "en": "I speak Spanish every day."
+     },
+     "extra": [
+      "hablas",
+      "habla",
+      "hablamos"
+     ],
+     "alt": [
+      "Todos los días yo hablo español."
+     ]
+    },
+    {
+     "type": "build",
+     "text": "Ella come pan en el desayuno.",
+     "native": {
+      "tr": "Kahvaltıda ekmek yer.",
+      "en": "She eats bread at breakfast."
+     },
+     "extra": [
+      "comes",
+      "como",
+      "comen"
+     ],
+     "alt": []
+    },
+    {
+     "type": "build",
+     "text": "Nosotros vivimos en Madrid.",
+     "native": {
+      "tr": "Madrid'de yaşıyoruz.",
+      "en": "We live in Madrid."
+     },
+     "extra": [
+      "vivo",
+      "viven",
+      "vives"
+     ],
+     "alt": []
+    },
+    {
+     "type": "build",
+     "text": "¿Tú trabajas en una oficina?",
+     "native": {
+      "tr": "Bir ofiste mi çalışıyorsun?",
+      "en": "Do you work in an office?"
+     },
+     "extra": [
+      "trabajo",
+      "trabaja",
+      "trabajan"
+     ],
+     "alt": []
+    },
+    {
+     "type": "build",
+     "text": "Mis amigos beben agua fría.",
+     "native": {
+      "tr": "Arkadaşlarım soğuk su içer.",
+      "en": "My friends drink cold water."
+     },
+     "extra": [
+      "bebe",
+      "bebes",
+      "bebo"
+     ],
+     "alt": []
+    },
+    {
+     "type": "build",
+     "text": "Escribo un correo a mi jefe.",
+     "native": {
+      "tr": "Patronuma bir e-posta yazıyorum.",
+      "en": "I write an email to my boss."
+     },
+     "extra": [
+      "escribes",
+      "escribe",
+      "escriben"
+     ],
+     "alt": []
+    },
+    {
+     "type": "build",
+     "text": "Vosotros abrís la ventana.",
+     "native": {
+      "tr": "Siz pencereyi açıyorsunuz.",
+      "en": "You (all) open the window."
+     },
+     "extra": [
+      "abren",
+      "abro",
+      "abrimos"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "María ___ una carta.",
+     "native": {
+      "tr": "María bir mektup yazıyor.",
+      "en": "María writes a letter."
+     },
+     "options": [
+      "escribo",
+      "escribes",
+      "escribe"
+     ],
+     "answer": 2
+    },
+    {
+     "type": "choice",
+     "text": "Nosotros ___ la lección.",
+     "native": {
+      "tr": "Dersi öğreniyoruz.",
+      "en": "We learn the lesson."
+     },
+     "options": [
+      "aprendemos",
+      "aprenden",
+      "aprendo"
+     ],
+     "answer": 0
+    },
+    {
+     "type": "choice",
+     "text": "Tú ___ mucha agua.",
+     "native": {
+      "tr": "Sen çok su içiyorsun.",
+      "en": "You drink a lot of water."
+     },
+     "options": [
+      "bebe",
+      "bebes",
+      "bebo"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "choice",
+     "text": "Ellos ___ en el centro.",
+     "native": {
+      "tr": "Onlar merkezde yaşıyor.",
+      "en": "They live downtown."
+     },
+     "options": [
+      "vivo",
+      "vives",
+      "vivimos",
+      "viven"
+     ],
+     "answer": 3
+    },
+    {
+     "type": "choice",
+     "text": "Yo no ___ nada por la noche.",
+     "native": {
+      "tr": "Geceleri hiçbir şey yemem.",
+      "en": "I don't eat anything at night."
+     },
+     "options": [
+      "comes",
+      "como",
+      "comen"
+     ],
+     "answer": 1
+    }
+   ]
+  },
+  {
+   "id": "tener-hay",
+   "level": "A1",
+   "title": {
+    "tr": "Tener ve hay: tengo, hay",
+    "en": "Tener and hay: tengo, hay"
+   },
+   "tip": {
+    "tr": "Tener 'sahip olmak': tengo, tienes, tiene. Yaş da tener ile söylenir: Tengo veinte años. Hay 'var' demektir: Hay un banco.",
+    "en": "Tener means 'to have': tengo, tienes, tiene. Age also uses tener: Tengo veinte años. Hay means 'there is/are': Hay un banco."
+   },
+   "items": [
+    {
+     "type": "build",
+     "text": "Tengo dos hermanos.",
+     "native": {
+      "tr": "İki erkek kardeşim var.",
+      "en": "I have two brothers."
+     },
+     "extra": [
+      "tiene",
+      "hay",
+      "tienes"
+     ],
+     "alt": []
+    },
+    {
+     "type": "build",
+     "text": "¿Tienes un lápiz?",
+     "native": {
+      "tr": "Bir kalemin var mı?",
+      "en": "Do you have a pencil?"
+     },
+     "extra": [
+      "tengo",
+      "hay",
+      "tiene"
+     ],
+     "alt": []
+    },
+    {
+     "type": "build",
+     "text": "Hay un gato en el jardín.",
+     "native": {
+      "tr": "Bahçede bir kedi var.",
+      "en": "There is a cat in the garden."
+     },
+     "extra": [
+      "tiene",
+      "tengo",
+      "están"
+     ],
+     "alt": []
+    },
+    {
+     "type": "build",
+     "text": "Mi madre tiene cuarenta años.",
+     "native": {
+      "tr": "Annem kırk yaşında.",
+      "en": "My mother is forty years old."
+     },
+     "extra": [
+      "tengo",
+      "es",
+      "hay"
+     ],
+     "alt": []
+    },
+    {
+     "type": "build",
+     "text": "No hay leche en la nevera.",
+     "native": {
+      "tr": "Buzdolabında süt yok.",
+      "en": "There is no milk in the fridge."
+     },
+     "extra": [
+      "tiene",
+      "tienen",
+      "es"
+     ],
+     "alt": []
+    },
+    {
+     "type": "build",
+     "text": "Nosotros tenemos mucha hambre.",
+     "native": {
+      "tr": "Çok acıkmışız.",
+      "en": "We are very hungry."
+     },
+     "extra": [
+      "tienen",
+      "tengo",
+      "hay"
+     ],
+     "alt": []
+    },
+    {
+     "type": "build",
+     "text": "¿Hay un banco cerca de aquí?",
+     "native": {
+      "tr": "Buralarda yakın bir banka var mı?",
+      "en": "Is there a bank near here?"
+     },
+     "extra": [
+      "tiene",
+      "tienes",
+      "está"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Ellos ___ una casa grande.",
+     "native": {
+      "tr": "Onların büyük bir evi var.",
+      "en": "They have a big house."
+     },
+     "options": [
+      "tiene",
+      "tienen",
+      "tengo"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "choice",
+     "text": "En mi ciudad ___ muchos parques.",
+     "native": {
+      "tr": "Şehrimde çok park var.",
+      "en": "In my city there are many parks."
+     },
+     "options": [
+      "hay",
+      "tiene",
+      "están"
+     ],
+     "answer": 0
+    },
+    {
+     "type": "choice",
+     "text": "Yo ___ sed.",
+     "native": {
+      "tr": "Susadım.",
+      "en": "I am thirsty."
+     },
+     "options": [
+      "tiene",
+      "hay",
+      "tengo",
+      "tienes"
+     ],
+     "answer": 2
+    },
+    {
+     "type": "choice",
+     "text": "¿Cuántos años ___ tú?",
+     "native": {
+      "tr": "Sen kaç yaşındasın?",
+      "en": "How old are you?"
+     },
+     "options": [
+      "tengo",
+      "tienes",
+      "tiene"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "choice",
+     "text": "En la clase ___ veinte estudiantes.",
+     "native": {
+      "tr": "Sınıfta yirmi öğrenci var.",
+      "en": "There are twenty students in the class."
+     },
+     "options": [
+      "tiene",
+      "tienen",
+      "hay"
+     ],
+     "answer": 2
+    }
+   ]
+  },
+  {
+   "id": "ir-a",
+   "level": "A1",
+   "title": {
+    "tr": "Ir ve ir a + fiil: voy a comer",
+    "en": "Ir and ir a + verb: voy a comer"
+   },
+   "tip": {
+    "tr": "Ir: voy, vas, va, vamos, vais, van. Gelecek için ir a + mastar: Voy a estudiar mañana.",
+    "en": "Ir: voy, vas, va, vamos, vais, van. For the near future use ir a + infinitive: Voy a estudiar mañana."
+   },
+   "items": [
+    {
+     "type": "build",
+     "text": "Voy al cine esta noche.",
+     "native": {
+      "tr": "Bu akşam sinemaya gidiyorum.",
+      "en": "I am going to the cinema tonight."
+     },
+     "extra": [
+      "va",
+      "vas",
+      "en"
+     ],
+     "alt": [
+      "Esta noche voy al cine."
+     ]
+    },
+    {
+     "type": "build",
+     "text": "Vamos a comer pizza.",
+     "native": {
+      "tr": "Pizza yiyeceğiz.",
+      "en": "We are going to eat pizza."
+     },
+     "extra": [
+      "vais",
+      "van",
+      "en"
+     ],
+     "alt": []
+    },
+    {
+     "type": "build",
+     "text": "Mañana voy a estudiar mucho.",
+     "native": {
+      "tr": "Yarın çok çalışacağım.",
+      "en": "Tomorrow I am going to study a lot."
+     },
+     "extra": [
+      "va",
+      "vas",
+      "por"
+     ],
+     "alt": [
+      "Voy a estudiar mucho mañana."
+     ]
+    },
+    {
+     "type": "build",
+     "text": "¿Adónde vas este fin de semana?",
+     "native": {
+      "tr": "Bu hafta sonu nereye gidiyorsun?",
+      "en": "Where are you going this weekend?"
+     },
+     "extra": [
+      "va",
+      "dónde",
+      "voy"
+     ],
+     "alt": []
+    },
+    {
+     "type": "build",
+     "text": "Ellos van a viajar a Italia.",
+     "native": {
+      "tr": "İtalya'ya seyahat edecekler.",
+      "en": "They are going to travel to Italy."
+     },
+     "extra": [
+      "vamos",
+      "vas",
+      "en"
+     ],
+     "alt": []
+    },
+    {
+     "type": "build",
+     "text": "Mi hermana va a la playa.",
+     "native": {
+      "tr": "Kız kardeşim plaja gidiyor.",
+      "en": "My sister is going to the beach."
+     },
+     "extra": [
+      "voy",
+      "van",
+      "en"
+     ],
+     "alt": []
+    },
+    {
+     "type": "build",
+     "text": "¿Qué vas a hacer hoy?",
+     "native": {
+      "tr": "Bugün ne yapacaksın?",
+      "en": "What are you going to do today?"
+     },
+     "extra": [
+      "va",
+      "voy",
+      "haces"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Yo ___ a leer un libro.",
+     "native": {
+      "tr": "Bir kitap okuyacağım.",
+      "en": "I am going to read a book."
+     },
+     "options": [
+      "va",
+      "voy",
+      "vas"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "choice",
+     "text": "Nosotros ___ a la escuela en autobús.",
+     "native": {
+      "tr": "Okula otobüsle gidiyoruz.",
+      "en": "We go to school by bus."
+     },
+     "options": [
+      "vamos",
+      "van",
+      "vas"
+     ],
+     "answer": 0
+    },
+    {
+     "type": "choice",
+     "text": "Ana ___ a llamar a su madre.",
+     "native": {
+      "tr": "Ana annesini arayacak.",
+      "en": "Ana is going to call her mother."
+     },
+     "options": [
+      "vas",
+      "voy",
+      "va",
+      "van"
+     ],
+     "answer": 2
+    },
+    {
+     "type": "choice",
+     "text": "Ellos ___ a ver una película.",
+     "native": {
+      "tr": "Onlar bir film izleyecek.",
+      "en": "They are going to watch a film."
+     },
+     "options": [
+      "voy",
+      "va",
+      "vamos",
+      "van"
+     ],
+     "answer": 3
+    },
+    {
+     "type": "choice",
+     "text": "¿Tú ___ a venir a la fiesta?",
+     "native": {
+      "tr": "Partiye gelecek misin?",
+      "en": "Are you going to come to the party?"
+     },
+     "options": [
+      "va",
+      "voy",
+      "vas"
+     ],
+     "answer": 2
+    }
+   ]
+  },
+  {
+   "id": "gustar",
+   "level": "A1",
+   "title": {
+    "tr": "Gustar: me gusta, me gustan",
+    "en": "Gustar: me gusta, me gustan"
+   },
+   "tip": {
+    "tr": "Gusta tekil, gustan çoğul şeyle kullanılır: Me gusta el café, me gustan los gatos. Önce me, te, le, nos, os, les gelir.",
+    "en": "Use gusta with one thing and gustan with several: Me gusta el café, me gustan los gatos. Put me, te, le, nos, os, les first."
+   },
+   "items": [
+    {
+     "type": "build",
+     "text": "Me gusta el chocolate.",
+     "native": {
+      "tr": "Çikolatayı severim.",
+      "en": "I like chocolate."
+     },
+     "extra": [
+      "gustan",
+      "gusto",
+      "te"
+     ],
+     "alt": []
+    },
+    {
+     "type": "build",
+     "text": "Me gustan los perros.",
+     "native": {
+      "tr": "Köpekleri severim.",
+      "en": "I like dogs."
+     },
+     "extra": [
+      "gusta",
+      "gustas",
+      "le"
+     ],
+     "alt": []
+    },
+    {
+     "type": "build",
+     "text": "¿Te gusta bailar?",
+     "native": {
+      "tr": "Dans etmeyi sever misin?",
+      "en": "Do you like to dance?"
+     },
+     "extra": [
+      "gustas",
+      "gustan",
+      "me"
+     ],
+     "alt": []
+    },
+    {
+     "type": "build",
+     "text": "A ella le gustan las flores.",
+     "native": {
+      "tr": "O çiçekleri sever.",
+      "en": "She likes flowers."
+     },
+     "extra": [
+      "gusta",
+      "me",
+      "les"
+     ],
+     "alt": []
+    },
+    {
+     "type": "build",
+     "text": "No nos gusta el frío.",
+     "native": {
+      "tr": "Soğuğu sevmiyoruz.",
+      "en": "We don't like the cold."
+     },
+     "extra": [
+      "gustan",
+      "les",
+      "me"
+     ],
+     "alt": []
+    },
+    {
+     "type": "build",
+     "text": "A mis padres les gusta viajar.",
+     "native": {
+      "tr": "Annemle babam seyahat etmeyi sever.",
+      "en": "My parents like to travel."
+     },
+     "extra": [
+      "gustan",
+      "le",
+      "nos"
+     ],
+     "alt": []
+    },
+    {
+     "type": "build",
+     "text": "¿Os gustan estas camisas azules?",
+     "native": {
+      "tr": "Bu mavi gömlekleri sever misiniz?",
+      "en": "Do you (all) like these blue shirts?"
+     },
+     "extra": [
+      "gusta",
+      "nos",
+      "te"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "A mí ___ gusta la música.",
+     "native": {
+      "tr": "Ben müziği severim.",
+      "en": "I like music."
+     },
+     "options": [
+      "le",
+      "me",
+      "nos"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "choice",
+     "text": "A ti ___ gustan los helados.",
+     "native": {
+      "tr": "Sen dondurmaları seversin.",
+      "en": "You like ice cream."
+     },
+     "options": [
+      "te",
+      "me",
+      "le"
+     ],
+     "answer": 0
+    },
+    {
+     "type": "choice",
+     "text": "Nos ___ las películas de miedo.",
+     "native": {
+      "tr": "Korku filmlerini severiz.",
+      "en": "We like horror films."
+     },
+     "options": [
+      "gustamos",
+      "gusta",
+      "gustan"
+     ],
+     "answer": 2
+    },
+    {
+     "type": "choice",
+     "text": "A él no le ___ leer.",
+     "native": {
+      "tr": "O okumayı sevmez.",
+      "en": "He doesn't like reading."
+     },
+     "options": [
+      "gusto",
+      "gusta",
+      "gustan",
+      "gustas"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "choice",
+     "text": "A ellos ___ gusta el fútbol.",
+     "native": {
+      "tr": "Onlar futbolu sever.",
+      "en": "They like football."
+     },
+     "options": [
+      "les",
+      "le",
+      "os"
+     ],
+     "answer": 0
+    }
+   ]
+  },
+  {
+   "id": "reflexivos",
+   "level": "A2",
+   "title": {
+    "tr": "Dönüşlü fiiller: me levanto",
+    "en": "Reflexive verbs: me levanto"
+   },
+   "tip": {
+    "tr": "Dönüşlü fiillerde me, te, se, nos, os, se fiilden önce gelir: Me levanto a las siete. Ella se ducha.",
+    "en": "Reflexive verbs use me, te, se, nos, os, se before the verb: Me levanto a las siete. Ella se ducha."
+   },
+   "items": [
+    {
+     "type": "build",
+     "text": "Me levanto a las siete.",
+     "native": {
+      "tr": "Saat yedide kalkarım.",
+      "en": "I get up at seven."
+     },
+     "extra": [
+      "te",
+      "levantas",
+      "se"
+     ],
+     "alt": [
+      "A las siete me levanto."
+     ]
+    },
+    {
+     "type": "build",
+     "text": "Ella se ducha por la mañana.",
+     "native": {
+      "tr": "Sabahları duş alır.",
+      "en": "She showers in the morning."
+     },
+     "extra": [
+      "me",
+      "te",
+      "ducho"
+     ],
+     "alt": []
+    },
+    {
+     "type": "build",
+     "text": "Nos acostamos muy tarde.",
+     "native": {
+      "tr": "Çok geç yatarız.",
+      "en": "We go to bed very late."
+     },
+     "extra": [
+      "se",
+      "me",
+      "acostáis"
+     ],
+     "alt": []
+    },
+    {
+     "type": "build",
+     "text": "¿A qué hora te despiertas?",
+     "native": {
+      "tr": "Saat kaçta uyanırsın?",
+      "en": "What time do you wake up?"
+     },
+     "extra": [
+      "me",
+      "se",
+      "despierta"
+     ],
+     "alt": []
+    },
+    {
+     "type": "build",
+     "text": "Mis hijos se lavan las manos.",
+     "native": {
+      "tr": "Çocuklarım ellerini yıkıyor.",
+      "en": "My children wash their hands."
+     },
+     "extra": [
+      "me",
+      "lava",
+      "nos"
+     ],
+     "alt": []
+    },
+    {
+     "type": "build",
+     "text": "Yo me llamo Pablo y vivo aquí.",
+     "native": {
+      "tr": "Adım Pablo ve burada yaşıyorum.",
+      "en": "My name is Pablo and I live here."
+     },
+     "extra": [
+      "se",
+      "llamas",
+      "te"
+     ],
+     "alt": []
+    },
+    {
+     "type": "build",
+     "text": "Vosotros os vestís muy rápido.",
+     "native": {
+      "tr": "Siz çok hızlı giyiniyorsunuz.",
+      "en": "You (all) get dressed very fast."
+     },
+     "extra": [
+      "se",
+      "nos",
+      "vestimos"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Yo ___ afeito cada mañana.",
+     "native": {
+      "tr": "Her sabah tıraş olurum.",
+      "en": "I shave every morning."
+     },
+     "options": [
+      "se",
+      "me",
+      "te"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "choice",
+     "text": "Tú ___ peinas antes de salir.",
+     "native": {
+      "tr": "Çıkmadan önce saçını tararsın.",
+      "en": "You comb your hair before going out."
+     },
+     "options": [
+      "te",
+      "me",
+      "se"
+     ],
+     "answer": 0
+    },
+    {
+     "type": "choice",
+     "text": "Ellos ___ sientan en el sofá.",
+     "native": {
+      "tr": "Onlar kanepeye oturur.",
+      "en": "They sit down on the sofa."
+     },
+     "options": [
+      "me",
+      "nos",
+      "se"
+     ],
+     "answer": 2
+    },
+    {
+     "type": "choice",
+     "text": "Nosotros ___ divertimos mucho.",
+     "native": {
+      "tr": "Çok eğleniriz.",
+      "en": "We have a lot of fun."
+     },
+     "options": [
+      "os",
+      "se",
+      "me",
+      "nos"
+     ],
+     "answer": 3
+    },
+    {
+     "type": "choice",
+     "text": "Mi abuelo ___ siente cansado.",
+     "native": {
+      "tr": "Büyükbabam kendini yorgun hissediyor.",
+      "en": "My grandfather feels tired."
+     },
+     "options": [
+      "se",
+      "me",
+      "nos"
+     ],
+     "answer": 0
+    }
+   ]
+  },
+  {
+   "id": "indefinido",
+   "level": "A2",
+   "title": {
+    "tr": "Geçmiş zaman: comí, hablé, fui",
+    "en": "Preterite: comí, hablé, fui"
+   },
+   "tip": {
+    "tr": "Tamamlanmış geçmiş olaylar için: ayer comí, ella habló. Düzensizler: fui (ir/ser), hice, tuve.",
+    "en": "Use the preterite for finished past events: ayer comí, ella habló. Irregulars: fui (ir/ser), hice, tuve."
+   },
+   "items": [
+    {
+     "type": "build",
+     "text": "Ayer comí con mi familia.",
+     "native": {
+      "tr": "Dün ailemle yemek yedim.",
+      "en": "Yesterday I ate with my family."
+     },
+     "extra": [
+      "como",
+      "comió",
+      "comía"
+     ],
+     "alt": []
+    },
+    {
+     "type": "build",
+     "text": "Ella habló con el director.",
+     "native": {
+      "tr": "Müdürle konuştu.",
+      "en": "She spoke with the director."
+     },
+     "extra": [
+      "habla",
+      "hablé",
+      "hablaba"
+     ],
+     "alt": []
+    },
+    {
+     "type": "build",
+     "text": "Anoche vimos una película.",
+     "native": {
+      "tr": "Dün gece bir film izledik.",
+      "en": "Last night we watched a film."
+     },
+     "extra": [
+      "vemos",
+      "veíamos",
+      "vio"
+     ],
+     "alt": []
+    },
+    {
+     "type": "build",
+     "text": "El año pasado fuimos a Roma.",
+     "native": {
+      "tr": "Geçen yıl Roma'ya gittik.",
+      "en": "Last year we went to Rome."
+     },
+     "extra": [
+      "vamos",
+      "iba",
+      "fui"
+     ],
+     "alt": []
+    },
+    {
+     "type": "build",
+     "text": "¿Qué hiciste el sábado?",
+     "native": {
+      "tr": "Cumartesi ne yaptın?",
+      "en": "What did you do on Saturday?"
+     },
+     "extra": [
+      "haces",
+      "hizo",
+      "hacías"
+     ],
+     "alt": []
+    },
+    {
+     "type": "build",
+     "text": "Mis amigos llegaron a las ocho.",
+     "native": {
+      "tr": "Arkadaşlarım sekizde geldi.",
+      "en": "My friends arrived at eight."
+     },
+     "extra": [
+      "llegan",
+      "llegó",
+      "llegaba"
+     ],
+     "alt": []
+    },
+    {
+     "type": "build",
+     "text": "Yo no tuve tiempo ayer.",
+     "native": {
+      "tr": "Dün vaktim olmadı.",
+      "en": "I didn't have time yesterday."
+     },
+     "extra": [
+      "tengo",
+      "tuvo",
+      "tenía"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Ayer yo ___ una carta.",
+     "native": {
+      "tr": "Dün bir mektup yazdım.",
+      "en": "Yesterday I wrote a letter."
+     },
+     "options": [
+      "escribo",
+      "escribió",
+      "escribí"
+     ],
+     "answer": 2
+    },
+    {
+     "type": "choice",
+     "text": "Ellos ___ en un hotel el verano pasado.",
+     "native": {
+      "tr": "Geçen yaz bir otelde uyudular.",
+      "en": "They slept in a hotel last summer."
+     },
+     "options": [
+      "durmieron",
+      "duermen",
+      "dormí"
+     ],
+     "answer": 0
+    },
+    {
+     "type": "choice",
+     "text": "Nosotros ___ al museo el domingo.",
+     "native": {
+      "tr": "Pazar günü müzeye gittik.",
+      "en": "We went to the museum on Sunday."
+     },
+     "options": [
+      "vamos",
+      "fuimos",
+      "fue"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "choice",
+     "text": "Tú ___ el pan ayer.",
+     "native": {
+      "tr": "Dün ekmeği sen aldın.",
+      "en": "You bought the bread yesterday."
+     },
+     "options": [
+      "compras",
+      "compró",
+      "compraste",
+      "compré"
+     ],
+     "answer": 2
+    },
+    {
+     "type": "choice",
+     "text": "Ana ___ la puerta y salió.",
+     "native": {
+      "tr": "Ana kapıyı açtı ve çıktı.",
+      "en": "Ana opened the door and left."
+     },
+     "options": [
+      "abrió",
+      "abre",
+      "abrí"
+     ],
+     "answer": 0
+    }
+   ]
+  },
+  {
+   "id": "perfecto",
+   "level": "A2",
+   "title": {
+    "tr": "Pretérito perfecto: he comido",
+    "en": "Present perfect: he comido"
+   },
+   "tip": {
+    "tr": "Haber (he, has, ha, hemos, habéis, han) + participio: He comido paella hoy. Hecho, visto, escrito düzensizdir.",
+    "en": "Haber (he, has, ha, hemos, habéis, han) + past participle: He comido paella hoy. Irregular: hecho, visto, escrito."
+   },
+   "items": [
+    {
+     "type": "build",
+     "text": "He comido paella hoy.",
+     "native": {
+      "tr": "Bugün paella yedim.",
+      "en": "I have eaten paella today."
+     },
+     "extra": [
+      "has",
+      "comí",
+      "ha"
+     ],
+     "alt": []
+    },
+    {
+     "type": "build",
+     "text": "¿Has visto mi móvil?",
+     "native": {
+      "tr": "Telefonumu gördün mü?",
+      "en": "Have you seen my phone?"
+     },
+     "extra": [
+      "he",
+      "viste",
+      "ha"
+     ],
+     "alt": []
+    },
+    {
+     "type": "build",
+     "text": "Ella ha vivido en Francia.",
+     "native": {
+      "tr": "O Fransa'da yaşadı.",
+      "en": "She has lived in France."
+     },
+     "extra": [
+      "han",
+      "has",
+      "vivía"
+     ],
+     "alt": []
+    },
+    {
+     "type": "build",
+     "text": "Nunca hemos estado en Japón.",
+     "native": {
+      "tr": "Hiç Japonya'da bulunmadık.",
+      "en": "We have never been to Japan."
+     },
+     "extra": [
+      "han",
+      "he",
+      "estamos"
+     ],
+     "alt": []
+    },
+    {
+     "type": "build",
+     "text": "Todavía no he terminado el trabajo.",
+     "native": {
+      "tr": "Işi henüz bitirmedim.",
+      "en": "I haven't finished the work yet."
+     },
+     "extra": [
+      "has",
+      "ha",
+      "terminé"
+     ],
+     "alt": []
+    },
+    {
+     "type": "build",
+     "text": "Mis padres han salido de casa.",
+     "native": {
+      "tr": "Annemle babam evden çıktı.",
+      "en": "My parents have left the house."
+     },
+     "extra": [
+      "ha",
+      "hemos",
+      "salieron"
+     ],
+     "alt": []
+    },
+    {
+     "type": "build",
+     "text": "Esta semana hemos trabajado mucho.",
+     "native": {
+      "tr": "Bu hafta çok çalıştık.",
+      "en": "This week we have worked a lot."
+     },
+     "extra": [
+      "han",
+      "trabajamos",
+      "ha"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Esta mañana he ___ el periódico.",
+     "native": {
+      "tr": "Bu sabah gazeteyi okudum.",
+      "en": "This morning I have read the newspaper."
+     },
+     "options": [
+      "lee",
+      "leído",
+      "leí"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "choice",
+     "text": "¿Ya ___ hecho la cena?",
+     "native": {
+      "tr": "Akşam yemeğini yaptın mı?",
+      "en": "Have you already made dinner?"
+     },
+     "options": [
+      "has",
+      "ha",
+      "he"
+     ],
+     "answer": 0
+    },
+    {
+     "type": "choice",
+     "text": "Mi hermano todavía no ___ llegado.",
+     "native": {
+      "tr": "Kardeşim henüz gelmedi.",
+      "en": "My brother hasn't arrived yet."
+     },
+     "options": [
+      "han",
+      "he",
+      "ha",
+      "has"
+     ],
+     "answer": 2
+    },
+    {
+     "type": "choice",
+     "text": "Nosotros ya hemos ___ la tarea.",
+     "native": {
+      "tr": "Ödevi zaten yaptık.",
+      "en": "We have already done the homework."
+     },
+     "options": [
+      "hecho",
+      "hacemos",
+      "hizo"
+     ],
+     "answer": 0
+    },
+    {
+     "type": "choice",
+     "text": "¿Habéis ___ ya la comida?",
+     "native": {
+      "tr": "Yemeği daha tattınız mı?",
+      "en": "Have you (all) tried the food yet?"
+     },
+     "options": [
+      "probamos",
+      "probado",
+      "probasteis"
+     ],
+     "answer": 1
+    }
+   ]
+  },
+  {
+   "id": "pronombres-od",
+   "level": "A2",
+   "title": {
+    "tr": "Nesne zamirleri: lo, la, los, las",
+    "en": "Direct object pronouns: lo, la, los, las"
+   },
+   "tip": {
+    "tr": "Nesne zamiri fiilden önce gelir: Lo compro, la veo, los tengo, las conozco. Kişi için me, te, nos de kullanılır.",
+    "en": "The pronoun goes before the verb: Lo compro, la veo, los tengo, las conozco. For people also me, te, nos: Te quiero."
+   },
+   "items": [
+    {
+     "type": "build",
+     "text": "Lo compro hoy.",
+     "native": {
+      "tr": "Onu bugün alırım.",
+      "en": "I buy it today."
+     },
+     "extra": [
+      "la",
+      "los",
+      "compra"
+     ],
+     "alt": [
+      "Hoy lo compro."
+     ]
+    },
+    {
+     "type": "build",
+     "text": "La veo todos los días.",
+     "native": {
+      "tr": "Onu her gün görüyorum.",
+      "en": "I see her every day."
+     },
+     "extra": [
+      "lo",
+      "las",
+      "ve"
+     ],
+     "alt": [
+      "Todos los días la veo."
+     ]
+    },
+    {
+     "type": "build",
+     "text": "¿Los tienes en casa?",
+     "native": {
+      "tr": "Onlar sende evde mi?",
+      "en": "Do you have them at home?"
+     },
+     "extra": [
+      "lo",
+      "las",
+      "tiene"
+     ],
+     "alt": []
+    },
+    {
+     "type": "build",
+     "text": "No las conozco bien.",
+     "native": {
+      "tr": "Onları iyi tanımıyorum.",
+      "en": "I don't know them well."
+     },
+     "extra": [
+      "los",
+      "la",
+      "conoces"
+     ],
+     "alt": []
+    },
+    {
+     "type": "build",
+     "text": "Ella nos llama cada noche.",
+     "native": {
+      "tr": "Bizi her gece arar.",
+      "en": "She calls us every night."
+     },
+     "extra": [
+      "me",
+      "os",
+      "llamo"
+     ],
+     "alt": [
+      "Cada noche ella nos llama."
+     ]
+    },
+    {
+     "type": "build",
+     "text": "Te quiero mucho, mamá.",
+     "native": {
+      "tr": "Seni çok seviyorum anne.",
+      "en": "I love you very much, mum."
+     },
+     "extra": [
+      "me",
+      "lo",
+      "quieres"
+     ],
+     "alt": []
+    },
+    {
+     "type": "build",
+     "text": "Lo voy a comprar mañana.",
+     "native": {
+      "tr": "Onu yarın alacağım.",
+      "en": "I am going to buy it tomorrow."
+     },
+     "extra": [
+      "la",
+      "los",
+      "compro"
+     ],
+     "alt": [
+      "Mañana lo voy a comprar."
+     ]
+    },
+    {
+     "type": "choice",
+     "text": "—¿Dónde está la llave? —___ tengo yo.",
+     "native": {
+      "tr": "Anahtar nerede? Bende.",
+      "en": "Where is the key? I have it."
+     },
+     "options": [
+      "La",
+      "Lo",
+      "Las"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "choice",
+     "text": "Compro las flores y ___ pongo en la mesa.",
+     "native": {
+      "tr": "Çiçekleri alıp masaya koyuyorum.",
+      "en": "I buy the flowers and put them on the table."
+     },
+     "options": [
+      "los",
+      "la",
+      "las"
+     ],
+     "answer": 2
+    },
+    {
+     "type": "choice",
+     "text": "Mis amigos ___ invitan a la fiesta.",
+     "native": {
+      "tr": "Arkadaşlarım beni partiye çağırıyor.",
+      "en": "My friends invite me to the party."
+     },
+     "options": [
+      "me",
+      "la",
+      "les"
+     ],
+     "answer": 0
+    },
+    {
+     "type": "choice",
+     "text": "¿Ves a Juan? Sí, ___ veo.",
+     "native": {
+      "tr": "Juan'ı görüyor musun? Evet, onu görüyorum.",
+      "en": "Do you see Juan? Yes, I see him."
+     },
+     "options": [
+      "la",
+      "los",
+      "lo"
+     ],
+     "answer": 2
+    },
+    {
+     "type": "choice",
+     "text": "Necesito las llaves. ¿___ has visto?",
+     "native": {
+      "tr": "Anahtarlara ihtiyacım var. Onları gördün mü?",
+      "en": "I need the keys. Have you seen them?"
+     },
+     "options": [
+      "Los",
+      "Las",
+      "La"
+     ],
+     "answer": 1
+    }
+   ]
+  },
+  {
+   "id": "imperfecto-indefinido",
+   "level": "B1",
+   "title": {
+    "tr": "Imperfecto ve indefinido: vivía / vivió",
+    "en": "Imperfect vs preterite: vivía / vivió"
+   },
+   "tip": {
+    "tr": "Imperfecto süregelen durumları ve alışkanlıkları anlatır (vivía); indefinido bitmiş tek olayı (vivió). Örnek: Llovía cuando salí.",
+    "en": "The imperfect describes background and habits (vivía); the preterite describes a finished event (vivió). Example: Llovía cuando salí."
+   },
+   "items": [
+    {
+     "type": "build",
+     "text": "Cuando era niño, vivía en un pueblo pequeño.",
+     "native": {
+      "tr": "Çocukken küçük bir köyde yaşıyordum.",
+      "en": "When I was a child, I lived in a small village."
+     },
+     "extra": [
+      "vivió",
+      "fue",
+      "viví"
+     ],
+     "alt": [
+      "Vivía en un pueblo pequeño cuando era niño."
+     ]
+    },
+    {
+     "type": "choice",
+     "text": "Ayer ___ a mi abuela por teléfono.",
+     "native": {
+      "tr": "Dün büyükannemi telefonla aradım.",
+      "en": "Yesterday I called my grandmother on the phone."
+     },
+     "options": [
+      "llamé",
+      "llamaba",
+      "llamo",
+      "llamaré"
+     ],
+     "answer": 0
+    },
+    {
+     "type": "build",
+     "text": "Ayer llovía cuando salí de casa.",
+     "native": {
+      "tr": "Dün evden çıktığımda yağmur yağıyordu.",
+      "en": "Yesterday it was raining when I left home."
+     },
+     "extra": [
+      "llovió",
+      "salía",
+      "salgo"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Cuando ___ joven, trabajaba en un banco.",
+     "native": {
+      "tr": "Gençken bir bankada çalışıyordum.",
+      "en": "When I was young, I worked at a bank."
+     },
+     "options": [
+      "fui",
+      "era",
+      "seré"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "build",
+     "text": "Mientras cocinaba, sonó el teléfono.",
+     "native": {
+      "tr": "Yemek yaparken telefon çaldı.",
+      "en": "While I was cooking, the phone rang."
+     },
+     "extra": [
+      "sonaba",
+      "cocinó",
+      "llamó"
+     ],
+     "alt": [
+      "Sonó el teléfono mientras cocinaba."
+     ]
+    },
+    {
+     "type": "choice",
+     "text": "De repente ___ un ruido muy fuerte.",
+     "native": {
+      "tr": "Birden çok yüksek bir ses duyuldu.",
+      "en": "Suddenly a very loud noise was heard."
+     },
+     "options": [
+      "se oía",
+      "se oye",
+      "se oyó"
+     ],
+     "answer": 2
+    },
+    {
+     "type": "build",
+     "text": "Anoche vimos una película muy buena.",
+     "native": {
+      "tr": "Dün gece çok iyi bir film izledik.",
+      "en": "Last night we watched a very good film."
+     },
+     "extra": [
+      "veíamos",
+      "vemos",
+      "vio"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Todos los veranos ___ al pueblo de mis abuelos.",
+     "native": {
+      "tr": "Her yaz büyükanne ve büyükbabamın köyüne giderdik.",
+      "en": "Every summer we went to my grandparents' village."
+     },
+     "options": [
+      "íbamos",
+      "fuimos",
+      "vamos",
+      "iremos"
+     ],
+     "answer": 0
+    },
+    {
+     "type": "build",
+     "text": "De pequeña siempre jugaba en la calle.",
+     "native": {
+      "tr": "Küçükken hep sokakta oynardım.",
+      "en": "As a little girl I always played in the street."
+     },
+     "extra": [
+      "jugó",
+      "jugué",
+      "juega"
+     ],
+     "alt": [
+      "Siempre jugaba en la calle de pequeña."
+     ]
+    },
+    {
+     "type": "choice",
+     "text": "Ayer no ___ al trabajo porque estaba enfermo.",
+     "native": {
+      "tr": "Dün hasta olduğum için işe gitmedim.",
+      "en": "Yesterday I didn't go to work because I was ill."
+     },
+     "options": [
+      "iba",
+      "fui",
+      "voy"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "build",
+     "text": "El sábado pasado fuimos a la playa.",
+     "native": {
+      "tr": "Geçen cumartesi plaja gittik.",
+      "en": "Last Saturday we went to the beach."
+     },
+     "extra": [
+      "íbamos",
+      "vamos",
+      "fue"
+     ],
+     "alt": []
+    },
+    {
+     "type": "build",
+     "text": "Hacía frío y no tenía ganas de salir.",
+     "native": {
+      "tr": "Hava soğuktu ve çıkmak istemiyordum.",
+      "en": "It was cold and I didn't feel like going out."
+     },
+     "extra": [
+      "hizo",
+      "tuve",
+      "salió"
+     ],
+     "alt": []
+    }
+   ]
+  },
+  {
+   "id": "futuro-simple",
+   "level": "B1",
+   "title": {
+    "tr": "Futuro simple: hablaré, tendré",
+    "en": "Simple future: hablaré, tendré"
+   },
+   "tip": {
+    "tr": "Futuro: infinitivo + -é, -ás, -á, -emos, -éis, -án (hablaré). Bazı fiiller düzensiz: tendré, haré, saldré. Tahmin için de kullanılır.",
+    "en": "Future: infinitive + -é, -ás, -á, -emos, -éis, -án (hablaré). Some verbs are irregular: tendré, haré, saldré. It also expresses guesses."
+   },
+   "items": [
+    {
+     "type": "build",
+     "text": "Mañana lloverá en todo el país.",
+     "native": {
+      "tr": "Yarın ülkenin her yerinde yağmur yağacak.",
+      "en": "Tomorrow it will rain all over the country."
+     },
+     "extra": [
+      "llueve",
+      "lloverían",
+      "llovió"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "El año que viene ___ en una ciudad nueva.",
+     "native": {
+      "tr": "Gelecek yıl yeni bir şehirde yaşayacağım.",
+      "en": "Next year I will live in a new city."
+     },
+     "options": [
+      "viviré",
+      "vivo",
+      "viví",
+      "vivía"
+     ],
+     "answer": 0
+    },
+    {
+     "type": "build",
+     "text": "El próximo año viajaré a México.",
+     "native": {
+      "tr": "Gelecek yıl Meksika'ya seyahat edeceğim.",
+      "en": "Next year I will travel to Mexico."
+     },
+     "extra": [
+      "viajé",
+      "viajaría",
+      "viajo"
+     ],
+     "alt": [
+      "Viajaré a México el próximo año."
+     ]
+    },
+    {
+     "type": "choice",
+     "text": "Si no hay tráfico, ___ a tiempo.",
+     "native": {
+      "tr": "Trafik yoksa zamanında varacağız.",
+      "en": "If there is no traffic, we will arrive on time."
+     },
+     "options": [
+      "llegué",
+      "llegaremos",
+      "llegaba"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "build",
+     "text": "¿Qué harás el fin de semana?",
+     "native": {
+      "tr": "Hafta sonu ne yapacaksın?",
+      "en": "What will you do at the weekend?"
+     },
+     "extra": [
+      "haces",
+      "hiciste",
+      "harías"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Dentro de una semana ___ los resultados del examen.",
+     "native": {
+      "tr": "Bir hafta içinde sınav sonuçlarını alacağız.",
+      "en": "In a week we will have the exam results."
+     },
+     "options": [
+      "tuvimos",
+      "teníamos",
+      "tenían",
+      "tendremos"
+     ],
+     "answer": 3
+    },
+    {
+     "type": "build",
+     "text": "Mis padres vendrán a vernos en verano.",
+     "native": {
+      "tr": "Annem babam yazın bizi görmeye gelecek.",
+      "en": "My parents will come to see us in summer."
+     },
+     "extra": [
+      "vienen",
+      "vinieron",
+      "vendrían"
+     ],
+     "alt": [
+      "En verano mis padres vendrán a vernos."
+     ]
+    },
+    {
+     "type": "choice",
+     "text": "Tú ___ muy feliz en tu nuevo trabajo, seguro.",
+     "native": {
+      "tr": "Eminim yeni işinde çok mutlu olacaksın.",
+      "en": "You will surely be very happy in your new job."
+     },
+     "options": [
+      "serás",
+      "fuiste",
+      "eras"
+     ],
+     "answer": 0
+    },
+    {
+     "type": "build",
+     "text": "Dentro de diez años tendré mi propia empresa.",
+     "native": {
+      "tr": "On yıl içinde kendi şirketim olacak.",
+      "en": "In ten years I will have my own company."
+     },
+     "extra": [
+      "tengo",
+      "tenía",
+      "tuve"
+     ],
+     "alt": [
+      "Tendré mi propia empresa dentro de diez años."
+     ]
+    },
+    {
+     "type": "choice",
+     "text": "Ellos no ___ venir mañana porque tienen un examen.",
+     "native": {
+      "tr": "Yarın sınavları olduğu için gelemeyecekler.",
+      "en": "They won't be able to come tomorrow because they have an exam."
+     },
+     "options": [
+      "pudieron",
+      "podrán",
+      "podían"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "build",
+     "text": "Juan no contesta, estará durmiendo.",
+     "native": {
+      "tr": "Juan cevap vermiyor, uyuyor olmalı.",
+      "en": "Juan isn't answering, he must be sleeping."
+     },
+     "extra": [
+      "está",
+      "estaba",
+      "estuvo"
+     ],
+     "alt": []
+    },
+    {
+     "type": "build",
+     "text": "Nosotros saldremos de casa a las ocho.",
+     "native": {
+      "tr": "Biz sekizde evden çıkacağız.",
+      "en": "We will leave the house at eight."
+     },
+     "extra": [
+      "salimos",
+      "salíamos",
+      "saldría"
+     ],
+     "alt": []
+    }
+   ]
+  },
+  {
+   "id": "condicional",
+   "level": "B1",
+   "title": {
+    "tr": "Condicional: me gustaría, podrías",
+    "en": "Conditional: me gustaría, podrías"
+   },
+   "tip": {
+    "tr": "Condicional: infinitivo + -ía, -ías, -ía, -íamos, -íais, -ían. Nazik rica, tavsiye ve geçmişteki gelecek için kullanılır: Me gustaría viajar.",
+    "en": "Conditional: infinitive + -ía, -ías, -ía, -íamos, -íais, -ían. Used for polite requests, advice and the future in the past: Me gustaría viajar."
+   },
+   "items": [
+    {
+     "type": "build",
+     "text": "Me gustaría viajar por toda Sudamérica.",
+     "native": {
+      "tr": "Tüm Güney Amerika'yı gezmek isterdim.",
+      "en": "I would like to travel all around South America."
+     },
+     "extra": [
+      "gustaba",
+      "gustó",
+      "gustará"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Con un millón de euros, ___ la vuelta al mundo.",
+     "native": {
+      "tr": "Bir milyon euroyla dünya turuna çıkardım.",
+      "en": "With a million euros, I would go around the world."
+     },
+     "options": [
+      "doy",
+      "daría",
+      "di",
+      "daré"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "build",
+     "text": "¿Podrías abrir la ventana, por favor?",
+     "native": {
+      "tr": "Pencereyi açabilir misin lütfen?",
+      "en": "Could you open the window, please?"
+     },
+     "extra": [
+      "puedes",
+      "pudiste",
+      "podrás"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Mi hermana dijo que ___ a vernos el domingo.",
+     "native": {
+      "tr": "Kız kardeşim pazar günü bizi görmeye geleceğini söyledi.",
+      "en": "My sister said she would come to see us on Sunday."
+     },
+     "options": [
+      "vino",
+      "vendría",
+      "vendré"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "build",
+     "text": "Yo en tu lugar hablaría con ella.",
+     "native": {
+      "tr": "Senin yerinde olsam onunla konuşurdum.",
+      "en": "In your place I would talk to her."
+     },
+     "extra": [
+      "hablo",
+      "hablé",
+      "hablaré"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Perdone, ¿___ decirme dónde está el banco?",
+     "native": {
+      "tr": "Pardon, bankanın nerede olduğunu söyleyebilir misiniz?",
+      "en": "Excuse me, could you tell me where the bank is?"
+     },
+     "options": [
+      "Pude",
+      "Podré",
+      "Podría"
+     ],
+     "answer": 2
+    },
+    {
+     "type": "build",
+     "text": "Dijo que llegaría a las nueve.",
+     "native": {
+      "tr": "Dokuzda geleceğini söyledi.",
+      "en": "He said he would arrive at nine."
+     },
+     "extra": [
+      "llegará",
+      "llega",
+      "llegó"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "En tu situación, yo no ___ nada.",
+     "native": {
+      "tr": "Senin durumunda ben hiçbir şey söylemezdim.",
+      "en": "In your situation, I wouldn't say anything."
+     },
+     "options": [
+      "digo",
+      "dije",
+      "diré",
+      "diría"
+     ],
+     "answer": 3
+    },
+    {
+     "type": "build",
+     "text": "Con más dinero compraríamos una casa grande.",
+     "native": {
+      "tr": "Daha çok parayla büyük bir ev alırdık.",
+      "en": "With more money we would buy a big house."
+     },
+     "extra": [
+      "compramos",
+      "compraremos",
+      "compraban"
+     ],
+     "alt": [
+      "Compraríamos una casa grande con más dinero."
+     ]
+    },
+    {
+     "type": "choice",
+     "text": "¿Qué ___ tú en mi lugar?",
+     "native": {
+      "tr": "Sen benim yerimde ne yapardın?",
+      "en": "What would you do in my place?"
+     },
+     "options": [
+      "harías",
+      "hiciste",
+      "harás"
+     ],
+     "answer": 0
+    },
+    {
+     "type": "build",
+     "text": "Deberías dormir más para estar mejor.",
+     "native": {
+      "tr": "Daha iyi olmak için daha çok uyumalısın.",
+      "en": "You should sleep more to feel better."
+     },
+     "extra": [
+      "debes",
+      "debiste",
+      "deberás"
+     ],
+     "alt": []
+    },
+    {
+     "type": "build",
+     "text": "¿Te importaría cerrar la puerta?",
+     "native": {
+      "tr": "Kapıyı kapatmanın sakıncası olur mu?",
+      "en": "Would you mind closing the door?"
+     },
+     "extra": [
+      "importa",
+      "importó",
+      "importará"
+     ],
+     "alt": []
+    }
+   ]
+  },
+  {
+   "id": "subjuntivo-presente",
+   "level": "B1",
+   "title": {
+    "tr": "Subjuntivo: quiero que vengas",
+    "en": "Subjunctive: quiero que vengas"
+   },
+   "tip": {
+    "tr": "Querer que, esperar que, es importante que gibi ifadelerden sonra subjuntivo kullanılır: Quiero que vengas. -ar fiilleri -e, -er/-ir fiilleri -a alır.",
+    "en": "After querer que, esperar que or es importante que we use the subjunctive: Quiero que vengas. -ar verbs take -e, -er/-ir verbs take -a."
+   },
+   "items": [
+    {
+     "type": "build",
+     "text": "Quiero que vengas a mi fiesta.",
+     "native": {
+      "tr": "Partime gelmeni istiyorum.",
+      "en": "I want you to come to my party."
+     },
+     "extra": [
+      "vienes",
+      "vengo",
+      "venir"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Quiero que tú ___ la verdad.",
+     "native": {
+      "tr": "Gerçeği söylemeni istiyorum.",
+      "en": "I want you to tell the truth."
+     },
+     "options": [
+      "dices",
+      "decir",
+      "digas",
+      "dijiste"
+     ],
+     "answer": 2
+    },
+    {
+     "type": "build",
+     "text": "Es importante que comas más verduras.",
+     "native": {
+      "tr": "Daha çok sebze yemen önemli.",
+      "en": "It is important that you eat more vegetables."
+     },
+     "extra": [
+      "comes",
+      "comer",
+      "como"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Es mejor que nosotros ___ temprano.",
+     "native": {
+      "tr": "Erken çıkmamız daha iyi.",
+      "en": "It's better that we leave early."
+     },
+     "options": [
+      "salimos",
+      "salgamos",
+      "salir"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "build",
+     "text": "Mi madre quiere que estudie medicina.",
+     "native": {
+      "tr": "Annem tıp okumamı istiyor.",
+      "en": "My mother wants me to study medicine."
+     },
+     "extra": [
+      "estudio",
+      "estudiar",
+      "estudia"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Te recomiendo que ___ este libro.",
+     "native": {
+      "tr": "Sana bu kitabı okumanı öneririm.",
+      "en": "I recommend that you read this book."
+     },
+     "options": [
+      "leer",
+      "lees",
+      "leíste",
+      "leas"
+     ],
+     "answer": 3
+    },
+    {
+     "type": "build",
+     "text": "Espero que tengas un buen viaje.",
+     "native": {
+      "tr": "Güzel bir yolculuk geçirmeni umuyorum.",
+      "en": "I hope you have a good trip."
+     },
+     "extra": [
+      "tienes",
+      "tendrás",
+      "tuviste"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Espero que ellos ___ a tiempo.",
+     "native": {
+      "tr": "Umarım zamanında gelirler.",
+      "en": "I hope they arrive on time."
+     },
+     "options": [
+      "lleguen",
+      "llegan",
+      "llegaron"
+     ],
+     "answer": 0
+    },
+    {
+     "type": "build",
+     "text": "Es necesario que hablemos de este tema.",
+     "native": {
+      "tr": "Bu konu hakkında konuşmamız gerekiyor.",
+      "en": "We need to talk about this subject."
+     },
+     "extra": [
+      "hablamos",
+      "hablar",
+      "hablaremos"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Mis padres quieren que yo ___ en casa.",
+     "native": {
+      "tr": "Annem babam evde kalmamı istiyor.",
+      "en": "My parents want me to stay at home."
+     },
+     "options": [
+      "estoy",
+      "esté",
+      "estar"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "build",
+     "text": "Ojalá que haga buen tiempo mañana.",
+     "native": {
+      "tr": "Umarım yarın hava güzel olur.",
+      "en": "I hope the weather is good tomorrow."
+     },
+     "extra": [
+      "hace",
+      "hizo",
+      "hará"
+     ],
+     "alt": []
+    },
+    {
+     "type": "build",
+     "text": "No creo que ellos sepan la verdad.",
+     "native": {
+      "tr": "Gerçeği bildiklerini sanmıyorum.",
+      "en": "I don't think they know the truth."
+     },
+     "extra": [
+      "saben",
+      "sabían",
+      "supieron"
+     ],
+     "alt": []
+    }
+   ]
+  },
+  {
+   "id": "imperativo",
+   "level": "B1",
+   "title": {
+    "tr": "Imperativo: abre, no abras",
+    "en": "Imperative: abre, no abras"
+   },
+   "tip": {
+    "tr": "Olumlu tú emri 3. tekil şahıs gibidir (abre, habla); olumsuzda subjuntivo kullanılır (no abras). Örnek: Ven aquí. / No vengas.",
+    "en": "The affirmative tú command looks like the he/she form (abre, habla); the negative uses the subjunctive (no abras). Example: Ven aquí. / No vengas."
+   },
+   "items": [
+    {
+     "type": "build",
+     "text": "Abre la ventana, por favor.",
+     "native": {
+      "tr": "Lütfen pencereyi aç.",
+      "en": "Open the window, please."
+     },
+     "extra": [
+      "abras",
+      "abrió",
+      "abierto"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "¡___ la tarea antes de salir!",
+     "native": {
+      "tr": "Çıkmadan önce ödevini yap!",
+      "en": "Do your homework before going out!"
+     },
+     "options": [
+      "Haces",
+      "Hagas",
+      "Haz",
+      "Hacer"
+     ],
+     "answer": 2
+    },
+    {
+     "type": "build",
+     "text": "Cierra la puerta al salir.",
+     "native": {
+      "tr": "Çıkarken kapıyı kapat.",
+      "en": "Close the door when you leave."
+     },
+     "extra": [
+      "cierres",
+      "cerró",
+      "cerrado"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "No ___ tan rápido, por favor.",
+     "native": {
+      "tr": "Lütfen bu kadar hızlı koşma.",
+      "en": "Don't run so fast, please."
+     },
+     "options": [
+      "corras",
+      "corre",
+      "correr"
+     ],
+     "answer": 0
+    },
+    {
+     "type": "build",
+     "text": "No me digas mentiras.",
+     "native": {
+      "tr": "Bana yalan söyleme.",
+      "en": "Don't tell me lies."
+     },
+     "extra": [
+      "di",
+      "dije",
+      "dicho"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Señor, ___ aquí, por favor.",
+     "native": {
+      "tr": "Efendim, lütfen buraya oturun.",
+      "en": "Sir, please sit here."
+     },
+     "options": [
+      "siéntate",
+      "siéntese",
+      "sientas"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "build",
+     "text": "Ven conmigo al cine esta noche.",
+     "native": {
+      "tr": "Bu gece benimle sinemaya gel.",
+      "en": "Come with me to the cinema tonight."
+     },
+     "extra": [
+      "vengas",
+      "vino",
+      "venido"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Pablo, ___ el pan en la panadería.",
+     "native": {
+      "tr": "Pablo, ekmeği fırından al.",
+      "en": "Pablo, buy the bread at the bakery."
+     },
+     "options": [
+      "compras",
+      "compres",
+      "comprar",
+      "compra"
+     ],
+     "answer": 3
+    },
+    {
+     "type": "build",
+     "text": "No abras la puerta a nadie.",
+     "native": {
+      "tr": "Kimseye kapıyı açma.",
+      "en": "Don't open the door to anyone."
+     },
+     "extra": [
+      "abrid",
+      "abierto",
+      "abriendo"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "¡No ___ el móvil en clase!",
+     "native": {
+      "tr": "Derste telefonu kullanma!",
+      "en": "Don't use your phone in class!"
+     },
+     "options": [
+      "usa",
+      "uses",
+      "usas"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "build",
+     "text": "Sé amable con los vecinos, por favor.",
+     "native": {
+      "tr": "Lütfen komşulara karşı nazik ol.",
+      "en": "Be kind to the neighbours, please."
+     },
+     "extra": [
+      "seas",
+      "sido",
+      "estés"
+     ],
+     "alt": []
+    },
+    {
+     "type": "build",
+     "text": "Dime qué quieres comer hoy.",
+     "native": {
+      "tr": "Bugün ne yemek istediğini söyle bana.",
+      "en": "Tell me what you want to eat today."
+     },
+     "extra": [
+      "digas",
+      "dijo",
+      "decirme"
+     ],
+     "alt": []
+    }
+   ]
+  },
+  {
+   "id": "por-para",
+   "level": "B1",
+   "title": {
+    "tr": "Por y para",
+    "en": "Por and para"
+   },
+   "tip": {
+    "tr": "Para: amaç, alıcı, son tarih (para trabajar, para ti). Por: sebep, yer içinde, araç, takas (por el tráfico, por teléfono, por 50 euros).",
+    "en": "Para: purpose, recipient, deadline (para trabajar, para ti). Por: cause, movement through, means, exchange (por el tráfico, por teléfono, por 50 euros)."
+   },
+   "items": [
+    {
+     "type": "build",
+     "text": "Este regalo es para mi hermana.",
+     "native": {
+      "tr": "Bu hediye kız kardeşim için.",
+      "en": "This gift is for my sister."
+     },
+     "extra": [
+      "con",
+      "de",
+      "en"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Hablamos ___ teléfono casi todos los días.",
+     "native": {
+      "tr": "Neredeyse her gün telefonla konuşuyoruz.",
+      "en": "We talk by phone almost every day."
+     },
+     "options": [
+      "para",
+      "en",
+      "por"
+     ],
+     "answer": 2
+    },
+    {
+     "type": "build",
+     "text": "Gracias por tu ayuda con el proyecto.",
+     "native": {
+      "tr": "Projedeki yardımın için teşekkürler.",
+      "en": "Thanks for your help with the project."
+     },
+     "extra": [
+      "para",
+      "en",
+      "sobre"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Este café está demasiado caliente ___ beberlo.",
+     "native": {
+      "tr": "Bu kahve içmek için çok sıcak.",
+      "en": "This coffee is too hot to drink."
+     },
+     "options": [
+      "por",
+      "para",
+      "con"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "build",
+     "text": "Estudio español para trabajar en España.",
+     "native": {
+      "tr": "İspanya'da çalışmak için İspanyolca öğreniyorum.",
+      "en": "I study Spanish to work in Spain."
+     },
+     "extra": [
+      "por",
+      "a",
+      "de"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Llegué tarde ___ el tráfico.",
+     "native": {
+      "tr": "Trafik yüzünden geç kaldım.",
+      "en": "I arrived late because of the traffic."
+     },
+     "options": [
+      "por",
+      "a",
+      "para"
+     ],
+     "answer": 0
+    },
+    {
+     "type": "build",
+     "text": "Vamos a pasear por el parque.",
+     "native": {
+      "tr": "Parkta yürüyüşe çıkıyoruz.",
+      "en": "We are going for a walk in the park."
+     },
+     "extra": [
+      "para",
+      "en",
+      "hasta"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Trabaja ___ una empresa internacional.",
+     "native": {
+      "tr": "Uluslararası bir şirkette çalışıyor.",
+      "en": "He works for an international company."
+     },
+     "options": [
+      "por",
+      "en",
+      "con",
+      "para"
+     ],
+     "answer": 3
+    },
+    {
+     "type": "build",
+     "text": "Salgo para Madrid mañana por la mañana.",
+     "native": {
+      "tr": "Yarın sabah Madrid'e doğru yola çıkıyorum.",
+      "en": "I leave for Madrid tomorrow morning."
+     },
+     "extra": [
+      "en",
+      "de",
+      "hasta"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "El libro fue escrito ___ un autor chileno.",
+     "native": {
+      "tr": "Kitap Şilili bir yazar tarafından yazıldı.",
+      "en": "The book was written by a Chilean author."
+     },
+     "options": [
+      "por",
+      "para",
+      "con"
+     ],
+     "answer": 0
+    },
+    {
+     "type": "build",
+     "text": "Pagué cincuenta euros por este libro.",
+     "native": {
+      "tr": "Bu kitap için elli euro ödedim.",
+      "en": "I paid fifty euros for this book."
+     },
+     "extra": [
+      "para",
+      "a",
+      "con"
+     ],
+     "alt": []
+    },
+    {
+     "type": "build",
+     "text": "Necesito el informe para el lunes.",
+     "native": {
+      "tr": "Raporu pazartesiye kadar istiyorum.",
+      "en": "I need the report by Monday."
+     },
+     "extra": [
+      "por",
+      "en",
+      "desde"
+     ],
+     "alt": []
+    }
+   ]
+  },
+  {
+   "id": "pronombres-combinados",
+   "level": "B2",
+   "title": {
+    "tr": "Pronombres combinados: se lo di",
+    "en": "Combined pronouns: se lo di"
+   },
+   "tip": {
+    "tr": "Dolaylı (me, te, le) + doğrudan (lo, la) nesne: önce dolaylı gelir. le/les + lo/la = se lo/se la. Örnek: Se lo dije.",
+    "en": "Indirect (me, te, le) comes before direct (lo, la). le/les + lo/la becomes se lo/se la. Example: Se lo dije."
+   },
+   "items": [
+    {
+     "type": "build",
+     "text": "Se lo dije ayer por teléfono.",
+     "native": {
+      "tr": "Onu dün telefonda ona söyledim.",
+      "en": "I told him yesterday by phone."
+     },
+     "extra": [
+      "le",
+      "la",
+      "los"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "¿Le diste las llaves a Marta? — Sí, ___ di esta mañana.",
+     "native": {
+      "tr": "Anahtarları Marta'ya verdin mi? — Evet, bu sabah verdim.",
+      "en": "Did you give the keys to Marta? — Yes, I gave them to her this morning."
+     },
+     "options": [
+      "le las",
+      "se las",
+      "se los",
+      "les las"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "build",
+     "text": "¿Me lo puedes traer ahora?",
+     "native": {
+      "tr": "Onu bana şimdi getirebilir misin?",
+      "en": "Can you bring it to me now?"
+     },
+     "extra": [
+      "se",
+      "le",
+      "nos"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "¿Quién te regaló ese reloj? — Me ___ regaló mi tío.",
+     "native": {
+      "tr": "O saati sana kim hediye etti? — Amcam bana hediye etti.",
+      "en": "Who gave you that watch? — My uncle gave it to me."
+     },
+     "options": [
+      "lo",
+      "me",
+      "le"
+     ],
+     "answer": 0
+    },
+    {
+     "type": "build",
+     "text": "Te la devolveré el lunes sin falta.",
+     "native": {
+      "tr": "Onu sana pazartesi mutlaka geri vereceğim.",
+      "en": "I will give it back to you on Monday without fail."
+     },
+     "extra": [
+      "se",
+      "lo",
+      "las"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Si quieres el libro, ___ presto hoy.",
+     "native": {
+      "tr": "Kitabı istersen onu sana bugün ödünç veririm.",
+      "en": "If you want the book, I'll lend it to you today."
+     },
+     "options": [
+      "se lo",
+      "lo te",
+      "te lo"
+     ],
+     "answer": 2
+    },
+    {
+     "type": "build",
+     "text": "Mis padres nos lo compraron para Navidad.",
+     "native": {
+      "tr": "Annemle babam onu bize Noel için aldı.",
+      "en": "My parents bought it for us for Christmas."
+     },
+     "extra": [
+      "se",
+      "los",
+      "les"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Los niños pidieron un helado y su padre ___ compró.",
+     "native": {
+      "tr": "Çocuklar dondurma istedi ve babaları onu onlara aldı.",
+      "en": "The children asked for an ice cream and their father bought it for them."
+     },
+     "options": [
+      "les lo",
+      "lo se",
+      "le lo",
+      "se lo"
+     ],
+     "answer": 3
+    },
+    {
+     "type": "build",
+     "text": "Dáselo a tu hermano antes de salir.",
+     "native": {
+      "tr": "Çıkmadan önce onu kardeşine ver.",
+      "en": "Give it to your brother before leaving."
+     },
+     "extra": [
+      "dásela",
+      "dales",
+      "darlo"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Necesito esos papeles. ¿Puedes ___ ahora?",
+     "native": {
+      "tr": "O belgelere ihtiyacım var. Şimdi gönderebilir misin?",
+      "en": "I need those papers. Can you send them to me now?"
+     },
+     "options": [
+      "enviarme los",
+      "enviármelos",
+      "me enviarlos"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "build",
+     "text": "No se lo cuentes a nadie, por favor.",
+     "native": {
+      "tr": "Lütfen bunu kimseye anlatma.",
+      "en": "Don't tell it to anyone, please."
+     },
+     "extra": [
+      "les",
+      "te",
+      "la"
+     ],
+     "alt": []
+    },
+    {
+     "type": "build",
+     "text": "Ella me las enseñó en la fiesta.",
+     "native": {
+      "tr": "Onları bana partide gösterdi.",
+      "en": "She showed them to me at the party."
+     },
+     "extra": [
+      "se",
+      "nos",
+      "les"
+     ],
+     "alt": []
+    }
+   ]
+  },
+  {
+   "id": "relativos",
+   "level": "B2",
+   "title": {
+    "tr": "Relativos: que, donde, quien, cuyo",
+    "en": "Relatives: que, donde, quien, cuyo"
+   },
+   "tip": {
+    "tr": "Que her şeyi bağlar; donde yer için; con quien/a quienes kişiler için; cuyo sahiplik için; lo que bir durumu anlatır. Örnek: La casa donde nací.",
+    "en": "Que links almost anything; donde is for places; con quien/a quienes for people; cuyo shows possession; lo que means 'what'. Example: La casa donde nací."
+   },
+   "items": [
+    {
+     "type": "build",
+     "text": "La casa donde nací está en el sur.",
+     "native": {
+      "tr": "Doğduğum ev güneyde.",
+      "en": "The house where I was born is in the south."
+     },
+     "extra": [
+      "que",
+      "quien",
+      "cuyo"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "El señor ___ vive enfrente es muy simpático.",
+     "native": {
+      "tr": "Karşıda oturan bey çok cana yakın.",
+      "en": "The man who lives opposite is very friendly."
+     },
+     "options": [
+      "donde",
+      "cuyo",
+      "lo que",
+      "que"
+     ],
+     "answer": 3
+    },
+    {
+     "type": "build",
+     "text": "El chico con quien hablaba es mi primo.",
+     "native": {
+      "tr": "Konuştuğum çocuk kuzenim.",
+      "en": "The boy I was talking to is my cousin."
+     },
+     "extra": [
+      "donde",
+      "cuyo",
+      "lo"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "La ciudad ___ nació mi padre es preciosa.",
+     "native": {
+      "tr": "Babamın doğduğu şehir çok güzel.",
+      "en": "The city where my father was born is beautiful."
+     },
+     "options": [
+      "quien",
+      "donde",
+      "cuyo"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "build",
+     "text": "Este es el libro que me recomendó Ana.",
+     "native": {
+      "tr": "Bu, Ana'nın bana önerdiği kitap.",
+      "en": "This is the book that Ana recommended to me."
+     },
+     "extra": [
+      "quien",
+      "donde",
+      "cuyo"
+     ],
+     "alt": [
+      "Este es el libro que Ana me recomendó."
+     ]
+    },
+    {
+     "type": "choice",
+     "text": "Los estudiantes a ___ ayudé aprobaron el examen.",
+     "native": {
+      "tr": "Yardım ettiğim öğrenciler sınavı geçti.",
+      "en": "The students I helped passed the exam."
+     },
+     "options": [
+      "donde",
+      "quienes",
+      "cuyo"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "build",
+     "text": "Tengo un amigo cuyo padre es piloto.",
+     "native": {
+      "tr": "Babası pilot olan bir arkadaşım var.",
+      "en": "I have a friend whose father is a pilot."
+     },
+     "extra": [
+      "que",
+      "quien",
+      "donde"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "No entiendo ___ dices.",
+     "native": {
+      "tr": "Ne dediğini anlamıyorum.",
+      "en": "I don't understand what you are saying."
+     },
+     "options": [
+      "quien",
+      "cuyo",
+      "lo que"
+     ],
+     "answer": 2
+    },
+    {
+     "type": "build",
+     "text": "Lo que más me gusta es viajar en tren.",
+     "native": {
+      "tr": "En çok sevdiğim şey trenle seyahat etmek.",
+      "en": "What I like most is travelling by train."
+     },
+     "extra": [
+      "quien",
+      "donde",
+      "cuyo"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Conozco a una escritora ___ libros son muy famosos.",
+     "native": {
+      "tr": "Kitapları çok ünlü olan bir yazar tanıyorum.",
+      "en": "I know a writer whose books are very famous."
+     },
+     "options": [
+      "cuyos",
+      "que",
+      "donde"
+     ],
+     "answer": 0
+    },
+    {
+     "type": "build",
+     "text": "La mujer que vive arriba trabaja de enfermera.",
+     "native": {
+      "tr": "Üst katta oturan kadın hemşire olarak çalışıyor.",
+      "en": "The woman who lives upstairs works as a nurse."
+     },
+     "extra": [
+      "donde",
+      "cuyo",
+      "cual"
+     ],
+     "alt": []
+    },
+    {
+     "type": "build",
+     "text": "Esa es la tienda donde compré mis zapatos.",
+     "native": {
+      "tr": "Ayakkabılarımı aldığım mağaza orası.",
+      "en": "That is the shop where I bought my shoes."
+     },
+     "extra": [
+      "quien",
+      "cuyo",
+      "lo"
+     ],
+     "alt": []
+    }
+   ]
+  },
+  {
+   "id": "si-subjuntivo-imperfecto",
+   "level": "B2",
+   "title": {
+    "tr": "Si tuviera..., haría... (hipótesis)",
+    "en": "If I had..., I would... (hypothesis)"
+   },
+   "tip": {
+    "tr": "Gerçek dışı durumlar: si + imperfecto de subjuntivo, ... + condicional. Örnek: Si tuviera tiempo, viajaría. Si yo fuera tú...",
+    "en": "Unreal situations: si + imperfect subjunctive, ... + conditional. Example: Si tuviera tiempo, viajaría. Si yo fuera tú..."
+   },
+   "items": [
+    {
+     "type": "build",
+     "text": "Si tuviera más tiempo, aprendería chino.",
+     "native": {
+      "tr": "Daha çok zamanım olsa Çince öğrenirdim.",
+      "en": "If I had more time, I would learn Chinese."
+     },
+     "extra": [
+      "tengo",
+      "tendré",
+      "aprendí"
+     ],
+     "alt": [
+      "Aprendería chino si tuviera más tiempo."
+     ]
+    },
+    {
+     "type": "choice",
+     "text": "Si ___ más dinero, me compraría una casa.",
+     "native": {
+      "tr": "Daha çok param olsa kendime bir ev alırdım.",
+      "en": "If I had more money, I would buy myself a house."
+     },
+     "options": [
+      "tengo",
+      "tuviera",
+      "tendré"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "build",
+     "text": "Si yo fuera tú, no iría a la fiesta.",
+     "native": {
+      "tr": "Senin yerinde olsam partiye gitmezdim.",
+      "en": "If I were you, I wouldn't go to the party."
+     },
+     "extra": [
+      "soy",
+      "seré",
+      "fui"
+     ],
+     "alt": [
+      "No iría a la fiesta si yo fuera tú."
+     ]
+    },
+    {
+     "type": "choice",
+     "text": "Si no ___ tan cansado, iría contigo.",
+     "native": {
+      "tr": "Bu kadar yorgun olmasaydım seninle gelirdim.",
+      "en": "If I weren't so tired, I would go with you."
+     },
+     "options": [
+      "estoy",
+      "estaré",
+      "estuviera"
+     ],
+     "answer": 2
+    },
+    {
+     "type": "build",
+     "text": "Si ganara la lotería, dejaría mi trabajo.",
+     "native": {
+      "tr": "Piyangoyu kazansam işimi bırakırdım.",
+      "en": "If I won the lottery, I would quit my job."
+     },
+     "extra": [
+      "gano",
+      "ganaré",
+      "dejé"
+     ],
+     "alt": [
+      "Dejaría mi trabajo si ganara la lotería."
+     ]
+    },
+    {
+     "type": "choice",
+     "text": "Yo ___ más si trabajara menos.",
+     "native": {
+      "tr": "Daha az çalışsam daha çok seyahat ederdim.",
+      "en": "I would travel more if I worked less."
+     },
+     "options": [
+      "viajé",
+      "viajaré",
+      "viajo",
+      "viajaría"
+     ],
+     "answer": 3
+    },
+    {
+     "type": "build",
+     "text": "Viviría en el campo si pudiera elegir.",
+     "native": {
+      "tr": "Seçebilsem kırda yaşardım.",
+      "en": "I would live in the countryside if I could choose."
+     },
+     "extra": [
+      "puedo",
+      "podré",
+      "vivo"
+     ],
+     "alt": [
+      "Si pudiera elegir viviría en el campo."
+     ]
+    },
+    {
+     "type": "choice",
+     "text": "Si ___ tú, hablaría con el jefe.",
+     "native": {
+      "tr": "Senin yerinde olsam patronla konuşurdum.",
+      "en": "If I were you, I would talk to the boss."
+     },
+     "options": [
+      "fuera",
+      "soy",
+      "eres"
+     ],
+     "answer": 0
+    },
+    {
+     "type": "build",
+     "text": "Si hiciera sol, iríamos a la playa.",
+     "native": {
+      "tr": "Hava güneşli olsa plaja giderdik.",
+      "en": "If it were sunny, we would go to the beach."
+     },
+     "extra": [
+      "hace",
+      "haría",
+      "iremos"
+     ],
+     "alt": [
+      "Iríamos a la playa si hiciera sol."
+     ]
+    },
+    {
+     "type": "choice",
+     "text": "Si mi hermana ___ aquí, nos ayudaría.",
+     "native": {
+      "tr": "Kız kardeşim burada olsa bize yardım ederdi.",
+      "en": "If my sister were here, she would help us."
+     },
+     "options": [
+      "estaba",
+      "estuviera",
+      "estará"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "build",
+     "text": "Si supieras la verdad, te enfadarías mucho.",
+     "native": {
+      "tr": "Gerçeği bilsen çok kızardın.",
+      "en": "If you knew the truth, you would get very angry."
+     },
+     "extra": [
+      "sabes",
+      "sabrás",
+      "enfadas"
+     ],
+     "alt": [
+      "Te enfadarías mucho si supieras la verdad."
+     ]
+    },
+    {
+     "type": "build",
+     "text": "Ojalá tuviera un coche más grande.",
+     "native": {
+      "tr": "Keşke daha büyük bir arabam olsa.",
+      "en": "I wish I had a bigger car."
+     },
+     "extra": [
+      "tuve",
+      "tenía",
+      "tendré"
+     ],
+     "alt": []
+    }
+   ]
+  },
+  {
+   "id": "estilo-indirecto",
+   "level": "B2",
+   "title": {
+    "tr": "Estilo indirecto: dijo que...",
+    "en": "Reported speech: dijo que..."
+   },
+   "tip": {
+    "tr": "Dijo que ile aktarırken zamanlar bir adım geriye gider: presente > imperfecto, futuro > condicional, perfecto > pluscuamperfecto. Soru: preguntó si...",
+    "en": "When reporting with dijo que, tenses shift back: present > imperfect, future > conditional, perfect > pluperfect. Questions: preguntó si..."
+   },
+   "items": [
+    {
+     "type": "build",
+     "text": "Dijo que estaba muy cansado.",
+     "native": {
+      "tr": "Çok yorgun olduğunu söyledi.",
+      "en": "He said he was very tired."
+     },
+     "extra": [
+      "está",
+      "estuvo",
+      "estará"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Ana dijo que no ___ ir a la fiesta porque estaba enferma.",
+     "native": {
+      "tr": "Ana hasta olduğu için partiye gidemeyeceğini söyledi.",
+      "en": "Ana said she couldn't go to the party because she was ill."
+     },
+     "options": [
+      "puede",
+      "podía",
+      "podrá",
+      "pudo"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "build",
+     "text": "María me contó que había perdido el móvil.",
+     "native": {
+      "tr": "Maria telefonunu kaybettiğini bana anlattı.",
+      "en": "María told me that she had lost her phone."
+     },
+     "extra": [
+      "ha",
+      "perdió",
+      "pierde"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Mi madre me preguntó dónde ___ puesto las llaves.",
+     "native": {
+      "tr": "Annem anahtarları nereye koyduğumu sordu.",
+      "en": "My mother asked me where I had put the keys."
+     },
+     "options": [
+      "he",
+      "hube",
+      "había"
+     ],
+     "answer": 2
+    },
+    {
+     "type": "build",
+     "text": "Mi jefe dijo que no vendría al día siguiente.",
+     "native": {
+      "tr": "Patronum ertesi gün gelmeyeceğini söyledi.",
+      "en": "My boss said he wouldn't come the next day."
+     },
+     "extra": [
+      "vendrá",
+      "viene",
+      "vino"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Prometió que me ___ al día siguiente.",
+     "native": {
+      "tr": "Ertesi gün beni arayacağına söz verdi.",
+      "en": "He promised that he would call me the next day."
+     },
+     "options": [
+      "llamará",
+      "llama",
+      "llamó",
+      "llamaría"
+     ],
+     "answer": 3
+    },
+    {
+     "type": "build",
+     "text": "Me preguntó si quería ir al cine con él.",
+     "native": {
+      "tr": "Onunla sinemaya gitmek isteyip istemediğimi sordu.",
+      "en": "He asked me if I wanted to go to the cinema with him."
+     },
+     "extra": [
+      "quiero",
+      "querré",
+      "quiso"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Dijo que el día anterior ___ a su abuela.",
+     "native": {
+      "tr": "Bir gün önce büyükannesini ziyaret ettiğini söyledi.",
+      "en": "He said that he had visited his grandmother the day before."
+     },
+     "options": [
+      "visitaba",
+      "había visitado",
+      "visitará"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "build",
+     "text": "Pedro dijo que ya había terminado el trabajo.",
+     "native": {
+      "tr": "Pedro işi çoktan bitirdiğini söyledi.",
+      "en": "Pedro said he had already finished the work."
+     },
+     "extra": [
+      "ha",
+      "terminó",
+      "termina"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Le pregunté ___ quería venir a cenar.",
+     "native": {
+      "tr": "Ona akşam yemeğine gelmek isteyip istemediğini sordum.",
+      "en": "I asked him whether he wanted to come to dinner."
+     },
+     "options": [
+      "si",
+      "que",
+      "porque"
+     ],
+     "answer": 0
+    },
+    {
+     "type": "build",
+     "text": "Nos dijeron que el tren salía a las cinco.",
+     "native": {
+      "tr": "Trenin beşte kalktığını söylediler.",
+      "en": "They told us that the train left at five."
+     },
+     "extra": [
+      "sale",
+      "saldrá",
+      "salió"
+     ],
+     "alt": []
+    },
+    {
+     "type": "build",
+     "text": "Me dijo que no tenía hambre.",
+     "native": {
+      "tr": "Aç olmadığını söyledi.",
+      "en": "He told me he wasn't hungry."
+     },
+     "extra": [
+      "tiene",
+      "tuvo",
+      "tendrá"
+     ],
+     "alt": []
+    }
+   ]
+  }
+ ]
+}
