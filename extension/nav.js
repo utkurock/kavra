@@ -1,4 +1,4 @@
-// App shell shared by the full-page views (activity, word pool, quiz, settings): a sidebar to move
+// App shell shared by the full-page views (activity, word pool, core words, quiz, settings): a sidebar to move
 // between them, with counts and a collapse button, and a top bar with the language pair and streak.
 // On narrow windows the sidebar becomes a bar across the top.
 (() => {
@@ -11,6 +11,7 @@
   const ICONS = {
     activity: '<path d="M3 12h4l3-8 4 16 3-8h4"/>',
     words: '<path d="M5 4.5A1.5 1.5 0 0 1 6.5 3H19v15H6.5A1.5 1.5 0 0 0 5 19.5z"/><path d="M5 19.5A1.5 1.5 0 0 0 6.5 21H19v-3"/><path d="M9 7.5h6"/>',
+    deck: '<rect x="3" y="7" width="13" height="14" rx="2"/><path d="M8 3h11a2 2 0 0 1 2 2v12"/>',
     quiz: '<circle cx="12" cy="12" r="9"/><path d="m8.5 12.2 2.4 2.4 4.6-5"/>',
     settings:
       '<path d="M4 6h9M17 6h3M4 12h3M11 12h9M4 18h11M19 18h1"/><circle cx="15" cy="6" r="2"/><circle cx="9" cy="12" r="2"/><circle cx="17" cy="18" r="2"/>',
@@ -21,6 +22,7 @@
   const PAGES = [
     ["activity.html", "tabActivity", "activity"],
     ["words.html", "navWords", "words"],
+    ["deck.html", "navDeck", "deck"],
     ["quiz.html", "navQuiz", "quiz"],
     ["options.html", "settings", "settings"],
   ];
@@ -96,9 +98,9 @@
 
   // ---- live figures ----
   async function refresh() {
-    const [settings, { words = [], quizzes = [], activity = {} }] = await Promise.all([
+    const [settings, { words = [], quizzes = [], activity = {}, deck = {} }] = await Promise.all([
       getSettings(),
-      chrome.storage.local.get(["words", "quizzes", "activity"]),
+      chrome.storage.local.get(["words", "quizzes", "activity", "deck"]),
     ]);
     const lang = baseLang(settings.targetLang);
     const saved = words.filter((w) => baseLang(w.lang) === lang).length;
@@ -106,6 +108,8 @@
     const open = quizzes.filter((q) => (q.answers || []).filter((a) => a != null).length < q.questions.length).length;
     counts.words.textContent = saved || "";
     counts.quiz.textContent = open > 0 ? open : "";
+    // Core words left to review: the ones not known yet.
+    counts.deck.textContent = Object.values(deck).filter((w) => w.s !== "known").length || "";
     pair.lastChild.textContent = `${languageName(lang, ui)} → ${languageName(settings.nativeLang, ui)}`;
     const days = summarize(activity).streak;
     streak.lastChild.textContent = t("streakDays", days);
@@ -113,6 +117,6 @@
   }
   refresh();
   chrome.storage.onChanged.addListener((changes, area) => {
-    if (area === "local" && ["words", "quizzes", "activity", "targetLang", "nativeLang"].some((k) => k in changes)) refresh();
+    if (area === "local" && ["words", "quizzes", "activity", "deck", "targetLang", "nativeLang"].some((k) => k in changes)) refresh();
   });
 })();

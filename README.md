@@ -17,6 +17,7 @@ Translations and quizzes are made by the AI provider you choose (Anthropic Claud
   - **Only on click.**
 - **Click to explain.** Clicking a line pauses the video and shows the translation with notes on idioms and harder words.
 - **Word pool.** The card has a button that saves the line with its translation and notes to your word pool, a page where you can search and remove saved lines, and take a review quiz on a random handful of them (fill the gap, meaning and translation questions).
+- **5000 core English words.** The most frequent English words as a pile of cards, most frequent first. Swipe right (or →) if you know a word, left (←) if you don't, up (↑) if you're not sure; tap a card for its meaning and an example in your language, written by your AI provider. Words you don't know or aren't sure of are listed and come back in Review.
 - **Quizzes.** After a set amount of watching (20 minutes by default), the video pauses and a 6-question quiz on what was said opens in a new tab. Questions are in the language you're learning and explanations are in yours. Lines you needed help with are used for the vocabulary questions. Every quiz is kept on the Quizzes page, where you can finish it later or look back at your answers.
 - **Activity history.** A listening waveform of the minutes you practised each day, monthly totals, your streak, lines heard and looked up, and quiz answers right and wrong, day by day.
 - **Any AI provider.** Each provider keeps its own key and model, and the settings page can load the provider's current model list.
@@ -84,7 +85,8 @@ Each translated line is one small request and each quiz is one larger request, b
 | `extension/overlay.js` | The on-video subtitles, blur mode and translation card. |
 | `extension/offscreen.js` | Captures tab audio and runs speech recognition. |
 | `extension/charts.js` | Activity totals, streaks, the daily waveform and monthly bars. |
-| `extension/popup.*`, `options.*`, `quiz.*`, `activity.*`, `words.*`, `onboarding.*` | Toolbar menu, settings, quiz, activity, word pool and first-run setup pages. |
+| `extension/popup.*`, `options.*`, `quiz.*`, `activity.*`, `words.*`, `deck.*`, `onboarding.*` | Toolbar menu, settings, quiz, activity, word pool, core words and first-run setup pages. |
+| `extension/core-words.txt`, `tools/core-words.py` | The core English deck and the script that builds it from [wordfreq](https://github.com/rspeer/wordfreq) (word list data CC BY-SA 4.0). |
 | `extension/nav.js` | Top bar shared by the full pages. |
 | `extension/_locales/` | Interface text (`en`, `tr`). |
 

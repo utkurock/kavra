@@ -706,5 +706,77 @@
   },
   "quizStateDone": {
     "message": "Completed"
+  },
+  "navDeck": {
+    "message": "Core words"
+  },
+  "deckTitle": {
+    "message": "5000 core English words"
+  },
+  "deckSubtitle": {
+    "message": "The most common English words, most frequent first. Swipe right if you know the word, left if you don't, up if you're not sure."
+  },
+  "deckModeNew": {
+    "message": "New"
+  },
+  "deckModeReview": {
+    "message": "Review"
+  },
+  "deckKnown": {
+    "message": "I know it"
+  },
+  "deckUnsure": {
+    "message": "Not sure"
+  },
+  "deckUnknown": {
+    "message": "Don't know"
+  },
+  "deckTapHint": {
+    "message": "Tap to see the meaning"
+  },
+  "deckKeysHint": {
+    "message": "← don't know · ↑ not sure · → know · Space: meaning · Backspace: undo"
+  },
+  "deckListen": {
+    "message": "Listen"
+  },
+  "deckProgressTitle": {
+    "message": "Progress"
+  },
+  "deckSeen": {
+    "message": "$1 of $2 seen"
+  },
+  "deckListTitle": {
+    "message": "Your words"
+  },
+  "deckListEmpty": {
+    "message": "Nothing here yet."
+  },
+  "deckAllSeen": {
+    "message": "You've gone through all the words. Review the ones you didn't know."
+  },
+  "deckReviewEmpty": {
+    "message": "Nothing to review. Words you swipe left or up land here."
+  },
+  "deckReviewDone": {
+    "message": "Round finished."
+  },
+  "deckReviewAgain": {
+    "message": "Go again"
+  },
+  "deckNoKey": {
+    "message": "Add an API key to see meanings and examples:"
+  },
+  "deckLoading": {
+    "message": "Looking it up…"
+  },
+  "deckGlossFailed": {
+    "message": "Couldn't get the meaning: $1"
+  },
+  "deckRetry": {
+    "message": "Try again"
+  },
+  "deckNotEnglish": {
+    "message": "This deck is for English, and you're learning $1 now. Meanings are still written in your language."
   }
 }

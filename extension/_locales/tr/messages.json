@@ -706,5 +706,77 @@
   },
   "quizStateDone": {
     "message": "Tamamlandı"
+  },
+  "navDeck": {
+    "message": "5000 kelime"
+  },
+  "deckTitle": {
+    "message": "En sık 5000 İngilizce kelime"
+  },
+  "deckSubtitle": {
+    "message": "En sık kullanılan İngilizce kelimeler, en sıktan başlayarak. Biliyorsan sağa, bilmiyorsan sola, emin değilsen yukarı kaydır."
+  },
+  "deckModeNew": {
+    "message": "Yeni"
+  },
+  "deckModeReview": {
+    "message": "Tekrar"
+  },
+  "deckKnown": {
+    "message": "Biliyorum"
+  },
+  "deckUnsure": {
+    "message": "Emin değilim"
+  },
+  "deckUnknown": {
+    "message": "Bilmiyorum"
+  },
+  "deckTapHint": {
+    "message": "Anlamı için dokun"
+  },
+  "deckKeysHint": {
+    "message": "← bilmiyorum · ↑ emin değilim · → biliyorum · Boşluk: anlamı · Geri sil: geri al"
+  },
+  "deckListen": {
+    "message": "Dinle"
+  },
+  "deckProgressTitle": {
+    "message": "İlerleme"
+  },
+  "deckSeen": {
+    "message": "$2 kelimeden $1 tanesi görüldü"
+  },
+  "deckListTitle": {
+    "message": "Kelimelerin"
+  },
+  "deckListEmpty": {
+    "message": "Burada henüz kelime yok."
+  },
+  "deckAllSeen": {
+    "message": "Bütün kelimeleri gördün. Bilmediklerini tekrar et."
+  },
+  "deckReviewEmpty": {
+    "message": "Tekrar edilecek kelime yok. Sola ya da yukarı kaydırdıkların buraya gelir."
+  },
+  "deckReviewDone": {
+    "message": "Tur bitti."
+  },
+  "deckReviewAgain": {
+    "message": "Yeniden başla"
+  },
+  "deckNoKey": {
+    "message": "Anlam ve örnekleri görmek için API anahtarı ekle:"
+  },
+  "deckLoading": {
+    "message": "Anlamı getiriliyor…"
+  },
+  "deckGlossFailed": {
+    "message": "Anlam alınamadı: $1"
+  },
+  "deckRetry": {
+    "message": "Tekrar dene"
+  },
+  "deckNotEnglish": {
+    "message": "Bu deste İngilizce için, şu an ise $1 öğreniyorsun. Anlamlar yine kendi dilinde yazılır."
   }
 }

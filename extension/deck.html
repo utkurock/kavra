@@ -1,0 +1,146 @@
+<!doctype html>
+<html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>navDeck</title>
+<link rel="stylesheet" href="shared.css">
+<style>
+  .deck-layout { display: grid; grid-template-columns: minmax(0, 1fr) 340px; gap: 24px; align-items: start; }
+  .deck-side { position: sticky; top: calc(var(--topbar-h) + 20px); display: grid; gap: 20px; }
+  .deck-side .card { padding: 20px 22px; }
+  @media (max-width: 1000px) {
+    .deck-layout { grid-template-columns: minmax(0, 1fr); }
+    .deck-side { position: static; }
+  }
+  .study { display: flex; flex-direction: column; align-items: center; }
+  .study .callout { align-self: stretch; margin-bottom: 18px; }
+
+  /* the pile: the top card follows the pointer, the next two wait behind it */
+  .pile { position: relative; width: min(380px, 100%); height: 420px; margin: 6px 0 26px; }
+  .fcard { --depth: 0; position: absolute; inset: 0; display: flex; flex-direction: column; gap: 10px; padding: 22px 24px 24px;
+    border-radius: 24px; border: 1px solid var(--line-strong); background: var(--surface);
+    box-shadow: 0 22px 50px rgba(0, 0, 0, .45); user-select: none; -webkit-user-select: none; touch-action: none;
+    transform: translateY(calc(var(--depth) * 14px)) scale(calc(1 - var(--depth) * .05));
+    transition: transform .3s cubic-bezier(.2, .7, .2, 1), opacity .3s, box-shadow .2s; }
+  .fcard.top { cursor: grab; }
+  .fcard.dragging { cursor: grabbing; transition: none; }
+  .fcard.flying { z-index: 9 !important; transition: transform .32s ease-in, opacity .32s ease-in; opacity: 0; pointer-events: none; }
+  .fcard:not(.top) > * { visibility: hidden; }
+  .fcard-top { display: flex; align-items: center; gap: 8px; font-size: 12.5px; color: var(--faint); }
+  .fcard-top .rank { font-variant-numeric: tabular-nums; }
+  .fcard-top .speak { margin-left: auto; }
+  .fword { margin-top: auto; text-align: center; font-size: 46px; font-weight: 700; letter-spacing: -.02em; line-height: 1.1;
+    overflow-wrap: anywhere; }
+  .fpos { text-align: center; color: var(--muted); font-style: italic; min-height: 21px; }
+  .freveal { position: relative; margin-top: auto; min-height: 132px; padding: 14px 16px; border-radius: 14px; background: var(--surface-2); }
+  .freveal .body { display: grid; gap: 8px; transition: filter .2s, opacity .2s; }
+  .fcard:not(.revealed) .freveal.ready .body { filter: blur(7px); opacity: .55; }
+  .freveal .hint { position: absolute; inset: 0; display: grid; place-items: center; font-weight: 600; color: var(--fg); pointer-events: none; }
+  .fcard.revealed .freveal .hint, .freveal:not(.ready) .hint { display: none; }
+  .meaning { font-size: 17px; font-weight: 600; line-height: 1.35; }
+  .example { color: var(--muted); font-size: 13.5px; line-height: 1.45; }
+  .example i { display: block; color: var(--faint); }
+  .freveal .note { color: var(--muted); font-size: 13.5px; }
+  .freveal .note.bad { color: var(--bad); }
+  .freveal .note button { margin-left: 6px; pointer-events: auto; }
+  /* stamps that fade in with the drag */
+  .stamp { position: absolute; padding: 4px 12px; border: 3px solid currentColor; border-radius: 10px; font-size: 20px; font-weight: 800;
+    letter-spacing: .06em; text-transform: uppercase; opacity: 0; pointer-events: none; background: color-mix(in srgb, var(--surface) 70%, transparent); }
+  .stamp.known { top: 70px; left: 22px; color: var(--ok); transform: rotate(-12deg); }
+  .stamp.unknown { top: 70px; right: 22px; color: var(--bad); transform: rotate(12deg); }
+  .stamp.unsure { bottom: 160px; left: 50%; color: var(--warn); transform: translateX(-50%); white-space: nowrap; }
+
+  .controls { display: flex; align-items: center; justify-content: center; gap: 18px; }
+  .swipe-btn { display: grid; place-items: center; width: 64px; height: 64px; border-radius: 50%; border: 1px solid var(--line-strong);
+    background: var(--surface); color: var(--c); cursor: pointer; transition: background-color .15s, border-color .15s, transform .12s; }
+  .swipe-btn svg { width: 26px; height: 26px; }
+  .swipe-btn:hover:not(:disabled) { border-color: var(--c); background: color-mix(in srgb, var(--c) 12%, var(--surface)); }
+  .swipe-btn:active:not(:disabled) { transform: scale(.94); }
+  .swipe-btn:disabled { opacity: .35; cursor: default; }
+  .swipe-btn.unknown { --c: var(--bad); }
+  .swipe-btn.unsure { --c: var(--warn); width: 52px; height: 52px; }
+  .swipe-btn.known { --c: var(--ok); }
+  .swipe-btn.undo { --c: var(--muted); width: 42px; height: 42px; }
+  .swipe-btn.undo svg { width: 18px; height: 18px; }
+  .keys { margin-top: 16px; text-align: center; }
+  .pile .empty-state { position: absolute; inset: 0; justify-content: center; border: 1px dashed var(--line-strong); border-radius: 24px; }
+
+  /* side: progress and the word lists */
+  .split { display: flex; height: 8px; border-radius: 999px; overflow: hidden; background: var(--surface-3); margin: 12px 0 16px; }
+  .split span { transition: flex-basis .3s; }
+  .split .known { background: var(--ok); }
+  .split .unsure { background: var(--warn); }
+  .split .unknown { background: var(--bad); }
+  .tallies { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
+  .tally { padding: 10px 12px; border-radius: 12px; background: var(--surface-2); }
+  .tally b { display: block; font-size: 22px; font-weight: 500; font-variant-numeric: tabular-nums; color: var(--c); }
+  .tally span { font-size: 12px; color: var(--muted); }
+  .tally.known { --c: var(--ok); }
+  .tally.unsure { --c: var(--warn); }
+  .tally.unknown { --c: var(--bad); }
+  .deck-side .segtabs { display: flex; margin-bottom: 12px; }
+  .deck-side .segtab { flex: 1; justify-content: center; gap: 6px; padding: 0 6px; font-size: 13px; white-space: nowrap; }
+  .wlist { list-style: none; margin: 0; padding: 0; max-height: 420px; overflow-y: auto; }
+  .wlist li { display: flex; align-items: baseline; gap: 10px; padding: 8px 2px; border-bottom: 1px solid var(--line); }
+  .wlist li:last-child { border-bottom: 0; }
+  .wlist b { font-weight: 600; }
+  .wlist span { color: var(--muted); font-size: 13px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .wlist .empty { display: block; padding: 20px 0; text-align: center; color: var(--faint); border: 0; }
+  @media (prefers-reduced-motion: reduce) { .fcard, .fcard.flying { z-index: 9 !important; transition: none; } }
+</style>
+<main>
+  <header class="page-title">
+    <h1 data-i18n="deckTitle"></h1>
+    <p class="muted" data-i18n="deckSubtitle"></p>
+  </header>
+  <div class="deck-layout">
+    <section class="study">
+      <p id="notEnglish" class="callout warn" hidden></p>
+      <div class="segtabs" role="tablist">
+        <button class="segtab" role="tab" data-mode="new" aria-selected="true"><span data-i18n="deckModeNew"></span><span class="count"></span></button>
+        <button class="segtab" role="tab" data-mode="review" aria-selected="false"><span data-i18n="deckModeReview"></span><span class="count"></span></button>
+      </div>
+      <div id="pile" class="pile" aria-live="polite"></div>
+      <div class="controls">
+        <button id="undo" class="swipe-btn undo" type="button" data-i18n-aria-label="undo">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 14 4 9l5-5"/><path d="M4 9h11a5 5 0 0 1 0 10h-3"/></svg>
+        </button>
+        <button class="swipe-btn unknown" type="button" data-state="unknown" data-i18n-aria-label="deckUnknown">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+        </button>
+        <button class="swipe-btn unsure" type="button" data-state="unsure" data-i18n-aria-label="deckUnsure">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9.2 9a3 3 0 1 1 4.3 2.7c-.9.5-1.5 1.2-1.5 2.3"/><path d="M12 18h.01"/></svg>
+        </button>
+        <button class="swipe-btn known" type="button" data-state="known" data-i18n-aria-label="deckKnown">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>
+        </button>
+      </div>
+      <p class="keys small faint" data-i18n="deckKeysHint"></p>
+    </section>
+    <aside class="deck-side">
+      <section class="card">
+        <div class="section-head"><h2 data-i18n="deckProgressTitle"></h2><span class="meta" id="seen"></span></div>
+        <div class="split" aria-hidden="true"><span class="known"></span><span class="unsure"></span><span class="unknown"></span></div>
+        <div class="tallies">
+          <div class="tally known"><b id="countKnown">0</b><span data-i18n="deckKnown"></span></div>
+          <div class="tally unsure"><b id="countUnsure">0</b><span data-i18n="deckUnsure"></span></div>
+          <div class="tally unknown"><b id="countUnknown">0</b><span data-i18n="deckUnknown"></span></div>
+        </div>
+      </section>
+      <section class="card">
+        <div class="section-head"><h2 data-i18n="deckListTitle"></h2></div>
+        <div class="segtabs" role="tablist" id="listTabs">
+          <button class="segtab" role="tab" data-list="unknown" aria-selected="true"><span data-i18n="deckUnknown"></span><span class="count"></span></button>
+          <button class="segtab" role="tab" data-list="unsure" aria-selected="false"><span data-i18n="deckUnsure"></span><span class="count"></span></button>
+          <button class="segtab" role="tab" data-list="known" aria-selected="false"><span data-i18n="deckKnown"></span><span class="count"></span></button>
+        </div>
+        <ul id="wordList" class="wlist"></ul>
+      </section>
+    </aside>
+  </div>
+</main>
+<script src="settings.js"></script>
+<script src="charts.js"></script>
+<script src="nav.js"></script>
+<script src="deck.js"></script>
+</html>
