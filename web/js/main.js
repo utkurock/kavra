@@ -5,11 +5,11 @@ import { t, setUiLang, langName, NATIVES } from "./i18n.js";
 import { $, el, button, icon, toast } from "./ui.js";
 import { onboard } from "./onboarding.js";
 import { showStudy, showLists, studyKey } from "./words.js";
-import { showUnits, wireLesson, lessonKey, inLesson } from "./sentences.js";
+import { showSentences, sentenceKey } from "./sentences.js";
 
 const ROUTES = {
   words: { label: "navWords", icon: "cards", show: showStudy },
-  sentences: { label: "navSentences", icon: "blocks", show: showUnits },
+  sentences: { label: "navSentences", icon: "blocks", show: showSentences },
   lists: { label: "navLists", icon: "list", show: showLists },
   settings: { label: "navSettings", icon: "gear", show: showSettings },
 };
@@ -37,7 +37,6 @@ function buildShell() {
     pill.replaceChildren(el("span", "lang-code", state.target.toUpperCase()), el("span", "lang-name", langName(state.target)));
     pill.title = t("change");
   }
-  $("quit").ariaLabel = $("quit").title = t("quit");
   $("app").hidden = false;
 }
 
@@ -106,20 +105,19 @@ function showSettings(container) {
   container.replaceChildren(head, stack);
 }
 
-// ---- keys: the lesson first, then the cards ----
+// ---- keys for the open view ----
 document.addEventListener("keydown", (e) => {
   if (e.metaKey || e.ctrlKey || e.altKey || document.body.classList.contains("onboarding-open")) return;
   if (e.target.closest?.("input, textarea, select")) return;
-  const handled = inLesson() ? lessonKey(e) : route() === "words" && studyKey(e);
+  const handled = route() === "words" ? studyKey(e) : route() === "sentences" && sentenceKey(e);
   if (handled) e.preventDefault();
 });
 
 // ---- start ----
 setUiLang(state.native);
 applyTheme();
-wireLesson();
 for (const pill of document.querySelectorAll(".lang-pill")) pill.addEventListener("click", changeLanguage);
-addEventListener("hashchange", () => !inLesson() && show());
+addEventListener("hashchange", show);
 if (state.onboarded) {
   buildShell();
   show();

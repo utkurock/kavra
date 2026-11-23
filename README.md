@@ -106,9 +106,11 @@ language.
   (A1–C2) in the corners and its meaning in your language. Swipe right if you know it, left if you
   don't, up if you're not sure (or use the buttons, or the arrow keys). Review brings back the words
   you didn't know; Lists shows them all, searchable.
-- **Sentences:** 20–22 grammar units per language from A1 to B2, 12 exercises each: build the
-  sentence from shuffled word tiles, or pick the word for a gap. A wrong answer comes back at the end
-  of the lesson.
+- **Sentences:** practice starts as soon as the page opens, like the cards: exercises keep coming
+  from the grammar units of the chosen levels (20–22 units per language from A1 to B2, 12 exercises
+  each), the ones not mastered yet first. Build the sentence from shuffled word tiles, or pick the
+  word for a gap; a wrong answer comes back a few exercises later. Topics lists the units, to practise
+  one on its own.
 - A tab bar on phones and a sidebar on wide screens, light and dark themes, can be added to the home
   screen.
 

@@ -155,6 +155,8 @@ img, svg { display: block; }
 .view-head { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px 20px; margin-bottom: 18px; }
 .view-head h1 { font-size: 26px; font-weight: 800; letter-spacing: -.025em; }
 @media (min-width: 900px) { .view-head h1 { font-size: 32px; } }
+/* On phones the tab bar already names the page: the cards and exercises start higher up. */
+@media (max-width: 600px) { .view[data-view="words"] .view-head h1, .view[data-view="sentences"] .view-head h1 { display: none; } }
 .chips { display: flex; gap: 6px; flex-wrap: wrap; }
 .chip { --c: var(--lv-a); min-width: 46px; height: 34px; padding: 0 10px; border-radius: 999px; border: 1px solid var(--line-strong);
   background: var(--surface); color: var(--faint); font-weight: 750; font-size: 13.5px; cursor: pointer;
@@ -295,19 +297,28 @@ img, svg { display: block; }
 .unit .bar { margin-top: 8px; height: 6px; }
 .bar span { display: block; height: 100%; width: 0; border-radius: inherit; background: var(--ok); transition: width .35s; }
 
-/* ---- a lesson: full screen, the exercise in a centred column, the check bar at the bottom ---- */
-.lesson { position: fixed; inset: 0; z-index: 50; display: flex; flex-direction: column; background: var(--bg); padding-top: env(safe-area-inset-top); }
-body.in-lesson { overflow: hidden; }
-.lesson-top { display: flex; align-items: center; gap: 10px; width: 100%; max-width: 720px; margin: 0 auto; padding: 12px 16px 4px; }
-.lesson-head { flex: 1; display: grid; gap: 6px; }
-.lesson-title { font-size: 13px; font-weight: 650; color: var(--muted); }
-.lesson-head .bar { height: 12px; }
-.exercise { flex: 1; min-height: 0; overflow-y: auto; width: 100%; max-width: 720px; margin: 0 auto; padding: 18px 16px 24px;
-  display: flex; flex-direction: column; gap: 16px; }
+/* ---- sentences: practice in a panel, the check bar stuck to its bottom ---- */
+.sent-tabs { margin-bottom: 14px; }
+.practice { position: relative; display: flex; flex-direction: column; max-width: 760px; margin: 0 auto;
+  min-height: calc(100dvh - var(--topbar) - var(--tabbar) - 250px); background: var(--surface); border: 1px solid var(--line);
+  border-radius: var(--radius); box-shadow: var(--shadow); }
+@media (min-width: 900px) { .practice { min-height: calc(100dvh - 260px); } }
+.practice-top { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; padding: 14px 18px 0; }
+.topic { display: flex; align-items: center; gap: 8px; min-width: 0; flex: 1; }
+.topic-title { font-size: 14px; font-weight: 650; color: var(--muted); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.tally-line { display: flex; gap: 12px; font-size: 14px; font-weight: 750; font-variant-numeric: tabular-nums; }
+.tally-line span { display: inline-flex; align-items: center; gap: 4px; }
+.tally-line svg { width: 15px; height: 15px; }
+.tally-line .ok { color: var(--ok); }
+.tally-line .bad { color: var(--bad); }
+.chip-btn { display: inline-flex; align-items: center; gap: 6px; height: 30px; padding: 0 12px 0 8px; border-radius: 999px;
+  border: 1px solid var(--line-strong); background: var(--surface-2); font-size: 13px; font-weight: 650; cursor: pointer; }
+.chip-btn svg { width: 14px; height: 14px; }
+.exercise { flex: 1; display: flex; flex-direction: column; gap: 16px; padding: 16px 18px 22px; }
 .exercise.enter { animation: rise .28s cubic-bezier(.2, .7, .2, 1); }
 @keyframes rise { from { opacity: 0; transform: translateY(10px); } }
-.ask { font-size: 22px; font-weight: 800; letter-spacing: -.02em; }
-.prompt { font-size: 19px; line-height: 1.45; padding: 14px 16px; border-radius: 16px; background: var(--surface); border: 1px solid var(--line); }
+.ask { font-size: 21px; font-weight: 800; letter-spacing: -.02em; }
+.prompt { font-size: 19px; line-height: 1.45; padding: 14px 16px; border-radius: 16px; background: var(--surface-2); }
 .answer-line { min-height: 120px; display: flex; flex-wrap: wrap; align-content: flex-start; gap: 8px; padding: 8px 0;
   background: repeating-linear-gradient(to bottom, transparent 0 55px, var(--line-strong) 55px 56px); }
 .bank { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; margin-top: auto; }
@@ -316,7 +327,7 @@ body.in-lesson { overflow: hidden; }
 .tile { height: 48px; padding: 0 16px; border-radius: 14px; border: 1px solid var(--line-strong); border-bottom-width: 3px;
   background: var(--surface); font-size: 17px; font-weight: 650; cursor: pointer; touch-action: manipulation; }
 .tile:active { transform: translateY(1px); }
-.gap-sentence { font-size: 24px; font-weight: 650; line-height: 1.6; }
+.gap-sentence { font-size: 23px; font-weight: 650; line-height: 1.6; }
 .gap { display: inline-block; min-width: 80px; margin: 0 4px; padding: 0 8px; border-bottom: 3px solid var(--line-strong); text-align: center; }
 .gap.filled { color: var(--lv-b); border-color: var(--lv-b); }
 .gap-meaning { color: var(--muted); }
@@ -329,12 +340,15 @@ body.in-lesson { overflow: hidden; }
 .option[aria-pressed="true"] { border-color: var(--lv-b); color: var(--lv-b); background: color-mix(in srgb, var(--lv-b) 9%, var(--surface)); }
 .option.right { border-color: var(--ok); color: var(--ok); background: var(--ok-soft); }
 .option.wrong { border-color: var(--bad); color: var(--bad); background: var(--bad-soft); }
-.sheet { --c: var(--fg); flex: none; border-top: 1px solid var(--line); background: var(--surface);
-  padding: 14px 16px calc(14px + env(safe-area-inset-bottom)); transition: background-color .2s; }
-.sheet-inner { width: 100%; max-width: 720px; margin: 0 auto; display: grid; gap: 12px; }
+/* the check bar stays in thumb reach above the tab bar while the exercise scrolls */
+.sheet { --c: var(--fg); position: sticky; bottom: calc(var(--tabbar) + env(safe-area-inset-bottom)); z-index: 5;
+  padding: 14px 18px 16px; border-top: 1px solid var(--line); border-radius: 0 0 var(--radius) var(--radius);
+  background: var(--surface); transition: background-color .2s; }
+@media (min-width: 900px) { .sheet { bottom: 0; } }
+.sheet-inner { display: grid; gap: 12px; }
 @media (min-width: 700px) { .sheet-inner { grid-template-columns: minmax(0, 1fr) 220px; align-items: center; } }
-.sheet.ok { --c: var(--ok); background: var(--ok-soft); border-color: transparent; }
-.sheet.bad { --c: var(--bad); background: var(--bad-soft); border-color: transparent; }
+.sheet.ok { --c: var(--ok); background: color-mix(in srgb, var(--ok) 12%, var(--surface)); border-color: transparent; }
+.sheet.bad { --c: var(--bad); background: color-mix(in srgb, var(--bad) 12%, var(--surface)); border-color: transparent; }
 .sheet.ok .btn.primary, .sheet.bad .btn.primary { background: var(--c); border-color: var(--c); color: var(--surface); }
 .verdict { display: flex; align-items: center; gap: 12px; color: var(--c); }
 .verdict:empty { display: none; }
@@ -343,9 +357,11 @@ body.in-lesson { overflow: hidden; }
 .verdict strong { font-size: 18px; }
 .verdict .full { font-weight: 550; }
 .verdict .round-btn { color: var(--c); }
-.summary { margin: auto 0; display: flex; flex-direction: column; align-items: center; gap: 10px; text-align: center; }
-.summary .big { font-size: 64px; font-weight: 850; letter-spacing: -.04em; color: var(--ok); line-height: 1; }
-.summary-title { font-size: 20px; font-weight: 750; }
+@media (max-width: 600px) {
+  .practice { margin: 0 -4px; }
+  .exercise { padding: 14px 14px 18px; }
+  .sheet { padding: 12px 14px 14px; }
+}
 
 /* ---- onboarding ---- */
 .onboarding { position: fixed; inset: 0; z-index: 60; overflow-y: auto; background: var(--bg);
