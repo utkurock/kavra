@@ -71,10 +71,15 @@ export async function showStudy(container) {
     tab.append(el("span", null, t(m === "new" ? "newWords" : "review")), el("span", "count"));
     tabs.append(tab);
   }
-  head.append(title, levelChips(() => {
-    if (mode === "review") startReview();
-    render();
-  }));
+  head.append(title);
+  const toolbar = el("div", "toolbar");
+  toolbar.append(
+    tabs,
+    levelChips(() => {
+      if (mode === "review") startReview();
+      render();
+    })
+  );
 
   const pile = el("div", "pile");
   pile.id = "pile";
@@ -92,7 +97,7 @@ export async function showStudy(container) {
     controls.append(b);
   }
   const study = el("section", "study");
-  study.append(tabs, pile, controls, el("p", "keys", t("keysHint")));
+  study.append(pile, controls, el("p", "keys", t("keysHint")));
 
   // Beside the pile on wide screens: progress and the words missed lately.
   const side = el("aside", "side");
@@ -108,7 +113,7 @@ export async function showStudy(container) {
 
   const layout = el("div", "words-layout");
   layout.append(study, side);
-  root.replaceChildren(head, layout);
+  root.replaceChildren(head, toolbar, layout);
   render();
 }
 
@@ -318,12 +323,15 @@ export async function showLists(container) {
     tab.append(el("span", `dot ${s}`), el("span", null, t(s)), el("span", "count"));
     tabs.append(tab);
   }
-  head.append(el("h1", null, t("navLists")), levelChips(() => paint()));
+  head.append(el("h1", null, t("navLists")));
   let matching = []; // the words of the open list, as filtered: what the export holds
-  const exportBtn = button("btn", t("exportCsv"), () => exportCsv(matching, list));
-  exportBtn.prepend(icon("download"));
+  const exportBtn = button("btn export", null, () => exportCsv(matching, list));
+  exportBtn.append(icon("download"), el("span", "btn-label", t("exportCsv")));
+  exportBtn.title = t("exportCsv");
   const bar = el("div", "list-bar");
-  bar.append(tabs, searchBox, exportBtn);
+  const tools = el("div", "list-tools");
+  tools.append(searchBox, levelChips(() => paint()), exportBtn);
+  bar.append(tabs, tools);
   const ul = el("ul", "word-list");
   container.replaceChildren(head, bar, ul);
   input.addEventListener("input", paint);

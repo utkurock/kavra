@@ -50,13 +50,7 @@ export async function showSentences(container) {
   await loadNouns();
   if (focus && !units.includes(focus)) focus = null; // another language since
   const head = el("div", "view-head");
-  head.append(
-    el("h1", null, t("navSentences")),
-    levelChips(() => {
-      focus = null;
-      render();
-    })
-  );
+  head.append(el("h1", null, t("navSentences")));
   const tabs = el("div", "seg sent-tabs");
   for (const name of ["practice", "topics"]) {
     const b = button("seg-btn", t(name), () => {
@@ -66,8 +60,16 @@ export async function showSentences(container) {
     b.dataset.tab = name;
     tabs.append(b);
   }
+  const toolbar = el("div", "toolbar");
+  toolbar.append(
+    tabs,
+    levelChips(() => {
+      focus = null;
+      render();
+    })
+  );
   const body = el("div", "sent-body");
-  container.replaceChildren(head, tabs, body);
+  container.replaceChildren(head, toolbar, body);
   render();
 }
 

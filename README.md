@@ -99,8 +99,7 @@ To add an interface language, copy `extension/_locales/en/messages.json` to a fo
 `web/` is a separate, phone-first site for words and grammar, in six languages to learn: English,
 German, Spanish, French, Italian and Portuguese. The first visit asks for your native language
 (Turkish or English, which is also the interface language), the language to learn and a starting
-level; the language pill at the top (or Settings) changes them later, and progress is kept per
-language.
+level; Settings changes them later, and progress is kept per language.
 
 - **Words:** the 5000 most frequent words of the language as a pile of cards, each with its level
   (A1–C2) in the corners and its meaning in your language. Swipe right if you know it, left if you
@@ -112,8 +111,9 @@ language.
   each), the ones not mastered yet first. Build the sentence from shuffled word tiles, or pick the
   word for a gap; a wrong answer comes back a few exercises later. Topics lists the units, to practise
   one on its own.
-- A tab bar on phones and a sidebar on wide screens, light and dark themes, can be added to the home
-  screen.
+- A tab bar on phones and a sidebar on wide screens. On phones the cards and exercises start at the
+  top of the screen, with the level filter folded into one button. Light and dark themes; it can be
+  added to the home screen.
 
 It's plain static files with no build step, no account and no API key. Progress is kept in the
 browser's local storage, so it stays on that device.

@@ -1,5 +1,6 @@
-// Boots the app: onboarding on the first visit, then the shell — a sidebar on wide screens, a tab bar
-// at the bottom on phones — with four views chosen by the address hash.
+// Boots the app: onboarding on the first visit (the languages change later in Settings), then the
+// shell — a sidebar on wide screens, a tab bar at the bottom on phones — with four views chosen by the
+// address hash.
 import { state, save, progress } from "./store.js";
 import { t, setUiLang, langName, NATIVES } from "./i18n.js";
 import { $, el, button, icon, toast } from "./ui.js";
@@ -33,10 +34,6 @@ function buildShell() {
     })
   );
   for (const node of document.querySelectorAll("[data-app-name]")) node.textContent = t("appName");
-  for (const pill of document.querySelectorAll(".lang-pill")) {
-    pill.replaceChildren(el("span", "lang-code", state.target.toUpperCase()), el("span", "lang-name", langName(state.target)));
-    pill.title = t("change");
-  }
   $("app").hidden = false;
 }
 
@@ -116,7 +113,6 @@ document.addEventListener("keydown", (e) => {
 // ---- start ----
 setUiLang(state.native);
 applyTheme();
-for (const pill of document.querySelectorAll(".lang-pill")) pill.addEventListener("click", changeLanguage);
 addEventListener("hashchange", show);
 if (state.onboarded) {
   buildShell();

@@ -1,6 +1,6 @@
 // Small building blocks shared by the views: elements, icons, level badges and chips, a toast, speech.
 import { LEVELS, state, save } from "./store.js";
-import { LANGS, uiLang } from "./i18n.js";
+import { LANGS, uiLang, t } from "./i18n.js";
 
 export const $ = (id) => document.getElementById(id);
 export function el(tag, className, text) {
@@ -31,6 +31,7 @@ const PATHS = {
   globe: '<circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/>',
   search: '<circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/>',
   download: '<path d="M12 4v11"/><path d="m7 10 5 5 5-5"/><path d="M5 20h14"/>',
+  sliders: '<path d="M4 7h10M18 7h2M4 17h4M12 17h8"/><circle cx="16" cy="7" r="2"/><circle cx="10" cy="17" r="2"/>',
   reset: '<path d="M3 12a9 9 0 1 0 3-6.7L3 8"/><path d="M3 3v5h5"/>',
 };
 export function icon(name, width = 2) {
@@ -44,10 +45,30 @@ export function icon(name, width = 2) {
 export const levelClass = (level) => `lv-${level[0].toLowerCase()}`;
 export const badge = (level) => el("span", `badge ${levelClass(level)}`, level);
 
-// The level filter: a row of toggles, saved, shared by every view.
+// Which levels are on, in short: "A1–B1", "A1, B2", or all of them.
+function levelSummary() {
+  const on = state.levels;
+  if (on.length === LEVELS.length) return t("allLevels");
+  if (!on.length) return t("noLevels");
+  const at = on.map((l) => LEVELS.indexOf(l));
+  const contiguous = at.every((x, i) => !i || x === at[i - 1] + 1);
+  return contiguous && on.length > 1 ? `${on[0]}–${on.at(-1)}` : on.join(", ");
+}
+
+// The level filter, saved and shared by every view: a row of toggles on wide screens; on phones one
+// button with the levels in short, which opens the toggles.
 export function levelChips(onChange, available = LEVELS) {
+  const wrap = el("div", "levels");
+  const toggle = button("level-toggle", null, () => {
+    wrap.classList.toggle("open");
+    toggle.ariaExpanded = String(wrap.classList.contains("open"));
+  });
+  toggle.ariaExpanded = "false";
+  const label = el("span");
+  toggle.append(icon("sliders"), label, icon("chevron"));
   const row = el("div", "chips");
   row.role = "group";
+  row.ariaLabel = t("levels");
   for (const level of LEVELS) {
     const chip = button(`chip ${levelClass(level)}`, level, () => {
       const set = new Set(state.levels);
@@ -64,9 +85,20 @@ export function levelChips(onChange, available = LEVELS) {
   }
   const paint = () => {
     for (const chip of row.children) chip.ariaPressed = String(state.levels.includes(chip.dataset.level));
+    label.textContent = levelSummary();
   };
   paint();
-  return row;
+  // A tap anywhere else closes the open toggles.
+  const close = (e) => {
+    if (!wrap.isConnected) return document.removeEventListener("pointerdown", close);
+    if (!wrap.contains(e.target)) {
+      wrap.classList.remove("open");
+      toggle.ariaExpanded = "false";
+    }
+  };
+  document.addEventListener("pointerdown", close);
+  wrap.append(toggle, row);
+  return wrap;
 }
 
 let toastTimer;
