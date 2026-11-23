@@ -1,7 +1,7 @@
 // Service worker: owns capture state, picks the caption source, routes captions to the page,
 // and runs translation and quizzes.
 import "../extension/settings.js";
-import { translateLine, translateBatch, generateQuiz, generateWordQuiz, listModels, friendlyError } from "./llm.js";
+import { translateLine, translateBatch, generateQuiz, generateWordQuiz, glossWords, listModels, friendlyError } from "./llm.js";
 
 const { getSettings, t, dayKey, baseLang, languageName } = globalThis.Kavra;
 const MAX_GAP_MS = 30000; // silence longer than this does not count as watch time
@@ -14,6 +14,7 @@ const WORDS_MAX = 1000; // lines kept in the word pool
 const WORD_QUIZ_MIN = 4; // saved lines needed for a word pool quiz
 const WORD_QUIZ_PICK = 12; // saved lines a word pool quiz is written from
 const QUIZZES_MAX = 50; // quizzes kept in the history
+const GLOSS_BATCH_MAX = 30; // core deck words explained in one request
 
 // ---- persistent state ----
 // session "capture": { tabId, speech, source, video } for the tab being captioned (cleared on browser restart).
@@ -396,6 +397,53 @@ function toggleWord(input) {
   });
 }
 
+// ---- core English deck: how well each word is known, and its dictionary entry ----
+// local "deck": word -> { s: "known" | "unsure" | "unknown", at } for every word swiped so far.
+// local "deckGlosses": { lang, items: word -> entry } in the user's language; a new language starts over.
+const DECK_STATES = new Set(["known", "unsure", "unknown"]);
+const isDeckWord = (word) => typeof word === "string" && /^[A-Za-z]+(-[A-Za-z]+)?$/.test(word) && word.length <= 40;
+
+// Sets a word's state, or with no state puts it back among the new words (undo).
+function markDeckWord(word, state) {
+  if (!isDeckWord(word) || (state != null && !DECK_STATES.has(state))) return { ok: false };
+  return updateStore("deck", () => ({}), (deck) => {
+    if (state == null) delete deck[word];
+    else deck[word] = { s: state, at: Date.now() };
+    return { ok: true };
+  });
+}
+
+// Entries asked for but not written yet, so overlapping requests share one call per word.
+const glossing = new Map(); // "lang|word" -> Promise<entry>
+
+async function glossDeck(input) {
+  const settings = await getSettings();
+  const lang = settings.nativeLang;
+  const wanted = [...new Set((Array.isArray(input) ? input : []).filter(isDeckWord))].slice(0, GLOSS_BATCH_MAX);
+  const { deckGlosses } = await chrome.storage.local.get("deckGlosses");
+  const stored = deckGlosses?.lang === lang ? deckGlosses.items : {};
+  const missing = wanted.filter((w) => !stored[w] && !glossing.has(`${lang}|${w}`));
+  if (missing.length) {
+    const batch = glossWords(missing, settings).then((items) =>
+      updateStore("deckGlosses", () => ({ lang, items: {} }), (record) => {
+        if (record.lang !== lang) Object.assign(record, { lang, items: {} });
+        missing.forEach((w, i) => (record.items[w] = items[i]));
+        return items;
+      })
+    );
+    missing.forEach((w, i) => {
+      const key = `${lang}|${w}`;
+      glossing.set(key, batch.then((items) => items[i]).finally(() => glossing.delete(key)));
+    });
+  }
+  try {
+    const entries = await Promise.all(wanted.map((w) => stored[w] ?? glossing.get(`${lang}|${w}`)));
+    return { ok: true, glosses: Object.fromEntries(wanted.map((w, i) => [w, entries[i]])) };
+  } catch (err) {
+    return { ok: false, error: friendlyError(err) };
+  }
+}
+
 // ---- quiz ----
 let quizRunning = false;
 
@@ -549,6 +597,9 @@ const handlers = {
   // overlay.js (the card) / words.js
   toggleWord: (msg) => toggleWord(msg.word || {}),
   wordQuiz: () => runWordQuiz(),
+  // deck.js
+  deckMark: (msg) => markDeckWord(msg.word, msg.state),
+  deckGloss: (msg) => glossDeck(msg.words),
   // overlay.js / reader.js
   translate: (msg) => handleTranslate(msg.text, msg.live),
   prefetch: async (msg, sender) => (await fromCapturedTab(sender)) && prefetch(msg.texts),

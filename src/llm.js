@@ -15,6 +15,9 @@ const TranslationSchema = LiveTranslationSchema.extend({
   notes: z.array(z.object({ phrase: z.string(), meaning: z.string() })),
 });
 const BatchSchema = z.object({ items: z.array(LiveTranslationSchema) });
+const GlossSchema = z.object({
+  items: z.array(z.object({ pos: z.string(), meaning: z.string(), example: z.string(), example_translation: z.string() })),
+});
 
 const question = (kinds) =>
   z.object({
@@ -209,6 +212,29 @@ export async function translateBatch(lines, context, settings) {
       `Lines to translate:\n${lines.map((line, i) => `${i + 1}. ${line}`).join("\n")}`,
   });
   if (items.length !== lines.length) throw new Error(t("errUnreadable"));
+  return items;
+}
+
+// Dictionary entries for words of the core English deck, written for a learner of the given native
+// language: the common meanings, and a short everyday example with its translation.
+export async function glossWords(words, settings) {
+  const native = languageName(settings.nativeLang);
+  const { items } = await generateJSON(settings, {
+    schema: GlossSchema,
+    maxTokens: 1000 + 150 * words.length,
+    effort: "low",
+    think: false,
+    system:
+      `You write a learner's dictionary for someone whose native language is ${native} and who is ` +
+      `learning English at level ${settings.level} (CEFR). For each numbered English word give one entry, ` +
+      "in the same order; items has exactly one entry per word. pos: its part of speech in English, " +
+      `short ("noun", "verb", "adj", "adv", "prep", "pron", "conj", "det", "interj"; two joined by "/" ` +
+      `if both are common). meaning: its 1-3 most common meanings in ${native}, separated by commas, ` +
+      "most common first. example: one short, natural everyday English sentence using the word, " +
+      `worded for their level. example_translation: that sentence in ${native}.`,
+    user: words.map((word, i) => `${i + 1}. ${word}`).join("\n"),
+  });
+  if (items.length !== words.length) throw new Error(t("errUnreadable"));
   return items;
 }
 
