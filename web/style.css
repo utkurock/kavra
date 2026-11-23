@@ -126,7 +126,7 @@ img, svg { display: block; }
 .nav-link svg { width: 24px; height: 24px; }
 .nav-link[aria-current="page"] { color: var(--fg); }
 .nav-link[aria-current="page"] svg { color: var(--primary); }
-.view { width: 100%; max-width: 1120px; margin: 0 auto; outline: none;
+.view { width: 100%; max-width: 1120px; margin: 0 auto; outline: none; overflow-x: clip; /* thrown cards don't widen the page */
   padding: calc(env(safe-area-inset-top) + 16px) 16px calc(var(--tabbar) + env(safe-area-inset-bottom) + 28px); }
 
 @media (min-width: 900px) {
