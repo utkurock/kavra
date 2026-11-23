@@ -1,0 +1,2913 @@
+{
+ "units": [
+  {
+   "id": "be-present",
+   "title": "am / is / are",
+   "level": "A1",
+   "tip": "I için am, he/she/it için is, you/we/they için are kullanılır. Olumsuz için not ekleriz: She is not tired.",
+   "items": [
+    {
+     "type": "build",
+     "tr": "Ben öğrenciyim.",
+     "en": "I am a student.",
+     "extra": [
+      "is",
+      "are"
+     ]
+    },
+    {
+     "type": "build",
+     "tr": "O çok yorgun.",
+     "en": "She is very tired.",
+     "extra": [
+      "am",
+      "are"
+     ]
+    },
+    {
+     "type": "choice",
+     "en": "I ___ from Turkey.",
+     "tr": "Ben Türkiye'denim.",
+     "options": [
+      "am",
+      "is",
+      "are"
+     ],
+     "answer": 0
+    },
+    {
+     "type": "build",
+     "tr": "Biz evde değiliz.",
+     "en": "We are not at home.",
+     "extra": [
+      "is",
+      "am",
+      "do"
+     ]
+    },
+    {
+     "type": "choice",
+     "en": "They ___ my neighbours.",
+     "tr": "Onlar benim komşularım.",
+     "options": [
+      "is",
+      "are",
+      "am"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "build",
+     "tr": "Sen hazır mısın?",
+     "en": "Are you ready?",
+     "extra": [
+      "is",
+      "am"
+     ]
+    },
+    {
+     "type": "choice",
+     "en": "___ he a doctor?",
+     "tr": "O doktor mu?",
+     "options": [
+      "Am",
+      "Are",
+      "Is"
+     ],
+     "answer": 2
+    },
+    {
+     "type": "build",
+     "tr": "Kedi bahçede.",
+     "en": "The cat is in the garden.",
+     "extra": [
+      "are",
+      "am"
+     ]
+    },
+    {
+     "type": "choice",
+     "en": "My brothers ___ not at school.",
+     "tr": "Erkek kardeşlerim okulda değil.",
+     "options": [
+      "am",
+      "is",
+      "be",
+      "are"
+     ],
+     "answer": 3
+    },
+    {
+     "type": "build",
+     "tr": "O benim arkadaşım değil.",
+     "en": "He is not my friend.",
+     "extra": [
+      "are",
+      "am"
+     ]
+    },
+    {
+     "type": "choice",
+     "en": "It ___ not cold today.",
+     "tr": "Bugün hava soğuk değil.",
+     "options": [
+      "are",
+      "is",
+      "am"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "build",
+     "tr": "Annen evde mi?",
+     "en": "Is your mother at home?",
+     "extra": [
+      "are",
+      "am"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "be-past",
+   "title": "was / were",
+   "level": "A1",
+   "tip": "I, he, she, it için was; you, we, they için were kullanılır. Örnek: I was at home. They were happy.",
+   "items": [
+    {
+     "type": "build",
+     "tr": "Ben dün evdeydim.",
+     "en": "I was at home yesterday.",
+     "extra": [
+      "were",
+      "is"
+     ]
+    },
+    {
+     "type": "build",
+     "tr": "Onlar geçen hafta tatildeydi.",
+     "en": "They were on holiday last week.",
+     "extra": [
+      "was",
+      "are"
+     ]
+    },
+    {
+     "type": "choice",
+     "en": "My parents ___ at work this morning.",
+     "tr": "Annem ve babam bu sabah işteydi.",
+     "options": [
+      "was",
+      "were",
+      "is"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "build",
+     "tr": "Hava dün soğuktu.",
+     "en": "The weather was cold yesterday.",
+     "extra": [
+      "were",
+      "is"
+     ]
+    },
+    {
+     "type": "choice",
+     "en": "I ___ not at the party.",
+     "tr": "Partide değildim.",
+     "options": [
+      "was",
+      "were",
+      "are"
+     ],
+     "answer": 0
+    },
+    {
+     "type": "build",
+     "tr": "Biz yorgun değildik.",
+     "en": "We were not tired.",
+     "extra": [
+      "was",
+      "are"
+     ]
+    },
+    {
+     "type": "choice",
+     "en": "___ they happy with the food?",
+     "tr": "Yemekten memnun muydular?",
+     "options": [
+      "Was",
+      "Is",
+      "Were"
+     ],
+     "answer": 2
+    },
+    {
+     "type": "build",
+     "tr": "Dün okulda mıydın?",
+     "en": "Were you at school yesterday?",
+     "extra": [
+      "was",
+      "are"
+     ]
+    },
+    {
+     "type": "choice",
+     "en": "It ___ a great day.",
+     "tr": "Harika bir gündü.",
+     "options": [
+      "were",
+      "are",
+      "is",
+      "was"
+     ],
+     "answer": 3
+    },
+    {
+     "type": "build",
+     "tr": "O dün hasta değildi.",
+     "en": "She was not ill yesterday.",
+     "extra": [
+      "were",
+      "is"
+     ]
+    },
+    {
+     "type": "choice",
+     "en": "The shops ___ closed on Sunday.",
+     "tr": "Dükkanlar pazar günü kapalıydı.",
+     "options": [
+      "were",
+      "was",
+      "is"
+     ],
+     "answer": 0
+    },
+    {
+     "type": "build",
+     "tr": "Film güzel miydi?",
+     "en": "Was the film good?",
+     "extra": [
+      "were",
+      "is"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "present-continuous",
+   "title": "Şimdiki zaman: I am going",
+   "level": "A1",
+   "tip": "Şu anda olan şeyler için am/is/are + fiil-ing kullanılır. Örnek: She is reading a book.",
+   "items": [
+    {
+     "type": "build",
+     "tr": "Ben su içiyorum.",
+     "en": "I am drinking water.",
+     "extra": [
+      "is",
+      "are"
+     ]
+    },
+    {
+     "type": "build",
+     "tr": "O şimdi televizyon izliyor.",
+     "en": "She is watching television now.",
+     "extra": [
+      "are",
+      "am"
+     ]
+    },
+    {
+     "type": "choice",
+     "en": "I ___ going to school now.",
+     "tr": "Şimdi okula gidiyorum.",
+     "options": [
+      "is",
+      "am",
+      "are"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "build",
+     "tr": "Çocuklar bahçede oynuyor.",
+     "en": "The children are playing in the garden.",
+     "extra": [
+      "is",
+      "am"
+     ]
+    },
+    {
+     "type": "choice",
+     "en": "He ___ sleeping at the moment.",
+     "tr": "O şu anda uyuyor.",
+     "options": [
+      "are",
+      "am",
+      "is"
+     ],
+     "answer": 2
+    },
+    {
+     "type": "build",
+     "tr": "Biz akşam yemeği yapmıyoruz.",
+     "en": "We are not cooking dinner.",
+     "extra": [
+      "is",
+      "do"
+     ]
+    },
+    {
+     "type": "choice",
+     "en": "They are ___ football.",
+     "tr": "Onlar futbol oynuyorlar.",
+     "options": [
+      "playing",
+      "play",
+      "plays"
+     ],
+     "answer": 0
+    },
+    {
+     "type": "build",
+     "tr": "Sen ne okuyorsun?",
+     "en": "What are you reading?",
+     "extra": [
+      "is",
+      "do"
+     ]
+    },
+    {
+     "type": "choice",
+     "en": "She is not ___ a book.",
+     "tr": "O kitap okumuyor.",
+     "options": [
+      "reads",
+      "read",
+      "reader",
+      "reading"
+     ],
+     "answer": 3
+    },
+    {
+     "type": "build",
+     "tr": "Annem mutfakta çalışıyor.",
+     "en": "My mother is working in the kitchen.",
+     "extra": [
+      "are",
+      "am"
+     ]
+    },
+    {
+     "type": "choice",
+     "en": "Are you ___ to music?",
+     "tr": "Müzik dinliyor musun?",
+     "options": [
+      "listens",
+      "listen",
+      "listening"
+     ],
+     "answer": 2
+    },
+    {
+     "type": "build",
+     "tr": "Yağmur yağıyor mu?",
+     "en": "Is it raining?",
+     "extra": [
+      "are",
+      "do"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "present-simple",
+   "title": "Geniş zaman: I go, she goes",
+   "level": "A1",
+   "tip": "Alışkanlıklar için geniş zaman kullanılır; he/she/it ile fiile -s eklenir. Olumsuz ve soru için do/does kullanılır: She does not go. Do you go?",
+   "items": [
+    {
+     "type": "build",
+     "tr": "Ben her gün çay içerim.",
+     "en": "I drink tea every day.",
+     "extra": [
+      "drinks",
+      "do"
+     ]
+    },
+    {
+     "type": "build",
+     "tr": "O okula otobüsle gider.",
+     "en": "She goes to school by bus.",
+     "extra": [
+      "go",
+      "does"
+     ]
+    },
+    {
+     "type": "choice",
+     "en": "My sister ___ in a bank.",
+     "tr": "Kız kardeşim bankada çalışır.",
+     "options": [
+      "work",
+      "works",
+      "working"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "build",
+     "tr": "Biz et yemeyiz.",
+     "en": "We do not eat meat.",
+     "extra": [
+      "does",
+      "eats"
+     ]
+    },
+    {
+     "type": "choice",
+     "en": "They ___ like fish.",
+     "tr": "Onlar balık sevmez.",
+     "options": [
+      "do not",
+      "does not",
+      "is not"
+     ],
+     "answer": 0
+    },
+    {
+     "type": "build",
+     "tr": "Babam kahve sevmez.",
+     "en": "My father does not like coffee.",
+     "extra": [
+      "do",
+      "likes"
+     ]
+    },
+    {
+     "type": "choice",
+     "en": "___ she play tennis?",
+     "tr": "O tenis oynar mı?",
+     "options": [
+      "Do",
+      "Is",
+      "Does"
+     ],
+     "answer": 2
+    },
+    {
+     "type": "build",
+     "tr": "Sen İngilizce konuşur musun?",
+     "en": "Do you speak English?",
+     "extra": [
+      "does",
+      "speaks"
+     ]
+    },
+    {
+     "type": "choice",
+     "en": "He does not ___ milk.",
+     "tr": "O süt içmez.",
+     "options": [
+      "drinking",
+      "drinks",
+      "drank",
+      "drink"
+     ],
+     "answer": 3
+    },
+    {
+     "type": "build",
+     "tr": "Ali Londra'da yaşar mı?",
+     "en": "Does Ali live in London?",
+     "extra": [
+      "do",
+      "lives"
+     ]
+    },
+    {
+     "type": "choice",
+     "en": "We ___ breakfast at eight.",
+     "tr": "Biz sekizde kahvaltı ederiz.",
+     "options": [
+      "eat",
+      "eats",
+      "eating"
+     ],
+     "answer": 0
+    },
+    {
+     "type": "build",
+     "tr": "Kedim süt içer.",
+     "en": "My cat drinks milk.",
+     "extra": [
+      "drink",
+      "does"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "there-is",
+   "title": "There is / there are",
+   "level": "A1",
+   "tip": "Bir şeyin var olduğunu söylemek için tekilde there is, çoğulda there are kullanılır. Örnek: There is a book. There are two books.",
+   "items": [
+    {
+     "type": "build",
+     "tr": "Odada bir masa var.",
+     "en": "There is a table in the room.",
+     "extra": [
+      "are",
+      "has"
+     ]
+    },
+    {
+     "type": "build",
+     "tr": "Parkta iki çocuk var.",
+     "en": "There are two children in the park.",
+     "extra": [
+      "is",
+      "have"
+     ]
+    },
+    {
+     "type": "choice",
+     "en": "There ___ a cat on the sofa.",
+     "tr": "Kanepede bir kedi var.",
+     "options": [
+      "are",
+      "is",
+      "have"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "build",
+     "tr": "Çantamda kitap yok.",
+     "en": "There is not a book in my bag.",
+     "extra": [
+      "are",
+      "any"
+     ]
+    },
+    {
+     "type": "choice",
+     "en": "There ___ three bedrooms in our house.",
+     "tr": "Evimizde üç yatak odası var.",
+     "options": [
+      "is",
+      "has",
+      "are"
+     ],
+     "answer": 2
+    },
+    {
+     "type": "build",
+     "tr": "Şehirde müze var mı?",
+     "en": "Is there a museum in the city?",
+     "extra": [
+      "are",
+      "has"
+     ]
+    },
+    {
+     "type": "choice",
+     "en": "___ there a bank near here?",
+     "tr": "Buraya yakın bir banka var mı?",
+     "options": [
+      "Do",
+      "Are",
+      "Has",
+      "Is"
+     ],
+     "answer": 3
+    },
+    {
+     "type": "build",
+     "tr": "Masada elma yok.",
+     "en": "There are not any apples on the table.",
+     "extra": [
+      "is",
+      "some"
+     ]
+    },
+    {
+     "type": "choice",
+     "en": "There are not ___ chairs in the room.",
+     "tr": "Odada hiç sandalye yok.",
+     "options": [
+      "any",
+      "a",
+      "an"
+     ],
+     "answer": 0
+    },
+    {
+     "type": "build",
+     "tr": "Kaç öğrenci var?",
+     "en": "How many students are there?",
+     "extra": [
+      "is",
+      "have"
+     ]
+    },
+    {
+     "type": "choice",
+     "en": "There ___ not any water in the bottle.",
+     "tr": "Şişede hiç su yok.",
+     "options": [
+      "are",
+      "is",
+      "have"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "build",
+     "tr": "Evde süt var.",
+     "en": "There is some milk at home.",
+     "extra": [
+      "are",
+      "has"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "questions",
+   "title": "Soru kelimeleri: what, where, who",
+   "level": "A1",
+   "tip": "What (ne), where (nerede), who (kim), when (ne zaman), why (neden), how (nasıl) soru başında gelir. Örnek: Where do you live?",
+   "items": [
+    {
+     "type": "build",
+     "tr": "Adın ne?",
+     "en": "What is your name?",
+     "extra": [
+      "where",
+      "who"
+     ]
+    },
+    {
+     "type": "build",
+     "tr": "Okul nerede?",
+     "en": "Where is the school?",
+     "extra": [
+      "what",
+      "when"
+     ]
+    },
+    {
+     "type": "choice",
+     "en": "___ is your teacher?",
+     "tr": "Öğretmenin kim?",
+     "options": [
+      "Who",
+      "Where",
+      "When"
+     ],
+     "answer": 0
+    },
+    {
+     "type": "build",
+     "tr": "O adam kim?",
+     "en": "Who is that man?",
+     "extra": [
+      "what",
+      "where"
+     ]
+    },
+    {
+     "type": "choice",
+     "en": "___ is your birthday? It is in May.",
+     "tr": "Doğum günün ne zaman? Mayıs'ta.",
+     "options": [
+      "Where",
+      "When",
+      "Who"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "build",
+     "tr": "Doğum günün ne zaman?",
+     "en": "When is your birthday?",
+     "extra": [
+      "what",
+      "where"
+     ]
+    },
+    {
+     "type": "choice",
+     "en": "___ are you from? I am from Izmir.",
+     "tr": "Nerelisin? İzmirliyim.",
+     "options": [
+      "Who",
+      "When",
+      "Where"
+     ],
+     "answer": 2
+    },
+    {
+     "type": "build",
+     "tr": "Neden üzgünsün?",
+     "en": "Why are you sad?",
+     "extra": [
+      "how",
+      "who"
+     ]
+    },
+    {
+     "type": "choice",
+     "en": "___ do you like this song? Because it is nice.",
+     "tr": "Bu şarkıyı neden seviyorsun? Çünkü güzel.",
+     "options": [
+      "Why",
+      "How",
+      "Who",
+      "Where"
+     ],
+     "answer": 0
+    },
+    {
+     "type": "build",
+     "tr": "Bugün nasılsın?",
+     "en": "How are you today?",
+     "extra": [
+      "what",
+      "why"
+     ]
+    },
+    {
+     "type": "choice",
+     "en": "___ old are you?",
+     "tr": "Kaç yaşındasın?",
+     "options": [
+      "What",
+      "Who",
+      "Where",
+      "How"
+     ],
+     "answer": 3
+    },
+    {
+     "type": "build",
+     "tr": "Sen nerede yaşıyorsun?",
+     "en": "Where do you live?",
+     "extra": [
+      "what",
+      "does"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "can",
+   "title": "can / can't",
+   "level": "A1",
+   "tip": "Yapabilmek için can + fiil kullanılır; fiile -s eklenmez. Olumsuzu cannot. Örnek: She can swim. I cannot swim.",
+   "items": [
+    {
+     "type": "build",
+     "tr": "Ben yüzebilirim.",
+     "en": "I can swim.",
+     "extra": [
+      "cans",
+      "am"
+     ]
+    },
+    {
+     "type": "build",
+     "tr": "O gitar çalabilir.",
+     "en": "She can play the guitar.",
+     "extra": [
+      "plays",
+      "do"
+     ]
+    },
+    {
+     "type": "choice",
+     "en": "My brother ___ run very fast.",
+     "tr": "Kardeşim çok hızlı koşabilir.",
+     "options": [
+      "cans",
+      "can",
+      "does can"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "build",
+     "tr": "Biz bugün gelemeyiz.",
+     "en": "We cannot come today.",
+     "extra": [
+      "do",
+      "to"
+     ]
+    },
+    {
+     "type": "choice",
+     "en": "I cannot ___ the answer.",
+     "tr": "Cevabı bulamıyorum.",
+     "options": [
+      "finding",
+      "finds",
+      "find"
+     ],
+     "answer": 2
+    },
+    {
+     "type": "build",
+     "tr": "Araba kullanabilir misin?",
+     "en": "Can you drive a car?",
+     "extra": [
+      "do",
+      "are"
+     ]
+    },
+    {
+     "type": "choice",
+     "en": "___ you help me, please?",
+     "tr": "Bana yardım edebilir misin lütfen?",
+     "options": [
+      "Are",
+      "Do",
+      "Is",
+      "Can"
+     ],
+     "answer": 3
+    },
+    {
+     "type": "build",
+     "tr": "Kuşlar uçabilir.",
+     "en": "Birds can fly.",
+     "extra": [
+      "flies",
+      "are"
+     ]
+    },
+    {
+     "type": "choice",
+     "en": "She can ___ three languages.",
+     "tr": "O üç dil konuşabilir.",
+     "options": [
+      "speak",
+      "speaks",
+      "speaking"
+     ],
+     "answer": 0
+    },
+    {
+     "type": "build",
+     "tr": "Babam İngilizce konuşamaz.",
+     "en": "My father cannot speak English.",
+     "extra": [
+      "can",
+      "speaks"
+     ]
+    },
+    {
+     "type": "choice",
+     "en": "Fish ___ walk.",
+     "tr": "Balıklar yürüyemez.",
+     "options": [
+      "do not can",
+      "cannot",
+      "is not can"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "build",
+     "tr": "Burada park edebilir miyim?",
+     "en": "Can I park here?",
+     "extra": [
+      "do",
+      "am"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "have",
+   "title": "have / has",
+   "level": "A1",
+   "tip": "I, you, we, they ile have; he, she, it ile has kullanılır. Olumsuz ve soru için do/does gerekir: She does not have a car. Do you have a pen?",
+   "items": [
+    {
+     "type": "build",
+     "tr": "Benim bir köpeğim var.",
+     "en": "I have a dog.",
+     "extra": [
+      "has",
+      "am"
+     ]
+    },
+    {
+     "type": "build",
+     "tr": "Onun iki kız kardeşi var.",
+     "en": "She has two sisters.",
+     "extra": [
+      "have",
+      "is"
+     ]
+    },
+    {
+     "type": "choice",
+     "en": "My mother ___ a new phone.",
+     "tr": "Annemin yeni bir telefonu var.",
+     "options": [
+      "have",
+      "has",
+      "haves"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "build",
+     "tr": "Bizim arabamız yok.",
+     "en": "We do not have a car.",
+     "extra": [
+      "does",
+      "has"
+     ]
+    },
+    {
+     "type": "choice",
+     "en": "I ___ two brothers.",
+     "tr": "İki erkek kardeşim var.",
+     "options": [
+      "has",
+      "am",
+      "have"
+     ],
+     "answer": 2
+    },
+    {
+     "type": "build",
+     "tr": "Ali'nin bilgisayarı yok.",
+     "en": "Ali does not have a computer.",
+     "extra": [
+      "do",
+      "has"
+     ]
+    },
+    {
+     "type": "choice",
+     "en": "Do you ___ any money?",
+     "tr": "Hiç paran var mı?",
+     "options": [
+      "having",
+      "has",
+      "is",
+      "have"
+     ],
+     "answer": 3
+    },
+    {
+     "type": "build",
+     "tr": "Kalemin var mı?",
+     "en": "Do you have a pen?",
+     "extra": [
+      "does",
+      "has"
+     ]
+    },
+    {
+     "type": "choice",
+     "en": "She does not ___ a car.",
+     "tr": "Onun arabası yok.",
+     "options": [
+      "have",
+      "has",
+      "is"
+     ],
+     "answer": 0
+    },
+    {
+     "type": "build",
+     "tr": "Onun bisikleti var mı?",
+     "en": "Does he have a bike?",
+     "extra": [
+      "do",
+      "has"
+     ]
+    },
+    {
+     "type": "choice",
+     "en": "___ they have a garden?",
+     "tr": "Onların bahçesi var mı?",
+     "options": [
+      "Does",
+      "Do",
+      "Has"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "build",
+     "tr": "Onların büyük bir evi var.",
+     "en": "They have a big house.",
+     "extra": [
+      "has",
+      "are"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "past-simple",
+   "title": "Geçmiş zaman: I went",
+   "level": "A2",
+   "tip": "Geçmiş olayları anlatırken düzenli fiillere -ed eklenir (cook → cooked), düzensizlerin ise özel biçimi vardır (go → went). Soru ve olumsuzda did / did not + fiilin yalın hali kullanılır: I did not go.",
+   "items": [
+    {
+     "type": "build",
+     "tr": "Dün gece pizza yedik.",
+     "en": "We ate pizza last night.",
+     "extra": [
+      "eat",
+      "eated"
+     ]
+    },
+    {
+     "type": "build",
+     "tr": "Dün markete gitmedim.",
+     "en": "I did not go to the shop yesterday.",
+     "extra": [
+      "went",
+      "goed"
+     ]
+    },
+    {
+     "type": "choice",
+     "en": "She ___ a letter to her friend yesterday.",
+     "tr": "Dün arkadaşına bir mektup yazdı.",
+     "options": [
+      "writes",
+      "writed",
+      "wrote",
+      "write"
+     ],
+     "answer": 2
+    },
+    {
+     "type": "build",
+     "tr": "Ali geçen hafta yeni bir telefon aldı.",
+     "en": "Ali bought a new phone last week.",
+     "extra": [
+      "buy",
+      "buyed"
+     ]
+    },
+    {
+     "type": "choice",
+     "en": "___ you like the film?",
+     "tr": "Filmi beğendin mi?",
+     "options": [
+      "Do",
+      "Did",
+      "Are"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "build",
+     "tr": "Dün gece bir film izledin mi?",
+     "en": "Did you watch a film last night?",
+     "extra": [
+      "watched",
+      "watches"
+     ]
+    },
+    {
+     "type": "build",
+     "tr": "Annem akşam yemeğini pişirdi.",
+     "en": "My mother cooked dinner this evening.",
+     "extra": [
+      "cook",
+      "cooks"
+     ]
+    },
+    {
+     "type": "choice",
+     "en": "We ___ tired after the long walk.",
+     "tr": "Uzun yürüyüşten sonra yorgunduk.",
+     "options": [
+      "were",
+      "was",
+      "did"
+     ],
+     "answer": 0
+    },
+    {
+     "type": "build",
+     "tr": "Onlar dün bize gelmedi.",
+     "en": "They did not come to our house yesterday.",
+     "extra": [
+      "came",
+      "comes"
+     ]
+    },
+    {
+     "type": "choice",
+     "en": "He did not ___ the bus.",
+     "tr": "Otobüsü kaçırmadı.",
+     "options": [
+      "missed",
+      "miss",
+      "misses"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "build",
+     "tr": "Bu sabah erken uyandım.",
+     "en": "I woke up early this morning.",
+     "extra": [
+      "wake",
+      "wakes"
+     ]
+    },
+    {
+     "type": "choice",
+     "en": "They ___ to the beach last summer.",
+     "tr": "Geçen yaz plaja gittiler.",
+     "options": [
+      "go",
+      "goes",
+      "going",
+      "went"
+     ],
+     "answer": 3
+    }
+   ]
+  },
+  {
+   "id": "going-to",
+   "title": "going to",
+   "level": "A2",
+   "tip": "Plan ve tahminler için am / is / are + going to + fiil kullanılır: I am going to study tonight. Olumsuzda not eklenir: She is not going to come.",
+   "items": [
+    {
+     "type": "build",
+     "tr": "Yarın arkadaşımı ziyaret edeceğim.",
+     "en": "I am going to visit my friend tomorrow.",
+     "extra": [
+      "is",
+      "go",
+      "visiting"
+     ]
+    },
+    {
+     "type": "build",
+     "tr": "Yağmur yağacak.",
+     "en": "It is going to rain.",
+     "extra": [
+      "are",
+      "raining"
+     ]
+    },
+    {
+     "type": "choice",
+     "en": "Look at those clouds! It ___ going to rain.",
+     "tr": "Şu bulutlara bak! Yağmur yağacak.",
+     "options": [
+      "are",
+      "am",
+      "is"
+     ],
+     "answer": 2
+    },
+    {
+     "type": "build",
+     "tr": "Hafta sonu ne yapacaksın?",
+     "en": "What are you going to do this weekend?",
+     "extra": [
+      "is",
+      "doing"
+     ]
+    },
+    {
+     "type": "choice",
+     "en": "I ___ going to learn English this year.",
+     "tr": "Bu yıl İngilizce öğreneceğim.",
+     "options": [
+      "am",
+      "is",
+      "are"
+     ],
+     "answer": 0
+    },
+    {
+     "type": "build",
+     "tr": "Bu akşam yemek yapmayacağız.",
+     "en": "We are not going to cook tonight.",
+     "extra": [
+      "is",
+      "cooking"
+     ]
+    },
+    {
+     "type": "build",
+     "tr": "Ahmet doktor olacak.",
+     "en": "Ahmet is going to be a doctor.",
+     "extra": [
+      "are",
+      "am",
+      "being"
+     ]
+    },
+    {
+     "type": "choice",
+     "en": "They are going to ___ a party on Saturday.",
+     "tr": "Cumartesi günü bir parti verecekler.",
+     "options": [
+      "has",
+      "having",
+      "have"
+     ],
+     "answer": 2
+    },
+    {
+     "type": "build",
+     "tr": "Yeni bir araba alacak mısın?",
+     "en": "Are you going to buy a new car?",
+     "extra": [
+      "is",
+      "buying"
+     ]
+    },
+    {
+     "type": "choice",
+     "en": "She ___ not going to come to the meeting.",
+     "tr": "Toplantıya gelmeyecek.",
+     "options": [
+      "does",
+      "is",
+      "are"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "build",
+     "tr": "Bu gece erken yatacağım.",
+     "en": "I am going to sleep early tonight.",
+     "extra": [
+      "is",
+      "sleeping"
+     ]
+    },
+    {
+     "type": "choice",
+     "en": "Are you ___ to wait for me?",
+     "tr": "Beni bekleyecek misin?",
+     "options": [
+      "going",
+      "go",
+      "will",
+      "went"
+     ],
+     "answer": 0
+    }
+   ]
+  },
+  {
+   "id": "will",
+   "title": "will / won't",
+   "level": "A2",
+   "tip": "Anlık kararlar, söz ve tahminler için will + fiil kullanılır: I will help you. Olumsuzu will not (kısaca won't) şeklindedir; fiil her zaman yalın haldedir.",
+   "items": [
+    {
+     "type": "build",
+     "tr": "Sana yarın telefon edeceğim.",
+     "en": "I will call you tomorrow.",
+     "extra": [
+      "calls",
+      "am"
+     ]
+    },
+    {
+     "type": "build",
+     "tr": "Ödevinde sana yardım edeceğiz.",
+     "en": "We will help you with your homework.",
+     "extra": [
+      "helps",
+      "are"
+     ]
+    },
+    {
+     "type": "choice",
+     "en": "I ___ open the window because it is hot in here.",
+     "tr": "Burası sıcak, pencereyi açayım.",
+     "options": [
+      "am",
+      "will",
+      "do"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "build",
+     "tr": "Yarın hava güneşli olacak.",
+     "en": "It will be sunny tomorrow.",
+     "extra": [
+      "is",
+      "being"
+     ]
+    },
+    {
+     "type": "choice",
+     "en": "It is cold. I think it ___ snow tonight.",
+     "tr": "Hava soğuk. Bence bu gece kar yağacak.",
+     "options": [
+      "will",
+      "is",
+      "does"
+     ],
+     "answer": 0
+    },
+    {
+     "type": "build",
+     "tr": "Bu soruyu cevaplamayacağım.",
+     "en": "I will not answer this question.",
+     "extra": [
+      "answers",
+      "am"
+     ]
+    },
+    {
+     "type": "build",
+     "tr": "Bence sınavı geçeceksin.",
+     "en": "I think you will pass the exam.",
+     "extra": [
+      "passes",
+      "are"
+     ]
+    },
+    {
+     "type": "choice",
+     "en": "She will ___ you the answer later.",
+     "tr": "Sana cevabı sonra söyleyecek.",
+     "options": [
+      "tells",
+      "telling",
+      "tell"
+     ],
+     "answer": 2
+    },
+    {
+     "type": "build",
+     "tr": "Yarın okula gelecek misin?",
+     "en": "Will you come to school tomorrow?",
+     "extra": [
+      "comes",
+      "are"
+     ]
+    },
+    {
+     "type": "choice",
+     "en": "We ___ not forget your birthday.",
+     "tr": "Doğum gününü unutmayacağız.",
+     "options": [
+      "will",
+      "do",
+      "are"
+     ],
+     "answer": 0
+    },
+    {
+     "type": "build",
+     "tr": "Geç kalmayacak.",
+     "en": "He will not be late.",
+     "extra": [
+      "is",
+      "been"
+     ]
+    },
+    {
+     "type": "choice",
+     "en": "___ you help me carry this bag?",
+     "tr": "Bu çantayı taşımama yardım eder misin?",
+     "options": [
+      "Are",
+      "Did",
+      "Does",
+      "Will"
+     ],
+     "answer": 3
+    }
+   ]
+  },
+  {
+   "id": "comparatives",
+   "title": "Karşılaştırma: bigger, the biggest",
+   "level": "A2",
+   "tip": "Kısa sıfatlara -er / -est eklenir (tall → taller → the tallest), uzun sıfatlarda more / the most kullanılır (more interesting). Karşılaştırmada than gelir: bigger than.",
+   "items": [
+    {
+     "type": "build",
+     "tr": "Bu çanta şundan daha ağır.",
+     "en": "This bag is heavier than that one.",
+     "extra": [
+      "heavy",
+      "more"
+     ]
+    },
+    {
+     "type": "build",
+     "tr": "O sınıftaki en uzun çocuk.",
+     "en": "He is the tallest boy in the class.",
+     "extra": [
+      "taller",
+      "most"
+     ]
+    },
+    {
+     "type": "choice",
+     "en": "My brother is ___ than me.",
+     "tr": "Kardeşim benden daha uzun.",
+     "options": [
+      "tall",
+      "taller",
+      "tallest"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "build",
+     "tr": "Ankara İstanbul'dan daha küçük.",
+     "en": "Ankara is smaller than Istanbul.",
+     "extra": [
+      "small",
+      "smallest"
+     ]
+    },
+    {
+     "type": "choice",
+     "en": "This is the ___ day of the year.",
+     "tr": "Bu yılın en soğuk günü.",
+     "options": [
+      "coldest",
+      "colder",
+      "cold"
+     ],
+     "answer": 0
+    },
+    {
+     "type": "build",
+     "tr": "Bu film diğerinden daha ilginç.",
+     "en": "This film is more interesting than the other one.",
+     "extra": [
+      "interestinger",
+      "most"
+     ]
+    },
+    {
+     "type": "build",
+     "tr": "O benim en iyi arkadaşım.",
+     "en": "She is my best friend.",
+     "extra": [
+      "good",
+      "better"
+     ]
+    },
+    {
+     "type": "choice",
+     "en": "English is ___ than maths for me.",
+     "tr": "Bana göre İngilizce matematikten daha kolay.",
+     "options": [
+      "more easy",
+      "easiest",
+      "easier"
+     ],
+     "answer": 2
+    },
+    {
+     "type": "build",
+     "tr": "Bugün dünden daha sıcak.",
+     "en": "It is hotter today than yesterday.",
+     "extra": [
+      "hot",
+      "more"
+     ]
+    },
+    {
+     "type": "choice",
+     "en": "Today is ___ than yesterday.",
+     "tr": "Bugün dünden daha iyi.",
+     "options": [
+      "good",
+      "best",
+      "gooder",
+      "better"
+     ],
+     "answer": 3
+    },
+    {
+     "type": "build",
+     "tr": "Bu, dünyadaki en pahalı saat.",
+     "en": "This is the most expensive watch in the world.",
+     "extra": [
+      "expensivest",
+      "more"
+     ]
+    },
+    {
+     "type": "choice",
+     "en": "She is the ___ person I know.",
+     "tr": "O, tanıdığım en nazik insan.",
+     "options": [
+      "kinder",
+      "more kind",
+      "kindest"
+     ],
+     "answer": 2
+    }
+   ]
+  },
+  {
+   "id": "must-should",
+   "title": "must / have to / should",
+   "level": "A2",
+   "tip": "Zorunluluk için must veya have to, tavsiye için should kullanılır: You should rest. Must not yasak, do not have to ise zorunlu olmama demektir. Geçmişte had to kullanılır.",
+   "items": [
+    {
+     "type": "build",
+     "tr": "Yarın erken kalkmak zorundayım.",
+     "en": "I have to get up early tomorrow.",
+     "extra": [
+      "has",
+      "got"
+     ]
+    },
+    {
+     "type": "build",
+     "tr": "Daha çok su içmelisin.",
+     "en": "You should drink more water.",
+     "extra": [
+      "drinks",
+      "to"
+     ]
+    },
+    {
+     "type": "choice",
+     "en": "You ___ stop at a red light.",
+     "tr": "Kırmızı ışıkta durmak zorundasın.",
+     "options": [
+      "do",
+      "must",
+      "are"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "build",
+     "tr": "Burada sigara içmemelisin.",
+     "en": "You must not smoke here.",
+     "extra": [
+      "do",
+      "smokes"
+     ]
+    },
+    {
+     "type": "choice",
+     "en": "She ___ to work on Sundays.",
+     "tr": "Pazar günleri çalışmak zorunda.",
+     "options": [
+      "have",
+      "must",
+      "has"
+     ],
+     "answer": 2
+    },
+    {
+     "type": "build",
+     "tr": "Dün gece çalışmak zorunda kaldım.",
+     "en": "I had to work last night.",
+     "extra": [
+      "have",
+      "worked"
+     ]
+    },
+    {
+     "type": "build",
+     "tr": "Yarın okula gitmek zorunda değiliz.",
+     "en": "We do not have to go to school tomorrow.",
+     "extra": [
+      "has",
+      "going"
+     ]
+    },
+    {
+     "type": "choice",
+     "en": "You look tired. You ___ rest.",
+     "tr": "Yorgun görünüyorsun. Dinlenmelisin.",
+     "options": [
+      "should",
+      "have",
+      "are"
+     ],
+     "answer": 0
+    },
+    {
+     "type": "build",
+     "tr": "Doktora görünmelisin.",
+     "en": "You should see a doctor.",
+     "extra": [
+      "sees",
+      "to"
+     ]
+    },
+    {
+     "type": "choice",
+     "en": "I ___ not have to pay for the bus.",
+     "tr": "Otobüs için ödeme yapmak zorunda değilim.",
+     "options": [
+      "must",
+      "should",
+      "am",
+      "do"
+     ],
+     "answer": 3
+    },
+    {
+     "type": "build",
+     "tr": "Ali'nin üniforma giymesi gerekiyor.",
+     "en": "Ali has to wear a uniform.",
+     "extra": [
+      "have",
+      "wears"
+     ]
+    },
+    {
+     "type": "choice",
+     "en": "Students ___ not use phones in the exam.",
+     "tr": "Öğrenciler sınavda telefon kullanmamalı.",
+     "options": [
+      "are",
+      "has",
+      "must",
+      "have"
+     ],
+     "answer": 2
+    }
+   ]
+  },
+  {
+   "id": "prepositions",
+   "title": "Edatlar: in, on, at",
+   "level": "A2",
+   "tip": "Saat ve belirli noktalar için at (at nine), günler için on (on Monday), ay, yıl ve mevsimler için in (in May). Yer için: at bir nokta (at school), in bir alan veya şehir (in Istanbul), on bir yüzey (on the table).",
+   "items": [
+    {
+     "type": "build",
+     "tr": "Ders saat dokuzda başlıyor.",
+     "en": "The lesson starts at nine.",
+     "extra": [
+      "in",
+      "on"
+     ]
+    },
+    {
+     "type": "build",
+     "tr": "Doğum günüm mayısta.",
+     "en": "My birthday is in May.",
+     "extra": [
+      "on",
+      "at"
+     ]
+    },
+    {
+     "type": "choice",
+     "en": "We have lunch ___ noon.",
+     "tr": "Öğle yemeğini öğlen yeriz.",
+     "options": [
+      "in",
+      "on",
+      "at"
+     ],
+     "answer": 2
+    },
+    {
+     "type": "build",
+     "tr": "Pazartesi günü doktora gideceğim.",
+     "en": "I will see the doctor on Monday.",
+     "extra": [
+      "in",
+      "at"
+     ]
+    },
+    {
+     "type": "choice",
+     "en": "She was born ___ 1998.",
+     "tr": "1998'de doğdu.",
+     "options": [
+      "in",
+      "on",
+      "at"
+     ],
+     "answer": 0
+    },
+    {
+     "type": "build",
+     "tr": "Anahtarlarım masanın üstünde.",
+     "en": "My keys are on the table.",
+     "extra": [
+      "in",
+      "at"
+     ]
+    },
+    {
+     "type": "build",
+     "tr": "Kardeşim şu an okulda.",
+     "en": "My brother is at school now.",
+     "extra": [
+      "in",
+      "on"
+     ]
+    },
+    {
+     "type": "choice",
+     "en": "The film starts ___ Friday evening.",
+     "tr": "Film cuma akşamı başlıyor.",
+     "options": [
+      "at",
+      "on",
+      "in"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "build",
+     "tr": "Biz İstanbul'da yaşıyoruz.",
+     "en": "We live in Istanbul.",
+     "extra": [
+      "at",
+      "on"
+     ]
+    },
+    {
+     "type": "choice",
+     "en": "There is a picture ___ the wall.",
+     "tr": "Duvarda bir resim var.",
+     "options": [
+      "in",
+      "at",
+      "on"
+     ],
+     "answer": 2
+    },
+    {
+     "type": "build",
+     "tr": "Genellikle geceleri geç yatarım.",
+     "en": "I usually go to bed late at night.",
+     "extra": [
+      "in",
+      "on"
+     ]
+    },
+    {
+     "type": "choice",
+     "en": "I met him ___ the bus stop.",
+     "tr": "Onunla otobüs durağında buluştum.",
+     "options": [
+      "on",
+      "at",
+      "in"
+     ],
+     "answer": 1
+    }
+   ]
+  },
+  {
+   "id": "quantifiers",
+   "title": "some / any / much / many",
+   "level": "A2",
+   "tip": "Olumlu cümlede some, olumsuz ve soruda any kullanılır. Sayılabilenlerle many (many books), sayılamayanlarla much (much water) gelir.",
+   "items": [
+    {
+     "type": "build",
+     "tr": "Çantamda biraz su var.",
+     "en": "I have some water in my bag.",
+     "extra": [
+      "any",
+      "many"
+     ]
+    },
+    {
+     "type": "build",
+     "tr": "Evde hiç ekmek yok.",
+     "en": "There is not any bread at home.",
+     "extra": [
+      "some",
+      "many"
+     ]
+    },
+    {
+     "type": "choice",
+     "en": "Do you have ___ brothers or sisters?",
+     "tr": "Kardeşin var mı?",
+     "options": [
+      "some",
+      "any",
+      "much"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "build",
+     "tr": "Kaç kardeşin var?",
+     "en": "How many brothers do you have?",
+     "extra": [
+      "much",
+      "any"
+     ]
+    },
+    {
+     "type": "choice",
+     "en": "There is too ___ traffic in the morning.",
+     "tr": "Sabahları çok fazla trafik var.",
+     "options": [
+      "many",
+      "few",
+      "much"
+     ],
+     "answer": 2
+    },
+    {
+     "type": "build",
+     "tr": "Ne kadar süt istiyorsun?",
+     "en": "How much milk do you want?",
+     "extra": [
+      "many",
+      "some"
+     ]
+    },
+    {
+     "type": "build",
+     "tr": "Bugün çok işim var.",
+     "en": "I have a lot of work today.",
+     "extra": [
+      "many",
+      "few"
+     ]
+    },
+    {
+     "type": "choice",
+     "en": "We need ___ eggs for the cake.",
+     "tr": "Pasta için biraz yumurtaya ihtiyacımız var.",
+     "options": [
+      "some",
+      "any",
+      "much"
+     ],
+     "answer": 0
+    },
+    {
+     "type": "build",
+     "tr": "Biraz çay ister misin?",
+     "en": "Would you like some tea?",
+     "extra": [
+      "any",
+      "many"
+     ]
+    },
+    {
+     "type": "choice",
+     "en": "How ___ people came to the party?",
+     "tr": "Partiye kaç kişi geldi?",
+     "options": [
+      "much",
+      "some",
+      "a little",
+      "many"
+     ],
+     "answer": 3
+    },
+    {
+     "type": "build",
+     "tr": "Şehirde fazla park yok.",
+     "en": "There are not many parks in the city.",
+     "extra": [
+      "much",
+      "some"
+     ]
+    },
+    {
+     "type": "choice",
+     "en": "I do not have ___ money today.",
+     "tr": "Bugün hiç param yok.",
+     "options": [
+      "some",
+      "any",
+      "many"
+     ],
+     "answer": 1
+    }
+   ]
+  },
+  {
+   "id": "present-perfect",
+   "title": "Present perfect: I have been",
+   "level": "B1",
+   "tip": "have/has + üçüncü fiil (V3) ile geçmişte başlayan ya da şimdiyle bağlantılı olayları anlatırız. Örnek: I have already eaten (Çoktan yedim).",
+   "items": [
+    {
+     "type": "build",
+     "tr": "Ben hiç Paris'e gitmedim.",
+     "en": "I have never been to Paris.",
+     "extra": [
+      "went",
+      "was",
+      "did"
+     ]
+    },
+    {
+     "type": "build",
+     "tr": "O işini şimdiden bitirdi.",
+     "en": "She has already finished her work.",
+     "extra": [
+      "finish",
+      "had",
+      "did"
+     ]
+    },
+    {
+     "type": "choice",
+     "en": "My sister ___ never eaten sushi.",
+     "tr": "Kız kardeşim hiç suşi yemedi.",
+     "options": [
+      "has",
+      "have",
+      "is",
+      "did"
+     ],
+     "answer": 0
+    },
+    {
+     "type": "build",
+     "tr": "Henüz yemek yemedik.",
+     "en": "We have not eaten yet.",
+     "extra": [
+      "ate",
+      "did",
+      "was"
+     ]
+    },
+    {
+     "type": "choice",
+     "en": "I ___ lived in this city since 2015.",
+     "tr": "2015'ten beri bu şehirde yaşıyorum.",
+     "options": [
+      "am",
+      "have",
+      "did",
+      "will"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "build",
+     "tr": "Daha yeni bir mesaj aldım.",
+     "en": "I have just received a message.",
+     "extra": [
+      "receive",
+      "got",
+      "had"
+     ]
+    },
+    {
+     "type": "choice",
+     "en": "Have you finished your homework ___?",
+     "tr": "Ödevini henüz bitirdin mi?",
+     "options": [
+      "ago",
+      "last",
+      "yet",
+      "never"
+     ],
+     "answer": 2
+    },
+    {
+     "type": "build",
+     "tr": "Hiç İngiltere'ye gittin mi?",
+     "en": "Have you ever been to England?",
+     "extra": [
+      "did",
+      "went",
+      "has"
+     ]
+    },
+    {
+     "type": "choice",
+     "en": "They have ___ gone to the airport.",
+     "tr": "Onlar daha yeni havalimanına gitti.",
+     "options": [
+      "yesterday",
+      "just",
+      "ago",
+      "last week"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "build",
+     "tr": "Tom üç yıldır burada yaşıyor.",
+     "en": "Tom has lived here for three years.",
+     "extra": [
+      "live",
+      "is",
+      "since"
+     ]
+    },
+    {
+     "type": "choice",
+     "en": "We have ___ that film twice.",
+     "tr": "O filmi iki kez izledik.",
+     "options": [
+      "see",
+      "saw",
+      "seen",
+      "seeing"
+     ],
+     "answer": 2
+    },
+    {
+     "type": "build",
+     "tr": "Kardeşim kapıyı açmadı.",
+     "en": "My brother has not opened the door.",
+     "extra": [
+      "open",
+      "did",
+      "have"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "past-continuous",
+   "title": "Geçmişte süren: I was going",
+   "level": "B1",
+   "tip": "was/were + fiil-ing, geçmişte belli bir anda devam eden eylemi anlatır. when kısa olayı, while uzun süren eylemi bağlar. Örnek: I was reading when you called.",
+   "items": [
+    {
+     "type": "build",
+     "tr": "Ben duş alırken telefon çaldı.",
+     "en": "The phone rang while I was showering.",
+     "extra": [
+      "shower",
+      "were",
+      "am"
+     ],
+     "alt": [
+      "While I was showering the phone rang."
+     ]
+    },
+    {
+     "type": "build",
+     "tr": "Onlar dün akşam futbol oynuyordu.",
+     "en": "They were playing football last night.",
+     "extra": [
+      "played",
+      "was",
+      "play"
+     ]
+    },
+    {
+     "type": "choice",
+     "en": "I ___ TV when the lights went out.",
+     "tr": "Işıklar gittiğinde televizyon izliyordum.",
+     "options": [
+      "watched",
+      "was watching",
+      "were watching",
+      "watch"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "build",
+     "tr": "Ben seni aradığımda uyuyor muydun?",
+     "en": "Were you sleeping when I called?",
+     "extra": [
+      "was",
+      "sleep",
+      "did"
+     ],
+     "alt": [
+      "When I called were you sleeping?"
+     ]
+    },
+    {
+     "type": "choice",
+     "en": "What ___ you doing at nine last night?",
+     "tr": "Dün gece dokuzda ne yapıyordun?",
+     "options": [
+      "was",
+      "did",
+      "are",
+      "were"
+     ],
+     "answer": 3
+    },
+    {
+     "type": "build",
+     "tr": "Annem akşam yemeği pişiriyordu.",
+     "en": "My mother was cooking dinner.",
+     "extra": [
+      "cooked",
+      "were",
+      "cook"
+     ]
+    },
+    {
+     "type": "choice",
+     "en": "He broke his arm while he ___ football.",
+     "tr": "Futbol oynarken kolunu kırdı.",
+     "options": [
+      "was playing",
+      "were playing",
+      "has played",
+      "will play"
+     ],
+     "answer": 0
+    },
+    {
+     "type": "build",
+     "tr": "Biz yürürken yağmur yağıyordu.",
+     "en": "We were walking while it was raining.",
+     "extra": [
+      "walked",
+      "is",
+      "rained"
+     ],
+     "alt": [
+      "While it was raining we were walking."
+     ]
+    },
+    {
+     "type": "choice",
+     "en": "The children ___ in the garden when it started to rain.",
+     "tr": "Yağmur başladığında çocuklar bahçede oynuyordu.",
+     "options": [
+      "was playing",
+      "were playing",
+      "plays",
+      "have played"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "build",
+     "tr": "O bana bakmıyordu.",
+     "en": "She was not looking at me.",
+     "extra": [
+      "were",
+      "looked",
+      "did"
+     ]
+    },
+    {
+     "type": "choice",
+     "en": "It ___ snowing when we left home.",
+     "tr": "Evden çıktığımızda kar yağıyordu.",
+     "options": [
+      "were",
+      "did",
+      "was",
+      "has"
+     ],
+     "answer": 2
+    },
+    {
+     "type": "build",
+     "tr": "Biz çalışırken öğretmen içeri girdi.",
+     "en": "The teacher came in while we were working.",
+     "extra": [
+      "was",
+      "worked",
+      "come"
+     ],
+     "alt": [
+      "While we were working the teacher came in."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "conditionals",
+   "title": "If cümleleri",
+   "level": "B1",
+   "tip": "Gerçek ihtimal: if + şimdiki zaman, will + fiil. Hayali durum: if + geçmiş zaman, would + fiil. Örnek: If it rains, I will stay home.",
+   "items": [
+    {
+     "type": "build",
+     "tr": "Yağmur yağarsa evde kalırım.",
+     "en": "I will stay home if it rains.",
+     "extra": [
+      "would",
+      "rained",
+      "stayed"
+     ],
+     "alt": [
+      "If it rains I will stay home."
+     ]
+    },
+    {
+     "type": "build",
+     "tr": "Param olsaydı seyahat ederdim.",
+     "en": "I would travel if I had money.",
+     "extra": [
+      "will",
+      "have",
+      "travelled"
+     ],
+     "alt": [
+      "If I had money I would travel."
+     ]
+    },
+    {
+     "type": "choice",
+     "en": "If I ___ rich I would buy a big house.",
+     "tr": "Zengin olsaydım büyük bir ev alırdım.",
+     "options": [
+      "am",
+      "were",
+      "will be",
+      "would be"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "build",
+     "tr": "Erken kalkarsan treni yakalarsın.",
+     "en": "You will catch the train if you get up early.",
+     "extra": [
+      "would",
+      "got",
+      "catches"
+     ],
+     "alt": [
+      "If you get up early you will catch the train."
+     ]
+    },
+    {
+     "type": "choice",
+     "en": "If you ___ me I will help you.",
+     "tr": "Bana sorarsan sana yardım ederim.",
+     "options": [
+      "asked",
+      "would ask",
+      "are asking",
+      "ask"
+     ],
+     "answer": 3
+    },
+    {
+     "type": "build",
+     "tr": "Ben senin yerinde olsam ona söylerdim.",
+     "en": "I would tell him if I were you.",
+     "extra": [
+      "will",
+      "am",
+      "are"
+     ],
+     "alt": [
+      "If I were you I would tell him."
+     ]
+    },
+    {
+     "type": "choice",
+     "en": "If she studied more she ___ better marks.",
+     "tr": "Daha çok çalışsaydı daha iyi notlar alırdı.",
+     "options": [
+      "would get",
+      "will get",
+      "gets",
+      "got"
+     ],
+     "answer": 0
+    },
+    {
+     "type": "build",
+     "tr": "Çalışmazsan sınavı geçemezsin.",
+     "en": "You will not pass if you do not study.",
+     "extra": [
+      "would",
+      "did",
+      "passes"
+     ],
+     "alt": [
+      "If you do not study you will not pass."
+     ]
+    },
+    {
+     "type": "choice",
+     "en": "We will be late if we ___ now.",
+     "tr": "Şimdi çıkmazsak geç kalacağız.",
+     "options": [
+      "did not leave",
+      "will not leave",
+      "do not leave",
+      "would not leave"
+     ],
+     "answer": 2
+    },
+    {
+     "type": "build",
+     "tr": "Kazansaydı çok mutlu olurdu.",
+     "en": "She would be very happy if she won.",
+     "extra": [
+      "will",
+      "win",
+      "wins"
+     ],
+     "alt": [
+      "If she won she would be very happy."
+     ]
+    },
+    {
+     "type": "choice",
+     "en": "What would you do if you ___ a million pounds?",
+     "tr": "Bir milyon sterlin kazansaydın ne yapardın?",
+     "options": [
+      "win",
+      "won",
+      "will win",
+      "would win"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "build",
+     "tr": "Hava güneşliyse piknik yaparız.",
+     "en": "We will have a picnic if it is sunny.",
+     "extra": [
+      "would",
+      "was",
+      "were"
+     ],
+     "alt": [
+      "If it is sunny we will have a picnic."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "passive",
+   "title": "Edilgen: it was made",
+   "level": "B1",
+   "tip": "Edilgen yapı be + üçüncü fiil (V3) ile kurulur. Şimdiki zamanda is/are, geçmişte was/were kullanılır. Örnek: The cake was eaten (Pasta yenildi).",
+   "items": [
+    {
+     "type": "build",
+     "tr": "Bu araba Almanya'da yapılıyor.",
+     "en": "This car is made in Germany.",
+     "extra": [
+      "make",
+      "was",
+      "makes"
+     ]
+    },
+    {
+     "type": "build",
+     "tr": "Köprü geçen yıl inşa edildi.",
+     "en": "The bridge was built last year.",
+     "extra": [
+      "build",
+      "is",
+      "were"
+     ]
+    },
+    {
+     "type": "choice",
+     "en": "Many cars ___ in Japan every year.",
+     "tr": "Japonya'da her yıl birçok araba üretilir.",
+     "options": [
+      "make",
+      "are made",
+      "is made",
+      "were make"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "build",
+     "tr": "Bu odalar her gün temizlenir.",
+     "en": "These rooms are cleaned every day.",
+     "extra": [
+      "clean",
+      "is",
+      "cleans"
+     ]
+    },
+    {
+     "type": "choice",
+     "en": "The window ___ by a ball yesterday.",
+     "tr": "Pencere dün bir top tarafından kırıldı.",
+     "options": [
+      "broke",
+      "is broken",
+      "was broken",
+      "were broken"
+     ],
+     "answer": 2
+    },
+    {
+     "type": "build",
+     "tr": "Mektup dün gönderildi.",
+     "en": "The letter was sent yesterday.",
+     "extra": [
+      "send",
+      "is",
+      "sending"
+     ]
+    },
+    {
+     "type": "choice",
+     "en": "Rice is ___ in many countries.",
+     "tr": "Pirinç birçok ülkede yetiştirilir.",
+     "options": [
+      "grow",
+      "grown",
+      "grew",
+      "growing"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "build",
+     "tr": "İngilizce birçok ülkede konuşulur.",
+     "en": "English is spoken in many countries.",
+     "extra": [
+      "speak",
+      "are",
+      "spoke"
+     ]
+    },
+    {
+     "type": "choice",
+     "en": "The dinner ___ by my father last night.",
+     "tr": "Akşam yemeği dün gece babam tarafından pişirildi.",
+     "options": [
+      "was cooked",
+      "cooked",
+      "is cooked",
+      "were cooked"
+     ],
+     "answer": 0
+    },
+    {
+     "type": "build",
+     "tr": "Pencereler çocuklar tarafından kırıldı.",
+     "en": "The windows were broken by the children.",
+     "extra": [
+      "break",
+      "was",
+      "broke"
+     ]
+    },
+    {
+     "type": "choice",
+     "en": "My phone ___ stolen last week.",
+     "tr": "Telefonum geçen hafta çalındı.",
+     "options": [
+      "were",
+      "is",
+      "was",
+      "has"
+     ],
+     "answer": 2
+    },
+    {
+     "type": "build",
+     "tr": "Bu film dün gece izlendi mi?",
+     "en": "Was this film watched last night?",
+     "extra": [
+      "watch",
+      "were",
+      "did"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "relative-clauses",
+   "title": "who / which / that / where",
+   "level": "B2",
+   "tip": "who kişiler, which/that şeyler, where yerler, whose ise aitlik için kullanılır. Örnek: The man who lives here is a doctor.",
+   "items": [
+    {
+     "type": "build",
+     "tr": "Bu, bana yardım eden adam.",
+     "en": "This is the man who helped me.",
+     "extra": [
+      "which",
+      "where",
+      "what"
+     ]
+    },
+    {
+     "type": "build",
+     "tr": "Dün aldığım kitap çok ilginç.",
+     "en": "The book that I bought yesterday is interesting.",
+     "extra": [
+      "who",
+      "where",
+      "what"
+     ]
+    },
+    {
+     "type": "choice",
+     "en": "The woman ___ lives next door is a nurse.",
+     "tr": "Yan komşum olan kadın hemşire.",
+     "options": [
+      "which",
+      "who",
+      "where",
+      "whose"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "build",
+     "tr": "Doğduğum şehir çok büyük.",
+     "en": "The city where I was born is very big.",
+     "extra": [
+      "who",
+      "which",
+      "when"
+     ]
+    },
+    {
+     "type": "choice",
+     "en": "That is the restaurant ___ we had dinner.",
+     "tr": "Akşam yemeği yediğimiz restoran orası.",
+     "options": [
+      "who",
+      "which",
+      "where",
+      "whose"
+     ],
+     "answer": 2
+    },
+    {
+     "type": "build",
+     "tr": "Bir kafe işleten bir kadın tanıyorum.",
+     "en": "I know a woman who owns a cafe.",
+     "extra": [
+      "which",
+      "where",
+      "own"
+     ]
+    },
+    {
+     "type": "choice",
+     "en": "I lost the umbrella ___ my mother gave me.",
+     "tr": "Annemin bana verdiği şemsiyeyi kaybettim.",
+     "options": [
+      "who",
+      "where",
+      "that",
+      "whose"
+     ],
+     "answer": 2
+    },
+    {
+     "type": "build",
+     "tr": "Bu, onun geçen yıl yazdığı şarkı.",
+     "en": "This is the song which she wrote last year.",
+     "extra": [
+      "who",
+      "where",
+      "written"
+     ]
+    },
+    {
+     "type": "choice",
+     "en": "He is the boy ___ bike was stolen.",
+     "tr": "Bisikleti çalınan çocuk o.",
+     "options": [
+      "whose",
+      "who",
+      "which",
+      "where"
+     ],
+     "answer": 0
+    },
+    {
+     "type": "build",
+     "tr": "Kız kardeşi doktor olan bir arkadaşım var.",
+     "en": "I have a friend whose sister is a doctor.",
+     "extra": [
+      "who",
+      "which",
+      "where"
+     ]
+    },
+    {
+     "type": "choice",
+     "en": "This is the machine ___ makes our coffee.",
+     "tr": "Kahvemizi yapan makine bu.",
+     "options": [
+      "who",
+      "where",
+      "whose",
+      "which"
+     ],
+     "answer": 3
+    },
+    {
+     "type": "build",
+     "tr": "Çocukların oynadığı park kapalı.",
+     "en": "The park where the children play is closed.",
+     "extra": [
+      "who",
+      "which",
+      "there"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "reported-speech",
+   "title": "Dolaylı anlatım: she said that",
+   "level": "B2",
+   "tip": "Dolaylı anlatımda zaman genellikle bir adım geriye gider: am/is → was, will → would. Örnek: She said that she was tired.",
+   "items": [
+    {
+     "type": "build",
+     "tr": "Ali yorgun olduğunu söyledi.",
+     "en": "Ali said that he was tired.",
+     "extra": [
+      "is",
+      "am",
+      "were"
+     ]
+    },
+    {
+     "type": "build",
+     "tr": "Annem geç geleceğini söyledi.",
+     "en": "My mother said that she would come late.",
+     "extra": [
+      "will",
+      "comes",
+      "was"
+     ]
+    },
+    {
+     "type": "choice",
+     "en": "He said that he ___ a new car.",
+     "tr": "Yeni bir araba almış olduğunu söyledi.",
+     "options": [
+      "has bought",
+      "is buying",
+      "buys",
+      "had bought"
+     ],
+     "answer": 3
+    },
+    {
+     "type": "build",
+     "tr": "O bana nerede yaşadığımı sordu.",
+     "en": "She asked me where I lived.",
+     "extra": [
+      "live",
+      "do",
+      "did"
+     ]
+    },
+    {
+     "type": "choice",
+     "en": "She asked me what time the film ___.",
+     "tr": "Bana filmin kaçta başladığını sordu.",
+     "options": [
+      "will start",
+      "start",
+      "started",
+      "does start"
+     ],
+     "answer": 2
+    },
+    {
+     "type": "build",
+     "tr": "Öğretmen bize ödevi bitirip bitirmediğimizi sordu.",
+     "en": "The teacher asked us if we had finished the homework.",
+     "extra": [
+      "have",
+      "did",
+      "has"
+     ]
+    },
+    {
+     "type": "choice",
+     "en": "She said that she ___ seen him before.",
+     "tr": "Onu daha önce görmüş olduğunu söyledi.",
+     "options": [
+      "has",
+      "had",
+      "will",
+      "is"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "build",
+     "tr": "Tom bana hasta olduğunu söyledi.",
+     "en": "Tom told me that he was ill.",
+     "extra": [
+      "said",
+      "is",
+      "were"
+     ]
+    },
+    {
+     "type": "choice",
+     "en": "I asked him ___ he wanted some tea.",
+     "tr": "Ona çay isteyip istemediğini sordum.",
+     "options": [
+      "that",
+      "what",
+      "who",
+      "if"
+     ],
+     "answer": 3
+    },
+    {
+     "type": "build",
+     "tr": "Sarah nereye gittiğimi bilmek istedi.",
+     "en": "Sarah wanted to know where I had gone.",
+     "extra": [
+      "went",
+      "have",
+      "did"
+     ]
+    },
+    {
+     "type": "choice",
+     "en": "He told ___ that the shop was closed.",
+     "tr": "Bana dükkânın kapalı olduğunu söyledi.",
+     "options": [
+      "to me",
+      "said",
+      "me",
+      "for me"
+     ],
+     "answer": 2
+    },
+    {
+     "type": "build",
+     "tr": "Daha sonra beni arayacaklarını söylediler.",
+     "en": "They said that they would call me later.",
+     "extra": [
+      "will",
+      "called",
+      "calls"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "wish",
+   "title": "I wish / should have",
+   "level": "B2",
+   "tip": "Şimdiki pişmanlık için I wish + geçmiş zaman, geçmişteki pişmanlık için I wish + had + V3 veya should have + V3 kullanılır. Örnek: I should have studied.",
+   "items": [
+    {
+     "type": "build",
+     "tr": "Keşke daha fazla param olsa.",
+     "en": "I wish I had more money.",
+     "extra": [
+      "have",
+      "was",
+      "would"
+     ]
+    },
+    {
+     "type": "build",
+     "tr": "Keşke sen burada olsaydın.",
+     "en": "I wish you were here.",
+     "extra": [
+      "are",
+      "was",
+      "be"
+     ]
+    },
+    {
+     "type": "choice",
+     "en": "I wish I ___ taller.",
+     "tr": "Keşke daha uzun boylu olsam.",
+     "options": [
+      "am",
+      "will be",
+      "were",
+      "have been"
+     ],
+     "answer": 2
+    },
+    {
+     "type": "build",
+     "tr": "Keşke daha çok çalışsaydım.",
+     "en": "I wish I had studied harder.",
+     "extra": [
+      "have",
+      "would",
+      "study"
+     ]
+    },
+    {
+     "type": "choice",
+     "en": "I should ___ brought an umbrella.",
+     "tr": "Şemsiye getirmeliydim.",
+     "options": [
+      "has",
+      "have",
+      "had",
+      "to have"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "build",
+     "tr": "Doktora gitmeliydin.",
+     "en": "You should have gone to the doctor.",
+     "extra": [
+      "go",
+      "went",
+      "would"
+     ]
+    },
+    {
+     "type": "choice",
+     "en": "She wishes she ___ the exam last week.",
+     "tr": "Keşke geçen hafta sınavı geçseydi.",
+     "options": [
+      "would pass",
+      "passed",
+      "has passed",
+      "had passed"
+     ],
+     "answer": 3
+    },
+    {
+     "type": "build",
+     "tr": "Keşke daha hızlı koşabilsem.",
+     "en": "I wish I could run faster.",
+     "extra": [
+      "can",
+      "would",
+      "ran"
+     ]
+    },
+    {
+     "type": "choice",
+     "en": "He wishes he ___ more free time now.",
+     "tr": "Keşke şimdi daha fazla boş zamanı olsa.",
+     "options": [
+      "has",
+      "would have",
+      "have had",
+      "had"
+     ],
+     "answer": 3
+    },
+    {
+     "type": "build",
+     "tr": "Bunu söylememeliydim.",
+     "en": "I should not have said that.",
+     "extra": [
+      "say",
+      "would",
+      "had"
+     ]
+    },
+    {
+     "type": "choice",
+     "en": "We should not ___ so late last night.",
+     "tr": "Dün gece o kadar geç kalmamalıydık.",
+     "options": [
+      "have stayed",
+      "stay",
+      "stayed",
+      "have stay"
+     ],
+     "answer": 0
+    },
+    {
+     "type": "build",
+     "tr": "Keşke daha erken çıksaydık.",
+     "en": "I wish we had left earlier.",
+     "extra": [
+      "have",
+      "leave",
+      "would"
+     ]
+    }
+   ]
+  }
+ ]
+}
