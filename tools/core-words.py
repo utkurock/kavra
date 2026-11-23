@@ -23,7 +23,7 @@ online offline user password update upload feedback teen teenager guy guys okay 
 BLOCK = set("""fuck fuckin fucking shit shitty bullshit asshole cunt goddamn porn bitch dick pussy cock whore slut
 nigga nigger fag faggot retard damn ass crap piss bastard sexy""".split())
 # Words that pass the dictionary check but are almost always names in the corpus.
-NAMES = set("""york smith peter tom jack mike joe mary henry martin harry lee ben boston sam tony bob kim nick michigan hong
+NAMES = set("""jerry morris york smith peter tom jack mike joe mary henry martin harry lee ben boston sam tony bob kim nick michigan hong
 dan jordan ford miller eric lewis alan jeff luke mac jimmy kelly morgan jane roger ross clark jay anna walter
 ann carter josh rio billy rick graham larry las barry cooper ted warren khan carl laura nelson steven terry
 barcelona parker perry bobby franklin ken phoenix amy wright cole turner jake kent benjamin blake tommy
