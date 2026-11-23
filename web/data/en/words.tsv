@@ -1,0 +1,5002 @@
+# word, head (as shown), CEFR level, part of speech, Turkish meaning, English meaning; most frequent first.
+# Levels and meanings are AI-written estimates.
+the	the	A1	det	(belirli tanımlık) bu, o	
+to	to	A1	prep	-e, -a, -mek için	
+and	and	A1	conj	ve	
+of	of	A1	prep	-in, -ın (aitlik), -den	
+a	a	A1	det	(belirsiz tanımlık) bir	
+in	in	A1	prep	içinde, -de, -da	
+I	I	A1	pron	ben	
+be	be	A1	verb	olmak	
+for	for	A1	prep	için, -e	
+that	that	A1	pron/conj	o, ki	
+you	you	A1	pron	sen, siz	
+it	it	A1	pron	o (cansız/hayvan), onu	
+on	on	A1	prep	üzerinde, -de	
+with	with	A1	prep	ile, -le birlikte	
+this	this	A1	pron	bu	
+as	as	A1	conj/prep	olarak, gibi, -dığı için	
+have	have	A1	verb	sahip olmak, -mış olmak (yardımcı fiil), yemek/içmek	
+at	at	A1	prep	-de, -da, -e	
+he	he	A1	pron	o (erkek)	
+not	not	A1	adv	değil, -me	
+by	by	A1	prep	tarafından, yanında, -e kadar	
+but	but	A1	conj	ama, fakat	
+from	from	A1	prep	-den, -dan	
+my	my	A1	det	benim	
+or	or	A1	conj	veya, ya da	
+we	we	A1	pron	biz	
+your	your	A1	det	senin, sizin	
+all	all	A1	det/pron	hepsi, tüm, bütün	
+so	so	A1	adv/conj	çok, bu yüzden, öyle	
+his	his	A1	det	onun (erkek)	
+they	they	A1	pron	onlar	
+if	if	A1	conj	eğer, -se	
+one	one	A1	noun	bir, biri	
+can	can	A1	verb	-ebilmek, -abilmek	
+will	will	A1	verb	-ecek, -acak (gelecek zaman)	
+just	just	A2	adv	sadece, az önce, tam	
+like	like	A1	verb/prep	sevmek, gibi, benzer	
+about	about	A1	prep	hakkında, yaklaşık	
+up	up	A1	adv	yukarı, yukarıda	
+out	out	A1	adv	dışarı, dışarıda	
+what	what	A1	pron	ne	
+when	when	A1	adv/conj	ne zaman, -dığında	
+more	more	A1	det/adv	daha fazla, daha	
+do	do	A1	verb	yapmak, etmek	
+no	no	A1	det/interj	hayır, hiç, değil	
+who	who	A1	pron	kim	
+their	their	A1	det	onların	
+there	there	A1	adv	orada, orası	
+her	her	A1	pron/det	onu, onun (kadın)	
+which	which	A1	pron	hangisi, hangi	
+time	time	A1	noun	zaman, vakit, kez	
+get	get	A1	verb	almak, elde etmek, olmak	
+would	would	A2	verb	-erdi, -ecekti (şartlı kip)	
+she	she	A1	pron	o (kadın)	
+new	new	A1	adj	yeni	
+people	people	A1	noun	insanlar, halk	
+how	how	A1	adv	nasıl, ne kadar	
+some	some	A1	det/pron	bazı, biraz	
+also	also	A2	adv	ayrıca, de, da	
+now	now	A1	adv	şimdi	
+other	other	A1	det/pron	diğer, başka	
+its	its	A2	det	onun (cansız/hayvan)	
+our	our	A1	det	bizim	
+than	than	A2	conj	-den, -dan (karşılaştırma)	
+good	good	A1	adj	iyi	
+only	only	A1	adv/adj	sadece, yalnızca, tek	
+after	after	A1	prep/conj	sonra, -dıktan sonra	
+first	first	A1	adj/adv	birinci, ilk	
+into	into	A2	prep	içine	
+know	know	A1	verb	bilmek, tanımak	
+see	see	A1	verb	görmek, anlamak	
+two	two	A1	det	iki	
+make	make	A1	verb	yapmak, etmek, üretmek	
+over	over	A2	prep/adv	üzerinde, bitmiş, boyunca	
+think	think	A1	verb	düşünmek, sanmak	
+any	any	A1	det	herhangi bir, hiç	
+then	then	A1	adv	sonra, o zaman	
+could	could	A2	verb	-ebilirdi, -ebilir (nazik)	
+back	back	A1	adv/noun	geri, arka	
+want	want	A1	verb	istemek	
+because	because	A1	conj	çünkü	
+go	go	A1	verb	gitmek	
+well	well	A1	adv/adj	iyi, iyi bir şekilde, kuyu	
+say	say	A1	verb	söylemek, demek	
+way	way	A1	noun	yol, yöntem, biçim	
+most	most	A2	det/adv	çoğu, en çok	
+much	much	A1	det/adv	çok, fazla	
+very	very	A1	adv	çok	
+where	where	A1	adv	nerede, nereye	
+even	even	A2	adv	bile, hatta	
+should	should	A2	verb	-meli, -malı	
+may	may	B1	verb	-ebilir, -ebilmek (izin/olasılık)	
+here	here	A1	adv	burada, buraya	
+need	need	A1	verb/noun	ihtiyaç duymak, gereksinim	
+really	really	A2	adv	gerçekten	
+right	right	A1	adj/noun	doğru, sağ, hak	
+work	work	A1	noun/verb	iş, çalışmak	
+year	year	A1	noun	yıl, sene	
+being	being	B1	noun	varlık, canlı, olmak	
+day	day	A1	noun	gün	
+too	too	A1	adv	de, da, fazla	
+before	before	A1	prep/conj	önce, -meden önce	
+off	off	A2	adv/prep	kapalı, uzakta, -den	
+why	why	A1	adv	neden, niçin	
+still	still	A2	adv/adj	hâlâ, sakin	
+take	take	A1	verb	almak, götürmek, sürmek	
+many	many	A1	det	çok, birçok	
+never	never	A1	adv	asla, hiçbir zaman	
+life	life	A1	noun	hayat, yaşam	
+world	world	A1	noun	dünya	
+down	down	A1	adv/prep	aşağı, aşağıda	
+great	great	A1	adj	harika, büyük, çok iyi	
+through	through	B1	prep	içinden, boyunca, aracılığıyla	
+last	last	A1	adj/verb	son, geçen, sürmek	
+while	while	A2	conj	-erken, iken, oysa	
+best	best	A1	adj	en iyi	
+such	such	B1	det	böyle, öyle	
+love	love	A1	noun/verb	aşk, sevgi, sevmek	
+man	man	A1	noun	adam, erkek	
+home	home	A1	noun	ev, yuva	
+long	long	A1	adj	uzun	
+look	look	A1	verb/noun	bakmak, görünmek, bakış	
+something	something	A1	pron	bir şey	
+use	use	A1	verb/noun	kullanmak, kullanım	
+same	same	A1	adj	aynı	
+both	both	A2	det/pron	her ikisi	
+every	every	A1	det	her	
+come	come	A1	verb	gelmek	
+part	part	A2	noun	parça, bölüm, kısım	
+state	state	B1	noun	devlet, eyalet, durum	
+three	three	A1	det	üç	
+around	around	A2	prep/adv	etrafında, yaklaşık	
+between	between	A2	prep	arasında	
+always	always	A1	adv	her zaman, daima	
+better	better	A2	adj/adv	daha iyi	
+find	find	A1	verb	bulmak	
+help	help	A1	verb/noun	yardım etmek, yardım	
+high	high	A1	adj	yüksek	
+little	little	A1	adj	küçük, az	
+old	old	A1	adj	yaşlı, eski	
+since	since	A2	prep/conj	-den beri, çünkü	
+another	another	A2	det/pron	başka bir, bir diğeri	
+own	own	A2	adj/verb	kendi, sahip olmak	
+thing	thing	A1	noun	şey, nesne	
+under	under	A2	prep	altında	
+during	during	A2	prep	sırasında, boyunca	
+game	game	A1	noun	oyun, maç	
+give	give	A1	verb	vermek	
+house	house	A1	noun	ev	
+place	place	A1	noun	yer, mekân	
+school	school	A1	noun	okul	
+again	again	A1	adv	tekrar, yine	
+next	next	A1	adj/adv	sonraki, gelecek	
+each	each	A2	det	her bir	
+without	without	A2	prep	-siz, -sız, olmadan	
+against	against	B1	prep	karşı, aleyhine	
+end	end	A1	noun/verb	son, bitmek, bitirmek	
+found	found	A2	verb	buldu (find'ın geçmişi), kurmak	
+must	must	A2	verb	-meli, -malı, zorunda	
+show	show	A1	verb/noun	göstermek, gösteri	
+big	big	A1	adj	büyük	
+feel	feel	A1	verb	hissetmek	
+sure	sure	A2	adj	emin, kesin	
+team	team	A1	noun	takım, ekip	
+ever	ever	A2	adv	hiç, şimdiye kadar	
+family	family	A1	noun	aile	
+keep	keep	A2	verb	tutmak, saklamak, sürdürmek	
+might	might	B1	verb	-ebilir (olasılık)	
+please	please	A1	interj/verb	lütfen, memnun etmek	
+put	put	A1	verb	koymak	
+money	money	A1	noun	para	
+free	free	A1	adj	ücretsiz, özgür, serbest	
+second	second	A1	adj/noun	ikinci, saniye	
+someone	someone	A2	pron	birisi, biri	
+away	away	A2	adv	uzakta, uzağa	
+left	left	A1	adj/noun	sol, kalmış	
+number	number	A1	noun	sayı, numara	
+city	city	A1	noun	şehir	
+lot	lot	A2	noun	çok miktar, parti, arsa	
+name	name	A1	noun	ad, isim	
+night	night	A1	noun	gece	
+play	play	A1	verb/noun	oynamak, çalmak, oyun	
+until	until	A2	prep/conj	-e kadar	
+company	company	A2	noun	şirket, arkadaşlık	
+doing	doing	A2	verb	yapıyor (do'nun -ing hâli), yapmak	
+few	few	A2	det	az, birkaç	
+let	let	A2	verb	izin vermek, bırakmak	
+real	real	A2	adj	gerçek	
+call	call	A1	verb/noun	aramak, çağırmak, arama	
+different	different	A1	adj	farklı	
+set	set	A2	verb/noun	ayarlamak, koymak, takım	
+thought	thought	B1	noun/verb	düşünce, düşündü	
+however	however	B1	adv	ancak, ne var ki	
+god	god	A2	noun	tanrı, Allah	
+government	government	B1	noun	hükümet	
+group	group	A2	noun	grup	
+public	public	B1	adj/noun	kamusal, halk	
+top	top	A2	noun/adj	tepe, üst, en üstteki	
+woman	woman	A1	noun	kadın	
+business	business	A2	noun	iş, ticaret	
+care	care	A2	noun/verb	bakım, özen, umursamak	
+start	start	A1	verb/noun	başlamak, başlangıç	
+system	system	A2	noun	sistem	
+week	week	A1	noun	hafta	
+already	already	A2	adv	zaten, çoktan	
+anything	anything	A2	pron	herhangi bir şey	
+case	case	B1	noun	durum, dava, kutu	
+nothing	nothing	A2	pron	hiçbir şey	
+person	person	A1	noun	kişi, insan	
+today	today	A1	adv/noun	bugün	
+change	change	A1	noun/verb	değişim, değiştirmek, bozuk para	
+enough	enough	A2	det/adv	yeterli, yeterince	
+everything	everything	A2	pron	her şey	
+full	full	A2	adj	dolu, tam	
+live	live	A1	verb/adj	yaşamak, canlı	
+point	point	A2	noun/verb	nokta, puan, işaret etmek	
+read	read	A1	verb	okumak	
+tell	tell	A1	verb	söylemek, anlatmak	
+yet	yet	B1	adv/conj	henüz, yine de	
+bad	bad	A1	adj	kötü	
+four	four	A1	det	dört	
+hard	hard	A2	adj/adv	zor, sert, çok çalışarak	
+mean	mean	B1	verb/adj	anlamına gelmek, kastetmek, cimri	
+once	once	A2	adv	bir kez, bir zamanlar	
+support	support	B1	noun/verb	destek, desteklemek	
+include	include	B1	verb	içermek, kapsamak	
+music	music	A1	noun	müzik	
+power	power	B1	noun	güç, iktidar, elektrik	
+stop	stop	A1	verb/noun	durmak, durdurmak, durak	
+water	water	A1	noun	su	
+base	base	B1	noun/verb	taban, temel, dayandırmak	
+believe	believe	A2	verb	inanmak	
+head	head	A2	noun	baş, kafa, başkan	
+national	national	B1	adj	ulusal	
+small	small	A1	adj	küçük	
+white	white	A1	adj	beyaz	
+far	far	A2	adv/adj	uzak, çok uzakta	
+job	job	A1	noun	iş, meslek	
+side	side	A2	noun	yan, taraf	
+though	though	B1	conj/adv	-e rağmen, ama	
+try	try	A1	verb	denemek, çalışmak	
+went	went	A1	verb	gitti (go'nun geçmişi)	
+yes	yes	A1	interj	evet	
+actually	actually	A2	adv	aslında	
+american	american	A2	adj/noun	Amerikalı, Amerikan	
+later	later	A1	adv	daha sonra	
+less	less	A2	det/adv	daha az	
+line	line	A2	noun	çizgi, sıra, hat	
+order	order	A2	noun/verb	sipariş, düzen, emir, sipariş vermek	
+party	party	A1	noun	parti, eğlence, taraf	
+run	run	A1	verb	koşmak, çalıştırmak, yönetmek	
+service	service	A2	noun	hizmet	
+country	country	A1	noun	ülke, kır	
+open	open	A1	adj/verb	açık, açmak	
+season	season	A2	noun	mevsim, sezon	
+thank	thank	A1	verb	teşekkür etmek	
+child	child	A1	noun	çocuk	
+everyone	everyone	A1	pron	herkes	
+general	general	B1	adj/noun	genel, general	
+unite	unite	B2	verb	birleştirmek, birleşmek	
+area	area	A2	noun	alan, bölge	
+black	black	A1	adj	siyah	
+follow	follow	A2	verb	takip etmek, izlemek	
+law	law	B1	noun	yasa, hukuk	
+together	together	A2	adv	birlikte	
+war	war	A2	noun	savaş	
+whole	whole	B1	adj/noun	bütün, tüm	
+car	car	A1	noun	araba	
+face	face	A2	noun/verb	yüz, karşılaşmak	
+five	five	A1	det	beş	
+kind	kind	A2	noun/adj	tür, nazik	
+maybe	maybe	A2	adv	belki	
+per	per	B1	prep	başına, her	
+president	president	A2	noun	başkan, cumhurbaşkanı	
+story	story	A1	noun	hikâye, öykü	
+course	course	A2	noun	kurs, ders, rota	
+health	health	A2	noun	sağlık	
+hope	hope	A2	verb/noun	ummak, umut	
+important	important	A1	adj	önemli	
+within	within	B1	prep	içinde, -in içinde	
+able	able	A2	adj	yapabilen, muktedir	
+book	book	A1	noun	kitap	
+early	early	A1	adj/adv	erken	
+friend	friend	A1	noun	arkadaş	
+information	information	A2	noun	bilgi	
+local	local	B1	adj	yerel	
+oh	oh	A2	interj	ah, oh	
+post	post	B1	noun/verb	posta, gönderi, direk, paylaşmak	
+video	video	A1	noun	video	
+young	young	A1	adj	genç	
+ago	ago	A2	adv	önce	
+social	social	B1	adj	sosyal, toplumsal	
+talk	talk	A1	verb/noun	konuşmak, konuşma	
+court	court	B1	noun	mahkeme, kort	
+fact	fact	A2	noun	gerçek, olgu	
+given	given	B2	verb/prep	verilmiş, göz önüne alındığında	
+guy	guy	B1	noun	adam, herif	
+half	half	A2	noun/det	yarım, yarı	
+hand	hand	A1	noun	el	
+level	level	A2	noun	seviye, düzey	
+mind	mind	B1	noun/verb	zihin, akıl, aldırmak	
+often	often	A1	adv	sık sık	
+single	single	A2	adj	tek, bekâr	
+become	become	A2	verb	olmak, hâline gelmek	
+body	body	A2	noun	vücut, beden	
+control	control	B1	noun/verb	kontrol, denetlemek	
+death	death	B1	noun	ölüm	
+food	food	A1	noun	yiyecek, yemek	
+hour	hour	A1	noun	saat (süre)	
+office	office	A2	noun	ofis, büro	
+pay	pay	A2	verb/noun	ödemek, maaş	
+problem	problem	A2	noun	sorun	
+south	south	A2	noun/adj	güney	
+true	true	A2	adj	doğru, gerçek	
+almost	almost	A2	adv	neredeyse	
+history	history	A2	noun	tarih	
+large	large	A2	adj	büyük, geniş	
+lose	lose	A2	verb	kaybetmek	
+research	research	B1	noun/verb	araştırma, araştırmak	
+room	room	A1	noun	oda, yer	
+several	several	B1	det	birkaç, çeşitli	
+university	university	A2	noun	üniversite	
+win	win	A2	verb	kazanmak	
+wrong	wrong	A2	adj	yanlış	
+along	along	B1	prep/adv	boyunca, birlikte	
+anyone	anyone	A2	pron	herhangi biri, kimse	
+else	else	A2	adv	başka, daha	
+girl	girl	A1	noun	kız	
+matter	matter	B1	noun/verb	mesele, önemli olmak	
+pretty	pretty	A2	adj/adv	güzel, oldukça	
+remember	remember	A1	verb	hatırlamak	
+air	air	A2	noun	hava	
+bite	bite	B1	verb/noun	ısırmak, ısırık	
+hit	hit	B1	verb/noun	vurmak, darbe, hit	
+nice	nice	A1	adj	güzel, hoş	
+probably	probably	A2	adv	muhtemelen	
+understand	understand	A1	verb	anlamak	
+class	class	A1	noun	sınıf, ders	
+close	close	A2	verb/adj	kapatmak, yakın	
+idea	idea	A1	noun	fikir	
+international	international	B1	adj	uluslararası	
+past	past	A2	noun/prep	geçmiş, -in yanından	
+possible	possible	A2	adj	mümkün	
+cause	cause	B1	noun/verb	neden, sebep olmak	
+due	due	B2	adj	beklenen, -den dolayı	
+happy	happy	A1	adj	mutlu	
+human	human	B1	adj/noun	insan, insani	
+member	member	A2	noun	üye	
+month	month	A1	noun	ay	
+move	move	A2	verb/noun	taşınmak, hareket etmek	
+question	question	A1	noun	soru	
+series	series	B1	noun	dizi, seri	
+wait	wait	A1	verb	beklemek	
+ask	ask	A1	verb	sormak, istemek	
+community	community	B1	noun	topluluk	
+data	data	B1	noun	veri	
+late	late	A1	adj/adv	geç	
+leave	leave	A2	verb	ayrılmak, bırakmak	
+north	north	A2	noun/adj	kuzey	
+special	special	A2	adj	özel	
+watch	watch	A1	verb/noun	izlemek, kol saati	
+either	either	B1	det/adv	ikisinden biri, de (olumsuz)	
+future	future	A2	noun	gelecek	
+light	light	A2	noun/adj	ışık, hafif	
+low	low	A2	adj	düşük, alçak	
+million	million	A2	det	milyon	
+morning	morning	A1	noun	sabah	
+police	police	A2	noun	polis	
+short	short	A1	adj	kısa	
+stay	stay	A1	verb	kalmak	
+age	age	A2	noun	yaş, çağ	
+buy	buy	A1	verb	satın almak	
+deal	deal	B1	noun/verb	anlaşma, ele almak	
+rather	rather	B1	adv	oldukça, daha ziyade	
+reason	reason	A2	noun	sebep, neden	
+red	red	A1	adj	kırmızı	
+report	report	B1	noun/verb	rapor, bildirmek	
+soon	soon	A1	adv	yakında	
+third	third	A2	adj	üçüncü	
+turn	turn	A2	verb/noun	dönmek, sıra	
+whether	whether	B1	conj	-ip -mediği	
+among	among	B1	prep	arasında	
+check	check	A2	verb/noun	kontrol etmek, kontrol, çek	
+development	development	B1	noun	gelişme, geliştirme	
+form	form	A2	noun/verb	form, biçim, oluşturmak	
+further	further	B1	adj/adv	daha ileri, ek	
+heart	heart	A2	noun	kalp, yürek	
+minute	minute	A1	noun	dakika	
+myself	myself	A2	pron	kendim	
+yourself	yourself	A2	pron	kendin	
+act	act	B1	verb/noun	davranmak, eylem, yasa	
+although	although	B1	conj	-e rağmen, her ne kadar	
+fire	fire	A2	noun/verb	ateş, yangın, kovmak	
+fun	fun	A1	noun/adj	eğlence, eğlenceli	
+major	major	B2	adj/noun	büyük, önemli, ana, binbaşı	
+medium	medium	B1	adj/noun	orta, ortam	
+phone	phone	A1	noun	telefon	
+player	player	A2	noun	oyuncu, çalar	
+art	art	A1	noun	sanat	
+behind	behind	A2	prep/adv	arkasında	
+build	build	A2	verb	inşa etmek	
+easy	easy	A1	adj	kolay	
+gonna	gonna	B1	verb	-ecek (konuşma dilinde "going to")	
+market	market	A2	noun	pazar, piyasa	
+near	near	A2	prep/adj	yakın, yakınında	
+plan	plan	A2	noun/verb	plan, planlamak	
+political	political	B1	adj	siyasi	
+quite	quite	A2	adv	oldukça, tamamen	
+six	six	A1	det	altı	
+west	west	A2	noun/adj	batı	
+accord	accord	C1	noun/verb	uyum, anlaşma, vermek	
+available	available	B1	adj	mevcut, müsait	
+education	education	A2	noun	eğitim	
+final	final	A2	adj/noun	son, final	
+former	former	B2	adj	eski, önceki	
+front	front	A2	noun	ön	
+kid	kid	A1	noun	çocuk	
+list	list	A1	noun/verb	liste, listelemek	
+ready	ready	A1	adj	hazır	
+sometime	sometime	B1	adv	bir ara, bir zaman	
+son	son	A1	noun	oğul	
+street	street	A1	noun	sokak, cadde	
+bring	bring	A1	verb	getirmek	
+college	college	A2	noun	kolej, yüksekokul	
+current	current	B1	adj	şimdiki, mevcut	
+example	example	A1	noun	örnek	
+experience	experience	A2	noun/verb	deneyim, tecrübe etmek	
+hear	hear	A1	verb	duymak	
+meet	meet	A1	verb	tanışmak, buluşmak	
+program	program	A2	noun	program	
+type	type	A2	noun/verb	tür, yazmak (klavyede)	
+baby	baby	A1	noun	bebek	
+chance	chance	A2	noun	şans, fırsat	
+father	father	A1	noun	baba	
+march	march	A2	noun/verb	mart, yürümek	
+process	process	B1	noun/verb	süreç, işlemek	
+song	song	A1	noun	şarkı	
+study	study	A1	verb/noun	çalışmak, öğrenim, ders çalışmak	
+word	word	A1	noun	kelime, söz	
+across	across	A2	prep	karşısında, boyunca	
+action	action	A2	noun	eylem, hareket	
+clear	clear	A2	adj/verb	açık, net, temizlemek	
+himself	himself	A2	pron	kendisi (erkek)	
+outside	outside	A1	adv/prep	dışarıda, dışında	
+self	self	B2	noun	benlik, öz	
+student	student	A1	noun	öğrenci	
+board	board	B1	noun	tahta, kurul	
+cost	cost	A2	noun/verb	maliyet, mal olmak	
+cut	cut	A2	verb/noun	kesmek, kesik	
+field	field	B1	noun	alan, tarla	
+hold	hold	A2	verb	tutmak, elinde tutmak	
+instead	instead	A2	adv	onun yerine	
+main	main	A2	adj	ana, başlıca	
+moment	moment	A2	noun	an, lahza	
+mother	mother	A1	noun	anne	
+road	road	A1	noun	yol	
+seem	seem	B1	verb	görünmek, gibi gelmek	
+town	town	A1	noun	kasaba, şehir	
+department	department	B1	noun	bölüm, departman	
+energy	energy	B1	noun	enerji	
+fight	fight	A2	verb/noun	dövüşmek, kavga	
+fine	fine	A2	adj	iyi, güzel, ince, para cezası	
+force	force	B1	noun/verb	güç, zorlamak	
+issue	issue	B1	noun	konu, sorun, sayı	
+price	price	A1	noun	fiyat	
+rest	rest	A2	noun/verb	dinlenme, geri kalan, dinlenmek	
+result	result	B1	noun	sonuç	
+space	space	A2	noun	uzay, boşluk, alan	
+summer	summer	A1	noun	yaz	
+term	term	B1	noun	terim, dönem, süre	
+wife	wife	A1	noun	karı, eş	
+beautiful	beautiful	A1	adj	güzel	
+date	date	A2	noun	tarih, randevu	
+kill	kill	A2	verb	öldürmek	
+land	land	A2	noun/verb	kara, arazi, inmek	
+miss	miss	A2	verb	özlemek, kaçırmak, bayan	
+project	project	A2	noun	proje	
+sex	sex	B1	noun	cinsiyet, seks	
+shot	shot	B1	noun	atış, çekim, iğne	
+site	site	A2	noun	site, yer	
+strong	strong	A2	adj	güçlü	
+account	account	B1	noun	hesap, anlatım	
+especially	especially	B1	adv	özellikle	
+eye	eye	A1	noun	göz	
+june	june	A1	noun	haziran	
+parent	parent	A2	noun	ebeveyn	
+period	period	B1	noun	dönem, süre	
+position	position	B1	noun	konum, pozisyon	
+record	record	B1	noun/verb	kayıt, rekor, kaydetmek	
+similar	similar	B1	adj	benzer	
+total	total	B1	adj/noun	toplam, tam	
+above	above	A2	prep/adv	üstünde, yukarıda	
+club	club	A2	noun	kulüp	
+common	common	B1	adj	yaygın, ortak	
+die	die	A2	verb	ölmek	
+film	film	A1	noun	film	
+happen	happen	A2	verb	olmak, meydana gelmek	
+lead	lead	B1	verb/noun	önderlik etmek, liderlik, kurşun	
+likely	likely	B1	adj	muhtemel	
+military	military	B2	adj/noun	askeri, ordu	
+perfect	perfect	A2	adj	mükemmel	
+personal	personal	B1	adj	kişisel	
+security	security	B1	noun	güvenlik	
+share	share	A2	verb/noun	paylaşmak, pay	
+tv	tv	A1	noun	televizyon	
+won	won	A2	verb	kazandı (win'in geçmişi), won	
+april	april	A1	noun	nisan	
+center	center	A2	noun	merkez	
+county	county	B2	noun	ilçe, kontluk	
+couple	couple	A2	noun	çift, birkaç	
+dead	dead	A2	adj	ölü	
+english	english	A1	noun/adj	İngilizce, İngiliz	
+industry	industry	B1	noun	sanayi, endüstri	
+inside	inside	A2	adv/prep	içeride, içinde	
+online	online	A2	adj/adv	çevrimiçi	
+private	private	B1	adj	özel, gizli	
+return	return	A2	verb/noun	dönmek, geri vermek, dönüş	
+sense	sense	B1	noun/verb	duyu, anlam, hissetmek	
+star	star	A1	noun	yıldız	
+test	test	A2	noun/verb	test, sınav, denemek	
+view	view	B1	noun	görüş, manzara	
+break	break	A2	verb/noun	kırmak, ara, mola	
+british	british	A2	adj	İngiliz	
+event	event	A2	noun	olay, etkinlik	
+higher	higher	B1	adj	daha yüksek	
+middle	middle	A2	noun/adj	orta	
+present	present	B1	noun/adj	hediye, şimdiki, sunmak	
+sorry	sorry	A1	adj	üzgün, özür dilerim	
+train	train	A1	noun/verb	tren, eğitmek	
+wish	wish	A2	verb/noun	dilemek, dilek	
+answer	answer	A1	noun/verb	cevap, cevaplamak	
+boy	boy	A1	noun	erkek çocuk	
+design	design	B1	noun/verb	tasarım, tasarlamak	
+finally	finally	A2	adv	sonunda	
+gold	gold	A2	noun	altın	
+gone	gone	B1	verb	gitmiş (go'nun ortacı)	
+guess	guess	B1	verb/noun	tahmin etmek, tahmin	
+interest	interest	A2	noun/verb	ilgi, faiz, ilgilendirmek	
+july	july	A1	noun	temmuz	
+king	king	A2	noun	kral	
+learn	learn	A1	verb	öğrenmek	
+policy	policy	B2	noun	politika, ilke	
+society	society	B1	noun	toplum	
+add	add	A2	verb	eklemek	
+alone	alone	A2	adj/adv	yalnız	
+average	average	B1	adj/noun	ortalama	
+bank	bank	A1	noun	banka	
+certain	certain	B1	adj	kesin, belli	
+church	church	A2	noun	kilise	
+east	east	A2	noun/adj	doğu	
+hot	hot	A1	adj	sıcak, acı	
+longer	longer	A2	adj/adv	daha uzun, daha fazla	
+medical	medical	B1	adj	tıbbi	
+movie	movie	A1	noun	film	
+original	original	B1	adj	orijinal, özgün	
+park	park	A1	noun/verb	park, park etmek	
+performance	performance	B1	noun	performans, gösteri	
+press	press	B1	verb/noun	basmak, basın	
+receive	receive	B1	verb	almak, kabul etmek	
+role	role	B1	noun	rol	
+send	send	A1	verb	göndermek	
+themselves	themselves	B1	pron	kendileri	
+worth	worth	B1	adj	değer, değerinde	
+bill	bill	A2	noun	fatura, hesap, banknot	
+cool	cool	A2	adj	serin, harika	
+director	director	B1	noun	yönetmen, müdür	
+exactly	exactly	B1	adv	tam olarak	
+ground	ground	B1	noun	zemin, yer, toprak	
+provide	provide	B1	verb	sağlamak	
+relationship	relationship	B1	noun	ilişki	
+september	september	A1	noun	eylül	
+sound	sound	A2	noun/verb	ses, kulağa gelmek	
+source	source	B1	noun	kaynak	
+usually	usually	A1	adv	genellikle	
+value	value	B1	noun	değer	
+evidence	evidence	B2	noun	kanıt	
+official	official	B1	adj/noun	resmî, görevli	
+ok	ok	A1	interj	tamam	
+production	production	B1	noun	üretim, yapım	
+rate	rate	B1	noun	oran, hız	
+round	round	A2	adj/noun	yuvarlak, tur	
+save	save	A2	verb	kurtarmak, biriktirmek, kaydetmek	
+stand	stand	A2	verb	ayakta durmak, dayanmak	
+stuff	stuff	B1	noun	şeyler, eşya	
+tax	tax	B1	noun	vergi	
+whatever	whatever	B1	pron	her ne, her neyse	
+amount	amount	B1	noun	miktar	
+blue	blue	A1	adj	mavi	
+drive	drive	A2	verb	araba sürmek	
+eat	eat	A1	verb	yemek yemek	
+fall	fall	A2	verb/noun	düşmek, sonbahar	
+fast	fast	A1	adj/adv	hızlı	
+federal	federal	C1	adj	federal	
+felt	felt	B1	verb	hissetti (feel'in geçmişi), keçe	
+green	green	A1	adj	yeşil	
+league	league	B2	noun	lig	
+management	management	B1	noun	yönetim	
+match	match	A2	noun/verb	maç, eşleşmek, kibrit	
+model	model	B1	noun	model, manken	
+picture	picture	A1	noun	resim, fotoğraf	
+size	size	A2	noun	beden, boyut	
+step	step	A2	noun	adım	
+trust	trust	B1	noun/verb	güven, güvenmek	
+central	central	B1	adj	merkezî	
+forward	forward	B1	adv/adj	ileri, ileriye	
+hey	hey	A2	interj	hey	
+key	key	A2	noun	anahtar, tuş	
+mom	mom	A1	noun	anne	
+page	page	A1	noun	sayfa	
+range	range	B1	noun	aralık, çeşit	
+review	review	B1	noun/verb	inceleme, gözden geçirmek	
+science	science	A2	noun	bilim	
+trade	trade	B1	noun	ticaret	
+upon	upon	B2	prep	üzerine, -de	
+various	various	B1	adj	çeşitli	
+attention	attention	B1	noun	dikkat	
+brother	brother	A1	noun	erkek kardeş, ağabey	
+cannot	cannot	A2	verb	-emez, -amaz	
+character	character	B1	noun	karakter	
+chief	chief	B2	noun/adj	şef, baş	
+cup	cup	A1	noun	fincan, kupa	
+football	football	A1	noun	futbol	
+hate	hate	A2	verb	nefret etmek	
+jam	jam	B1	noun	reçel, sıkışıklık	
+lower	lower	B1	adj/verb	daha düşük, alçaltmak	
+natural	natural	B1	adj	doğal	
+october	october	A1	noun	ekim	
+property	property	B1	noun	mülk, özellik	
+quality	quality	B1	noun	kalite	
+style	style	B1	noun	stil, tarz	
+vote	vote	B1	noun/verb	oy, oy vermek	
+amazing	amazing	B1	adj	şaşırtıcı, harika	
+august	august	A1	noun	ağustos	
+blood	blood	B1	noun	kan	
+complete	complete	A2	adj/verb	tam, tamamlamak	
+dog	dog	A1	noun	köpek	
+economic	economic	B1	adj	ekonomik	
+hell	hell	B2	noun	cehennem	
+involve	involve	B2	verb	içermek, dahil etmek	
+itself	itself	B1	pron	kendisi	
+language	language	A1	noun	dil	
+lord	lord	B2	noun	lord, efendi, Rab	
+november	november	A1	noun	kasım	
+oil	oil	A2	noun	yağ, petrol	
+relate	relate	B2	verb	ilişkilendirmek, anlatmak	
+serious	serious	B1	adj	ciddi	
+stage	stage	B1	noun	aşama, sahne	
+title	title	B1	noun	başlık, unvan	
+article	article	B1	noun	makale, madde	
+attack	attack	B1	noun/verb	saldırı, saldırmak	
+born	born	A2	verb	doğmuş	
+decide	decide	A2	verb	karar vermek	
+decision	decision	B1	noun	karar	
+enjoy	enjoy	A1	verb	keyif almak, hoşlanmak	
+entire	entire	B2	adj	bütün, tüm	
+january	january	A1	noun	ocak	
+perhaps	perhaps	B1	adv	belki	
+poor	poor	A2	adj	fakir, zavallı, kötü	
+release	release	B2	verb/noun	serbest bırakmak, yayın	
+situation	situation	B1	noun	durum	
+technology	technology	B1	noun	teknoloji	
+website	website	A2	noun	web sitesi	
+write	write	A1	verb	yazmak	
+choice	choice	A2	noun	seçim, tercih	
+code	code	B1	noun	kod	
+consider	consider	B1	verb	düşünmek, göz önünde bulundurmak	
+continue	continue	A2	verb	devam etmek	
+council	council	B2	noun	konsey, meclis	
+cover	cover	B1	verb/noun	örtmek, kapak	
+currently	currently	B2	adv	şu anda	
+door	door	A1	noun	kapı	
+election	election	B2	noun	seçim	
+financial	financial	B2	adj	mali	
+foreign	foreign	B1	adj	yabancı	
+hair	hair	A1	noun	saç	
+increase	increase	B1	verb/noun	artmak, artış	
+legal	legal	B2	adj	yasal	
+pick	pick	A2	verb	seçmek, toplamak	
+race	race	B1	noun	yarış, ırk	
+seven	seven	A1	det	yedi	
+sign	sign	A2	noun/verb	işaret, imzalamak	
+simple	simple	A2	adj	basit	
+simply	simply	B1	adv	basitçe, sadece	
+staff	staff	B1	noun	personel	
+super	super	B1	adj	süper	
+union	union	B2	noun	birlik, sendika	
+walk	walk	A1	verb/noun	yürümek, yürüyüş	
+bed	bed	A1	noun	yatak	
+begin	begin	A2	verb	başlamak	
+career	career	B1	noun	kariyer	
+crazy	crazy	B1	adj	deli, çılgın	
+daily	daily	A2	adj	günlük	
+daughter	daughter	A1	noun	kız evlat	
+december	december	A1	noun	aralık	
+difficult	difficult	A1	adj	zor	
+figure	figure	B1	noun	rakam, figür	
+hospital	hospital	A1	noun	hastane	
+loss	loss	B1	noun	kayıp	
+modern	modern	A2	adj	modern	
+paper	paper	A1	noun	kâğıt, gazete	
+popular	popular	A2	adj	popüler	
+publish	publish	B2	verb	yayımlamak	
+safe	safe	A2	adj	güvenli	
+version	version	B1	noun	sürüm, versiyon	
+voice	voice	B1	noun	ses	
+whose	whose	B1	pron	kimin	
+army	army	B1	noun	ordu	
+earth	earth	A2	noun	dünya, toprak	
+forget	forget	A1	verb	unutmak	
+goal	goal	A2	noun	hedef, gol	
+huge	huge	B1	adj	kocaman, dev	
+internet	internet	A1	noun	internet	
+listen	listen	A1	verb	dinlemek	
+okay	okay	A1	interj	tamam	
+practice	practice	B1	noun/verb	uygulama, pratik yapmak	
+rule	rule	A2	noun	kural	
+sea	sea	A1	noun	deniz	
+sir	sir	A2	noun	efendim, bey	
+success	success	B1	noun	başarı	
+toward	toward	B1	prep	-e doğru	
+access	access	B1	noun/verb	erişim, erişmek	
+below	below	B1	prep/adv	altında, aşağıda	
+create	create	A2	verb	yaratmak, oluşturmak	
+deep	deep	A2	adj	derin	
+mark	mark	B1	noun/verb	işaret, not, işaretlemek	
+offer	offer	B1	verb/noun	teklif etmek, teklif	
+pass	pass	A2	verb	geçmek, vermek	
+professional	professional	B1	adj/noun	profesyonel	
+risk	risk	B1	noun	risk	
+sleep	sleep	A1	verb/noun	uyumak, uyku	
+table	table	A1	noun	masa, tablo	
+ten	ten	A1	det	on	
+truth	truth	B1	noun	gerçek, doğru	
+ball	ball	A1	noun	top	
+card	card	A1	noun	kart	
+dark	dark	A1	adj	karanlık, koyu	
+district	district	B2	noun	bölge, ilçe	
+mine	mine	A2	pron	benimki, maden	
+minister	minister	B2	noun	bakan, papaz	
+note	note	A2	noun/verb	not, not etmek	
+percent	percent	B1	noun	yüzde	
+piece	piece	A2	noun	parça	
+product	product	B1	noun	ürün	
+recent	recent	B1	adj	yakın zamanlı	
+stretch	stretch	B2	verb/noun	germek, esnemek	
+visit	visit	A1	verb/noun	ziyaret etmek, ziyaret	
+wall	wall	A1	noun	duvar	
+wanna	wanna	B1	verb	istemek (konuşma dilinde "want to")	
+allow	allow	B1	verb	izin vermek	
+culture	culture	B1	noun	kültür	
+fan	fan	A2	noun	hayran, vantilatör	
+february	february	A1	noun	şubat	
+growth	growth	B2	noun	büyüme	
+marry	marry	A2	verb	evlenmek	
+officer	officer	B1	noun	memur, subay, polis	
+pain	pain	B1	noun	ağrı, acı	
+respect	respect	B1	noun/verb	saygı, saygı duymak	
+response	response	B2	noun	yanıt, tepki	
+river	river	A1	noun	nehir	
+rock	rock	A2	noun	kaya, rock müzik	
+shall	shall	B1	verb	-eyim, -elim (öneri)	
+speak	speak	A1	verb	konuşmak	
+specific	specific	B1	adj	belirli, özel	
+standard	standard	B1	noun/adj	standart	
+tonight	tonight	A1	adv	bu gece	
+album	album	B1	noun	albüm	
+century	century	A2	noun	yüzyıl	
+charge	charge	B1	noun/verb	ücret, suçlamak, şarj etmek	
+cold	cold	A1	adj	soğuk	
+effect	effect	B1	noun	etki	
+eight	eight	A1	det	sekiz	
+except	except	B1	prep	-den başka, hariç	
+funny	funny	A2	adj	komik	
+limit	limit	B1	noun/verb	sınır, sınırlamak	
+network	network	B1	noun	ağ	
+peace	peace	B1	noun	barış	
+recently	recently	B1	adv	son zamanlarda	
+require	require	B2	verb	gerektirmek	
+spend	spend	A2	verb	harcamak, geçirmek	
+store	store	A2	noun/verb	mağaza, saklamak	
+tomorrow	tomorrow	A1	adv/noun	yarın	
+track	track	B1	noun	iz, parça, yol	
+via	via	B2	prep	-yoluyla, üzerinden	
+weight	weight	B1	noun	ağırlık	
+addition	addition	B2	noun	ekleme, toplama	
+ahead	ahead	B1	adv	ileride, ileriye	
+anti	anti	C1	det	karşıtı	
+association	association	B2	noun	dernek, ilişkilendirme	
+beat	beat	B1	verb/noun	dövmek, yenmek, ritim	
+brown	brown	A1	adj	kahverengi	
+capital	capital	B1	noun	başkent, sermaye	
+committee	committee	B2	noun	komite	
+conference	conference	B1	noun	konferans	
+difference	difference	A2	noun	fark	
+double	double	B1	adj/verb	çift, iki katına çıkarmak	
+expect	expect	B1	verb	beklemek	
+gas	gas	B1	noun	gaz, benzin	
+island	island	A2	noun	ada	
+normal	normal	A2	adj	normal	
+population	population	B1	noun	nüfus	
+potential	potential	B2	noun/adj	potansiyel, olası	
+pressure	pressure	B1	noun	baskı, basınç	
+radio	radio	A1	noun	radyo	
+station	station	A2	noun	istasyon	
+text	text	B1	noun	metin	
+treatment	treatment	B2	noun	tedavi, muamele	
+western	western	B2	adj	batılı	
+campaign	campaign	B2	noun	kampanya	
+certainly	certainly	B1	adv	kesinlikle	
+completely	completely	B1	adv	tamamen	
+content	content	B2	noun	içerik	
+credit	credit	B2	noun	kredi, itibar	
+cross	cross	B1	verb/noun	geçmek, haç	
+describe	describe	A2	verb	tanımlamak, anlatmak	
+despite	despite	B1	prep	-e rağmen	
+female	female	B1	adj/noun	dişi, kadın	
+focus	focus	B1	noun/verb	odak, odaklanmak	
+hello	hello	A1	interj	merhaba	
+husband	husband	A1	noun	koca, eş	
+ice	ice	A1	noun	buz	
+individual	individual	B2	noun/adj	birey, bireysel	
+join	join	A2	verb	katılmak	
+message	message	A1	noun	mesaj	
+mile	mile	A2	noun	mil	
+nearly	nearly	B1	adv	neredeyse	
+particular	particular	B2	adj	belirli, özel	
+previous	previous	B1	adj	önceki	
+quickly	quickly	A2	adv	hızlıca	
+region	region	B2	noun	bölge	
+section	section	B1	noun	bölüm	
+sort	sort	B1	noun/verb	tür, sıralamak	
+speed	speed	B1	noun	hız	
+travel	travel	A1	verb/noun	seyahat etmek, seyahat	
+contact	contact	B1	noun/verb	iletişim, temas kurmak	
+drop	drop	B1	verb/noun	düşürmek, damla	
+fair	fair	B1	adj/noun	adil, fuar	
+foot	foot	A2	noun	ayak	
+link	link	B1	noun	bağlantı	
+positive	positive	B1	adj	olumlu	
+sale	sale	A2	noun	satış, indirim	
+throughout	throughout	B2	prep	boyunca	
+tour	tour	B1	noun	tur, gezi	
+welcome	welcome	A1	interj/verb	hoş geldiniz, karşılamak	
+absolutely	absolutely	B1	adv	kesinlikle	
+additional	additional	B2	adj	ek, ilave	
+beyond	beyond	B2	prep	ötesinde	
+condition	condition	B1	noun	durum, koşul	
+extra	extra	A2	adj	ekstra, fazladan	
+immediately	immediately	B1	adv	hemen	
+nature	nature	A2	noun	doğa	
+quick	quick	A2	adj	hızlı	
+sell	sell	A1	verb	satmak	
+significant	significant	B2	adj	önemli, anlamlı	
+unless	unless	B1	conj	-medikçe	
+agree	agree	A2	verb	aynı fikirde olmak, kabul etmek	
+clean	clean	A1	adj/verb	temiz, temizlemek	
+computer	computer	A1	noun	bilgisayar	
+construction	construction	B2	noun	inşaat	
+episode	episode	B2	noun	bölüm	
+favourite	favourite	A2	adj/noun	favori	
+income	income	B2	noun	gelir	
+justice	justice	B2	noun	adalet	
+manager	manager	A2	noun	müdür, yönetici	
+movement	movement	B1	noun	hareket	
+photo	photo	A1	noun	fotoğraf	
+safety	safety	B1	noun	güvenlik, emniyet	
+scene	scene	B1	noun	sahne, manzara	
+statement	statement	B1	noun	ifade, açıklama	
+sun	sun	A1	noun	güneş	
+ability	ability	B1	noun	yetenek	
+announce	announce	B2	verb	duyurmak	
+coach	coach	B1	noun	antrenör, otobüs	
+collection	collection	B1	noun	koleksiyon	
+definitely	definitely	B1	adv	kesinlikle	
+friday	friday	A1	noun	cuma	
+gun	gun	B1	noun	silah	
+heavy	heavy	A2	adj	ağır	
+knowledge	knowledge	B1	noun	bilgi	
+particularly	particularly	B2	adv	özellikle	
+search	search	B1	noun/verb	arama, aramak	
+subject	subject	A2	noun	konu, ders	
+wide	wide	A2	adj	geniş	
+wow	wow	B1	interj	vay canına	
+author	author	B1	noun	yazar	
+centre	centre	A2	noun	merkez	
+claim	claim	B2	verb/noun	iddia etmek, iddia	
+dad	dad	A1	noun	baba	
+develop	develop	B1	verb	geliştirmek	
+fear	fear	B1	noun/verb	korku, korkmak	
+fit	fit	B1	adj/verb	formda, uymak	
+generally	generally	B1	adv	genellikle	
+german	german	A1	adj/noun	Alman, Almanca	
+global	global	B2	adj	küresel	
+gotta	gotta	B1	verb	-meli (konuşma dilinde "got to")	
+hotel	hotel	A1	noun	otel	
+judge	judge	B2	noun/verb	yargıç, yargılamak	
+lady	lady	A2	noun	hanım	
+leader	leader	B1	noun	lider	
+letter	letter	A1	noun	mektup, harf	
+material	material	B1	noun	malzeme	
+nobody	nobody	A2	pron	hiç kimse	
+opportunity	opportunity	B1	noun	fırsat	
+plus	plus	B1	prep/noun	artı, ayrıca	
+regular	regular	B1	adj	düzenli	
+secretary	secretary	B1	noun	sekreter	
+sister	sister	A1	noun	kız kardeş, abla	
+unit	unit	B1	noun	birim, ünite	
+worker	worker	A2	noun	işçi, çalışan	
+annual	annual	B2	adj	yıllık	
+anymore	anymore	B1	adv	artık	
+bar	bar	A2	noun	bar, çubuk	
+battle	battle	B2	noun	savaş, muharebe	
+brain	brain	B1	noun	beyin	
+contract	contract	B2	noun	sözleşme	
+degree	degree	B1	noun	derece, diploma	
+feature	feature	B1	noun	özellik	
+finish	finish	A2	verb	bitirmek	
+floor	floor	A2	noun	zemin, kat	
+grow	grow	A2	verb	büyümek, yetiştirmek	
+hurt	hurt	A2	verb	acıtmak, yaralamak	
+image	image	B1	noun	görüntü, imaj	
+insurance	insurance	B1	noun	sigorta	
+majority	majority	B2	noun	çoğunluk	
+opinion	opinion	B1	noun	görüş, fikir	
+physical	physical	B1	adj	fiziksel	
+pro	pro	C1	noun	profesyonel, lehte	
+reach	reach	B1	verb	ulaşmak	
+seriously	seriously	B1	adv	ciddi şekilde	
+sport	sport	A1	noun	spor	
+stupid	stupid	A2	adj	aptal	
+successful	successful	B1	adj	başarılı	
+active	active	B1	adj	aktif	
+administration	administration	C1	noun	yönetim, idare	
+approach	approach	B2	noun/verb	yaklaşım, yaklaşmak	
+biggest	biggest	A2	adj	en büyük	
+cancer	cancer	B2	noun	kanser	
+civil	civil	C1	adj	sivil, medeni	
+dance	dance	A1	verb/noun	dans etmek, dans	
+defense	defense	C1	noun	savunma	
+direction	direction	B1	noun	yön	
+independent	independent	B2	adj	bağımsız	
+master	master	B2	noun/verb	usta, yüksek lisans, ustalaşmak	
+none	none	B2	pron	hiçbiri	
+ship	ship	A2	noun	gemi	
+stock	stock	B2	noun	stok, hisse	
+weekend	weekend	A1	noun	hafta sonu	
+wonder	wonder	B1	verb/noun	merak etmek, harika	
+awesome	awesome	B1	adj	harika, muhteşem	
+band	band	B1	noun	grup, bant	
+beach	beach	A1	noun	plaj	
+cash	cash	B1	noun	nakit	
+clearly	clearly	B1	adv	açıkça	
+commercial	commercial	B2	adj/noun	ticari, reklam	
+compare	compare	B1	verb	karşılaştırmak	
+effort	effort	B1	noun	çaba	
+imagine	imagine	B1	verb	hayal etmek	
+impact	impact	B2	noun	etki	
+lack	lack	B2	noun/verb	eksiklik, yoksun olmak	
+latest	latest	B1	adj	en son	
+multiple	multiple	B2	adj	çoklu, birçok	
+older	older	A2	adj	daha yaşlı, daha eski	
+operation	operation	B2	noun	operasyon, ameliyat	
+organization	organization	B1	noun	organizasyon, örgüt	
+protect	protect	B1	verb	korumak	
+secret	secret	B1	noun/adj	sır, gizli	
+senior	senior	B2	adj	kıdemli, yaşlı	
+spring	spring	A1	noun	ilkbahar, yay	
+sunday	sunday	A1	noun	pazar	
+wear	wear	A1	verb	giymek	
+activity	activity	A2	noun	etkinlik, faaliyet	
+address	address	A2	noun/verb	adres, hitap etmek	
+analysis	analysis	B2	noun	analiz	
+anyway	anyway	B1	adv	zaten, neyse	
+choose	choose	A2	verb	seçmek	
+christmas	christmas	A1	noun	Noel	
+color	color	A1	noun	renk	
+commission	commission	C1	noun	komisyon, görevlendirme	
+competition	competition	B1	noun	yarışma, rekabet	
+detail	detail	B1	noun	ayrıntı	
+direct	direct	B1	adj/verb	doğrudan, yönetmek	
+dream	dream	A2	noun/verb	rüya, hayal, rüya görmek	
+easily	easily	B1	adv	kolayca	
+grand	grand	B2	adj	büyük, görkemli	
+literally	literally	B2	adv	kelimenin tam anlamıyla	
+luck	luck	B1	noun	şans	
+marriage	marriage	B1	noun	evlilik	
+necessary	necessary	B1	adj	gerekli	
+patient	patient	B1	noun/adj	hasta, sabırlı	
+resource	resource	B2	noun	kaynak	
+rich	rich	A2	adj	zengin	
+skin	skin	B1	noun	cilt, deri	
+suppose	suppose	B1	verb	sanmak, varsaymak	
+sweet	sweet	A2	adj	tatlı	
+thus	thus	C1	adv	böylece	
+touch	touch	B1	verb/noun	dokunmak, dokunuş	
+yesterday	yesterday	A1	adv/noun	dün	
+catch	catch	A2	verb	yakalamak	
+congress	congress	C1	noun	kongre	
+damage	damage	B1	noun/verb	hasar, zarar vermek	
+directly	directly	B1	adv	doğrudan	
+disease	disease	B1	noun	hastalık	
+doctor	doctor	A1	noun	doktor	
+doubt	doubt	B1	noun/verb	şüphe, şüphe etmek	
+drink	drink	A1	verb/noun	içmek, içecek	
+establish	establish	B2	verb	kurmak, kanıtlamak	
+fish	fish	A1	noun/verb	balık, balık tutmak	
+gay	gay	B1	adj	eşcinsel, neşeli	
+glad	glad	A2	adj	memnun, sevinçli	
+greater	greater	B1	adj	daha büyük, daha fazla	
+machine	machine	A2	noun	makine	
+notice	notice	B1	verb/noun	fark etmek, bildirim	
+overall	overall	B2	adj/adv	genel, genel olarak	
+professor	professor	B1	noun	profesör	
+sit	sit	A1	verb	oturmak	
+trip	trip	A2	noun	gezi, yolculuk	
+associate	associate	B2	verb/noun	ilişkilendirmek, ortak	
+basic	basic	A2	adj	temel, basit	
+captain	captain	B1	noun	kaptan	
+carry	carry	A2	verb	taşımak	
+crime	crime	B1	noun	suç	
+effective	effective	B2	adj	etkili	
+explain	explain	A2	verb	açıklamak	
+fully	fully	B1	adv	tamamen	
+highly	highly	B2	adv	son derece, yüksek derecede	
+male	male	B1	adj/noun	erkek, erkek (cinsiyet)	
+plant	plant	A2	noun/verb	bitki, dikmek	
+reality	reality	B1	noun	gerçeklik	
+spot	spot	B2	noun/verb	nokta, leke, fark etmek	
+winter	winter	A1	noun	kış	
+advice	advice	A2	noun	tavsiye, öğüt	
+agreement	agreement	B1	noun	anlaşma, uyum	
+award	award	B2	noun/verb	ödül, ödüllendirmek	
+block	block	B1	noun/verb	blok, engellemek	
+challenge	challenge	B2	noun/verb	zorluk, meydan okumak	
+comment	comment	B1	noun/verb	yorum, yorum yapmak	
+equipment	equipment	B1	noun	donanım, ekipman	
+eventually	eventually	B2	adv	sonunda, nihayet	
+holy	holy	B2	adj	kutsal	
+nation	nation	B1	noun	ulus, millet	
+otherwise	otherwise	B2	adv	aksi halde, yoksa	
+primary	primary	B2	adj	birincil, ana	
+purpose	purpose	B1	noun	amaç	
+responsible	responsible	B1	adj	sorumlu	
+shop	shop	A1	noun/verb	dükkan, alışveriş yapmak	
+sick	sick	A2	adj	hasta	
+teacher	teacher	A1	noun	öğretmen	
+theory	theory	B2	noun	teori, kuram	
+agency	agency	B2	noun	ajans, kurum	
+avoid	avoid	B1	verb	kaçınmak, uzak durmak	
+camera	camera	A1	noun	kamera, fotoğraf makinesi	
+cell	cell	B2	noun	hücre, hapishane hücresi	
+coast	coast	B1	noun	kıyı, sahil	
+drug	drug	B1	noun	ilaç, uyuşturucu	
+economy	economy	B2	noun	ekonomi	
+environment	environment	B1	noun	çevre, ortam	
+executive	executive	C1	noun/adj	yönetici, yürütme	
+hall	hall	A2	noun	salon, koridor	
+mission	mission	B2	noun	görev, misyon	
+nine	nine	A1	adj	dokuz	
+politics	politics	B2	noun	siyaset	
+pop	pop	B1	noun/verb	pop müziği, patlamak	
+produce	produce	B1	verb/noun	üretmek, ürün	
+ran	ran	A2	verb	koştu (run fiilinin geçmişi)	
+saturday	saturday	A1	noun	cumartesi	
+status	status	B2	noun	durum, statü	
+therefore	therefore	B2	adv	bu yüzden, dolayısıyla	
+trial	trial	B2	noun	deneme, dava	
+truly	truly	B2	adv	gerçekten, hakikaten	
+weather	weather	A1	noun	hava durumu	
+app	app	A2	noun	uygulama	
+application	application	B1	noun	başvuru, uygulama	
+coffee	coffee	A1	noun	kahve	
+complex	complex	B2	adj/noun	karmaşık, kompleks	
+division	division	B2	noun	bölüm, bölme	
+flight	flight	A2	noun	uçuş	
+freedom	freedom	B1	noun	özgürlük	
+heat	heat	B1	noun/verb	sıcaklık, ısıtmak	
+highest	highest	B1	adj	en yüksek	
+interview	interview	B1	noun/verb	görüşme, mülakat	
+library	library	A2	noun	kütüphane	
+locate	locate	B2	verb	yerini bulmak, konumlandırmak	
+location	location	B1	noun	konum, yer	
+murder	murder	B2	noun/verb	cinayet, öldürmek	
+queen	queen	A2	noun	kraliçe	
+accept	accept	B1	verb	kabul etmek	
+actual	actual	B2	adj	gerçek, asıl	
+appear	appear	B1	verb	görünmek, ortaya çıkmak	
+attempt	attempt	B2	noun/verb	girişim, denemek	
+broke	broke	B1	verb/adj	kırdı, meteliksiz	
+channel	channel	B1	noun	kanal	
+distance	distance	B1	noun	mesafe, uzaklık	
+exchange	exchange	B2	noun/verb	değişim, değiştirmek	
+fat	fat	A2	adj/noun	şişman, yağ	
+fell	fell	B1	verb	düştü (fall fiilinin geçmişi)	
+glass	glass	A1	noun	bardak, cam	
+mobile	mobile	B1	adj/noun	mobil, cep telefonu	
+northern	northern	B1	adj	kuzey, kuzeydeki	
+powerful	powerful	B1	adj	güçlü	
+prior	prior	C1	adj	önceki	
+protection	protection	B2	noun	koruma	
+religious	religious	B2	adj	dini	
+ride	ride	A2	verb/noun	binmek, yolculuk	
+royal	royal	B2	adj	kraliyet, kraliyete ait	
+screen	screen	A2	noun	ekran, perde	
+serve	serve	B1	verb	hizmet etmek, servis yapmak	
+slow	slow	A2	adj	yavaş	
+species	species	B2	noun	tür	
+speech	speech	B1	noun	konuşma	
+traffic	traffic	A2	noun	trafik	
+tree	tree	A1	noun	ağaç	
+whom	whom	B2	pron	kimi, kime	
+wonderful	wonderful	A2	adj	harika, muhteşem	
+airport	airport	A1	noun	havalimanı	
+animal	animal	A1	noun	hayvan	
+benefit	benefit	B1	noun/verb	fayda, yararlanmak	
+bottom	bottom	B1	noun	alt, dip	
+demand	demand	B2	noun/verb	talep, talep etmek	
+engine	engine	B1	noun	motor	
+everybody	everybody	A2	pron	herkes	
+famous	famous	A2	adj	ünlü	
+investment	investment	B2	noun	yatırım	
+lie	lie	B1	verb/noun	yalan söylemek, yalan	
+partner	partner	B1	noun	ortak, eş	
+raise	raise	B1	verb	yükseltmek, büyütmek	
+sad	sad	A1	adj	üzgün	
+solution	solution	B1	noun	çözüm	
+southern	southern	B1	adj	güney	
+square	square	A2	noun/adj	kare, meydan	
+structure	structure	B2	noun	yapı	
+traditional	traditional	B1	adj	geleneksel	
+twice	twice	A2	adv	iki kez	
+wind	wind	A2	noun	rüzgar	
+worry	worry	A2	verb/noun	endişelenmek, endişe	
+brand	brand	B1	noun	marka	
+bus	bus	A1	noun	otobüs	
+cent	cent	B1	noun	sent	
+count	count	A2	verb	saymak	
+critical	critical	B2	adj	eleştirel, kritik	
+digital	digital	B1	adj	dijital	
+fourth	fourth	A2	adj	dördüncü	
+fresh	fresh	A2	adj	taze	
+lake	lake	A2	noun	göl	
+mental	mental	B2	adj	zihinsel, ruhsal	
+mention	mention	B1	verb	bahsetmek, söz etmek	
+mostly	mostly	B1	adv	çoğunlukla	
+mouth	mouth	A1	noun	ağız	
+owner	owner	B1	noun	sahip	
+previously	previously	B2	adv	daha önce	
+realize	realize	B1	verb	fark etmek, gerçekleştirmek	
+remain	remain	B2	verb	kalmak	
+scale	scale	B2	noun	ölçek, terazi	
+score	score	B1	noun/verb	skor, gol atmak	
+separate	separate	B1	adj/verb	ayrı, ayırmak	
+smart	smart	B1	adj	akıllı, zeki	
+surface	surface	B2	noun	yüzey	
+throw	throw	A2	verb	atmak	
+totally	totally	B2	adv	tamamen	
+wed	wed	C1	verb	evlenmek	
+arm	arm	A2	noun	kol	
+budget	budget	B2	noun	bütçe	
+click	click	B1	verb/noun	tıklamak, tıklama	
+estate	estate	C1	noun	mülk, emlak	
+fail	fail	B1	verb	başarısız olmak	
+faith	faith	B2	noun	inanç, güven	
+fashion	fashion	B1	noun	moda	
+fund	fund	B2	noun/verb	fon, finanse etmek	
+generation	generation	B2	noun	nesil	
+hill	hill	A2	noun	tepe	
+metal	metal	B1	noun	metal	
+profile	profile	B2	noun	profil	
+pull	pull	A2	verb	çekmek	
+push	push	A2	verb	itmek	
+rose	rose	B1	noun/verb	gül, yükseldi	
+seat	seat	A2	noun	koltuk, oturak	
+sexual	sexual	B2	adj	cinsel	
+target	target	B2	noun/verb	hedef	
+village	village	A2	noun	köy	
+agent	agent	B2	noun	ajan, temsilci	
+apply	apply	B1	verb	başvurmak, uygulamak	
+authority	authority	B2	noun	otorite, yetki	
+basis	basis	B2	noun	temel, esas	
+draw	draw	A2	verb	çizmek, çekmek	
+dude	dude	B2	noun	adam, ahbap	
+employee	employee	B1	noun	çalışan	
+enter	enter	A2	verb	girmek	
+foundation	foundation	B2	noun	temel, vakıf	
+gain	gain	B2	verb/noun	kazanmak, kazanç	
+memory	memory	B1	noun	hafıza, anı	
+prime	prime	C1	adj	ana, başlıca	
+ring	ring	A2	noun/verb	yüzük, çalmak	
+rise	rise	B1	verb/noun	yükselmek, artış	
+silver	silver	A2	noun/adj	gümüş	
+soul	soul	B2	noun	ruh	
+spread	spread	B2	verb/noun	yaymak, yayılma	
+supply	supply	B2	noun/verb	arz, tedarik etmek	
+waste	waste	B1	noun/verb	atık, israf etmek	
+weird	weird	B2	adj	garip, tuhaf	
+adult	adult	B1	noun/adj	yetişkin	
+apparently	apparently	B2	adv	görünüşe göre	
+artist	artist	A2	noun	sanatçı	
+chairman	chairman	B2	noun	başkan	
+edition	edition	B2	noun	baskı, sürüm	
+engineer	engineer	B1	noun	mühendis	
+grade	grade	B1	noun	not, sınıf	
+healthy	healthy	A2	adj	sağlıklı	
+institute	institute	C1	noun	enstitü	
+method	method	B1	noun	yöntem	
+monday	monday	A1	noun	pazartesi	
+obviously	obviously	B2	adv	açıkça, tabii ki	
+option	option	B1	noun	seçenek	
+prison	prison	B1	noun	hapishane	
+senate	senate	C1	noun	senato	
+smaller	smaller	A2	adj	daha küçük	
+somebody	somebody	A2	pron	birisi	
+stone	stone	A2	noun	taş	
+strength	strength	B1	noun	güç, kuvvet	
+user	user	B1	noun	kullanıcı	
+wild	wild	B1	adj	vahşi, yabani	
+window	window	A1	noun	pencere	
+winner	winner	A2	noun	kazanan	
+arrive	arrive	A2	verb	varmak, gelmek	
+bag	bag	A1	noun	çanta, torba	
+bet	bet	B2	verb/noun	bahse girmek, bahis	
+camp	camp	B1	noun/verb	kamp, kamp yapmak	
+cast	cast	C1	verb/noun	atmak, oyuncu kadrosu	
+correct	correct	A2	adj/verb	doğru, düzeltmek	
+dangerous	dangerous	A2	adj	tehlikeli	
+extremely	extremely	B1	adv	son derece	
+firm	firm	B2	noun/adj	firma, sağlam	
+handle	handle	B2	verb/noun	başa çıkmak, sap	
+improve	improve	B1	verb	geliştirmek, iyileşmek	
+indeed	indeed	B2	adv	gerçekten, hakikaten	
+negative	negative	B1	adj	olumsuz	
+prevent	prevent	B2	verb	önlemek	
+remove	remove	B1	verb	kaldırmak, çıkarmak	
+spirit	spirit	B2	noun	ruh, ruh hali	
+television	television	A1	noun	televizyon	
+till	till	B1	prep/conj	-e kadar	
+trouble	trouble	B1	noun	sorun, dert	
+advantage	advantage	B1	noun	avantaj	
+apart	apart	B2	adv	ayrı, uzakta	
+aware	aware	B2	adj	farkında	
+cat	cat	A1	noun	kedi	
+customer	customer	A2	noun	müşteri	
+dinner	dinner	A1	noun	akşam yemeği	
+dollar	dollar	A1	noun	dolar	
+eastern	eastern	B1	adj	doğu, doğudaki	
+fifth	fifth	A2	adj	beşinci	
+function	function	B2	noun/verb	işlev, çalışmak	
+gift	gift	A2	noun	hediye	
+herself	herself	A2	pron	kendisi, kendini (kadın)	
+impossible	impossible	B1	adj	imkansız	
+influence	influence	B2	noun/verb	etki, etkilemek	
+item	item	B1	noun	öğe, eşya	
+nor	nor	B2	conj	ne de, de değil	
+progress	progress	B1	noun/verb	ilerleme, ilerlemek	
+shoot	shoot	B2	verb	ateş etmek, vurmak	
+shut	shut	B1	verb	kapatmak	
+van	van	B1	noun	kamyonet, minibüs	
+wood	wood	A2	noun	odun, ahşap	
+background	background	B1	noun	arka plan, geçmiş	
+birth	birth	B1	noun	doğum	
+bridge	bridge	A2	noun	köprü	
+concept	concept	B2	noun	kavram	
+copy	copy	A2	noun/verb	kopya, kopyalamak	
+dear	dear	A2	adj	sevgili, değerli	
+garden	garden	A1	noun	bahçe	
+host	host	B2	noun/verb	ev sahibi, ağırlamak	
+journal	journal	B2	noun	dergi, günlük	
+labor	labor	B2	noun	emek, işçilik	
+leadership	leadership	B2	noun	liderlik	
+length	length	B1	noun	uzunluk	
+lucky	lucky	A2	adj	şanslı	
+neither	neither	B2	pron/conj	hiçbiri, ne de	
+onto	onto	B2	prep	üzerine	
+possibly	possibly	B2	adv	muhtemelen, belki	
+prove	prove	B2	verb	kanıtlamak	
+rare	rare	B2	adj	nadir	
+skill	skill	B1	noun	beceri	
+software	software	B1	noun	yazılım	
+thousand	thousand	A1	adj/noun	bin	
+tough	tough	B2	adj	zor, sert	
+alive	alive	B1	adj	hayatta, canlı	
+apple	apple	A1	noun	elma	
+balance	balance	B2	noun/verb	denge, dengelemek	
+birthday	birthday	A1	noun	doğum günü	
+boss	boss	B1	noun	patron	
+connection	connection	B1	noun	bağlantı	
+dress	dress	A1	noun/verb	elbise, giyinmek	
+easier	easier	A2	adj	daha kolay	
+fellow	fellow	C1	noun/adj	adam, arkadaş, hemcins	
+horse	horse	A1	noun	at	
+magic	magic	B1	noun/adj	sihir, büyülü	
+manage	manage	B1	verb	yönetmek, başarmak	
+map	map	A1	noun	harita	
+net	net	B2	noun	ağ, file	
+request	request	B2	noun/verb	istek, talep etmek	
+stick	stick	B2	noun/verb	çubuk, yapıştırmak	
+vehicle	vehicle	B2	noun	araç	
+volume	volume	B2	noun	hacim, ses seviyesi	
+wake	wake	B1	verb	uyanmak, uyandırmak	
+aid	aid	C1	noun/verb	yardım, yardım etmek	
+beauty	beauty	B1	noun	güzellik	
+billion	billion	B1	adj/noun	milyar	
+busy	busy	A1	adj	meşgul	
+concern	concern	B2	noun/verb	endişe, ilgilendirmek	
+conversation	conversation	A2	noun	konuşma, sohbet	
+corner	corner	A2	noun	köşe	
+criminal	criminal	B2	noun/adj	suçlu, cezai	
+cultural	cultural	B2	adj	kültürel	
+driver	driver	A2	noun	sürücü, şoför	
+exist	exist	B2	verb	var olmak	
+farm	farm	A2	noun	çiftlik	
+file	file	A2	noun	dosya	
+fix	fix	B1	verb	onarmak, düzeltmek	
+fly	fly	A1	verb	uçmak	
+frank	frank	C1	adj	açık sözlü, dürüst	
+guide	guide	B1	noun/verb	rehber, yol göstermek	
+investigation	investigation	B2	noun	soruşturma, araştırma	
+operate	operate	B2	verb	işletmek, ameliyat etmek	
+responsibility	responsibility	B2	noun	sorumluluk	
+roll	roll	B1	verb/noun	yuvarlanmak, rulo	
+slightly	slightly	B2	adv	biraz, hafifçe	
+suggest	suggest	B1	verb	önermek	
+surprise	surprise	A2	noun/verb	sürpriz, şaşırtmak	
+technical	technical	B2	adj	teknik	
+treat	treat	B1	verb/noun	davranmak, tedavi etmek, ikram	
+unique	unique	B2	adj	eşsiz, benzersiz	
+variety	variety	B2	noun	çeşit, çeşitlilik	
+violence	violence	B2	noun	şiddet	
+weapon	weapon	B2	noun	silah	
+youth	youth	B2	noun	gençlik, genç	
+appreciate	appreciate	B2	verb	takdir etmek, minnettar olmak	
+bigger	bigger	A2	adj	daha büyük	
+discover	discover	B1	verb	keşfetmek	
+dry	dry	A2	adj/verb	kuru, kurutmak	
+edge	edge	B2	noun	kenar	
+evil	evil	B2	adj/noun	kötü, şeytani	
+excite	excite	B2	verb	heyecanlandırmak	
+forever	forever	B1	adv	sonsuza dek	
+injury	injury	B2	noun	yaralanma	
+iron	iron	B1	noun/verb	demir, ütü	
+lovely	lovely	A2	adj	güzel, hoş	
+mad	mad	B1	adj	çılgın, kızgın	
+magazine	magazine	A2	noun	dergi	
+parliament	parliament	B2	noun	parlamento, meclis	
+prepare	prepare	A2	verb	hazırlamak	
+reference	reference	B2	noun	referans, atıf	
+religion	religion	B1	noun	din	
+somewhere	somewhere	A2	adv	bir yerde	
+strategy	strategy	B2	noun	strateji	
+web	web	B1	noun	ağ, internet	
+wine	wine	A2	noun	şarap	
+angel	angel	B2	noun	melek	
+audience	audience	B1	noun	izleyici, seyirci	
+bay	bay	B2	noun	koy	
+blog	blog	B1	noun	blog	
+closer	closer	B1	adj/adv	daha yakın	
+core	core	B2	noun	çekirdek, öz	
+democratic	democratic	B2	adj	demokratik	
+description	description	B1	noun	tanım, açıklama	
+excellent	excellent	A2	adj	mükemmel	
+guard	guard	B2	noun/verb	muhafız, korumak	
+honest	honest	B1	adj	dürüst	
+medicine	medicine	A2	noun	ilaç, tıp	
+mountain	mountain	A1	noun	dağ	
+nuclear	nuclear	B2	adj	nükleer	
+port	port	B2	noun	liman	
+presence	presence	B2	noun	varlık, hazır bulunma	
+reaction	reaction	B2	noun	tepki	
+reduce	reduce	B1	verb	azaltmak	
+solid	solid	B2	adj/noun	katı, sağlam	
+stress	stress	B1	noun/verb	stres, vurgulamak	
+taste	taste	A2	noun/verb	tat, tatmak	
+tea	tea	A1	noun	çay	
+victory	victory	B2	noun	zafer	
+afternoon	afternoon	A1	noun	öğleden sonra	
+assistant	assistant	B1	noun	asistan, yardımcı	
+citizen	citizen	B1	noun	vatandaş	
+classic	classic	B2	adj/noun	klasik	
+cloth	cloth	B1	noun	kumaş, bez	
+electric	electric	B1	adj	elektrikli	
+emergency	emergency	B1	noun	acil durum	
+entirely	entirely	B2	adv	tamamen	
+failure	failure	B2	noun	başarısızlık	
+festival	festival	A2	noun	festival	
+flat	flat	A2	noun/adj	daire, düz	
+fuel	fuel	B2	noun	yakıt	
+ill	ill	A2	adj	hasta	
+initial	initial	B2	adj	ilk, başlangıçtaki	
+introduce	introduce	B1	verb	tanıştırmak, tanıtmak	
+kick	kick	B1	verb/noun	tekmelemek, tekme	
+mail	mail	A2	noun	posta	
+massive	massive	B2	adj	devasa, kocaman	
+pair	pair	A2	noun	çift	
+plane	plane	A1	noun	uçak	
+plenty	plenty	B1	pron/noun	bol miktarda	
+prince	prince	A2	noun	prens	
+proper	proper	B2	adj	uygun, düzgün	
+quarter	quarter	B1	noun	çeyrek	
+regional	regional	B2	adj	bölgesel	
+session	session	B2	noun	oturum, seans	
+shape	shape	B1	noun	şekil	
+sky	sky	A1	noun	gökyüzü	
+teach	teach	A1	verb	öğretmek	
+transfer	transfer	B2	verb/noun	aktarmak, transfer	
+upper	upper	B2	adj	üst	
+useful	useful	A2	adj	yararlı	
+valley	valley	B1	noun	vadi	
+zone	zone	B2	noun	bölge	
+accident	accident	A2	noun	kaza	
+advance	advance	B2	noun/verb	ilerleme, ilerlemek	
+alternative	alternative	B2	noun/adj	alternatif	
+anywhere	anywhere	A2	adv	herhangi bir yerde	
+bear	bear	B1	noun/verb	ayı, katlanmak	
+boat	boat	A1	noun	tekne	
+capacity	capacity	B2	noun	kapasite	
+cheap	cheap	A1	adj	ucuz	
+climate	climate	B1	noun	iklim	
+discussion	discussion	B1	noun	tartışma	
+duty	duty	B2	noun	görev	
+fantastic	fantastic	B1	adj	harika, fantastik	
+feeling	feeling	A2	noun	his, duygu	
+governor	governor	C1	noun	vali, guvernör	
+hundred	hundred	A1	adj/noun	yüz	
+industrial	industrial	B2	adj	endüstriyel, sanayi	
+joint	joint	B2	adj/noun	ortak, eklem	
+mix	mix	B1	verb/noun	karıştırmak, karışım	
+museum	museum	A1	noun	müze	
+path	path	B1	noun	yol, patika	
+promise	promise	B1	noun/verb	söz, söz vermek	
+propose	propose	B2	verb	önermek, evlenme teklif etmek	
+purchase	purchase	B2	noun/verb	satın alma, satın almak	
+rain	rain	A1	noun/verb	yağmur, yağmur yağmak	
+steel	steel	B2	noun	çelik	
+terrible	terrible	A2	adj	korkunç, berbat	
+tire	tire	B1	noun/verb	lastik, yormak	
+vice	vice	C1	noun	kötü alışkanlık, yardımcı	
+warm	warm	A1	adj	ılık, sıcak	
+afraid	afraid	A2	adj	korkmuş	
+beer	beer	A1	noun	bira	
+border	border	B2	noun	sınır	
+command	command	B2	noun/verb	komut, emretmek	
+crow	crow	C1	noun	karga	
+crowd	crowd	B1	noun	kalabalık	
+element	element	B2	noun	öğe, element	
+enemy	enemy	B1	noun	düşman	
+ensure	ensure	B2	verb	sağlamak, garanti etmek	
+environmental	environmental	B2	adj	çevresel	
+fill	fill	A2	verb	doldurmak	
+forest	forest	A2	noun	orman	
+intelligence	intelligence	B2	noun	zeka, istihbarat	
+intend	intend	B2	verb	niyet etmek, amaçlamak	
+labour	labour	B2	noun	emek, işçilik	
+moon	moon	A1	noun	ay	
+ocean	ocean	A2	noun	okyanus	
+profit	profit	B2	noun	kâr	
+proof	proof	B2	noun	kanıt	
+republican	republican	C1	adj/noun	cumhuriyetçi	
+soldier	soldier	B1	noun	asker	
+suit	suit	B1	noun/verb	takım elbise, uymak	
+appearance	appearance	B2	noun	görünüş, ortaya çıkma	
+attorney	attorney	C1	noun	avukat	
+behavior	behavior	B1	noun	davranış	
+building	building	A2	noun	bina	
+chair	chair	A1	noun	sandalye	
+debt	debt	B2	noun	borç	
+domestic	domestic	B2	adj	ev içi, yerel	
+expensive	expensive	A1	adj	pahalı	
+historical	historical	B2	adj	tarihi	
+honestly	honestly	B2	adv	dürüstçe, açıkçası	
+honor	honor	B2	noun/verb	onur, onurlandırmak	
+jump	jump	A2	verb/noun	zıplamak, sıçrama	
+launch	launch	B2	verb/noun	başlatmak, lansman	
+minimum	minimum	B2	adj/noun	en az, asgari	
+native	native	B2	adj	yerli, ana	
+originally	originally	B2	adv	aslında, başlangıçta	
+ray	ray	C1	noun	ışın	
+suddenly	suddenly	A2	adv	birdenbire	
+supreme	supreme	C1	adj	en yüksek, üstün	
+survey	survey	B2	noun	anket, araştırma	
+tech	tech	B2	noun	teknoloji	
+update	update	B1	noun/verb	güncelleme, güncellemek	
+writer	writer	A2	noun	yazar	
+yellow	yellow	A1	adj	sarı	
+younger	younger	A2	adj	daha genç	
+ancient	ancient	B1	adj	antik, eski	
+combine	combine	B2	verb	birleştirmek	
+communication	communication	B1	noun	iletişim	
+connect	connect	B1	verb	bağlamak	
+contain	contain	B2	verb	içermek	
+download	download	B1	verb/noun	indirmek, indirme	
+email	email	A1	noun	e-posta	
+exercise	exercise	A2	noun/verb	egzersiz, alıştırma	
+express	express	B2	verb	ifade etmek	
+flow	flow	B2	noun/verb	akış, akmak	
+girlfriend	girlfriend	A2	noun	kız arkadaş	
+hero	hero	B1	noun	kahraman	
+illegal	illegal	B2	adj	yasa dışı	
+joke	joke	A2	noun/verb	şaka, şaka yapmak	
+loan	loan	B2	noun/verb	kredi, borç vermek	
+perform	perform	B1	verb	gerçekleştirmek, performans sergilemek	
+planet	planet	A2	noun	gezegen	
+restaurant	restaurant	A1	noun	restoran	
+select	select	B2	verb	seçmek	
+soft	soft	A2	adj	yumuşak	
+sugar	sugar	A1	noun	şeker	
+transport	transport	B1	noun/verb	ulaşım, taşımak	
+affair	affair	B2	noun	mesele, ilişki	
+appeal	appeal	B2	noun/verb	çekicilik, itiraz, cazip gelmek	
+appropriate	appropriate	B2	adj	uygun	
+confirm	confirm	B1	verb	onaylamak	
+device	device	B1	noun	cihaz	
+drama	drama	B1	noun	drama	
+entry	entry	B2	noun	giriş, kayıt	
+era	era	B2	noun	çağ, dönem	
+factor	factor	B2	noun	etken, faktör	
+fee	fee	B2	noun	ücret	
+golden	golden	B1	adj	altın, altın rengi	
+grant	grant	C1	noun/verb	hibe, vermek	
+lawyer	lawyer	B1	noun	avukat	
+leg	leg	A1	noun	bacak	
+measure	measure	B1	verb/noun	ölçmek, önlem	
+mistake	mistake	A2	noun	hata	
+platform	platform	B2	noun	platform, peron	
+pool	pool	A2	noun	havuz	
+regard	regard	B2	verb/noun	saymak, saygı	
+relation	relation	B2	noun	ilişki, akraba	
+route	route	B1	noun	güzergah, rota	
+schedule	schedule	B1	noun/verb	program, planlamak	
+scientific	scientific	B2	adj	bilimsel	
+shoe	shoe	A1	noun	ayakkabı	
+smoke	smoke	B1	noun/verb	duman, sigara içmek	
+squad	squad	C1	noun	takım, ekip	
+abuse	abuse	B2	noun/verb	kötüye kullanma, istismar etmek	
+angry	angry	A2	adj	kızgın	
+candidate	candidate	B2	noun	aday	
+comfortable	comfortable	A2	adj	rahat	
+discuss	discuss	B1	verb	tartışmak, görüşmek	
+emotional	emotional	B2	adj	duygusal	
+everywhere	everywhere	A2	adv	her yerde	
+facility	facility	B2	noun	tesis, olanak	
+fox	fox	B1	noun	tilki	
+hole	hole	B1	noun	delik	
+holiday	holiday	A1	noun	tatil	
+internal	internal	B2	adj	iç, dahili	
+jersey	jersey	C1	noun	forma, kazak	
+laugh	laugh	A2	verb/noun	gülmek, kahkaha	
+liberal	liberal	C1	adj	liberal, özgürlükçü	
+lunch	lunch	A1	noun	öğle yemeği	
+milk	milk	A1	noun	süt	
+pack	pack	B1	verb/noun	paketlemek, paket	
+payment	payment	B1	noun	ödeme	
+relatively	relatively	B2	adv	nispeten	
+sector	sector	B2	noun	sektör	
+snow	snow	A1	noun/verb	kar, kar yağmak	
+storm	storm	B1	noun	fırtına	
+strike	strike	B2	noun/verb	grev, vurmak	
+studio	studio	B1	noun	stüdyo	
+weak	weak	B1	adj	zayıf	
+actor	actor	A2	noun	aktör, oyuncu	
+apartment	apartment	A2	noun	apartman dairesi	
+chain	chain	B2	noun	zincir	
+chapter	chapter	B1	noun	bölüm	
+commit	commit	C1	verb	işlemek, taahhüt etmek	
+confidence	confidence	B2	noun	güven, özgüven	
+cook	cook	A1	verb/noun	yemek pişirmek, aşçı	
+cute	cute	B1	adj	şirin, sevimli	
+equal	equal	B1	adj	eşit	
+fake	fake	B2	adj	sahte	
+finance	finance	B2	noun	finans, maliye	
+identity	identity	B2	noun	kimlik	
+journey	journey	B1	noun	yolculuk	
+kitchen	kitchen	A1	noun	mutfak	
+maintain	maintain	B2	verb	sürdürmek, bakımını yapmak	
+numerous	numerous	C1	adj	çok sayıda	
+quiet	quiet	A2	adj	sessiz	
+reveal	reveal	B2	verb	ortaya çıkarmak, açığa vurmak	
+specifically	specifically	B2	adv	özellikle	
+split	split	B2	verb/noun	bölmek, bölünme	
+task	task	B1	noun	görev	
+taxis	taxis	B1	noun	taksiler	
+twenty	twenty	A1	adj	yirmi	
+urban	urban	B2	adj	kentsel	
+affect	affect	B2	verb	etkilemek	
+aircraft	aircraft	B2	noun	uçak, hava aracı	
+approve	approve	B2	verb	onaylamak	
+approximately	approximately	B2	adv	yaklaşık olarak	
+argument	argument	B1	noun	tartışma, argüman	
+arrest	arrest	B2	verb/noun	tutuklamak, tutuklama	
+conflict	conflict	B2	noun	çatışma	
+corporate	corporate	C1	adj	kurumsal	
+debate	debate	B2	noun/verb	tartışma, tartışmak	
+determine	determine	B2	verb	belirlemek	
+distribution	distribution	C1	noun	dağıtım	
+document	document	B1	noun	belge	
+escape	escape	B1	verb/noun	kaçmak, kaçış	
+extend	extend	B2	verb	uzatmak, genişletmek	
+faster	faster	A2	adj/adv	daha hızlı	
+fault	fault	B2	noun	hata, kusur	
+flower	flower	A1	noun	çiçek	
+friendly	friendly	A2	adj	arkadaş canlısı	
+phase	phase	B2	noun	aşama, evre	
+properly	properly	B1	adv	düzgün şekilde	
+pure	pure	B2	adj	saf	
+requirement	requirement	B2	noun	gereklilik, şart	
+resident	resident	B2	noun	sakin	
+revenue	revenue	C1	noun	gelir	
+secure	secure	B2	adj/verb	güvenli, güvence altına almak	
+smile	smile	A1	noun/verb	gülümseme, gülümsemek	
+strange	strange	A2	adj	garip, tuhaf	
+talent	talent	B1	noun	yetenek	
+temperature	temperature	A2	noun	sıcaklık, ateş	
+troop	troop	C1	noun	asker birliği	
+truck	truck	B1	noun	kamyon	
+basically	basically	B2	adv	temelde	
+beside	beside	B1	prep	yanında	
+bird	bird	A1	noun	kuş	
+blame	blame	B2	verb/noun	suçlamak, suç	
+bowl	bowl	A2	noun	kase	
+chicken	chicken	A1	noun	tavuk	
+collect	collect	A2	verb	toplamak	
+context	context	B2	noun	bağlam	
+coverage	coverage	C1	noun	kapsam, haber kapsamı	
+display	display	B2	noun/verb	ekran, sergilemek	
+elect	elect	B2	verb	seçmek (oyla)	
+false	false	B1	adj	yanlış, sahte	
+identify	identify	B2	verb	tanımlamak, belirlemek	
+incredible	incredible	B2	adj	inanılmaz	
+inspire	inspire	B2	verb	ilham vermek	
+meat	meat	A1	noun	et	
+ministry	ministry	C1	noun	bakanlık	
+mode	mode	B2	noun	mod, biçim	
+neck	neck	A2	noun	boyun	
+novel	novel	B2	noun	roman	
+obvious	obvious	B2	adj	bariz, açık	
+shirt	shirt	A1	noun	gömlek	
+slowly	slowly	A2	adv	yavaşça	
+stadium	stadium	B1	noun	stadyum	
+surgery	surgery	B2	noun	ameliyat	
+tuesday	tuesday	A1	noun	salı	
+vision	vision	B2	noun	görüş, vizyon	
+whenever	whenever	B2	conj	ne zaman olursa, her ne zaman	
+zero	zero	A1	adj/noun	sıfır	
+champion	champion	B2	noun	şampiyon	
+cream	cream	A2	noun	krema, krem	
+crisis	crisis	B2	noun	kriz	
+deliver	deliver	B2	verb	teslim etmek	
+editor	editor	B2	noun	editör	
+estimate	estimate	B2	verb/noun	tahmin etmek, tahmin	
+giant	giant	B2	noun/adj	dev	
+jail	jail	B2	noun	hapishane	
+kingdom	kingdom	B2	noun	krallık	
+literature	literature	B2	noun	edebiyat	
+mayor	mayor	B2	noun	belediye başkanı	
+minor	minor	B2	adj	küçük, önemsiz	
+opposite	opposite	B1	adj/noun	karşı, zıt	
+orange	orange	A1	noun/adj	portakal, turuncu	
+ourselves	ourselves	B1	pron	kendimiz	
+selection	selection	B2	noun	seçim, seçki	
+signal	signal	B2	noun	sinyal, işaret	
+stream	stream	B2	noun	dere, akış	
+struggle	struggle	B2	verb/noun	mücadele etmek, mücadele	
+suicide	suicide	C1	noun	intihar	
+theme	theme	B2	noun	tema, konu	
+thursday	thursday	A1	noun	perşembe	
+tiny	tiny	B1	adj	minik, ufacık	
+typically	typically	B2	adv	genellikle, tipik olarak	
+unfortunately	unfortunately	B1	adv	maalesef	
+usual	usual	A2	adj	olağan	
+wave	wave	A2	noun/verb	dalga, el sallamak	
+alcohol	alcohol	B1	noun	alkol	
+assembly	assembly	C1	noun	meclis, montaj	
+breakfast	breakfast	A1	noun	kahvaltı	
+bright	bright	B1	adj	parlak, zeki	
+capable	capable	B2	adj	yetenekli, muktedir	
+combination	combination	B2	noun	birleşim, kombinasyon	
+conservative	conservative	C1	adj	muhafazakar	
+desire	desire	B2	noun/verb	arzu, arzulamak	
+destroy	destroy	B2	verb	yok etmek	
+draft	draft	C1	noun	taslak	
+drunk	drunk	B2	adj	sarhoş	
+essential	essential	B2	adj	temel, şart	
+familiar	familiar	B2	adj	tanıdık, aşina	
+guilty	guilty	B2	adj	suçlu	
+largely	largely	C1	adv	büyük ölçüde	
+perfectly	perfectly	B1	adv	mükemmel şekilde	
+recommend	recommend	B1	verb	tavsiye etmek	
+refer	refer	B2	verb	atıfta bulunmak, başvurmak	
+relevant	relevant	B2	adj	ilgili	
+seek	seek	C1	verb	aramak, peşinde olmak	
+solo	solo	C1	adj/noun	solo, tek başına	
+spoke	spoke	B1	verb	konuştu	
+ticket	ticket	A1	noun	bilet	
+unable	unable	B2	adj	yapamayan	
+upset	upset	B1	adj/verb	üzgün, üzmek	
+wing	wing	B2	noun	kanat	
+bomb	bomb	B2	noun	bomba	
+creative	creative	B1	adj	yaratıcı	
+cycle	cycle	B2	noun	döngü, bisiklet	
+educational	educational	B2	adj	eğitici	
+entertainment	entertainment	B2	noun	eğlence	
+extreme	extreme	B2	adj	aşırı	
+info	info	B1	noun	bilgi	
+mainly	mainly	B2	adv	esas olarak	
+maximum	maximum	B2	adj/noun	en fazla, azami	
+newspaper	newspaper	A1	noun	gazete	
+paint	paint	A2	verb/noun	boyamak, boya	
+republic	republic	B2	noun	cumhuriyet	
+reserve	reserve	B2	verb/noun	ayırtmak, rezerv	
+row	row	B2	noun	sıra	
+salt	salt	A1	noun	tuz	
+scare	scare	B2	verb	korkutmak	
+statistic	statistic	C1	noun	istatistik	
+switch	switch	B2	verb/noun	değiştirmek, anahtar	
+territory	territory	C1	noun	bölge, ülke toprağı	
+threat	threat	B2	noun	tehdit	
+appoint	appoint	C1	verb	atamak	
+aside	aside	B2	adv	bir kenara	
+assistance	assistance	B2	noun	yardım	
+bell	bell	A2	noun	zil, çan	
+blow	blow	B1	verb/noun	üflemek, darbe	
+bond	bond	C1	noun	bağ, tahvil	
+boyfriend	boyfriend	A2	noun	erkek arkadaş	
+careful	careful	A2	adj	dikkatli	
+circumstance	circumstance	C1	noun	durum, koşul	
+corporation	corporation	C1	noun	şirket, kurum	
+cry	cry	A2	verb	ağlamak, bağırmak	
+danger	danger	A2	noun	tehlike	
+delivery	delivery	B1	noun	teslimat	
+deserve	deserve	B2	verb	hak etmek	
+empty	empty	A2	adj	boş	
+folk	folk	C1	noun	halk, insanlar	
+gender	gender	B2	noun	cinsiyet	
+instance	instance	B2	noun	örnek, durum	
+kinda	kinda	B2	adv	biraz (günlük dil)	
+motion	motion	B2	noun	hareket	
+pacific	pacific	C1	adj	barışçıl, Pasifik	
+prize	prize	B1	noun	ödül	
+reasonable	reasonable	B2	adj	makul	
+register	register	B2	verb/noun	kaydolmak, kayıt	
+resolution	resolution	C1	noun	karar, çözüm	
+rural	rural	B2	adj	kırsal	
+sing	sing	A1	verb	şarkı söylemek	
+tool	tool	B1	noun	alet, araç	
+typical	typical	B2	adj	tipik	
+universe	universe	B2	noun	evren	
+warn	warn	B1	verb	uyarmak	
+wednesday	wednesday	A1	noun	çarşamba	
+admit	admit	B2	verb	kabul etmek, itiraf etmek	
+attitude	attitude	B2	noun	tutum, tavır	
+branch	branch	B1	noun	dal, şube	
+conduct	conduct	C1	verb/noun	yürütmek, davranış	
+decade	decade	B2	noun	on yıl	
+dedicate	dedicate	C1	verb	adamak	
+definition	definition	B2	noun	tanım	
+favor	favor	B2	noun	iyilik	
+flag	flag	B1	noun	bayrak	
+frame	frame	B2	noun	çerçeve	
+guest	guest	A2	noun	misafir	
+heaven	heaven	B2	noun	cennet	
+independence	independence	B2	noun	bağımsızlık	
+institution	institution	C1	noun	kurum	
+kiss	kiss	A2	noun/verb	öpücük, öpmek	
+load	load	B2	noun/verb	yük, yüklemek	
+plot	plot	B2	noun	olay örgüsü, arsa	
+possibility	possibility	B2	noun	olasılık	
+random	random	B2	adj	rastgele	
+recovery	recovery	B2	noun	iyileşme, kurtarma	
+rent	rent	B1	noun/verb	kira, kiralamak	
+replace	replace	B1	verb	değiştirmek, yerini almak	
+represent	represent	B2	verb	temsil etmek	
+senator	senator	C1	noun	senatör	
+sentence	sentence	A2	noun	cümle, ceza	
+tooth	tooth	A1	noun	diş	
+tip	tip	B1	noun	ipucu, bahşiş	
+academic	academic	B2	adj	akademik	
+academy	academy	C1	noun	akademi	
+accurate	accurate	B2	adj	doğru, kesin	
+achieve	achieve	B1	verb	başarmak	
+afford	afford	B1	verb	gücü yetmek	
+assume	assume	B2	verb	varsaymak	
+bottle	bottle	A1	noun	şişe	
+bunch	bunch	B2	noun	demet, grup	
+category	category	B2	noun	kategori	
+chat	chat	A2	noun/verb	sohbet, sohbet etmek	
+cheese	cheese	A1	noun	peynir	
+chemical	chemical	B2	adj/noun	kimyasal	
+competitive	competitive	B2	adj	rekabetçi	
+diet	diet	B1	noun	diyet	
+fruit	fruit	A1	noun	meyve	
+harder	harder	A2	adj/adv	daha zor, daha sert	
+index	index	C1	noun	dizin, endeks	
+lane	lane	B2	noun	şerit, dar yol	
+mess	mess	B2	noun	dağınıklık	
+navy	navy	B2	noun	donanma	
+normally	normally	B1	adv	normalde	
+occur	occur	B2	verb	meydana gelmek	
+opposition	opposition	C1	noun	muhalefet, karşıtlık	
+permanent	permanent	B2	adj	kalıcı	
+personally	personally	B2	adv	kişisel olarak	
+pleasure	pleasure	B1	noun	zevk, memnuniyet	
+prefer	prefer	A2	verb	tercih etmek	
+representative	representative	C1	noun/adj	temsilci	
+scheme	scheme	C1	noun	plan, düzen	
+shift	shift	B2	noun/verb	vardiya, kaydırmak	
+storage	storage	B2	noun	depolama	
+tank	tank	B2	noun	tank, depo	
+tend	tend	B2	verb	eğilimli olmak	
+tight	tight	B2	adj	dar, sıkı	
+transportation	transportation	B2	noun	ulaşım	
+ultimately	ultimately	C1	adv	sonuçta	
+unlike	unlike	B2	prep	-den farklı olarak	
+weekly	weekly	B1	adj/adv	haftalık	
+yard	yard	B1	noun	avlu, bahçe	
+anybody	anybody	A2	pron	herhangi biri	
+asset	asset	C1	noun	varlık, değerli şey	
+basketball	basketball	A2	noun	basketbol	
+button	button	A2	noun	düğme	
+combat	combat	C1	noun/verb	savaş, mücadele etmek	
+constitution	constitution	C1	noun	anayasa	
+consumer	consumer	B2	noun	tüketici	
+counter	counter	B2	noun	tezgah, sayaç	
+creation	creation	B2	noun	yaratım	
+crown	crown	B2	noun	taç	
+define	define	B2	verb	tanımlamak	
+depend	depend	B1	verb	bağlı olmak	
+depression	depression	B2	noun	depresyon	
+employment	employment	B2	noun	istihdam	
+exclusive	exclusive	C1	adj	özel, ayrıcalıklı	
+excuse	excuse	B1	noun/verb	bahane, mazur görmek	
+expert	expert	B2	noun	uzman	
+frequently	frequently	B2	adv	sıkça	
+golf	golf	A2	noun	golf	
+grace	grace	C1	noun	zarafet, lütuf	
+hopefully	hopefully	B2	adv	umarım	
+importance	importance	B1	noun	önem	
+lay	lay	B2	verb	koymak, sermek	
+latter	latter	C1	adj	sonraki, ikincisi	
+manufacture	manufacture	C1	verb/noun	üretmek, imalat	
+object	object	B1	noun/verb	nesne, itiraz etmek	
+pattern	pattern	B2	noun	desen, örüntü	
+personnel	personnel	C1	noun	personel	
+perspective	perspective	C1	noun	bakış açısı	
+pregnant	pregnant	B2	adj	hamile	
+premier	premier	C1	noun/adj	başbakan, birinci sınıf	
+promote	promote	B2	verb	terfi ettirmek, tanıtmak	
+revolution	revolution	B2	noun	devrim	
+severe	severe	B2	adj	ağır, şiddetli	
+tournament	tournament	B2	noun	turnuva	
+turkey	turkey	B1	noun	hindi, Türkiye	
+victim	victim	B2	noun	kurban, mağdur	
+attend	attend	B1	verb	katılmak, devam etmek	
+ban	ban	B2	verb/noun	yasaklamak, yasak	
+brilliant	brilliant	B2	adj	parlak, harika	
+carbon	carbon	B2	noun	karbon	
+catholic	catholic	C1	adj	Katolik	
+circle	circle	A2	noun	daire, çember	
+concert	concert	A2	noun	konser	
+crash	crash	B2	noun/verb	kaza, çarpmak	
+declare	declare	B2	verb	ilan etmek, beyan etmek	
+depth	depth	B2	noun	derinlik	
+deputy	deputy	C1	noun	yardımcı, milletvekili	
+dirty	dirty	A1	adj	kirli	
+earn	earn	B1	verb	kazanmak	
+electronic	electronic	B1	adj	elektronik	
+error	error	B2	noun	hata	
+existence	existence	B2	noun	varlık, var oluş	
+expression	expression	B2	noun	ifade	
+factory	factory	A2	noun	fabrika	
+interior	interior	C1	noun/adj	iç, iç mekan	
+joy	joy	B2	noun	sevinç	
+legislation	legislation	C1	noun	mevzuat, yasama	
+maintenance	maintenance	C1	noun	bakım	
+manner	manner	B2	noun	tarz, davranış biçimi	
+mate	mate	B1	noun	arkadaş, eş	
+nearby	nearby	B1	adj/adv	yakın, yakında	
+noise	noise	A2	noun	gürültü	
+origin	origin	B2	noun	köken	
+panel	panel	B2	noun	panel, kurul	
+personality	personality	B1	noun	kişilik	
+plate	plate	A2	noun	tabak	
+relief	relief	B2	noun	rahatlama	
+resistance	resistance	B2	noun	direnç	
+retail	retail	C1	noun	perakende	
+rice	rice	A1	noun	pirinç, pilav	
+roof	roof	A2	noun	çatı	
+shame	shame	B2	noun	utanç, yazık	
+somewhat	somewhat	C1	adv	biraz, bir dereceye kadar	
+surely	surely	B2	adv	kesinlikle, elbette	
+absolute	absolute	C1	adj	mutlak	
+advertise	advertise	B2	verb	reklam yapmak	
+baseball	baseball	A2	noun	beyzbol	
+bathroom	bathroom	A1	noun	banyo	
+cable	cable	B2	noun	kablo	
+calm	calm	B1	adj	sakin	
+championship	championship	B2	noun	şampiyona	
+client	client	B2	noun	müşteri, danışan	
+constant	constant	B2	adj	sürekli, sabit	
+democrat	democrat	C1	noun	demokrat	
+dumb	dumb	B2	adj	aptal	
+empire	empire	B2	noun	imparatorluk	
+expansion	expansion	C1	noun	genişleme	
+heavily	heavily	B2	adv	ağır şekilde, yoğun olarak	
+hide	hide	B1	verb	saklamak, saklanmak	
+incident	incident	B2	noun	olay	
+politician	politician	B2	noun	siyasetçi	
+print	print	B1	verb	yazdırmak, basmak	
+quit	quit	B2	verb	bırakmak	
+refuse	refuse	B2	verb	reddetmek	
+sight	sight	B2	noun	görme, manzara	
+significantly	significantly	C1	adv	önemli ölçüde	
+soviet	soviet	C1	adj	Sovyet	
+wet	wet	A2	adj	ıslak	
+widely	widely	B2	adv	geniş çapta	
+worldwide	worldwide	B2	adj/adv	dünya çapında	
+anniversary	anniversary	B2	noun	yıldönümü	
+attractive	attractive	B1	adj	çekici	
+bike	bike	A1	noun	bisiklet	
+broad	broad	B2	adj	geniş	
+burn	burn	B1	verb	yanmak, yakmak	
+cake	cake	A1	noun	pasta, kek	
+closely	closely	B2	adv	yakından	
+constantly	constantly	B2	adv	sürekli olarak	
+contest	contest	B2	noun	yarışma	
+hardly	hardly	B2	adv	zorlukla, neredeyse hiç	
+hat	hat	A1	noun	şapka	
+height	height	B1	noun	yükseklik, boy	
+invite	invite	A2	verb	davet etmek	
+loud	loud	A2	adj	yüksek sesli	
+marine	marine	C1	adj	deniz, denizle ilgili	
+motor	motor	B2	noun	motor	
+officially	officially	B2	adv	resmen	
+peak	peak	B2	noun	zirve	
+portion	portion	B2	noun	porsiyon, bölüm	
+pound	pound	B1	noun	pound, libre	
+princess	princess	A2	noun	prenses	
+protein	protein	B2	noun	protein	
+raw	raw	B2	adj	çiğ, ham	
+reform	reform	C1	noun/verb	reform, ıslah etmek	
+respond	respond	B2	verb	yanıt vermek	
+retirement	retirement	B2	noun	emeklilik	
+sample	sample	B2	noun	örnek	
+secondary	secondary	B2	adj	ikincil, orta (okul)	
+solar	solar	B2	adj	güneş, güneşe ait	
+somehow	somehow	B2	adv	bir şekilde	
+suffer	suffer	B2	verb	acı çekmek	
+ultimate	ultimate	C1	adj	nihai, en üst	
+unknown	unknown	B1	adj	bilinmeyen	
+attach	attach	B2	verb	eklemek, iliştirmek	
+automatically	automatically	B2	adv	otomatik olarak	
+battery	battery	B1	noun	pil, batarya	
+blind	blind	B2	adj	kör	
+breath	breath	B2	noun	nefes	
+brief	brief	B2	adj	kısa	
+chest	chest	B1	noun	göğüs, sandık	
+debut	debut	C2	noun	ilk çıkış	
+engage	engage	C1	verb	meşgul etmek, katılmak	
+external	external	C1	adj	dış	
+fantasy	fantasy	B2	noun	fantezi, hayal	
+grab	grab	B2	verb	kapmak, yakalamak	
+immediate	immediate	B2	adj	acil, derhal	
+introduction	introduction	B1	noun	giriş, tanıtım	
+license	license	B2	noun	ehliyet, lisans	
+pilot	pilot	B1	noun	pilot	
+pink	pink	A1	adj	pembe	
+presidential	presidential	C1	adj	başkanlık	
+principal	principal	C1	adj/noun	ana, müdür	
+recognize	recognize	B2	verb	tanımak	
+regularly	regularly	B2	adv	düzenli olarak	
+singer	singer	A2	noun	şarkıcı	
+steam	steam	B2	noun	buhar	
+survive	survive	B2	verb	hayatta kalmak	
+tall	tall	A1	adj	uzun boylu	
+theatre	theatre	A2	noun	tiyatro	
+therapy	therapy	C1	noun	terapi	
+witness	witness	C1	noun/verb	tanık, şahit olmak	
+adopt	adopt	B2	verb	benimsemek, evlat edinmek	
+aim	aim	B2	noun/verb	amaç, hedeflemek	
+campus	campus	B2	noun	kampüs	
+cap	cap	B1	noun	kasket, kapak	
+childhood	childhood	B1	noun	çocukluk	
+clinical	clinical	C1	adj	klinik	
+comedy	comedy	B1	noun	komedi	
+commander	commander	C1	noun	komutan	
+comparison	comparison	B2	noun	karşılaştırma	
+defeat	defeat	B2	noun/verb	yenilgi, yenmek	
+democracy	democracy	B2	noun	demokrasi	
+exact	exact	B2	adj	tam, kesin	
+expose	expose	C1	verb	ortaya çıkarmak, maruz bırakmak	
+feed	feed	B1	verb	beslemek	
+injure	injure	B2	verb	yaralamak	
+lock	lock	A2	verb/noun	kilitlemek, kilit	
+musical	musical	B1	adj/noun	müzikal	
+nose	nose	A1	noun	burun	
+oppose	oppose	C1	verb	karşı çıkmak	
+organize	organize	B1	verb	düzenlemek, organize etmek	
+plastic	plastic	B1	noun/adj	plastik	
+quote	quote	B2	verb/noun	alıntı yapmak, alıntı	
+suspect	suspect	B2	noun/verb	şüpheli, şüphelenmek	
+swear	swear	B2	verb	yemin etmek, küfretmek	
+technique	technique	B2	noun	teknik, yöntem	
+tie	tie	B1	verb/noun	bağlamak, kravat, beraberlik	
+trend	trend	B2	noun	eğilim, trend	
+valuable	valuable	B1	adj	değerli, kıymetli	
+wealth	wealth	B2	noun	servet, zenginlik	
+wise	wise	B2	adj	bilge, akıllıca	
+approval	approval	B2	noun	onay, kabul	
+aspect	aspect	B2	noun	yön, boyut	
+bread	bread	A1	noun	ekmek	
+convention	convention	C1	noun	gelenek, kongre, sözleşme	
+egg	egg	A1	noun	yumurta	
+equivalent	equivalent	C1	adj/noun	eşdeğer, karşılık	
+fairly	fairly	B1	adv	oldukça, adilce	
+finger	finger	A2	noun	parmak	
+gang	gang	B2	noun	çete, güruh	
+graduate	graduate	B2	verb/noun	mezun olmak, mezun	
+hanging	hanging	B2	adj/noun	asılı, asma	
+inner	inner	B2	adj	iç, içsel	
+lift	lift	B1	verb/noun	kaldırmak, asansör	
+monthly	monthly	B1	adj/adv	aylık, her ay	
+neighbourhood	neighbourhood	B1	noun	mahalle, semt	
+outstanding	outstanding	C1	adj	olağanüstü, ödenmemiş	
+permission	permission	B1	noun	izin, müsaade	
+regulation	regulation	C1	noun	düzenleme, yönetmelik	
+reply	reply	A2	verb/noun	cevap vermek, yanıt	
+rid	rid	C1	verb	kurtulmak, temizlemek	
+scientist	scientist	A2	noun	bilim insanı	
+shoulder	shoulder	A2	noun	omuz	
+shower	shower	A2	noun	duş, sağanak	
+tower	tower	B1	noun	kule	
+tradition	tradition	B1	noun	gelenek, ananevi	
+visual	visual	B2	adj	görsel	
+wheel	wheel	A2	noun	tekerlek, direksiyon	
+appointment	appointment	B1	noun	randevu, atama	
+barely	barely	B2	adv	zar zor, ancak	
+bush	bush	B2	noun	çalı, bodur ağaç	
+cabinet	cabinet	B2	noun	dolap, kabine	
+celebrate	celebrate	A2	verb	kutlamak	
+chocolate	chocolate	A1	noun	çikolata	
+coal	coal	B2	noun	kömür	
+colour	colour	A1	noun	renk	
+contemporary	contemporary	C1	adj	çağdaş, modern	
+criticism	criticism	B2	noun	eleştiri	
+effectively	effectively	B2	adv	etkili biçimde, fiilen	
+extensive	extensive	C1	adj	kapsamlı, geniş	
+formation	formation	C1	noun	oluşum, düzen	
+gallery	gallery	B1	noun	galeri	
+highway	highway	B1	noun	otoyol	
+historic	historic	B2	adj	tarihi, önemli	
+hunt	hunt	B2	verb/noun	avlamak, avcılık, arayış	
+improvement	improvement	B1	noun	gelişme, iyileştirme	
+inch	inch	B2	noun	inç, parmak	
+initially	initially	C1	adv	başlangıçta, ilk olarak	
+junior	junior	B2	adj/noun	kıdemsiz, genç	
+jury	jury	C1	noun	jüri	
+monster	monster	B1	noun	canavar	
+obtain	obtain	C1	verb	elde etmek, edinmek	
+philosophy	philosophy	B2	noun	felsefe	
+pride	pride	B2	noun	gurur, onur	
+repeat	repeat	A2	verb	tekrarlamak	
+rough	rough	B2	adj	pürüzlü, kaba	
+settlement	settlement	C1	noun	yerleşim, uzlaşma	
+smell	smell	A2	verb/noun	koklamak, koku	
+speaker	speaker	B1	noun	konuşmacı, hoparlör	
+surround	surround	C1	verb	çevrelemek, kuşatmak	
+tone	tone	B2	noun	ton, ses tonu	
+topic	topic	B1	noun	konu, başlık	
+universal	universal	C1	adj	evrensel	
+vast	vast	C1	adj	geniş, uçsuz bucaksız	
+visitor	visitor	B1	noun	ziyaretçi	
+auto	auto	B2	noun	otomobil, otomatik	
+consistent	consistent	C1	adj	tutarlı, istikrarlı	
+grey	grey	A2	adj/noun	gri	
+guitar	guitar	A2	noun	gitar	
+ignore	ignore	B2	verb	görmezden gelmek	
+meal	meal	A2	noun	yemek, öğün	
+meanwhile	meanwhile	B2	adv	bu arada	
+meeting	meeting	A2	noun	toplantı, buluşma	
+naturally	naturally	B2	adv	doğal olarak, tabii ki	
+necessarily	necessarily	C1	adv	zorunlu olarak	
+pants	pants	B1	noun	pantolon, don	
+partnership	partnership	B2	noun	ortaklık	
+percentage	percentage	B2	noun	yüzde, oran	
+pocket	pocket	B1	noun	cep	
+practical	practical	B2	adj	pratik, uygulamalı	
+primarily	primarily	C1	adv	öncelikle, esas olarak	
+rape	rape	C1	verb/noun	tecavüz etmek, tecavüz	
+regardless	regardless	C1	adv	ne olursa olsun, aldırmadan	
+relative	relative	B2	adj/noun	göreceli, akraba	
+rescue	rescue	B2	verb/noun	kurtarmak, kurtarma	
+rush	rush	B2	verb/noun	acele etmek, telaş	
+sharp	sharp	B2	adj	keskin, sivri	
+soccer	soccer	A2	noun	futbol	
+stable	stable	B2	adj	sabit, istikrarlı	
+symptom	symptom	B2	noun	belirti, semptom	
+temporary	temporary	B2	adj	geçici	
+trick	trick	B2	noun/verb	numara, hile, kandırmak	
+audio	audio	B2	noun	ses, sesli	
+bone	bone	B1	noun	kemik	
+chamber	chamber	C1	noun	oda, meclis	
+chart	chart	B2	noun	grafik, çizelge	
+circuit	circuit	C1	noun	devre, pist	
+complicate	complicate	C1	verb	karmaşıklaştırmak	
+confuse	confuse	B2	verb	şaşırtmak, karıştırmak	
+consequence	consequence	B2	noun	sonuç, netice	
+defend	defend	B2	verb	savunmak	
+divide	divide	B2	verb	bölmek, ayırmak	
+everyday	everyday	B1	adj	günlük, gündelik	
+extent	extent	C1	noun	ölçü, kapsam	
+format	format	B2	noun/verb	biçim, biçimlendirmek	
+gap	gap	B2	noun	boşluk, fark	
+gate	gate	B1	noun	kapı, giriş	
+harm	harm	B2	noun/verb	zarar, zarar vermek	
+healthcare	healthcare	B2	noun	sağlık hizmetleri	
+household	household	B2	noun	hane, ev halkı	
+immigration	immigration	B2	noun	göç, göçmenlik	
+impressive	impressive	B2	adj	etkileyici	
+killer	killer	B2	noun	katil, öldürücü	
+lesson	lesson	A2	noun	ders, hisse	
+membership	membership	B2	noun	üyelik	
+mirror	mirror	B1	noun	ayna	
+mount	mount	C1	verb/noun	çıkmak, monte etmek, dağ	
+proposal	proposal	B2	noun	teklif, öneri	
+province	province	B2	noun	il, eyalet	
+recognition	recognition	C1	noun	tanıma, takdir	
+reputation	reputation	B2	noun	itibar, ün	
+shortly	shortly	B2	adv	kısa süre sonra, yakında	
+strongly	strongly	B2	adv	güçlü biçimde, kesinlikle	
+tear	tear	B2	noun/verb	gözyaşı, yırtmak	
+thin	thin	A2	adj	ince, zayıf	
+accuse	accuse	B2	verb	suçlamak	
+adventure	adventure	B1	noun	macera	
+argue	argue	B1	verb	tartışmak, savunmak	
+assessment	assessment	C1	noun	değerlendirme	
+atmosphere	atmosphere	B2	noun	atmosfer, hava	
+awful	awful	B1	adj	berbat, korkunç	
+bedroom	bedroom	A1	noun	yatak odası	
+belief	belief	B2	noun	inanç, kanaat	
+bound	bound	C1	adj	bağlı, mecbur	
+carefully	carefully	A2	adv	dikkatlice	
+cloud	cloud	A2	noun	bulut	
+contrast	contrast	B2	noun	karşıtlık, zıtlık	
+elsewhere	elsewhere	C1	adv	başka yerde	
+extension	extension	C1	noun	uzatma, ek	
+founder	founder	C1	noun	kurucu	
+gear	gear	C1	noun	donanım, vites	
+hip	hip	C1	noun	kalça	
+infrastructure	infrastructure	C1	noun	altyapı	
+loose	loose	B2	adj	gevşek, bol	
+moral	moral	B2	adj/noun	ahlaki, ahlak	
+offensive	offensive	C1	adj	saldırgan, rahatsız edici	
+package	package	B1	noun	paket, koli	
+poverty	poverty	B2	noun	yoksulluk	
+qualify	qualify	B2	verb	yeterli olmak, hak kazanmak	
+railway	railway	B1	noun	demiryolu	
+ridiculous	ridiculous	B2	adj	saçma, gülünç	
+sensitive	sensitive	B2	adj	hassas, duyarlı	
+server	server	B2	noun	sunucu, garson	
+shock	shock	B2	noun/verb	şok, şok etmek	
+silence	silence	B1	noun	sessizlik	
+superior	superior	C1	adj	üstün, daha iyi	
+supporter	supporter	B2	noun	destekçi, taraftar	
+thick	thick	B1	adj	kalın, yoğun	
+ton	ton	B2	noun	ton	
+transition	transition	C1	noun	geçiş	
+violent	violent	B2	adj	şiddetli, saldırgan	
+voter	voter	B2	noun	seçmen, oy veren	
+wash	wash	A2	verb	yıkamak	
+acid	acid	B2	noun	asit	
+actress	actress	A2	noun	kadın oyuncu	
+administrative	administrative	C1	adj	idari	
+alongside	alongside	C1	prep	yanında, ile birlikte	
+anxiety	anxiety	B2	noun	kaygı, endişe	
+bonus	bonus	B2	noun	ikramiye, bonus	
+castle	castle	A2	noun	kale, şato	
+charity	charity	B2	noun	hayır kurumu, yardım	
+curious	curious	B1	adj	meraklı	
+discovery	discovery	B2	noun	keşif	
+duke	duke	C1	noun	dük	
+encourage	encourage	B1	verb	cesaretlendirmek, teşvik etmek	
+enforcement	enforcement	C1	noun	uygulama, yaptırım	
+flash	flash	B2	noun/verb	flaş, parıldamak	
+formal	formal	B2	adj	resmi	
+formula	formula	B2	noun	formül	
+fort	fort	C1	noun	kale	
+gray	gray	A2	adj	gri	
+gross	gross	C1	adj	brüt, iğrenç	
+hungry	hungry	A1	adj	aç	
+inform	inform	B2	verb	bilgilendirmek	
+innocent	innocent	B2	adj	masum, suçsuz	
+math	math	A2	noun	matematik	
+mystery	mystery	B2	noun	gizem, sır	
+palace	palace	B1	noun	saray	
+penalty	penalty	B2	noun	ceza, penaltı	
+pet	pet	A2	noun	evcil hayvan	
+photography	photography	B1	noun	fotoğrafçılık	
+protest	protest	B2	noun/verb	protesto, protesto etmek	
+publication	publication	C1	noun	yayın, yayımlama	
+respectively	respectively	C1	adv	sırasıyla	
+silent	silent	B1	adj	sessiz	
+successfully	successfully	B2	adv	başarıyla	
+temple	temple	B1	noun	tapınak, şakak	
+trail	trail	B2	noun	patika, iz	
+uncle	uncle	A1	noun	amca, dayı, enişte	
+unusual	unusual	B1	adj	alışılmadık, olağandışı	
+arrival	arrival	B2	noun	varış, geliş	
+assault	assault	C1	noun/verb	saldırı, saldırmak	
+awareness	awareness	C1	noun	farkındalık, bilinç	
+badly	badly	A2	adv	kötü biçimde, ağır	
+bath	bath	A2	noun	banyo, küvet	
+capture	capture	B2	verb	yakalamak, ele geçirmek	
+chase	chase	B2	verb/noun	kovalamak, takip	
+component	component	C1	noun	bileşen, parça	
+concrete	concrete	B2	adj/noun	somut, beton	
+deeply	deeply	B2	adv	derinden, çok	
+expectation	expectation	B2	noun	beklenti	
+explanation	explanation	B1	noun	açıklama	
+exposure	exposure	C1	noun	maruz kalma, teşhir	
+fiction	fiction	B2	noun	kurgu, roman	
+guarantee	guarantee	B2	noun/verb	garanti, garanti etmek	
+happiness	happiness	B1	noun	mutluluk	
+horrible	horrible	B1	adj	korkunç, berbat	
+ideal	ideal	B2	adj/noun	ideal, ülkü	
+legend	legend	B2	noun	efsane	
+lieutenant	lieutenant	C1	noun	teğmen	
+mood	mood	B2	noun	ruh hali, keyif	
+muscle	muscle	B2	noun	kas	
+passion	passion	B2	noun	tutku	
+procedure	procedure	B2	noun	prosedür, işlem	
+producer	producer	B2	noun	yapımcı, üretici	
+rank	rank	B2	noun/verb	rütbe, sıralamak	
+replacement	replacement	B2	noun	yedek, değiştirme	
+retire	retire	B2	verb	emekli olmak	
+sand	sand	A2	noun	kum	
+saving	saving	B2	noun	tasarruf, birikim	
+settle	settle	B2	verb	yerleşmek, çözmek	
+shadow	shadow	B2	noun	gölge	
+tag	tag	B2	noun	etiket	
+tape	tape	B2	noun	bant, kaset	
+thread	thread	B2	noun	iplik, konu dizisi	
+wage	wage	B2	noun	ücret, maaş	
+avenue	avenue	B2	noun	cadde, bulvar	
+bore	bore	B2	verb	sıkmak	
+clock	clock	A1	noun	saat	
+commissioner	commissioner	C1	noun	komiser, komisyon üyesi	
+commitment	commitment	C1	noun	bağlılık, taahhüt	
+confident	confident	B1	adj	kendinden emin, güvenli	
+custom	custom	B2	noun	gelenek, adet	
+deny	deny	B2	verb	inkâr etmek, reddetmek	
+desk	desk	A1	noun	masa, sıra	
+ear	ear	A1	noun	kulak	
+electricity	electricity	B1	noun	elektrik	
+farmer	farmer	A2	noun	çiftçi	
+gym	gym	A2	noun	spor salonu	
+helpful	helpful	A2	adj	yardımsever, faydalı	
+horror	horror	B2	noun	korku, dehşet	
+label	label	B2	noun	etiket	
+naked	naked	B2	adj	çıplak	
+output	output	C1	noun	çıktı, üretim	
+pitch	pitch	C1	noun	saha, ton, satış konuşması	
+pizza	pizza	A1	noun	pizza	
+plain	plain	B2	adj	sade, açık	
+rear	rear	C1	noun/adj	arka, arka taraf	
+romantic	romantic	B2	adj	romantik	
+strategic	strategic	C1	adj	stratejik	
+swim	swim	A1	verb	yüzmek	
+welfare	welfare	C1	noun	refah, sosyal yardım	
+wire	wire	B2	noun	tel, kablo	
+afterward	afterward	B2	adv	sonradan, sonra	
+alright	alright	B1	adj/adv	iyi, tamam	
+android	android	C1	noun	android, insansı robot	
+anger	anger	B2	noun	öfke	
+architecture	architecture	B2	noun	mimari	
+assist	assist	B2	verb	yardım etmek	
+behalf	behalf	C1	noun	adına, namına	
+belt	belt	B1	noun	kemer	
+ceremony	ceremony	B2	noun	tören	
+comic	comic	B2	adj/noun	komik, çizgi roman	
+cop	cop	B2	noun	polis	
+designer	designer	B1	noun	tasarımcı	
+diamond	diamond	B1	noun	elmas	
+disappoint	disappoint	B2	verb	hayal kırıklığına uğratmak	
+efficient	efficient	B2	adj	verimli	
+electrical	electrical	B2	adj	elektriksel	
+employ	employ	B2	verb	işe almak, kullanmak	
+essentially	essentially	C1	adv	esasen, temelde	
+establishment	establishment	C1	noun	kuruluş, işletme	
+ghost	ghost	B1	noun	hayalet	
+hockey	hockey	B1	noun	hokey	
+kit	kit	B2	noun	takım, set	
+lab	lab	B1	noun	laboratuvar	
+nervous	nervous	B1	adj	gergin, sinirli	
+newly	newly	C1	adv	yeni, yakınlarda	
+odd	odd	B2	adj	garip, tuhaf	
+ordinary	ordinary	B2	adj	sıradan, olağan	
+participate	participate	B2	verb	katılmak	
+prayer	prayer	B2	noun	dua, namaz	
+principle	principle	B2	noun	ilke, prensip	
+racist	racist	C1	adj/noun	ırkçı	
+rarely	rarely	B1	adv	nadiren	
+soil	soil	B2	noun	toprak	
+solve	solve	B1	verb	çözmek	
+stomach	stomach	B1	noun	mide, karın	
+suck	suck	C1	verb	emmek, berbat olmak	
+trash	trash	B2	noun	çöp	
+ugly	ugly	B1	adj	çirkin	
+virus	virus	B1	noun	virüs	
+walker	walker	B2	noun	yürüyüşçü	
+whoever	whoever	C1	pron	her kim, kim olursa	
+boost	boost	C1	verb/noun	artırmak, destek	
+bureau	bureau	C1	noun	büro, daire	
+colonel	colonel	C1	noun	albay	
+comfort	comfort	B2	noun	rahatlık, teselli	
+cousin	cousin	A2	noun	kuzen	
+crack	crack	B2	noun/verb	çatlak, çatlamak	
+deck	deck	C1	noun	güverte, deste	
+dragon	dragon	B2	noun	ejderha	
+dramatic	dramatic	B2	adj	çarpıcı, dramatik	
+dust	dust	B1	noun	toz	
+dutch	dutch	B1	adj/noun	Hollandalı, Felemenkçe	
+evolution	evolution	C1	noun	evrim, gelişim	
+hire	hire	B1	verb	işe almak, kiralamak	
+illness	illness	B1	noun	hastalık	
+inspiration	inspiration	B2	noun	ilham, esin	
+knife	knife	A2	noun	bıçak	
+lately	lately	B2	adv	son zamanlarda	
+memorial	memorial	C1	noun	anıt, anma	
+minority	minority	C1	noun	azınlık	
+mum	mum	A2	noun	anne	
+priority	priority	B2	noun	öncelik	
+promotion	promotion	B2	noun	terfi, tanıtım	
+rail	rail	B2	noun	ray, korkuluk	
+reader	reader	B1	noun	okuyucu	
+remote	remote	B2	adj	uzak, uzaktan	
+repair	repair	B1	verb/noun	onarmak, onarım	
+root	root	B2	noun	kök	
+saint	saint	C1	noun	aziz, evliya	
+steal	steal	B1	verb	çalmak	
+telephone	telephone	A1	noun	telefon	
+whereas	whereas	C1	conj	oysa, halbuki	
+abandon	abandon	C1	verb	terk etmek, vazgeçmek	
+acquire	acquire	C1	verb	edinmek, kazanmak	
+alliance	alliance	C1	noun	ittifak, birlik	
+annoy	annoy	B2	verb	sinirlendirmek, rahatsız etmek	
+bid	bid	C1	noun/verb	teklif, teklif vermek	
+buddy	buddy	B2	noun	arkadaş, dost	
+bury	bury	B2	verb	gömmek	
+butter	butter	A2	noun	tereyağı	
+conclusion	conclusion	B2	noun	sonuç, bitiriş	
+congratulations	congratulations	B1	interj	tebrikler, kutlarım	
+convince	convince	B2	verb	ikna etmek	
+crystal	crystal	C1	noun	kristal	
+dean	dean	C1	noun	dekan	
+decent	decent	B2	adj	düzgün, iyi	
+decline	decline	C1	verb/noun	reddetmek, azalmak, düşüş	
+delay	delay	B2	verb/noun	ertelemek, gecikme	
+desert	desert	B2	noun/verb	çöl, terk etmek	
+downtown	downtown	B2	noun/adv	şehir merkezi	
+elite	elite	C1	noun/adj	seçkin, elit	
+forth	forth	C1	adv	ileri, öteye	
+hop	hop	B2	verb	sıçramak, zıplamak	
+insane	insane	B2	adj	deli, çılgın	
+install	install	B2	verb	kurmak, yüklemek	
+layer	layer	B2	noun	katman, tabaka	
+nowhere	nowhere	B1	adv	hiçbir yerde	
+nurse	nurse	A2	noun	hemşire	
+organic	organic	B2	adj	organik, doğal	
+ownership	ownership	C1	noun	sahiplik	
+participant	participant	C1	noun	katılımcı	
+poetry	poetry	B2	noun	şiir	
+pot	pot	B1	noun	tencere, saksı	
+pray	pray	B2	verb	dua etmek	
+recall	recall	C1	verb	hatırlamak, geri çağırmak	
+sake	sake	C1	noun	uğruna, hatır	
+sheet	sheet	B1	noun	çarşaf, yaprak	
+smooth	smooth	B2	adj	pürüzsüz, düzgün	
+spiritual	spiritual	C1	adj	manevi, ruhani	
+string	string	B2	noun	ip, dizi	
+sudden	sudden	B2	adj	ani	
+vacation	vacation	B1	noun	tatil	
+abroad	abroad	B1	adv	yurt dışında	
+assign	assign	C1	verb	görevlendirmek, atamak	
+atlantic	atlantic	C1	adj/noun	Atlantik	
+bench	bench	B2	noun	bank	
+bother	bother	B2	verb	rahatsız etmek, zahmet etmek	
+broadcast	broadcast	B2	verb/noun	yayın yapmak, yayın	
+bye	bye	A1	interj	hoşça kal	
+compete	compete	B2	verb	yarışmak, rekabet etmek	
+consist	consist	C1	verb	oluşmak, ibaret olmak	
+contribute	contribute	B2	verb	katkıda bulunmak	
+cricket	cricket	B2	noun	kriket, cırcır böceği	
+critic	critic	B2	noun	eleştirmen	
+disaster	disaster	B2	noun	felaket	
+entrance	entrance	B1	noun	giriş	
+equally	equally	B2	adv	eşit olarak, aynı derecede	
+fitness	fitness	B2	noun	zindelik, fitness	
+friendship	friendship	A2	noun	arkadaşlık	
+idiot	idiot	B2	noun	aptal, salak	
+intense	intense	C1	adj	yoğun, şiddetli	
+lifetime	lifetime	C1	noun	ömür, yaşam boyu	
+liquid	liquid	B2	noun/adj	sıvı	
+makeup	makeup	B2	noun	makyaj	
+medal	medal	B2	noun	madalya	
+mortgage	mortgage	C1	noun	ipotek, konut kredisi	
+narrative	narrative	C1	noun	anlatı, hikâye	
+narrow	narrow	B2	adj	dar	
+observe	observe	B2	verb	gözlemlemek	
+occasionally	occasionally	B2	adv	ara sıra	
+pan	pan	B2	noun	tava	
+physics	physics	B1	noun	fizik	
+potentially	potentially	C1	adv	potansiyel olarak	
+reduction	reduction	C1	noun	azalma, indirim	
+reflect	reflect	B2	verb	yansıtmak, düşünmek	
+researcher	researcher	B2	noun	araştırmacı	
+shell	shell	B2	noun	kabuk, kabuk	
+silly	silly	B1	adj	aptalca, saçma	
+subsequent	subsequent	C1	adj	sonraki	
+translation	translation	B2	noun	çeviri	
+visible	visible	B2	adj	görünür	
+yep	yep	A2	interj	evet	
+amendment	amendment	C1	noun	değişiklik, tadil	
+angle	angle	B2	noun	açı, bakış açısı	
+belong	belong	B1	verb	ait olmak	
+bishop	bishop	C1	noun	piskopos	
+commonly	commonly	B2	adv	genellikle, yaygın olarak	
+defensive	defensive	C1	adj	savunmacı	
+efficiency	efficiency	C1	noun	verimlilik	
+enterprise	enterprise	C1	noun	işletme, girişim	
+experiment	experiment	B2	noun/verb	deney, deney yapmak	
+finding	finding	B2	noun	bulgu	
+forum	forum	B2	noun	forum	
+grass	grass	A2	noun	çimen, ot	
+hence	hence	C1	adv	bu nedenle, dolayısıyla	
+increasingly	increasingly	B2	adv	giderek artan biçimde	
+incredibly	incredibly	B2	adv	inanılmaz derecede	
+journalist	journalist	B1	noun	gazeteci	
+mill	mill	B2	noun	değirmen, fabrika	
+occasion	occasion	B2	noun	vesile, durum	
+pace	pace	B2	noun	tempo, adım	
+passenger	passenger	A2	noun	yolcu	
+pen	pen	A1	noun	kalem	
+pope	pope	C1	noun	papa	
+possession	possession	C1	noun	mülk, sahip olma	
+rapid	rapid	C1	adj	hızlı	
+sixth	sixth	A2	adj	altıncı	
+spin	spin	B2	verb	döndürmek, dönmek	
+suitable	suitable	B2	adj	uygun	
+thirty	thirty	A1	adj	otuz	
+valid	valid	B2	adj	geçerli	
+vital	vital	C1	adj	hayati	
+whilst	whilst	C1	conj	iken, -dığı halde	
+agriculture	agriculture	B2	noun	tarım	
+commerce	commerce	C1	noun	ticaret	
+creek	creek	C1	noun	dere	
+currency	currency	B2	noun	para birimi	
+emotion	emotion	B1	noun	duygu	
+exhibition	exhibition	B2	noun	sergi	
+fraud	fraud	C1	noun	dolandırıcılık	
+funeral	funeral	B2	noun	cenaze	
+genuine	genuine	C1	adj	gerçek, samimi	
+honey	honey	B1	noun	bal	
+honour	honour	C1	noun	onur, şeref	
+hook	hook	B2	noun	kanca, çengel	
+immigrant	immigrant	B2	noun	göçmen	
+instruction	instruction	B2	noun	talimat, öğretim	
+legacy	legacy	C1	noun	miras	
+log	log	B2	noun	kütük, kayıt	
+merely	merely	C1	adv	sadece, yalnızca	
+monitor	monitor	B2	noun/verb	monitör, izlemek	
+prisoner	prisoner	B2	noun	mahkûm, tutsak	
+ratio	ratio	C1	noun	oran	
+regret	regret	B2	verb/noun	pişman olmak, pişmanlık	
+reject	reject	B2	verb	reddetmek	
+remind	remind	B1	verb	hatırlatmak	
+resort	resort	B2	noun	tatil beldesi	
+reverse	reverse	C1	verb/adj	tersine çevirmek, ters	
+routine	routine	B2	noun	rutin, alışkanlık	
+scary	scary	B1	adj	korkutucu	
+seed	seed	B2	noun	tohum	
+sin	sin	C1	noun	günah	
+spell	spell	B1	verb	hecelemek	
+summary	summary	B2	noun	özet	
+survival	survival	C1	noun	hayatta kalma	
+sword	sword	B2	noun	kılıç	
+tongue	tongue	B2	noun	dil	
+ward	ward	C1	noun	koğuş, bölge	
+achievement	achievement	B2	noun	başarı	
+asleep	asleep	B1	adj	uykuda	
+automatic	automatic	B2	adj	otomatik	
+behaviour	behaviour	B1	noun	davranış	
+coat	coat	A2	noun	palto, ceket	
+comprehensive	comprehensive	C1	adj	kapsamlı	
+consent	consent	C1	noun	rıza, onay	
+daddy	daddy	A2	noun	baba	
+destruction	destruction	C1	noun	yıkım, tahribat	
+divorce	divorce	B2	noun/verb	boşanma, boşanmak	
+doc	doc	B2	noun	doktor, belge	
+drove	drove	B2	verb	sürdü	
+extraordinary	extraordinary	C1	adj	olağanüstü	
+fate	fate	C1	noun	kader	
+frequency	frequency	C1	noun	sıklık, frekans	
+gene	gene	C1	noun	gen	
+glory	glory	C1	noun	şan, zafer	
+headquarters	headquarters	C1	noun	genel merkez	
+heritage	heritage	C1	noun	miras, kültürel miras	
+initiative	initiative	C1	noun	girişim, inisiyatif	
+juice	juice	A2	noun	meyve suyu	
+landscape	landscape	B2	noun	manzara, peyzaj	
+logic	logic	B2	noun	mantık	
+objective	objective	C1	noun/adj	amaç, nesnel	
+organisation	organisation	B2	noun	organizasyon, kuruluş	
+privacy	privacy	B2	noun	gizlilik	
+residence	residence	C1	noun	ikametgâh, konut	
+roughly	roughly	B2	adv	yaklaşık olarak	
+salary	salary	B1	noun	maaş	
+script	script	B2	noun	senaryo, yazı	
+strip	strip	B2	noun	şerit, çizgi	
+threaten	threaten	B2	verb	tehdit etmek	
+tube	tube	B2	noun	tüp, boru	
+ambassador	ambassador	C1	noun	büyükelçi	
+breast	breast	C1	noun	göğüs	
+chemistry	chemistry	B1	noun	kimya	
+conclude	conclude	B2	verb	sonuçlandırmak, sonuca varmak	
+consumption	consumption	C1	noun	tüketim	
+corruption	corruption	C1	noun	yolsuzluk	
+cotton	cotton	B1	noun	pamuk	
+discount	discount	B1	noun	indirim	
+dozen	dozen	B2	noun	düzine	
+epic	epic	C1	adj/noun	destansı, destan	
+exception	exception	B2	noun	istisna	
+exit	exit	B1	noun/verb	çıkış, çıkmak	
+expand	expand	B2	verb	genişletmek, büyümek	
+fancy	fancy	B2	adj	gösterişli, süslü	
+gorgeous	gorgeous	B2	adj	muhteşem, harika	
+grateful	grateful	B2	adj	minnettar	
+impression	impression	B2	noun	izlenim	
+indicate	indicate	B2	verb	göstermek, belirtmek	
+input	input	C1	noun	girdi, katkı	
+knock	knock	B2	verb	vurmak, kapıyı çalmak	
+leather	leather	B2	noun	deri	
+lip	lip	B1	noun	dudak	
+luxury	luxury	B2	noun	lüks	
+lyric	lyric	C1	noun	şarkı sözü	
+manufacturer	manufacturer	C1	noun	üretici, imalatçı	
+ought	ought	C1	verb	-meli, -malı	
+outcome	outcome	C1	noun	sonuç	
+poll	poll	C1	noun	anket, oylama	
+removal	removal	C1	noun	kaldırma, çıkarma	
+rep	rep	C1	noun	temsilci	
+reporter	reporter	B1	noun	muhabir	
+rob	rob	B2	verb	soymak	
+scream	scream	B2	verb/noun	çığlık atmak, çığlık	
+sequence	sequence	C1	noun	sıra, dizi	
+tennis	tennis	A1	noun	tenis	
+terrorist	terrorist	B2	noun	terörist	
+theater	theater	B1	noun	tiyatro	
+twelve	twelve	A1	adj	on iki	
+virgin	virgin	C1	noun/adj	bakire, el değmemiş	
+wolf	wolf	B1	noun	kurt	
+absence	absence	B2	noun	yokluk, devamsızlık	
+agricultural	agricultural	C1	adj	tarımsal	
+athlete	athlete	B2	noun	sporcu, atlet	
+bull	bull	B2	noun	boğa	
+commonwealth	commonwealth	C1	noun	topluluk, milletler topluluğu	
+contribution	contribution	B2	noun	katkı	
+delicious	delicious	A2	adj	lezzetli	
+ease	ease	C1	noun	kolaylık, rahatlık	
+fame	fame	B2	noun	şöhret	
+flood	flood	B2	noun/verb	sel, su basmak	
+generate	generate	C1	verb	üretmek, oluşturmak	
+genetic	genetic	C1	adj	genetik	
+impress	impress	B2	verb	etkilemek	
+instant	instant	B2	adj/noun	anında, an	
+investor	investor	C1	noun	yatırımcı	
+liberty	liberty	C1	noun	özgürlük	
+mare	mare	C1	noun	kısrak	
+photograph	photograph	A2	noun	fotoğraf	
+progressive	progressive	C1	adj	ilerici, aşamalı	
+punishment	punishment	B2	noun	ceza	
+rally	rally	C1	noun	miting, ralli	
+rapidly	rapidly	B2	adv	hızla	
+representation	representation	C1	noun	temsil	
+sum	sum	B2	noun	toplam, meblağ	
+swing	swing	B2	verb/noun	sallanmak, salıncak	
+tail	tail	B1	noun	kuyruk	
+twin	twin	B2	noun	ikiz	
+upcoming	upcoming	C1	adj	yaklaşan	
+veteran	veteran	C1	noun	gazi, kıdemli	
+alert	alert	C1	adj/noun	tetikte, uyarı	
+arena	arena	C1	noun	arena, stadyum	
+boom	boom	C1	noun	patlama, ani artış	
+boot	boot	B1	noun	bot	
+brave	brave	B2	adj	cesur	
+column	column	B2	noun	sütun, köşe yazısı	
+compensation	compensation	C1	noun	tazminat, telafi	
+composition	composition	C1	noun	beste, kompozisyon	
+conservation	conservation	C1	noun	koruma	
+constitutional	constitutional	C1	adj	anayasal	
+density	density	C1	noun	yoğunluk	
+difficulty	difficulty	B1	noun	zorluk	
+elementary	elementary	B2	adj	temel, ilk	
+ethnic	ethnic	C1	adj	etnik	
+expense	expense	B2	noun	masraf, gider	
+fleet	fleet	C1	noun	filo	
+foster	foster	C1	verb	beslemek, teşvik etmek	
+fundamental	fundamental	C1	adj	temel, esas	
+genius	genius	B2	noun	dahi, deha	
+greatly	greatly	B2	adv	büyük ölçüde	
+guidance	guidance	C1	noun	rehberlik	
+infection	infection	C1	noun	enfeksiyon	
+intention	intention	B2	noun	niyet	
+knee	knee	A2	noun	diz	
+mechanical	mechanical	C1	adj	mekanik	
+participation	participation	C1	noun	katılım	
+precious	precious	C1	adj	değerli, kıymetli	
+pregnancy	pregnancy	C1	noun	hamilelik	
+premium	premium	C1	noun/adj	prim, birinci sınıf	
+pretend	pretend	B2	verb	numara yapmak, rol yapmak	
+priest	priest	B2	noun	rahip	
+prominent	prominent	C1	adj	önde gelen, belirgin	
+radical	radical	C1	adj	köklü, radikal	
+residential	residential	C1	adj	yerleşim, konut	
+reward	reward	B2	noun/verb	ödül, ödüllendirmek	
+satellite	satellite	B2	noun	uydu	
+shake	shake	B1	verb	sallamak, titremek	
+shore	shore	B2	noun	kıyı, sahil	
+substantial	substantial	C1	adj	önemli, büyük	
+teen	teen	B1	noun	genç, ergen	
+transmission	transmission	C1	noun	iletim, şanzıman	
+trap	trap	B2	noun/verb	tuzak, tuzağa düşürmek	
+uniform	uniform	B1	noun	üniforma	
+wildlife	wildlife	B2	noun	yaban hayatı	
+wooden	wooden	B1	adj	ahşap, tahta	
+aggressive	aggressive	B2	adj	saldırgan, agresif	
+apparent	apparent	C1	adj	belirgin, görünür	
+bang	bang	B2	noun/verb	gürültü, çarpmak	
+blast	blast	C1	noun	patlama, esinti	
+communist	communist	C1	noun/adj	komünist	
+complaint	complaint	B2	noun	şikâyet	
+courage	courage	B2	noun	cesaret	
+cure	cure	B2	noun/verb	çare, tedavi etmek	
+desperate	desperate	B2	adj	çaresiz, umutsuz	
+diversity	diversity	C1	noun	çeşitlilik	
+eve	eve	C1	noun	arife, önceki akşam	
+faculty	faculty	C1	noun	fakülte, yetenek	
+feedback	feedback	B2	noun	geri bildirim	
+fighter	fighter	B2	noun	savaşçı, dövüşçü	
+freeze	freeze	B2	verb	donmak, dondurmak	
+humanity	humanity	C1	noun	insanlık	
+innovation	innovation	C1	noun	yenilik	
+instrument	instrument	B1	noun	alet, enstrüman	
+invest	invest	B2	verb	yatırım yapmak	
+jacket	jacket	A2	noun	ceket	
+legislative	legislative	C1	adj	yasama	
+manual	manual	C1	adj/noun	elle yapılan, kılavuz	
+occupy	occupy	C1	verb	işgal etmek, meşgul etmek	
+ongoing	ongoing	C1	adj	devam eden	
+operator	operator	B2	noun	operatör	
+painful	painful	B2	adj	acı verici	
+preparation	preparation	B2	noun	hazırlık	
+punch	punch	B2	verb/noun	yumruk atmak, yumruk	
+purple	purple	A2	adj	mor	
+railroad	railroad	B2	noun	demiryolu	
+registration	registration	C1	noun	kayıt	
+romance	romance	B2	noun	aşk, romantizm	
+submit	submit	C1	verb	sunmak, teslim etmek	
+sufficient	sufficient	C1	adj	yeterli	
+suspend	suspend	C1	verb	askıya almak, ertelemek	
+tissue	tissue	B2	noun	doku, kâğıt mendil	
+trailer	trailer	B2	noun	fragman, römork	
+underground	underground	B2	adj/noun	yeraltı, metro	
+versus	versus	C1	prep	karşısında	
+virtual	virtual	C1	adj	sanal	
+wound	wound	B2	noun/verb	yara, yaralamak	
+amongst	amongst	C1	prep	arasında	
+announcement	announcement	B2	noun	duyuru	
+arrange	arrange	B1	verb	düzenlemek, ayarlamak	
+arsenal	arsenal	C1	noun	cephanelik	
+attract	attract	B2	verb	çekmek, cezbetmek	
+biological	biological	C1	adj	biyolojik	
+chip	chip	B2	noun	cips, çip	
+dare	dare	B2	verb	cesaret etmek	
+database	database	B2	noun	veri tabanı	
+discrimination	discrimination	C1	noun	ayrımcılık	
+disorder	disorder	C1	noun	düzensizlik, bozukluk	
+distribute	distribute	C1	verb	dağıtmak	
+documentary	documentary	B2	noun	belgesel	
+domain	domain	C1	noun	alan, etki alanı	
+dynamic	dynamic	C1	adj	dinamik	
+edit	edit	B2	verb	düzenlemek, kurgulamak	
+engagement	engagement	C1	noun	nişan, katılım	
+explore	explore	B1	verb	keşfetmek	
+favour	favour	B2	noun	iyilik, lehine	
+footage	footage	C1	noun	görüntü kaydı	
+grave	grave	C1	noun/adj	mezar, ciddi	
+implementation	implementation	C1	noun	uygulama	
+investigate	investigate	B2	verb	araştırmak, soruşturmak	
+jazz	jazz	B1	noun	caz	
+laboratory	laboratory	B2	noun	laboratuvar	
+literary	literary	C1	adj	edebi	
+mask	mask	B2	noun	maske	
+midnight	midnight	B1	noun	gece yarısı	
+mouse	mouse	A2	noun	fare	
+piano	piano	A2	noun	piyano	
+praise	praise	B2	noun/verb	övgü, övmek	
+presentation	presentation	B2	noun	sunum	
+psychology	psychology	B2	noun	psikoloji	
+restriction	restriction	C1	noun	kısıtlama	
+rocket	rocket	B2	noun	roket	
+ruin	ruin	B2	verb/noun	mahvetmek, harabe	
+slave	slave	B2	noun	köle	
+stability	stability	C1	noun	istikrar, denge	
+steady	steady	B2	adj	sabit, düzenli	
+symbol	symbol	B2	noun	simge, sembol	
+terminal	terminal	C1	noun	terminal, uç	
+toilet	toilet	A2	noun	tuvalet	
+treaty	treaty	C1	noun	antlaşma	
+triple	triple	C1	adj	üçlü, üç katı	
+unlikely	unlikely	B2	adj	olası olmayan	
+agenda	agenda	C1	noun	gündem	
+bat	bat	B2	noun	yarasa, sopa	
+bow	bow	B2	noun/verb	yay, eğilmek, selam vermek	
+calendar	calendar	A2	noun	takvim	
+cape	cape	C1	noun	pelerin, burun	
+collective	collective	C1	adj	ortak, toplu	
+cooperation	cooperation	B2	noun	işbirliği	
+craft	craft	B2	noun	zanaat, el sanatı	
+darkness	darkness	B2	noun	karanlık	
+devil	devil	B2	noun	şeytan	
+enable	enable	B2	verb	olanak sağlamak, etkinleştirmek	
+equity	equity	C1	noun	özsermaye, hakkaniyet	
+fortune	fortune	C1	noun	servet, talih	
+goodbye	goodbye	A1	interj	hoşça kal, elveda	
+hardware	hardware	B2	noun	donanım	
+intellectual	intellectual	C1	adj	entelektüel, zihinsel	
+involvement	involvement	C1	noun	katılım, ilgi	
+nut	nut	B1	noun	fındık, somun	
+partly	partly	B2	adv	kısmen	
+petition	petition	C1	noun	dilekçe	
+phrase	phrase	B1	noun	deyim, söz öbeği	
+physically	physically	B2	adv	fiziksel olarak	
+racial	racial	C1	adj	ırksal	
+regime	regime	C1	noun	rejim	
+sauce	sauce	A2	noun	sos	
+seal	seal	C1	noun/verb	mühür, fok, mühürlemek	
+shield	shield	C1	noun	kalkan	
+similarly	similarly	C1	adv	benzer şekilde	
+slide	slide	B2	verb/noun	kaymak, slayt	
+stem	stem	C1	noun	gövde, sap	
+summit	summit	C1	noun	zirve	
+throat	throat	B1	noun	boğaz	
+tiger	tiger	A2	noun	kaplan	
+toy	toy	A2	noun	oyuncak	
+warrior	warrior	B2	noun	savaşçı	
+wisdom	wisdom	B2	noun	bilgelik	
+alien	alien	B2	noun/adj	uzaylı, yabancı	
+awkward	awkward	B2	adj	garip, beceriksiz	
+beast	beast	B2	noun	canavar, hayvan	
+beef	beef	B1	noun	sığır eti	
+candy	candy	B1	noun	şeker	
+carrier	carrier	C1	noun	taşıyıcı, nakliyeci	
+celebration	celebration	B1	noun	kutlama	
+celebrity	celebrity	B2	noun	ünlü	
+certificate	certificate	B2	noun	sertifika, belge	
+cite	cite	C1	verb	alıntı yapmak, anmak	
+clay	clay	C1	noun	kil	
+colleague	colleague	B2	noun	meslektaş	
+construct	construct	C1	verb	inşa etmek	
+default	default	C1	noun	varsayılan, temerrüt	
+derive	derive	C1	verb	türetmek, elde etmek	
+dialogue	dialogue	B2	noun	diyalog	
+disable	disable	C1	verb	devre dışı bırakmak	
+distinct	distinct	C1	adj	belirgin, ayrı	
+drag	drag	B2	verb	sürüklemek	
+educate	educate	B2	verb	eğitmek	
+eligible	eligible	C1	adj	uygun, hak sahibi	
+execution	execution	C1	noun	infaz, yürütme	
+fifty	fifty	A1	adj	elli	
+follower	follower	B2	noun	takipçi	
+fool	fool	B2	noun/verb	aptal, kandırmak	
+framework	framework	C1	noun	çerçeve	
+franchise	franchise	C1	noun	franchise, imtiyaz	
+furniture	furniture	A2	noun	mobilya	
+integrate	integrate	C1	verb	bütünleştirmek, entegre etmek	
+intelligent	intelligent	B1	adj	zeki	
+interaction	interaction	C1	noun	etkileşim	
+jet	jet	B2	noun	jet uçağı	
+lifestyle	lifestyle	B2	noun	yaşam tarzı	
+loop	loop	C1	noun	döngü, halka	
+mall	mall	B1	noun	alışveriş merkezi	
+overseas	overseas	B2	adv/adj	denizaşırı, yurt dışı	
+polish	polish	B2	verb/noun	parlatmak, cila	
+recommendation	recommendation	B2	noun	tavsiye, öneri	
+recover	recover	B2	verb	iyileşmek, geri almak	
+relax	relax	A2	verb	rahatlamak, dinlenmek	
+reliable	reliable	B2	adj	güvenilir	
+rely	rely	B2	verb	güvenmek, dayanmak	
+remarkable	remarkable	C1	adj	dikkate değer, olağanüstü	
+sacrifice	sacrifice	C1	noun/verb	fedakârlık, feda etmek	
+sole	sole	C1	adj	tek, biricik	
+succeed	succeed	B1	verb	başarmak, ardından gelmek	
+tale	tale	B2	noun	masal, hikâye	
+volunteer	volunteer	B2	noun/verb	gönüllü, gönüllü olmak	
+worship	worship	C1	verb/noun	ibadet etmek, ibadet	
+worthy	worthy	C1	adj	layık, değer	
+alarm	alarm	B1	noun	alarm	
+bloody	bloody	B2	adj	kanlı	
+breathe	breathe	B1	verb	nefes almak	
+butt	butt	C1	noun	popo, izmarit	
+characteristic	characteristic	C1	noun/adj	özellik, karakteristik	
+collaboration	collaboration	C1	noun	işbirliği	
+consideration	consideration	C1	noun	dikkate alma, düşünce	
+crucial	crucial	C1	adj	çok önemli, kritik	
+dependent	dependent	C1	adj	bağımlı	
+dual	dual	C1	adj	çift, ikili	
+equip	equip	C1	verb	donatmak	
+experimental	experimental	C1	adj	deneysel	
+filter	filter	B2	noun/verb	filtre, süzmek	
+galaxy	galaxy	B2	noun	galaksi	
+globe	globe	B2	noun	küre, dünya	
+gulf	gulf	C1	noun	körfez, uçurum	
+highlight	highlight	B2	verb/noun	vurgulamak, öne çıkan an	
+intent	intent	C1	noun	niyet, amaç	
+judgment	judgment	C1	noun	yargı, karar	
+knight	knight	B2	noun	şövalye	
+logo	logo	B2	noun	logo	
+mature	mature	C1	adj	olgun	
+peaceful	peaceful	B2	adj	huzurlu, barışçıl	
+photographer	photographer	B1	noun	fotoğrafçı	
+pin	pin	B2	noun	toplu iğne, iğne	
+prevention	prevention	C1	noun	önleme	
+publicly	publicly	C1	adv	alenen, herkesin önünde	
+pump	pump	B2	noun/verb	pompa, pompalamak	
+revenge	revenge	B2	noun	intikam	
+satisfy	satisfy	B2	verb	memnun etmek, tatmin etmek	
+slip	slip	B2	verb	kaymak	
+spare	spare	B2	adj/verb	yedek, esirgemek	
+specialist	specialist	B2	noun	uzman	
+stranger	stranger	B1	noun	yabancı	
+tap	tap	B2	noun/verb	musluk, hafifçe vurmak	
+tourism	tourism	B2	noun	turizm	
+acceptable	acceptable	B2	adj	kabul edilebilir	
+ally	ally	C1	noun	müttefik	
+auction	auction	C1	noun	müzayede, açık artırma	
+chaos	chaos	C1	noun	kaos, karmaşa	
+compose	compose	C1	verb	bestelemek, oluşturmak	
+concentration	concentration	C1	noun	konsantrasyon, yoğunlaşma	
+copper	copper	C1	noun	bakır	
+dawn	dawn	C1	noun	şafak, gün doğumu	
+dispute	dispute	C1	noun	anlaşmazlık	
+earning	earning	C1	noun	kazanç	
+execute	execute	C1	verb	yürütmek, idam etmek	
+frequent	frequent	B2	adj	sık	
+gather	gather	B2	verb	toplamak, toplanmak	
+hilarious	hilarious	C1	adj	çok komik	
+huh	huh	B2	interj	ha, hı	
+margin	margin	C1	noun	kenar boşluğu, fark	
+mechanism	mechanism	C1	noun	mekanizma	
+moderate	moderate	C1	adj	ılımlı, orta	
+opera	opera	B2	noun	opera	
+overcome	overcome	C1	verb	üstesinden gelmek, yenmek	
+parallel	parallel	C1	adj	paralel	
+passage	passage	C1	noun	geçit, pasaj	
+pit	pit	C1	noun	çukur, ocak	
+psychological	psychological	C1	adj	psikolojik	
+quest	quest	C1	noun	arayış, macera	
+radiation	radiation	C1	noun	radyasyon, ışınım	
+stroke	stroke	C1	noun	felç, vuruş	
+stun	stun	C1	verb	şaşkına çevirmek, sersemletmek	
+tune	tune	B2	noun	melodi, ezgi	
+utility	utility	C1	noun	hizmet, fayda	
+vessel	vessel	C1	noun	gemi, kap	
+wherever	wherever	B2	conj	nerede olursa, her nerede	
+acquisition	acquisition	C1	noun	edinme, satın alma	
+anime	anime	B2	noun	anime	
+autumn	autumn	A2	noun	sonbahar	
+bold	bold	C1	adj	cesur, kalın (yazı)	
+classical	classical	B2	adj	klasik	
+classify	classify	C1	verb	sınıflandırmak	
+clip	clip	B2	noun	klip, toka	
+coin	coin	B1	noun	madeni para	
+conspiracy	conspiracy	C1	noun	komplo	
+controversy	controversy	C1	noun	tartışma, anlaşmazlık	
+disappear	disappear	B1	verb	kaybolmak, yok olmak	
+encounter	encounter	C1	verb/noun	karşılaşmak, karşılaşma	
+equality	equality	C1	noun	eşitlik	
+exam	exam	A2	noun	sınav	
+examination	examination	B2	noun	inceleme, sınav	
+federation	federation	C1	noun	federasyon	
+fiscal	fiscal	C1	adj	mali	
+guardian	guardian	C1	noun	vasi, koruyucu	
+homeless	homeless	B2	adj	evsiz	
+intervention	intervention	C1	noun	müdahale	
+lover	lover	B2	noun	sevgili, tutkunu	
+mainstream	mainstream	C1	noun/adj	ana akım	
+menu	menu	A2	noun	menü	
+mutual	mutual	C1	adj	karşılıklı	
+nope	nope	B2	interj	hayır	
+offense	offense	C1	noun	suç, saldırı	
+oral	oral	C1	adj	sözlü, ağızdan	
+panic	panic	B2	noun/verb	panik, paniğe kapılmak	
+pursue	pursue	C1	verb	peşinden gitmek, sürdürmek	
+realise	realise	B1	verb	fark etmek, gerçekleştirmek	
+refugee	refugee	B2	noun	mülteci	
+rip	rip	C1	verb	yırtmak, koparmak	
+scope	scope	C1	noun	kapsam	
+segment	segment	C1	noun	bölüm, kesim	
+spectrum	spectrum	C1	noun	spektrum, yelpaze	
+terror	terror	C1	noun	dehşet, terör	
+venture	venture	C1	noun	girişim	
+virtually	virtually	C1	adv	neredeyse, sanal olarak	
+accompany	accompany	C1	verb	eşlik etmek	
+alpha	alpha	C1	noun	alfa	
+arrangement	arrangement	B2	noun	düzenleme, ayarlama	
+boundary	boundary	C1	noun	sınır	
+brick	brick	B2	noun	tuğla	
+considerable	considerable	C1	adj	hatırı sayılır, hayli	
+conventional	conventional	C1	adj	geleneksel	
+designate	designate	C1	verb	atamak, belirlemek	
+emperor	emperor	B2	noun	imparator	
+employer	employer	B2	noun	işveren	
+enormous	enormous	B2	adj	devasa, muazzam	
+forgive	forgive	B2	verb	affetmek	
+garage	garage	B1	noun	garaj, tamirhane	
+guideline	guideline	C1	noun	yönerge, ilke	
+inquiry	inquiry	C1	noun	soruşturma, sorgulama	
+inspector	inspector	B2	noun	müfettiş, kontrolör	
+lion	lion	A2	noun	aslan	
+lonely	lonely	B1	adj	yalnız, kimsesiz	
+mercy	mercy	C1	noun	merhamet	
+nevertheless	nevertheless	C1	adv	yine de, buna rağmen	
+outer	outer	C1	adj	dış	
+oxygen	oxygen	B2	noun	oksijen	
+pipe	pipe	B2	noun	boru, pipo	
+poem	poem	B1	noun	şiir	
+powder	powder	B2	noun	toz, pudra	
+racism	racism	C1	noun	ırkçılık	
+rating	rating	C1	noun	derecelendirme, puan	
+rude	rude	B1	adj	kaba, terbiyesiz	
+screw	screw	C1	noun/verb	vida, vidalamak	
+seventh	seventh	A2	adj	yedinci	
+shelter	shelter	B2	noun	barınak, sığınak	
+signature	signature	B2	noun	imza	
+sooner	sooner	B2	adv	daha erken	
+spider	spider	A2	noun	örümcek	
+tribute	tribute	C1	noun	övgü, saygı duruşu	
+trigger	trigger	C1	verb/noun	tetiklemek, tetik	
+vary	vary	B2	verb	değişmek, farklılık göstermek	
+venue	venue	C1	noun	mekân, toplantı yeri	
+abortion	abortion	C1	noun	kürtaj	
+accuracy	accuracy	C1	noun	doğruluk, isabet	
+artificial	artificial	B2	adj	yapay	
+beneath	beneath	C1	prep	altında	
+bullet	bullet	B2	noun	kurşun, mermi	
+consistently	consistently	C1	adv	sürekli olarak, tutarlı biçimde	
+conversion	conversion	C1	noun	dönüşüm	
+copyright	copyright	C1	noun	telif hakkı	
+deposit	deposit	C1	noun	depozito, mevduat	
+destination	destination	B2	noun	varış noktası, hedef	
+dirt	dirt	B2	noun	kir, toprak	
+diverse	diverse	C1	adj	çeşitli, farklı	
+divine	divine	C1	adj	ilahi	
+exclusively	exclusively	C1	adv	yalnızca, sadece	
+export	export	B2	noun/verb	ihracat, ihraç etmek	
+formerly	formerly	C1	adv	eskiden, önceden	
+functional	functional	C1	adj	işlevsel	
+grandfather	grandfather	A1	noun	büyükbaba, dede	
+habit	habit	B1	noun	alışkanlık	
+isolate	isolate	C1	verb	yalıtmak, izole etmek	
+jealous	jealous	B2	adj	kıskanç	
+lazy	lazy	B1	adj	tembel	
+modify	modify	C1	verb	değiştirmek, uyarlamak	
+municipal	municipal	C1	adj	belediyeye ait	
+naval	naval	C1	adj	deniz, donanma	
+neighbor	neighbor	A2	noun	komşu	
+neutral	neutral	C1	adj	tarafsız, nötr	
+noble	noble	C1	adj	asil, soylu	
+pat	pat	C1	verb	hafifçe vurmak, okşamak	
+popularity	popularity	B2	noun	popülerlik	
+robot	robot	B1	noun	robot	
+sacred	sacred	C1	adj	kutsal	
+spy	spy	B2	noun	casus	
+suggestion	suggestion	B1	noun	öneri	
+suspension	suspension	C1	noun	askıya alma, süspansiyon	
+terrorism	terrorism	C1	noun	terörizm	
+toxic	toxic	C1	adj	zehirli, toksik	
+treasury	treasury	C1	noun	hazine	
+tunnel	tunnel	B2	noun	tünel	
+upgrade	upgrade	C1	noun/verb	yükseltme, yükseltmek	
+warrant	warrant	C1	noun	izin belgesi, emir	
+actively	actively	C1	adv	aktif olarak	
+baker	baker	B1	noun	fırıncı	
+bless	bless	C1	verb	kutsamak	
+brush	brush	A2	noun/verb	fırça, fırçalamak	
+burden	burden	C1	noun	yük, sorumluluk	
+casual	casual	B2	adj	rahat, gündelik	
+certified	certified	C1	adj	onaylı, sertifikalı	
+charter	charter	C1	noun	tüzük, kiralık uçuş	
+chef	chef	B1	noun	şef, aşçıbaşı	
+civilian	civilian	B2	noun/adj	sivil	
+coalition	coalition	C1	noun	koalisyon, ittifak	
+complain	complain	A2	verb	şikâyet etmek, yakınmak	
+controversial	controversial	B2	adj	tartışmalı, tartışma yaratan	
+differently	differently	B1	adv	farklı şekilde, değişik biçimde	
+discipline	discipline	B2	noun/verb	disiplin, ders alanı, cezalandırmak	
+disgust	disgust	B2	noun/verb	tiksinti, iğrendirmek	
+dominant	dominant	C1	adj	baskın, egemen	
+essay	essay	B1	noun	deneme, kompozisyon	
+furthermore	furthermore	C1	adv	ayrıca, dahası	
+graphic	graphic	B2	adj/noun	grafik, görsel, çarpıcı	
+heal	heal	B2	verb	iyileşmek, iyileştirmek	
+implement	implement	C1	verb	uygulamak, yürürlüğe koymak	
+instantly	instantly	B2	adv	anında, hemen	
+invasion	invasion	B2	noun	işgal, istila	
+laptop	laptop	A2	noun	dizüstü bilgisayar	
+legendary	legendary	B2	adj	efsanevi, ünlü	
+maker	maker	B2	noun	yapımcı, üretici	
+opponent	opponent	B2	noun	rakip, karşıt	
+outdoor	outdoor	B1	adj	açık hava, dış mekân	
+palm	palm	B2	noun	avuç içi, palmiye	
+pole	pole	B1	noun	direk, kutup	
+pub	pub	B1	noun	pub, birahane	
+ranger	ranger	C1	noun	korucu, orman bekçisi	
+reception	reception	B2	noun	resepsiyon, kabul, karşılama	
+recipe	recipe	A2	noun	yemek tarifi, tarif	
+regulatory	regulatory	C1	adj	düzenleyici	
+rubber	rubber	B1	noun	lastik, kauçuk	
+serial	serial	C1	adj/noun	seri, dizi	
+setting	setting	B2	noun	ortam, ayar, çevre	
+shed	shed	B2	noun/verb	baraka, depo, dökmek	
+snake	snake	A2	noun	yılan	
+sponsor	sponsor	B2	noun/verb	sponsor, destekçi, desteklemek	
+strict	strict	B2	adj	katı, sıkı	
+subsequently	subsequently	C1	adv	daha sonra, sonradan	
+substance	substance	B2	noun	madde, öz	
+syndrome	syndrome	C1	noun	sendrom	
+unexpected	unexpected	B2	adj	beklenmedik, ani	
+usage	usage	B2	noun	kullanım, kullanma biçimi	
+accidentally	accidentally	B2	adv	yanlışlıkla, kazara	
+affordable	affordable	B2	adj	uygun fiyatlı, ödenebilir	
+amateur	amateur	B2	noun/adj	amatör	
+bin	bin	B1	noun	çöp kutusu, kutu	
+biology	biology	B1	noun	biyoloji	
+briefly	briefly	B2	adv	kısaca, kısa süreliğine	
+canal	canal	B2	noun	kanal	
+cancel	cancel	A2	verb	iptal etmek	
+climb	climb	A2	verb	tırmanmak	
+completion	completion	C1	noun	tamamlama, bitiş	
+cruise	cruise	B2	noun/verb	gemi turu, seyahat etmek	
+custody	custody	C1	noun	velayet, gözaltı	
+delete	delete	B1	verb	silmek	
+demonstrate	demonstrate	B2	verb	göstermek, kanıtlamak	
+departure	departure	B2	noun	kalkış, ayrılış	
+developer	developer	B2	noun	geliştirici, yazılımcı	
+dig	dig	B1	verb	kazmak	
+eagle	eagle	B2	noun	kartal	
+explosion	explosion	B2	noun	patlama	
+fever	fever	B2	noun	ateş, hummalı heyecan	
+fluid	fluid	C1	noun/adj	sıvı, akışkan	
+handsome	handsome	B1	adj	yakışıklı	
+imagination	imagination	B2	noun	hayal gücü, imgelem	
+integration	integration	C1	noun	entegrasyon, bütünleşme	
+integrity	integrity	C1	noun	dürüstlük, bütünlük	
+interpretation	interpretation	C1	noun	yorum, yorumlama, tercümanlık	
+leaf	leaf	A2	noun	yaprak	
+legitimate	legitimate	C1	adj	meşru, yasal	
+lightning	lightning	B2	noun	şimşek, yıldırım	
+magical	magical	B2	adj	büyülü, sihirli	
+motivation	motivation	B2	noun	motivasyon, güdü	
+nasty	nasty	B2	adj	kötü, iğrenç, hoş olmayan	
+outfit	outfit	B2	noun	kıyafet, takım elbise	
+pension	pension	B2	noun	emekli maaşı	
+permit	permit	B2	verb/noun	izin vermek, izin belgesi	
+pleasant	pleasant	B1	adj	hoş, güzel	
+portrait	portrait	B2	noun	portre	
+productive	productive	B2	adj	verimli, üretken	
+safely	safely	B1	adv	güvenle, emniyetle	
+shorter	shorter	A2	adj	daha kısa	
+slight	slight	B2	adj	hafif, küçük	
+socialist	socialist	C1	noun/adj	sosyalist	
+sue	sue	C1	verb	dava açmak	
+tension	tension	B2	noun	gerilim, gerginlik	
+transaction	transaction	C1	noun	işlem, alışveriş	
+twist	twist	B2	verb/noun	bükmek, burmak, sürpriz gelişme	
+ugh	ugh	B2	interj	off, öf	
+unemployment	unemployment	B2	noun	işsizlik	
+unity	unity	C1	noun	birlik, bütünlük	
+useless	useless	B1	adj	işe yaramaz, yararsız	
+viewer	viewer	B2	noun	izleyici, seyirci	
+advocate	advocate	C1	noun/verb	savunucu, savunmak	
+arc	arc	C1	noun	yay, kavis	
+backup	backup	B2	noun	yedek, destek	
+bitter	bitter	B2	adj	acı, buruk	
+clever	clever	B1	adj	zeki, akıllı	
+clinic	clinic	B2	noun	klinik, poliklinik	
+continuous	continuous	B2	adj	sürekli, kesintisiz	
+convert	convert	B2	verb	dönüştürmek, çevirmek	
+correctly	correctly	B1	adv	doğru biçimde, doğru olarak	
+creator	creator	B2	noun	yaratıcı, oluşturan	
+creature	creature	B2	noun	yaratık, canlı	
+criterion	criterion	C1	noun	ölçüt, kriter	
+detective	detective	B2	noun	dedektif	
+disability	disability	B2	noun	engellilik, özür	
+dish	dish	A2	noun	yemek, tabak	
+duck	duck	B1	noun/verb	ördek, eğilmek	
+evaluation	evaluation	C1	noun	değerlendirme	
+excess	excess	C1	noun	fazlalık, aşırılık	
+fence	fence	B2	noun	çit, tel örgü	
+gradually	gradually	B2	adv	giderek, yavaş yavaş	
+gravity	gravity	C1	noun	yerçekimi, ciddiyet	
+holder	holder	B2	noun	sahip, tutacak	
+hood	hood	B2	noun	kapüşon, motor kaputu	
+hung	hung	B1	verb	asıldı, asılı (hang fiilinin geçmişi)	
+identical	identical	C1	adj	aynı, özdeş	
+imperial	imperial	C1	adj	imparatorluk, emperyal	
+legally	legally	B2	adv	yasal olarak	
+meter	meter	B1	noun	metre, sayaç	
+nail	nail	B1	noun	çivi, tırnak	
+negotiation	negotiation	C1	noun	müzakere, pazarlık	
+nonsense	nonsense	B2	noun	saçmalık	
+operational	operational	C1	adj	işlevsel, operasyonel	
+poet	poet	B2	noun	şair	
+repeatedly	repeatedly	B2	adv	tekrar tekrar	
+sink	sink	B1	noun/verb	lavabo, batmak	
+skip	skip	B2	verb	atlamak, geçmek	
+slavery	slavery	C1	noun	kölelik	
+snap	snap	B2	verb	kırmak, çıtlamak, fotoğraf çekmek	
+swiss	swiss	B2	adj	İsviçreli	
+transformation	transformation	C1	noun	dönüşüm	
+vulnerable	vulnerable	C1	adj	savunmasız, kırılgan	
+wealthy	wealthy	B2	adj	zengin, varlıklı	
+additionally	additionally	C1	adv	ayrıca, ek olarak	
+beta	beta	C1	noun	beta, deneme sürümü	
+bronze	bronze	B2	noun	bronz, tunç	
+bug	bug	B1	noun	böcek, yazılım hatası	
+cave	cave	B1	noun	mağara	
+cheat	cheat	B1	verb	hile yapmak, aldatmak	
+chronic	chronic	C1	adj	kronik, müzmin	
+communicate	communicate	B1	verb	iletişim kurmak, iletmek	
+convict	convict	C1	verb/noun	mahkûm etmek, hükümlü	
+diagnosis	diagnosis	C1	noun	teşhis, tanı	
+dismiss	dismiss	C1	verb	işten çıkarmak, reddetmek, azletmek	
+distinguish	distinguish	C1	verb	ayırt etmek, ayırmak	
+dose	dose	C1	noun	doz	
+eighth	eighth	B1	adj	sekizinci	
+flesh	flesh	C1	noun	et, ten	
+flip	flip	B2	verb	çevirmek, ters çevirmek	
+forty	forty	A1	det	kırk	
+generous	generous	B1	adj	cömert, eli açık	
+incorporate	incorporate	C1	verb	içermek, dahil etmek	
+laser	laser	B2	noun	lazer	
+loyal	loyal	B2	adj	sadık, bağlı	
+marijuana	marijuana	C1	noun	esrar, marihuana	
+mentally	mentally	B2	adv	zihinsel olarak, ruhen	
+occupation	occupation	B2	noun	meslek, işgal	
+painting	painting	A2	noun	resim, tablo, boyama	
+patch	patch	C1	noun	yama, düzeltme	
+patience	patience	B2	noun	sabır	
+pollution	pollution	B1	noun	kirlilik	
+precisely	precisely	B2	adv	tam olarak, kesinlikle	
+privilege	privilege	C1	noun	ayrıcalık, imtiyaz	
+punk	punk	C1	noun	punk, serseri	
+radar	radar	C1	noun	radar	
+resist	resist	B2	verb	direnmek, karşı koymak	
+solely	solely	C1	adv	yalnızca, sadece	
+tourist	tourist	A2	noun	turist	
+transit	transit	C1	noun	geçiş, transit	
+villa	villa	B2	noun	villa	
+wireless	wireless	B2	adj	kablosuz	
+wrap	wrap	B2	verb	sarmak, paketlemek	
+yoga	yoga	B1	noun	yoga	
+airline	airline	B1	noun	havayolu şirketi	
+anytime	anytime	B2	adv	her an, istediğin zaman	
+bacteria	bacteria	B2	noun	bakteri	
+blade	blade	B2	noun	bıçak ağzı, kanat	
+buck	buck	C1	noun	dolar, erkek geyik	
+bulk	bulk	C1	noun	çoğunluk, yığın	
+cargo	cargo	C1	noun	kargo, yük	
+census	census	C1	noun	nüfus sayımı	
+coastal	coastal	B2	adj	kıyıdaki, sahil	
+commentary	commentary	C1	noun	yorum, anlatım	
+confusion	confusion	B2	noun	karışıklık, şaşkınlık	
+congressional	congressional	C1	adj	kongreyle ilgili	
+corn	corn	B1	noun	mısır	
+dealer	dealer	B2	noun	satıcı, bayi	
+deem	deem	C1	verb	saymak, addetmek	
+destiny	destiny	C1	noun	kader, yazgı	
+distant	distant	B2	adj	uzak	
+emerge	emerge	C1	verb	ortaya çıkmak, belirmek	
+emphasis	emphasis	B2	noun	vurgu, önem	
+ethic	ethic	C1	noun	etik, ahlak ilkesi	
+excitement	excitement	B1	noun	heyecan, coşku	
+exploration	exploration	B2	noun	keşif, araştırma	
+humor	humor	B2	noun	mizah, espri	
+insight	insight	C1	noun	içgörü, kavrayış	
+lit	lit	B2	verb	yandı, aydınlatıldı (light fiilinin geçmişi)	
+nerve	nerve	B2	noun	sinir, cesaret	
+nightmare	nightmare	B2	noun	kâbus	
+overnight	overnight	B2	adv/adj	bir gecede, gece boyunca	
+partially	partially	B2	adv	kısmen	
+pie	pie	B1	noun	turta, pasta	
+poster	poster	B1	noun	poster, afiş	
+practically	practically	B2	adv	neredeyse, pratik olarak	
+preserve	preserve	C1	verb	korumak, muhafaza etmek	
+raid	raid	C1	noun	baskın, akın	
+ram	ram	C1	noun	koç, bellek	
+respective	respective	C1	adj	ilgili, kendi	
+restrict	restrict	C1	verb	kısıtlamak, sınırlamak	
+sandy	sandy	B2	adj	kumlu	
+scenario	scenario	C1	noun	senaryo	
+sheep	sheep	A2	noun	koyun	
+situated	situated	B2	adj	konumlanmış, bulunan	
+sustainable	sustainable	C1	adj	sürdürülebilir	
+sustain	sustain	C1	verb	sürdürmek, desteklemek	
+taxi	taxi	A2	noun	taksi	
+tobacco	tobacco	B2	noun	tütün	
+trace	trace	C1	noun/verb	iz, izini sürmek	
+uncomfortable	uncomfortable	B1	adj	rahatsız, rahatsız edici	
+weakness	weakness	B2	noun	zayıflık, zaaf	
+widespread	widespread	C1	adj	yaygın, geniş çapta	
+accessible	accessible	C1	adj	erişilebilir	
+acknowledge	acknowledge	C1	verb	kabul etmek, onaylamak	
+advise	advise	B1	verb	tavsiye etmek, öğüt vermek	
+advisory	advisory	C1	adj/noun	danışma, uyarı	
+animation	animation	B2	noun	animasyon, canlandırma	
+assignment	assignment	B2	noun	ödev, görev	
+basement	basement	B2	noun	bodrum	
+bias	bias	C1	noun	önyargı, yanlılık	
+bit	bit	A2	noun	parça, biraz	
+carpet	carpet	B1	noun	halı	
+ceiling	ceiling	B1	noun	tavan	
+cherry	cherry	B1	noun	kiraz	
+chill	chill	B2	verb/noun	serinletmek, dinlenmek, ürperti	
+classification	classification	C1	noun	sınıflandırma	
+clue	clue	B2	noun	ipucu	
+collapse	collapse	B2	verb/noun	çökmek, çöküş	
+compound	compound	C1	noun/adj	bileşik, bileşke	
+conscious	conscious	B2	adj	bilinçli, farkında	
+consecutive	consecutive	C1	adj	ardışık, art arda	
+costume	costume	B2	noun	kostüm, kıyafet	
+devote	devote	C1	verb	adamak, ayırmak	
+dominate	dominate	C1	verb	hâkim olmak, egemen olmak	
+earl	earl	C2	noun	kont	
+endless	endless	B2	adj	sonsuz, bitmek bilmeyen	
+examine	examine	B2	verb	incelemek, muayene etmek	
+float	float	B2	verb	yüzmek, su üstünde durmak	
+garbage	garbage	B2	noun	çöp, atık	
+gospel	gospel	C1	noun	İncil, kesin gerçek	
+grain	grain	B2	noun	tahıl, tane	
+grid	grid	C1	noun	ızgara, şebeke	
+identification	identification	C1	noun	kimlik, tanımlama	
+lap	lap	C1	noun	tur, kucak	
+liver	liver	B2	noun	karaciğer	
+metro	metro	B1	noun	metro	
+metropolitan	metropolitan	C1	adj	büyükşehir	
+mixture	mixture	B2	noun	karışım	
+nominate	nominate	C1	verb	aday göstermek	
+oak	oak	B2	noun	meşe	
+parliamentary	parliamentary	C1	adj	parlamentoya ait	
+patent	patent	C1	noun	patent	
+perception	perception	C1	noun	algı	
+physician	physician	C1	noun	doktor, hekim	
+proceed	proceed	C1	verb	devam etmek, ilerlemek	
+proceeding	proceeding	C1	noun	işlem, yargılama	
+pupil	pupil	B2	noun	öğrenci, göz bebeği	
+restore	restore	C1	verb	onarmak, eski haline getirmek	
+rifle	rifle	B2	noun	tüfek	
+rival	rival	C1	noun	rakip	
+runner	runner	B1	noun	koşucu	
+sadly	sadly	B1	adv	maalesef, üzgün biçimde	
+significance	significance	C1	noun	önem, anlam	
+soap	soap	A2	noun	sabun	
+spray	spray	B2	noun/verb	sprey, püskürtmek	
+structural	structural	C1	adj	yapısal	
+suite	suite	C1	noun	süit, takım	
+tropical	tropical	B2	adj	tropikal	
+unnecessary	unnecessary	B1	adj	gereksiz	
+verse	verse	C1	noun	dize, kıta	
+victor	victor	C2	noun	galip, zafer kazanan	
+vintage	vintage	C1	adj	nostaljik, eskiden kalma	
+acre	acre	C1	noun	akre	
+adapt	adapt	B2	verb	uyum sağlamak, uyarlamak	
+adoption	adoption	C1	noun	evlat edinme, benimseme	
+anonymous	anonymous	C1	adj	anonim, isimsiz	
+artistic	artistic	B2	adj	sanatsal	
+attendance	attendance	C1	noun	katılım, devam	
+aviation	aviation	C1	noun	havacılık	
+barrel	barrel	C1	noun	varil, fıçı	
+beloved	beloved	C1	adj	sevgili, çok sevilen	
+boxing	boxing	B2	noun	boks	
+chuck	chuck	C1	verb	fırlatmak, atmak	
+cinema	cinema	A2	noun	sinema	
+colonial	colonial	C1	adj	sömürge, kolonyal	
+compliance	compliance	C1	noun	uyum, uygunluk	
+contrary	contrary	C1	adj/noun	zıt, tersi	
+couch	couch	B1	noun	kanepe	
+crush	crush	B2	verb/noun	ezmek, hoşlanma	
+dam	dam	C1	noun	baraj, set	
+decrease	decrease	B2	verb/noun	azalmak, azalma	
+diabetes	diabetes	C1	noun	diyabet, şeker hastalığı	
+genre	genre	C1	noun	tür, janr	
+gentle	gentle	B2	adj	nazik, yumuşak	
+grammar	grammar	B1	noun	dilbilgisi	
+illustrate	illustrate	C1	verb	örneklemek, resimlemek	
+invent	invent	B2	verb	icat etmek, bulmak	
+lease	lease	C1	noun/verb	kira sözleşmesi, kiralamak	
+lens	lens	B2	noun	mercek, lens	
+loyalty	loyalty	C1	noun	sadakat	
+magnetic	magnetic	C1	adj	manyetik, çekici	
+mysterious	mysterious	B2	adj	gizemli, esrarengiz	
+notion	notion	C1	noun	kavram, fikir	
+partial	partial	C1	adj	kısmi	
+propaganda	propaganda	C1	noun	propaganda	
+rat	rat	B2	noun	sıçan, fare	
+reflection	reflection	C1	noun	yansıma, düşünme	
+resolve	resolve	C1	verb	çözmek, karar vermek	
+revolutionary	revolutionary	C1	adj/noun	devrimci, çığır açan	
+scandal	scandal	C1	noun	skandal, rezalet	
+shine	shine	B1	verb	parlamak, ışık saçmak	
+simultaneously	simultaneously	C1	adv	eş zamanlı olarak, aynı anda	
+substitute	substitute	C1	noun/verb	yedek, yerine koymak	
+surveillance	surveillance	C1	noun	gözetim	
+tactic	tactic	C1	noun	taktik, yöntem	
+testimony	testimony	C1	noun	ifade, tanıklık	
+treasure	treasure	B2	noun	hazine	
+trophy	trophy	B2	noun	kupa, ödül	
+tweet	tweet	B2	noun/verb	tweet, tweet atmak	
+underlying	underlying	C1	adj	altta yatan, temel	
+unfair	unfair	B1	adj	haksız, adaletsiz	
+acceptance	acceptance	C1	noun	kabul, onay	
+annually	annually	C1	adv	yıllık olarak, her yıl	
+apologize	apologize	B1	verb	özür dilemek	
+ash	ash	B2	noun	kül	
+aunt	aunt	A2	noun	teyze, hala, yenge	
+bubble	bubble	B2	noun	kabarcık, balon	
+buyer	buyer	B2	noun	alıcı, müşteri	
+casino	casino	B2	noun	kumarhane, casino	
+counsel	counsel	C1	noun/verb	danışma, avukat, öğüt vermek	
+deadly	deadly	B2	adj	ölümcül, öldürücü	
+determination	determination	C1	noun	kararlılık, azim	
+embrace	embrace	C1	verb	kucaklamak, benimsemek	
+exhibit	exhibit	C1	verb/noun	sergilemek, sergi	
+gentleman	gentleman	B1	noun	beyefendi, centilmen	
+hammer	hammer	B2	noun	çekiç	
+icon	icon	B2	noun	simge, ikon	
+impose	impose	C1	verb	dayatmak, zorlamak	
+indigenous	indigenous	C2	adj	yerli, otokton	
+infinite	infinite	C1	adj	sonsuz, sınırsız	
+installation	installation	C1	noun	kurulum, tesis	
+legislature	legislature	C2	noun	yasama organı	
+liability	liability	C1	noun	sorumluluk, yükümlülük	
+marathon	marathon	B2	noun	maraton	
+marvel	marvel	C1	noun/verb	harika, hayran olmak	
+moreover	moreover	C1	adv	dahası, üstelik	
+parade	parade	B2	noun	geçit töreni, yürüyüş	
+paradise	paradise	B2	noun	cennet	
+perceive	perceive	C1	verb	algılamak, fark etmek	
+preliminary	preliminary	C1	adj	ön, hazırlık niteliğinde	
+premiere	premiere	C1	noun	prömiyer, gösterim	
+presidency	presidency	C1	noun	başkanlık	
+react	react	B1	verb	tepki vermek	
+realistic	realistic	B2	adj	gerçekçi	
+remark	remark	B2	noun/verb	söz, yorum, belirtmek	
+retain	retain	C1	verb	korumak, elde tutmak	
+rocky	rocky	B2	adj	kayalık, sorunlu	
+satisfaction	satisfaction	B2	noun	memnuniyet, tatmin	
+scratch	scratch	B2	verb/noun	kaşımak, çizmek, çizik	
+shade	shade	B2	noun	gölge, ton	
+sheriff	sheriff	C1	noun	şerif	
+shy	shy	B1	adj	utangaç, çekingen	
+strictly	strictly	B2	adv	kesinlikle, sıkı biçimde	
+sunshine	sunshine	B1	noun	güneş ışığı	
+thou	thou	C2	pron	sen (eski kullanım)	
+tier	tier	C1	noun	kat, kademe	
+vocal	vocal	C1	adj	sesle ilgili, sesi çok çıkan	
+yield	yield	C1	verb/noun	ürün vermek, boyun eğmek, verim	
+accomplish	accomplish	C1	verb	başarmak, gerçekleştirmek	
+admission	admission	C1	noun	kabul, giriş, itiraf	
+aka	aka	C1	adv	namı diğer	
+bacon	bacon	B1	noun	pastırma	
+barrier	barrier	C1	noun	engel, bariyer	
+burst	burst	B2	verb/noun	patlamak, patlama	
+caste	caste	C2	noun	kast	
+cattle	cattle	C1	noun	sığır, büyükbaş hayvan	
+classroom	classroom	A2	noun	sınıf	
+compromise	compromise	C1	noun/verb	uzlaşma, ödün vermek	
+convenient	convenient	B2	adj	uygun, elverişli	
+crop	crop	B2	noun	ekin, mahsul	
+earthquake	earthquake	B1	noun	deprem	
+elderly	elderly	B2	adj	yaşlı	
+eliminate	eliminate	C1	verb	ortadan kaldırmak, elemek	
+embarrass	embarrass	C1	verb	utandırmak, mahcup etmek	
+harbor	harbor	C1	noun	liman	
+ion	ion	C2	noun	iyon	
+mathematics	mathematics	B1	noun	matematik	
+medication	medication	C1	noun	ilaç, tedavi	
+par	par	C1	noun	eşit düzey, standart	
+podcast	podcast	B2	noun	podcast	
+portfolio	portfolio	C1	noun	portföy, dosya	
+productivity	productivity	C1	noun	verimlilik	
+protocol	protocol	C1	noun	protokol	
+quietly	quietly	B1	adv	sessizce	
+salad	salad	A2	noun	salata	
+scholarship	scholarship	B2	noun	burs, bilgi birikimi	
+soup	soup	A2	noun	çorba	
+southeast	southeast	B2	noun/adj	güneydoğu	
+stake	stake	C1	noun	hisse, risk, kazık	
+strain	strain	C1	noun/verb	gerginlik, zorlamak	
+swift	swift	C1	adj	çabuk, hızlı	
+tackle	tackle	C1	verb	ele almak, üstesinden gelmek	
+timeline	timeline	C1	noun	zaman çizelgesi	
+torture	torture	C1	noun/verb	işkence, işkence etmek	
+translate	translate	B1	verb	çevirmek	
+urgent	urgent	B2	adj	acil	
+vegetable	vegetable	A2	noun	sebze	
+vertical	vertical	C1	adj	dikey	
+violation	violation	C1	noun	ihlal	
+wallet	wallet	B1	noun	cüzdan	
+welsh	welsh	C1	adj	Galli	
+workshop	workshop	B2	noun	atölye, çalıştay	
+aboard	aboard	C1	adv	gemide, uçakta, araca binmiş	
+abstract	abstract	C1	adj/noun	soyut, özet	
+accent	accent	B1	noun	aksan, şive, vurgu	
+addiction	addiction	C1	noun	bağımlılık	
+awake	awake	B2	adj	uyanık	
+beam	beam	C1	noun	ışın, kiriş	
+bean	bean	B1	noun	fasulye, çekirdek	
+bind	bind	C1	verb	bağlamak, sarmak	
+blank	blank	B2	adj	boş, yazısız	
+buffalo	buffalo	C1	noun	manda, bizon	
+conviction	conviction	C1	noun	mahkûmiyet, kanaat	
+corrupt	corrupt	C1	adj	yozlaşmış, yolsuz	
+cow	cow	A2	noun	inek	
+curve	curve	B2	noun	eğri, viraj	
+depressed	depressed	B2	adj	depresyonda, bunalmış	
+dine	dine	B2	verb	yemek yemek, akşam yemeği yemek	
+duration	duration	C1	noun	süre	
+fifteen	fifteen	A1	det	on beş	
+grandmother	grandmother	A1	noun	büyükanne, nine	
+harsh	harsh	C1	adj	sert, acımasız	
+horn	horn	B2	noun	boynuz, korna	
+hurry	hurry	B1	verb/noun	acele etmek, acele	
+immune	immune	C1	adj	bağışık	
+inflation	inflation	C1	noun	enflasyon	
+ingredient	ingredient	B2	noun	malzeme, bileşen	
+inspection	inspection	C1	noun	denetim, muayene	
+intensity	intensity	C1	noun	yoğunluk, şiddet	
+inventory	inventory	C1	noun	envanter, stok	
+invitation	invitation	B1	noun	davet, davetiye	
+judicial	judicial	C1	adj	yargısal, adli	
+justify	justify	C1	verb	haklı çıkarmak, gerekçelendirmek	
+lean	lean	B2	verb	eğilmek, yaslanmak	
+lecture	lecture	B2	noun	konferans, ders	
+logical	logical	B2	adj	mantıklı, mantıksal	
+meaningful	meaningful	B2	adj	anlamlı	
+migration	migration	C1	noun	göç	
+missile	missile	C1	noun	füze	
+motivate	motivate	B2	verb	motive etmek, güdülemek	
+northwest	northwest	B2	noun/adj	kuzeybatı	
+organ	organ	B2	noun	organ, uzuv	
+patrol	patrol	C1	noun/verb	devriye, devriye gezmek	
+pearl	pearl	B2	noun	inci	
+peer	peer	C1	noun	akran, emsal	
+pepper	pepper	B1	noun	biber	
+pig	pig	A2	noun	domuz	
+pile	pile	B2	noun	yığın	
+plug	plug	B2	noun	fiş, tapa	
+provision	provision	C1	noun	hüküm, sağlama, erzak	
+revise	revise	B2	verb	gözden geçirmek, tekrar çalışmak	
+rod	rod	C1	noun	çubuk, olta	
+stair	stair	B1	noun	merdiven basamağı	
+stare	stare	B2	verb	dik dik bakmak, gözünü dikmek	
+statistical	statistical	C1	adj	istatistiksel	
+sweat	sweat	B2	noun/verb	ter, terlemek	
+tattoo	tattoo	B2	noun	dövme	
+teenage	teenage	B2	adj	ergenlik çağındaki	
+thunder	thunder	B2	noun	gök gürültüsü	
+tragedy	tragedy	C1	noun	trajedi, facia	
+trauma	trauma	C1	noun	travma	
+wrestle	wrestle	C1	verb	güreşmek, boğuşmak	
+zoo	zoo	A2	noun	hayvanat bahçesi	
+accordance	accordance	C1	noun	uygunluk, uyum	
+activist	activist	C1	noun	aktivist, eylemci	
+alike	alike	B2	adj/adv	benzer, aynı şekilde	
+applicable	applicable	C1	adj	uygulanabilir, geçerli	
+arrow	arrow	B1	noun	ok	
+availability	availability	C1	noun	bulunabilirlik, uygunluk	
+bend	bend	B2	verb	bükmek, eğilmek	
+breach	breach	C1	noun/verb	ihlal, ihlal etmek	
+cabin	cabin	B2	noun	kabin, kulübe	
+cage	cage	B2	noun	kafes	
+chancellor	chancellor	C1	noun	şansölye, rektör	
+cheer	cheer	B2	verb/noun	alkışlamak, tezahürat	
+closet	closet	B2	noun	gardırop, dolap	
+companion	companion	C1	noun	yoldaş, arkadaş	
+consciousness	consciousness	C1	noun	bilinç, farkındalık	
+consultant	consultant	C1	noun	danışman	
+controller	controller	C1	noun	denetleyici, kontrolör	
+correspond	correspond	C1	verb	örtüşmek, yazışmak	
+courtesy	courtesy	C1	noun	nezaket, saygı	
+disc	disc	B2	noun	disk, plak	
+embassy	embassy	B2	noun	büyükelçilik	
+fascinating	fascinating	B2	adj	büyüleyici, ilgi çekici	
+flexible	flexible	B2	adj	esnek	
+goodness	goodness	B2	noun	iyilik, Tanrım (ünlem)	
+guilt	guilt	B2	noun	suçluluk, suçluluk duygusu	
+haven	haven	C1	noun	sığınak, liman	
+helicopter	helicopter	B1	noun	helikopter	
+homework	homework	A1	noun	ödev	
+iconic	iconic	C1	adj	simgesel, ikonik	
+infect	infect	C1	verb	bulaştırmak, enfekte etmek	
+keen	keen	B2	adj	istekli, hevesli	
+lesser	lesser	C1	adj	daha az, daha küçük	
+mandatory	mandatory	C1	adj	zorunlu	
+mechanic	mechanic	B2	noun	tamirci, makinist	
+mere	mere	C1	adj	sadece, yalnızca	
+miracle	miracle	B2	noun	mucize	
+mud	mud	B1	noun	çamur	
+observation	observation	C1	noun	gözlem	
+owe	owe	B2	verb	borçlu olmak	
+phenomenon	phenomenon	C1	noun	olgu, fenomen	
+precise	precise	C1	adj	kesin, tam	
+profession	profession	B2	noun	meslek	
+prospect	prospect	C1	noun	olasılık, beklenti	
+protective	protective	B2	adj	koruyucu	
+provider	provider	C1	noun	sağlayıcı	
+publisher	publisher	B2	noun	yayıncı, yayınevi	
+reportedly	reportedly	C1	adv	iddialara göre, bildirildiğine göre	
+retreat	retreat	C1	verb/noun	geri çekilmek, sığınak	
+rookie	rookie	C1	noun	acemi, çaylak	
+sandwich	sandwich	A2	noun	sandviç	
+separation	separation	C1	noun	ayrılık, ayırma	
+sexually	sexually	C1	adv	cinsel olarak	
+ski	ski	B1	verb/noun	kayak yapmak, kayak	
+sterling	sterling	C1	noun	sterlin	
+surgeon	surgeon	B2	noun	cerrah	
+theft	theft	B2	noun	hırsızlık	
+valve	valve	C1	noun	valf, supap	
+visa	visa	B1	noun	vize	
+adjacent	adjacent	C1	adj	bitişik, yanındaki	
+appreciation	appreciation	C1	noun	takdir, minnettarlık	
+athletic	athletic	B2	adj	atletik, sporcu yapılı	
+authorize	authorize	C1	verb	yetkilendirmek, onaylamak	
+banner	banner	C1	noun	pankart, afiş	
+brad	brad	C2	noun	küçük çivi	
+charm	charm	C1	noun	çekicilik, tılsım	
+colony	colony	C1	noun	koloni, sömürge	
+cookie	cookie	B1	noun	kurabiye, çerez	
+cruel	cruel	B2	adj	zalim, acımasız	
+curriculum	curriculum	C1	noun	müfredat	
+deadline	deadline	B2	noun	son tarih	
+deer	deer	B1	noun	geyik	
+delta	delta	C1	noun	delta	
+dive	dive	B2	verb	dalmak	
+easter	easter	B2	noun	Paskalya	
+electoral	electoral	C1	adj	seçimle ilgili	
+eleven	eleven	A1	det	on bir	
+entity	entity	C1	noun	varlık, kuruluş	
+excessive	excessive	C1	adj	aşırı, fazla	
+feminist	feminist	C1	noun/adj	feminist	
+govern	govern	C1	verb	yönetmek, idare etmek	
+ham	ham	B1	noun	jambon	
+interface	interface	C1	noun	arayüz	
+jewelry	jewelry	B2	noun	mücevher, takı	
+journalism	journalism	C1	noun	gazetecilik	
+jungle	jungle	B2	noun	orman, cangıl	
+linear	linear	C1	adj	doğrusal	
+occasional	occasional	C1	adj	ara sıra olan, seyrek	
+orient	orient	C1	verb	yönlendirmek, doğu	
+predict	predict	B2	verb	tahmin etmek, öngörmek	
+prof	prof	C1	noun	profesör	
+pursuit	pursuit	C1	noun	peşinde koşma, uğraş	
+rap	rap	B2	noun	rap, hafif vuruş	
+reminder	reminder	B2	noun	hatırlatıcı, hatırlatma	
+resume	resume	C1	verb	yeniden başlamak, devam etmek	
+ridge	ridge	C1	noun	sırt, tepe	
+scholar	scholar	C1	noun	bilgin, akademisyen	
+tribe	tribe	C1	noun	kabile, aşiret	
+unfortunate	unfortunate	B2	adj	talihsiz, şanssız	
+variable	variable	C1	noun/adj	değişken	
+ace	ace	C1	noun	as, birinci sınıf	
+adjust	adjust	B2	verb	ayarlamak, uyum sağlamak	
+alternate	alternate	C1	verb/adj	değiştirmek, dönüşümlü	
+artwork	artwork	B2	noun	sanat eseri	
+attraction	attraction	B2	noun	çekicilik, cazibe	
+babe	babe	B2	noun	bebek, tatlım	
+bankruptcy	bankruptcy	C1	noun	iflas	
+canon	canon	C2	noun	kanon, ilke	
+capability	capability	C1	noun	yetenek, kapasite	
+closure	closure	C1	noun	kapanış, sonuç	
+cognitive	cognitive	C1	adj	bilişsel	
+competitor	competitor	B2	noun	rakip	
+defender	defender	B2	noun	savunmacı, savunan kişi	
+dental	dental	C1	adj	dişle ilgili	
+diplomatic	diplomatic	C1	adj	diplomatik	
+drum	drum	B1	noun	davul, varil	
+editorial	editorial	C1	noun/adj	başyazı, editoryal	
+entertain	entertain	B2	verb	eğlendirmek, ağırlamak	
+eternal	eternal	C1	adj	sonsuz, ebedi	
+generic	generic	C1	adj	genel, jenerik	
+grandma	grandma	A1	noun	nine, büyükanne	
+grip	grip	C1	noun/verb	kavrayış, sıkıca tutmak	
+handful	handful	C1	noun	avuç dolusu, bir avuç	
+happily	happily	B1	adv	mutlu bir şekilde, memnuniyetle	
+harmony	harmony	C1	noun	uyum, ahenk	
+humble	humble	C1	adj	alçakgönüllü, mütevazı	
+hybrid	hybrid	C1	noun/adj	melez, hibrit	
+keyboard	keyboard	A2	noun	klavye	
+locally	locally	C1	adv	yerel olarak	
+mild	mild	B2	adj	hafif, ılımlı	
+minimal	minimal	C1	adj	asgari, minimal	
+molecular	molecular	C1	adj	moleküler	
+nearest	nearest	B1	adj	en yakın	
+neighbour	neighbour	A2	noun	komşu	
+noon	noon	B1	noun	öğle	
+nowadays	nowadays	B2	adv	bugünlerde, günümüzde	
+openly	openly	B2	adv	açıkça	
+overview	overview	C1	noun	genel bakış	
+parish	parish	C1	noun	mahalle kilisesi, bucak	
+pathetic	pathetic	C1	adj	acınası, zavallı	
+potato	potato	A2	noun	patates	
+potter	potter	C1	noun	çömlekçi	
+preference	preference	B2	noun	tercih	
+proportion	proportion	C1	noun	oran, orantı	
+rage	rage	C1	noun	öfke, hiddet	
+restoration	restoration	C1	noun	restorasyon, onarım	
+selfish	selfish	B2	adj	bencil	
+sergeant	sergeant	C1	noun	çavuş	
+silk	silk	B2	noun	ipek	
+stamp	stamp	B1	noun	pul, damga	
+throne	throne	C1	noun	taht	
+thy	thy	C2	pron	senin (eski kullanım)	
+urge	urge	C1	noun/verb	dürtü, teşvik etmek	
+warner	warner	C2	noun	uyarıcı	
+witch	witch	B1	noun	cadı	
+archive	archive	C1	noun	arşiv	
+array	array	C1	noun	dizi, çeşit	
+belly	belly	C1	noun	karın, göbek	
+booth	booth	C1	noun	kabin, stant	
+breakdown	breakdown	C1	noun	arıza, çöküş, döküm	
+brutal	brutal	C1	adj	acımasız, vahşi	
+calculate	calculate	B2	verb	hesaplamak	
+cam	cam	C1	noun	kamera, kam	
+citizenship	citizenship	C1	noun	vatandaşlık	
+cliff	cliff	B2	noun	uçurum	
+consensus	consensus	C1	noun	fikir birliği, uzlaşı	
+declaration	declaration	C1	noun	bildiri, beyan	
+derby	derby	C2	noun	derbi, katır bombası şapka	
+distinction	distinction	C1	noun	ayrım, üstünlük	
+donation	donation	B2	noun	bağış	
+facial	facial	C1	adj	yüze ait, yüz	
+faithful	faithful	C1	adj	sadık, vefalı	
+fatal	fatal	C1	adj	ölümcül, vahim	
+fig	fig	B2	noun	incir	
+genuinely	genuinely	B2	adv	gerçekten, içtenlikle	
+hunger	hunger	B2	noun	açlık	
+hurricane	hurricane	B2	noun	kasırga, fırtına	
+implication	implication	C1	noun	sonuç, ima	
+import	import	B2	verb/noun	ithal etmek, ithalat	
+innovative	innovative	C1	adj	yenilikçi	
+jurisdiction	jurisdiction	C2	noun	yargı yetkisi	
+laughter	laughter	B1	noun	kahkaha, gülüş	
+lemon	lemon	A2	noun	limon	
+lung	lung	B2	noun	akciğer	
+mighty	mighty	C1	adj	güçlü, kudretli	
+monetary	monetary	C1	adj	parasal	
+nutrition	nutrition	C1	noun	beslenme	
+ore	ore	C1	noun	cevher	
+pine	pine	B2	noun	çam	
+poorly	poorly	B2	adv	kötü biçimde, yetersiz	
+pose	pose	C1	verb/noun	poz vermek, oluşturmak, poz	
+pour	pour	B1	verb	dökmek, boşaltmak	
+purely	purely	C1	adv	tamamen, sadece	
+rental	rental	B2	noun	kiralama, kira	
+seemingly	seemingly	C1	adv	görünüşe göre	
+severely	severely	C1	adv	ağır şekilde, şiddetle	
+shark	shark	B1	noun	köpekbalığı	
+southwest	southwest	B2	noun/adj	güneybatı	
+survivor	survivor	B2	noun	hayatta kalan	
+technically	technically	C1	adv	teknik olarak	
+unlimited	unlimited	B2	adj	sınırsız	
+anxious	anxious	B2	adj	endişeli, kaygılı	
+bee	bee	A2	noun	arı	
+cafe	cafe	A2	noun	kafe	
+cigarette	cigarette	B1	noun	sigara	
+cult	cult	C1	noun	tarikat, kült	
+dairy	dairy	B2	noun	süt ürünleri, mandıra	
+darling	darling	B2	noun	sevgili, canım	
+delight	delight	B2	noun/verb	sevinç, memnun etmek	
+diary	diary	B1	noun	günlük	
+disagree	disagree	B1	verb	aynı fikirde olmamak, katılmamak	
+drill	drill	B2	noun/verb	matkap, delmek, tatbikat	
+euro	euro	A2	noun	avro	
+evolve	evolve	C1	verb	evrimleşmek, gelişmek	
+forecast	forecast	B2	noun/verb	tahmin, hava tahmini	
+governance	governance	C1	noun	yönetişim, yönetim	
+hug	hug	B1	verb/noun	sarılmak, sarılma	
+importantly	importantly	B2	adv	önemli ölçüde, önemlisi	
+indoor	indoor	B1	adj	kapalı alan, iç mekân	
+influential	influential	C1	adj	etkili, nüfuzlu	
+invisible	invisible	B2	adj	görünmez	
+lawsuit	lawsuit	C1	noun	dava	
+leak	leak	B2	noun/verb	sızıntı, sızdırmak	
+lighter	lighter	B1	noun	çakmak	
+musician	musician	A2	noun	müzisyen	
+olive	olive	B1	noun	zeytin	
+passionate	passionate	B2	adj	tutkulu, ateşli	
+receiver	receiver	B2	noun	alıcı, ahize	
+riot	riot	C1	noun	isyan, ayaklanma	
+roster	roster	C2	noun	nöbet listesi, kadro	
+servant	servant	B2	noun	hizmetçi, uşak	
+setup	setup	B2	noun	kurulum, düzen	
+skull	skull	B2	noun	kafatası	
+slot	slot	C1	noun	yuva, zaman dilimi	
+smash	smash	B2	verb	parçalamak, kırmak	
+statue	statue	B2	noun	heykel	
+surprisingly	surprisingly	B2	adv	şaşırtıcı biçimde	
+surrender	surrender	C1	verb/noun	teslim olmak, teslimiyet	
+suspicious	suspicious	B2	adj	şüpheli, kuşkucu	
+teenager	teenager	B1	noun	genç, ergen	
+tender	tender	C1	adj	yumuşak, şefkatli	
+thoroughly	thoroughly	C1	adv	tamamen, etraflıca	
+vacuum	vacuum	C1	noun	vakum, elektrikli süpürge	
+variation	variation	C1	noun	değişim, çeşitleme	
+allegation	allegation	C1	noun	iddia, suçlama	
+anticipate	anticipate	C1	verb	beklemek, öngörmek	
+architect	architect	B2	noun	mimar	
+basin	basin	C1	noun	havza, leğen	
+beneficial	beneficial	C1	adj	yararlı, faydalı	
+bleed	bleed	B2	verb	kanamak	
+breed	breed	C1	noun/verb	cins, yetiştirmek	
+bride	bride	B2	noun	gelin	
+broadway	broadway	C2	noun	Broadway	
+bud	bud	C1	noun	tomurcuk, arkadaş	
+butler	butler	C1	noun	kâhya, uşak	
+cartoon	cartoon	B1	noun	çizgi film, karikatür	
+chick	chick	B2	noun	civciv	
+coke	coke	B2	noun	kola, kok kömürü	
+comparable	comparable	C1	adj	karşılaştırılabilir, benzer	
+confirmation	confirmation	C1	noun	onay, doğrulama	
+console	console	C1	noun/verb	konsol, teselli etmek	
+contractor	contractor	C1	noun	müteahhit, yüklenici	
+diameter	diameter	C1	noun	çap	
+dump	dump	B2	verb/noun	boşaltmak, çöplük	
+duo	duo	C1	noun	ikili	
+elephant	elephant	A2	noun	fil	
+enhance	enhance	C1	verb	artırmak, geliştirmek	
+exhaust	exhaust	C1	verb/noun	tüketmek, egzoz	
+fabric	fabric	B2	noun	kumaş	
+fabulous	fabulous	B2	adj	harika, muhteşem	
+fairy	fairy	B2	noun	peri	
+fold	fold	B1	verb	katlamak	
+freak	freak	C1	noun	ucube, tutkun	
+gamble	gamble	C1	verb	kumar oynamak, risk almak	
+gently	gently	B2	adv	nazikçe, yavaşça	
+glorious	glorious	C1	adj	şanlı, muhteşem	
+grief	grief	C1	noun	yas, acı	
+historically	historically	C1	adv	tarihsel olarak	
+hub	hub	C1	noun	merkez, odak noktası	
+inevitable	inevitable	C1	adj	kaçınılmaz	
+layout	layout	C1	noun	düzen, yerleşim	
+lodge	lodge	C1	noun/verb	kulübe, yerleşmek, şikâyet iletmek	
+merchant	merchant	C1	noun	tüccar	
+merit	merit	C1	noun	değer, erdem	
+myth	myth	B2	noun	efsane, mit	
+overwhelming	overwhelming	C1	adj	ezici, bunaltıcı	
+pale	pale	B2	adj	soluk, solgun	
+particle	particle	C1	noun	parçacık	
+pastor	pastor	C1	noun	papaz, rahip	
+permanently	permanently	B2	adv	kalıcı olarak	
+poison	poison	B2	noun/verb	zehir, zehirlemek	
+provincial	provincial	C1	adj	taşra, eyalet	
+rebel	rebel	C1	noun/verb	asi, isyan etmek	
+rotation	rotation	C1	noun	dönüş, rotasyon	
+separately	separately	B2	adv	ayrı ayrı	
+subtle	subtle	C1	adj	ince, belli belirsiz	
+toll	toll	C1	noun	ücret, can kaybı	
+tragic	tragic	C1	adj	trajik, acıklı	
+trainer	trainer	B1	noun	antrenör, eğitmen	
+transform	transform	C1	verb	dönüştürmek	
+unbelievable	unbelievable	B2	adj	inanılmaz	
+underneath	underneath	B2	prep/adv	altında, alt kısmında	
+viral	viral	C1	adj	viral, virüsle ilgili	
+warehouse	warehouse	B2	noun	depo, ambar	
+widow	widow	C1	noun	dul kadın	
+administrator	administrator	C1	noun	yönetici, idareci	
+altogether	altogether	C1	adv	tamamen, toplamda	
+animated	animated	C1	adj	canlı, animasyonlu	
+assess	assess	C1	verb	değerlendirmek	
+assumption	assumption	C1	noun	varsayım	
+assure	assure	C1	verb	temin etmek, güvence vermek	
+basket	basket	A2	noun	sepet	
+beard	beard	B1	noun	sakal	
+blanket	blanket	B1	noun	battaniye	
+bucket	bucket	B1	noun	kova	
+burger	burger	A2	noun	hamburger	
+compute	compute	C1	verb	hesaplamak	
+concentrate	concentrate	B2	verb	yoğunlaşmak, odaklanmak	
+continent	continent	B1	noun	kıta	
+curse	curse	C1	noun/verb	lanet, lanetlemek	
+drain	drain	C1	verb/noun	boşaltmak, gider	
+emission	emission	C1	noun	emisyon, salım	
+ethical	ethical	C1	adj	etik, ahlaki	
+excellence	excellence	C1	noun	mükemmellik, üstünlük	
+flame	flame	B2	noun	alev	
+freely	freely	B2	adv	özgürce, serbestçe	
+graduation	graduation	B2	noun	mezuniyet	
+hint	hint	B2	noun	ipucu, ima	
+horizon	horizon	B2	noun	ufuk	
+hostile	hostile	C1	adj	düşmanca	
+ink	ink	B2	noun	mürekkep	
+inn	inn	C1	noun	han, otel	
+matrix	matrix	C1	noun	matris	
+miserable	miserable	B2	adj	sefil, perişan	
+momentum	momentum	C1	noun	ivme, güç	
+monkey	monkey	A2	noun	maymun	
+motorcycle	motorcycle	B1	noun	motosiklet	
+nationwide	nationwide	C1	adj/adv	ülke çapında	
+nest	nest	B2	noun	yuva	
+nicely	nicely	B1	adv	güzelce, hoş biçimde	
+ninth	ninth	B1	adj	dokuzuncu	
+nomination	nomination	C1	noun	aday gösterme	
+notable	notable	C1	adj	dikkate değer, önemli	
+obligation	obligation	C1	noun	yükümlülük	
+optical	optical	C1	adj	optik, görsel	
+outlook	outlook	C1	noun	görünüm, bakış açısı	
+penny	penny	B1	noun	peni, kuruş	
+petty	petty	C1	adj	küçük, önemsiz, ufak tefek	
+quantity	quantity	B2	noun	miktar, nicelik	
+quantum	quantum	C1	noun/adj	kuantum	
+rainbow	rainbow	B1	noun	gökkuşağı	
+recognise	recognise	B2	verb	tanımak, fark etmek	
+reed	reed	C2	noun	kamış	
+reign	reign	C1	noun/verb	saltanat, hüküm sürmek	
+scan	scan	B2	verb/noun	taramak, tarama	
+specialize	specialize	C1	verb	uzmanlaşmak	
+submission	submission	C1	noun	sunum, teslim, boyun eğme	
+sunny	sunny	A2	adj	güneşli	
+testament	testament	C1	noun	kanıt, vasiyet	
+toe	toe	B1	noun	ayak parmağı	
+tremendous	tremendous	C1	adj	muazzam, çok büyük	
+accommodation	accommodation	B2	noun	konaklama, barınma	
+adorable	adorable	B2	adj	sevimli, tatlı	
+allegedly	allegedly	C1	adv	iddiaya göre, sözde	
+ambulance	ambulance	B1	noun	ambulans	
+ashamed	ashamed	B2	adj	utanmış, mahcup	
+ballot	ballot	C1	noun	oy pusulası, oylama	
+cemetery	cemetery	B2	noun	mezarlık	
+compact	compact	C1	adj	kompakt, derli toplu	
+consult	consult	B2	verb	danışmak, başvurmak	
+deficit	deficit	C1	noun	açık, eksiklik	
+demo	demo	B2	noun	demo, gösterim	
+demon	demon	C1	noun	iblis, şeytan	
+demonstration	demonstration	B2	noun	gösteri, protesto	
+detect	detect	C1	verb	fark etmek, tespit etmek	
+detection	detection	C1	noun	tespit, algılama	
+doll	doll	B1	noun	bebek, oyuncak bebek	
+donate	donate	B2	verb	bağışlamak	
+elaborate	elaborate	C1	adj/verb	ayrıntılı, ayrıntılandırmak	
+elder	elder	C1	adj/noun	daha yaşlı, büyük	
+expertise	expertise	C1	noun	uzmanlık	
+fiber	fiber	C1	noun	lif, fiber	
+fry	fry	B1	verb	kızartmak	
+grocery	grocery	B2	noun	bakkal, market ürünleri	
+halfway	halfway	B2	adv	yarı yolda	
+happier	happier	A2	adj	daha mutlu	
+heel	heel	B2	noun	topuk	
+hull	hull	C2	noun	gemi gövdesi, kabuk	
+independently	independently	B2	adv	bağımsız olarak	
+indication	indication	C1	noun	belirti, işaret	
+insist	insist	B2	verb	ısrar etmek	
+intensive	intensive	C1	adj	yoğun	
+interactive	interactive	C1	adj	etkileşimli	
+intimate	intimate	C1	adj	samimi, yakın	
+laundry	laundry	B2	noun	çamaşır	
+martial	martial	C2	adj	savaşla ilgili, dövüş	
+northeast	northeast	B2	noun/adj	kuzeydoğu	
+password	password	B1	noun	parola, şifre	
+politically	politically	C1	adv	siyasi olarak	
+presumably	presumably	C1	adv	muhtemelen, herhalde	
+pronounce	pronounce	B2	verb	telaffuz etmek, ilan etmek	
+prosecution	prosecution	C1	noun	kovuşturma, savcılık	
+pulse	pulse	C1	noun	nabız, darbe	
+rational	rational	C1	adj	mantıklı, akılcı	
+realm	realm	C1	noun	alan, diyar	
+rope	rope	B1	noun	halat, ip	
+shout	shout	A2	verb	bağırmak	
+smartphone	smartphone	A2	noun	akıllı telefon	
+specify	specify	C1	verb	belirtmek, saptamak	
+spectacular	spectacular	C1	adj	muhteşem, görkemli	
+streak	streak	C1	noun	çizgi, seri	
+subscription	subscription	C1	noun	abonelik	
+technological	technological	C1	adj	teknolojik	
+temporarily	temporarily	C1	adv	geçici olarak	
+tolerance	tolerance	C1	noun	hoşgörü, tolerans	
+traditionally	traditionally	C1	adv	geleneksel olarak	
+unhappy	unhappy	A2	adj	mutsuz	
+adequate	adequate	C1	adj	yeterli, uygun	
+alter	alter	C1	verb	değiştirmek	
+apology	apology	B2	noun	özür	
+attribute	attribute	C1	verb/noun	atfetmek, özellik	
+beg	beg	B2	verb	yalvarmak, dilenmek	
+bout	bout	C1	noun	nöbet, karşılaşma	
+brass	brass	C1	noun	pirinç, bakır alaşımı	
+buzz	buzz	C1	noun/verb	vızıltı, vızıldamak	
+comeback	comeback	C1	noun	geri dönüş	
+cos	cos	C2	conj	çünkü	
+diagnose	diagnose	C1	verb	teşhis koymak	
+diesel	diesel	C1	noun	dizel	
+dimension	dimension	C1	noun	boyut	
+dip	dip	C1	verb/noun	daldırmak, düşüş	
+disturb	disturb	B2	verb	rahatsız etmek	
+dot	dot	B2	noun	nokta	
+effectiveness	effectiveness	C1	noun	etkililik	
+exceptional	exceptional	C1	adj	olağanüstü, istisnai	
+flee	flee	C1	verb	kaçmak	
+foul	foul	C1	adj/noun	iğrenç, faul	
+frankly	frankly	B2	adv	açıkçası, dürüstçe	
+graph	graph	B2	noun	grafik	
+hack	hack	C1	verb	bilgisayara sızmak, kesmek	
+hatred	hatred	C1	noun	nefret	
+ignorant	ignorant	C1	adj	cahil, habersiz	
+interact	interact	B2	verb	etkileşim kurmak	
+limp	limp	C1	verb/adj	topallamak, gevşek	
+limitation	limitation	C1	noun	sınırlama, kısıt	
+majesty	majesty	C1	noun	ululuk, majesteleri	
+measurement	measurement	B2	noun	ölçüm, ölçü	
+median	median	C1	noun/adj	medyan, ortanca	
+medieval	medieval	C1	adj	ortaçağa ait	
+mobility	mobility	C1	noun	hareketlilik	
+orientation	orientation	C1	noun	yönelim, oryantasyon	
+oven	oven	B1	noun	fırın	
+passport	passport	A2	noun	pasaport	
+pill	pill	B1	noun	hap	
+rabbit	rabbit	A2	noun	tavşan	
+rhythm	rhythm	B2	noun	ritim, tempo	
+savage	savage	C1	adj	vahşi, acımasız	
+shook	shook	B1	verb	sallandı (shake fiilinin geçmişi)	
+shooter	shooter	C1	noun	nişancı, silahlı kişi	
+sibling	sibling	C1	noun	kardeş	
+slim	slim	B1	adj	ince, zayıf	
+someday	someday	B1	adv	bir gün	
+sophisticated	sophisticated	C1	adj	gelişmiş, sofistike	
+spam	spam	C1	noun	spam, istenmeyen posta	
+stack	stack	C1	noun	yığın	
+stance	stance	C1	noun	duruş, tutum	
+static	static	C1	adj	durağan, statik	
+subway	subway	B1	noun	metro, yeraltı geçidi	
+supportive	supportive	C1	adj	destekleyici	
+surgical	surgical	C1	adj	cerrahi	
+tablet	tablet	B1	noun	tablet, hap	
+tent	tent	B1	noun	çadır	
+thesis	thesis	C1	noun	tez	
+tide	tide	C1	noun	gelgit, akıntı	
+warfare	warfare	C1	noun	savaş	
+withdraw	withdraw	C1	verb	çekmek, geri çekilmek	
+withdrawal	withdrawal	C1	noun	çekilme, para çekme	
+aging	aging	C1	noun/adj	yaşlanma	
+audit	audit	C1	noun/verb	denetim, denetlemek	
+authentic	authentic	C1	adj	otantik, gerçek	
+backward	backward	B2	adv/adj	geriye doğru, geri	
+blonde	blonde	B2	adj	sarışın	
+bolt	bolt	C1	noun	cıvata, sürgü	
+brook	brook	C2	noun	dere	
+bust	bust	C1	noun/verb	büst, kırmak, baskın	
+collar	collar	B2	noun	yaka, tasma	
+comply	comply	C1	verb	uymak, riayet etmek	
+cope	cope	C1	verb	başa çıkmak	
+creepy	creepy	C1	adj	ürkütücü, tüyler ürpertici	
+drawing	drawing	B1	noun	çizim, resim	
+echo	echo	C1	noun/verb	yankı, yankılanmak	
+emotionally	emotionally	C1	adv	duygusal olarak	
+finale	finale	C1	noun	final, bitiş	
+flavor	flavor	B2	noun	tat, lezzet	
+glove	glove	B1	noun	eldiven	
+ignorance	ignorance	C1	noun	cehalet, bilgisizlik	
+induce	induce	C2	verb	neden olmak, yol açmak	
+intermediate	intermediate	B2	adj	orta düzey, ara	
+invention	invention	B2	noun	icat	
+likewise	likewise	C1	adv	aynı şekilde, keza	
+magnificent	magnificent	C1	adj	muhteşem, görkemli	
+mathematical	mathematical	C1	adj	matematiksel	
+meantime	meantime	C1	noun	ara, aradaki süre	
+nonetheless	nonetheless	C1	adv	yine de, bununla birlikte	
+pipeline	pipeline	C1	noun	boru hattı, süreç hattı	
+placement	placement	C1	noun	yerleştirme, staj	
+recreation	recreation	C1	noun	eğlence, dinlence	
+renew	renew	B2	verb	yenilemek	
+resign	resign	B2	verb	istifa etmek	
+shallow	shallow	B2	adj	sığ, yüzeysel	
+sketch	sketch	B2	noun/verb	taslak, kroki çizmek	
+soda	soda	B1	noun	soda, gazlı içecek	
+spite	spite	C1	noun	kin, inat	
+strengthen	strengthen	B2	verb	güçlendirmek	
+sunset	sunset	B1	noun	gün batımı	
+thanksgiving	thanksgiving	B2	noun	Şükran Günü	
+thermal	thermal	C1	adj	termal, ısıl	
+workplace	workplace	B2	noun	iş yeri, çalışma ortamı	
+yell	yell	B2	verb	bağırmak, haykırmak	
+analyst	analyst	C1	noun	analist, çözümleyici	
+arctic	arctic	C1	adj	kutup, Arktik	
+calorie	calorie	B2	noun	kalori	
+cease	cease	C1	verb	sona ermek, durmak, bırakmak	
+chapel	chapel	C1	noun	küçük kilise, şapel	
+container	container	B2	noun	konteyner, kap	
+cowboy	cowboy	B2	noun	kovboy	
+deploy	deploy	C1	verb	konuşlandırmak, devreye almak	
+differ	differ	B2	verb	farklı olmak, ayrılmak	
+dimensional	dimensional	C1	adj	boyutlu	
+eager	eager	B2	adj	istekli, hevesli	
+elevate	elevate	C1	verb	yükseltmek, yukarı çıkarmak	
+essence	essence	C1	noun	öz, esas	
+fork	fork	B1	noun	çatal, çatal yol	
+fur	fur	B2	noun	kürk, tüy	
+harvest	harvest	B2	noun/verb	hasat, hasat etmek	
+headline	headline	B2	noun	manşet, başlık	
+hype	hype	C1	noun	abartılı tanıtım, reklam çılgınlığı	
+junk	junk	B2	noun	hurda, çöp	
+kidney	kidney	B2	noun	böbrek	
+ladder	ladder	B1	noun	merdiven	
+lobby	lobby	C1	noun	lobi, giriş holü	
+mineral	mineral	B2	noun	mineral, maden	
+mob	mob	C1	noun	güruh, kalabalık	
+modest	modest	B2	adj	alçakgönüllü, mütevazı	
+navigation	navigation	B2	noun	navigasyon, yön bulma	
+orbit	orbit	C1	noun	yörünge	
+paragraph	paragraph	B1	noun	paragraf	
+passive	passive	B2	adj	pasif, edilgen	
+peninsula	peninsula	C1	noun	yarımada	
+pork	pork	B1	noun	domuz eti	
+profitable	profitable	B2	adj	kazançlı, karlı	
+ranch	ranch	B2	noun	çiftlik, ranço	
+reasonably	reasonably	B2	adv	makul biçimde, oldukça	
+remainder	remainder	C1	noun	kalan, artan	
+seize	seize	C1	verb	ele geçirmek, yakalamak	
+semester	semester	B2	noun	yarıyıl, dönem	
+sentiment	sentiment	C1	noun	duygu, düşünce	
+sock	sock	A2	noun	çorap	
+supplement	supplement	C1	noun	ek, takviye	
+thereby	thereby	C2	adv	böylece, bu yolla	
+threshold	threshold	C1	noun	eşik, sınır	
+til	til	B2	prep	-e kadar	
+tin	tin	B2	noun	teneke, kalay	
+tribal	tribal	C1	adj	kabileye ait	
+trunk	trunk	B2	noun	gövde, bagaj, hortum	
+uncertainty	uncertainty	C1	noun	belirsizlik	
+vampire	vampire	B2	noun	vampir	
+verdict	verdict	C1	noun	karar, hüküm	
+accommodate	accommodate	C1	verb	barındırmak, uyum sağlamak	
+accordingly	accordingly	C1	adv	buna göre	
+aesthetic	aesthetic	C1	adj	estetik	
+algorithm	algorithm	C1	noun	algoritma	
+anchor	anchor	C1	noun	çıpa, sunucu	
+arch	arch	C1	noun	kemer, kavis	
+axis	axis	C1	noun	eksen	
+badge	badge	B2	noun	rozet, kimlik kartı	
+bizarre	bizarre	C1	adj	tuhaf, garip	
+bounce	bounce	B2	verb	zıplamak, sekmek	
+cannon	cannon	C1	noun	top	
+carol	carol	C1	noun	noel şarkısı	
+complexity	complexity	C1	noun	karmaşıklık	
+consultation	consultation	C1	noun	danışma, istişare	
+continental	continental	C1	adj	kıtasal	
+convenience	convenience	B2	noun	kolaylık, rahatlık	
+deliberately	deliberately	C1	adv	kasıtlı olarak, bilerek	
+dictionary	dictionary	A2	noun	sözlük	
+dignity	dignity	C1	noun	onur, haysiyet	
+ego	ego	C1	noun	ego, benlik	
+enthusiasm	enthusiasm	B2	noun	coşku, heves	
+equation	equation	C1	noun	denklem	
+extract	extract	C1	verb/noun	çıkarmak, özüt	
+favorite	favorite	A2	adj/noun	favori, en sevilen	
+ferry	ferry	B2	noun	feribot	
+flexibility	flexibility	C1	noun	esneklik	
+fridge	fridge	A2	noun	buzdolabı	
+fusion	fusion	C1	noun	füzyon, birleşme	
+gauge	gauge	C1	noun	ölçü aleti, gösterge	
+goat	goat	B1	noun	keçi	
+gut	gut	C1	noun	bağırsak, iç his	
+heck	heck	C1	interj	Hay aksi, Allah allah	
+helmet	helmet	B2	noun	kask	
+ideology	ideology	C1	noun	ideoloji	
+inclusion	inclusion	C1	noun	dahil etme, kapsayıcılık	
+inning	inning	C2	noun	vuruş sırası, devre	
+insect	insect	B1	noun	böcek	
+instructor	instructor	B2	noun	eğitmen, öğretmen	
+isolation	isolation	C1	noun	yalıtım, tecrit	
+keeper	keeper	C1	noun	bekçi, koruyucu	
+lamb	lamb	B2	noun	kuzu	
+liar	liar	B2	noun	yalancı	
+machinery	machinery	C1	noun	makineler, mekanizma	
+mansion	mansion	C1	noun	konak, köşk	
+mercury	mercury	C1	noun	cıva, Merkür	
+namely	namely	C1	adv	yani, başka bir deyişle	
+pending	pending	C1	adj	bekleyen, askıda	
+platinum	platinum	C1	noun	platin	
+possess	possess	C1	verb	sahip olmak	
+premise	premise	C1	noun	öncül, varsayım	
+probability	probability	C1	noun	olasılık	
+resignation	resignation	C1	noun	istifa, boyun eğme	
+rider	rider	B2	noun	binici, sürücü	
+ritual	ritual	C1	noun	ritüel, tören	
+shelf	shelf	A2	noun	raf	
+slam	slam	C1	verb	çarpmak, sertçe vurmak	
+starter	starter	B2	noun	başlangıç, meze	
+subscribe	subscribe	B2	verb	abone olmak	
+utterly	utterly	C1	adv	tamamen, büsbütün	
+voltage	voltage	C1	noun	voltaj, gerilim	
+width	width	B1	noun	genişlik, en	
+workout	workout	B2	noun	antrenman, egzersiz	
+activate	activate	B2	verb	etkinleştirmek, harekete geçirmek	
+adaptation	adaptation	C1	noun	uyarlama, uyum	
+advisor	advisor	B2	noun	danışman	
+aluminum	aluminum	C1	noun	alüminyum	
+bail	bail	C2	noun	kefalet	
+characterize	characterize	C1	verb	nitelemek, tanımlamak	
+civilization	civilization	B2	noun	uygarlık, medeniyet	
+congrats	congrats	B2	interj	tebrikler	
+creativity	creativity	B2	noun	yaratıcılık	
+delicate	delicate	C1	adj	narin, hassas	
+den	den	C1	noun	in, oyun odası	
+disappointment	disappointment	B2	noun	hayal kırıklığı	
+disk	disk	B2	noun	disk	
+evaluate	evaluate	B2	verb	değerlendirmek	
+formally	formally	C1	adv	resmi olarak	
+goddess	goddess	C1	noun	tanrıça	
+harassment	harassment	C1	noun	taciz	
+insert	insert	B2	verb	sokmak, eklemek	
+legit	legit	C1	adj	meşru, gerçek	
+liquor	liquor	C1	noun	sert içki, alkollü içki	
+loser	loser	B2	noun	kaybeden	
+massage	massage	B2	noun	masaj	
+nephew	nephew	B1	noun	erkek yeğen	
+notably	notably	C1	adv	özellikle, dikkat çekici biçimde	
+orchestra	orchestra	B2	noun	orkestra	
+pad	pad	B2	noun	ped, bloknot	
+precision	precision	C1	noun	kesinlik, hassasiyet	
+preservation	preservation	C1	noun	koruma, muhafaza	
+privately	privately	C1	adv	özel olarak, gizlice	
+rumor	rumor	B2	noun	söylenti, dedikodu	
+sail	sail	B1	verb/noun	denize açılmak, yelken	
+salmon	salmon	B2	noun	somon	
+secretly	secretly	B2	adv	gizlice	
+seller	seller	B1	noun	satıcı	
+sheer	sheer	C1	adj	tam, mutlak, ince	
+specially	specially	B2	adv	özellikle, özel olarak	
+stark	stark	C1	adj	çıplak, keskin	
+sympathy	sympathy	C1	noun	sempati, taziye	
+tan	tan	B2	noun	bronzluk, ten rengi	
+theoretical	theoretical	C1	adj	kuramsal, teorik	
+thumb	thumb	B2	noun	başparmak	
+timber	timber	C1	noun	kereste	
+transparent	transparent	C1	adj	saydam, şeffaf	
+upside	upside	C1	noun	olumlu yön, üst taraf	
+vitamin	vitamin	B1	noun	vitamin	
+void	void	C1	noun	boşluk	
+voluntary	voluntary	C1	adj	gönüllü, isteğe bağlı	
+wheat	wheat	B1	noun	buğday	
+whip	whip	C1	noun/verb	kamçı, çırpmak	
+wipe	wipe	B1	verb	silmek	
+wrist	wrist	B2	noun	bilek	
+acute	acute	C1	adj	akut, keskin	
+admiral	admiral	C1	noun	amiral	
+banana	banana	A1	noun	muz	
+behave	behave	B1	verb	davranmak	
+borrow	borrow	A2	verb	ödünç almak	
+chin	chin	B2	noun	çene	
+civic	civic	C1	adj	yurttaşlıkla ilgili, kentsel	
+clerk	clerk	B2	noun	memur, katip	
+considerably	considerably	C1	adv	oldukça, epeyce	
+cottage	cottage	B2	noun	kır evi	
+coup	coup	C1	noun	darbe	
+criticize	criticize	B2	verb	eleştirmek	
+crude	crude	C1	adj	ham, kaba	
+dash	dash	C1	verb/noun	koşmak, çizgi	
+disclosure	disclosure	C1	noun	ifşa, açıklama	
+disposal	disposal	C1	noun	bertaraf, elden çıkarma	
+distinctive	distinctive	C1	adj	ayırt edici, kendine özgü	
+drone	drone	C1	noun	dron, erkek arı	
+escort	escort	C1	noun/verb	eşlikçi, refakat etmek	
+firmly	firmly	B2	adv	sıkıca, kararlılıkla	
+flour	flour	B1	noun	un	
+holding	holding	C1	noun	mülk, hisse	
+indie	indie	C1	adj	bağımsız	
+indirect	indirect	C1	adj	dolaylı	
+institutional	institutional	C1	adj	kurumsal	
+interim	interim	C1	adj	geçici, ara	
+jerk	jerk	C1	noun	pislik herif, ani çekiş	
+kindly	kindly	B2	adv	nazikçe, lütfen	
+kindness	kindness	B1	noun	nezaket, iyilik	
+lottery	lottery	B2	noun	piyango	
+magnitude	magnitude	C1	noun	büyüklük, şiddet	
+minus	minus	B1	prep	eksi	
+nude	nude	C1	adj	çıplak	
+outlet	outlet	C1	noun	çıkış, priz, satış noktası	
+parameter	parameter	C1	noun	parametre	
+pause	pause	B1	noun/verb	duraklama, duraklamak	
+pledge	pledge	C1	noun/verb	söz, taahhüt etmek	
+portal	portal	C1	noun	portal, giriş kapısı	
+prescription	prescription	B2	noun	reçete	
+publicity	publicity	C1	noun	tanıtım, reklam	
+punish	punish	B2	verb	cezalandırmak	
+puppy	puppy	B1	noun	köpek yavrusu	
+recruitment	recruitment	C1	noun	işe alım	
+silicon	silicon	C1	noun	silikon	
+slice	slice	B1	noun	dilim	
+spur	spur	C2	noun	teşvik, mahmuz	
+subscriber	subscriber	C1	noun	abone	
+telegraph	telegraph	C1	noun	telgraf	
+vaccine	vaccine	B2	noun	aşı	
+vinyl	vinyl	C1	noun	vinil, plak	
+affiliate	affiliate	C1	noun	bağlı kuruluş, ortak	
+asylum	asylum	C1	noun	sığınma, akıl hastanesi	
+barn	barn	B2	noun	ahır, samanlık	
+bent	bent	C1	adj	eğri, bükülmüş	
+cathedral	cathedral	B2	noun	katedral	
+clause	clause	C1	noun	madde, yan cümle	
+cluster	cluster	C1	noun	küme, öbek	
+consistency	consistency	C1	noun	tutarlılık, kıvam	
+cylinder	cylinder	C1	noun	silindir	
+dancer	dancer	A2	noun	dansçı	
+deaf	deaf	B2	adj	sağır	
+denial	denial	C1	noun	inkar, ret	
+dock	dock	C1	noun	rıhtım, iskele	
+entrepreneur	entrepreneur	C1	noun	girişimci	
+evident	evident	C1	adj	açık, belli	
+expedition	expedition	C1	noun	sefer, keşif gezisi	
+facilitate	facilitate	C1	verb	kolaylaştırmak	
+feat	feat	C1	noun	başarı, kahramanlık	
+fossil	fossil	C1	noun	fosil	
+freight	freight	C1	noun	yük, nakliye	
+honesty	honesty	B2	noun	dürüstlük	
+inappropriate	inappropriate	B2	adj	uygunsuz	
+infant	infant	C1	noun	bebek	
+initiate	initiate	C1	verb	başlatmak	
+injection	injection	C1	noun	enjeksiyon, iğne	
+instrumental	instrumental	C1	adj	etkili, enstrümantal	
+insult	insult	B2	noun/verb	hakaret, hakaret etmek	
+interference	interference	C1	noun	müdahale, parazit	
+interstate	interstate	C1	adj	eyaletler arası	
+mediterranean	mediterranean	C1	adj	Akdeniz	
+neat	neat	B2	adj	düzenli, derli toplu	
+negotiate	negotiate	C1	verb	müzakere etmek, pazarlık yapmak	
+offset	offset	C2	verb	dengelemek, telafi etmek	
+outbreak	outbreak	C1	noun	salgın, patlak verme	
+pal	pal	B2	noun	arkadaş, dost	
+perfection	perfection	C1	noun	mükemmellik	
+pirate	pirate	B2	noun	korsan	
+probe	probe	C1	noun/verb	sonda, araştırmak	
+prohibit	prohibit	C1	verb	yasaklamak	
+recruit	recruit	C1	verb/noun	işe almak, acemi	
+rehabilitation	rehabilitation	C1	noun	rehabilitasyon, iyileştirme	
+remix	remix	C2	noun	remiks	
+resistant	resistant	C1	adj	dirençli, dayanıklı	
+skinny	skinny	B2	adj	çok zayıf, dar	
+sneak	sneak	C1	verb	sinsice girmek, gizlice gitmek	
+sore	sore	B2	adj	ağrıyan, acıyan	
+spark	spark	C1	noun	kıvılcım	
+speculation	speculation	C1	noun	spekülasyon, tahmin	
+steep	steep	C1	adj	dik, sarp	
+straw	straw	B2	noun	saman, pipet	
+successor	successor	C1	noun	halef, ardıl	
+uncertain	uncertain	B2	adj	belirsiz, emin olmayan	
+upload	upload	B2	verb	yüklemek	
+vector	vector	C1	noun	vektör	
+weigh	weigh	B2	verb	tartmak, ağırlığında olmak	
+whatsoever	whatsoever	C1	adv	hiçbir şekilde, hiç	
+wick	wick	C2	noun	fitil	
+absent	absent	B2	adj	yok, devamsız	
+acoustic	acoustic	C1	adj	akustik	
+ancestor	ancestor	C1	noun	ata, cet	
+atomic	atomic	C1	adj	atomik, atom	
+bicycle	bicycle	A2	noun	bisiklet	
+bump	bump	C1	noun/verb	çarpma, çarpmak	
+cart	cart	B2	noun	araba, el arabası	
+circus	circus	B2	noun	sirk	
+cocaine	cocaine	C1	noun	kokain	
+compel	compel	C1	verb	zorlamak, mecbur etmek	
+compile	compile	C1	verb	derlemek, toplamak	
+complication	complication	C1	noun	komplikasyon, karışıklık	
+cord	cord	C1	noun	ip, kordon, kablo	
+cyber	cyber	C1	adj	siber	
+dale	dale	C2	noun	vadi	
+defendant	defendant	C1	noun	sanık, davalı	
+dense	dense	C1	adj	yoğun, sık	
+doctrine	doctrine	C1	noun	doktrin, öğreti	
+freshman	freshman	B2	noun	birinci sınıf öğrencisi	
+furious	furious	B2	adj	öfkeli, çok kızgın	
+gameplay	gameplay	C1	noun	oynanış	
+geography	geography	B1	noun	coğrafya	
+gig	gig	C1	noun	konser, geçici iş	
+habitat	habitat	C1	noun	yaşam alanı, habitat	
+harbour	harbour	B2	noun	liman	
+hazard	hazard	C1	noun	tehlike, risk	
+hydrogen	hydrogen	C1	noun	hidrojen	
+imply	imply	C1	verb	ima etmek, gerektirmek	
+intact	intact	C1	adj	bozulmamış, sağlam	
+intake	intake	C1	noun	alım, giriş	
+irrelevant	irrelevant	C1	adj	alakasız, ilgisiz	
+jaw	jaw	B2	noun	çene	
+kitty	kitty	B2	noun	kedicik, ortak kasa	
+lawn	lawn	B2	noun	çimenlik, çim	
+needle	needle	B2	noun	iğne	
+oval	oval	C1	adj	oval	
+pity	pity	B2	noun	acıma, yazık	
+pond	pond	B2	noun	gölet	
+prey	prey	C1	noun	av, kurban	
+prophet	prophet	C1	noun	peygamber	
+referendum	referendum	C1	noun	referandum	
+regulate	regulate	C1	verb	düzenlemek, denetlemek	
+ruby	ruby	C1	noun	yakut	
+seasonal	seasonal	C1	adj	mevsimlik	
+sensible	sensible	B2	adj	makul, akıllıca	
+sequel	sequel	C1	noun	devam filmi, devam	
+teammate	teammate	B2	noun	takım arkadaşı	
+township	township	C1	noun	ilçe, kasaba	
+whale	whale	B2	noun	balina	
+writing	writing	A2	noun	yazı, yazma	
+admire	admire	B2	verb	hayran olmak, takdir etmek	
+amber	amber	C1	noun	kehribar	
+ankle	ankle	B2	noun	ayak bileği	
+armor	armor	C1	noun	zırh	
+autism	autism	C1	noun	otizm	
+bachelor	bachelor	C1	noun	bekar erkek, lisans derecesi	
+berry	berry	B2	noun	yaban meyvesi, çilek türü	
+bully	bully	C1	noun/verb	zorba, zorbalık yapmak	
+capitalism	capitalism	C1	noun	kapitalizm	
+caution	caution	B2	noun	dikkat, ihtiyat	
+certification	certification	C1	noun	sertifika, onay	
+clan	clan	C1	noun	klan, aşiret	
+clash	clash	C1	noun/verb	çatışma, çatışmak	
+compatible	compatible	C1	adj	uyumlu	
+condemn	condemn	C1	verb	kınamak, mahkum etmek	
+configuration	configuration	C1	noun	yapılandırma, düzen	
+curiosity	curiosity	B2	noun	merak	
+explosive	explosive	C1	adj/noun	patlayıcı	
+fortunate	fortunate	C1	adj	şanslı	
+frontier	frontier	C1	noun	sınır, cephe	
+frustration	frustration	C1	noun	hayal kırıklığı, bıkkınlık	
+geographic	geographic	C1	adj	coğrafi	
+grasp	grasp	C1	verb/noun	kavramak, anlamak	
+handy	handy	B2	adj	kullanışlı, elverişli	
+hardcore	hardcore	C1	adj	ateşli, sert	
+harmful	harmful	B2	adj	zararlı	
+headache	headache	B1	noun	baş ağrısı	
+incentive	incentive	C1	noun	teşvik	
+inclusive	inclusive	C1	adj	kapsayıcı	
+licence	licence	B2	noun	ruhsat, lisans	
+madness	madness	C1	noun	delilik	
+mandate	mandate	C1	noun	yetki, görev	
+manga	manga	C1	noun	manga	
+memorable	memorable	C1	adj	unutulmaz	
+merger	merger	C1	noun	birleşme	
+poker	poker	B2	noun	poker	
+portable	portable	C1	adj	taşınabilir	
+robbery	robbery	B2	noun	soygun	
+rub	rub	B2	verb	ovmak, sürtmek	
+scatter	scatter	C1	verb	saçmak, dağıtmak	
+scout	scout	C1	noun	izci, gözcü	
+sexuality	sexuality	C1	noun	cinsellik	
+slap	slap	B2	verb/noun	tokatlamak, tokat	
+steak	steak	B1	noun	biftek	
+succession	succession	C1	noun	ardışıklık, halefiyet	
+superintendent	superintendent	C1	noun	müdür, süpervizör	
+suspicion	suspicion	C1	noun	şüphe	
+sweep	sweep	B2	verb	süpürmek	
+tactical	tactical	C1	adj	taktiksel	
+therapist	therapist	C1	noun	terapist	
+thereafter	thereafter	C2	adv	ondan sonra	
+thorough	thorough	C1	adj	kapsamlı, titiz	
+tuition	tuition	C1	noun	öğrenim ücreti	
+tumor	tumor	C1	noun	tümör	
+wholesale	wholesale	C1	noun	toptan satış	
+administer	administer	C1	verb	yönetmek, uygulamak	
+architectural	architectural	C1	adj	mimari	
+artillery	artillery	C2	noun	topçu, ağır silahlar	
+assemble	assemble	C1	verb	toplamak, monte etmek	
+canvas	canvas	C1	noun	tuval, branda	
+canyon	canyon	C1	noun	kanyon	
+cheek	cheek	B2	noun	yanak	
+circular	circular	C1	adj	dairesel	
+circulation	circulation	C1	noun	dolaşım, tiraj	
+clearance	clearance	C1	noun	izin, boşluk	
+coincidence	coincidence	C1	noun	tesadüf	
+comedian	comedian	B2	noun	komedyen	
+conscience	conscience	C1	noun	vicdan	
+countless	countless	C1	adj	sayısız	
+curry	curry	B2	noun	köri	
+dame	dame	C2	noun	hanımefendi, leydi	
+deceased	deceased	C2	adj	ölmüş, merhum	
+dedication	dedication	C1	noun	adanmışlık, ithaf	
+detention	detention	C1	noun	gözaltı, alıkoyma	
+enforce	enforce	C1	verb	uygulamak, zorla yaptırmak	
+explicit	explicit	C1	adj	açık, net	
+flu	flu	B1	noun	grip	
+forbid	forbid	B2	verb	yasaklamak	
+fraction	fraction	C1	noun	kesir, küçük parça	
+infantry	infantry	C2	noun	piyade	
+integral	integral	C1	adj	ayrılmaz, bütünleyici	
+kidnap	kidnap	C1	verb	kaçırmak	
+marble	marble	B2	noun	mermer, misket	
+maritime	maritime	C1	adj	denizcilikle ilgili	
+melt	melt	B2	verb	erimek, eritmek	
+nominee	nominee	C1	noun	aday	
+oath	oath	C1	noun	yemin	
+offence	offence	C1	noun	suç, kabahat	
+patriot	patriot	C1	noun	vatansever	
+pee	pee	B2	verb	çiş yapmak	
+pillow	pillow	A2	noun	yastık	
+polar	polar	C1	adj	kutupsal	
+prediction	prediction	C1	noun	tahmin	
+preview	preview	C1	noun	ön izleme	
+puzzle	puzzle	B2	noun	bulmaca	
+reconstruction	reconstruction	C1	noun	yeniden inşa	
+renowned	renowned	C1	adj	ünlü, tanınmış	
+revelation	revelation	C1	noun	ifşa, vahiy	
+skirt	skirt	A2	noun	etek	
+spa	spa	B2	noun	spa, kaplıca	
+spike	spike	C1	noun	sivri uç, ani yükseliş	
+sprint	sprint	C1	noun/verb	sprint, hızla koşmak	
+stir	stir	B2	verb	karıştırmak	
+suburb	suburb	B2	noun	banliyö	
+superb	superb	C1	adj	muhteşem	
+supposed	supposed	C1	adj	sözde, varsayılan	
+tab	tab	B2	noun	sekme, hesap	
+tendency	tendency	C1	noun	eğilim	
+toast	toast	B1	noun	kızarmış ekmek, kadeh kaldırma	
+touchdown	touchdown	C2	noun	touchdown, iniş	
+trait	trait	C1	noun	özellik, karakter	
+trek	trek	C1	noun	uzun yürüyüş	
+tricky	tricky	C1	adj	zor, beceri gerektiren	
+triumph	triumph	C1	noun	zafer	
+underwear	underwear	B1	noun	iç çamaşırı	
+unto	unto	C2	prep	-e, -e doğru	
+viable	viable	C1	adj	uygulanabilir, yaşayabilir	
+waist	waist	B2	noun	bel	
+wit	wit	C1	noun	nükte, zeka	
+wreck	wreck	C1	noun	enkaz, kaza	
+absurd	absurd	C1	adj	saçma, akıl dışı	
+accessory	accessory	C1	noun	aksesuar	
+ambitious	ambitious	B2	adj	hırslı, iddialı	
+amid	amid	C1	prep	arasında, ortasında	
+ballet	ballet	B2	noun	bale	
+bargain	bargain	B2	noun	pazarlık, kelepir	
+binary	binary	C1	adj	ikili	
+blend	blend	C1	verb/noun	karıştırmak, karışım	
+brake	brake	B2	noun	fren	
+businessman	businessman	B1	noun	iş adamı	
+cab	cab	B1	noun	taksi	
+collision	collision	C1	noun	çarpışma	
+compassion	compassion	C1	noun	şefkat, merhamet	
+consume	consume	B2	verb	tüketmek	
+correction	correction	B2	noun	düzeltme	
+cough	cough	B1	noun/verb	öksürük, öksürmek	
+depot	depot	C1	noun	depo	
+distress	distress	C1	noun	sıkıntı, üzüntü	
+documentation	documentation	C1	noun	belgeleme, dokümantasyon	
+dramatically	dramatically	C1	adv	çarpıcı biçimde, çok	
+elegant	elegant	B2	adj	zarif, şık	
+elevator	elevator	B1	noun	asansör	
+feast	feast	C1	noun	ziyafet, şölen	
+frost	frost	B2	noun	don, kırağı	
+herald	herald	C2	verb/noun	müjdelemek, haberci	
+hike	hike	B2	noun/verb	doğa yürüyüşü, yürüyüş yapmak	
+hollow	hollow	C1	adj	içi boş	
+homeland	homeland	C1	noun	anavatan	
+lame	lame	C1	adj	topal, zayıf	
+lily	lily	B2	noun	zambak	
+meditation	meditation	C1	noun	meditasyon, tefekkür	
+messenger	messenger	B2	noun	haberci, ulak	
+pencil	pencil	A1	noun	kurşun kalem	
+philosophical	philosophical	C1	adj	felsefi	
+plasma	plasma	C1	noun	plazma	
+plea	plea	C1	noun	yakarış, savunma	
+purse	purse	B2	noun	kese, el çantası	
+quarterback	quarterback	C2	noun	oyun kurucu	
+relieve	relieve	C1	verb	hafifletmek, rahatlatmak	
+reservation	reservation	B2	noun	rezervasyon, çekince	
+rhetoric	rhetoric	C1	noun	retorik, belagat	
+salvation	salvation	C1	noun	kurtuluş	
+sanction	sanction	C1	noun	yaptırım, onay	
+secular	secular	C1	adj	laik	
+sensitivity	sensitivity	C1	noun	duyarlılık, hassasiyet	
+sigh	sigh	B2	noun/verb	iç çekme, iç çekmek	
+sixteen	sixteen	A1	adj	on altı	
+sovereign	sovereign	C1	adj	egemen	
+specification	specification	C1	noun	şartname, teknik özellik	
+spouse	spouse	C1	noun	eş	
+supervisor	supervisor	B2	noun	yönetici, denetmen	
+synthetic	synthetic	C1	adj	sentetik, yapay	
+tense	tense	B2	adj/noun	gergin, zaman (dilbilgisi)	
+terrifying	terrifying	B2	adj	korkunç, dehşet verici	
+trader	trader	C1	noun	tüccar	
+vegan	vegan	B2	noun/adj	vegan	
+wilderness	wilderness	C1	noun	vahşi doğa	
+adviser	adviser	B2	noun	danışman	
+aggregate	aggregate	C1	noun	toplam, bütün	
+anatomy	anatomy	C1	noun	anatomi, vücut yapısı	
+applicant	applicant	C1	noun	başvuran, aday	
+automobile	automobile	B2	noun	otomobil	
+cement	cement	C1	noun	çimento	
+chess	chess	B1	noun	satranç	
+composite	composite	C2	adj	bileşik	
+consequently	consequently	C1	adv	sonuç olarak, dolayısıyla	
+decorate	decorate	B1	verb	süslemek, dekore etmek	
+delegate	delegate	C1	noun/verb	delege, yetki devretmek	
+dull	dull	B2	adj	sıkıcı, donuk	
+fare	fare	B2	noun	bilet ücreti	
+generator	generator	C1	noun	jeneratör	
+grind	grind	C1	verb	öğütmek	
+grove	grove	C2	noun	koru, ağaçlık	
+gum	gum	B2	noun	sakız, diş eti	
+hobby	hobby	A2	noun	hobi	
+idol	idol	B2	noun	idol, put	
+illusion	illusion	C1	noun	yanılsama, illüzyon	
+incorrect	incorrect	B2	adj	yanlış, hatalı	
+junction	junction	C1	noun	kavşak	
+lance	lance	C2	noun	mızrak	
+leap	leap	C1	verb/noun	sıçramak, sıçrama	
+mass	mass	B2	noun	kütle, kitle	
+motive	motive	C1	noun	güdü, saik	
+optimal	optimal	C1	adj	en uygun	
+overtime	overtime	C1	noun	fazla mesai	
+postal	postal	C1	adj	posta ile ilgili	
+prep	prep	C1	noun	hazırlık	
+profound	profound	C1	adj	derin, köklü	
+prosecutor	prosecutor	C1	noun	savcı	
+rebellion	rebellion	C1	noun	isyan	
+recipient	recipient	C1	noun	alıcı	
+refund	refund	C1	noun/verb	geri ödeme, iade etmek	
+risky	risky	B2	adj	riskli	
+robust	robust	C1	adj	sağlam, dayanıklı	
+scam	scam	C1	noun	dolandırıcılık	
+shareholder	shareholder	C1	noun	hissedar	
+simulation	simulation	C1	noun	simülasyon	
+sob	sob	C1	verb	hıçkırmak	
+spice	spice	B2	noun	baharat	
+squeeze	squeeze	B2	verb	sıkmak	
+supervision	supervision	C1	noun	gözetim, denetim	
+swap	swap	B2	verb	takas etmek, değiştirmek	
+terrain	terrain	C1	noun	arazi	
+thrill	thrill	C1	noun	heyecan, coşku	
+towel	towel	A2	noun	havlu	
+trio	trio	C1	noun	üçlü	
+unconscious	unconscious	C1	adj	bilinçsiz, baygın	
+verify	verify	C1	verb	doğrulamak	
+vibe	vibe	C1	noun	hava, atmosfer	
+virtue	virtue	C1	noun	erdem	
+wifi	wifi	B1	noun	kablosuz internet	
+workforce	workforce	C1	noun	işgücü	
+zombie	zombie	B2	noun	zombi	
+amen	amen	C2	interj	amin	
+arise	arise	C1	verb	ortaya çıkmak	
+automotive	automotive	C1	adj	otomotiv	
+battlefield	battlefield	C1	noun	savaş alanı	
+bloom	bloom	C1	verb/noun	çiçek açmak, çiçek	
+bundle	bundle	C1	noun	demet, deste	
+butterfly	butterfly	B1	noun	kelebek	
+casualty	casualty	C1	noun	kayıp, kazazede	
+clown	clown	B2	noun	palyaço	
+conjunction	conjunction	C1	noun	bağlaç, birleşme	
+descent	descent	C1	noun	iniş, soy	
+desktop	desktop	B2	noun	masaüstü	
+dial	dial	C1	verb/noun	numara çevirmek, kadran	
+directory	directory	C1	noun	rehber, dizin	
+discharge	discharge	C1	verb	taburcu etmek, boşaltmak	
+dodge	dodge	C1	verb	sıyrılmak, kaçınmak	
+elimination	elimination	C1	noun	eleme, ortadan kaldırma	
+ginger	ginger	B2	noun	zencefil	
+guild	guild	C2	noun	lonca	
+halt	halt	C1	verb	durmak, durdurmak	
+inability	inability	C1	noun	yetersizlik, yapamama	
+jar	jar	B2	noun	kavanoz	
+litigation	litigation	C2	noun	dava, davalaşma	
+mentor	mentor	C1	noun	akıl hocası, danışman	
+merchandise	merchandise	C1	noun	ticari mal	
+miner	miner	C1	noun	madenci	
+monk	monk	C1	noun	keşiş, rahip	
+neighborhood	neighborhood	B1	noun	mahalle, komşuluk	
+norm	norm	C1	noun	norm, kural	
+offend	offend	C1	verb	gücendirmek, kırmak	
+orthodox	orthodox	C1	adj	ortodoks, geleneksel	
+overhead	overhead	C1	adv/adj	tepede, genel gider	
+pierce	pierce	C1	verb	delmek	
+pistol	pistol	B2	noun	tabanca	
+prone	prone	C1	adj	eğilimli, yatkın	
+raider	raider	C2	noun	akıncı, baskıncı	
+readily	readily	C1	adv	kolayca, gönüllü olarak	
+regiment	regiment	C2	noun	alay	
+reunion	reunion	C1	noun	buluşma, yeniden birleşme	
+revival	revival	C1	noun	canlanma	
+sanctuary	sanctuary	C1	noun	sığınak, koruma alanı	
+satan	satan	C2	noun	şeytan	
+sensor	sensor	C1	noun	sensör, algılayıcı	
+siege	siege	C1	noun	kuşatma	
+sixty	sixty	A1	adj	altmış	
+sleeve	sleeve	B2	noun	kol	
+sonic	sonic	C2	adj	sesle ilgili	
+soundtrack	soundtrack	C1	noun	film müziği	
+spine	spine	C1	noun	omurga	
+steer	steer	C1	verb	yönlendirmek, dümen kullanmak	
+tenure	tenure	C1	noun	görev süresi	
+texture	texture	C1	noun	doku	
+thankful	thankful	B1	adj	minnettar	
+treasurer	treasurer	C1	noun	veznedar, saymanlık	
+triangle	triangle	B1	noun	üçgen	
+unclear	unclear	B2	adj	belirsiz, anlaşılmaz	
+wizard	wizard	B2	noun	büyücü	
+absorb	absorb	C1	verb	emmek, özümsemek	
+admin	admin	C1	noun	yönetici, idare	
+affection	affection	C1	noun	sevgi, şefkat	
+airplane	airplane	A2	noun	uçak	
+altitude	altitude	C1	noun	yükseklik, rakım	
+bake	bake	B1	verb	fırında pişirmek	
+boo	boo	C1	interj/verb	yuh, yuhalamak	
+competent	competent	C1	adj	yetkin, becerikli	
+countryside	countryside	B2	noun	kırsal bölge	
+crane	crane	C1	noun	vinç, turna	
+debris	debris	C1	noun	enkaz, moloz	
+delegation	delegation	C1	noun	heyet, yetki devri	
+demographic	demographic	C1	adj/noun	demografik	
+donor	donor	C1	noun	bağışçı, donör	
+enroll	enroll	C1	verb	kaydolmak, kaydetmek	
+enrollment	enrollment	C1	noun	kayıt	
+exceed	exceed	C1	verb	aşmak	
+exclude	exclude	C1	verb	hariç tutmak	
+fierce	fierce	C1	adj	şiddetli, vahşi	
+garlic	garlic	B1	noun	sarımsak	
+gratitude	gratitude	C1	noun	minnettarlık	
+hail	hail	C1	noun/verb	dolu, selamlamak	
+heroin	heroin	C1	noun	eroin	
+illustration	illustration	C1	noun	resim, örnek	
+indicator	indicator	C1	noun	gösterge	
+inequality	inequality	C1	noun	eşitsizlik	
+interpret	interpret	C1	verb	yorumlamak, tercüme etmek	
+leisure	leisure	C1	noun	boş zaman	
+lend	lend	B1	verb	ödünç vermek	
+lounge	lounge	B2	noun	salon, dinlenme yeri	
+luckily	luckily	B2	adv	şans eseri, neyse ki	
+manuscript	manuscript	C1	noun	el yazması	
+mint	mint	B2	noun	nane, darphane	
+molecule	molecule	C1	noun	molekül	
+notification	notification	C1	noun	bildirim	
+nova	nova	C2	noun	nova, yeni yıldız	
+outline	outline	C1	noun/verb	taslak, özetlemek	
+polite	polite	B1	adj	kibar, nazik	
+receipt	receipt	B1	noun	makbuz, fiş	
+reliability	reliability	C1	noun	güvenilirlik	
+retailer	retailer	C1	noun	perakendeci	
+runway	runway	C1	noun	pist	
+sculpture	sculpture	B2	noun	heykel	
+showcase	showcase	C1	noun	vitrin, sergileme	
+subsidiary	subsidiary	C1	noun	yan kuruluş, bağlı şirket	
+tenth	tenth	B1	adj	onuncu	
+theology	theology	C1	noun	ilahiyat	
+underwater	underwater	B2	adj/adv	su altı	
+velocity	velocity	C1	noun	hız, sürat	
+wax	wax	C1	noun	balmumu, mum	
+accountability	accountability	C1	noun	hesap verebilirlik	
+aerial	aerial	C1	adj	havadan, hava	
+albeit	albeit	C2	conj	her ne kadar	
+alcoholic	alcoholic	C1	adj/noun	alkollü, alkolik	
+amazed	amazed	B2	adj	şaşkın, hayrete düşmüş	
+ambition	ambition	B2	noun	hırs, amaç	
+ammunition	ammunition	C1	noun	mühimmat	
+anthem	anthem	C1	noun	marş, ilahi	
+batch	batch	C1	noun	parti, grup	
+catalog	catalog	C1	noun	katalog	
+catalogue	catalogue	C1	noun	katalog	
+charitable	charitable	C1	adj	hayırsever	
+collector	collector	B2	noun	koleksiyoncu, toplayıcı	
+compliment	compliment	B2	noun/verb	iltifat, iltifat etmek	
+continual	continual	C1	adj	sürekli, aralıksız	
+coordinator	coordinator	C1	noun	koordinatör	
+deployment	deployment	C1	noun	konuşlandırma, devreye alma	
+enjoyable	enjoyable	B1	adj	keyifli	
+exotic	exotic	C1	adj	egzotik	
+exterior	exterior	C1	noun	dış, dış görünüş	
+feminine	feminine	C1	adj	kadınsı, dişil	
+firearm	firearm	C1	noun	ateşli silah	
+fountain	fountain	B2	noun	çeşme, fıskiye	
+fury	fury	C1	noun	öfke	
+genocide	genocide	C1	noun	soykırım	
+glance	glance	C1	noun/verb	bakış, göz atmak	
+glow	glow	C1	noun/verb	parıltı, parlamak	
+hay	hay	B2	noun	kuru ot, saman	
+hometown	hometown	B2	noun	memleket	
+humanitarian	humanitarian	C1	adj	insani, insancıl	
+immunity	immunity	C1	noun	bağışıklık, dokunulmazlık	
+inherit	inherit	C1	verb	miras almak	
+liberation	liberation	C1	noun	kurtuluş, özgürleşme	
+likelihood	likelihood	C1	noun	olasılık	
+lone	lone	C1	adj	yalnız, tek	
+massacre	massacre	C1	noun	katliam	
+meme	meme	C1	noun	meme, internet esprisi	
+nationalist	nationalist	C1	noun/adj	milliyetçi	
+necessity	necessity	C1	noun	gereklilik, zorunluluk	
+nickname	nickname	B2	noun	takma ad, lakap	
+observer	observer	C1	noun	gözlemci	
+offshore	offshore	C1	adj	açık deniz, yurt dışı	
+optional	optional	B2	adj	isteğe bağlı	
+papa	papa	B2	noun	baba, papa	
+paste	paste	B2	noun/verb	macun, yapıştırmak	
+pioneer	pioneer	C1	noun	öncü	
+plaza	plaza	C1	noun	meydan, iş merkezi	
+prescribe	prescribe	C1	verb	reçete etmek, belirlemek	
+prosperity	prosperity	C1	noun	refah	
+recreational	recreational	C1	adj	eğlenceye yönelik	
+refuge	refuge	C1	noun	sığınak	
+renewable	renewable	C1	adj	yenilenebilir	
+sack	sack	B2	noun/verb	çuval, işten çıkarmak	
+shortage	shortage	C1	noun	kıtlık, eksiklik	
+sphere	sphere	C1	noun	küre, alan	
+suburban	suburban	C1	adj	banliyö	
+supplier	supplier	B2	noun	tedarikçi	
+terribly	terribly	B2	adv	çok kötü, fena halde	
+territorial	territorial	C1	adj	toprakla ilgili	
+toss	toss	B2	verb	atmak, fırlatmak	
+turtle	turtle	B1	noun	kaplumbağa	
+verbal	verbal	C1	adj	sözlü	
+violate	violate	C1	verb	ihlal etmek	
+wool	wool	B1	noun	yün	
+yang	yang	C2	noun	yang	
+accountable	accountable	C1	adj	sorumlu, hesap vermesi gereken	
+advocacy	advocacy	C1	noun	savunuculuk	
+aftermath	aftermath	C1	noun	sonrası, akıbet	
+aggression	aggression	C1	noun	saldırganlık	
+analyze	analyze	B2	verb	analiz etmek, çözümlemek	
+arguably	arguably	C1	adv	tartışmalı olarak, denebilir ki	
+balloon	balloon	B1	noun	balon	
+blunt	blunt	C1	adj	kör, açık sözlü	
+brigade	brigade	C2	noun	tugay	
+burial	burial	C1	noun	gömme, cenaze	
+cardinal	cardinal	C1	adj/noun	temel, kardinal	
+champ	champ	C1	noun	şampiyon	
+champagne	champagne	B2	noun	şampanya	
+chorus	chorus	C1	noun	koro, nakarat	
+chrome	chrome	C2	noun	krom	
+clarity	clarity	C1	noun	açıklık, netlik	
+confidential	confidential	C1	adj	gizli	
+coordination	coordination	C1	noun	koordinasyon	
+discretion	discretion	C1	noun	takdir, sağduyu	
+ditch	ditch	C1	noun	hendek, çukur	
+dome	dome	C1	noun	kubbe	
+dope	dope	C2	noun	uyuşturucu, salak	
+drought	drought	C1	noun	kuraklık	
+elevation	elevation	C1	noun	yükseklik, yükselme	
+esteem	esteem	C1	noun	saygı, itibar	
+fog	fog	B1	noun	sis	
+gesture	gesture	B2	noun	jest, el kol hareketi	
+gosh	gosh	B2	interj	Aman Allahım, vay be	
+historian	historian	B2	noun	tarihçi	
+horizontal	horizontal	C1	adj	yatay	
+hospitality	hospitality	C1	noun	misafirperverlik	
+hostage	hostage	C1	noun	rehine	
+inevitably	inevitably	C1	adv	kaçınılmaz olarak	
+lad	lad	C1	noun	oğlan, delikanlı	
+listing	listing	C1	noun	liste, ilan	
+literacy	literacy	C1	noun	okuryazarlık	
+migrant	migrant	C1	noun	göçmen	
+mislead	mislead	C1	verb	yanıltmak	
+moisture	moisture	C1	noun	nem	
+monument	monument	C1	noun	anıt	
+mortality	mortality	C1	noun	ölüm oranı, fanilik	
+obsession	obsession	C1	noun	takıntı	
+opt	opt	C1	verb	tercih etmek, seçmek	
+peanut	peanut	B1	noun	yer fıstığı	
+persistent	persistent	C1	adj	ısrarlı, sürekli	
+petroleum	petroleum	C1	noun	petrol	
+pharmaceutical	pharmaceutical	C1	adj	ilaç, eczacılık	
+progression	progression	C1	noun	ilerleme, gelişim	
+rack	rack	C1	noun	raf, askı	
+rebuild	rebuild	B2	verb	yeniden inşa etmek	
+recording	recording	B2	noun	kayıt	
+rejection	rejection	C1	noun	ret, reddetme	
+reservoir	reservoir	C1	noun	rezervuar, baraj gölü	
+scrap	scrap	C1	noun	hurda, parça	
+sensation	sensation	C1	noun	his, duyum	
+shaft	shaft	C1	noun	şaft, kuyu	
+shepherd	shepherd	C1	noun	çoban	
+shuttle	shuttle	C1	noun	servis, mekik	
+slope	slope	B2	noun	yamaç, eğim	
+snack	snack	A2	noun	atıştırmalık	
+spotlight	spotlight	C1	noun	ilgi odağı, projektör	
+stab	stab	C1	verb	bıçaklamak	
+stern	stern	C1	adj	sert, ciddi	
+stiff	stiff	B2	adj	katı, tutuk	
+striker	striker	C1	noun	golcü, grevci	
+terrific	terrific	B2	adj	harika, muazzam	
+tomato	tomato	A1	noun	domates	
+tory	tory	C2	noun	muhafazakar parti üyesi	
+trafficking	trafficking	C1	noun	kaçakçılık	
+transparency	transparency	C1	noun	şeffaflık	
+trinity	trinity	C2	noun	üçlü birlik, teslis	
+unemployed	unemployed	B2	adj	işsiz	
+unlock	unlock	B2	verb	kilidini açmak	
+vault	vault	C1	noun	kasa, kemer	
+vet	vet	B2	noun	veteriner	
+wagon	wagon	B2	noun	vagon, yük arabası	
+adverse	adverse	C1	adj	olumsuz, ters	
+alumni	alumni	C1	noun	mezunlar	
+awhile	awhile	C1	adv	bir süre, bir müddet	
+aye	aye	C2	interj	evet	
+biography	biography	B2	noun	biyografi	
+broker	broker	C1	noun	simsar, komisyoncu	
+browser	browser	B1	noun	tarayıcı	
+cellular	cellular	C1	adj	hücresel	
+cocktail	cocktail	B2	noun	kokteyl	
+cod	cod	C2	noun	morina	
+crew	crew	B2	noun	mürettebat, ekip	
+cub	cub	C1	noun	yavru	
+destructive	destructive	C1	adj	yıkıcı	
+dislike	dislike	B1	verb/noun	sevmemek, hoşlanmama	
+farewell	farewell	C1	noun	veda	
+fist	fist	C1	noun	yumruk	
+fond	fond	B2	adj	düşkün, seven	
+foolish	foolish	B2	adj	aptalca, ahmakça	
+frog	frog	B1	noun	kurbağa	
+hawk	hawk	C1	noun	şahin	
+heir	heir	C1	noun	varis	
+holocaust	holocaust	C1	noun	soykırım, büyük yıkım	
+imprisonment	imprisonment	C1	noun	hapis	
+landlord	landlord	B2	noun	ev sahibi	
+landmark	landmark	C1	noun	simge yapı, dönüm noktası	
+liable	liable	C1	adj	sorumlu, yükümlü	
+midst	midst	C1	noun	orta, ortasında	
+misery	misery	C1	noun	sefalet, acı	
+module	module	C1	noun	modül	
+mommy	mommy	B1	noun	anne, anneciğim	
+mosque	mosque	B1	noun	cami	
+moss	moss	C1	noun	yosun	
+nursery	nursery	B2	noun	kreş, fidanlık	
+onion	onion	A2	noun	soğan	
+plague	plague	C1	noun	veba, bela	
+rogue	rogue	C1	adj	haydut, başıboş	
+sincere	sincere	C1	adj	samimi, içten	
+solidarity	solidarity	C1	noun	dayanışma	
+specialty	specialty	C1	noun	uzmanlık, özel ürün	
+supernatural	supernatural	C1	adj	doğaüstü	
+thirteen	thirteen	A1	adj	on üç	
+tomb	tomb	C1	noun	mezar, kabir	
+trademark	trademark	C1	noun	ticari marka	
+trim	trim	C1	verb	kırpmak, budamak	
+umbrella	umbrella	A2	noun	şemsiye	
+voyage	voyage	C1	noun	deniz yolculuğu	
+abbey	abbey	C2	noun	manastır	
+adjustment	adjustment	C1	noun	ayarlama, uyum	
+attachment	attachment	C1	noun	bağlılık, ek dosya	
+baron	baron	C2	noun	baron	
+blah	blah	C2	interj	falan filan	
+bunny	bunny	B2	noun	tavşan	
+candle	candle	B1	noun	mum	
+carve	carve	C1	verb	oymak, kesmek	
+choir	choir	C1	noun	koro	
+clutch	clutch	C1	verb/noun	kavramak, debriyaj	
+coconut	coconut	B2	noun	hindistan cevizi	
+comprise	comprise	C1	verb	içermek, oluşturmak	
+confession	confession	C1	noun	itiraf	
+corridor	corridor	B2	noun	koridor	
+credibility	credibility	C1	noun	güvenilirlik, inandırıcılık	
+distract	distract	C1	verb	dikkatini dağıtmak	
+dolphin	dolphin	B1	noun	yunus	
+fourteen	fourteen	A1	adj	on dört	
+geometry	geometry	B2	noun	geometri	
+gossip	gossip	B2	noun	dedikodu	
+grandparents	grandparents	A2	noun	büyükanne ve büyükbaba	
+haul	haul	C1	verb	sürüklemek, taşımak	
+headphone	headphone	B2	noun	kulaklık	
+holly	holly	C2	noun	çobanpüskülü	
+immense	immense	C1	adj	muazzam, devasa	
+interfere	interfere	C1	verb	karışmak, müdahale etmek	
+intersection	intersection	C1	noun	kavşak, kesişim	
+investigator	investigator	C1	noun	müfettiş, soruşturmacı	
+juvenile	juvenile	C1	adj	genç, çocuksu	
+karma	karma	C1	noun	karma	
+leverage	leverage	C1	noun	kaldıraç, etki gücü	
+mankind	mankind	C1	noun	insanlık	
+metric	metric	C1	adj/noun	metrik, ölçüt	
+militia	militia	C2	noun	milis	
+node	node	C1	noun	düğüm, boğum	
+obstacle	obstacle	C1	noun	engel	
+performer	performer	B2	noun	sanatçı, oyuncu	
+pointless	pointless	C1	adj	anlamsız, boşuna	
+prompt	prompt	C1	adj/verb	hızlı, harekete geçirmek	
+proximity	proximity	C1	noun	yakınlık	
+qualification	qualification	B2	noun	yeterlilik, diploma	
+rang	rang	A2	verb	çaldı (ring'in geçmişi)	
+render	render	C1	verb	haline getirmek, görüntülemek	
+sadness	sadness	B2	noun	üzüntü	
+selective	selective	C1	adj	seçici	
+shiny	shiny	B2	adj	parlak	
+socialism	socialism	C1	noun	sosyalizm	
+sour	sour	B2	adj	ekşi	
+spoon	spoon	A1	noun	kaşık	
+stressful	stressful	B2	adj	stresli	
+tenant	tenant	C1	noun	kiracı	
+terrace	terrace	C1	noun	teras	
+thief	thief	B1	noun	hırsız	
+tribunal	tribunal	C2	noun	mahkeme, kurul	
+undoubtedly	undoubtedly	C1	adv	şüphesiz	
+villain	villain	C1	noun	kötü adam	
+whistle	whistle	B2	noun/verb	düdük, ıslık çalmak	
+abusive	abusive	C1	adj	kaba, istismar edici	
+alley	alley	B2	noun	ara sokak	
+appetite	appetite	C1	noun	iştah	
+backyard	backyard	B2	noun	arka bahçe	
+billboard	billboard	C1	noun	reklam panosu	
+calculation	calculation	B2	noun	hesaplama	
+conceive	conceive	C1	verb	tasarlamak, hamile kalmak	
+dissolve	dissolve	C1	verb	çözünmek, eritmek	
+dynasty	dynasty	C1	noun	hanedan	
+economist	economist	C1	noun	ekonomist	
+endorse	endorse	C1	verb	onaylamak, desteklemek	
+forehead	forehead	B2	noun	alın	
+foreigner	foreigner	B1	noun	yabancı	
+forgiveness	forgiveness	C1	noun	bağışlama, af	
+gem	gem	C1	noun	değerli taş, mücevher	
+glen	glen	C2	noun	dar vadi	
+haunt	haunt	C1	verb	musallat olmak	
+heath	heath	C2	noun	fundalık	
+hypothesis	hypothesis	C1	noun	hipotez, varsayım	
+informal	informal	B2	adj	gayri resmi, samimi	
+marsh	marsh	C1	noun	bataklık	
+marshal	marshal	C2	noun	mareşal	
+maturity	maturity	C1	noun	olgunluk	
+messy	messy	B2	adj	dağınık, karışık	
+optimistic	optimistic	B2	adj	iyimser	
+owl	owl	B2	noun	baykuş	
+pharmacy	pharmacy	B1	noun	eczane	
+problematic	problematic	C1	adj	sorunlu	
+processor	processor	C1	noun	işlemci	
+promotional	promotional	C1	adj	tanıtım amaçlı	
+prospective	prospective	C1	adj	müstakbel, olası	
+psychiatric	psychiatric	C1	adj	psikiyatrik	
+renaissance	renaissance	C1	noun	rönesans	
+repeal	repeal	C2	verb	yürürlükten kaldırmak	
+roast	roast	B2	verb/noun	kızartmak, kavurmak	
+rubbish	rubbish	B2	noun	çöp, saçmalık	
+saga	saga	C1	noun	destan, uzun hikaye	
+salon	salon	C1	noun	salon, kuaför	
+seventeen	seventeen	A1	adj	on yedi	
+sodium	sodium	C1	noun	sodyum	
+surplus	surplus	C1	noun	fazlalık, artık	
+swallow	swallow	B2	verb	yutmak	
+systematic	systematic	C1	adj	sistematik, düzenli	
+transmit	transmit	C1	verb	iletmek, yaymak	
+unacceptable	unacceptable	B2	adj	kabul edilemez	
+unaware	unaware	C1	adj	habersiz	
+uncommon	uncommon	C1	adj	nadir, alışılmadık	
+underway	underway	C1	adj	devam eden, yolda	
+unified	unified	C1	adj	birleşik	
+unstable	unstable	C1	adj	kararsız, dengesiz	
+upstairs	upstairs	A2	adv	üst katta, yukarıda	
+vague	vague	C1	adj	belirsiz, bulanık	
+woo	woo	C2	verb	gönlünü kazanmaya çalışmak	
+zip	zip	B2	noun/verb	fermuar, sıkıştırmak	
+abundance	abundance	C1	noun	bolluk	
+ant	ant	B1	noun	karınca	
+antique	antique	C1	noun/adj	antika	
+autonomy	autonomy	C1	noun	özerklik	
+behavioral	behavioral	C1	adj	davranışsal	
+breeze	breeze	C1	noun	esinti	
+carnival	carnival	B2	noun	karnaval	
+commodity	commodity	C1	noun	emtia, mal	
+congressman	congressman	C1	noun	kongre üyesi	
+coral	coral	C1	noun	mercan	
+correlation	correlation	C1	noun	ilişki, korelasyon	
+correspondent	correspondent	C1	noun	muhabir	
+coupon	coupon	B2	noun	kupon	
+covid	covid	C1	noun	kovid	
+curtain	curtain	B1	noun	perde	
+dentist	dentist	A2	noun	diş hekimi	
+dodger	dodger	C2	noun	kaçınan kimse	
+dough	dough	C1	noun	hamur	
+endanger	endanger	C1	verb	tehlikeye atmak	
+envelope	envelope	B1	noun	zarf	
+fade	fade	C1	verb	solmak, silinmek	
+fatigue	fatigue	C1	noun	yorgunluk	
+fellowship	fellowship	C1	noun	dostluk, burs	
+fictional	fictional	C1	adj	kurgusal	
+fragile	fragile	C1	adj	kırılgan, hassas	
+fringe	fringe	C1	noun	saçak, kenar	
+fulfill	fulfill	C1	verb	yerine getirmek, gerçekleştirmek	
+granite	granite	C2	noun	granit	
+handbook	handbook	C1	noun	el kitabı	
+hardy	hardy	C1	adj	dayanıklı, sağlam	
+instinct	instinct	C1	noun	içgüdü	
+irony	irony	C1	noun	ironi, alay	
+judiciary	judiciary	C1	noun	yargı	
+legion	legion	C2	noun	lejyon	
+lethal	lethal	C1	adj	öldürücü	
+lime	lime	B2	noun	misket limonu, kireç	
+logistics	logistics	C1	noun	lojistik	
+maid	maid	B2	noun	hizmetçi	
+maple	maple	C2	noun	akçaağaç	
+mistress	mistress	C1	noun	metres, bayan öğretmen	
+morality	morality	C1	noun	ahlak	
+mortal	mortal	C1	adj/noun	ölümlü, fani, ölümcül	
+nonprofit	nonprofit	C1	adj	kâr amacı gütmeyen	

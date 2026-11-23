@@ -96,14 +96,24 @@ To add an interface language, copy `extension/_locales/en/messages.json` to a fo
 
 ## 5000 Kelime web app
 
-`web/` is a separate, phone-first site with only the word cards: the same 5000 words with Turkish
-meanings and an estimated CEFR level (A1–C2) each, a level filter, swipe right / left / up, undo,
-Review and the three word lists. A second section, Sentences, has 22 grammar units from A1 to B2
-(am/is/are, was/were, I am going, past simple, going to, if sentences, passive and more), each with
-12 exercises: build the English sentence from shuffled word tiles, or pick the word for a gap. A
-wrong answer comes back at the end of the lesson. It's plain static files with no build step, no account and no API
-key; progress is kept in the browser's local storage, so it stays on that device. It can be added to
-the home screen and opens full screen.
+`web/` is a separate, phone-first site for words and grammar, in six languages to learn: English,
+German, Spanish, French, Italian and Portuguese. The first visit asks for your native language
+(Turkish or English, which is also the interface language), the language to learn and a starting
+level; the language pill at the top (or Settings) changes them later, and progress is kept per
+language.
+
+- **Words:** the 5000 most frequent words of the language as a pile of cards, each with its level
+  (A1–C2) in the corners and its meaning in your language. Swipe right if you know it, left if you
+  don't, up if you're not sure (or use the buttons, or the arrow keys). Review brings back the words
+  you didn't know; Lists shows them all, searchable.
+- **Sentences:** 20–22 grammar units per language from A1 to B2, 12 exercises each: build the
+  sentence from shuffled word tiles, or pick the word for a gap. A wrong answer comes back at the end
+  of the lesson.
+- A tab bar on phones and a sidebar on wide screens, light and dark themes, can be added to the home
+  screen.
+
+It's plain static files with no build step, no account and no API key. Progress is kept in the
+browser's local storage, so it stays on that device.
 
 Deploy on Vercel: import the repository, set **Root Directory** to `web`, leave the framework preset
 on "Other" with no build command, and deploy. To try it locally, serve the folder:
@@ -112,9 +122,12 @@ on "Other" with no build command, and deploy. To try it locally, serve the folde
 python3 -m http.server -d web 8000
 ```
 
-`web/words.tsv` holds one word per line, most frequent first: `word`, level, part of speech and
-meaning, separated by tabs. `web/sentences.json` holds the units. The meanings, levels and lessons
-were written with an AI model.
+`web/data/<language>/words.tsv` holds one word per line, most frequent first: the word, how the card
+shows it (nouns with their article), level, part of speech, and the Turkish and English meanings,
+separated by tabs. `web/data/<language>/units.json` holds the grammar units and
+`web/data/index.json` lists the languages that are ready. The word lists come from wordfreq
+(`tools/core-words.py` for English, `tools/deck-candidates.py` for the others); the meanings, levels
+and lessons were written with an AI model and are estimates.
 
 ## License
 

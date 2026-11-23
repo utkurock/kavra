@@ -3,79 +3,54 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="theme-color" content="#0b0b0d">
-<meta name="description" content="En sık kullanılan 5000 İngilizce kelimeyi kartları kaydırarak öğren.">
+<meta name="theme-color" content="#f6f5f2" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0c0c0f" media="(prefers-color-scheme: dark)">
+<meta name="description" content="En sık 5000 kelimeyi kartları kaydırarak, dilbilgisini cümle kurarak öğren. English, Deutsch, Español, Français, Italiano, Português.">
 <meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
 <meta name="apple-mobile-web-app-title" content="5000 Kelime">
 <title>5000 Kelime</title>
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="icon" href="icon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="icon-180.png">
 <link rel="stylesheet" href="style.css">
+<script type="module" src="js/main.js"></script>
 </head>
 <body>
-<header class="top">
-  <div class="title-row">
-    <h1>5000 Kelime</h1>
-    <span id="seen" class="seen words-only"></span>
-  </div>
-  <nav class="modes" role="tablist" aria-label="Bölüm">
-    <button role="tab" data-mode="words" aria-selected="true">Kelimeler</button>
-    <button role="tab" data-mode="sentences" aria-selected="false">Cümleler</button>
-  </nav>
-  <div class="split words-only" aria-hidden="true"><span class="known"></span><span class="unsure"></span><span class="unknown"></span></div>
-  <div class="levels" role="group" aria-label="Seviyeler" id="levels"></div>
-  <nav class="tabs words-only" role="tablist">
-    <button role="tab" data-view="new" aria-selected="true">Yeni <span class="count"></span></button>
-    <button role="tab" data-view="review" aria-selected="false">Tekrar <span class="count"></span></button>
-    <button role="tab" data-view="lists" aria-selected="false">Listeler</button>
-  </nav>
-</header>
+<div id="app" class="app" hidden>
+  <aside class="rail">
+    <div class="rail-brand"><img src="icon.svg" alt=""><span data-app-name></span></div>
+    <nav id="nav" class="nav" aria-label="Menu"></nav>
+    <button class="lang-pill rail-lang" type="button"></button>
+  </aside>
+  <header class="topbar">
+    <div class="topbar-brand"><img src="icon.svg" alt=""><span data-app-name></span></div>
+    <button class="lang-pill" type="button"></button>
+  </header>
+  <main id="view" class="view" tabindex="-1"></main>
+</div>
 
-<main id="study" class="study">
-  <div id="pile" class="pile" aria-live="polite"></div>
-  <p class="keys">← bilmiyorum · ↑ emin değilim · → biliyorum · Boşluk: anlamı</p>
-  <div class="controls">
-    <button id="undo" class="sbtn undo" type="button" aria-label="Geri al">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 14 4 9l5-5"/><path d="M4 9h11a5 5 0 0 1 0 10h-3"/></svg>
-    </button>
-    <button class="sbtn unknown" type="button" data-state="unknown" aria-label="Bilmiyorum">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
-    </button>
-    <button class="sbtn unsure" type="button" data-state="unsure" aria-label="Emin değilim">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9.2 9a3 3 0 1 1 4.3 2.7c-.9.5-1.5 1.2-1.5 2.3"/><path d="M12 18h.01"/></svg>
-    </button>
-    <button class="sbtn known" type="button" data-state="known" aria-label="Biliyorum">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>
-    </button>
-  </div>
-</main>
+<div id="onboarding" class="onboarding" hidden></div>
 
-<main id="lists" class="lists" hidden>
-  <div class="ltabs" role="tablist" id="listTabs">
-    <button role="tab" data-list="unknown" aria-selected="true">Bilmiyorum <span class="count"></span></button>
-    <button role="tab" data-list="unsure" aria-selected="false">Emin değilim <span class="count"></span></button>
-    <button role="tab" data-list="known" aria-selected="false">Biliyorum <span class="count"></span></button>
-  </div>
-  <ul id="wordList" class="wlist"></ul>
-</main>
-<main id="units" class="units" hidden></main>
-
-<section id="lesson" class="lesson" hidden>
+<section id="lesson" class="lesson" hidden aria-labelledby="lessonTitle">
   <div class="lesson-top">
-    <button id="quit" class="icon-btn" type="button" aria-label="Dersi bitir">
+    <button id="quit" class="round-btn" type="button">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
     </button>
-    <div class="lbar" role="progressbar" aria-valuemin="0" aria-valuemax="100"><span></span></div>
+    <div class="lesson-head">
+      <span id="lessonTitle" class="lesson-title"></span>
+      <div id="lessonBar" class="bar" role="progressbar" aria-valuemin="0" aria-valuemax="100"><span></span></div>
+    </div>
   </div>
   <div id="exercise" class="exercise"></div>
   <footer id="sheet" class="sheet">
-    <div class="verdict" aria-live="polite"></div>
-    <button id="check" class="primary" type="button" disabled>Kontrol et</button>
+    <div class="sheet-inner">
+      <div id="verdict" class="verdict" aria-live="polite"></div>
+      <button id="check" class="btn primary big" type="button" disabled></button>
+    </div>
   </footer>
 </section>
-<script src="sentences.js"></script>
-<script src="app.js"></script>
+
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
 </body>
 </html>

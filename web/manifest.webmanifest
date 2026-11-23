@@ -1,17 +1,30 @@
 {
   "name": "5000 Kelime",
   "short_name": "5000 Kelime",
-  "description": "En sık kullanılan 5000 İngilizce kelimeyi kartları kaydırarak öğren.",
+  "description": "En sık 5000 kelime ve cümle dersleri: English, Deutsch, Español, Français, Italiano, Português.",
   "lang": "tr",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
   "orientation": "portrait",
-  "background_color": "#0b0b0d",
-  "theme_color": "#0b0b0d",
+  "background_color": "#0c0c0f",
+  "theme_color": "#0c0c0f",
   "icons": [
-    { "src": "icon.svg", "sizes": "any", "type": "image/svg+xml" },
-    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png" },
-    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
   ]
 }
