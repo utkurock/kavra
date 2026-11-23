@@ -1,0 +1,5002 @@
+# The 5000 most frequent English words (extension/core-words.txt), most frequent first, one per line:
+# word, CEFR level, part of speech, Turkish meanings, separated by tabs. Levels and meanings are AI-written estimates.
+the	A1	belirteç	(belirli tanımlık) bu, o
+to	A1	edat	-e, -a, -mek için
+and	A1	bağlaç	ve
+of	A1	edat	-in, -ın (aitlik), -den
+a	A1	belirteç	(belirsiz tanımlık) bir
+in	A1	edat	içinde, -de, -da
+I	A1	zamir	ben
+be	A1	fiil	olmak
+for	A1	edat	için, -e
+that	A1	zamir/bağlaç	o, ki
+you	A1	zamir	sen, siz
+it	A1	zamir	o (cansız/hayvan), onu
+on	A1	edat	üzerinde, -de
+with	A1	edat	ile, -le birlikte
+this	A1	zamir	bu
+as	A1	bağlaç/edat	olarak, gibi, -dığı için
+have	A1	fiil	sahip olmak, -mış olmak (yardımcı fiil), yemek/içmek
+at	A1	edat	-de, -da, -e
+he	A1	zamir	o (erkek)
+not	A1	zarf	değil, -me
+by	A1	edat	tarafından, yanında, -e kadar
+but	A1	bağlaç	ama, fakat
+from	A1	edat	-den, -dan
+my	A1	belirteç	benim
+or	A1	bağlaç	veya, ya da
+we	A1	zamir	biz
+your	A1	belirteç	senin, sizin
+all	A1	belirteç/zamir	hepsi, tüm, bütün
+so	A1	zarf/bağlaç	çok, bu yüzden, öyle
+his	A1	belirteç	onun (erkek)
+they	A1	zamir	onlar
+if	A1	bağlaç	eğer, -se
+one	A1	isim	bir, biri
+can	A1	fiil	-ebilmek, -abilmek
+will	A1	fiil	-ecek, -acak (gelecek zaman)
+just	A2	zarf	sadece, az önce, tam
+like	A1	fiil/edat	sevmek, gibi, benzer
+about	A1	edat	hakkında, yaklaşık
+up	A1	zarf	yukarı, yukarıda
+out	A1	zarf	dışarı, dışarıda
+what	A1	zamir	ne
+when	A1	zarf/bağlaç	ne zaman, -dığında
+more	A1	belirteç/zarf	daha fazla, daha
+do	A1	fiil	yapmak, etmek
+no	A1	belirteç/ünlem	hayır, hiç, değil
+who	A1	zamir	kim
+their	A1	belirteç	onların
+there	A1	zarf	orada, orası
+her	A1	zamir/belirteç	onu, onun (kadın)
+which	A1	zamir	hangisi, hangi
+time	A1	isim	zaman, vakit, kez
+get	A1	fiil	almak, elde etmek, olmak
+would	A2	fiil	-erdi, -ecekti (şartlı kip)
+she	A1	zamir	o (kadın)
+new	A1	sıfat	yeni
+people	A1	isim	insanlar, halk
+how	A1	zarf	nasıl, ne kadar
+some	A1	belirteç/zamir	bazı, biraz
+also	A2	zarf	ayrıca, de, da
+now	A1	zarf	şimdi
+other	A1	belirteç/zamir	diğer, başka
+its	A2	belirteç	onun (cansız/hayvan)
+our	A1	belirteç	bizim
+than	A2	bağlaç	-den, -dan (karşılaştırma)
+good	A1	sıfat	iyi
+only	A1	zarf/sıfat	sadece, yalnızca, tek
+after	A1	edat/bağlaç	sonra, -dıktan sonra
+first	A1	sıfat/zarf	birinci, ilk
+into	A2	edat	içine
+know	A1	fiil	bilmek, tanımak
+see	A1	fiil	görmek, anlamak
+two	A1	belirteç	iki
+make	A1	fiil	yapmak, etmek, üretmek
+over	A2	edat/zarf	üzerinde, bitmiş, boyunca
+think	A1	fiil	düşünmek, sanmak
+any	A1	belirteç	herhangi bir, hiç
+then	A1	zarf	sonra, o zaman
+could	A2	fiil	-ebilirdi, -ebilir (nazik)
+back	A1	zarf/isim	geri, arka
+want	A1	fiil	istemek
+because	A1	bağlaç	çünkü
+go	A1	fiil	gitmek
+well	A1	zarf/sıfat	iyi, iyi bir şekilde, kuyu
+say	A1	fiil	söylemek, demek
+way	A1	isim	yol, yöntem, biçim
+most	A2	belirteç/zarf	çoğu, en çok
+much	A1	belirteç/zarf	çok, fazla
+very	A1	zarf	çok
+where	A1	zarf	nerede, nereye
+even	A2	zarf	bile, hatta
+should	A2	fiil	-meli, -malı
+may	B1	fiil	-ebilir, -ebilmek (izin/olasılık)
+here	A1	zarf	burada, buraya
+need	A1	fiil/isim	ihtiyaç duymak, gereksinim
+really	A2	zarf	gerçekten
+right	A1	sıfat/isim	doğru, sağ, hak
+work	A1	isim/fiil	iş, çalışmak
+year	A1	isim	yıl, sene
+being	B1	isim	varlık, canlı, olmak
+day	A1	isim	gün
+too	A1	zarf	de, da, fazla
+before	A1	edat/bağlaç	önce, -meden önce
+off	A2	zarf/edat	kapalı, uzakta, -den
+why	A1	zarf	neden, niçin
+still	A2	zarf/sıfat	hâlâ, sakin
+take	A1	fiil	almak, götürmek, sürmek
+many	A1	belirteç	çok, birçok
+never	A1	zarf	asla, hiçbir zaman
+life	A1	isim	hayat, yaşam
+world	A1	isim	dünya
+down	A1	zarf/edat	aşağı, aşağıda
+great	A1	sıfat	harika, büyük, çok iyi
+through	B1	edat	içinden, boyunca, aracılığıyla
+last	A1	sıfat/fiil	son, geçen, sürmek
+while	A2	bağlaç	-erken, iken, oysa
+best	A1	sıfat	en iyi
+such	B1	belirteç	böyle, öyle
+love	A1	isim/fiil	aşk, sevgi, sevmek
+man	A1	isim	adam, erkek
+home	A1	isim	ev, yuva
+long	A1	sıfat	uzun
+look	A1	fiil/isim	bakmak, görünmek, bakış
+something	A1	zamir	bir şey
+use	A1	fiil/isim	kullanmak, kullanım
+same	A1	sıfat	aynı
+both	A2	belirteç/zamir	her ikisi
+every	A1	belirteç	her
+come	A1	fiil	gelmek
+part	A2	isim	parça, bölüm, kısım
+state	B1	isim	devlet, eyalet, durum
+three	A1	belirteç	üç
+around	A2	edat/zarf	etrafında, yaklaşık
+between	A2	edat	arasında
+always	A1	zarf	her zaman, daima
+better	A2	sıfat/zarf	daha iyi
+find	A1	fiil	bulmak
+help	A1	fiil/isim	yardım etmek, yardım
+high	A1	sıfat	yüksek
+little	A1	sıfat	küçük, az
+old	A1	sıfat	yaşlı, eski
+since	A2	edat/bağlaç	-den beri, çünkü
+another	A2	belirteç/zamir	başka bir, bir diğeri
+own	A2	sıfat/fiil	kendi, sahip olmak
+thing	A1	isim	şey, nesne
+under	A2	edat	altında
+during	A2	edat	sırasında, boyunca
+game	A1	isim	oyun, maç
+give	A1	fiil	vermek
+house	A1	isim	ev
+place	A1	isim	yer, mekân
+school	A1	isim	okul
+again	A1	zarf	tekrar, yine
+next	A1	sıfat/zarf	sonraki, gelecek
+each	A2	belirteç	her bir
+without	A2	edat	-siz, -sız, olmadan
+against	B1	edat	karşı, aleyhine
+end	A1	isim/fiil	son, bitmek, bitirmek
+found	A2	fiil	buldu (find'ın geçmişi), kurmak
+must	A2	fiil	-meli, -malı, zorunda
+show	A1	fiil/isim	göstermek, gösteri
+big	A1	sıfat	büyük
+feel	A1	fiil	hissetmek
+sure	A2	sıfat	emin, kesin
+team	A1	isim	takım, ekip
+ever	A2	zarf	hiç, şimdiye kadar
+family	A1	isim	aile
+keep	A2	fiil	tutmak, saklamak, sürdürmek
+might	B1	fiil	-ebilir (olasılık)
+please	A1	ünlem/fiil	lütfen, memnun etmek
+put	A1	fiil	koymak
+money	A1	isim	para
+free	A1	sıfat	ücretsiz, özgür, serbest
+second	A1	sıfat/isim	ikinci, saniye
+someone	A2	zamir	birisi, biri
+away	A2	zarf	uzakta, uzağa
+left	A1	sıfat/isim	sol, kalmış
+number	A1	isim	sayı, numara
+city	A1	isim	şehir
+lot	A2	isim	çok miktar, parti, arsa
+name	A1	isim	ad, isim
+night	A1	isim	gece
+play	A1	fiil/isim	oynamak, çalmak, oyun
+until	A2	edat/bağlaç	-e kadar
+company	A2	isim	şirket, arkadaşlık
+doing	A2	fiil	yapıyor (do'nun -ing hâli), yapmak
+few	A2	belirteç	az, birkaç
+let	A2	fiil	izin vermek, bırakmak
+real	A2	sıfat	gerçek
+call	A1	fiil/isim	aramak, çağırmak, arama
+different	A1	sıfat	farklı
+set	A2	fiil/isim	ayarlamak, koymak, takım
+thought	B1	isim/fiil	düşünce, düşündü
+however	B1	zarf	ancak, ne var ki
+god	A2	isim	tanrı, Allah
+government	B1	isim	hükümet
+group	A2	isim	grup
+public	B1	sıfat/isim	kamusal, halk
+top	A2	isim/sıfat	tepe, üst, en üstteki
+woman	A1	isim	kadın
+business	A2	isim	iş, ticaret
+care	A2	isim/fiil	bakım, özen, umursamak
+start	A1	fiil/isim	başlamak, başlangıç
+system	A2	isim	sistem
+week	A1	isim	hafta
+already	A2	zarf	zaten, çoktan
+anything	A2	zamir	herhangi bir şey
+case	B1	isim	durum, dava, kutu
+nothing	A2	zamir	hiçbir şey
+person	A1	isim	kişi, insan
+today	A1	zarf/isim	bugün
+change	A1	isim/fiil	değişim, değiştirmek, bozuk para
+enough	A2	belirteç/zarf	yeterli, yeterince
+everything	A2	zamir	her şey
+full	A2	sıfat	dolu, tam
+live	A1	fiil/sıfat	yaşamak, canlı
+point	A2	isim/fiil	nokta, puan, işaret etmek
+read	A1	fiil	okumak
+tell	A1	fiil	söylemek, anlatmak
+yet	B1	zarf/bağlaç	henüz, yine de
+bad	A1	sıfat	kötü
+four	A1	belirteç	dört
+hard	A2	sıfat/zarf	zor, sert, çok çalışarak
+mean	B1	fiil/sıfat	anlamına gelmek, kastetmek, cimri
+once	A2	zarf	bir kez, bir zamanlar
+support	B1	isim/fiil	destek, desteklemek
+include	B1	fiil	içermek, kapsamak
+music	A1	isim	müzik
+power	B1	isim	güç, iktidar, elektrik
+stop	A1	fiil/isim	durmak, durdurmak, durak
+water	A1	isim	su
+base	B1	isim/fiil	taban, temel, dayandırmak
+believe	A2	fiil	inanmak
+head	A2	isim	baş, kafa, başkan
+national	B1	sıfat	ulusal
+small	A1	sıfat	küçük
+white	A1	sıfat	beyaz
+far	A2	zarf/sıfat	uzak, çok uzakta
+job	A1	isim	iş, meslek
+side	A2	isim	yan, taraf
+though	B1	bağlaç/zarf	-e rağmen, ama
+try	A1	fiil	denemek, çalışmak
+went	A1	fiil	gitti (go'nun geçmişi)
+yes	A1	ünlem	evet
+actually	A2	zarf	aslında
+american	A2	sıfat/isim	Amerikalı, Amerikan
+later	A1	zarf	daha sonra
+less	A2	belirteç/zarf	daha az
+line	A2	isim	çizgi, sıra, hat
+order	A2	isim/fiil	sipariş, düzen, emir, sipariş vermek
+party	A1	isim	parti, eğlence, taraf
+run	A1	fiil	koşmak, çalıştırmak, yönetmek
+service	A2	isim	hizmet
+country	A1	isim	ülke, kır
+open	A1	sıfat/fiil	açık, açmak
+season	A2	isim	mevsim, sezon
+thank	A1	fiil	teşekkür etmek
+child	A1	isim	çocuk
+everyone	A1	zamir	herkes
+general	B1	sıfat/isim	genel, general
+unite	B2	fiil	birleştirmek, birleşmek
+area	A2	isim	alan, bölge
+black	A1	sıfat	siyah
+follow	A2	fiil	takip etmek, izlemek
+law	B1	isim	yasa, hukuk
+together	A2	zarf	birlikte
+war	A2	isim	savaş
+whole	B1	sıfat/isim	bütün, tüm
+car	A1	isim	araba
+face	A2	isim/fiil	yüz, karşılaşmak
+five	A1	belirteç	beş
+kind	A2	isim/sıfat	tür, nazik
+maybe	A2	zarf	belki
+per	B1	edat	başına, her
+president	A2	isim	başkan, cumhurbaşkanı
+story	A1	isim	hikâye, öykü
+course	A2	isim	kurs, ders, rota
+health	A2	isim	sağlık
+hope	A2	fiil/isim	ummak, umut
+important	A1	sıfat	önemli
+within	B1	edat	içinde, -in içinde
+able	A2	sıfat	yapabilen, muktedir
+book	A1	isim	kitap
+early	A1	sıfat/zarf	erken
+friend	A1	isim	arkadaş
+information	A2	isim	bilgi
+local	B1	sıfat	yerel
+oh	A2	ünlem	ah, oh
+post	B1	isim/fiil	posta, gönderi, direk, paylaşmak
+video	A1	isim	video
+young	A1	sıfat	genç
+ago	A2	zarf	önce
+social	B1	sıfat	sosyal, toplumsal
+talk	A1	fiil/isim	konuşmak, konuşma
+court	B1	isim	mahkeme, kort
+fact	A2	isim	gerçek, olgu
+given	B2	fiil/edat	verilmiş, göz önüne alındığında
+guy	B1	isim	adam, herif
+half	A2	isim/belirteç	yarım, yarı
+hand	A1	isim	el
+level	A2	isim	seviye, düzey
+mind	B1	isim/fiil	zihin, akıl, aldırmak
+often	A1	zarf	sık sık
+single	A2	sıfat	tek, bekâr
+become	A2	fiil	olmak, hâline gelmek
+body	A2	isim	vücut, beden
+control	B1	isim/fiil	kontrol, denetlemek
+death	B1	isim	ölüm
+food	A1	isim	yiyecek, yemek
+hour	A1	isim	saat (süre)
+office	A2	isim	ofis, büro
+pay	A2	fiil/isim	ödemek, maaş
+problem	A2	isim	sorun
+south	A2	isim/sıfat	güney
+true	A2	sıfat	doğru, gerçek
+almost	A2	zarf	neredeyse
+history	A2	isim	tarih
+large	A2	sıfat	büyük, geniş
+lose	A2	fiil	kaybetmek
+research	B1	isim/fiil	araştırma, araştırmak
+room	A1	isim	oda, yer
+several	B1	belirteç	birkaç, çeşitli
+university	A2	isim	üniversite
+win	A2	fiil	kazanmak
+wrong	A2	sıfat	yanlış
+along	B1	edat/zarf	boyunca, birlikte
+anyone	A2	zamir	herhangi biri, kimse
+else	A2	zarf	başka, daha
+girl	A1	isim	kız
+matter	B1	isim/fiil	mesele, önemli olmak
+pretty	A2	sıfat/zarf	güzel, oldukça
+remember	A1	fiil	hatırlamak
+air	A2	isim	hava
+bite	B1	fiil/isim	ısırmak, ısırık
+hit	B1	fiil/isim	vurmak, darbe, hit
+nice	A1	sıfat	güzel, hoş
+probably	A2	zarf	muhtemelen
+understand	A1	fiil	anlamak
+class	A1	isim	sınıf, ders
+close	A2	fiil/sıfat	kapatmak, yakın
+idea	A1	isim	fikir
+international	B1	sıfat	uluslararası
+past	A2	isim/edat	geçmiş, -in yanından
+possible	A2	sıfat	mümkün
+cause	B1	isim/fiil	neden, sebep olmak
+due	B2	sıfat	beklenen, -den dolayı
+happy	A1	sıfat	mutlu
+human	B1	sıfat/isim	insan, insani
+member	A2	isim	üye
+month	A1	isim	ay
+move	A2	fiil/isim	taşınmak, hareket etmek
+question	A1	isim	soru
+series	B1	isim	dizi, seri
+wait	A1	fiil	beklemek
+ask	A1	fiil	sormak, istemek
+community	B1	isim	topluluk
+data	B1	isim	veri
+late	A1	sıfat/zarf	geç
+leave	A2	fiil	ayrılmak, bırakmak
+north	A2	isim/sıfat	kuzey
+special	A2	sıfat	özel
+watch	A1	fiil/isim	izlemek, kol saati
+either	B1	belirteç/zarf	ikisinden biri, de (olumsuz)
+future	A2	isim	gelecek
+light	A2	isim/sıfat	ışık, hafif
+low	A2	sıfat	düşük, alçak
+million	A2	belirteç	milyon
+morning	A1	isim	sabah
+police	A2	isim	polis
+short	A1	sıfat	kısa
+stay	A1	fiil	kalmak
+age	A2	isim	yaş, çağ
+buy	A1	fiil	satın almak
+deal	B1	isim/fiil	anlaşma, ele almak
+rather	B1	zarf	oldukça, daha ziyade
+reason	A2	isim	sebep, neden
+red	A1	sıfat	kırmızı
+report	B1	isim/fiil	rapor, bildirmek
+soon	A1	zarf	yakında
+third	A2	sıfat	üçüncü
+turn	A2	fiil/isim	dönmek, sıra
+whether	B1	bağlaç	-ip -mediği
+among	B1	edat	arasında
+check	A2	fiil/isim	kontrol etmek, kontrol, çek
+development	B1	isim	gelişme, geliştirme
+form	A2	isim/fiil	form, biçim, oluşturmak
+further	B1	sıfat/zarf	daha ileri, ek
+heart	A2	isim	kalp, yürek
+minute	A1	isim	dakika
+myself	A2	zamir	kendim
+yourself	A2	zamir	kendin
+act	B1	fiil/isim	davranmak, eylem, yasa
+although	B1	bağlaç	-e rağmen, her ne kadar
+fire	A2	isim/fiil	ateş, yangın, kovmak
+fun	A1	isim/sıfat	eğlence, eğlenceli
+major	B2	sıfat/isim	büyük, önemli, ana, binbaşı
+medium	B1	sıfat/isim	orta, ortam
+phone	A1	isim	telefon
+player	A2	isim	oyuncu, çalar
+art	A1	isim	sanat
+behind	A2	edat/zarf	arkasında
+build	A2	fiil	inşa etmek
+easy	A1	sıfat	kolay
+gonna	B1	fiil	-ecek (konuşma dilinde "going to")
+market	A2	isim	pazar, piyasa
+near	A2	edat/sıfat	yakın, yakınında
+plan	A2	isim/fiil	plan, planlamak
+political	B1	sıfat	siyasi
+quite	A2	zarf	oldukça, tamamen
+six	A1	belirteç	altı
+west	A2	isim/sıfat	batı
+accord	C1	isim/fiil	uyum, anlaşma, vermek
+available	B1	sıfat	mevcut, müsait
+education	A2	isim	eğitim
+final	A2	sıfat/isim	son, final
+former	B2	sıfat	eski, önceki
+front	A2	isim	ön
+kid	A1	isim	çocuk
+list	A1	isim/fiil	liste, listelemek
+ready	A1	sıfat	hazır
+sometime	B1	zarf	bir ara, bir zaman
+son	A1	isim	oğul
+street	A1	isim	sokak, cadde
+bring	A1	fiil	getirmek
+college	A2	isim	kolej, yüksekokul
+current	B1	sıfat	şimdiki, mevcut
+example	A1	isim	örnek
+experience	A2	isim/fiil	deneyim, tecrübe etmek
+hear	A1	fiil	duymak
+meet	A1	fiil	tanışmak, buluşmak
+program	A2	isim	program
+type	A2	isim/fiil	tür, yazmak (klavyede)
+baby	A1	isim	bebek
+chance	A2	isim	şans, fırsat
+father	A1	isim	baba
+march	A2	isim/fiil	mart, yürümek
+process	B1	isim/fiil	süreç, işlemek
+song	A1	isim	şarkı
+study	A1	fiil/isim	çalışmak, öğrenim, ders çalışmak
+word	A1	isim	kelime, söz
+across	A2	edat	karşısında, boyunca
+action	A2	isim	eylem, hareket
+clear	A2	sıfat/fiil	açık, net, temizlemek
+himself	A2	zamir	kendisi (erkek)
+outside	A1	zarf/edat	dışarıda, dışında
+self	B2	isim	benlik, öz
+student	A1	isim	öğrenci
+board	B1	isim	tahta, kurul
+cost	A2	isim/fiil	maliyet, mal olmak
+cut	A2	fiil/isim	kesmek, kesik
+field	B1	isim	alan, tarla
+hold	A2	fiil	tutmak, elinde tutmak
+instead	A2	zarf	onun yerine
+main	A2	sıfat	ana, başlıca
+moment	A2	isim	an, lahza
+mother	A1	isim	anne
+road	A1	isim	yol
+seem	B1	fiil	görünmek, gibi gelmek
+town	A1	isim	kasaba, şehir
+department	B1	isim	bölüm, departman
+energy	B1	isim	enerji
+fight	A2	fiil/isim	dövüşmek, kavga
+fine	A2	sıfat	iyi, güzel, ince, para cezası
+force	B1	isim/fiil	güç, zorlamak
+issue	B1	isim	konu, sorun, sayı
+price	A1	isim	fiyat
+rest	A2	isim/fiil	dinlenme, geri kalan, dinlenmek
+result	B1	isim	sonuç
+space	A2	isim	uzay, boşluk, alan
+summer	A1	isim	yaz
+term	B1	isim	terim, dönem, süre
+wife	A1	isim	karı, eş
+beautiful	A1	sıfat	güzel
+date	A2	isim	tarih, randevu
+kill	A2	fiil	öldürmek
+land	A2	isim/fiil	kara, arazi, inmek
+miss	A2	fiil	özlemek, kaçırmak, bayan
+project	A2	isim	proje
+sex	B1	isim	cinsiyet, seks
+shot	B1	isim	atış, çekim, iğne
+site	A2	isim	site, yer
+strong	A2	sıfat	güçlü
+account	B1	isim	hesap, anlatım
+especially	B1	zarf	özellikle
+eye	A1	isim	göz
+june	A1	isim	haziran
+parent	A2	isim	ebeveyn
+period	B1	isim	dönem, süre
+position	B1	isim	konum, pozisyon
+record	B1	isim/fiil	kayıt, rekor, kaydetmek
+similar	B1	sıfat	benzer
+total	B1	sıfat/isim	toplam, tam
+above	A2	edat/zarf	üstünde, yukarıda
+club	A2	isim	kulüp
+common	B1	sıfat	yaygın, ortak
+die	A2	fiil	ölmek
+film	A1	isim	film
+happen	A2	fiil	olmak, meydana gelmek
+lead	B1	fiil/isim	önderlik etmek, liderlik, kurşun
+likely	B1	sıfat	muhtemel
+military	B2	sıfat/isim	askeri, ordu
+perfect	A2	sıfat	mükemmel
+personal	B1	sıfat	kişisel
+security	B1	isim	güvenlik
+share	A2	fiil/isim	paylaşmak, pay
+tv	A1	isim	televizyon
+won	A2	fiil	kazandı (win'in geçmişi), won
+april	A1	isim	nisan
+center	A2	isim	merkez
+county	B2	isim	ilçe, kontluk
+couple	A2	isim	çift, birkaç
+dead	A2	sıfat	ölü
+english	A1	isim/sıfat	İngilizce, İngiliz
+industry	B1	isim	sanayi, endüstri
+inside	A2	zarf/edat	içeride, içinde
+online	A2	sıfat/zarf	çevrimiçi
+private	B1	sıfat	özel, gizli
+return	A2	fiil/isim	dönmek, geri vermek, dönüş
+sense	B1	isim/fiil	duyu, anlam, hissetmek
+star	A1	isim	yıldız
+test	A2	isim/fiil	test, sınav, denemek
+view	B1	isim	görüş, manzara
+break	A2	fiil/isim	kırmak, ara, mola
+british	A2	sıfat	İngiliz
+event	A2	isim	olay, etkinlik
+higher	B1	sıfat	daha yüksek
+middle	A2	isim/sıfat	orta
+present	B1	isim/sıfat	hediye, şimdiki, sunmak
+sorry	A1	sıfat	üzgün, özür dilerim
+train	A1	isim/fiil	tren, eğitmek
+wish	A2	fiil/isim	dilemek, dilek
+answer	A1	isim/fiil	cevap, cevaplamak
+boy	A1	isim	erkek çocuk
+design	B1	isim/fiil	tasarım, tasarlamak
+finally	A2	zarf	sonunda
+gold	A2	isim	altın
+gone	B1	fiil	gitmiş (go'nun ortacı)
+guess	B1	fiil/isim	tahmin etmek, tahmin
+interest	A2	isim/fiil	ilgi, faiz, ilgilendirmek
+july	A1	isim	temmuz
+king	A2	isim	kral
+learn	A1	fiil	öğrenmek
+policy	B2	isim	politika, ilke
+society	B1	isim	toplum
+add	A2	fiil	eklemek
+alone	A2	sıfat/zarf	yalnız
+average	B1	sıfat/isim	ortalama
+bank	A1	isim	banka
+certain	B1	sıfat	kesin, belli
+church	A2	isim	kilise
+east	A2	isim/sıfat	doğu
+hot	A1	sıfat	sıcak, acı
+longer	A2	sıfat/zarf	daha uzun, daha fazla
+medical	B1	sıfat	tıbbi
+movie	A1	isim	film
+original	B1	sıfat	orijinal, özgün
+park	A1	isim/fiil	park, park etmek
+performance	B1	isim	performans, gösteri
+press	B1	fiil/isim	basmak, basın
+receive	B1	fiil	almak, kabul etmek
+role	B1	isim	rol
+send	A1	fiil	göndermek
+themselves	B1	zamir	kendileri
+worth	B1	sıfat	değer, değerinde
+bill	A2	isim	fatura, hesap, banknot
+cool	A2	sıfat	serin, harika
+director	B1	isim	yönetmen, müdür
+exactly	B1	zarf	tam olarak
+ground	B1	isim	zemin, yer, toprak
+provide	B1	fiil	sağlamak
+relationship	B1	isim	ilişki
+september	A1	isim	eylül
+sound	A2	isim/fiil	ses, kulağa gelmek
+source	B1	isim	kaynak
+usually	A1	zarf	genellikle
+value	B1	isim	değer
+evidence	B2	isim	kanıt
+official	B1	sıfat/isim	resmî, görevli
+ok	A1	ünlem	tamam
+production	B1	isim	üretim, yapım
+rate	B1	isim	oran, hız
+round	A2	sıfat/isim	yuvarlak, tur
+save	A2	fiil	kurtarmak, biriktirmek, kaydetmek
+stand	A2	fiil	ayakta durmak, dayanmak
+stuff	B1	isim	şeyler, eşya
+tax	B1	isim	vergi
+whatever	B1	zamir	her ne, her neyse
+amount	B1	isim	miktar
+blue	A1	sıfat	mavi
+drive	A2	fiil	araba sürmek
+eat	A1	fiil	yemek yemek
+fall	A2	fiil/isim	düşmek, sonbahar
+fast	A1	sıfat/zarf	hızlı
+federal	C1	sıfat	federal
+felt	B1	fiil	hissetti (feel'in geçmişi), keçe
+green	A1	sıfat	yeşil
+league	B2	isim	lig
+management	B1	isim	yönetim
+match	A2	isim/fiil	maç, eşleşmek, kibrit
+model	B1	isim	model, manken
+picture	A1	isim	resim, fotoğraf
+size	A2	isim	beden, boyut
+step	A2	isim	adım
+trust	B1	isim/fiil	güven, güvenmek
+central	B1	sıfat	merkezî
+forward	B1	zarf/sıfat	ileri, ileriye
+hey	A2	ünlem	hey
+key	A2	isim	anahtar, tuş
+mom	A1	isim	anne
+page	A1	isim	sayfa
+range	B1	isim	aralık, çeşit
+review	B1	isim/fiil	inceleme, gözden geçirmek
+science	A2	isim	bilim
+trade	B1	isim	ticaret
+upon	B2	edat	üzerine, -de
+various	B1	sıfat	çeşitli
+attention	B1	isim	dikkat
+brother	A1	isim	erkek kardeş, ağabey
+cannot	A2	fiil	-emez, -amaz
+character	B1	isim	karakter
+chief	B2	isim/sıfat	şef, baş
+cup	A1	isim	fincan, kupa
+football	A1	isim	futbol
+hate	A2	fiil	nefret etmek
+jam	B1	isim	reçel, sıkışıklık
+lower	B1	sıfat/fiil	daha düşük, alçaltmak
+natural	B1	sıfat	doğal
+october	A1	isim	ekim
+property	B1	isim	mülk, özellik
+quality	B1	isim	kalite
+style	B1	isim	stil, tarz
+vote	B1	isim/fiil	oy, oy vermek
+amazing	B1	sıfat	şaşırtıcı, harika
+august	A1	isim	ağustos
+blood	B1	isim	kan
+complete	A2	sıfat/fiil	tam, tamamlamak
+dog	A1	isim	köpek
+economic	B1	sıfat	ekonomik
+hell	B2	isim	cehennem
+involve	B2	fiil	içermek, dahil etmek
+itself	B1	zamir	kendisi
+language	A1	isim	dil
+lord	B2	isim	lord, efendi, Rab
+november	A1	isim	kasım
+oil	A2	isim	yağ, petrol
+relate	B2	fiil	ilişkilendirmek, anlatmak
+serious	B1	sıfat	ciddi
+stage	B1	isim	aşama, sahne
+title	B1	isim	başlık, unvan
+article	B1	isim	makale, madde
+attack	B1	isim/fiil	saldırı, saldırmak
+born	A2	fiil	doğmuş
+decide	A2	fiil	karar vermek
+decision	B1	isim	karar
+enjoy	A1	fiil	keyif almak, hoşlanmak
+entire	B2	sıfat	bütün, tüm
+january	A1	isim	ocak
+perhaps	B1	zarf	belki
+poor	A2	sıfat	fakir, zavallı, kötü
+release	B2	fiil/isim	serbest bırakmak, yayın
+situation	B1	isim	durum
+technology	B1	isim	teknoloji
+website	A2	isim	web sitesi
+write	A1	fiil	yazmak
+choice	A2	isim	seçim, tercih
+code	B1	isim	kod
+consider	B1	fiil	düşünmek, göz önünde bulundurmak
+continue	A2	fiil	devam etmek
+council	B2	isim	konsey, meclis
+cover	B1	fiil/isim	örtmek, kapak
+currently	B2	zarf	şu anda
+door	A1	isim	kapı
+election	B2	isim	seçim
+financial	B2	sıfat	mali
+foreign	B1	sıfat	yabancı
+hair	A1	isim	saç
+increase	B1	fiil/isim	artmak, artış
+legal	B2	sıfat	yasal
+pick	A2	fiil	seçmek, toplamak
+race	B1	isim	yarış, ırk
+seven	A1	belirteç	yedi
+sign	A2	isim/fiil	işaret, imzalamak
+simple	A2	sıfat	basit
+simply	B1	zarf	basitçe, sadece
+staff	B1	isim	personel
+super	B1	sıfat	süper
+union	B2	isim	birlik, sendika
+walk	A1	fiil/isim	yürümek, yürüyüş
+bed	A1	isim	yatak
+begin	A2	fiil	başlamak
+career	B1	isim	kariyer
+crazy	B1	sıfat	deli, çılgın
+daily	A2	sıfat	günlük
+daughter	A1	isim	kız evlat
+december	A1	isim	aralık
+difficult	A1	sıfat	zor
+figure	B1	isim	rakam, figür
+hospital	A1	isim	hastane
+loss	B1	isim	kayıp
+modern	A2	sıfat	modern
+paper	A1	isim	kâğıt, gazete
+popular	A2	sıfat	popüler
+publish	B2	fiil	yayımlamak
+safe	A2	sıfat	güvenli
+version	B1	isim	sürüm, versiyon
+voice	B1	isim	ses
+whose	B1	zamir	kimin
+army	B1	isim	ordu
+earth	A2	isim	dünya, toprak
+forget	A1	fiil	unutmak
+goal	A2	isim	hedef, gol
+huge	B1	sıfat	kocaman, dev
+internet	A1	isim	internet
+listen	A1	fiil	dinlemek
+okay	A1	ünlem	tamam
+practice	B1	isim/fiil	uygulama, pratik yapmak
+rule	A2	isim	kural
+sea	A1	isim	deniz
+sir	A2	isim	efendim, bey
+success	B1	isim	başarı
+toward	B1	edat	-e doğru
+access	B1	isim/fiil	erişim, erişmek
+below	B1	edat/zarf	altında, aşağıda
+create	A2	fiil	yaratmak, oluşturmak
+deep	A2	sıfat	derin
+mark	B1	isim/fiil	işaret, not, işaretlemek
+offer	B1	fiil/isim	teklif etmek, teklif
+pass	A2	fiil	geçmek, vermek
+professional	B1	sıfat/isim	profesyonel
+risk	B1	isim	risk
+sleep	A1	fiil/isim	uyumak, uyku
+table	A1	isim	masa, tablo
+ten	A1	belirteç	on
+truth	B1	isim	gerçek, doğru
+ball	A1	isim	top
+card	A1	isim	kart
+dark	A1	sıfat	karanlık, koyu
+district	B2	isim	bölge, ilçe
+mine	A2	zamir	benimki, maden
+minister	B2	isim	bakan, papaz
+note	A2	isim/fiil	not, not etmek
+percent	B1	isim	yüzde
+piece	A2	isim	parça
+product	B1	isim	ürün
+recent	B1	sıfat	yakın zamanlı
+stretch	B2	fiil/isim	germek, esnemek
+visit	A1	fiil/isim	ziyaret etmek, ziyaret
+wall	A1	isim	duvar
+wanna	B1	fiil	istemek (konuşma dilinde "want to")
+allow	B1	fiil	izin vermek
+culture	B1	isim	kültür
+fan	A2	isim	hayran, vantilatör
+february	A1	isim	şubat
+growth	B2	isim	büyüme
+marry	A2	fiil	evlenmek
+officer	B1	isim	memur, subay, polis
+pain	B1	isim	ağrı, acı
+respect	B1	isim/fiil	saygı, saygı duymak
+response	B2	isim	yanıt, tepki
+river	A1	isim	nehir
+rock	A2	isim	kaya, rock müzik
+shall	B1	fiil	-eyim, -elim (öneri)
+speak	A1	fiil	konuşmak
+specific	B1	sıfat	belirli, özel
+standard	B1	isim/sıfat	standart
+tonight	A1	zarf	bu gece
+album	B1	isim	albüm
+century	A2	isim	yüzyıl
+charge	B1	isim/fiil	ücret, suçlamak, şarj etmek
+cold	A1	sıfat	soğuk
+effect	B1	isim	etki
+eight	A1	belirteç	sekiz
+except	B1	edat	-den başka, hariç
+funny	A2	sıfat	komik
+limit	B1	isim/fiil	sınır, sınırlamak
+network	B1	isim	ağ
+peace	B1	isim	barış
+recently	B1	zarf	son zamanlarda
+require	B2	fiil	gerektirmek
+spend	A2	fiil	harcamak, geçirmek
+store	A2	isim/fiil	mağaza, saklamak
+tomorrow	A1	zarf/isim	yarın
+track	B1	isim	iz, parça, yol
+via	B2	edat	-yoluyla, üzerinden
+weight	B1	isim	ağırlık
+addition	B2	isim	ekleme, toplama
+ahead	B1	zarf	ileride, ileriye
+anti	C1	belirteç	karşıtı
+association	B2	isim	dernek, ilişkilendirme
+beat	B1	fiil/isim	dövmek, yenmek, ritim
+brown	A1	sıfat	kahverengi
+capital	B1	isim	başkent, sermaye
+committee	B2	isim	komite
+conference	B1	isim	konferans
+difference	A2	isim	fark
+double	B1	sıfat/fiil	çift, iki katına çıkarmak
+expect	B1	fiil	beklemek
+gas	B1	isim	gaz, benzin
+island	A2	isim	ada
+normal	A2	sıfat	normal
+population	B1	isim	nüfus
+potential	B2	isim/sıfat	potansiyel, olası
+pressure	B1	isim	baskı, basınç
+radio	A1	isim	radyo
+station	A2	isim	istasyon
+text	B1	isim	metin
+treatment	B2	isim	tedavi, muamele
+western	B2	sıfat	batılı
+campaign	B2	isim	kampanya
+certainly	B1	zarf	kesinlikle
+completely	B1	zarf	tamamen
+content	B2	isim	içerik
+credit	B2	isim	kredi, itibar
+cross	B1	fiil/isim	geçmek, haç
+describe	A2	fiil	tanımlamak, anlatmak
+despite	B1	edat	-e rağmen
+female	B1	sıfat/isim	dişi, kadın
+focus	B1	isim/fiil	odak, odaklanmak
+hello	A1	ünlem	merhaba
+husband	A1	isim	koca, eş
+ice	A1	isim	buz
+individual	B2	isim/sıfat	birey, bireysel
+join	A2	fiil	katılmak
+message	A1	isim	mesaj
+mile	A2	isim	mil
+nearly	B1	zarf	neredeyse
+particular	B2	sıfat	belirli, özel
+previous	B1	sıfat	önceki
+quickly	A2	zarf	hızlıca
+region	B2	isim	bölge
+section	B1	isim	bölüm
+sort	B1	isim/fiil	tür, sıralamak
+speed	B1	isim	hız
+travel	A1	fiil/isim	seyahat etmek, seyahat
+contact	B1	isim/fiil	iletişim, temas kurmak
+drop	B1	fiil/isim	düşürmek, damla
+fair	B1	sıfat/isim	adil, fuar
+foot	A2	isim	ayak
+link	B1	isim	bağlantı
+positive	B1	sıfat	olumlu
+sale	A2	isim	satış, indirim
+throughout	B2	edat	boyunca
+tour	B1	isim	tur, gezi
+welcome	A1	ünlem/fiil	hoş geldiniz, karşılamak
+absolutely	B1	zarf	kesinlikle
+additional	B2	sıfat	ek, ilave
+beyond	B2	edat	ötesinde
+condition	B1	isim	durum, koşul
+extra	A2	sıfat	ekstra, fazladan
+immediately	B1	zarf	hemen
+nature	A2	isim	doğa
+quick	A2	sıfat	hızlı
+sell	A1	fiil	satmak
+significant	B2	sıfat	önemli, anlamlı
+unless	B1	bağlaç	-medikçe
+agree	A2	fiil	aynı fikirde olmak, kabul etmek
+clean	A1	sıfat/fiil	temiz, temizlemek
+computer	A1	isim	bilgisayar
+construction	B2	isim	inşaat
+episode	B2	isim	bölüm
+favourite	A2	sıfat/isim	favori
+income	B2	isim	gelir
+justice	B2	isim	adalet
+manager	A2	isim	müdür, yönetici
+movement	B1	isim	hareket
+photo	A1	isim	fotoğraf
+safety	B1	isim	güvenlik, emniyet
+scene	B1	isim	sahne, manzara
+statement	B1	isim	ifade, açıklama
+sun	A1	isim	güneş
+ability	B1	isim	yetenek
+announce	B2	fiil	duyurmak
+coach	B1	isim	antrenör, otobüs
+collection	B1	isim	koleksiyon
+definitely	B1	zarf	kesinlikle
+friday	A1	isim	cuma
+gun	B1	isim	silah
+heavy	A2	sıfat	ağır
+knowledge	B1	isim	bilgi
+particularly	B2	zarf	özellikle
+search	B1	isim/fiil	arama, aramak
+subject	A2	isim	konu, ders
+wide	A2	sıfat	geniş
+wow	B1	ünlem	vay canına
+author	B1	isim	yazar
+centre	A2	isim	merkez
+claim	B2	fiil/isim	iddia etmek, iddia
+dad	A1	isim	baba
+develop	B1	fiil	geliştirmek
+fear	B1	isim/fiil	korku, korkmak
+fit	B1	sıfat/fiil	formda, uymak
+generally	B1	zarf	genellikle
+german	A1	sıfat/isim	Alman, Almanca
+global	B2	sıfat	küresel
+gotta	B1	fiil	-meli (konuşma dilinde "got to")
+hotel	A1	isim	otel
+judge	B2	isim/fiil	yargıç, yargılamak
+lady	A2	isim	hanım
+leader	B1	isim	lider
+letter	A1	isim	mektup, harf
+material	B1	isim	malzeme
+nobody	A2	zamir	hiç kimse
+opportunity	B1	isim	fırsat
+plus	B1	edat/isim	artı, ayrıca
+regular	B1	sıfat	düzenli
+secretary	B1	isim	sekreter
+sister	A1	isim	kız kardeş, abla
+unit	B1	isim	birim, ünite
+worker	A2	isim	işçi, çalışan
+annual	B2	sıfat	yıllık
+anymore	B1	zarf	artık
+bar	A2	isim	bar, çubuk
+battle	B2	isim	savaş, muharebe
+brain	B1	isim	beyin
+contract	B2	isim	sözleşme
+degree	B1	isim	derece, diploma
+feature	B1	isim	özellik
+finish	A2	fiil	bitirmek
+floor	A2	isim	zemin, kat
+grow	A2	fiil	büyümek, yetiştirmek
+hurt	A2	fiil	acıtmak, yaralamak
+image	B1	isim	görüntü, imaj
+insurance	B1	isim	sigorta
+majority	B2	isim	çoğunluk
+opinion	B1	isim	görüş, fikir
+physical	B1	sıfat	fiziksel
+pro	C1	isim	profesyonel, lehte
+reach	B1	fiil	ulaşmak
+seriously	B1	zarf	ciddi şekilde
+sport	A1	isim	spor
+stupid	A2	sıfat	aptal
+successful	B1	sıfat	başarılı
+active	B1	sıfat	aktif
+administration	C1	isim	yönetim, idare
+approach	B2	isim/fiil	yaklaşım, yaklaşmak
+biggest	A2	sıfat	en büyük
+cancer	B2	isim	kanser
+civil	C1	sıfat	sivil, medeni
+dance	A1	fiil/isim	dans etmek, dans
+defense	C1	isim	savunma
+direction	B1	isim	yön
+independent	B2	sıfat	bağımsız
+master	B2	isim/fiil	usta, yüksek lisans, ustalaşmak
+none	B2	zamir	hiçbiri
+ship	A2	isim	gemi
+stock	B2	isim	stok, hisse
+weekend	A1	isim	hafta sonu
+wonder	B1	fiil/isim	merak etmek, harika
+awesome	B1	sıfat	harika, muhteşem
+band	B1	isim	grup, bant
+beach	A1	isim	plaj
+cash	B1	isim	nakit
+clearly	B1	zarf	açıkça
+commercial	B2	sıfat/isim	ticari, reklam
+compare	B1	fiil	karşılaştırmak
+effort	B1	isim	çaba
+imagine	B1	fiil	hayal etmek
+impact	B2	isim	etki
+lack	B2	isim/fiil	eksiklik, yoksun olmak
+latest	B1	sıfat	en son
+multiple	B2	sıfat	çoklu, birçok
+older	A2	sıfat	daha yaşlı, daha eski
+operation	B2	isim	operasyon, ameliyat
+organization	B1	isim	organizasyon, örgüt
+protect	B1	fiil	korumak
+secret	B1	isim/sıfat	sır, gizli
+senior	B2	sıfat	kıdemli, yaşlı
+spring	A1	isim	ilkbahar, yay
+sunday	A1	isim	pazar
+wear	A1	fiil	giymek
+activity	A2	isim	etkinlik, faaliyet
+address	A2	isim/fiil	adres, hitap etmek
+analysis	B2	isim	analiz
+anyway	B1	zarf	zaten, neyse
+choose	A2	fiil	seçmek
+christmas	A1	isim	Noel
+color	A1	isim	renk
+commission	C1	isim	komisyon, görevlendirme
+competition	B1	isim	yarışma, rekabet
+detail	B1	isim	ayrıntı
+direct	B1	sıfat/fiil	doğrudan, yönetmek
+dream	A2	isim/fiil	rüya, hayal, rüya görmek
+easily	B1	zarf	kolayca
+grand	B2	sıfat	büyük, görkemli
+literally	B2	zarf	kelimenin tam anlamıyla
+luck	B1	isim	şans
+marriage	B1	isim	evlilik
+necessary	B1	sıfat	gerekli
+patient	B1	isim/sıfat	hasta, sabırlı
+resource	B2	isim	kaynak
+rich	A2	sıfat	zengin
+skin	B1	isim	cilt, deri
+suppose	B1	fiil	sanmak, varsaymak
+sweet	A2	sıfat	tatlı
+thus	C1	zarf	böylece
+touch	B1	fiil/isim	dokunmak, dokunuş
+yesterday	A1	zarf/isim	dün
+catch	A2	fiil	yakalamak
+congress	C1	isim	kongre
+damage	B1	isim/fiil	hasar, zarar vermek
+directly	B1	zarf	doğrudan
+disease	B1	isim	hastalık
+doctor	A1	isim	doktor
+doubt	B1	isim/fiil	şüphe, şüphe etmek
+drink	A1	fiil/isim	içmek, içecek
+establish	B2	fiil	kurmak, kanıtlamak
+fish	A1	isim/fiil	balık, balık tutmak
+gay	B1	sıfat	eşcinsel, neşeli
+glad	A2	sıfat	memnun, sevinçli
+greater	B1	sıfat	daha büyük, daha fazla
+machine	A2	isim	makine
+notice	B1	fiil/isim	fark etmek, bildirim
+overall	B2	sıfat/zarf	genel, genel olarak
+professor	B1	isim	profesör
+sit	A1	fiil	oturmak
+trip	A2	isim	gezi, yolculuk
+associate	B2	fiil/isim	ilişkilendirmek, ortak
+basic	A2	sıfat	temel, basit
+captain	B1	isim	kaptan
+carry	A2	fiil	taşımak
+crime	B1	isim	suç
+effective	B2	sıfat	etkili
+explain	A2	fiil	açıklamak
+fully	B1	zarf	tamamen
+highly	B2	zarf	son derece, yüksek derecede
+male	B1	sıfat/isim	erkek, erkek (cinsiyet)
+plant	A2	isim/fiil	bitki, dikmek
+reality	B1	isim	gerçeklik
+spot	B2	isim/fiil	nokta, leke, fark etmek
+winter	A1	isim	kış
+advice	A2	isim	tavsiye, öğüt
+agreement	B1	isim	anlaşma, uyum
+award	B2	isim/fiil	ödül, ödüllendirmek
+block	B1	isim/fiil	blok, engellemek
+challenge	B2	isim/fiil	zorluk, meydan okumak
+comment	B1	isim/fiil	yorum, yorum yapmak
+equipment	B1	isim	donanım, ekipman
+eventually	B2	zarf	sonunda, nihayet
+holy	B2	sıfat	kutsal
+nation	B1	isim	ulus, millet
+otherwise	B2	zarf	aksi halde, yoksa
+primary	B2	sıfat	birincil, ana
+purpose	B1	isim	amaç
+responsible	B1	sıfat	sorumlu
+shop	A1	isim/fiil	dükkan, alışveriş yapmak
+sick	A2	sıfat	hasta
+teacher	A1	isim	öğretmen
+theory	B2	isim	teori, kuram
+agency	B2	isim	ajans, kurum
+avoid	B1	fiil	kaçınmak, uzak durmak
+camera	A1	isim	kamera, fotoğraf makinesi
+cell	B2	isim	hücre, hapishane hücresi
+coast	B1	isim	kıyı, sahil
+drug	B1	isim	ilaç, uyuşturucu
+economy	B2	isim	ekonomi
+environment	B1	isim	çevre, ortam
+executive	C1	isim/sıfat	yönetici, yürütme
+hall	A2	isim	salon, koridor
+mission	B2	isim	görev, misyon
+nine	A1	sıfat	dokuz
+politics	B2	isim	siyaset
+pop	B1	isim/fiil	pop müziği, patlamak
+produce	B1	fiil/isim	üretmek, ürün
+ran	A2	fiil	koştu (run fiilinin geçmişi)
+saturday	A1	isim	cumartesi
+status	B2	isim	durum, statü
+therefore	B2	zarf	bu yüzden, dolayısıyla
+trial	B2	isim	deneme, dava
+truly	B2	zarf	gerçekten, hakikaten
+weather	A1	isim	hava durumu
+app	A2	isim	uygulama
+application	B1	isim	başvuru, uygulama
+coffee	A1	isim	kahve
+complex	B2	sıfat/isim	karmaşık, kompleks
+division	B2	isim	bölüm, bölme
+flight	A2	isim	uçuş
+freedom	B1	isim	özgürlük
+heat	B1	isim/fiil	sıcaklık, ısıtmak
+highest	B1	sıfat	en yüksek
+interview	B1	isim/fiil	görüşme, mülakat
+library	A2	isim	kütüphane
+locate	B2	fiil	yerini bulmak, konumlandırmak
+location	B1	isim	konum, yer
+murder	B2	isim/fiil	cinayet, öldürmek
+queen	A2	isim	kraliçe
+accept	B1	fiil	kabul etmek
+actual	B2	sıfat	gerçek, asıl
+appear	B1	fiil	görünmek, ortaya çıkmak
+attempt	B2	isim/fiil	girişim, denemek
+broke	B1	fiil/sıfat	kırdı, meteliksiz
+channel	B1	isim	kanal
+distance	B1	isim	mesafe, uzaklık
+exchange	B2	isim/fiil	değişim, değiştirmek
+fat	A2	sıfat/isim	şişman, yağ
+fell	B1	fiil	düştü (fall fiilinin geçmişi)
+glass	A1	isim	bardak, cam
+mobile	B1	sıfat/isim	mobil, cep telefonu
+northern	B1	sıfat	kuzey, kuzeydeki
+powerful	B1	sıfat	güçlü
+prior	C1	sıfat	önceki
+protection	B2	isim	koruma
+religious	B2	sıfat	dini
+ride	A2	fiil/isim	binmek, yolculuk
+royal	B2	sıfat	kraliyet, kraliyete ait
+screen	A2	isim	ekran, perde
+serve	B1	fiil	hizmet etmek, servis yapmak
+slow	A2	sıfat	yavaş
+species	B2	isim	tür
+speech	B1	isim	konuşma
+traffic	A2	isim	trafik
+tree	A1	isim	ağaç
+whom	B2	zamir	kimi, kime
+wonderful	A2	sıfat	harika, muhteşem
+airport	A1	isim	havalimanı
+animal	A1	isim	hayvan
+benefit	B1	isim/fiil	fayda, yararlanmak
+bottom	B1	isim	alt, dip
+demand	B2	isim/fiil	talep, talep etmek
+engine	B1	isim	motor
+everybody	A2	zamir	herkes
+famous	A2	sıfat	ünlü
+investment	B2	isim	yatırım
+lie	B1	fiil/isim	yalan söylemek, yalan
+partner	B1	isim	ortak, eş
+raise	B1	fiil	yükseltmek, büyütmek
+sad	A1	sıfat	üzgün
+solution	B1	isim	çözüm
+southern	B1	sıfat	güney
+square	A2	isim/sıfat	kare, meydan
+structure	B2	isim	yapı
+traditional	B1	sıfat	geleneksel
+twice	A2	zarf	iki kez
+wind	A2	isim	rüzgar
+worry	A2	fiil/isim	endişelenmek, endişe
+brand	B1	isim	marka
+bus	A1	isim	otobüs
+cent	B1	isim	sent
+count	A2	fiil	saymak
+critical	B2	sıfat	eleştirel, kritik
+digital	B1	sıfat	dijital
+fourth	A2	sıfat	dördüncü
+fresh	A2	sıfat	taze
+lake	A2	isim	göl
+mental	B2	sıfat	zihinsel, ruhsal
+mention	B1	fiil	bahsetmek, söz etmek
+mostly	B1	zarf	çoğunlukla
+mouth	A1	isim	ağız
+owner	B1	isim	sahip
+previously	B2	zarf	daha önce
+realize	B1	fiil	fark etmek, gerçekleştirmek
+remain	B2	fiil	kalmak
+scale	B2	isim	ölçek, terazi
+score	B1	isim/fiil	skor, gol atmak
+separate	B1	sıfat/fiil	ayrı, ayırmak
+smart	B1	sıfat	akıllı, zeki
+surface	B2	isim	yüzey
+throw	A2	fiil	atmak
+totally	B2	zarf	tamamen
+wed	C1	fiil	evlenmek
+arm	A2	isim	kol
+budget	B2	isim	bütçe
+click	B1	fiil/isim	tıklamak, tıklama
+estate	C1	isim	mülk, emlak
+fail	B1	fiil	başarısız olmak
+faith	B2	isim	inanç, güven
+fashion	B1	isim	moda
+fund	B2	isim/fiil	fon, finanse etmek
+generation	B2	isim	nesil
+hill	A2	isim	tepe
+metal	B1	isim	metal
+profile	B2	isim	profil
+pull	A2	fiil	çekmek
+push	A2	fiil	itmek
+rose	B1	isim/fiil	gül, yükseldi
+seat	A2	isim	koltuk, oturak
+sexual	B2	sıfat	cinsel
+target	B2	isim/fiil	hedef
+village	A2	isim	köy
+agent	B2	isim	ajan, temsilci
+apply	B1	fiil	başvurmak, uygulamak
+authority	B2	isim	otorite, yetki
+basis	B2	isim	temel, esas
+draw	A2	fiil	çizmek, çekmek
+dude	B2	isim	adam, ahbap
+employee	B1	isim	çalışan
+enter	A2	fiil	girmek
+foundation	B2	isim	temel, vakıf
+gain	B2	fiil/isim	kazanmak, kazanç
+memory	B1	isim	hafıza, anı
+prime	C1	sıfat	ana, başlıca
+ring	A2	isim/fiil	yüzük, çalmak
+rise	B1	fiil/isim	yükselmek, artış
+silver	A2	isim/sıfat	gümüş
+soul	B2	isim	ruh
+spread	B2	fiil/isim	yaymak, yayılma
+supply	B2	isim/fiil	arz, tedarik etmek
+waste	B1	isim/fiil	atık, israf etmek
+weird	B2	sıfat	garip, tuhaf
+adult	B1	isim/sıfat	yetişkin
+apparently	B2	zarf	görünüşe göre
+artist	A2	isim	sanatçı
+chairman	B2	isim	başkan
+edition	B2	isim	baskı, sürüm
+engineer	B1	isim	mühendis
+grade	B1	isim	not, sınıf
+healthy	A2	sıfat	sağlıklı
+institute	C1	isim	enstitü
+method	B1	isim	yöntem
+monday	A1	isim	pazartesi
+obviously	B2	zarf	açıkça, tabii ki
+option	B1	isim	seçenek
+prison	B1	isim	hapishane
+senate	C1	isim	senato
+smaller	A2	sıfat	daha küçük
+somebody	A2	zamir	birisi
+stone	A2	isim	taş
+strength	B1	isim	güç, kuvvet
+user	B1	isim	kullanıcı
+wild	B1	sıfat	vahşi, yabani
+window	A1	isim	pencere
+winner	A2	isim	kazanan
+arrive	A2	fiil	varmak, gelmek
+bag	A1	isim	çanta, torba
+bet	B2	fiil/isim	bahse girmek, bahis
+camp	B1	isim/fiil	kamp, kamp yapmak
+cast	C1	fiil/isim	atmak, oyuncu kadrosu
+correct	A2	sıfat/fiil	doğru, düzeltmek
+dangerous	A2	sıfat	tehlikeli
+extremely	B1	zarf	son derece
+firm	B2	isim/sıfat	firma, sağlam
+handle	B2	fiil/isim	başa çıkmak, sap
+improve	B1	fiil	geliştirmek, iyileşmek
+indeed	B2	zarf	gerçekten, hakikaten
+negative	B1	sıfat	olumsuz
+prevent	B2	fiil	önlemek
+remove	B1	fiil	kaldırmak, çıkarmak
+spirit	B2	isim	ruh, ruh hali
+television	A1	isim	televizyon
+till	B1	edat/bağlaç	-e kadar
+trouble	B1	isim	sorun, dert
+advantage	B1	isim	avantaj
+apart	B2	zarf	ayrı, uzakta
+aware	B2	sıfat	farkında
+cat	A1	isim	kedi
+customer	A2	isim	müşteri
+dinner	A1	isim	akşam yemeği
+dollar	A1	isim	dolar
+eastern	B1	sıfat	doğu, doğudaki
+fifth	A2	sıfat	beşinci
+function	B2	isim/fiil	işlev, çalışmak
+gift	A2	isim	hediye
+herself	A2	zamir	kendisi, kendini (kadın)
+impossible	B1	sıfat	imkansız
+influence	B2	isim/fiil	etki, etkilemek
+item	B1	isim	öğe, eşya
+nor	B2	bağlaç	ne de, de değil
+progress	B1	isim/fiil	ilerleme, ilerlemek
+shoot	B2	fiil	ateş etmek, vurmak
+shut	B1	fiil	kapatmak
+van	B1	isim	kamyonet, minibüs
+wood	A2	isim	odun, ahşap
+background	B1	isim	arka plan, geçmiş
+birth	B1	isim	doğum
+bridge	A2	isim	köprü
+concept	B2	isim	kavram
+copy	A2	isim/fiil	kopya, kopyalamak
+dear	A2	sıfat	sevgili, değerli
+garden	A1	isim	bahçe
+host	B2	isim/fiil	ev sahibi, ağırlamak
+journal	B2	isim	dergi, günlük
+labor	B2	isim	emek, işçilik
+leadership	B2	isim	liderlik
+length	B1	isim	uzunluk
+lucky	A2	sıfat	şanslı
+neither	B2	zamir/bağlaç	hiçbiri, ne de
+onto	B2	edat	üzerine
+possibly	B2	zarf	muhtemelen, belki
+prove	B2	fiil	kanıtlamak
+rare	B2	sıfat	nadir
+skill	B1	isim	beceri
+software	B1	isim	yazılım
+thousand	A1	sıfat/isim	bin
+tough	B2	sıfat	zor, sert
+alive	B1	sıfat	hayatta, canlı
+apple	A1	isim	elma
+balance	B2	isim/fiil	denge, dengelemek
+birthday	A1	isim	doğum günü
+boss	B1	isim	patron
+connection	B1	isim	bağlantı
+dress	A1	isim/fiil	elbise, giyinmek
+easier	A2	sıfat	daha kolay
+fellow	C1	isim/sıfat	adam, arkadaş, hemcins
+horse	A1	isim	at
+magic	B1	isim/sıfat	sihir, büyülü
+manage	B1	fiil	yönetmek, başarmak
+map	A1	isim	harita
+net	B2	isim	ağ, file
+request	B2	isim/fiil	istek, talep etmek
+stick	B2	isim/fiil	çubuk, yapıştırmak
+vehicle	B2	isim	araç
+volume	B2	isim	hacim, ses seviyesi
+wake	B1	fiil	uyanmak, uyandırmak
+aid	C1	isim/fiil	yardım, yardım etmek
+beauty	B1	isim	güzellik
+billion	B1	sıfat/isim	milyar
+busy	A1	sıfat	meşgul
+concern	B2	isim/fiil	endişe, ilgilendirmek
+conversation	A2	isim	konuşma, sohbet
+corner	A2	isim	köşe
+criminal	B2	isim/sıfat	suçlu, cezai
+cultural	B2	sıfat	kültürel
+driver	A2	isim	sürücü, şoför
+exist	B2	fiil	var olmak
+farm	A2	isim	çiftlik
+file	A2	isim	dosya
+fix	B1	fiil	onarmak, düzeltmek
+fly	A1	fiil	uçmak
+frank	C1	sıfat	açık sözlü, dürüst
+guide	B1	isim/fiil	rehber, yol göstermek
+investigation	B2	isim	soruşturma, araştırma
+operate	B2	fiil	işletmek, ameliyat etmek
+responsibility	B2	isim	sorumluluk
+roll	B1	fiil/isim	yuvarlanmak, rulo
+slightly	B2	zarf	biraz, hafifçe
+suggest	B1	fiil	önermek
+surprise	A2	isim/fiil	sürpriz, şaşırtmak
+technical	B2	sıfat	teknik
+treat	B1	fiil/isim	davranmak, tedavi etmek, ikram
+unique	B2	sıfat	eşsiz, benzersiz
+variety	B2	isim	çeşit, çeşitlilik
+violence	B2	isim	şiddet
+weapon	B2	isim	silah
+youth	B2	isim	gençlik, genç
+appreciate	B2	fiil	takdir etmek, minnettar olmak
+bigger	A2	sıfat	daha büyük
+discover	B1	fiil	keşfetmek
+dry	A2	sıfat/fiil	kuru, kurutmak
+edge	B2	isim	kenar
+evil	B2	sıfat/isim	kötü, şeytani
+excite	B2	fiil	heyecanlandırmak
+forever	B1	zarf	sonsuza dek
+injury	B2	isim	yaralanma
+iron	B1	isim/fiil	demir, ütü
+lovely	A2	sıfat	güzel, hoş
+mad	B1	sıfat	çılgın, kızgın
+magazine	A2	isim	dergi
+parliament	B2	isim	parlamento, meclis
+prepare	A2	fiil	hazırlamak
+reference	B2	isim	referans, atıf
+religion	B1	isim	din
+somewhere	A2	zarf	bir yerde
+strategy	B2	isim	strateji
+web	B1	isim	ağ, internet
+wine	A2	isim	şarap
+angel	B2	isim	melek
+audience	B1	isim	izleyici, seyirci
+bay	B2	isim	koy
+blog	B1	isim	blog
+closer	B1	sıfat/zarf	daha yakın
+core	B2	isim	çekirdek, öz
+democratic	B2	sıfat	demokratik
+description	B1	isim	tanım, açıklama
+excellent	A2	sıfat	mükemmel
+guard	B2	isim/fiil	muhafız, korumak
+honest	B1	sıfat	dürüst
+medicine	A2	isim	ilaç, tıp
+mountain	A1	isim	dağ
+nuclear	B2	sıfat	nükleer
+port	B2	isim	liman
+presence	B2	isim	varlık, hazır bulunma
+reaction	B2	isim	tepki
+reduce	B1	fiil	azaltmak
+solid	B2	sıfat/isim	katı, sağlam
+stress	B1	isim/fiil	stres, vurgulamak
+taste	A2	isim/fiil	tat, tatmak
+tea	A1	isim	çay
+victory	B2	isim	zafer
+afternoon	A1	isim	öğleden sonra
+assistant	B1	isim	asistan, yardımcı
+citizen	B1	isim	vatandaş
+classic	B2	sıfat/isim	klasik
+cloth	B1	isim	kumaş, bez
+electric	B1	sıfat	elektrikli
+emergency	B1	isim	acil durum
+entirely	B2	zarf	tamamen
+failure	B2	isim	başarısızlık
+festival	A2	isim	festival
+flat	A2	isim/sıfat	daire, düz
+fuel	B2	isim	yakıt
+ill	A2	sıfat	hasta
+initial	B2	sıfat	ilk, başlangıçtaki
+introduce	B1	fiil	tanıştırmak, tanıtmak
+kick	B1	fiil/isim	tekmelemek, tekme
+mail	A2	isim	posta
+massive	B2	sıfat	devasa, kocaman
+pair	A2	isim	çift
+plane	A1	isim	uçak
+plenty	B1	zamir/isim	bol miktarda
+prince	A2	isim	prens
+proper	B2	sıfat	uygun, düzgün
+quarter	B1	isim	çeyrek
+regional	B2	sıfat	bölgesel
+session	B2	isim	oturum, seans
+shape	B1	isim	şekil
+sky	A1	isim	gökyüzü
+teach	A1	fiil	öğretmek
+transfer	B2	fiil/isim	aktarmak, transfer
+upper	B2	sıfat	üst
+useful	A2	sıfat	yararlı
+valley	B1	isim	vadi
+zone	B2	isim	bölge
+accident	A2	isim	kaza
+advance	B2	isim/fiil	ilerleme, ilerlemek
+alternative	B2	isim/sıfat	alternatif
+anywhere	A2	zarf	herhangi bir yerde
+bear	B1	isim/fiil	ayı, katlanmak
+boat	A1	isim	tekne
+capacity	B2	isim	kapasite
+cheap	A1	sıfat	ucuz
+climate	B1	isim	iklim
+discussion	B1	isim	tartışma
+duty	B2	isim	görev
+fantastic	B1	sıfat	harika, fantastik
+feeling	A2	isim	his, duygu
+governor	C1	isim	vali, guvernör
+hundred	A1	sıfat/isim	yüz
+industrial	B2	sıfat	endüstriyel, sanayi
+joint	B2	sıfat/isim	ortak, eklem
+mix	B1	fiil/isim	karıştırmak, karışım
+museum	A1	isim	müze
+path	B1	isim	yol, patika
+promise	B1	isim/fiil	söz, söz vermek
+propose	B2	fiil	önermek, evlenme teklif etmek
+purchase	B2	isim/fiil	satın alma, satın almak
+rain	A1	isim/fiil	yağmur, yağmur yağmak
+steel	B2	isim	çelik
+terrible	A2	sıfat	korkunç, berbat
+tire	B1	isim/fiil	lastik, yormak
+vice	C1	isim	kötü alışkanlık, yardımcı
+warm	A1	sıfat	ılık, sıcak
+afraid	A2	sıfat	korkmuş
+beer	A1	isim	bira
+border	B2	isim	sınır
+command	B2	isim/fiil	komut, emretmek
+crow	C1	isim	karga
+crowd	B1	isim	kalabalık
+element	B2	isim	öğe, element
+enemy	B1	isim	düşman
+ensure	B2	fiil	sağlamak, garanti etmek
+environmental	B2	sıfat	çevresel
+fill	A2	fiil	doldurmak
+forest	A2	isim	orman
+intelligence	B2	isim	zeka, istihbarat
+intend	B2	fiil	niyet etmek, amaçlamak
+labour	B2	isim	emek, işçilik
+moon	A1	isim	ay
+ocean	A2	isim	okyanus
+profit	B2	isim	kâr
+proof	B2	isim	kanıt
+republican	C1	sıfat/isim	cumhuriyetçi
+soldier	B1	isim	asker
+suit	B1	isim/fiil	takım elbise, uymak
+appearance	B2	isim	görünüş, ortaya çıkma
+attorney	C1	isim	avukat
+behavior	B1	isim	davranış
+building	A2	isim	bina
+chair	A1	isim	sandalye
+debt	B2	isim	borç
+domestic	B2	sıfat	ev içi, yerel
+expensive	A1	sıfat	pahalı
+historical	B2	sıfat	tarihi
+honestly	B2	zarf	dürüstçe, açıkçası
+honor	B2	isim/fiil	onur, onurlandırmak
+jump	A2	fiil/isim	zıplamak, sıçrama
+launch	B2	fiil/isim	başlatmak, lansman
+minimum	B2	sıfat/isim	en az, asgari
+native	B2	sıfat	yerli, ana
+originally	B2	zarf	aslında, başlangıçta
+ray	C1	isim	ışın
+suddenly	A2	zarf	birdenbire
+supreme	C1	sıfat	en yüksek, üstün
+survey	B2	isim	anket, araştırma
+tech	B2	isim	teknoloji
+update	B1	isim/fiil	güncelleme, güncellemek
+writer	A2	isim	yazar
+yellow	A1	sıfat	sarı
+younger	A2	sıfat	daha genç
+ancient	B1	sıfat	antik, eski
+combine	B2	fiil	birleştirmek
+communication	B1	isim	iletişim
+connect	B1	fiil	bağlamak
+contain	B2	fiil	içermek
+download	B1	fiil/isim	indirmek, indirme
+email	A1	isim	e-posta
+exercise	A2	isim/fiil	egzersiz, alıştırma
+express	B2	fiil	ifade etmek
+flow	B2	isim/fiil	akış, akmak
+girlfriend	A2	isim	kız arkadaş
+hero	B1	isim	kahraman
+illegal	B2	sıfat	yasa dışı
+joke	A2	isim/fiil	şaka, şaka yapmak
+loan	B2	isim/fiil	kredi, borç vermek
+perform	B1	fiil	gerçekleştirmek, performans sergilemek
+planet	A2	isim	gezegen
+restaurant	A1	isim	restoran
+select	B2	fiil	seçmek
+soft	A2	sıfat	yumuşak
+sugar	A1	isim	şeker
+transport	B1	isim/fiil	ulaşım, taşımak
+affair	B2	isim	mesele, ilişki
+appeal	B2	isim/fiil	çekicilik, itiraz, cazip gelmek
+appropriate	B2	sıfat	uygun
+confirm	B1	fiil	onaylamak
+device	B1	isim	cihaz
+drama	B1	isim	drama
+entry	B2	isim	giriş, kayıt
+era	B2	isim	çağ, dönem
+factor	B2	isim	etken, faktör
+fee	B2	isim	ücret
+golden	B1	sıfat	altın, altın rengi
+grant	C1	isim/fiil	hibe, vermek
+lawyer	B1	isim	avukat
+leg	A1	isim	bacak
+measure	B1	fiil/isim	ölçmek, önlem
+mistake	A2	isim	hata
+platform	B2	isim	platform, peron
+pool	A2	isim	havuz
+regard	B2	fiil/isim	saymak, saygı
+relation	B2	isim	ilişki, akraba
+route	B1	isim	güzergah, rota
+schedule	B1	isim/fiil	program, planlamak
+scientific	B2	sıfat	bilimsel
+shoe	A1	isim	ayakkabı
+smoke	B1	isim/fiil	duman, sigara içmek
+squad	C1	isim	takım, ekip
+abuse	B2	isim/fiil	kötüye kullanma, istismar etmek
+angry	A2	sıfat	kızgın
+candidate	B2	isim	aday
+comfortable	A2	sıfat	rahat
+discuss	B1	fiil	tartışmak, görüşmek
+emotional	B2	sıfat	duygusal
+everywhere	A2	zarf	her yerde
+facility	B2	isim	tesis, olanak
+fox	B1	isim	tilki
+hole	B1	isim	delik
+holiday	A1	isim	tatil
+internal	B2	sıfat	iç, dahili
+jersey	C1	isim	forma, kazak
+laugh	A2	fiil/isim	gülmek, kahkaha
+liberal	C1	sıfat	liberal, özgürlükçü
+lunch	A1	isim	öğle yemeği
+milk	A1	isim	süt
+pack	B1	fiil/isim	paketlemek, paket
+payment	B1	isim	ödeme
+relatively	B2	zarf	nispeten
+sector	B2	isim	sektör
+snow	A1	isim/fiil	kar, kar yağmak
+storm	B1	isim	fırtına
+strike	B2	isim/fiil	grev, vurmak
+studio	B1	isim	stüdyo
+weak	B1	sıfat	zayıf
+actor	A2	isim	aktör, oyuncu
+apartment	A2	isim	apartman dairesi
+chain	B2	isim	zincir
+chapter	B1	isim	bölüm
+commit	C1	fiil	işlemek, taahhüt etmek
+confidence	B2	isim	güven, özgüven
+cook	A1	fiil/isim	yemek pişirmek, aşçı
+cute	B1	sıfat	şirin, sevimli
+equal	B1	sıfat	eşit
+fake	B2	sıfat	sahte
+finance	B2	isim	finans, maliye
+identity	B2	isim	kimlik
+journey	B1	isim	yolculuk
+kitchen	A1	isim	mutfak
+maintain	B2	fiil	sürdürmek, bakımını yapmak
+numerous	C1	sıfat	çok sayıda
+quiet	A2	sıfat	sessiz
+reveal	B2	fiil	ortaya çıkarmak, açığa vurmak
+specifically	B2	zarf	özellikle
+split	B2	fiil/isim	bölmek, bölünme
+task	B1	isim	görev
+taxis	B1	isim	taksiler
+twenty	A1	sıfat	yirmi
+urban	B2	sıfat	kentsel
+affect	B2	fiil	etkilemek
+aircraft	B2	isim	uçak, hava aracı
+approve	B2	fiil	onaylamak
+approximately	B2	zarf	yaklaşık olarak
+argument	B1	isim	tartışma, argüman
+arrest	B2	fiil/isim	tutuklamak, tutuklama
+conflict	B2	isim	çatışma
+corporate	C1	sıfat	kurumsal
+debate	B2	isim/fiil	tartışma, tartışmak
+determine	B2	fiil	belirlemek
+distribution	C1	isim	dağıtım
+document	B1	isim	belge
+escape	B1	fiil/isim	kaçmak, kaçış
+extend	B2	fiil	uzatmak, genişletmek
+faster	A2	sıfat/zarf	daha hızlı
+fault	B2	isim	hata, kusur
+flower	A1	isim	çiçek
+friendly	A2	sıfat	arkadaş canlısı
+phase	B2	isim	aşama, evre
+properly	B1	zarf	düzgün şekilde
+pure	B2	sıfat	saf
+requirement	B2	isim	gereklilik, şart
+resident	B2	isim	sakin
+revenue	C1	isim	gelir
+secure	B2	sıfat/fiil	güvenli, güvence altına almak
+smile	A1	isim/fiil	gülümseme, gülümsemek
+strange	A2	sıfat	garip, tuhaf
+talent	B1	isim	yetenek
+temperature	A2	isim	sıcaklık, ateş
+troop	C1	isim	asker birliği
+truck	B1	isim	kamyon
+basically	B2	zarf	temelde
+beside	B1	edat	yanında
+bird	A1	isim	kuş
+blame	B2	fiil/isim	suçlamak, suç
+bowl	A2	isim	kase
+chicken	A1	isim	tavuk
+collect	A2	fiil	toplamak
+context	B2	isim	bağlam
+coverage	C1	isim	kapsam, haber kapsamı
+display	B2	isim/fiil	ekran, sergilemek
+elect	B2	fiil	seçmek (oyla)
+false	B1	sıfat	yanlış, sahte
+identify	B2	fiil	tanımlamak, belirlemek
+incredible	B2	sıfat	inanılmaz
+inspire	B2	fiil	ilham vermek
+meat	A1	isim	et
+ministry	C1	isim	bakanlık
+mode	B2	isim	mod, biçim
+neck	A2	isim	boyun
+novel	B2	isim	roman
+obvious	B2	sıfat	bariz, açık
+shirt	A1	isim	gömlek
+slowly	A2	zarf	yavaşça
+stadium	B1	isim	stadyum
+surgery	B2	isim	ameliyat
+tuesday	A1	isim	salı
+vision	B2	isim	görüş, vizyon
+whenever	B2	bağlaç	ne zaman olursa, her ne zaman
+zero	A1	sıfat/isim	sıfır
+champion	B2	isim	şampiyon
+cream	A2	isim	krema, krem
+crisis	B2	isim	kriz
+deliver	B2	fiil	teslim etmek
+editor	B2	isim	editör
+estimate	B2	fiil/isim	tahmin etmek, tahmin
+giant	B2	isim/sıfat	dev
+jail	B2	isim	hapishane
+kingdom	B2	isim	krallık
+literature	B2	isim	edebiyat
+mayor	B2	isim	belediye başkanı
+minor	B2	sıfat	küçük, önemsiz
+opposite	B1	sıfat/isim	karşı, zıt
+orange	A1	isim/sıfat	portakal, turuncu
+ourselves	B1	zamir	kendimiz
+selection	B2	isim	seçim, seçki
+signal	B2	isim	sinyal, işaret
+stream	B2	isim	dere, akış
+struggle	B2	fiil/isim	mücadele etmek, mücadele
+suicide	C1	isim	intihar
+theme	B2	isim	tema, konu
+thursday	A1	isim	perşembe
+tiny	B1	sıfat	minik, ufacık
+typically	B2	zarf	genellikle, tipik olarak
+unfortunately	B1	zarf	maalesef
+usual	A2	sıfat	olağan
+wave	A2	isim/fiil	dalga, el sallamak
+alcohol	B1	isim	alkol
+assembly	C1	isim	meclis, montaj
+breakfast	A1	isim	kahvaltı
+bright	B1	sıfat	parlak, zeki
+capable	B2	sıfat	yetenekli, muktedir
+combination	B2	isim	birleşim, kombinasyon
+conservative	C1	sıfat	muhafazakar
+desire	B2	isim/fiil	arzu, arzulamak
+destroy	B2	fiil	yok etmek
+draft	C1	isim	taslak
+drunk	B2	sıfat	sarhoş
+essential	B2	sıfat	temel, şart
+familiar	B2	sıfat	tanıdık, aşina
+guilty	B2	sıfat	suçlu
+largely	C1	zarf	büyük ölçüde
+perfectly	B1	zarf	mükemmel şekilde
+recommend	B1	fiil	tavsiye etmek
+refer	B2	fiil	atıfta bulunmak, başvurmak
+relevant	B2	sıfat	ilgili
+seek	C1	fiil	aramak, peşinde olmak
+solo	C1	sıfat/isim	solo, tek başına
+spoke	B1	fiil	konuştu
+ticket	A1	isim	bilet
+unable	B2	sıfat	yapamayan
+upset	B1	sıfat/fiil	üzgün, üzmek
+wing	B2	isim	kanat
+bomb	B2	isim	bomba
+creative	B1	sıfat	yaratıcı
+cycle	B2	isim	döngü, bisiklet
+educational	B2	sıfat	eğitici
+entertainment	B2	isim	eğlence
+extreme	B2	sıfat	aşırı
+info	B1	isim	bilgi
+mainly	B2	zarf	esas olarak
+maximum	B2	sıfat/isim	en fazla, azami
+newspaper	A1	isim	gazete
+paint	A2	fiil/isim	boyamak, boya
+republic	B2	isim	cumhuriyet
+reserve	B2	fiil/isim	ayırtmak, rezerv
+row	B2	isim	sıra
+salt	A1	isim	tuz
+scare	B2	fiil	korkutmak
+statistic	C1	isim	istatistik
+switch	B2	fiil/isim	değiştirmek, anahtar
+territory	C1	isim	bölge, ülke toprağı
+threat	B2	isim	tehdit
+appoint	C1	fiil	atamak
+aside	B2	zarf	bir kenara
+assistance	B2	isim	yardım
+bell	A2	isim	zil, çan
+blow	B1	fiil/isim	üflemek, darbe
+bond	C1	isim	bağ, tahvil
+boyfriend	A2	isim	erkek arkadaş
+careful	A2	sıfat	dikkatli
+circumstance	C1	isim	durum, koşul
+corporation	C1	isim	şirket, kurum
+cry	A2	fiil	ağlamak, bağırmak
+danger	A2	isim	tehlike
+delivery	B1	isim	teslimat
+deserve	B2	fiil	hak etmek
+empty	A2	sıfat	boş
+folk	C1	isim	halk, insanlar
+gender	B2	isim	cinsiyet
+instance	B2	isim	örnek, durum
+kinda	B2	zarf	biraz (günlük dil)
+motion	B2	isim	hareket
+pacific	C1	sıfat	barışçıl, Pasifik
+prize	B1	isim	ödül
+reasonable	B2	sıfat	makul
+register	B2	fiil/isim	kaydolmak, kayıt
+resolution	C1	isim	karar, çözüm
+rural	B2	sıfat	kırsal
+sing	A1	fiil	şarkı söylemek
+tool	B1	isim	alet, araç
+typical	B2	sıfat	tipik
+universe	B2	isim	evren
+warn	B1	fiil	uyarmak
+wednesday	A1	isim	çarşamba
+admit	B2	fiil	kabul etmek, itiraf etmek
+attitude	B2	isim	tutum, tavır
+branch	B1	isim	dal, şube
+conduct	C1	fiil/isim	yürütmek, davranış
+decade	B2	isim	on yıl
+dedicate	C1	fiil	adamak
+definition	B2	isim	tanım
+favor	B2	isim	iyilik
+flag	B1	isim	bayrak
+frame	B2	isim	çerçeve
+guest	A2	isim	misafir
+heaven	B2	isim	cennet
+independence	B2	isim	bağımsızlık
+institution	C1	isim	kurum
+kiss	A2	isim/fiil	öpücük, öpmek
+load	B2	isim/fiil	yük, yüklemek
+plot	B2	isim	olay örgüsü, arsa
+possibility	B2	isim	olasılık
+random	B2	sıfat	rastgele
+recovery	B2	isim	iyileşme, kurtarma
+rent	B1	isim/fiil	kira, kiralamak
+replace	B1	fiil	değiştirmek, yerini almak
+represent	B2	fiil	temsil etmek
+senator	C1	isim	senatör
+sentence	A2	isim	cümle, ceza
+tooth	A1	isim	diş
+tip	B1	isim	ipucu, bahşiş
+academic	B2	sıfat	akademik
+academy	C1	isim	akademi
+accurate	B2	sıfat	doğru, kesin
+achieve	B1	fiil	başarmak
+afford	B1	fiil	gücü yetmek
+assume	B2	fiil	varsaymak
+bottle	A1	isim	şişe
+bunch	B2	isim	demet, grup
+category	B2	isim	kategori
+chat	A2	isim/fiil	sohbet, sohbet etmek
+cheese	A1	isim	peynir
+chemical	B2	sıfat/isim	kimyasal
+competitive	B2	sıfat	rekabetçi
+diet	B1	isim	diyet
+fruit	A1	isim	meyve
+harder	A2	sıfat/zarf	daha zor, daha sert
+index	C1	isim	dizin, endeks
+lane	B2	isim	şerit, dar yol
+mess	B2	isim	dağınıklık
+navy	B2	isim	donanma
+normally	B1	zarf	normalde
+occur	B2	fiil	meydana gelmek
+opposition	C1	isim	muhalefet, karşıtlık
+permanent	B2	sıfat	kalıcı
+personally	B2	zarf	kişisel olarak
+pleasure	B1	isim	zevk, memnuniyet
+prefer	A2	fiil	tercih etmek
+representative	C1	isim/sıfat	temsilci
+scheme	C1	isim	plan, düzen
+shift	B2	isim/fiil	vardiya, kaydırmak
+storage	B2	isim	depolama
+tank	B2	isim	tank, depo
+tend	B2	fiil	eğilimli olmak
+tight	B2	sıfat	dar, sıkı
+transportation	B2	isim	ulaşım
+ultimately	C1	zarf	sonuçta
+unlike	B2	edat	-den farklı olarak
+weekly	B1	sıfat/zarf	haftalık
+yard	B1	isim	avlu, bahçe
+anybody	A2	zamir	herhangi biri
+asset	C1	isim	varlık, değerli şey
+basketball	A2	isim	basketbol
+button	A2	isim	düğme
+combat	C1	isim/fiil	savaş, mücadele etmek
+constitution	C1	isim	anayasa
+consumer	B2	isim	tüketici
+counter	B2	isim	tezgah, sayaç
+creation	B2	isim	yaratım
+crown	B2	isim	taç
+define	B2	fiil	tanımlamak
+depend	B1	fiil	bağlı olmak
+depression	B2	isim	depresyon
+employment	B2	isim	istihdam
+exclusive	C1	sıfat	özel, ayrıcalıklı
+excuse	B1	isim/fiil	bahane, mazur görmek
+expert	B2	isim	uzman
+frequently	B2	zarf	sıkça
+golf	A2	isim	golf
+grace	C1	isim	zarafet, lütuf
+hopefully	B2	zarf	umarım
+importance	B1	isim	önem
+lay	B2	fiil	koymak, sermek
+latter	C1	sıfat	sonraki, ikincisi
+manufacture	C1	fiil/isim	üretmek, imalat
+object	B1	isim/fiil	nesne, itiraz etmek
+pattern	B2	isim	desen, örüntü
+personnel	C1	isim	personel
+perspective	C1	isim	bakış açısı
+pregnant	B2	sıfat	hamile
+premier	C1	isim/sıfat	başbakan, birinci sınıf
+promote	B2	fiil	terfi ettirmek, tanıtmak
+revolution	B2	isim	devrim
+severe	B2	sıfat	ağır, şiddetli
+tournament	B2	isim	turnuva
+turkey	B1	isim	hindi, Türkiye
+victim	B2	isim	kurban, mağdur
+attend	B1	fiil	katılmak, devam etmek
+ban	B2	fiil/isim	yasaklamak, yasak
+brilliant	B2	sıfat	parlak, harika
+carbon	B2	isim	karbon
+catholic	C1	sıfat	Katolik
+circle	A2	isim	daire, çember
+concert	A2	isim	konser
+crash	B2	isim/fiil	kaza, çarpmak
+declare	B2	fiil	ilan etmek, beyan etmek
+depth	B2	isim	derinlik
+deputy	C1	isim	yardımcı, milletvekili
+dirty	A1	sıfat	kirli
+earn	B1	fiil	kazanmak
+electronic	B1	sıfat	elektronik
+error	B2	isim	hata
+existence	B2	isim	varlık, var oluş
+expression	B2	isim	ifade
+factory	A2	isim	fabrika
+interior	C1	isim/sıfat	iç, iç mekan
+joy	B2	isim	sevinç
+legislation	C1	isim	mevzuat, yasama
+maintenance	C1	isim	bakım
+manner	B2	isim	tarz, davranış biçimi
+mate	B1	isim	arkadaş, eş
+nearby	B1	sıfat/zarf	yakın, yakında
+noise	A2	isim	gürültü
+origin	B2	isim	köken
+panel	B2	isim	panel, kurul
+personality	B1	isim	kişilik
+plate	A2	isim	tabak
+relief	B2	isim	rahatlama
+resistance	B2	isim	direnç
+retail	C1	isim	perakende
+rice	A1	isim	pirinç, pilav
+roof	A2	isim	çatı
+shame	B2	isim	utanç, yazık
+somewhat	C1	zarf	biraz, bir dereceye kadar
+surely	B2	zarf	kesinlikle, elbette
+absolute	C1	sıfat	mutlak
+advertise	B2	fiil	reklam yapmak
+baseball	A2	isim	beyzbol
+bathroom	A1	isim	banyo
+cable	B2	isim	kablo
+calm	B1	sıfat	sakin
+championship	B2	isim	şampiyona
+client	B2	isim	müşteri, danışan
+constant	B2	sıfat	sürekli, sabit
+democrat	C1	isim	demokrat
+dumb	B2	sıfat	aptal
+empire	B2	isim	imparatorluk
+expansion	C1	isim	genişleme
+heavily	B2	zarf	ağır şekilde, yoğun olarak
+hide	B1	fiil	saklamak, saklanmak
+incident	B2	isim	olay
+politician	B2	isim	siyasetçi
+print	B1	fiil	yazdırmak, basmak
+quit	B2	fiil	bırakmak
+refuse	B2	fiil	reddetmek
+sight	B2	isim	görme, manzara
+significantly	C1	zarf	önemli ölçüde
+soviet	C1	sıfat	Sovyet
+wet	A2	sıfat	ıslak
+widely	B2	zarf	geniş çapta
+worldwide	B2	sıfat/zarf	dünya çapında
+anniversary	B2	isim	yıldönümü
+attractive	B1	sıfat	çekici
+bike	A1	isim	bisiklet
+broad	B2	sıfat	geniş
+burn	B1	fiil	yanmak, yakmak
+cake	A1	isim	pasta, kek
+closely	B2	zarf	yakından
+constantly	B2	zarf	sürekli olarak
+contest	B2	isim	yarışma
+hardly	B2	zarf	zorlukla, neredeyse hiç
+hat	A1	isim	şapka
+height	B1	isim	yükseklik, boy
+invite	A2	fiil	davet etmek
+loud	A2	sıfat	yüksek sesli
+marine	C1	sıfat	deniz, denizle ilgili
+motor	B2	isim	motor
+officially	B2	zarf	resmen
+peak	B2	isim	zirve
+portion	B2	isim	porsiyon, bölüm
+pound	B1	isim	pound, libre
+princess	A2	isim	prenses
+protein	B2	isim	protein
+raw	B2	sıfat	çiğ, ham
+reform	C1	isim/fiil	reform, ıslah etmek
+respond	B2	fiil	yanıt vermek
+retirement	B2	isim	emeklilik
+sample	B2	isim	örnek
+secondary	B2	sıfat	ikincil, orta (okul)
+solar	B2	sıfat	güneş, güneşe ait
+somehow	B2	zarf	bir şekilde
+suffer	B2	fiil	acı çekmek
+ultimate	C1	sıfat	nihai, en üst
+unknown	B1	sıfat	bilinmeyen
+attach	B2	fiil	eklemek, iliştirmek
+automatically	B2	zarf	otomatik olarak
+battery	B1	isim	pil, batarya
+blind	B2	sıfat	kör
+breath	B2	isim	nefes
+brief	B2	sıfat	kısa
+chest	B1	isim	göğüs, sandık
+debut	C2	isim	ilk çıkış
+engage	C1	fiil	meşgul etmek, katılmak
+external	C1	sıfat	dış
+fantasy	B2	isim	fantezi, hayal
+grab	B2	fiil	kapmak, yakalamak
+immediate	B2	sıfat	acil, derhal
+introduction	B1	isim	giriş, tanıtım
+license	B2	isim	ehliyet, lisans
+pilot	B1	isim	pilot
+pink	A1	sıfat	pembe
+presidential	C1	sıfat	başkanlık
+principal	C1	sıfat/isim	ana, müdür
+recognize	B2	fiil	tanımak
+regularly	B2	zarf	düzenli olarak
+singer	A2	isim	şarkıcı
+steam	B2	isim	buhar
+survive	B2	fiil	hayatta kalmak
+tall	A1	sıfat	uzun boylu
+theatre	A2	isim	tiyatro
+therapy	C1	isim	terapi
+witness	C1	isim/fiil	tanık, şahit olmak
+adopt	B2	fiil	benimsemek, evlat edinmek
+aim	B2	isim/fiil	amaç, hedeflemek
+campus	B2	isim	kampüs
+cap	B1	isim	kasket, kapak
+childhood	B1	isim	çocukluk
+clinical	C1	sıfat	klinik
+comedy	B1	isim	komedi
+commander	C1	isim	komutan
+comparison	B2	isim	karşılaştırma
+defeat	B2	isim/fiil	yenilgi, yenmek
+democracy	B2	isim	demokrasi
+exact	B2	sıfat	tam, kesin
+expose	C1	fiil	ortaya çıkarmak, maruz bırakmak
+feed	B1	fiil	beslemek
+injure	B2	fiil	yaralamak
+lock	A2	fiil/isim	kilitlemek, kilit
+musical	B1	sıfat/isim	müzikal
+nose	A1	isim	burun
+oppose	C1	fiil	karşı çıkmak
+organize	B1	fiil	düzenlemek, organize etmek
+plastic	B1	isim/sıfat	plastik
+quote	B2	fiil/isim	alıntı yapmak, alıntı
+suspect	B2	isim/fiil	şüpheli, şüphelenmek
+swear	B2	fiil	yemin etmek, küfretmek
+technique	B2	isim	teknik, yöntem
+tie	B1	fiil/isim	bağlamak, kravat, beraberlik
+trend	B2	isim	eğilim, trend
+valuable	B1	sıfat	değerli, kıymetli
+wealth	B2	isim	servet, zenginlik
+wise	B2	sıfat	bilge, akıllıca
+approval	B2	isim	onay, kabul
+aspect	B2	isim	yön, boyut
+bread	A1	isim	ekmek
+convention	C1	isim	gelenek, kongre, sözleşme
+egg	A1	isim	yumurta
+equivalent	C1	sıfat/isim	eşdeğer, karşılık
+fairly	B1	zarf	oldukça, adilce
+finger	A2	isim	parmak
+gang	B2	isim	çete, güruh
+graduate	B2	fiil/isim	mezun olmak, mezun
+hanging	B2	sıfat/isim	asılı, asma
+inner	B2	sıfat	iç, içsel
+lift	B1	fiil/isim	kaldırmak, asansör
+monthly	B1	sıfat/zarf	aylık, her ay
+neighbourhood	B1	isim	mahalle, semt
+outstanding	C1	sıfat	olağanüstü, ödenmemiş
+permission	B1	isim	izin, müsaade
+regulation	C1	isim	düzenleme, yönetmelik
+reply	A2	fiil/isim	cevap vermek, yanıt
+rid	C1	fiil	kurtulmak, temizlemek
+scientist	A2	isim	bilim insanı
+shoulder	A2	isim	omuz
+shower	A2	isim	duş, sağanak
+tower	B1	isim	kule
+tradition	B1	isim	gelenek, ananevi
+visual	B2	sıfat	görsel
+wheel	A2	isim	tekerlek, direksiyon
+appointment	B1	isim	randevu, atama
+barely	B2	zarf	zar zor, ancak
+bush	B2	isim	çalı, bodur ağaç
+cabinet	B2	isim	dolap, kabine
+celebrate	A2	fiil	kutlamak
+chocolate	A1	isim	çikolata
+coal	B2	isim	kömür
+colour	A1	isim	renk
+contemporary	C1	sıfat	çağdaş, modern
+criticism	B2	isim	eleştiri
+effectively	B2	zarf	etkili biçimde, fiilen
+extensive	C1	sıfat	kapsamlı, geniş
+formation	C1	isim	oluşum, düzen
+gallery	B1	isim	galeri
+highway	B1	isim	otoyol
+historic	B2	sıfat	tarihi, önemli
+hunt	B2	fiil/isim	avlamak, avcılık, arayış
+improvement	B1	isim	gelişme, iyileştirme
+inch	B2	isim	inç, parmak
+initially	C1	zarf	başlangıçta, ilk olarak
+junior	B2	sıfat/isim	kıdemsiz, genç
+jury	C1	isim	jüri
+monster	B1	isim	canavar
+obtain	C1	fiil	elde etmek, edinmek
+philosophy	B2	isim	felsefe
+pride	B2	isim	gurur, onur
+repeat	A2	fiil	tekrarlamak
+rough	B2	sıfat	pürüzlü, kaba
+settlement	C1	isim	yerleşim, uzlaşma
+smell	A2	fiil/isim	koklamak, koku
+speaker	B1	isim	konuşmacı, hoparlör
+surround	C1	fiil	çevrelemek, kuşatmak
+tone	B2	isim	ton, ses tonu
+topic	B1	isim	konu, başlık
+universal	C1	sıfat	evrensel
+vast	C1	sıfat	geniş, uçsuz bucaksız
+visitor	B1	isim	ziyaretçi
+auto	B2	isim	otomobil, otomatik
+consistent	C1	sıfat	tutarlı, istikrarlı
+grey	A2	sıfat/isim	gri
+guitar	A2	isim	gitar
+ignore	B2	fiil	görmezden gelmek
+meal	A2	isim	yemek, öğün
+meanwhile	B2	zarf	bu arada
+meeting	A2	isim	toplantı, buluşma
+naturally	B2	zarf	doğal olarak, tabii ki
+necessarily	C1	zarf	zorunlu olarak
+pants	B1	isim	pantolon, don
+partnership	B2	isim	ortaklık
+percentage	B2	isim	yüzde, oran
+pocket	B1	isim	cep
+practical	B2	sıfat	pratik, uygulamalı
+primarily	C1	zarf	öncelikle, esas olarak
+rape	C1	fiil/isim	tecavüz etmek, tecavüz
+regardless	C1	zarf	ne olursa olsun, aldırmadan
+relative	B2	sıfat/isim	göreceli, akraba
+rescue	B2	fiil/isim	kurtarmak, kurtarma
+rush	B2	fiil/isim	acele etmek, telaş
+sharp	B2	sıfat	keskin, sivri
+soccer	A2	isim	futbol
+stable	B2	sıfat	sabit, istikrarlı
+symptom	B2	isim	belirti, semptom
+temporary	B2	sıfat	geçici
+trick	B2	isim/fiil	numara, hile, kandırmak
+audio	B2	isim	ses, sesli
+bone	B1	isim	kemik
+chamber	C1	isim	oda, meclis
+chart	B2	isim	grafik, çizelge
+circuit	C1	isim	devre, pist
+complicate	C1	fiil	karmaşıklaştırmak
+confuse	B2	fiil	şaşırtmak, karıştırmak
+consequence	B2	isim	sonuç, netice
+defend	B2	fiil	savunmak
+divide	B2	fiil	bölmek, ayırmak
+everyday	B1	sıfat	günlük, gündelik
+extent	C1	isim	ölçü, kapsam
+format	B2	isim/fiil	biçim, biçimlendirmek
+gap	B2	isim	boşluk, fark
+gate	B1	isim	kapı, giriş
+harm	B2	isim/fiil	zarar, zarar vermek
+healthcare	B2	isim	sağlık hizmetleri
+household	B2	isim	hane, ev halkı
+immigration	B2	isim	göç, göçmenlik
+impressive	B2	sıfat	etkileyici
+killer	B2	isim	katil, öldürücü
+lesson	A2	isim	ders, hisse
+membership	B2	isim	üyelik
+mirror	B1	isim	ayna
+mount	C1	fiil/isim	çıkmak, monte etmek, dağ
+proposal	B2	isim	teklif, öneri
+province	B2	isim	il, eyalet
+recognition	C1	isim	tanıma, takdir
+reputation	B2	isim	itibar, ün
+shortly	B2	zarf	kısa süre sonra, yakında
+strongly	B2	zarf	güçlü biçimde, kesinlikle
+tear	B2	isim/fiil	gözyaşı, yırtmak
+thin	A2	sıfat	ince, zayıf
+accuse	B2	fiil	suçlamak
+adventure	B1	isim	macera
+argue	B1	fiil	tartışmak, savunmak
+assessment	C1	isim	değerlendirme
+atmosphere	B2	isim	atmosfer, hava
+awful	B1	sıfat	berbat, korkunç
+bedroom	A1	isim	yatak odası
+belief	B2	isim	inanç, kanaat
+bound	C1	sıfat	bağlı, mecbur
+carefully	A2	zarf	dikkatlice
+cloud	A2	isim	bulut
+contrast	B2	isim	karşıtlık, zıtlık
+elsewhere	C1	zarf	başka yerde
+extension	C1	isim	uzatma, ek
+founder	C1	isim	kurucu
+gear	C1	isim	donanım, vites
+hip	C1	isim	kalça
+infrastructure	C1	isim	altyapı
+loose	B2	sıfat	gevşek, bol
+moral	B2	sıfat/isim	ahlaki, ahlak
+offensive	C1	sıfat	saldırgan, rahatsız edici
+package	B1	isim	paket, koli
+poverty	B2	isim	yoksulluk
+qualify	B2	fiil	yeterli olmak, hak kazanmak
+railway	B1	isim	demiryolu
+ridiculous	B2	sıfat	saçma, gülünç
+sensitive	B2	sıfat	hassas, duyarlı
+server	B2	isim	sunucu, garson
+shock	B2	isim/fiil	şok, şok etmek
+silence	B1	isim	sessizlik
+superior	C1	sıfat	üstün, daha iyi
+supporter	B2	isim	destekçi, taraftar
+thick	B1	sıfat	kalın, yoğun
+ton	B2	isim	ton
+transition	C1	isim	geçiş
+violent	B2	sıfat	şiddetli, saldırgan
+voter	B2	isim	seçmen, oy veren
+wash	A2	fiil	yıkamak
+acid	B2	isim	asit
+actress	A2	isim	kadın oyuncu
+administrative	C1	sıfat	idari
+alongside	C1	edat	yanında, ile birlikte
+anxiety	B2	isim	kaygı, endişe
+bonus	B2	isim	ikramiye, bonus
+castle	A2	isim	kale, şato
+charity	B2	isim	hayır kurumu, yardım
+curious	B1	sıfat	meraklı
+discovery	B2	isim	keşif
+duke	C1	isim	dük
+encourage	B1	fiil	cesaretlendirmek, teşvik etmek
+enforcement	C1	isim	uygulama, yaptırım
+flash	B2	isim/fiil	flaş, parıldamak
+formal	B2	sıfat	resmi
+formula	B2	isim	formül
+fort	C1	isim	kale
+gray	A2	sıfat	gri
+gross	C1	sıfat	brüt, iğrenç
+hungry	A1	sıfat	aç
+inform	B2	fiil	bilgilendirmek
+innocent	B2	sıfat	masum, suçsuz
+math	A2	isim	matematik
+mystery	B2	isim	gizem, sır
+palace	B1	isim	saray
+penalty	B2	isim	ceza, penaltı
+pet	A2	isim	evcil hayvan
+photography	B1	isim	fotoğrafçılık
+protest	B2	isim/fiil	protesto, protesto etmek
+publication	C1	isim	yayın, yayımlama
+respectively	C1	zarf	sırasıyla
+silent	B1	sıfat	sessiz
+successfully	B2	zarf	başarıyla
+temple	B1	isim	tapınak, şakak
+trail	B2	isim	patika, iz
+uncle	A1	isim	amca, dayı, enişte
+unusual	B1	sıfat	alışılmadık, olağandışı
+arrival	B2	isim	varış, geliş
+assault	C1	isim/fiil	saldırı, saldırmak
+awareness	C1	isim	farkındalık, bilinç
+badly	A2	zarf	kötü biçimde, ağır
+bath	A2	isim	banyo, küvet
+capture	B2	fiil	yakalamak, ele geçirmek
+chase	B2	fiil/isim	kovalamak, takip
+component	C1	isim	bileşen, parça
+concrete	B2	sıfat/isim	somut, beton
+deeply	B2	zarf	derinden, çok
+expectation	B2	isim	beklenti
+explanation	B1	isim	açıklama
+exposure	C1	isim	maruz kalma, teşhir
+fiction	B2	isim	kurgu, roman
+guarantee	B2	isim/fiil	garanti, garanti etmek
+happiness	B1	isim	mutluluk
+horrible	B1	sıfat	korkunç, berbat
+ideal	B2	sıfat/isim	ideal, ülkü
+legend	B2	isim	efsane
+lieutenant	C1	isim	teğmen
+mood	B2	isim	ruh hali, keyif
+muscle	B2	isim	kas
+passion	B2	isim	tutku
+procedure	B2	isim	prosedür, işlem
+producer	B2	isim	yapımcı, üretici
+rank	B2	isim/fiil	rütbe, sıralamak
+replacement	B2	isim	yedek, değiştirme
+retire	B2	fiil	emekli olmak
+sand	A2	isim	kum
+saving	B2	isim	tasarruf, birikim
+settle	B2	fiil	yerleşmek, çözmek
+shadow	B2	isim	gölge
+tag	B2	isim	etiket
+tape	B2	isim	bant, kaset
+thread	B2	isim	iplik, konu dizisi
+wage	B2	isim	ücret, maaş
+avenue	B2	isim	cadde, bulvar
+bore	B2	fiil	sıkmak
+clock	A1	isim	saat
+commissioner	C1	isim	komiser, komisyon üyesi
+commitment	C1	isim	bağlılık, taahhüt
+confident	B1	sıfat	kendinden emin, güvenli
+custom	B2	isim	gelenek, adet
+deny	B2	fiil	inkâr etmek, reddetmek
+desk	A1	isim	masa, sıra
+ear	A1	isim	kulak
+electricity	B1	isim	elektrik
+farmer	A2	isim	çiftçi
+gym	A2	isim	spor salonu
+helpful	A2	sıfat	yardımsever, faydalı
+horror	B2	isim	korku, dehşet
+label	B2	isim	etiket
+naked	B2	sıfat	çıplak
+output	C1	isim	çıktı, üretim
+pitch	C1	isim	saha, ton, satış konuşması
+pizza	A1	isim	pizza
+plain	B2	sıfat	sade, açık
+rear	C1	isim/sıfat	arka, arka taraf
+romantic	B2	sıfat	romantik
+strategic	C1	sıfat	stratejik
+swim	A1	fiil	yüzmek
+welfare	C1	isim	refah, sosyal yardım
+wire	B2	isim	tel, kablo
+afterward	B2	zarf	sonradan, sonra
+alright	B1	sıfat/zarf	iyi, tamam
+android	C1	isim	android, insansı robot
+anger	B2	isim	öfke
+architecture	B2	isim	mimari
+assist	B2	fiil	yardım etmek
+behalf	C1	isim	adına, namına
+belt	B1	isim	kemer
+ceremony	B2	isim	tören
+comic	B2	sıfat/isim	komik, çizgi roman
+cop	B2	isim	polis
+designer	B1	isim	tasarımcı
+diamond	B1	isim	elmas
+disappoint	B2	fiil	hayal kırıklığına uğratmak
+efficient	B2	sıfat	verimli
+electrical	B2	sıfat	elektriksel
+employ	B2	fiil	işe almak, kullanmak
+essentially	C1	zarf	esasen, temelde
+establishment	C1	isim	kuruluş, işletme
+ghost	B1	isim	hayalet
+hockey	B1	isim	hokey
+kit	B2	isim	takım, set
+lab	B1	isim	laboratuvar
+nervous	B1	sıfat	gergin, sinirli
+newly	C1	zarf	yeni, yakınlarda
+odd	B2	sıfat	garip, tuhaf
+ordinary	B2	sıfat	sıradan, olağan
+participate	B2	fiil	katılmak
+prayer	B2	isim	dua, namaz
+principle	B2	isim	ilke, prensip
+racist	C1	sıfat/isim	ırkçı
+rarely	B1	zarf	nadiren
+soil	B2	isim	toprak
+solve	B1	fiil	çözmek
+stomach	B1	isim	mide, karın
+suck	C1	fiil	emmek, berbat olmak
+trash	B2	isim	çöp
+ugly	B1	sıfat	çirkin
+virus	B1	isim	virüs
+walker	B2	isim	yürüyüşçü
+whoever	C1	zamir	her kim, kim olursa
+boost	C1	fiil/isim	artırmak, destek
+bureau	C1	isim	büro, daire
+colonel	C1	isim	albay
+comfort	B2	isim	rahatlık, teselli
+cousin	A2	isim	kuzen
+crack	B2	isim/fiil	çatlak, çatlamak
+deck	C1	isim	güverte, deste
+dragon	B2	isim	ejderha
+dramatic	B2	sıfat	çarpıcı, dramatik
+dust	B1	isim	toz
+dutch	B1	sıfat/isim	Hollandalı, Felemenkçe
+evolution	C1	isim	evrim, gelişim
+hire	B1	fiil	işe almak, kiralamak
+illness	B1	isim	hastalık
+inspiration	B2	isim	ilham, esin
+knife	A2	isim	bıçak
+lately	B2	zarf	son zamanlarda
+memorial	C1	isim	anıt, anma
+minority	C1	isim	azınlık
+mum	A2	isim	anne
+priority	B2	isim	öncelik
+promotion	B2	isim	terfi, tanıtım
+rail	B2	isim	ray, korkuluk
+reader	B1	isim	okuyucu
+remote	B2	sıfat	uzak, uzaktan
+repair	B1	fiil/isim	onarmak, onarım
+root	B2	isim	kök
+saint	C1	isim	aziz, evliya
+steal	B1	fiil	çalmak
+telephone	A1	isim	telefon
+whereas	C1	bağlaç	oysa, halbuki
+abandon	C1	fiil	terk etmek, vazgeçmek
+acquire	C1	fiil	edinmek, kazanmak
+alliance	C1	isim	ittifak, birlik
+annoy	B2	fiil	sinirlendirmek, rahatsız etmek
+bid	C1	isim/fiil	teklif, teklif vermek
+buddy	B2	isim	arkadaş, dost
+bury	B2	fiil	gömmek
+butter	A2	isim	tereyağı
+conclusion	B2	isim	sonuç, bitiriş
+congratulations	B1	ünlem	tebrikler, kutlarım
+convince	B2	fiil	ikna etmek
+crystal	C1	isim	kristal
+dean	C1	isim	dekan
+decent	B2	sıfat	düzgün, iyi
+decline	C1	fiil/isim	reddetmek, azalmak, düşüş
+delay	B2	fiil/isim	ertelemek, gecikme
+desert	B2	isim/fiil	çöl, terk etmek
+downtown	B2	isim/zarf	şehir merkezi
+elite	C1	isim/sıfat	seçkin, elit
+forth	C1	zarf	ileri, öteye
+hop	B2	fiil	sıçramak, zıplamak
+insane	B2	sıfat	deli, çılgın
+install	B2	fiil	kurmak, yüklemek
+layer	B2	isim	katman, tabaka
+nowhere	B1	zarf	hiçbir yerde
+nurse	A2	isim	hemşire
+organic	B2	sıfat	organik, doğal
+ownership	C1	isim	sahiplik
+participant	C1	isim	katılımcı
+poetry	B2	isim	şiir
+pot	B1	isim	tencere, saksı
+pray	B2	fiil	dua etmek
+recall	C1	fiil	hatırlamak, geri çağırmak
+sake	C1	isim	uğruna, hatır
+sheet	B1	isim	çarşaf, yaprak
+smooth	B2	sıfat	pürüzsüz, düzgün
+spiritual	C1	sıfat	manevi, ruhani
+string	B2	isim	ip, dizi
+sudden	B2	sıfat	ani
+vacation	B1	isim	tatil
+abroad	B1	zarf	yurt dışında
+assign	C1	fiil	görevlendirmek, atamak
+atlantic	C1	sıfat/isim	Atlantik
+bench	B2	isim	bank
+bother	B2	fiil	rahatsız etmek, zahmet etmek
+broadcast	B2	fiil/isim	yayın yapmak, yayın
+bye	A1	ünlem	hoşça kal
+compete	B2	fiil	yarışmak, rekabet etmek
+consist	C1	fiil	oluşmak, ibaret olmak
+contribute	B2	fiil	katkıda bulunmak
+cricket	B2	isim	kriket, cırcır böceği
+critic	B2	isim	eleştirmen
+disaster	B2	isim	felaket
+entrance	B1	isim	giriş
+equally	B2	zarf	eşit olarak, aynı derecede
+fitness	B2	isim	zindelik, fitness
+friendship	A2	isim	arkadaşlık
+idiot	B2	isim	aptal, salak
+intense	C1	sıfat	yoğun, şiddetli
+lifetime	C1	isim	ömür, yaşam boyu
+liquid	B2	isim/sıfat	sıvı
+makeup	B2	isim	makyaj
+medal	B2	isim	madalya
+mortgage	C1	isim	ipotek, konut kredisi
+narrative	C1	isim	anlatı, hikâye
+narrow	B2	sıfat	dar
+observe	B2	fiil	gözlemlemek
+occasionally	B2	zarf	ara sıra
+pan	B2	isim	tava
+physics	B1	isim	fizik
+potentially	C1	zarf	potansiyel olarak
+reduction	C1	isim	azalma, indirim
+reflect	B2	fiil	yansıtmak, düşünmek
+researcher	B2	isim	araştırmacı
+shell	B2	isim	kabuk, kabuk
+silly	B1	sıfat	aptalca, saçma
+subsequent	C1	sıfat	sonraki
+translation	B2	isim	çeviri
+visible	B2	sıfat	görünür
+yep	A2	ünlem	evet
+amendment	C1	isim	değişiklik, tadil
+angle	B2	isim	açı, bakış açısı
+belong	B1	fiil	ait olmak
+bishop	C1	isim	piskopos
+commonly	B2	zarf	genellikle, yaygın olarak
+defensive	C1	sıfat	savunmacı
+efficiency	C1	isim	verimlilik
+enterprise	C1	isim	işletme, girişim
+experiment	B2	isim/fiil	deney, deney yapmak
+finding	B2	isim	bulgu
+forum	B2	isim	forum
+grass	A2	isim	çimen, ot
+hence	C1	zarf	bu nedenle, dolayısıyla
+increasingly	B2	zarf	giderek artan biçimde
+incredibly	B2	zarf	inanılmaz derecede
+journalist	B1	isim	gazeteci
+mill	B2	isim	değirmen, fabrika
+occasion	B2	isim	vesile, durum
+pace	B2	isim	tempo, adım
+passenger	A2	isim	yolcu
+pen	A1	isim	kalem
+pope	C1	isim	papa
+possession	C1	isim	mülk, sahip olma
+rapid	C1	sıfat	hızlı
+sixth	A2	sıfat	altıncı
+spin	B2	fiil	döndürmek, dönmek
+suitable	B2	sıfat	uygun
+thirty	A1	sıfat	otuz
+valid	B2	sıfat	geçerli
+vital	C1	sıfat	hayati
+whilst	C1	bağlaç	iken, -dığı halde
+agriculture	B2	isim	tarım
+commerce	C1	isim	ticaret
+creek	C1	isim	dere
+currency	B2	isim	para birimi
+emotion	B1	isim	duygu
+exhibition	B2	isim	sergi
+fraud	C1	isim	dolandırıcılık
+funeral	B2	isim	cenaze
+genuine	C1	sıfat	gerçek, samimi
+honey	B1	isim	bal
+honour	C1	isim	onur, şeref
+hook	B2	isim	kanca, çengel
+immigrant	B2	isim	göçmen
+instruction	B2	isim	talimat, öğretim
+legacy	C1	isim	miras
+log	B2	isim	kütük, kayıt
+merely	C1	zarf	sadece, yalnızca
+monitor	B2	isim/fiil	monitör, izlemek
+prisoner	B2	isim	mahkûm, tutsak
+ratio	C1	isim	oran
+regret	B2	fiil/isim	pişman olmak, pişmanlık
+reject	B2	fiil	reddetmek
+remind	B1	fiil	hatırlatmak
+resort	B2	isim	tatil beldesi
+reverse	C1	fiil/sıfat	tersine çevirmek, ters
+routine	B2	isim	rutin, alışkanlık
+scary	B1	sıfat	korkutucu
+seed	B2	isim	tohum
+sin	C1	isim	günah
+spell	B1	fiil	hecelemek
+summary	B2	isim	özet
+survival	C1	isim	hayatta kalma
+sword	B2	isim	kılıç
+tongue	B2	isim	dil
+ward	C1	isim	koğuş, bölge
+achievement	B2	isim	başarı
+asleep	B1	sıfat	uykuda
+automatic	B2	sıfat	otomatik
+behaviour	B1	isim	davranış
+coat	A2	isim	palto, ceket
+comprehensive	C1	sıfat	kapsamlı
+consent	C1	isim	rıza, onay
+daddy	A2	isim	baba
+destruction	C1	isim	yıkım, tahribat
+divorce	B2	isim/fiil	boşanma, boşanmak
+doc	B2	isim	doktor, belge
+drove	B2	fiil	sürdü
+extraordinary	C1	sıfat	olağanüstü
+fate	C1	isim	kader
+frequency	C1	isim	sıklık, frekans
+gene	C1	isim	gen
+glory	C1	isim	şan, zafer
+headquarters	C1	isim	genel merkez
+heritage	C1	isim	miras, kültürel miras
+initiative	C1	isim	girişim, inisiyatif
+juice	A2	isim	meyve suyu
+landscape	B2	isim	manzara, peyzaj
+logic	B2	isim	mantık
+objective	C1	isim/sıfat	amaç, nesnel
+organisation	B2	isim	organizasyon, kuruluş
+privacy	B2	isim	gizlilik
+residence	C1	isim	ikametgâh, konut
+roughly	B2	zarf	yaklaşık olarak
+salary	B1	isim	maaş
+script	B2	isim	senaryo, yazı
+strip	B2	isim	şerit, çizgi
+threaten	B2	fiil	tehdit etmek
+tube	B2	isim	tüp, boru
+ambassador	C1	isim	büyükelçi
+breast	C1	isim	göğüs
+chemistry	B1	isim	kimya
+conclude	B2	fiil	sonuçlandırmak, sonuca varmak
+consumption	C1	isim	tüketim
+corruption	C1	isim	yolsuzluk
+cotton	B1	isim	pamuk
+discount	B1	isim	indirim
+dozen	B2	isim	düzine
+epic	C1	sıfat/isim	destansı, destan
+exception	B2	isim	istisna
+exit	B1	isim/fiil	çıkış, çıkmak
+expand	B2	fiil	genişletmek, büyümek
+fancy	B2	sıfat	gösterişli, süslü
+gorgeous	B2	sıfat	muhteşem, harika
+grateful	B2	sıfat	minnettar
+impression	B2	isim	izlenim
+indicate	B2	fiil	göstermek, belirtmek
+input	C1	isim	girdi, katkı
+knock	B2	fiil	vurmak, kapıyı çalmak
+leather	B2	isim	deri
+lip	B1	isim	dudak
+luxury	B2	isim	lüks
+lyric	C1	isim	şarkı sözü
+manufacturer	C1	isim	üretici, imalatçı
+ought	C1	fiil	-meli, -malı
+outcome	C1	isim	sonuç
+poll	C1	isim	anket, oylama
+removal	C1	isim	kaldırma, çıkarma
+rep	C1	isim	temsilci
+reporter	B1	isim	muhabir
+rob	B2	fiil	soymak
+scream	B2	fiil/isim	çığlık atmak, çığlık
+sequence	C1	isim	sıra, dizi
+tennis	A1	isim	tenis
+terrorist	B2	isim	terörist
+theater	B1	isim	tiyatro
+twelve	A1	sıfat	on iki
+virgin	C1	isim/sıfat	bakire, el değmemiş
+wolf	B1	isim	kurt
+absence	B2	isim	yokluk, devamsızlık
+agricultural	C1	sıfat	tarımsal
+athlete	B2	isim	sporcu, atlet
+bull	B2	isim	boğa
+commonwealth	C1	isim	topluluk, milletler topluluğu
+contribution	B2	isim	katkı
+delicious	A2	sıfat	lezzetli
+ease	C1	isim	kolaylık, rahatlık
+fame	B2	isim	şöhret
+flood	B2	isim/fiil	sel, su basmak
+generate	C1	fiil	üretmek, oluşturmak
+genetic	C1	sıfat	genetik
+impress	B2	fiil	etkilemek
+instant	B2	sıfat/isim	anında, an
+investor	C1	isim	yatırımcı
+liberty	C1	isim	özgürlük
+mare	C1	isim	kısrak
+photograph	A2	isim	fotoğraf
+progressive	C1	sıfat	ilerici, aşamalı
+punishment	B2	isim	ceza
+rally	C1	isim	miting, ralli
+rapidly	B2	zarf	hızla
+representation	C1	isim	temsil
+sum	B2	isim	toplam, meblağ
+swing	B2	fiil/isim	sallanmak, salıncak
+tail	B1	isim	kuyruk
+twin	B2	isim	ikiz
+upcoming	C1	sıfat	yaklaşan
+veteran	C1	isim	gazi, kıdemli
+alert	C1	sıfat/isim	tetikte, uyarı
+arena	C1	isim	arena, stadyum
+boom	C1	isim	patlama, ani artış
+boot	B1	isim	bot
+brave	B2	sıfat	cesur
+column	B2	isim	sütun, köşe yazısı
+compensation	C1	isim	tazminat, telafi
+composition	C1	isim	beste, kompozisyon
+conservation	C1	isim	koruma
+constitutional	C1	sıfat	anayasal
+density	C1	isim	yoğunluk
+difficulty	B1	isim	zorluk
+elementary	B2	sıfat	temel, ilk
+ethnic	C1	sıfat	etnik
+expense	B2	isim	masraf, gider
+fleet	C1	isim	filo
+foster	C1	fiil	beslemek, teşvik etmek
+fundamental	C1	sıfat	temel, esas
+genius	B2	isim	dahi, deha
+greatly	B2	zarf	büyük ölçüde
+guidance	C1	isim	rehberlik
+infection	C1	isim	enfeksiyon
+intention	B2	isim	niyet
+knee	A2	isim	diz
+mechanical	C1	sıfat	mekanik
+participation	C1	isim	katılım
+precious	C1	sıfat	değerli, kıymetli
+pregnancy	C1	isim	hamilelik
+premium	C1	isim/sıfat	prim, birinci sınıf
+pretend	B2	fiil	numara yapmak, rol yapmak
+priest	B2	isim	rahip
+prominent	C1	sıfat	önde gelen, belirgin
+radical	C1	sıfat	köklü, radikal
+residential	C1	sıfat	yerleşim, konut
+reward	B2	isim/fiil	ödül, ödüllendirmek
+satellite	B2	isim	uydu
+shake	B1	fiil	sallamak, titremek
+shore	B2	isim	kıyı, sahil
+substantial	C1	sıfat	önemli, büyük
+teen	B1	isim	genç, ergen
+transmission	C1	isim	iletim, şanzıman
+trap	B2	isim/fiil	tuzak, tuzağa düşürmek
+uniform	B1	isim	üniforma
+wildlife	B2	isim	yaban hayatı
+wooden	B1	sıfat	ahşap, tahta
+aggressive	B2	sıfat	saldırgan, agresif
+apparent	C1	sıfat	belirgin, görünür
+bang	B2	isim/fiil	gürültü, çarpmak
+blast	C1	isim	patlama, esinti
+communist	C1	isim/sıfat	komünist
+complaint	B2	isim	şikâyet
+courage	B2	isim	cesaret
+cure	B2	isim/fiil	çare, tedavi etmek
+desperate	B2	sıfat	çaresiz, umutsuz
+diversity	C1	isim	çeşitlilik
+eve	C1	isim	arife, önceki akşam
+faculty	C1	isim	fakülte, yetenek
+feedback	B2	isim	geri bildirim
+fighter	B2	isim	savaşçı, dövüşçü
+freeze	B2	fiil	donmak, dondurmak
+humanity	C1	isim	insanlık
+innovation	C1	isim	yenilik
+instrument	B1	isim	alet, enstrüman
+invest	B2	fiil	yatırım yapmak
+jacket	A2	isim	ceket
+legislative	C1	sıfat	yasama
+manual	C1	sıfat/isim	elle yapılan, kılavuz
+occupy	C1	fiil	işgal etmek, meşgul etmek
+ongoing	C1	sıfat	devam eden
+operator	B2	isim	operatör
+painful	B2	sıfat	acı verici
+preparation	B2	isim	hazırlık
+punch	B2	fiil/isim	yumruk atmak, yumruk
+purple	A2	sıfat	mor
+railroad	B2	isim	demiryolu
+registration	C1	isim	kayıt
+romance	B2	isim	aşk, romantizm
+submit	C1	fiil	sunmak, teslim etmek
+sufficient	C1	sıfat	yeterli
+suspend	C1	fiil	askıya almak, ertelemek
+tissue	B2	isim	doku, kâğıt mendil
+trailer	B2	isim	fragman, römork
+underground	B2	sıfat/isim	yeraltı, metro
+versus	C1	edat	karşısında
+virtual	C1	sıfat	sanal
+wound	B2	isim/fiil	yara, yaralamak
+amongst	C1	edat	arasında
+announcement	B2	isim	duyuru
+arrange	B1	fiil	düzenlemek, ayarlamak
+arsenal	C1	isim	cephanelik
+attract	B2	fiil	çekmek, cezbetmek
+biological	C1	sıfat	biyolojik
+chip	B2	isim	cips, çip
+dare	B2	fiil	cesaret etmek
+database	B2	isim	veri tabanı
+discrimination	C1	isim	ayrımcılık
+disorder	C1	isim	düzensizlik, bozukluk
+distribute	C1	fiil	dağıtmak
+documentary	B2	isim	belgesel
+domain	C1	isim	alan, etki alanı
+dynamic	C1	sıfat	dinamik
+edit	B2	fiil	düzenlemek, kurgulamak
+engagement	C1	isim	nişan, katılım
+explore	B1	fiil	keşfetmek
+favour	B2	isim	iyilik, lehine
+footage	C1	isim	görüntü kaydı
+grave	C1	isim/sıfat	mezar, ciddi
+implementation	C1	isim	uygulama
+investigate	B2	fiil	araştırmak, soruşturmak
+jazz	B1	isim	caz
+laboratory	B2	isim	laboratuvar
+literary	C1	sıfat	edebi
+mask	B2	isim	maske
+midnight	B1	isim	gece yarısı
+mouse	A2	isim	fare
+piano	A2	isim	piyano
+praise	B2	isim/fiil	övgü, övmek
+presentation	B2	isim	sunum
+psychology	B2	isim	psikoloji
+restriction	C1	isim	kısıtlama
+rocket	B2	isim	roket
+ruin	B2	fiil/isim	mahvetmek, harabe
+slave	B2	isim	köle
+stability	C1	isim	istikrar, denge
+steady	B2	sıfat	sabit, düzenli
+symbol	B2	isim	simge, sembol
+terminal	C1	isim	terminal, uç
+toilet	A2	isim	tuvalet
+treaty	C1	isim	antlaşma
+triple	C1	sıfat	üçlü, üç katı
+unlikely	B2	sıfat	olası olmayan
+agenda	C1	isim	gündem
+bat	B2	isim	yarasa, sopa
+bow	B2	isim/fiil	yay, eğilmek, selam vermek
+calendar	A2	isim	takvim
+cape	C1	isim	pelerin, burun
+collective	C1	sıfat	ortak, toplu
+cooperation	B2	isim	işbirliği
+craft	B2	isim	zanaat, el sanatı
+darkness	B2	isim	karanlık
+devil	B2	isim	şeytan
+enable	B2	fiil	olanak sağlamak, etkinleştirmek
+equity	C1	isim	özsermaye, hakkaniyet
+fortune	C1	isim	servet, talih
+goodbye	A1	ünlem	hoşça kal, elveda
+hardware	B2	isim	donanım
+intellectual	C1	sıfat	entelektüel, zihinsel
+involvement	C1	isim	katılım, ilgi
+nut	B1	isim	fındık, somun
+partly	B2	zarf	kısmen
+petition	C1	isim	dilekçe
+phrase	B1	isim	deyim, söz öbeği
+physically	B2	zarf	fiziksel olarak
+racial	C1	sıfat	ırksal
+regime	C1	isim	rejim
+sauce	A2	isim	sos
+seal	C1	isim/fiil	mühür, fok, mühürlemek
+shield	C1	isim	kalkan
+similarly	C1	zarf	benzer şekilde
+slide	B2	fiil/isim	kaymak, slayt
+stem	C1	isim	gövde, sap
+summit	C1	isim	zirve
+throat	B1	isim	boğaz
+tiger	A2	isim	kaplan
+toy	A2	isim	oyuncak
+warrior	B2	isim	savaşçı
+wisdom	B2	isim	bilgelik
+alien	B2	isim/sıfat	uzaylı, yabancı
+awkward	B2	sıfat	garip, beceriksiz
+beast	B2	isim	canavar, hayvan
+beef	B1	isim	sığır eti
+candy	B1	isim	şeker
+carrier	C1	isim	taşıyıcı, nakliyeci
+celebration	B1	isim	kutlama
+celebrity	B2	isim	ünlü
+certificate	B2	isim	sertifika, belge
+cite	C1	fiil	alıntı yapmak, anmak
+clay	C1	isim	kil
+colleague	B2	isim	meslektaş
+construct	C1	fiil	inşa etmek
+default	C1	isim	varsayılan, temerrüt
+derive	C1	fiil	türetmek, elde etmek
+dialogue	B2	isim	diyalog
+disable	C1	fiil	devre dışı bırakmak
+distinct	C1	sıfat	belirgin, ayrı
+drag	B2	fiil	sürüklemek
+educate	B2	fiil	eğitmek
+eligible	C1	sıfat	uygun, hak sahibi
+execution	C1	isim	infaz, yürütme
+fifty	A1	sıfat	elli
+follower	B2	isim	takipçi
+fool	B2	isim/fiil	aptal, kandırmak
+framework	C1	isim	çerçeve
+franchise	C1	isim	franchise, imtiyaz
+furniture	A2	isim	mobilya
+integrate	C1	fiil	bütünleştirmek, entegre etmek
+intelligent	B1	sıfat	zeki
+interaction	C1	isim	etkileşim
+jet	B2	isim	jet uçağı
+lifestyle	B2	isim	yaşam tarzı
+loop	C1	isim	döngü, halka
+mall	B1	isim	alışveriş merkezi
+overseas	B2	zarf/sıfat	denizaşırı, yurt dışı
+polish	B2	fiil/isim	parlatmak, cila
+recommendation	B2	isim	tavsiye, öneri
+recover	B2	fiil	iyileşmek, geri almak
+relax	A2	fiil	rahatlamak, dinlenmek
+reliable	B2	sıfat	güvenilir
+rely	B2	fiil	güvenmek, dayanmak
+remarkable	C1	sıfat	dikkate değer, olağanüstü
+sacrifice	C1	isim/fiil	fedakârlık, feda etmek
+sole	C1	sıfat	tek, biricik
+succeed	B1	fiil	başarmak, ardından gelmek
+tale	B2	isim	masal, hikâye
+volunteer	B2	isim/fiil	gönüllü, gönüllü olmak
+worship	C1	fiil/isim	ibadet etmek, ibadet
+worthy	C1	sıfat	layık, değer
+alarm	B1	isim	alarm
+bloody	B2	sıfat	kanlı
+breathe	B1	fiil	nefes almak
+butt	C1	isim	popo, izmarit
+characteristic	C1	isim/sıfat	özellik, karakteristik
+collaboration	C1	isim	işbirliği
+consideration	C1	isim	dikkate alma, düşünce
+crucial	C1	sıfat	çok önemli, kritik
+dependent	C1	sıfat	bağımlı
+dual	C1	sıfat	çift, ikili
+equip	C1	fiil	donatmak
+experimental	C1	sıfat	deneysel
+filter	B2	isim/fiil	filtre, süzmek
+galaxy	B2	isim	galaksi
+globe	B2	isim	küre, dünya
+gulf	C1	isim	körfez, uçurum
+highlight	B2	fiil/isim	vurgulamak, öne çıkan an
+intent	C1	isim	niyet, amaç
+judgment	C1	isim	yargı, karar
+knight	B2	isim	şövalye
+logo	B2	isim	logo
+mature	C1	sıfat	olgun
+peaceful	B2	sıfat	huzurlu, barışçıl
+photographer	B1	isim	fotoğrafçı
+pin	B2	isim	toplu iğne, iğne
+prevention	C1	isim	önleme
+publicly	C1	zarf	alenen, herkesin önünde
+pump	B2	isim/fiil	pompa, pompalamak
+revenge	B2	isim	intikam
+satisfy	B2	fiil	memnun etmek, tatmin etmek
+slip	B2	fiil	kaymak
+spare	B2	sıfat/fiil	yedek, esirgemek
+specialist	B2	isim	uzman
+stranger	B1	isim	yabancı
+tap	B2	isim/fiil	musluk, hafifçe vurmak
+tourism	B2	isim	turizm
+acceptable	B2	sıfat	kabul edilebilir
+ally	C1	isim	müttefik
+auction	C1	isim	müzayede, açık artırma
+chaos	C1	isim	kaos, karmaşa
+compose	C1	fiil	bestelemek, oluşturmak
+concentration	C1	isim	konsantrasyon, yoğunlaşma
+copper	C1	isim	bakır
+dawn	C1	isim	şafak, gün doğumu
+dispute	C1	isim	anlaşmazlık
+earning	C1	isim	kazanç
+execute	C1	fiil	yürütmek, idam etmek
+frequent	B2	sıfat	sık
+gather	B2	fiil	toplamak, toplanmak
+hilarious	C1	sıfat	çok komik
+huh	B2	ünlem	ha, hı
+margin	C1	isim	kenar boşluğu, fark
+mechanism	C1	isim	mekanizma
+moderate	C1	sıfat	ılımlı, orta
+opera	B2	isim	opera
+overcome	C1	fiil	üstesinden gelmek, yenmek
+parallel	C1	sıfat	paralel
+passage	C1	isim	geçit, pasaj
+pit	C1	isim	çukur, ocak
+psychological	C1	sıfat	psikolojik
+quest	C1	isim	arayış, macera
+radiation	C1	isim	radyasyon, ışınım
+stroke	C1	isim	felç, vuruş
+stun	C1	fiil	şaşkına çevirmek, sersemletmek
+tune	B2	isim	melodi, ezgi
+utility	C1	isim	hizmet, fayda
+vessel	C1	isim	gemi, kap
+wherever	B2	bağlaç	nerede olursa, her nerede
+acquisition	C1	isim	edinme, satın alma
+anime	B2	isim	anime
+autumn	A2	isim	sonbahar
+bold	C1	sıfat	cesur, kalın (yazı)
+classical	B2	sıfat	klasik
+classify	C1	fiil	sınıflandırmak
+clip	B2	isim	klip, toka
+coin	B1	isim	madeni para
+conspiracy	C1	isim	komplo
+controversy	C1	isim	tartışma, anlaşmazlık
+disappear	B1	fiil	kaybolmak, yok olmak
+encounter	C1	fiil/isim	karşılaşmak, karşılaşma
+equality	C1	isim	eşitlik
+exam	A2	isim	sınav
+examination	B2	isim	inceleme, sınav
+federation	C1	isim	federasyon
+fiscal	C1	sıfat	mali
+guardian	C1	isim	vasi, koruyucu
+homeless	B2	sıfat	evsiz
+intervention	C1	isim	müdahale
+lover	B2	isim	sevgili, tutkunu
+mainstream	C1	isim/sıfat	ana akım
+menu	A2	isim	menü
+mutual	C1	sıfat	karşılıklı
+nope	B2	ünlem	hayır
+offense	C1	isim	suç, saldırı
+oral	C1	sıfat	sözlü, ağızdan
+panic	B2	isim/fiil	panik, paniğe kapılmak
+pursue	C1	fiil	peşinden gitmek, sürdürmek
+realise	B1	fiil	fark etmek, gerçekleştirmek
+refugee	B2	isim	mülteci
+rip	C1	fiil	yırtmak, koparmak
+scope	C1	isim	kapsam
+segment	C1	isim	bölüm, kesim
+spectrum	C1	isim	spektrum, yelpaze
+terror	C1	isim	dehşet, terör
+venture	C1	isim	girişim
+virtually	C1	zarf	neredeyse, sanal olarak
+accompany	C1	fiil	eşlik etmek
+alpha	C1	isim	alfa
+arrangement	B2	isim	düzenleme, ayarlama
+boundary	C1	isim	sınır
+brick	B2	isim	tuğla
+considerable	C1	sıfat	hatırı sayılır, hayli
+conventional	C1	sıfat	geleneksel
+designate	C1	fiil	atamak, belirlemek
+emperor	B2	isim	imparator
+employer	B2	isim	işveren
+enormous	B2	sıfat	devasa, muazzam
+forgive	B2	fiil	affetmek
+garage	B1	isim	garaj, tamirhane
+guideline	C1	isim	yönerge, ilke
+inquiry	C1	isim	soruşturma, sorgulama
+inspector	B2	isim	müfettiş, kontrolör
+lion	A2	isim	aslan
+lonely	B1	sıfat	yalnız, kimsesiz
+mercy	C1	isim	merhamet
+nevertheless	C1	zarf	yine de, buna rağmen
+outer	C1	sıfat	dış
+oxygen	B2	isim	oksijen
+pipe	B2	isim	boru, pipo
+poem	B1	isim	şiir
+powder	B2	isim	toz, pudra
+racism	C1	isim	ırkçılık
+rating	C1	isim	derecelendirme, puan
+rude	B1	sıfat	kaba, terbiyesiz
+screw	C1	isim/fiil	vida, vidalamak
+seventh	A2	sıfat	yedinci
+shelter	B2	isim	barınak, sığınak
+signature	B2	isim	imza
+sooner	B2	zarf	daha erken
+spider	A2	isim	örümcek
+tribute	C1	isim	övgü, saygı duruşu
+trigger	C1	fiil/isim	tetiklemek, tetik
+vary	B2	fiil	değişmek, farklılık göstermek
+venue	C1	isim	mekân, toplantı yeri
+abortion	C1	isim	kürtaj
+accuracy	C1	isim	doğruluk, isabet
+artificial	B2	sıfat	yapay
+beneath	C1	edat	altında
+bullet	B2	isim	kurşun, mermi
+consistently	C1	zarf	sürekli olarak, tutarlı biçimde
+conversion	C1	isim	dönüşüm
+copyright	C1	isim	telif hakkı
+deposit	C1	isim	depozito, mevduat
+destination	B2	isim	varış noktası, hedef
+dirt	B2	isim	kir, toprak
+diverse	C1	sıfat	çeşitli, farklı
+divine	C1	sıfat	ilahi
+exclusively	C1	zarf	yalnızca, sadece
+export	B2	isim/fiil	ihracat, ihraç etmek
+formerly	C1	zarf	eskiden, önceden
+functional	C1	sıfat	işlevsel
+grandfather	A1	isim	büyükbaba, dede
+habit	B1	isim	alışkanlık
+isolate	C1	fiil	yalıtmak, izole etmek
+jealous	B2	sıfat	kıskanç
+lazy	B1	sıfat	tembel
+modify	C1	fiil	değiştirmek, uyarlamak
+municipal	C1	sıfat	belediyeye ait
+naval	C1	sıfat	deniz, donanma
+neighbor	A2	isim	komşu
+neutral	C1	sıfat	tarafsız, nötr
+noble	C1	sıfat	asil, soylu
+pat	C1	fiil	hafifçe vurmak, okşamak
+popularity	B2	isim	popülerlik
+robot	B1	isim	robot
+sacred	C1	sıfat	kutsal
+spy	B2	isim	casus
+suggestion	B1	isim	öneri
+suspension	C1	isim	askıya alma, süspansiyon
+terrorism	C1	isim	terörizm
+toxic	C1	sıfat	zehirli, toksik
+treasury	C1	isim	hazine
+tunnel	B2	isim	tünel
+upgrade	C1	isim/fiil	yükseltme, yükseltmek
+warrant	C1	isim	izin belgesi, emir
+actively	C1	zarf	aktif olarak
+baker	B1	isim	fırıncı
+bless	C1	fiil	kutsamak
+brush	A2	isim/fiil	fırça, fırçalamak
+burden	C1	isim	yük, sorumluluk
+casual	B2	sıfat	rahat, gündelik
+certified	C1	sıfat	onaylı, sertifikalı
+charter	C1	isim	tüzük, kiralık uçuş
+chef	B1	isim	şef, aşçıbaşı
+civilian	B2	isim/sıfat	sivil
+coalition	C1	isim	koalisyon, ittifak
+complain	A2	fiil	şikâyet etmek, yakınmak
+controversial	B2	sıfat	tartışmalı, tartışma yaratan
+differently	B1	zarf	farklı şekilde, değişik biçimde
+discipline	B2	isim/fiil	disiplin, ders alanı, cezalandırmak
+disgust	B2	isim/fiil	tiksinti, iğrendirmek
+dominant	C1	sıfat	baskın, egemen
+essay	B1	isim	deneme, kompozisyon
+furthermore	C1	zarf	ayrıca, dahası
+graphic	B2	sıfat/isim	grafik, görsel, çarpıcı
+heal	B2	fiil	iyileşmek, iyileştirmek
+implement	C1	fiil	uygulamak, yürürlüğe koymak
+instantly	B2	zarf	anında, hemen
+invasion	B2	isim	işgal, istila
+laptop	A2	isim	dizüstü bilgisayar
+legendary	B2	sıfat	efsanevi, ünlü
+maker	B2	isim	yapımcı, üretici
+opponent	B2	isim	rakip, karşıt
+outdoor	B1	sıfat	açık hava, dış mekân
+palm	B2	isim	avuç içi, palmiye
+pole	B1	isim	direk, kutup
+pub	B1	isim	pub, birahane
+ranger	C1	isim	korucu, orman bekçisi
+reception	B2	isim	resepsiyon, kabul, karşılama
+recipe	A2	isim	yemek tarifi, tarif
+regulatory	C1	sıfat	düzenleyici
+rubber	B1	isim	lastik, kauçuk
+serial	C1	sıfat/isim	seri, dizi
+setting	B2	isim	ortam, ayar, çevre
+shed	B2	isim/fiil	baraka, depo, dökmek
+snake	A2	isim	yılan
+sponsor	B2	isim/fiil	sponsor, destekçi, desteklemek
+strict	B2	sıfat	katı, sıkı
+subsequently	C1	zarf	daha sonra, sonradan
+substance	B2	isim	madde, öz
+syndrome	C1	isim	sendrom
+unexpected	B2	sıfat	beklenmedik, ani
+usage	B2	isim	kullanım, kullanma biçimi
+accidentally	B2	zarf	yanlışlıkla, kazara
+affordable	B2	sıfat	uygun fiyatlı, ödenebilir
+amateur	B2	isim/sıfat	amatör
+bin	B1	isim	çöp kutusu, kutu
+biology	B1	isim	biyoloji
+briefly	B2	zarf	kısaca, kısa süreliğine
+canal	B2	isim	kanal
+cancel	A2	fiil	iptal etmek
+climb	A2	fiil	tırmanmak
+completion	C1	isim	tamamlama, bitiş
+cruise	B2	isim/fiil	gemi turu, seyahat etmek
+custody	C1	isim	velayet, gözaltı
+delete	B1	fiil	silmek
+demonstrate	B2	fiil	göstermek, kanıtlamak
+departure	B2	isim	kalkış, ayrılış
+developer	B2	isim	geliştirici, yazılımcı
+dig	B1	fiil	kazmak
+eagle	B2	isim	kartal
+explosion	B2	isim	patlama
+fever	B2	isim	ateş, hummalı heyecan
+fluid	C1	isim/sıfat	sıvı, akışkan
+handsome	B1	sıfat	yakışıklı
+imagination	B2	isim	hayal gücü, imgelem
+integration	C1	isim	entegrasyon, bütünleşme
+integrity	C1	isim	dürüstlük, bütünlük
+interpretation	C1	isim	yorum, yorumlama, tercümanlık
+leaf	A2	isim	yaprak
+legitimate	C1	sıfat	meşru, yasal
+lightning	B2	isim	şimşek, yıldırım
+magical	B2	sıfat	büyülü, sihirli
+motivation	B2	isim	motivasyon, güdü
+nasty	B2	sıfat	kötü, iğrenç, hoş olmayan
+outfit	B2	isim	kıyafet, takım elbise
+pension	B2	isim	emekli maaşı
+permit	B2	fiil/isim	izin vermek, izin belgesi
+pleasant	B1	sıfat	hoş, güzel
+portrait	B2	isim	portre
+productive	B2	sıfat	verimli, üretken
+safely	B1	zarf	güvenle, emniyetle
+shorter	A2	sıfat	daha kısa
+slight	B2	sıfat	hafif, küçük
+socialist	C1	isim/sıfat	sosyalist
+sue	C1	fiil	dava açmak
+tension	B2	isim	gerilim, gerginlik
+transaction	C1	isim	işlem, alışveriş
+twist	B2	fiil/isim	bükmek, burmak, sürpriz gelişme
+ugh	B2	ünlem	off, öf
+unemployment	B2	isim	işsizlik
+unity	C1	isim	birlik, bütünlük
+useless	B1	sıfat	işe yaramaz, yararsız
+viewer	B2	isim	izleyici, seyirci
+advocate	C1	isim/fiil	savunucu, savunmak
+arc	C1	isim	yay, kavis
+backup	B2	isim	yedek, destek
+bitter	B2	sıfat	acı, buruk
+clever	B1	sıfat	zeki, akıllı
+clinic	B2	isim	klinik, poliklinik
+continuous	B2	sıfat	sürekli, kesintisiz
+convert	B2	fiil	dönüştürmek, çevirmek
+correctly	B1	zarf	doğru biçimde, doğru olarak
+creator	B2	isim	yaratıcı, oluşturan
+creature	B2	isim	yaratık, canlı
+criterion	C1	isim	ölçüt, kriter
+detective	B2	isim	dedektif
+disability	B2	isim	engellilik, özür
+dish	A2	isim	yemek, tabak
+duck	B1	isim/fiil	ördek, eğilmek
+evaluation	C1	isim	değerlendirme
+excess	C1	isim	fazlalık, aşırılık
+fence	B2	isim	çit, tel örgü
+gradually	B2	zarf	giderek, yavaş yavaş
+gravity	C1	isim	yerçekimi, ciddiyet
+holder	B2	isim	sahip, tutacak
+hood	B2	isim	kapüşon, motor kaputu
+hung	B1	fiil	asıldı, asılı (hang fiilinin geçmişi)
+identical	C1	sıfat	aynı, özdeş
+imperial	C1	sıfat	imparatorluk, emperyal
+legally	B2	zarf	yasal olarak
+meter	B1	isim	metre, sayaç
+nail	B1	isim	çivi, tırnak
+negotiation	C1	isim	müzakere, pazarlık
+nonsense	B2	isim	saçmalık
+operational	C1	sıfat	işlevsel, operasyonel
+poet	B2	isim	şair
+repeatedly	B2	zarf	tekrar tekrar
+sink	B1	isim/fiil	lavabo, batmak
+skip	B2	fiil	atlamak, geçmek
+slavery	C1	isim	kölelik
+snap	B2	fiil	kırmak, çıtlamak, fotoğraf çekmek
+swiss	B2	sıfat	İsviçreli
+transformation	C1	isim	dönüşüm
+vulnerable	C1	sıfat	savunmasız, kırılgan
+wealthy	B2	sıfat	zengin, varlıklı
+additionally	C1	zarf	ayrıca, ek olarak
+beta	C1	isim	beta, deneme sürümü
+bronze	B2	isim	bronz, tunç
+bug	B1	isim	böcek, yazılım hatası
+cave	B1	isim	mağara
+cheat	B1	fiil	hile yapmak, aldatmak
+chronic	C1	sıfat	kronik, müzmin
+communicate	B1	fiil	iletişim kurmak, iletmek
+convict	C1	fiil/isim	mahkûm etmek, hükümlü
+diagnosis	C1	isim	teşhis, tanı
+dismiss	C1	fiil	işten çıkarmak, reddetmek, azletmek
+distinguish	C1	fiil	ayırt etmek, ayırmak
+dose	C1	isim	doz
+eighth	B1	sıfat	sekizinci
+flesh	C1	isim	et, ten
+flip	B2	fiil	çevirmek, ters çevirmek
+forty	A1	belirteç	kırk
+generous	B1	sıfat	cömert, eli açık
+incorporate	C1	fiil	içermek, dahil etmek
+laser	B2	isim	lazer
+loyal	B2	sıfat	sadık, bağlı
+marijuana	C1	isim	esrar, marihuana
+mentally	B2	zarf	zihinsel olarak, ruhen
+occupation	B2	isim	meslek, işgal
+painting	A2	isim	resim, tablo, boyama
+patch	C1	isim	yama, düzeltme
+patience	B2	isim	sabır
+pollution	B1	isim	kirlilik
+precisely	B2	zarf	tam olarak, kesinlikle
+privilege	C1	isim	ayrıcalık, imtiyaz
+punk	C1	isim	punk, serseri
+radar	C1	isim	radar
+resist	B2	fiil	direnmek, karşı koymak
+solely	C1	zarf	yalnızca, sadece
+tourist	A2	isim	turist
+transit	C1	isim	geçiş, transit
+villa	B2	isim	villa
+wireless	B2	sıfat	kablosuz
+wrap	B2	fiil	sarmak, paketlemek
+yoga	B1	isim	yoga
+airline	B1	isim	havayolu şirketi
+anytime	B2	zarf	her an, istediğin zaman
+bacteria	B2	isim	bakteri
+blade	B2	isim	bıçak ağzı, kanat
+buck	C1	isim	dolar, erkek geyik
+bulk	C1	isim	çoğunluk, yığın
+cargo	C1	isim	kargo, yük
+census	C1	isim	nüfus sayımı
+coastal	B2	sıfat	kıyıdaki, sahil
+commentary	C1	isim	yorum, anlatım
+confusion	B2	isim	karışıklık, şaşkınlık
+congressional	C1	sıfat	kongreyle ilgili
+corn	B1	isim	mısır
+dealer	B2	isim	satıcı, bayi
+deem	C1	fiil	saymak, addetmek
+destiny	C1	isim	kader, yazgı
+distant	B2	sıfat	uzak
+emerge	C1	fiil	ortaya çıkmak, belirmek
+emphasis	B2	isim	vurgu, önem
+ethic	C1	isim	etik, ahlak ilkesi
+excitement	B1	isim	heyecan, coşku
+exploration	B2	isim	keşif, araştırma
+humor	B2	isim	mizah, espri
+insight	C1	isim	içgörü, kavrayış
+lit	B2	fiil	yandı, aydınlatıldı (light fiilinin geçmişi)
+nerve	B2	isim	sinir, cesaret
+nightmare	B2	isim	kâbus
+overnight	B2	zarf/sıfat	bir gecede, gece boyunca
+partially	B2	zarf	kısmen
+pie	B1	isim	turta, pasta
+poster	B1	isim	poster, afiş
+practically	B2	zarf	neredeyse, pratik olarak
+preserve	C1	fiil	korumak, muhafaza etmek
+raid	C1	isim	baskın, akın
+ram	C1	isim	koç, bellek
+respective	C1	sıfat	ilgili, kendi
+restrict	C1	fiil	kısıtlamak, sınırlamak
+sandy	B2	sıfat	kumlu
+scenario	C1	isim	senaryo
+sheep	A2	isim	koyun
+situated	B2	sıfat	konumlanmış, bulunan
+sustainable	C1	sıfat	sürdürülebilir
+sustain	C1	fiil	sürdürmek, desteklemek
+taxi	A2	isim	taksi
+tobacco	B2	isim	tütün
+trace	C1	isim/fiil	iz, izini sürmek
+uncomfortable	B1	sıfat	rahatsız, rahatsız edici
+weakness	B2	isim	zayıflık, zaaf
+widespread	C1	sıfat	yaygın, geniş çapta
+accessible	C1	sıfat	erişilebilir
+acknowledge	C1	fiil	kabul etmek, onaylamak
+advise	B1	fiil	tavsiye etmek, öğüt vermek
+advisory	C1	sıfat/isim	danışma, uyarı
+animation	B2	isim	animasyon, canlandırma
+assignment	B2	isim	ödev, görev
+basement	B2	isim	bodrum
+bias	C1	isim	önyargı, yanlılık
+bit	A2	isim	parça, biraz
+carpet	B1	isim	halı
+ceiling	B1	isim	tavan
+cherry	B1	isim	kiraz
+chill	B2	fiil/isim	serinletmek, dinlenmek, ürperti
+classification	C1	isim	sınıflandırma
+clue	B2	isim	ipucu
+collapse	B2	fiil/isim	çökmek, çöküş
+compound	C1	isim/sıfat	bileşik, bileşke
+conscious	B2	sıfat	bilinçli, farkında
+consecutive	C1	sıfat	ardışık, art arda
+costume	B2	isim	kostüm, kıyafet
+devote	C1	fiil	adamak, ayırmak
+dominate	C1	fiil	hâkim olmak, egemen olmak
+earl	C2	isim	kont
+endless	B2	sıfat	sonsuz, bitmek bilmeyen
+examine	B2	fiil	incelemek, muayene etmek
+float	B2	fiil	yüzmek, su üstünde durmak
+garbage	B2	isim	çöp, atık
+gospel	C1	isim	İncil, kesin gerçek
+grain	B2	isim	tahıl, tane
+grid	C1	isim	ızgara, şebeke
+identification	C1	isim	kimlik, tanımlama
+lap	C1	isim	tur, kucak
+liver	B2	isim	karaciğer
+metro	B1	isim	metro
+metropolitan	C1	sıfat	büyükşehir
+mixture	B2	isim	karışım
+nominate	C1	fiil	aday göstermek
+oak	B2	isim	meşe
+parliamentary	C1	sıfat	parlamentoya ait
+patent	C1	isim	patent
+perception	C1	isim	algı
+physician	C1	isim	doktor, hekim
+proceed	C1	fiil	devam etmek, ilerlemek
+proceeding	C1	isim	işlem, yargılama
+pupil	B2	isim	öğrenci, göz bebeği
+restore	C1	fiil	onarmak, eski haline getirmek
+rifle	B2	isim	tüfek
+rival	C1	isim	rakip
+runner	B1	isim	koşucu
+sadly	B1	zarf	maalesef, üzgün biçimde
+significance	C1	isim	önem, anlam
+soap	A2	isim	sabun
+spray	B2	isim/fiil	sprey, püskürtmek
+structural	C1	sıfat	yapısal
+suite	C1	isim	süit, takım
+tropical	B2	sıfat	tropikal
+unnecessary	B1	sıfat	gereksiz
+verse	C1	isim	dize, kıta
+victor	C2	isim	galip, zafer kazanan
+vintage	C1	sıfat	nostaljik, eskiden kalma
+acre	C1	isim	akre
+adapt	B2	fiil	uyum sağlamak, uyarlamak
+adoption	C1	isim	evlat edinme, benimseme
+anonymous	C1	sıfat	anonim, isimsiz
+artistic	B2	sıfat	sanatsal
+attendance	C1	isim	katılım, devam
+aviation	C1	isim	havacılık
+barrel	C1	isim	varil, fıçı
+beloved	C1	sıfat	sevgili, çok sevilen
+boxing	B2	isim	boks
+chuck	C1	fiil	fırlatmak, atmak
+cinema	A2	isim	sinema
+colonial	C1	sıfat	sömürge, kolonyal
+compliance	C1	isim	uyum, uygunluk
+contrary	C1	sıfat/isim	zıt, tersi
+couch	B1	isim	kanepe
+crush	B2	fiil/isim	ezmek, hoşlanma
+dam	C1	isim	baraj, set
+decrease	B2	fiil/isim	azalmak, azalma
+diabetes	C1	isim	diyabet, şeker hastalığı
+genre	C1	isim	tür, janr
+gentle	B2	sıfat	nazik, yumuşak
+grammar	B1	isim	dilbilgisi
+illustrate	C1	fiil	örneklemek, resimlemek
+invent	B2	fiil	icat etmek, bulmak
+lease	C1	isim/fiil	kira sözleşmesi, kiralamak
+lens	B2	isim	mercek, lens
+loyalty	C1	isim	sadakat
+magnetic	C1	sıfat	manyetik, çekici
+mysterious	B2	sıfat	gizemli, esrarengiz
+notion	C1	isim	kavram, fikir
+partial	C1	sıfat	kısmi
+propaganda	C1	isim	propaganda
+rat	B2	isim	sıçan, fare
+reflection	C1	isim	yansıma, düşünme
+resolve	C1	fiil	çözmek, karar vermek
+revolutionary	C1	sıfat/isim	devrimci, çığır açan
+scandal	C1	isim	skandal, rezalet
+shine	B1	fiil	parlamak, ışık saçmak
+simultaneously	C1	zarf	eş zamanlı olarak, aynı anda
+substitute	C1	isim/fiil	yedek, yerine koymak
+surveillance	C1	isim	gözetim
+tactic	C1	isim	taktik, yöntem
+testimony	C1	isim	ifade, tanıklık
+treasure	B2	isim	hazine
+trophy	B2	isim	kupa, ödül
+tweet	B2	isim/fiil	tweet, tweet atmak
+underlying	C1	sıfat	altta yatan, temel
+unfair	B1	sıfat	haksız, adaletsiz
+acceptance	C1	isim	kabul, onay
+annually	C1	zarf	yıllık olarak, her yıl
+apologize	B1	fiil	özür dilemek
+ash	B2	isim	kül
+aunt	A2	isim	teyze, hala, yenge
+bubble	B2	isim	kabarcık, balon
+buyer	B2	isim	alıcı, müşteri
+casino	B2	isim	kumarhane, casino
+counsel	C1	isim/fiil	danışma, avukat, öğüt vermek
+deadly	B2	sıfat	ölümcül, öldürücü
+determination	C1	isim	kararlılık, azim
+embrace	C1	fiil	kucaklamak, benimsemek
+exhibit	C1	fiil/isim	sergilemek, sergi
+gentleman	B1	isim	beyefendi, centilmen
+hammer	B2	isim	çekiç
+icon	B2	isim	simge, ikon
+impose	C1	fiil	dayatmak, zorlamak
+indigenous	C2	sıfat	yerli, otokton
+infinite	C1	sıfat	sonsuz, sınırsız
+installation	C1	isim	kurulum, tesis
+legislature	C2	isim	yasama organı
+liability	C1	isim	sorumluluk, yükümlülük
+marathon	B2	isim	maraton
+marvel	C1	isim/fiil	harika, hayran olmak
+moreover	C1	zarf	dahası, üstelik
+parade	B2	isim	geçit töreni, yürüyüş
+paradise	B2	isim	cennet
+perceive	C1	fiil	algılamak, fark etmek
+preliminary	C1	sıfat	ön, hazırlık niteliğinde
+premiere	C1	isim	prömiyer, gösterim
+presidency	C1	isim	başkanlık
+react	B1	fiil	tepki vermek
+realistic	B2	sıfat	gerçekçi
+remark	B2	isim/fiil	söz, yorum, belirtmek
+retain	C1	fiil	korumak, elde tutmak
+rocky	B2	sıfat	kayalık, sorunlu
+satisfaction	B2	isim	memnuniyet, tatmin
+scratch	B2	fiil/isim	kaşımak, çizmek, çizik
+shade	B2	isim	gölge, ton
+sheriff	C1	isim	şerif
+shy	B1	sıfat	utangaç, çekingen
+strictly	B2	zarf	kesinlikle, sıkı biçimde
+sunshine	B1	isim	güneş ışığı
+thou	C2	zamir	sen (eski kullanım)
+tier	C1	isim	kat, kademe
+vocal	C1	sıfat	sesle ilgili, sesi çok çıkan
+yield	C1	fiil/isim	ürün vermek, boyun eğmek, verim
+accomplish	C1	fiil	başarmak, gerçekleştirmek
+admission	C1	isim	kabul, giriş, itiraf
+aka	C1	zarf	namı diğer
+bacon	B1	isim	pastırma
+barrier	C1	isim	engel, bariyer
+burst	B2	fiil/isim	patlamak, patlama
+caste	C2	isim	kast
+cattle	C1	isim	sığır, büyükbaş hayvan
+classroom	A2	isim	sınıf
+compromise	C1	isim/fiil	uzlaşma, ödün vermek
+convenient	B2	sıfat	uygun, elverişli
+crop	B2	isim	ekin, mahsul
+earthquake	B1	isim	deprem
+elderly	B2	sıfat	yaşlı
+eliminate	C1	fiil	ortadan kaldırmak, elemek
+embarrass	C1	fiil	utandırmak, mahcup etmek
+harbor	C1	isim	liman
+ion	C2	isim	iyon
+mathematics	B1	isim	matematik
+medication	C1	isim	ilaç, tedavi
+par	C1	isim	eşit düzey, standart
+podcast	B2	isim	podcast
+portfolio	C1	isim	portföy, dosya
+productivity	C1	isim	verimlilik
+protocol	C1	isim	protokol
+quietly	B1	zarf	sessizce
+salad	A2	isim	salata
+scholarship	B2	isim	burs, bilgi birikimi
+soup	A2	isim	çorba
+southeast	B2	isim/sıfat	güneydoğu
+stake	C1	isim	hisse, risk, kazık
+strain	C1	isim/fiil	gerginlik, zorlamak
+swift	C1	sıfat	çabuk, hızlı
+tackle	C1	fiil	ele almak, üstesinden gelmek
+timeline	C1	isim	zaman çizelgesi
+torture	C1	isim/fiil	işkence, işkence etmek
+translate	B1	fiil	çevirmek
+urgent	B2	sıfat	acil
+vegetable	A2	isim	sebze
+vertical	C1	sıfat	dikey
+violation	C1	isim	ihlal
+wallet	B1	isim	cüzdan
+welsh	C1	sıfat	Galli
+workshop	B2	isim	atölye, çalıştay
+aboard	C1	zarf	gemide, uçakta, araca binmiş
+abstract	C1	sıfat/isim	soyut, özet
+accent	B1	isim	aksan, şive, vurgu
+addiction	C1	isim	bağımlılık
+awake	B2	sıfat	uyanık
+beam	C1	isim	ışın, kiriş
+bean	B1	isim	fasulye, çekirdek
+bind	C1	fiil	bağlamak, sarmak
+blank	B2	sıfat	boş, yazısız
+buffalo	C1	isim	manda, bizon
+conviction	C1	isim	mahkûmiyet, kanaat
+corrupt	C1	sıfat	yozlaşmış, yolsuz
+cow	A2	isim	inek
+curve	B2	isim	eğri, viraj
+depressed	B2	sıfat	depresyonda, bunalmış
+dine	B2	fiil	yemek yemek, akşam yemeği yemek
+duration	C1	isim	süre
+fifteen	A1	belirteç	on beş
+grandmother	A1	isim	büyükanne, nine
+harsh	C1	sıfat	sert, acımasız
+horn	B2	isim	boynuz, korna
+hurry	B1	fiil/isim	acele etmek, acele
+immune	C1	sıfat	bağışık
+inflation	C1	isim	enflasyon
+ingredient	B2	isim	malzeme, bileşen
+inspection	C1	isim	denetim, muayene
+intensity	C1	isim	yoğunluk, şiddet
+inventory	C1	isim	envanter, stok
+invitation	B1	isim	davet, davetiye
+judicial	C1	sıfat	yargısal, adli
+justify	C1	fiil	haklı çıkarmak, gerekçelendirmek
+lean	B2	fiil	eğilmek, yaslanmak
+lecture	B2	isim	konferans, ders
+logical	B2	sıfat	mantıklı, mantıksal
+meaningful	B2	sıfat	anlamlı
+migration	C1	isim	göç
+missile	C1	isim	füze
+motivate	B2	fiil	motive etmek, güdülemek
+northwest	B2	isim/sıfat	kuzeybatı
+organ	B2	isim	organ, uzuv
+patrol	C1	isim/fiil	devriye, devriye gezmek
+pearl	B2	isim	inci
+peer	C1	isim	akran, emsal
+pepper	B1	isim	biber
+pig	A2	isim	domuz
+pile	B2	isim	yığın
+plug	B2	isim	fiş, tapa
+provision	C1	isim	hüküm, sağlama, erzak
+revise	B2	fiil	gözden geçirmek, tekrar çalışmak
+rod	C1	isim	çubuk, olta
+stair	B1	isim	merdiven basamağı
+stare	B2	fiil	dik dik bakmak, gözünü dikmek
+statistical	C1	sıfat	istatistiksel
+sweat	B2	isim/fiil	ter, terlemek
+tattoo	B2	isim	dövme
+teenage	B2	sıfat	ergenlik çağındaki
+thunder	B2	isim	gök gürültüsü
+tragedy	C1	isim	trajedi, facia
+trauma	C1	isim	travma
+wrestle	C1	fiil	güreşmek, boğuşmak
+zoo	A2	isim	hayvanat bahçesi
+accordance	C1	isim	uygunluk, uyum
+activist	C1	isim	aktivist, eylemci
+alike	B2	sıfat/zarf	benzer, aynı şekilde
+applicable	C1	sıfat	uygulanabilir, geçerli
+arrow	B1	isim	ok
+availability	C1	isim	bulunabilirlik, uygunluk
+bend	B2	fiil	bükmek, eğilmek
+breach	C1	isim/fiil	ihlal, ihlal etmek
+cabin	B2	isim	kabin, kulübe
+cage	B2	isim	kafes
+chancellor	C1	isim	şansölye, rektör
+cheer	B2	fiil/isim	alkışlamak, tezahürat
+closet	B2	isim	gardırop, dolap
+companion	C1	isim	yoldaş, arkadaş
+consciousness	C1	isim	bilinç, farkındalık
+consultant	C1	isim	danışman
+controller	C1	isim	denetleyici, kontrolör
+correspond	C1	fiil	örtüşmek, yazışmak
+courtesy	C1	isim	nezaket, saygı
+disc	B2	isim	disk, plak
+embassy	B2	isim	büyükelçilik
+fascinating	B2	sıfat	büyüleyici, ilgi çekici
+flexible	B2	sıfat	esnek
+goodness	B2	isim	iyilik, Tanrım (ünlem)
+guilt	B2	isim	suçluluk, suçluluk duygusu
+haven	C1	isim	sığınak, liman
+helicopter	B1	isim	helikopter
+homework	A1	isim	ödev
+iconic	C1	sıfat	simgesel, ikonik
+infect	C1	fiil	bulaştırmak, enfekte etmek
+keen	B2	sıfat	istekli, hevesli
+lesser	C1	sıfat	daha az, daha küçük
+mandatory	C1	sıfat	zorunlu
+mechanic	B2	isim	tamirci, makinist
+mere	C1	sıfat	sadece, yalnızca
+miracle	B2	isim	mucize
+mud	B1	isim	çamur
+observation	C1	isim	gözlem
+owe	B2	fiil	borçlu olmak
+phenomenon	C1	isim	olgu, fenomen
+precise	C1	sıfat	kesin, tam
+profession	B2	isim	meslek
+prospect	C1	isim	olasılık, beklenti
+protective	B2	sıfat	koruyucu
+provider	C1	isim	sağlayıcı
+publisher	B2	isim	yayıncı, yayınevi
+reportedly	C1	zarf	iddialara göre, bildirildiğine göre
+retreat	C1	fiil/isim	geri çekilmek, sığınak
+rookie	C1	isim	acemi, çaylak
+sandwich	A2	isim	sandviç
+separation	C1	isim	ayrılık, ayırma
+sexually	C1	zarf	cinsel olarak
+ski	B1	fiil/isim	kayak yapmak, kayak
+sterling	C1	isim	sterlin
+surgeon	B2	isim	cerrah
+theft	B2	isim	hırsızlık
+valve	C1	isim	valf, supap
+visa	B1	isim	vize
+adjacent	C1	sıfat	bitişik, yanındaki
+appreciation	C1	isim	takdir, minnettarlık
+athletic	B2	sıfat	atletik, sporcu yapılı
+authorize	C1	fiil	yetkilendirmek, onaylamak
+banner	C1	isim	pankart, afiş
+brad	C2	isim	küçük çivi
+charm	C1	isim	çekicilik, tılsım
+colony	C1	isim	koloni, sömürge
+cookie	B1	isim	kurabiye, çerez
+cruel	B2	sıfat	zalim, acımasız
+curriculum	C1	isim	müfredat
+deadline	B2	isim	son tarih
+deer	B1	isim	geyik
+delta	C1	isim	delta
+dive	B2	fiil	dalmak
+easter	B2	isim	Paskalya
+electoral	C1	sıfat	seçimle ilgili
+eleven	A1	belirteç	on bir
+entity	C1	isim	varlık, kuruluş
+excessive	C1	sıfat	aşırı, fazla
+feminist	C1	isim/sıfat	feminist
+govern	C1	fiil	yönetmek, idare etmek
+ham	B1	isim	jambon
+interface	C1	isim	arayüz
+jewelry	B2	isim	mücevher, takı
+journalism	C1	isim	gazetecilik
+jungle	B2	isim	orman, cangıl
+linear	C1	sıfat	doğrusal
+occasional	C1	sıfat	ara sıra olan, seyrek
+orient	C1	fiil	yönlendirmek, doğu
+predict	B2	fiil	tahmin etmek, öngörmek
+prof	C1	isim	profesör
+pursuit	C1	isim	peşinde koşma, uğraş
+rap	B2	isim	rap, hafif vuruş
+reminder	B2	isim	hatırlatıcı, hatırlatma
+resume	C1	fiil	yeniden başlamak, devam etmek
+ridge	C1	isim	sırt, tepe
+scholar	C1	isim	bilgin, akademisyen
+tribe	C1	isim	kabile, aşiret
+unfortunate	B2	sıfat	talihsiz, şanssız
+variable	C1	isim/sıfat	değişken
+ace	C1	isim	as, birinci sınıf
+adjust	B2	fiil	ayarlamak, uyum sağlamak
+alternate	C1	fiil/sıfat	değiştirmek, dönüşümlü
+artwork	B2	isim	sanat eseri
+attraction	B2	isim	çekicilik, cazibe
+babe	B2	isim	bebek, tatlım
+bankruptcy	C1	isim	iflas
+canon	C2	isim	kanon, ilke
+capability	C1	isim	yetenek, kapasite
+closure	C1	isim	kapanış, sonuç
+cognitive	C1	sıfat	bilişsel
+competitor	B2	isim	rakip
+defender	B2	isim	savunmacı, savunan kişi
+dental	C1	sıfat	dişle ilgili
+diplomatic	C1	sıfat	diplomatik
+drum	B1	isim	davul, varil
+editorial	C1	isim/sıfat	başyazı, editoryal
+entertain	B2	fiil	eğlendirmek, ağırlamak
+eternal	C1	sıfat	sonsuz, ebedi
+generic	C1	sıfat	genel, jenerik
+grandma	A1	isim	nine, büyükanne
+grip	C1	isim/fiil	kavrayış, sıkıca tutmak
+handful	C1	isim	avuç dolusu, bir avuç
+happily	B1	zarf	mutlu bir şekilde, memnuniyetle
+harmony	C1	isim	uyum, ahenk
+humble	C1	sıfat	alçakgönüllü, mütevazı
+hybrid	C1	isim/sıfat	melez, hibrit
+keyboard	A2	isim	klavye
+locally	C1	zarf	yerel olarak
+mild	B2	sıfat	hafif, ılımlı
+minimal	C1	sıfat	asgari, minimal
+molecular	C1	sıfat	moleküler
+nearest	B1	sıfat	en yakın
+neighbour	A2	isim	komşu
+noon	B1	isim	öğle
+nowadays	B2	zarf	bugünlerde, günümüzde
+openly	B2	zarf	açıkça
+overview	C1	isim	genel bakış
+parish	C1	isim	mahalle kilisesi, bucak
+pathetic	C1	sıfat	acınası, zavallı
+potato	A2	isim	patates
+potter	C1	isim	çömlekçi
+preference	B2	isim	tercih
+proportion	C1	isim	oran, orantı
+rage	C1	isim	öfke, hiddet
+restoration	C1	isim	restorasyon, onarım
+selfish	B2	sıfat	bencil
+sergeant	C1	isim	çavuş
+silk	B2	isim	ipek
+stamp	B1	isim	pul, damga
+throne	C1	isim	taht
+thy	C2	zamir	senin (eski kullanım)
+urge	C1	isim/fiil	dürtü, teşvik etmek
+warner	C2	isim	uyarıcı
+witch	B1	isim	cadı
+archive	C1	isim	arşiv
+array	C1	isim	dizi, çeşit
+belly	C1	isim	karın, göbek
+booth	C1	isim	kabin, stant
+breakdown	C1	isim	arıza, çöküş, döküm
+brutal	C1	sıfat	acımasız, vahşi
+calculate	B2	fiil	hesaplamak
+cam	C1	isim	kamera, kam
+citizenship	C1	isim	vatandaşlık
+cliff	B2	isim	uçurum
+consensus	C1	isim	fikir birliği, uzlaşı
+declaration	C1	isim	bildiri, beyan
+derby	C2	isim	derbi, katır bombası şapka
+distinction	C1	isim	ayrım, üstünlük
+donation	B2	isim	bağış
+facial	C1	sıfat	yüze ait, yüz
+faithful	C1	sıfat	sadık, vefalı
+fatal	C1	sıfat	ölümcül, vahim
+fig	B2	isim	incir
+genuinely	B2	zarf	gerçekten, içtenlikle
+hunger	B2	isim	açlık
+hurricane	B2	isim	kasırga, fırtına
+implication	C1	isim	sonuç, ima
+import	B2	fiil/isim	ithal etmek, ithalat
+innovative	C1	sıfat	yenilikçi
+jurisdiction	C2	isim	yargı yetkisi
+laughter	B1	isim	kahkaha, gülüş
+lemon	A2	isim	limon
+lung	B2	isim	akciğer
+mighty	C1	sıfat	güçlü, kudretli
+monetary	C1	sıfat	parasal
+nutrition	C1	isim	beslenme
+ore	C1	isim	cevher
+pine	B2	isim	çam
+poorly	B2	zarf	kötü biçimde, yetersiz
+pose	C1	fiil/isim	poz vermek, oluşturmak, poz
+pour	B1	fiil	dökmek, boşaltmak
+purely	C1	zarf	tamamen, sadece
+rental	B2	isim	kiralama, kira
+seemingly	C1	zarf	görünüşe göre
+severely	C1	zarf	ağır şekilde, şiddetle
+shark	B1	isim	köpekbalığı
+southwest	B2	isim/sıfat	güneybatı
+survivor	B2	isim	hayatta kalan
+technically	C1	zarf	teknik olarak
+unlimited	B2	sıfat	sınırsız
+anxious	B2	sıfat	endişeli, kaygılı
+bee	A2	isim	arı
+cafe	A2	isim	kafe
+cigarette	B1	isim	sigara
+cult	C1	isim	tarikat, kült
+dairy	B2	isim	süt ürünleri, mandıra
+darling	B2	isim	sevgili, canım
+delight	B2	isim/fiil	sevinç, memnun etmek
+diary	B1	isim	günlük
+disagree	B1	fiil	aynı fikirde olmamak, katılmamak
+drill	B2	isim/fiil	matkap, delmek, tatbikat
+euro	A2	isim	avro
+evolve	C1	fiil	evrimleşmek, gelişmek
+forecast	B2	isim/fiil	tahmin, hava tahmini
+governance	C1	isim	yönetişim, yönetim
+hug	B1	fiil/isim	sarılmak, sarılma
+importantly	B2	zarf	önemli ölçüde, önemlisi
+indoor	B1	sıfat	kapalı alan, iç mekân
+influential	C1	sıfat	etkili, nüfuzlu
+invisible	B2	sıfat	görünmez
+lawsuit	C1	isim	dava
+leak	B2	isim/fiil	sızıntı, sızdırmak
+lighter	B1	isim	çakmak
+musician	A2	isim	müzisyen
+olive	B1	isim	zeytin
+passionate	B2	sıfat	tutkulu, ateşli
+receiver	B2	isim	alıcı, ahize
+riot	C1	isim	isyan, ayaklanma
+roster	C2	isim	nöbet listesi, kadro
+servant	B2	isim	hizmetçi, uşak
+setup	B2	isim	kurulum, düzen
+skull	B2	isim	kafatası
+slot	C1	isim	yuva, zaman dilimi
+smash	B2	fiil	parçalamak, kırmak
+statue	B2	isim	heykel
+surprisingly	B2	zarf	şaşırtıcı biçimde
+surrender	C1	fiil/isim	teslim olmak, teslimiyet
+suspicious	B2	sıfat	şüpheli, kuşkucu
+teenager	B1	isim	genç, ergen
+tender	C1	sıfat	yumuşak, şefkatli
+thoroughly	C1	zarf	tamamen, etraflıca
+vacuum	C1	isim	vakum, elektrikli süpürge
+variation	C1	isim	değişim, çeşitleme
+allegation	C1	isim	iddia, suçlama
+anticipate	C1	fiil	beklemek, öngörmek
+architect	B2	isim	mimar
+basin	C1	isim	havza, leğen
+beneficial	C1	sıfat	yararlı, faydalı
+bleed	B2	fiil	kanamak
+breed	C1	isim/fiil	cins, yetiştirmek
+bride	B2	isim	gelin
+broadway	C2	isim	Broadway
+bud	C1	isim	tomurcuk, arkadaş
+butler	C1	isim	kâhya, uşak
+cartoon	B1	isim	çizgi film, karikatür
+chick	B2	isim	civciv
+coke	B2	isim	kola, kok kömürü
+comparable	C1	sıfat	karşılaştırılabilir, benzer
+confirmation	C1	isim	onay, doğrulama
+console	C1	isim/fiil	konsol, teselli etmek
+contractor	C1	isim	müteahhit, yüklenici
+diameter	C1	isim	çap
+dump	B2	fiil/isim	boşaltmak, çöplük
+duo	C1	isim	ikili
+elephant	A2	isim	fil
+enhance	C1	fiil	artırmak, geliştirmek
+exhaust	C1	fiil/isim	tüketmek, egzoz
+fabric	B2	isim	kumaş
+fabulous	B2	sıfat	harika, muhteşem
+fairy	B2	isim	peri
+fold	B1	fiil	katlamak
+freak	C1	isim	ucube, tutkun
+gamble	C1	fiil	kumar oynamak, risk almak
+gently	B2	zarf	nazikçe, yavaşça
+glorious	C1	sıfat	şanlı, muhteşem
+grief	C1	isim	yas, acı
+historically	C1	zarf	tarihsel olarak
+hub	C1	isim	merkez, odak noktası
+inevitable	C1	sıfat	kaçınılmaz
+layout	C1	isim	düzen, yerleşim
+lodge	C1	isim/fiil	kulübe, yerleşmek, şikâyet iletmek
+merchant	C1	isim	tüccar
+merit	C1	isim	değer, erdem
+myth	B2	isim	efsane, mit
+overwhelming	C1	sıfat	ezici, bunaltıcı
+pale	B2	sıfat	soluk, solgun
+particle	C1	isim	parçacık
+pastor	C1	isim	papaz, rahip
+permanently	B2	zarf	kalıcı olarak
+poison	B2	isim/fiil	zehir, zehirlemek
+provincial	C1	sıfat	taşra, eyalet
+rebel	C1	isim/fiil	asi, isyan etmek
+rotation	C1	isim	dönüş, rotasyon
+separately	B2	zarf	ayrı ayrı
+subtle	C1	sıfat	ince, belli belirsiz
+toll	C1	isim	ücret, can kaybı
+tragic	C1	sıfat	trajik, acıklı
+trainer	B1	isim	antrenör, eğitmen
+transform	C1	fiil	dönüştürmek
+unbelievable	B2	sıfat	inanılmaz
+underneath	B2	edat/zarf	altında, alt kısmında
+viral	C1	sıfat	viral, virüsle ilgili
+warehouse	B2	isim	depo, ambar
+widow	C1	isim	dul kadın
+administrator	C1	isim	yönetici, idareci
+altogether	C1	zarf	tamamen, toplamda
+animated	C1	sıfat	canlı, animasyonlu
+assess	C1	fiil	değerlendirmek
+assumption	C1	isim	varsayım
+assure	C1	fiil	temin etmek, güvence vermek
+basket	A2	isim	sepet
+beard	B1	isim	sakal
+blanket	B1	isim	battaniye
+bucket	B1	isim	kova
+burger	A2	isim	hamburger
+compute	C1	fiil	hesaplamak
+concentrate	B2	fiil	yoğunlaşmak, odaklanmak
+continent	B1	isim	kıta
+curse	C1	isim/fiil	lanet, lanetlemek
+drain	C1	fiil/isim	boşaltmak, gider
+emission	C1	isim	emisyon, salım
+ethical	C1	sıfat	etik, ahlaki
+excellence	C1	isim	mükemmellik, üstünlük
+flame	B2	isim	alev
+freely	B2	zarf	özgürce, serbestçe
+graduation	B2	isim	mezuniyet
+hint	B2	isim	ipucu, ima
+horizon	B2	isim	ufuk
+hostile	C1	sıfat	düşmanca
+ink	B2	isim	mürekkep
+inn	C1	isim	han, otel
+matrix	C1	isim	matris
+miserable	B2	sıfat	sefil, perişan
+momentum	C1	isim	ivme, güç
+monkey	A2	isim	maymun
+motorcycle	B1	isim	motosiklet
+nationwide	C1	sıfat/zarf	ülke çapında
+nest	B2	isim	yuva
+nicely	B1	zarf	güzelce, hoş biçimde
+ninth	B1	sıfat	dokuzuncu
+nomination	C1	isim	aday gösterme
+notable	C1	sıfat	dikkate değer, önemli
+obligation	C1	isim	yükümlülük
+optical	C1	sıfat	optik, görsel
+outlook	C1	isim	görünüm, bakış açısı
+penny	B1	isim	peni, kuruş
+petty	C1	sıfat	küçük, önemsiz, ufak tefek
+quantity	B2	isim	miktar, nicelik
+quantum	C1	isim/sıfat	kuantum
+rainbow	B1	isim	gökkuşağı
+recognise	B2	fiil	tanımak, fark etmek
+reed	C2	isim	kamış
+reign	C1	isim/fiil	saltanat, hüküm sürmek
+scan	B2	fiil/isim	taramak, tarama
+specialize	C1	fiil	uzmanlaşmak
+submission	C1	isim	sunum, teslim, boyun eğme
+sunny	A2	sıfat	güneşli
+testament	C1	isim	kanıt, vasiyet
+toe	B1	isim	ayak parmağı
+tremendous	C1	sıfat	muazzam, çok büyük
+accommodation	B2	isim	konaklama, barınma
+adorable	B2	sıfat	sevimli, tatlı
+allegedly	C1	zarf	iddiaya göre, sözde
+ambulance	B1	isim	ambulans
+ashamed	B2	sıfat	utanmış, mahcup
+ballot	C1	isim	oy pusulası, oylama
+cemetery	B2	isim	mezarlık
+compact	C1	sıfat	kompakt, derli toplu
+consult	B2	fiil	danışmak, başvurmak
+deficit	C1	isim	açık, eksiklik
+demo	B2	isim	demo, gösterim
+demon	C1	isim	iblis, şeytan
+demonstration	B2	isim	gösteri, protesto
+detect	C1	fiil	fark etmek, tespit etmek
+detection	C1	isim	tespit, algılama
+doll	B1	isim	bebek, oyuncak bebek
+donate	B2	fiil	bağışlamak
+elaborate	C1	sıfat/fiil	ayrıntılı, ayrıntılandırmak
+elder	C1	sıfat/isim	daha yaşlı, büyük
+expertise	C1	isim	uzmanlık
+fiber	C1	isim	lif, fiber
+fry	B1	fiil	kızartmak
+grocery	B2	isim	bakkal, market ürünleri
+halfway	B2	zarf	yarı yolda
+happier	A2	sıfat	daha mutlu
+heel	B2	isim	topuk
+hull	C2	isim	gemi gövdesi, kabuk
+independently	B2	zarf	bağımsız olarak
+indication	C1	isim	belirti, işaret
+insist	B2	fiil	ısrar etmek
+intensive	C1	sıfat	yoğun
+interactive	C1	sıfat	etkileşimli
+intimate	C1	sıfat	samimi, yakın
+laundry	B2	isim	çamaşır
+martial	C2	sıfat	savaşla ilgili, dövüş
+northeast	B2	isim/sıfat	kuzeydoğu
+password	B1	isim	parola, şifre
+politically	C1	zarf	siyasi olarak
+presumably	C1	zarf	muhtemelen, herhalde
+pronounce	B2	fiil	telaffuz etmek, ilan etmek
+prosecution	C1	isim	kovuşturma, savcılık
+pulse	C1	isim	nabız, darbe
+rational	C1	sıfat	mantıklı, akılcı
+realm	C1	isim	alan, diyar
+rope	B1	isim	halat, ip
+shout	A2	fiil	bağırmak
+smartphone	A2	isim	akıllı telefon
+specify	C1	fiil	belirtmek, saptamak
+spectacular	C1	sıfat	muhteşem, görkemli
+streak	C1	isim	çizgi, seri
+subscription	C1	isim	abonelik
+technological	C1	sıfat	teknolojik
+temporarily	C1	zarf	geçici olarak
+tolerance	C1	isim	hoşgörü, tolerans
+traditionally	C1	zarf	geleneksel olarak
+unhappy	A2	sıfat	mutsuz
+adequate	C1	sıfat	yeterli, uygun
+alter	C1	fiil	değiştirmek
+apology	B2	isim	özür
+attribute	C1	fiil/isim	atfetmek, özellik
+beg	B2	fiil	yalvarmak, dilenmek
+bout	C1	isim	nöbet, karşılaşma
+brass	C1	isim	pirinç, bakır alaşımı
+buzz	C1	isim/fiil	vızıltı, vızıldamak
+comeback	C1	isim	geri dönüş
+cos	C2	bağlaç	çünkü
+diagnose	C1	fiil	teşhis koymak
+diesel	C1	isim	dizel
+dimension	C1	isim	boyut
+dip	C1	fiil/isim	daldırmak, düşüş
+disturb	B2	fiil	rahatsız etmek
+dot	B2	isim	nokta
+effectiveness	C1	isim	etkililik
+exceptional	C1	sıfat	olağanüstü, istisnai
+flee	C1	fiil	kaçmak
+foul	C1	sıfat/isim	iğrenç, faul
+frankly	B2	zarf	açıkçası, dürüstçe
+graph	B2	isim	grafik
+hack	C1	fiil	bilgisayara sızmak, kesmek
+hatred	C1	isim	nefret
+ignorant	C1	sıfat	cahil, habersiz
+interact	B2	fiil	etkileşim kurmak
+limp	C1	fiil/sıfat	topallamak, gevşek
+limitation	C1	isim	sınırlama, kısıt
+majesty	C1	isim	ululuk, majesteleri
+measurement	B2	isim	ölçüm, ölçü
+median	C1	isim/sıfat	medyan, ortanca
+medieval	C1	sıfat	ortaçağa ait
+mobility	C1	isim	hareketlilik
+orientation	C1	isim	yönelim, oryantasyon
+oven	B1	isim	fırın
+passport	A2	isim	pasaport
+pill	B1	isim	hap
+rabbit	A2	isim	tavşan
+rhythm	B2	isim	ritim, tempo
+savage	C1	sıfat	vahşi, acımasız
+shook	B1	fiil	sallandı (shake fiilinin geçmişi)
+shooter	C1	isim	nişancı, silahlı kişi
+sibling	C1	isim	kardeş
+slim	B1	sıfat	ince, zayıf
+someday	B1	zarf	bir gün
+sophisticated	C1	sıfat	gelişmiş, sofistike
+spam	C1	isim	spam, istenmeyen posta
+stack	C1	isim	yığın
+stance	C1	isim	duruş, tutum
+static	C1	sıfat	durağan, statik
+subway	B1	isim	metro, yeraltı geçidi
+supportive	C1	sıfat	destekleyici
+surgical	C1	sıfat	cerrahi
+tablet	B1	isim	tablet, hap
+tent	B1	isim	çadır
+thesis	C1	isim	tez
+tide	C1	isim	gelgit, akıntı
+warfare	C1	isim	savaş
+withdraw	C1	fiil	çekmek, geri çekilmek
+withdrawal	C1	isim	çekilme, para çekme
+aging	C1	isim/sıfat	yaşlanma
+audit	C1	isim/fiil	denetim, denetlemek
+authentic	C1	sıfat	otantik, gerçek
+backward	B2	zarf/sıfat	geriye doğru, geri
+blonde	B2	sıfat	sarışın
+bolt	C1	isim	cıvata, sürgü
+brook	C2	isim	dere
+bust	C1	isim/fiil	büst, kırmak, baskın
+collar	B2	isim	yaka, tasma
+comply	C1	fiil	uymak, riayet etmek
+cope	C1	fiil	başa çıkmak
+creepy	C1	sıfat	ürkütücü, tüyler ürpertici
+drawing	B1	isim	çizim, resim
+echo	C1	isim/fiil	yankı, yankılanmak
+emotionally	C1	zarf	duygusal olarak
+finale	C1	isim	final, bitiş
+flavor	B2	isim	tat, lezzet
+glove	B1	isim	eldiven
+ignorance	C1	isim	cehalet, bilgisizlik
+induce	C2	fiil	neden olmak, yol açmak
+intermediate	B2	sıfat	orta düzey, ara
+invention	B2	isim	icat
+likewise	C1	zarf	aynı şekilde, keza
+magnificent	C1	sıfat	muhteşem, görkemli
+mathematical	C1	sıfat	matematiksel
+meantime	C1	isim	ara, aradaki süre
+nonetheless	C1	zarf	yine de, bununla birlikte
+pipeline	C1	isim	boru hattı, süreç hattı
+placement	C1	isim	yerleştirme, staj
+recreation	C1	isim	eğlence, dinlence
+renew	B2	fiil	yenilemek
+resign	B2	fiil	istifa etmek
+shallow	B2	sıfat	sığ, yüzeysel
+sketch	B2	isim/fiil	taslak, kroki çizmek
+soda	B1	isim	soda, gazlı içecek
+spite	C1	isim	kin, inat
+strengthen	B2	fiil	güçlendirmek
+sunset	B1	isim	gün batımı
+thanksgiving	B2	isim	Şükran Günü
+thermal	C1	sıfat	termal, ısıl
+workplace	B2	isim	iş yeri, çalışma ortamı
+yell	B2	fiil	bağırmak, haykırmak
+analyst	C1	isim	analist, çözümleyici
+arctic	C1	sıfat	kutup, Arktik
+calorie	B2	isim	kalori
+cease	C1	fiil	sona ermek, durmak, bırakmak
+chapel	C1	isim	küçük kilise, şapel
+container	B2	isim	konteyner, kap
+cowboy	B2	isim	kovboy
+deploy	C1	fiil	konuşlandırmak, devreye almak
+differ	B2	fiil	farklı olmak, ayrılmak
+dimensional	C1	sıfat	boyutlu
+eager	B2	sıfat	istekli, hevesli
+elevate	C1	fiil	yükseltmek, yukarı çıkarmak
+essence	C1	isim	öz, esas
+fork	B1	isim	çatal, çatal yol
+fur	B2	isim	kürk, tüy
+harvest	B2	isim/fiil	hasat, hasat etmek
+headline	B2	isim	manşet, başlık
+hype	C1	isim	abartılı tanıtım, reklam çılgınlığı
+junk	B2	isim	hurda, çöp
+kidney	B2	isim	böbrek
+ladder	B1	isim	merdiven
+lobby	C1	isim	lobi, giriş holü
+mineral	B2	isim	mineral, maden
+mob	C1	isim	güruh, kalabalık
+modest	B2	sıfat	alçakgönüllü, mütevazı
+navigation	B2	isim	navigasyon, yön bulma
+orbit	C1	isim	yörünge
+paragraph	B1	isim	paragraf
+passive	B2	sıfat	pasif, edilgen
+peninsula	C1	isim	yarımada
+pork	B1	isim	domuz eti
+profitable	B2	sıfat	kazançlı, karlı
+ranch	B2	isim	çiftlik, ranço
+reasonably	B2	zarf	makul biçimde, oldukça
+remainder	C1	isim	kalan, artan
+seize	C1	fiil	ele geçirmek, yakalamak
+semester	B2	isim	yarıyıl, dönem
+sentiment	C1	isim	duygu, düşünce
+sock	A2	isim	çorap
+supplement	C1	isim	ek, takviye
+thereby	C2	zarf	böylece, bu yolla
+threshold	C1	isim	eşik, sınır
+til	B2	edat	-e kadar
+tin	B2	isim	teneke, kalay
+tribal	C1	sıfat	kabileye ait
+trunk	B2	isim	gövde, bagaj, hortum
+uncertainty	C1	isim	belirsizlik
+vampire	B2	isim	vampir
+verdict	C1	isim	karar, hüküm
+accommodate	C1	fiil	barındırmak, uyum sağlamak
+accordingly	C1	zarf	buna göre
+aesthetic	C1	sıfat	estetik
+algorithm	C1	isim	algoritma
+anchor	C1	isim	çıpa, sunucu
+arch	C1	isim	kemer, kavis
+axis	C1	isim	eksen
+badge	B2	isim	rozet, kimlik kartı
+bizarre	C1	sıfat	tuhaf, garip
+bounce	B2	fiil	zıplamak, sekmek
+cannon	C1	isim	top
+carol	C1	isim	noel şarkısı
+complexity	C1	isim	karmaşıklık
+consultation	C1	isim	danışma, istişare
+continental	C1	sıfat	kıtasal
+convenience	B2	isim	kolaylık, rahatlık
+deliberately	C1	zarf	kasıtlı olarak, bilerek
+dictionary	A2	isim	sözlük
+dignity	C1	isim	onur, haysiyet
+ego	C1	isim	ego, benlik
+enthusiasm	B2	isim	coşku, heves
+equation	C1	isim	denklem
+extract	C1	fiil/isim	çıkarmak, özüt
+favorite	A2	sıfat/isim	favori, en sevilen
+ferry	B2	isim	feribot
+flexibility	C1	isim	esneklik
+fridge	A2	isim	buzdolabı
+fusion	C1	isim	füzyon, birleşme
+gauge	C1	isim	ölçü aleti, gösterge
+goat	B1	isim	keçi
+gut	C1	isim	bağırsak, iç his
+heck	C1	ünlem	Hay aksi, Allah allah
+helmet	B2	isim	kask
+ideology	C1	isim	ideoloji
+inclusion	C1	isim	dahil etme, kapsayıcılık
+inning	C2	isim	vuruş sırası, devre
+insect	B1	isim	böcek
+instructor	B2	isim	eğitmen, öğretmen
+isolation	C1	isim	yalıtım, tecrit
+keeper	C1	isim	bekçi, koruyucu
+lamb	B2	isim	kuzu
+liar	B2	isim	yalancı
+machinery	C1	isim	makineler, mekanizma
+mansion	C1	isim	konak, köşk
+mercury	C1	isim	cıva, Merkür
+namely	C1	zarf	yani, başka bir deyişle
+pending	C1	sıfat	bekleyen, askıda
+platinum	C1	isim	platin
+possess	C1	fiil	sahip olmak
+premise	C1	isim	öncül, varsayım
+probability	C1	isim	olasılık
+resignation	C1	isim	istifa, boyun eğme
+rider	B2	isim	binici, sürücü
+ritual	C1	isim	ritüel, tören
+shelf	A2	isim	raf
+slam	C1	fiil	çarpmak, sertçe vurmak
+starter	B2	isim	başlangıç, meze
+subscribe	B2	fiil	abone olmak
+utterly	C1	zarf	tamamen, büsbütün
+voltage	C1	isim	voltaj, gerilim
+width	B1	isim	genişlik, en
+workout	B2	isim	antrenman, egzersiz
+activate	B2	fiil	etkinleştirmek, harekete geçirmek
+adaptation	C1	isim	uyarlama, uyum
+advisor	B2	isim	danışman
+aluminum	C1	isim	alüminyum
+bail	C2	isim	kefalet
+characterize	C1	fiil	nitelemek, tanımlamak
+civilization	B2	isim	uygarlık, medeniyet
+congrats	B2	ünlem	tebrikler
+creativity	B2	isim	yaratıcılık
+delicate	C1	sıfat	narin, hassas
+den	C1	isim	in, oyun odası
+disappointment	B2	isim	hayal kırıklığı
+disk	B2	isim	disk
+evaluate	B2	fiil	değerlendirmek
+formally	C1	zarf	resmi olarak
+goddess	C1	isim	tanrıça
+harassment	C1	isim	taciz
+insert	B2	fiil	sokmak, eklemek
+legit	C1	sıfat	meşru, gerçek
+liquor	C1	isim	sert içki, alkollü içki
+loser	B2	isim	kaybeden
+massage	B2	isim	masaj
+nephew	B1	isim	erkek yeğen
+notably	C1	zarf	özellikle, dikkat çekici biçimde
+orchestra	B2	isim	orkestra
+pad	B2	isim	ped, bloknot
+precision	C1	isim	kesinlik, hassasiyet
+preservation	C1	isim	koruma, muhafaza
+privately	C1	zarf	özel olarak, gizlice
+rumor	B2	isim	söylenti, dedikodu
+sail	B1	fiil/isim	denize açılmak, yelken
+salmon	B2	isim	somon
+secretly	B2	zarf	gizlice
+seller	B1	isim	satıcı
+sheer	C1	sıfat	tam, mutlak, ince
+specially	B2	zarf	özellikle, özel olarak
+stark	C1	sıfat	çıplak, keskin
+sympathy	C1	isim	sempati, taziye
+tan	B2	isim	bronzluk, ten rengi
+theoretical	C1	sıfat	kuramsal, teorik
+thumb	B2	isim	başparmak
+timber	C1	isim	kereste
+transparent	C1	sıfat	saydam, şeffaf
+upside	C1	isim	olumlu yön, üst taraf
+vitamin	B1	isim	vitamin
+void	C1	isim	boşluk
+voluntary	C1	sıfat	gönüllü, isteğe bağlı
+wheat	B1	isim	buğday
+whip	C1	isim/fiil	kamçı, çırpmak
+wipe	B1	fiil	silmek
+wrist	B2	isim	bilek
+acute	C1	sıfat	akut, keskin
+admiral	C1	isim	amiral
+banana	A1	isim	muz
+behave	B1	fiil	davranmak
+borrow	A2	fiil	ödünç almak
+chin	B2	isim	çene
+civic	C1	sıfat	yurttaşlıkla ilgili, kentsel
+clerk	B2	isim	memur, katip
+considerably	C1	zarf	oldukça, epeyce
+cottage	B2	isim	kır evi
+coup	C1	isim	darbe
+criticize	B2	fiil	eleştirmek
+crude	C1	sıfat	ham, kaba
+dash	C1	fiil/isim	koşmak, çizgi
+disclosure	C1	isim	ifşa, açıklama
+disposal	C1	isim	bertaraf, elden çıkarma
+distinctive	C1	sıfat	ayırt edici, kendine özgü
+drone	C1	isim	dron, erkek arı
+escort	C1	isim/fiil	eşlikçi, refakat etmek
+firmly	B2	zarf	sıkıca, kararlılıkla
+flour	B1	isim	un
+holding	C1	isim	mülk, hisse
+indie	C1	sıfat	bağımsız
+indirect	C1	sıfat	dolaylı
+institutional	C1	sıfat	kurumsal
+interim	C1	sıfat	geçici, ara
+jerk	C1	isim	pislik herif, ani çekiş
+kindly	B2	zarf	nazikçe, lütfen
+kindness	B1	isim	nezaket, iyilik
+lottery	B2	isim	piyango
+magnitude	C1	isim	büyüklük, şiddet
+minus	B1	edat	eksi
+nude	C1	sıfat	çıplak
+outlet	C1	isim	çıkış, priz, satış noktası
+parameter	C1	isim	parametre
+pause	B1	isim/fiil	duraklama, duraklamak
+pledge	C1	isim/fiil	söz, taahhüt etmek
+portal	C1	isim	portal, giriş kapısı
+prescription	B2	isim	reçete
+publicity	C1	isim	tanıtım, reklam
+punish	B2	fiil	cezalandırmak
+puppy	B1	isim	köpek yavrusu
+recruitment	C1	isim	işe alım
+silicon	C1	isim	silikon
+slice	B1	isim	dilim
+spur	C2	isim	teşvik, mahmuz
+subscriber	C1	isim	abone
+telegraph	C1	isim	telgraf
+vaccine	B2	isim	aşı
+vinyl	C1	isim	vinil, plak
+affiliate	C1	isim	bağlı kuruluş, ortak
+asylum	C1	isim	sığınma, akıl hastanesi
+barn	B2	isim	ahır, samanlık
+bent	C1	sıfat	eğri, bükülmüş
+cathedral	B2	isim	katedral
+clause	C1	isim	madde, yan cümle
+cluster	C1	isim	küme, öbek
+consistency	C1	isim	tutarlılık, kıvam
+cylinder	C1	isim	silindir
+dancer	A2	isim	dansçı
+deaf	B2	sıfat	sağır
+denial	C1	isim	inkar, ret
+dock	C1	isim	rıhtım, iskele
+entrepreneur	C1	isim	girişimci
+evident	C1	sıfat	açık, belli
+expedition	C1	isim	sefer, keşif gezisi
+facilitate	C1	fiil	kolaylaştırmak
+feat	C1	isim	başarı, kahramanlık
+fossil	C1	isim	fosil
+freight	C1	isim	yük, nakliye
+honesty	B2	isim	dürüstlük
+inappropriate	B2	sıfat	uygunsuz
+infant	C1	isim	bebek
+initiate	C1	fiil	başlatmak
+injection	C1	isim	enjeksiyon, iğne
+instrumental	C1	sıfat	etkili, enstrümantal
+insult	B2	isim/fiil	hakaret, hakaret etmek
+interference	C1	isim	müdahale, parazit
+interstate	C1	sıfat	eyaletler arası
+mediterranean	C1	sıfat	Akdeniz
+neat	B2	sıfat	düzenli, derli toplu
+negotiate	C1	fiil	müzakere etmek, pazarlık yapmak
+offset	C2	fiil	dengelemek, telafi etmek
+outbreak	C1	isim	salgın, patlak verme
+pal	B2	isim	arkadaş, dost
+perfection	C1	isim	mükemmellik
+pirate	B2	isim	korsan
+probe	C1	isim/fiil	sonda, araştırmak
+prohibit	C1	fiil	yasaklamak
+recruit	C1	fiil/isim	işe almak, acemi
+rehabilitation	C1	isim	rehabilitasyon, iyileştirme
+remix	C2	isim	remiks
+resistant	C1	sıfat	dirençli, dayanıklı
+skinny	B2	sıfat	çok zayıf, dar
+sneak	C1	fiil	sinsice girmek, gizlice gitmek
+sore	B2	sıfat	ağrıyan, acıyan
+spark	C1	isim	kıvılcım
+speculation	C1	isim	spekülasyon, tahmin
+steep	C1	sıfat	dik, sarp
+straw	B2	isim	saman, pipet
+successor	C1	isim	halef, ardıl
+uncertain	B2	sıfat	belirsiz, emin olmayan
+upload	B2	fiil	yüklemek
+vector	C1	isim	vektör
+weigh	B2	fiil	tartmak, ağırlığında olmak
+whatsoever	C1	zarf	hiçbir şekilde, hiç
+wick	C2	isim	fitil
+absent	B2	sıfat	yok, devamsız
+acoustic	C1	sıfat	akustik
+ancestor	C1	isim	ata, cet
+atomic	C1	sıfat	atomik, atom
+bicycle	A2	isim	bisiklet
+bump	C1	isim/fiil	çarpma, çarpmak
+cart	B2	isim	araba, el arabası
+circus	B2	isim	sirk
+cocaine	C1	isim	kokain
+compel	C1	fiil	zorlamak, mecbur etmek
+compile	C1	fiil	derlemek, toplamak
+complication	C1	isim	komplikasyon, karışıklık
+cord	C1	isim	ip, kordon, kablo
+cyber	C1	sıfat	siber
+dale	C2	isim	vadi
+defendant	C1	isim	sanık, davalı
+dense	C1	sıfat	yoğun, sık
+doctrine	C1	isim	doktrin, öğreti
+freshman	B2	isim	birinci sınıf öğrencisi
+furious	B2	sıfat	öfkeli, çok kızgın
+gameplay	C1	isim	oynanış
+geography	B1	isim	coğrafya
+gig	C1	isim	konser, geçici iş
+habitat	C1	isim	yaşam alanı, habitat
+harbour	B2	isim	liman
+hazard	C1	isim	tehlike, risk
+hydrogen	C1	isim	hidrojen
+imply	C1	fiil	ima etmek, gerektirmek
+intact	C1	sıfat	bozulmamış, sağlam
+intake	C1	isim	alım, giriş
+irrelevant	C1	sıfat	alakasız, ilgisiz
+jaw	B2	isim	çene
+kitty	B2	isim	kedicik, ortak kasa
+lawn	B2	isim	çimenlik, çim
+needle	B2	isim	iğne
+oval	C1	sıfat	oval
+pity	B2	isim	acıma, yazık
+pond	B2	isim	gölet
+prey	C1	isim	av, kurban
+prophet	C1	isim	peygamber
+referendum	C1	isim	referandum
+regulate	C1	fiil	düzenlemek, denetlemek
+ruby	C1	isim	yakut
+seasonal	C1	sıfat	mevsimlik
+sensible	B2	sıfat	makul, akıllıca
+sequel	C1	isim	devam filmi, devam
+teammate	B2	isim	takım arkadaşı
+township	C1	isim	ilçe, kasaba
+whale	B2	isim	balina
+writing	A2	isim	yazı, yazma
+admire	B2	fiil	hayran olmak, takdir etmek
+amber	C1	isim	kehribar
+ankle	B2	isim	ayak bileği
+armor	C1	isim	zırh
+autism	C1	isim	otizm
+bachelor	C1	isim	bekar erkek, lisans derecesi
+berry	B2	isim	yaban meyvesi, çilek türü
+bully	C1	isim/fiil	zorba, zorbalık yapmak
+capitalism	C1	isim	kapitalizm
+caution	B2	isim	dikkat, ihtiyat
+certification	C1	isim	sertifika, onay
+clan	C1	isim	klan, aşiret
+clash	C1	isim/fiil	çatışma, çatışmak
+compatible	C1	sıfat	uyumlu
+condemn	C1	fiil	kınamak, mahkum etmek
+configuration	C1	isim	yapılandırma, düzen
+curiosity	B2	isim	merak
+explosive	C1	sıfat/isim	patlayıcı
+fortunate	C1	sıfat	şanslı
+frontier	C1	isim	sınır, cephe
+frustration	C1	isim	hayal kırıklığı, bıkkınlık
+geographic	C1	sıfat	coğrafi
+grasp	C1	fiil/isim	kavramak, anlamak
+handy	B2	sıfat	kullanışlı, elverişli
+hardcore	C1	sıfat	ateşli, sert
+harmful	B2	sıfat	zararlı
+headache	B1	isim	baş ağrısı
+incentive	C1	isim	teşvik
+inclusive	C1	sıfat	kapsayıcı
+licence	B2	isim	ruhsat, lisans
+madness	C1	isim	delilik
+mandate	C1	isim	yetki, görev
+manga	C1	isim	manga
+memorable	C1	sıfat	unutulmaz
+merger	C1	isim	birleşme
+poker	B2	isim	poker
+portable	C1	sıfat	taşınabilir
+robbery	B2	isim	soygun
+rub	B2	fiil	ovmak, sürtmek
+scatter	C1	fiil	saçmak, dağıtmak
+scout	C1	isim	izci, gözcü
+sexuality	C1	isim	cinsellik
+slap	B2	fiil/isim	tokatlamak, tokat
+steak	B1	isim	biftek
+succession	C1	isim	ardışıklık, halefiyet
+superintendent	C1	isim	müdür, süpervizör
+suspicion	C1	isim	şüphe
+sweep	B2	fiil	süpürmek
+tactical	C1	sıfat	taktiksel
+therapist	C1	isim	terapist
+thereafter	C2	zarf	ondan sonra
+thorough	C1	sıfat	kapsamlı, titiz
+tuition	C1	isim	öğrenim ücreti
+tumor	C1	isim	tümör
+wholesale	C1	isim	toptan satış
+administer	C1	fiil	yönetmek, uygulamak
+architectural	C1	sıfat	mimari
+artillery	C2	isim	topçu, ağır silahlar
+assemble	C1	fiil	toplamak, monte etmek
+canvas	C1	isim	tuval, branda
+canyon	C1	isim	kanyon
+cheek	B2	isim	yanak
+circular	C1	sıfat	dairesel
+circulation	C1	isim	dolaşım, tiraj
+clearance	C1	isim	izin, boşluk
+coincidence	C1	isim	tesadüf
+comedian	B2	isim	komedyen
+conscience	C1	isim	vicdan
+countless	C1	sıfat	sayısız
+curry	B2	isim	köri
+dame	C2	isim	hanımefendi, leydi
+deceased	C2	sıfat	ölmüş, merhum
+dedication	C1	isim	adanmışlık, ithaf
+detention	C1	isim	gözaltı, alıkoyma
+enforce	C1	fiil	uygulamak, zorla yaptırmak
+explicit	C1	sıfat	açık, net
+flu	B1	isim	grip
+forbid	B2	fiil	yasaklamak
+fraction	C1	isim	kesir, küçük parça
+infantry	C2	isim	piyade
+integral	C1	sıfat	ayrılmaz, bütünleyici
+kidnap	C1	fiil	kaçırmak
+marble	B2	isim	mermer, misket
+maritime	C1	sıfat	denizcilikle ilgili
+melt	B2	fiil	erimek, eritmek
+nominee	C1	isim	aday
+oath	C1	isim	yemin
+offence	C1	isim	suç, kabahat
+patriot	C1	isim	vatansever
+pee	B2	fiil	çiş yapmak
+pillow	A2	isim	yastık
+polar	C1	sıfat	kutupsal
+prediction	C1	isim	tahmin
+preview	C1	isim	ön izleme
+puzzle	B2	isim	bulmaca
+reconstruction	C1	isim	yeniden inşa
+renowned	C1	sıfat	ünlü, tanınmış
+revelation	C1	isim	ifşa, vahiy
+skirt	A2	isim	etek
+spa	B2	isim	spa, kaplıca
+spike	C1	isim	sivri uç, ani yükseliş
+sprint	C1	isim/fiil	sprint, hızla koşmak
+stir	B2	fiil	karıştırmak
+suburb	B2	isim	banliyö
+superb	C1	sıfat	muhteşem
+supposed	C1	sıfat	sözde, varsayılan
+tab	B2	isim	sekme, hesap
+tendency	C1	isim	eğilim
+toast	B1	isim	kızarmış ekmek, kadeh kaldırma
+touchdown	C2	isim	touchdown, iniş
+trait	C1	isim	özellik, karakter
+trek	C1	isim	uzun yürüyüş
+tricky	C1	sıfat	zor, beceri gerektiren
+triumph	C1	isim	zafer
+underwear	B1	isim	iç çamaşırı
+unto	C2	edat	-e, -e doğru
+viable	C1	sıfat	uygulanabilir, yaşayabilir
+waist	B2	isim	bel
+wit	C1	isim	nükte, zeka
+wreck	C1	isim	enkaz, kaza
+absurd	C1	sıfat	saçma, akıl dışı
+accessory	C1	isim	aksesuar
+ambitious	B2	sıfat	hırslı, iddialı
+amid	C1	edat	arasında, ortasında
+ballet	B2	isim	bale
+bargain	B2	isim	pazarlık, kelepir
+binary	C1	sıfat	ikili
+blend	C1	fiil/isim	karıştırmak, karışım
+brake	B2	isim	fren
+businessman	B1	isim	iş adamı
+cab	B1	isim	taksi
+collision	C1	isim	çarpışma
+compassion	C1	isim	şefkat, merhamet
+consume	B2	fiil	tüketmek
+correction	B2	isim	düzeltme
+cough	B1	isim/fiil	öksürük, öksürmek
+depot	C1	isim	depo
+distress	C1	isim	sıkıntı, üzüntü
+documentation	C1	isim	belgeleme, dokümantasyon
+dramatically	C1	zarf	çarpıcı biçimde, çok
+elegant	B2	sıfat	zarif, şık
+elevator	B1	isim	asansör
+feast	C1	isim	ziyafet, şölen
+frost	B2	isim	don, kırağı
+herald	C2	fiil/isim	müjdelemek, haberci
+hike	B2	isim/fiil	doğa yürüyüşü, yürüyüş yapmak
+hollow	C1	sıfat	içi boş
+homeland	C1	isim	anavatan
+lame	C1	sıfat	topal, zayıf
+lily	B2	isim	zambak
+meditation	C1	isim	meditasyon, tefekkür
+messenger	B2	isim	haberci, ulak
+pencil	A1	isim	kurşun kalem
+philosophical	C1	sıfat	felsefi
+plasma	C1	isim	plazma
+plea	C1	isim	yakarış, savunma
+purse	B2	isim	kese, el çantası
+quarterback	C2	isim	oyun kurucu
+relieve	C1	fiil	hafifletmek, rahatlatmak
+reservation	B2	isim	rezervasyon, çekince
+rhetoric	C1	isim	retorik, belagat
+salvation	C1	isim	kurtuluş
+sanction	C1	isim	yaptırım, onay
+secular	C1	sıfat	laik
+sensitivity	C1	isim	duyarlılık, hassasiyet
+sigh	B2	isim/fiil	iç çekme, iç çekmek
+sixteen	A1	sıfat	on altı
+sovereign	C1	sıfat	egemen
+specification	C1	isim	şartname, teknik özellik
+spouse	C1	isim	eş
+supervisor	B2	isim	yönetici, denetmen
+synthetic	C1	sıfat	sentetik, yapay
+tense	B2	sıfat/isim	gergin, zaman (dilbilgisi)
+terrifying	B2	sıfat	korkunç, dehşet verici
+trader	C1	isim	tüccar
+vegan	B2	isim/sıfat	vegan
+wilderness	C1	isim	vahşi doğa
+adviser	B2	isim	danışman
+aggregate	C1	isim	toplam, bütün
+anatomy	C1	isim	anatomi, vücut yapısı
+applicant	C1	isim	başvuran, aday
+automobile	B2	isim	otomobil
+cement	C1	isim	çimento
+chess	B1	isim	satranç
+composite	C2	sıfat	bileşik
+consequently	C1	zarf	sonuç olarak, dolayısıyla
+decorate	B1	fiil	süslemek, dekore etmek
+delegate	C1	isim/fiil	delege, yetki devretmek
+dull	B2	sıfat	sıkıcı, donuk
+fare	B2	isim	bilet ücreti
+generator	C1	isim	jeneratör
+grind	C1	fiil	öğütmek
+grove	C2	isim	koru, ağaçlık
+gum	B2	isim	sakız, diş eti
+hobby	A2	isim	hobi
+idol	B2	isim	idol, put
+illusion	C1	isim	yanılsama, illüzyon
+incorrect	B2	sıfat	yanlış, hatalı
+junction	C1	isim	kavşak
+lance	C2	isim	mızrak
+leap	C1	fiil/isim	sıçramak, sıçrama
+mass	B2	isim	kütle, kitle
+motive	C1	isim	güdü, saik
+optimal	C1	sıfat	en uygun
+overtime	C1	isim	fazla mesai
+postal	C1	sıfat	posta ile ilgili
+prep	C1	isim	hazırlık
+profound	C1	sıfat	derin, köklü
+prosecutor	C1	isim	savcı
+rebellion	C1	isim	isyan
+recipient	C1	isim	alıcı
+refund	C1	isim/fiil	geri ödeme, iade etmek
+risky	B2	sıfat	riskli
+robust	C1	sıfat	sağlam, dayanıklı
+scam	C1	isim	dolandırıcılık
+shareholder	C1	isim	hissedar
+simulation	C1	isim	simülasyon
+sob	C1	fiil	hıçkırmak
+spice	B2	isim	baharat
+squeeze	B2	fiil	sıkmak
+supervision	C1	isim	gözetim, denetim
+swap	B2	fiil	takas etmek, değiştirmek
+terrain	C1	isim	arazi
+thrill	C1	isim	heyecan, coşku
+towel	A2	isim	havlu
+trio	C1	isim	üçlü
+unconscious	C1	sıfat	bilinçsiz, baygın
+verify	C1	fiil	doğrulamak
+vibe	C1	isim	hava, atmosfer
+virtue	C1	isim	erdem
+wifi	B1	isim	kablosuz internet
+workforce	C1	isim	işgücü
+zombie	B2	isim	zombi
+amen	C2	ünlem	amin
+arise	C1	fiil	ortaya çıkmak
+automotive	C1	sıfat	otomotiv
+battlefield	C1	isim	savaş alanı
+bloom	C1	fiil/isim	çiçek açmak, çiçek
+bundle	C1	isim	demet, deste
+butterfly	B1	isim	kelebek
+casualty	C1	isim	kayıp, kazazede
+clown	B2	isim	palyaço
+conjunction	C1	isim	bağlaç, birleşme
+descent	C1	isim	iniş, soy
+desktop	B2	isim	masaüstü
+dial	C1	fiil/isim	numara çevirmek, kadran
+directory	C1	isim	rehber, dizin
+discharge	C1	fiil	taburcu etmek, boşaltmak
+dodge	C1	fiil	sıyrılmak, kaçınmak
+elimination	C1	isim	eleme, ortadan kaldırma
+ginger	B2	isim	zencefil
+guild	C2	isim	lonca
+halt	C1	fiil	durmak, durdurmak
+inability	C1	isim	yetersizlik, yapamama
+jar	B2	isim	kavanoz
+litigation	C2	isim	dava, davalaşma
+mentor	C1	isim	akıl hocası, danışman
+merchandise	C1	isim	ticari mal
+miner	C1	isim	madenci
+monk	C1	isim	keşiş, rahip
+neighborhood	B1	isim	mahalle, komşuluk
+norm	C1	isim	norm, kural
+offend	C1	fiil	gücendirmek, kırmak
+orthodox	C1	sıfat	ortodoks, geleneksel
+overhead	C1	zarf/sıfat	tepede, genel gider
+pierce	C1	fiil	delmek
+pistol	B2	isim	tabanca
+prone	C1	sıfat	eğilimli, yatkın
+raider	C2	isim	akıncı, baskıncı
+readily	C1	zarf	kolayca, gönüllü olarak
+regiment	C2	isim	alay
+reunion	C1	isim	buluşma, yeniden birleşme
+revival	C1	isim	canlanma
+sanctuary	C1	isim	sığınak, koruma alanı
+satan	C2	isim	şeytan
+sensor	C1	isim	sensör, algılayıcı
+siege	C1	isim	kuşatma
+sixty	A1	sıfat	altmış
+sleeve	B2	isim	kol
+sonic	C2	sıfat	sesle ilgili
+soundtrack	C1	isim	film müziği
+spine	C1	isim	omurga
+steer	C1	fiil	yönlendirmek, dümen kullanmak
+tenure	C1	isim	görev süresi
+texture	C1	isim	doku
+thankful	B1	sıfat	minnettar
+treasurer	C1	isim	veznedar, saymanlık
+triangle	B1	isim	üçgen
+unclear	B2	sıfat	belirsiz, anlaşılmaz
+wizard	B2	isim	büyücü
+absorb	C1	fiil	emmek, özümsemek
+admin	C1	isim	yönetici, idare
+affection	C1	isim	sevgi, şefkat
+airplane	A2	isim	uçak
+altitude	C1	isim	yükseklik, rakım
+bake	B1	fiil	fırında pişirmek
+boo	C1	ünlem/fiil	yuh, yuhalamak
+competent	C1	sıfat	yetkin, becerikli
+countryside	B2	isim	kırsal bölge
+crane	C1	isim	vinç, turna
+debris	C1	isim	enkaz, moloz
+delegation	C1	isim	heyet, yetki devri
+demographic	C1	sıfat/isim	demografik
+donor	C1	isim	bağışçı, donör
+enroll	C1	fiil	kaydolmak, kaydetmek
+enrollment	C1	isim	kayıt
+exceed	C1	fiil	aşmak
+exclude	C1	fiil	hariç tutmak
+fierce	C1	sıfat	şiddetli, vahşi
+garlic	B1	isim	sarımsak
+gratitude	C1	isim	minnettarlık
+hail	C1	isim/fiil	dolu, selamlamak
+heroin	C1	isim	eroin
+illustration	C1	isim	resim, örnek
+indicator	C1	isim	gösterge
+inequality	C1	isim	eşitsizlik
+interpret	C1	fiil	yorumlamak, tercüme etmek
+leisure	C1	isim	boş zaman
+lend	B1	fiil	ödünç vermek
+lounge	B2	isim	salon, dinlenme yeri
+luckily	B2	zarf	şans eseri, neyse ki
+manuscript	C1	isim	el yazması
+mint	B2	isim	nane, darphane
+molecule	C1	isim	molekül
+notification	C1	isim	bildirim
+nova	C2	isim	nova, yeni yıldız
+outline	C1	isim/fiil	taslak, özetlemek
+polite	B1	sıfat	kibar, nazik
+receipt	B1	isim	makbuz, fiş
+reliability	C1	isim	güvenilirlik
+retailer	C1	isim	perakendeci
+runway	C1	isim	pist
+sculpture	B2	isim	heykel
+showcase	C1	isim	vitrin, sergileme
+subsidiary	C1	isim	yan kuruluş, bağlı şirket
+tenth	B1	sıfat	onuncu
+theology	C1	isim	ilahiyat
+underwater	B2	sıfat/zarf	su altı
+velocity	C1	isim	hız, sürat
+wax	C1	isim	balmumu, mum
+accountability	C1	isim	hesap verebilirlik
+aerial	C1	sıfat	havadan, hava
+albeit	C2	bağlaç	her ne kadar
+alcoholic	C1	sıfat/isim	alkollü, alkolik
+amazed	B2	sıfat	şaşkın, hayrete düşmüş
+ambition	B2	isim	hırs, amaç
+ammunition	C1	isim	mühimmat
+anthem	C1	isim	marş, ilahi
+batch	C1	isim	parti, grup
+catalog	C1	isim	katalog
+catalogue	C1	isim	katalog
+charitable	C1	sıfat	hayırsever
+collector	B2	isim	koleksiyoncu, toplayıcı
+compliment	B2	isim/fiil	iltifat, iltifat etmek
+continual	C1	sıfat	sürekli, aralıksız
+coordinator	C1	isim	koordinatör
+deployment	C1	isim	konuşlandırma, devreye alma
+enjoyable	B1	sıfat	keyifli
+exotic	C1	sıfat	egzotik
+exterior	C1	isim	dış, dış görünüş
+feminine	C1	sıfat	kadınsı, dişil
+firearm	C1	isim	ateşli silah
+fountain	B2	isim	çeşme, fıskiye
+fury	C1	isim	öfke
+genocide	C1	isim	soykırım
+glance	C1	isim/fiil	bakış, göz atmak
+glow	C1	isim/fiil	parıltı, parlamak
+hay	B2	isim	kuru ot, saman
+hometown	B2	isim	memleket
+humanitarian	C1	sıfat	insani, insancıl
+immunity	C1	isim	bağışıklık, dokunulmazlık
+inherit	C1	fiil	miras almak
+liberation	C1	isim	kurtuluş, özgürleşme
+likelihood	C1	isim	olasılık
+lone	C1	sıfat	yalnız, tek
+massacre	C1	isim	katliam
+meme	C1	isim	meme, internet esprisi
+nationalist	C1	isim/sıfat	milliyetçi
+necessity	C1	isim	gereklilik, zorunluluk
+nickname	B2	isim	takma ad, lakap
+observer	C1	isim	gözlemci
+offshore	C1	sıfat	açık deniz, yurt dışı
+optional	B2	sıfat	isteğe bağlı
+papa	B2	isim	baba, papa
+paste	B2	isim/fiil	macun, yapıştırmak
+pioneer	C1	isim	öncü
+plaza	C1	isim	meydan, iş merkezi
+prescribe	C1	fiil	reçete etmek, belirlemek
+prosperity	C1	isim	refah
+recreational	C1	sıfat	eğlenceye yönelik
+refuge	C1	isim	sığınak
+renewable	C1	sıfat	yenilenebilir
+sack	B2	isim/fiil	çuval, işten çıkarmak
+shortage	C1	isim	kıtlık, eksiklik
+sphere	C1	isim	küre, alan
+suburban	C1	sıfat	banliyö
+supplier	B2	isim	tedarikçi
+terribly	B2	zarf	çok kötü, fena halde
+territorial	C1	sıfat	toprakla ilgili
+toss	B2	fiil	atmak, fırlatmak
+turtle	B1	isim	kaplumbağa
+verbal	C1	sıfat	sözlü
+violate	C1	fiil	ihlal etmek
+wool	B1	isim	yün
+yang	C2	isim	yang
+accountable	C1	sıfat	sorumlu, hesap vermesi gereken
+advocacy	C1	isim	savunuculuk
+aftermath	C1	isim	sonrası, akıbet
+aggression	C1	isim	saldırganlık
+analyze	B2	fiil	analiz etmek, çözümlemek
+arguably	C1	zarf	tartışmalı olarak, denebilir ki
+balloon	B1	isim	balon
+blunt	C1	sıfat	kör, açık sözlü
+brigade	C2	isim	tugay
+burial	C1	isim	gömme, cenaze
+cardinal	C1	sıfat/isim	temel, kardinal
+champ	C1	isim	şampiyon
+champagne	B2	isim	şampanya
+chorus	C1	isim	koro, nakarat
+chrome	C2	isim	krom
+clarity	C1	isim	açıklık, netlik
+confidential	C1	sıfat	gizli
+coordination	C1	isim	koordinasyon
+discretion	C1	isim	takdir, sağduyu
+ditch	C1	isim	hendek, çukur
+dome	C1	isim	kubbe
+dope	C2	isim	uyuşturucu, salak
+drought	C1	isim	kuraklık
+elevation	C1	isim	yükseklik, yükselme
+esteem	C1	isim	saygı, itibar
+fog	B1	isim	sis
+gesture	B2	isim	jest, el kol hareketi
+gosh	B2	ünlem	Aman Allahım, vay be
+historian	B2	isim	tarihçi
+horizontal	C1	sıfat	yatay
+hospitality	C1	isim	misafirperverlik
+hostage	C1	isim	rehine
+inevitably	C1	zarf	kaçınılmaz olarak
+lad	C1	isim	oğlan, delikanlı
+listing	C1	isim	liste, ilan
+literacy	C1	isim	okuryazarlık
+migrant	C1	isim	göçmen
+mislead	C1	fiil	yanıltmak
+moisture	C1	isim	nem
+monument	C1	isim	anıt
+mortality	C1	isim	ölüm oranı, fanilik
+obsession	C1	isim	takıntı
+opt	C1	fiil	tercih etmek, seçmek
+peanut	B1	isim	yer fıstığı
+persistent	C1	sıfat	ısrarlı, sürekli
+petroleum	C1	isim	petrol
+pharmaceutical	C1	sıfat	ilaç, eczacılık
+progression	C1	isim	ilerleme, gelişim
+rack	C1	isim	raf, askı
+rebuild	B2	fiil	yeniden inşa etmek
+recording	B2	isim	kayıt
+rejection	C1	isim	ret, reddetme
+reservoir	C1	isim	rezervuar, baraj gölü
+scrap	C1	isim	hurda, parça
+sensation	C1	isim	his, duyum
+shaft	C1	isim	şaft, kuyu
+shepherd	C1	isim	çoban
+shuttle	C1	isim	servis, mekik
+slope	B2	isim	yamaç, eğim
+snack	A2	isim	atıştırmalık
+spotlight	C1	isim	ilgi odağı, projektör
+stab	C1	fiil	bıçaklamak
+stern	C1	sıfat	sert, ciddi
+stiff	B2	sıfat	katı, tutuk
+striker	C1	isim	golcü, grevci
+terrific	B2	sıfat	harika, muazzam
+tomato	A1	isim	domates
+tory	C2	isim	muhafazakar parti üyesi
+trafficking	C1	isim	kaçakçılık
+transparency	C1	isim	şeffaflık
+trinity	C2	isim	üçlü birlik, teslis
+unemployed	B2	sıfat	işsiz
+unlock	B2	fiil	kilidini açmak
+vault	C1	isim	kasa, kemer
+vet	B2	isim	veteriner
+wagon	B2	isim	vagon, yük arabası
+adverse	C1	sıfat	olumsuz, ters
+alumni	C1	isim	mezunlar
+awhile	C1	zarf	bir süre, bir müddet
+aye	C2	ünlem	evet
+biography	B2	isim	biyografi
+broker	C1	isim	simsar, komisyoncu
+browser	B1	isim	tarayıcı
+cellular	C1	sıfat	hücresel
+cocktail	B2	isim	kokteyl
+cod	C2	isim	morina
+crew	B2	isim	mürettebat, ekip
+cub	C1	isim	yavru
+destructive	C1	sıfat	yıkıcı
+dislike	B1	fiil/isim	sevmemek, hoşlanmama
+farewell	C1	isim	veda
+fist	C1	isim	yumruk
+fond	B2	sıfat	düşkün, seven
+foolish	B2	sıfat	aptalca, ahmakça
+frog	B1	isim	kurbağa
+hawk	C1	isim	şahin
+heir	C1	isim	varis
+holocaust	C1	isim	soykırım, büyük yıkım
+imprisonment	C1	isim	hapis
+landlord	B2	isim	ev sahibi
+landmark	C1	isim	simge yapı, dönüm noktası
+liable	C1	sıfat	sorumlu, yükümlü
+midst	C1	isim	orta, ortasında
+misery	C1	isim	sefalet, acı
+module	C1	isim	modül
+mommy	B1	isim	anne, anneciğim
+mosque	B1	isim	cami
+moss	C1	isim	yosun
+nursery	B2	isim	kreş, fidanlık
+onion	A2	isim	soğan
+plague	C1	isim	veba, bela
+rogue	C1	sıfat	haydut, başıboş
+sincere	C1	sıfat	samimi, içten
+solidarity	C1	isim	dayanışma
+specialty	C1	isim	uzmanlık, özel ürün
+supernatural	C1	sıfat	doğaüstü
+thirteen	A1	sıfat	on üç
+tomb	C1	isim	mezar, kabir
+trademark	C1	isim	ticari marka
+trim	C1	fiil	kırpmak, budamak
+umbrella	A2	isim	şemsiye
+voyage	C1	isim	deniz yolculuğu
+abbey	C2	isim	manastır
+adjustment	C1	isim	ayarlama, uyum
+attachment	C1	isim	bağlılık, ek dosya
+baron	C2	isim	baron
+blah	C2	ünlem	falan filan
+bunny	B2	isim	tavşan
+candle	B1	isim	mum
+carve	C1	fiil	oymak, kesmek
+choir	C1	isim	koro
+clutch	C1	fiil/isim	kavramak, debriyaj
+coconut	B2	isim	hindistan cevizi
+comprise	C1	fiil	içermek, oluşturmak
+confession	C1	isim	itiraf
+corridor	B2	isim	koridor
+credibility	C1	isim	güvenilirlik, inandırıcılık
+distract	C1	fiil	dikkatini dağıtmak
+dolphin	B1	isim	yunus
+fourteen	A1	sıfat	on dört
+geometry	B2	isim	geometri
+gossip	B2	isim	dedikodu
+grandparents	A2	isim	büyükanne ve büyükbaba
+haul	C1	fiil	sürüklemek, taşımak
+headphone	B2	isim	kulaklık
+holly	C2	isim	çobanpüskülü
+immense	C1	sıfat	muazzam, devasa
+interfere	C1	fiil	karışmak, müdahale etmek
+intersection	C1	isim	kavşak, kesişim
+investigator	C1	isim	müfettiş, soruşturmacı
+juvenile	C1	sıfat	genç, çocuksu
+karma	C1	isim	karma
+leverage	C1	isim	kaldıraç, etki gücü
+mankind	C1	isim	insanlık
+metric	C1	sıfat/isim	metrik, ölçüt
+militia	C2	isim	milis
+node	C1	isim	düğüm, boğum
+obstacle	C1	isim	engel
+performer	B2	isim	sanatçı, oyuncu
+pointless	C1	sıfat	anlamsız, boşuna
+prompt	C1	sıfat/fiil	hızlı, harekete geçirmek
+proximity	C1	isim	yakınlık
+qualification	B2	isim	yeterlilik, diploma
+rang	A2	fiil	çaldı (ring'in geçmişi)
+render	C1	fiil	haline getirmek, görüntülemek
+sadness	B2	isim	üzüntü
+selective	C1	sıfat	seçici
+shiny	B2	sıfat	parlak
+socialism	C1	isim	sosyalizm
+sour	B2	sıfat	ekşi
+spoon	A1	isim	kaşık
+stressful	B2	sıfat	stresli
+tenant	C1	isim	kiracı
+terrace	C1	isim	teras
+thief	B1	isim	hırsız
+tribunal	C2	isim	mahkeme, kurul
+undoubtedly	C1	zarf	şüphesiz
+villain	C1	isim	kötü adam
+whistle	B2	isim/fiil	düdük, ıslık çalmak
+abusive	C1	sıfat	kaba, istismar edici
+alley	B2	isim	ara sokak
+appetite	C1	isim	iştah
+backyard	B2	isim	arka bahçe
+billboard	C1	isim	reklam panosu
+calculation	B2	isim	hesaplama
+conceive	C1	fiil	tasarlamak, hamile kalmak
+dissolve	C1	fiil	çözünmek, eritmek
+dynasty	C1	isim	hanedan
+economist	C1	isim	ekonomist
+endorse	C1	fiil	onaylamak, desteklemek
+forehead	B2	isim	alın
+foreigner	B1	isim	yabancı
+forgiveness	C1	isim	bağışlama, af
+gem	C1	isim	değerli taş, mücevher
+glen	C2	isim	dar vadi
+haunt	C1	fiil	musallat olmak
+heath	C2	isim	fundalık
+hypothesis	C1	isim	hipotez, varsayım
+informal	B2	sıfat	gayri resmi, samimi
+marsh	C1	isim	bataklık
+marshal	C2	isim	mareşal
+maturity	C1	isim	olgunluk
+messy	B2	sıfat	dağınık, karışık
+optimistic	B2	sıfat	iyimser
+owl	B2	isim	baykuş
+pharmacy	B1	isim	eczane
+problematic	C1	sıfat	sorunlu
+processor	C1	isim	işlemci
+promotional	C1	sıfat	tanıtım amaçlı
+prospective	C1	sıfat	müstakbel, olası
+psychiatric	C1	sıfat	psikiyatrik
+renaissance	C1	isim	rönesans
+repeal	C2	fiil	yürürlükten kaldırmak
+roast	B2	fiil/isim	kızartmak, kavurmak
+rubbish	B2	isim	çöp, saçmalık
+saga	C1	isim	destan, uzun hikaye
+salon	C1	isim	salon, kuaför
+seventeen	A1	sıfat	on yedi
+sodium	C1	isim	sodyum
+surplus	C1	isim	fazlalık, artık
+swallow	B2	fiil	yutmak
+systematic	C1	sıfat	sistematik, düzenli
+transmit	C1	fiil	iletmek, yaymak
+unacceptable	B2	sıfat	kabul edilemez
+unaware	C1	sıfat	habersiz
+uncommon	C1	sıfat	nadir, alışılmadık
+underway	C1	sıfat	devam eden, yolda
+unified	C1	sıfat	birleşik
+unstable	C1	sıfat	kararsız, dengesiz
+upstairs	A2	zarf	üst katta, yukarıda
+vague	C1	sıfat	belirsiz, bulanık
+woo	C2	fiil	gönlünü kazanmaya çalışmak
+zip	B2	isim/fiil	fermuar, sıkıştırmak
+abundance	C1	isim	bolluk
+ant	B1	isim	karınca
+antique	C1	isim/sıfat	antika
+autonomy	C1	isim	özerklik
+behavioral	C1	sıfat	davranışsal
+breeze	C1	isim	esinti
+carnival	B2	isim	karnaval
+commodity	C1	isim	emtia, mal
+congressman	C1	isim	kongre üyesi
+coral	C1	isim	mercan
+correlation	C1	isim	ilişki, korelasyon
+correspondent	C1	isim	muhabir
+coupon	B2	isim	kupon
+covid	C1	isim	kovid
+curtain	B1	isim	perde
+dentist	A2	isim	diş hekimi
+dodger	C2	isim	kaçınan kimse
+dough	C1	isim	hamur
+endanger	C1	fiil	tehlikeye atmak
+envelope	B1	isim	zarf
+fade	C1	fiil	solmak, silinmek
+fatigue	C1	isim	yorgunluk
+fellowship	C1	isim	dostluk, burs
+fictional	C1	sıfat	kurgusal
+fragile	C1	sıfat	kırılgan, hassas
+fringe	C1	isim	saçak, kenar
+fulfill	C1	fiil	yerine getirmek, gerçekleştirmek
+granite	C2	isim	granit
+handbook	C1	isim	el kitabı
+hardy	C1	sıfat	dayanıklı, sağlam
+instinct	C1	isim	içgüdü
+irony	C1	isim	ironi, alay
+judiciary	C1	isim	yargı
+legion	C2	isim	lejyon
+lethal	C1	sıfat	öldürücü
+lime	B2	isim	misket limonu, kireç
+logistics	C1	isim	lojistik
+maid	B2	isim	hizmetçi
+maple	C2	isim	akçaağaç
+mistress	C1	isim	metres, bayan öğretmen
+morality	C1	isim	ahlak
+mortal	C1	sıfat/isim	ölümlü, fani, ölümcül
+nonprofit	C1	sıfat	kâr amacı gütmeyen
