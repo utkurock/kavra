@@ -105,7 +105,8 @@ language.
 - **Words:** the 5000 most frequent words of the language as a pile of cards, each with its level
   (A1–C2) in the corners and its meaning in your language. Swipe right if you know it, left if you
   don't, up if you're not sure (or use the buttons, or the arrow keys). Review brings back the words
-  you didn't know; Lists shows them all, searchable.
+  you didn't know; Lists shows them all, searchable, and exports the open list as a CSV file
+  (Excel, Google Sheets, Anki).
 - **Sentences:** practice starts as soon as the page opens, like the cards: exercises keep coming
   from the grammar units of the chosen levels (20–22 units per language from A1 to B2, 12 exercises
   each), the ones not mastered yet first. Build the sentence from shuffled word tiles, or pick the

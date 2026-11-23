@@ -319,8 +319,11 @@ export async function showLists(container) {
     tabs.append(tab);
   }
   head.append(el("h1", null, t("navLists")), levelChips(() => paint()));
+  let matching = []; // the words of the open list, as filtered: what the export holds
+  const exportBtn = button("btn", t("exportCsv"), () => exportCsv(matching, list));
+  exportBtn.prepend(icon("download"));
   const bar = el("div", "list-bar");
-  bar.append(tabs, searchBox);
+  bar.append(tabs, searchBox, exportBtn);
   const ul = el("ul", "word-list");
   container.replaceChildren(head, bar, ul);
   input.addEventListener("input", paint);
@@ -334,10 +337,11 @@ export async function showLists(container) {
       tab.querySelector(".count").textContent = fmt(groups[tab.dataset.list].length);
     }
     const q = input.value.trim().toLocaleLowerCase();
-    const shown = groups[list]
+    matching = groups[list]
       .filter((w) => !q || `${w.head} ${meaning(w)}`.toLocaleLowerCase().includes(q))
-      .sort((a, b) => d[b.word].at - d[a.word].at)
-      .slice(0, 500);
+      .sort((a, b) => d[b.word].at - d[a.word].at);
+    exportBtn.disabled = !matching.length;
+    const shown = matching.slice(0, 500);
     ul.replaceChildren(
       ...(shown.length
         ? shown.map((w) => {
@@ -359,4 +363,23 @@ export async function showLists(container) {
     );
   }
   paint();
+}
+
+// Downloads words as a CSV file (opens in Excel, Google Sheets, or Anki's import): the word as shown,
+// its meaning, level, part of speech and state. A byte-order mark lets Excel read the accents.
+function exportCsv(list, listState) {
+  const cell = (value) => `"${String(value).replace(/"/g, '""')}"`;
+  const rows = [
+    [t("csvWord"), t("csvMeaning"), t("csvLevel"), t("csvPos"), t("csvState")],
+    ...list.map((w) => [w.head, meaning(w), w.level, posLabel(w.pos), t(deck()[w.word]?.s || listState)]),
+  ];
+  const csv = "\ufeff" + rows.map((r) => r.map(cell).join(",")).join("\r\n") + "\r\n";
+  const date = new Date().toISOString().slice(0, 10);
+  const link = el("a");
+  link.href = URL.createObjectURL(new Blob([csv], { type: "text/csv;charset=utf-8" }));
+  link.download = `5000-${state.target}-${listState}-${date}.csv`;
+  document.body.append(link);
+  link.click();
+  link.remove();
+  setTimeout(() => URL.revokeObjectURL(link.href), 1000);
 }
