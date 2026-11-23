@@ -94,6 +94,24 @@ Each translated line is one small request and each quiz is one larger request, b
 
 To add an interface language, copy `extension/_locales/en/messages.json` to a folder named after the language code and translate the messages.
 
+## 5000 Kelime web app
+
+`web/` is a separate, phone-first site with only the word cards: the same 5000 words with Turkish
+meanings and an estimated CEFR level (A1–C2) each, a level filter, swipe right / left / up, undo,
+Review and the three word lists. It's plain static files with no build step, no account and no API
+key; progress is kept in the browser's local storage, so it stays on that device. It can be added to
+the home screen and opens full screen.
+
+Deploy on Vercel: import the repository, set **Root Directory** to `web`, leave the framework preset
+on "Other" with no build command, and deploy. To try it locally, serve the folder:
+
+```bash
+python3 -m http.server -d web 8000
+```
+
+`web/words.tsv` holds one word per line, most frequent first: `word`, level, part of speech and
+meaning, separated by tabs. The meanings and levels were written with an AI model and are estimates.
+
 ## License
 
 [MIT](LICENSE)
