@@ -1,0 +1,6639 @@
+{
+ "units": [
+  {
+   "id": "salutations",
+   "level": "A1",
+   "basics": true,
+   "title": {
+    "tr": "Selamlaşma ve tanışma",
+    "en": "Greetings and introductions"
+   },
+   "tip": {
+    "tr": "Bonjour günün her saatinde, Salut arkadaşlar içindir. Adını söylemek için: Je m'appelle …",
+    "en": "Bonjour works all day, salut is for friends. To give your name: Je m'appelle …"
+   },
+   "learn": {
+    "explain": {
+     "tr": "Bonjour: günaydın / merhaba. Bonsoir: iyi akşamlar. Salut: arkadaşlar arasında.\nAdını söylemek için Je m'appelle … dersin; sormak için Comment tu t'appelles? (Resmî: Comment vous appelez-vous?)\nNereli olduğunu Je viens de …, yaşadığın yeri J'habite à … ile söylersin.\nSık hata: Je suis appelle demek. Doğrusu dönüşlü fiille Je m'appelle …; ayrıca Je suis de Paris yerine Je viens de Paris daha doğaldır.",
+     "en": "Bonjour: hello / good morning. Bonsoir: good evening. Salut: hi, between friends.\nTo say your name use Je m'appelle …; to ask: Comment tu t'appelles? (formal: Comment vous appelez-vous?)\nSay where you are from with Je viens de … and where you live with J'habite à …\nCommon mistake: saying 'Je suis appelle'. Use the reflexive verb: je m'appelle."
+    },
+    "examples": [
+     {
+      "text": "Salut, ça va?",
+      "native": {
+       "tr": "Selam, nasılsın?",
+       "en": "Hi, how are you?"
+      }
+     },
+     {
+      "text": "Bonsoir, monsieur.",
+      "native": {
+       "tr": "İyi akşamlar, efendim.",
+       "en": "Good evening, sir."
+      }
+     },
+     {
+      "text": "Au revoir, à demain.",
+      "native": {
+       "tr": "Hoşça kal, yarın görüşürüz.",
+       "en": "Goodbye, see you tomorrow."
+      }
+     },
+     {
+      "text": "Merci beaucoup.",
+      "native": {
+       "tr": "Çok teşekkürler.",
+       "en": "Thank you very much."
+      }
+     }
+    ]
+   },
+   "items": [
+    {
+     "type": "build",
+     "text": "Bonjour, je m'appelle Léa.",
+     "native": {
+      "tr": "Merhaba, benim adım Léa.",
+      "en": "Hello, my name is Léa."
+     },
+     "extra": [
+      "suis",
+      "t'appelles",
+      "tu"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Elle ___ Sophie.",
+     "native": {
+      "tr": "Onun adı Sophie.",
+      "en": "Her name is Sophie."
+     },
+     "options": [
+      "m'appelle",
+      "s'appelle",
+      "t'appelle"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "build",
+     "text": "Comment tu t'appelles?",
+     "native": {
+      "tr": "Adın ne?",
+      "en": "What is your name?"
+     },
+     "extra": [
+      "vous",
+      "je",
+      "appelles"
+     ],
+     "alt": [
+      "Tu t'appelles comment?"
+     ]
+    },
+    {
+     "type": "build",
+     "text": "Enchanté, je suis Karim.",
+     "native": {
+      "tr": "Memnun oldum, ben Karim.",
+      "en": "Nice to meet you, I am Karim."
+     },
+     "extra": [
+      "es",
+      "ai",
+      "sommes"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "___ allez-vous?",
+     "native": {
+      "tr": "Nasılsınız?",
+      "en": "How are you?"
+     },
+     "options": [
+      "Comment",
+      "Où",
+      "Qui"
+     ],
+     "answer": 0
+    },
+    {
+     "type": "build",
+     "text": "Je viens de Turquie.",
+     "native": {
+      "tr": "Türkiye'denim.",
+      "en": "I come from Turkey."
+     },
+     "extra": [
+      "vais",
+      "habite",
+      "as"
+     ],
+     "alt": []
+    },
+    {
+     "type": "build",
+     "text": "J'habite à Paris.",
+     "native": {
+      "tr": "Paris'te yaşıyorum.",
+      "en": "I live in Paris."
+     },
+     "extra": [
+      "viens",
+      "suis",
+      "de"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Il ___ de Lyon.",
+     "native": {
+      "tr": "O Lyon'dan geliyor.",
+      "en": "He comes from Lyon."
+     },
+     "options": [
+      "viens",
+      "venons",
+      "vient"
+     ],
+     "answer": 2
+    },
+    {
+     "type": "build",
+     "text": "Ça va très bien, merci.",
+     "native": {
+      "tr": "Çok iyiyim, teşekkürler.",
+      "en": "I am very well, thank you."
+     },
+     "extra": [
+      "comment",
+      "vous",
+      "salut"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Nous ___ à Istanbul.",
+     "native": {
+      "tr": "İstanbul'da yaşıyoruz.",
+      "en": "We live in Istanbul."
+     },
+     "options": [
+      "habites",
+      "habitent",
+      "habitons"
+     ],
+     "answer": 2
+    },
+    {
+     "type": "build",
+     "text": "Bonne journée, madame.",
+     "native": {
+      "tr": "İyi günler, hanımefendi.",
+      "en": "Have a good day, madam."
+     },
+     "extra": [
+      "bonsoir",
+      "salut",
+      "revoir"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "___, madame, vous êtes française?",
+     "native": {
+      "tr": "Merhaba hanımefendi, Fransız mısınız?",
+      "en": "Hello madam, are you French?"
+     },
+     "options": [
+      "Bonne nuit",
+      "Au revoir",
+      "Merci",
+      "Bonjour"
+     ],
+     "answer": 3
+    }
+   ]
+  },
+  {
+   "id": "nombres-age",
+   "level": "A1",
+   "basics": true,
+   "title": {
+    "tr": "Sayılar ve yaş",
+    "en": "Numbers and age"
+   },
+   "tip": {
+    "tr": "Fransızca yaşı être ile değil avoir ile söyleriz: J'ai vingt ans.",
+    "en": "In French you say your age with avoir, not être: J'ai vingt ans."
+   },
+   "learn": {
+    "explain": {
+     "tr": "Sayılar: un, deux, trois, quatre, cinq, six, sept, huit, neuf, dix. 20 vingt, 30 trente, 40 quarante, 50 cinquante, 60 soixante.\n70 soixante-dix, 80 quatre-vingts, 90 quatre-vingt-dix: Fransızca'da bunlar toplama ve çarpmayla kurulur.\nYaş için avoir kullanılır: J'ai vingt ans. Sormak için: Tu as quel âge?\nSık hata: Je suis vingt ans demek. Doğrusu J'ai vingt ans; ans sözcüğünü atlama.",
+     "en": "Numbers: un, deux, trois, quatre, cinq, six, sept, huit, neuf, dix. 20 vingt, 30 trente, 40 quarante, 50 cinquante, 60 soixante.\n70 soixante-dix, 80 quatre-vingts, 90 quatre-vingt-dix: these are built by adding and multiplying.\nAge uses avoir: J'ai vingt ans. To ask: Tu as quel âge?\nCommon mistake: saying 'Je suis vingt ans'. It is J'ai vingt ans, and do not drop ans."
+    },
+    "examples": [
+     {
+      "text": "Il a quinze ans.",
+      "native": {
+       "tr": "O on beş yaşında.",
+       "en": "He is fifteen."
+      }
+     },
+     {
+      "text": "Nous sommes cinq.",
+      "native": {
+       "tr": "Beş kişiyiz.",
+       "en": "There are five of us."
+      }
+     },
+     {
+      "text": "Ça coûte dix euros.",
+      "native": {
+       "tr": "On avro tutuyor.",
+       "en": "It costs ten euros."
+      }
+     },
+     {
+      "text": "Elle a vingt et un ans.",
+      "native": {
+       "tr": "O yirmi bir yaşında.",
+       "en": "She is twenty-one."
+      }
+     }
+    ]
+   },
+   "items": [
+    {
+     "type": "build",
+     "text": "J'ai vingt-cinq ans.",
+     "native": {
+      "tr": "Yirmi beş yaşındayım.",
+      "en": "I am twenty-five."
+     },
+     "extra": [
+      "suis",
+      "as",
+      "sont"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Il ___ seize ans.",
+     "native": {
+      "tr": "O on altı yaşında.",
+      "en": "He is sixteen."
+     },
+     "options": [
+      "est",
+      "a",
+      "as"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "build",
+     "text": "Tu as quel âge?",
+     "native": {
+      "tr": "Kaç yaşındasın?",
+      "en": "How old are you?"
+     },
+     "extra": [
+      "est",
+      "es",
+      "quelle"
+     ],
+     "alt": []
+    },
+    {
+     "type": "build",
+     "text": "Ma sœur a douze ans.",
+     "native": {
+      "tr": "Kız kardeşim on iki yaşında.",
+      "en": "My sister is twelve."
+     },
+     "extra": [
+      "est",
+      "ai",
+      "sont"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Un, deux, ___, quatre.",
+     "native": {
+      "tr": "Bir, iki, üç, dört.",
+      "en": "One, two, three, four."
+     },
+     "options": [
+      "trois",
+      "cinq",
+      "six"
+     ],
+     "answer": 0
+    },
+    {
+     "type": "build",
+     "text": "Nous sommes six dans la classe.",
+     "native": {
+      "tr": "Sınıfta altı kişiyiz.",
+      "en": "There are six of us in the class."
+     },
+     "extra": [
+      "avons",
+      "êtes",
+      "sur"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Vingt plus trente font ___.",
+     "native": {
+      "tr": "Yirmi artı otuz elli eder.",
+      "en": "Twenty plus thirty makes fifty."
+     },
+     "options": [
+      "quarante",
+      "soixante",
+      "cinquante"
+     ],
+     "answer": 2
+    },
+    {
+     "type": "build",
+     "text": "Mon père a cinquante ans.",
+     "native": {
+      "tr": "Babam elli yaşında.",
+      "en": "My father is fifty."
+     },
+     "extra": [
+      "est",
+      "suis",
+      "as"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Soixante-dix, c'est 70; ___, c'est 90.",
+     "native": {
+      "tr": "Soixante-dix 70'tir; ___ 90'dır.",
+      "en": "Soixante-dix is 70; ___ is 90."
+     },
+     "options": [
+      "quatre-vingt-dix",
+      "soixante-dix",
+      "cent"
+     ],
+     "answer": 0
+    },
+    {
+     "type": "build",
+     "text": "Ça coûte quatre-vingts euros.",
+     "native": {
+      "tr": "Seksen avro tutuyor.",
+      "en": "It costs eighty euros."
+     },
+     "extra": [
+      "font",
+      "ai",
+      "sommes"
+     ],
+     "alt": []
+    },
+    {
+     "type": "build",
+     "text": "Quel âge a ton frère?",
+     "native": {
+      "tr": "Erkek kardeşin kaç yaşında?",
+      "en": "How old is your brother?"
+     },
+     "extra": [
+      "est",
+      "ma",
+      "as"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "J'___ vingt ans.",
+     "native": {
+      "tr": "Yirmi yaşındayım.",
+      "en": "I am twenty."
+     },
+     "options": [
+      "suis",
+      "est",
+      "as",
+      "ai"
+     ],
+     "answer": 3
+    }
+   ]
+  },
+  {
+   "id": "jours-mois-heure",
+   "level": "A1",
+   "basics": true,
+   "title": {
+    "tr": "Günler, aylar ve saat",
+    "en": "Days, months and telling the time"
+   },
+   "tip": {
+    "tr": "Günler ve aylar küçük harfle yazılır. Saat için Il est … heures kullanılır.",
+    "en": "Days and months are lowercase. For the time use Il est … heures."
+   },
+   "learn": {
+    "explain": {
+     "tr": "Günler: lundi, mardi, mercredi, jeudi, vendredi, samedi, dimanche. Aylar: janvier, février, mars, avril, mai, juin …\nAy için en kullanılır: en mai. Le lundi = her pazartesi, lundi = bu pazartesi.\nSaat: Il est trois heures. Midi (öğle) ve minuit (gece yarısı). et quart = çeyrek geçe, et demie = buçuk.\nSık hata: C'est trois heures demek. Doğrusu Il est trois heures; une heure ise tekildir: Il est une heure.",
+     "en": "Days: lundi, mardi, mercredi, jeudi, vendredi, samedi, dimanche. Months: janvier, février, mars, avril, mai, juin …\nFor months use en: en mai. Le lundi = every Monday, lundi = this Monday.\nTime: Il est trois heures. Midi (noon) and minuit (midnight). et quart = quarter past, et demie = half past.\nCommon mistake: saying 'C'est trois heures'. Use Il est trois heures; one o'clock is singular: Il est une heure."
+    },
+    "examples": [
+     {
+      "text": "Aujourd'hui, c'est lundi.",
+      "native": {
+       "tr": "Bugün pazartesi.",
+       "en": "Today is Monday."
+      }
+     },
+     {
+      "text": "Mon anniversaire est en mai.",
+      "native": {
+       "tr": "Doğum günüm mayısta.",
+       "en": "My birthday is in May."
+      }
+     },
+     {
+      "text": "Il est midi.",
+      "native": {
+       "tr": "Saat öğlen on iki.",
+       "en": "It is noon."
+      }
+     },
+     {
+      "text": "Il est huit heures et demie.",
+      "native": {
+       "tr": "Saat sekiz buçuk.",
+       "en": "It is half past eight."
+      }
+     }
+    ]
+   },
+   "items": [
+    {
+     "type": "build",
+     "text": "Quelle heure est-il?",
+     "native": {
+      "tr": "Saat kaç?",
+      "en": "What time is it?"
+     },
+     "extra": [
+      "quel",
+      "jour",
+      "as"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Il est huit heures ___ demie.",
+     "native": {
+      "tr": "Saat sekiz buçuk.",
+      "en": "It is half past eight."
+     },
+     "options": [
+      "à",
+      "et",
+      "en"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "build",
+     "text": "Il est trois heures et quart.",
+     "native": {
+      "tr": "Saat üçü çeyrek geçiyor.",
+      "en": "It is a quarter past three."
+     },
+     "extra": [
+      "est-il",
+      "sont",
+      "le"
+     ],
+     "alt": []
+    },
+    {
+     "type": "build",
+     "text": "Je travaille le lundi.",
+     "native": {
+      "tr": "Pazartesileri çalışırım.",
+      "en": "I work on Mondays."
+     },
+     "extra": [
+      "en",
+      "au",
+      "dimanches"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Mon anniversaire est ___ avril.",
+     "native": {
+      "tr": "Doğum günüm nisanda.",
+      "en": "My birthday is in April."
+     },
+     "options": [
+      "à",
+      "le",
+      "en"
+     ],
+     "answer": 2
+    },
+    {
+     "type": "build",
+     "text": "Mon anniversaire est en juin.",
+     "native": {
+      "tr": "Doğum günüm haziranda.",
+      "en": "My birthday is in June."
+     },
+     "extra": [
+      "au",
+      "le",
+      "jour"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Le week-end, c'est samedi et ___.",
+     "native": {
+      "tr": "Hafta sonu cumartesi ve pazardır.",
+      "en": "The weekend is Saturday and Sunday."
+     },
+     "options": [
+      "lundi",
+      "dimanche",
+      "vendredi"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "build",
+     "text": "Le cours commence à neuf heures.",
+     "native": {
+      "tr": "Ders dokuzda başlıyor.",
+      "en": "The class starts at nine o'clock."
+     },
+     "extra": [
+      "sont",
+      "en",
+      "pour"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Il est une ___.",
+     "native": {
+      "tr": "Saat bir.",
+      "en": "It is one o'clock."
+     },
+     "options": [
+      "heure",
+      "heures",
+      "h"
+     ],
+     "answer": 0
+    },
+    {
+     "type": "build",
+     "text": "Aujourd'hui, nous sommes mercredi.",
+     "native": {
+      "tr": "Bugün çarşamba.",
+      "en": "Today is Wednesday."
+     },
+     "extra": [
+      "suis",
+      "est",
+      "en"
+     ],
+     "alt": []
+    },
+    {
+     "type": "build",
+     "text": "Quel jour sommes-nous aujourd'hui?",
+     "native": {
+      "tr": "Bugün günlerden ne?",
+      "en": "What day is it today?"
+     },
+     "extra": [
+      "quelle",
+      "heure",
+      "est"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Nous allons au marché ___ samedi.",
+     "native": {
+      "tr": "Cumartesi günleri pazara gideriz.",
+      "en": "We go to the market on Saturdays."
+     },
+     "options": [
+      "en",
+      "au",
+      "le",
+      "à"
+     ],
+     "answer": 2
+    }
+   ]
+  },
+  {
+   "id": "famille-description",
+   "level": "A1",
+   "basics": true,
+   "title": {
+    "tr": "Aile ve kişi tarifi",
+    "en": "Family and describing people"
+   },
+   "tip": {
+    "tr": "Saç ve göz rengi için être değil avoir kullanılır: Il a les yeux bleus.",
+    "en": "For hair and eyes use avoir, not être: Il a les yeux bleus."
+   },
+   "learn": {
+    "explain": {
+     "tr": "Aile: le père, la mère, le frère, la sœur, les parents, les grands-parents. Sahiplik: mon père, ma mère, mes parents.\nSıfat ismin cinsiyetine ve sayısına uyar: grand → grande (dişil), grands (çoğul). Çoğu sıfat isimden sonra gelir.\nSaç ve gözler için avoir: Elle a les cheveux longs. Boy ve karakter için être: Il est grand.\nSık hata: Il est les cheveux noirs demek. Doğrusu Il a les cheveux noirs.",
+     "en": "Family: le père, la mère, le frère, la sœur, les parents, les grands-parents. Possession: mon père, ma mère, mes parents.\nAdjectives agree with the noun in gender and number: grand → grande (feminine), grands (plural). Most adjectives follow the noun.\nFor hair and eyes use avoir: Elle a les cheveux longs. For height and character use être: Il est grand.\nCommon mistake: 'Il est les cheveux noirs'. It is Il a les cheveux noirs."
+    },
+    "examples": [
+     {
+      "text": "Voici ma famille.",
+      "native": {
+       "tr": "İşte ailem.",
+       "en": "This is my family."
+      }
+     },
+     {
+      "text": "Il a les yeux verts.",
+      "native": {
+       "tr": "Onun yeşil gözleri var.",
+       "en": "He has green eyes."
+      }
+     },
+     {
+      "text": "Elle est petite et blonde.",
+      "native": {
+       "tr": "O kısa boylu ve sarışın.",
+       "en": "She is short and blonde."
+      }
+     },
+     {
+      "text": "Mes parents sont gentils.",
+      "native": {
+       "tr": "Anne babam kibar.",
+       "en": "My parents are kind."
+      }
+     }
+    ]
+   },
+   "items": [
+    {
+     "type": "build",
+     "text": "Ma mère est grande.",
+     "native": {
+      "tr": "Annem uzun boylu.",
+      "en": "My mother is tall."
+     },
+     "extra": [
+      "mon",
+      "grand",
+      "sont"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Ma sœur est ___.",
+     "native": {
+      "tr": "Kız kardeşim uzun boylu.",
+      "en": "My sister is tall."
+     },
+     "options": [
+      "grand",
+      "grande",
+      "grands"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "build",
+     "text": "Mon frère est petit.",
+     "native": {
+      "tr": "Erkek kardeşim kısa boylu.",
+      "en": "My brother is short."
+     },
+     "extra": [
+      "petite",
+      "ma",
+      "a"
+     ],
+     "alt": []
+    },
+    {
+     "type": "build",
+     "text": "Elle a les cheveux longs.",
+     "native": {
+      "tr": "Onun uzun saçları var.",
+      "en": "She has long hair."
+     },
+     "extra": [
+      "est",
+      "long",
+      "sont"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Mes frères sont ___.",
+     "native": {
+      "tr": "Erkek kardeşlerim sarışın.",
+      "en": "My brothers are blond."
+     },
+     "options": [
+      "blond",
+      "blonde",
+      "blonds",
+      "blondes"
+     ],
+     "answer": 2
+    },
+    {
+     "type": "build",
+     "text": "Il a les yeux bleus.",
+     "native": {
+      "tr": "Onun mavi gözleri var.",
+      "en": "He has blue eyes."
+     },
+     "extra": [
+      "est",
+      "bleu",
+      "sont"
+     ],
+     "alt": []
+    },
+    {
+     "type": "build",
+     "text": "Mes grands-parents sont gentils.",
+     "native": {
+      "tr": "Büyükanne ve büyükbabam kibar.",
+      "en": "My grandparents are kind."
+     },
+     "extra": [
+      "est",
+      "gentil",
+      "mon"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Il ___ les cheveux noirs.",
+     "native": {
+      "tr": "Onun siyah saçları var.",
+      "en": "He has black hair."
+     },
+     "options": [
+      "est",
+      "ont",
+      "a"
+     ],
+     "answer": 2
+    },
+    {
+     "type": "build",
+     "text": "Ma sœur est très sympa.",
+     "native": {
+      "tr": "Kız kardeşim çok cana yakın.",
+      "en": "My sister is very nice."
+     },
+     "extra": [
+      "sympas",
+      "mon",
+      "a"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Mon père et ma mère sont mes ___.",
+     "native": {
+      "tr": "Babam ve annem benim ebeveynlerim.",
+      "en": "My father and mother are my parents."
+     },
+     "options": [
+      "cousins",
+      "parents",
+      "amis"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "build",
+     "text": "Voici mon père et ma mère.",
+     "native": {
+      "tr": "İşte babam ve annem.",
+      "en": "This is my father and my mother."
+     },
+     "extra": [
+      "mes",
+      "ton",
+      "sont"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "La sœur de ma mère est ma ___.",
+     "native": {
+      "tr": "Annemin kız kardeşi benim teyzem.",
+      "en": "My mother's sister is my aunt."
+     },
+     "options": [
+      "tante",
+      "cousine",
+      "fille"
+     ],
+     "answer": 0
+    }
+   ]
+  },
+  {
+   "id": "etre-avoir",
+   "level": "A1",
+   "title": {
+    "tr": "être ve avoir: je suis, j'ai",
+    "en": "être and avoir: je suis, j'ai"
+   },
+   "tip": {
+    "tr": "«Olmak» için être, «sahip olmak» için avoir kullanılır: je suis, tu es, il est; j'ai, tu as, il a.",
+    "en": "Être means 'to be' and avoir means 'to have': je suis, tu es, il est; j'ai, tu as, il a."
+   },
+   "items": [
+    {
+     "type": "build",
+     "text": "Je suis étudiant.",
+     "native": {
+      "tr": "Ben öğrenciyim.",
+      "en": "I am a student."
+     },
+     "extra": [
+      "ai",
+      "est",
+      "as"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Marie ___ française.",
+     "native": {
+      "tr": "Marie Fransız.",
+      "en": "Marie is French."
+     },
+     "options": [
+      "a",
+      "est",
+      "sont"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "build",
+     "text": "Elle a deux frères.",
+     "native": {
+      "tr": "Onun iki erkek kardeşi var.",
+      "en": "She has two brothers."
+     },
+     "extra": [
+      "est",
+      "sont",
+      "as"
+     ],
+     "alt": []
+    },
+    {
+     "type": "build",
+     "text": "Nous sommes à la maison.",
+     "native": {
+      "tr": "Evdeyiz.",
+      "en": "We are at home."
+     },
+     "extra": [
+      "avons",
+      "êtes",
+      "sont"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Nous ___ soif.",
+     "native": {
+      "tr": "Susadık.",
+      "en": "We are thirsty."
+     },
+     "options": [
+      "sommes",
+      "êtes",
+      "avons"
+     ],
+     "answer": 2
+    },
+    {
+     "type": "build",
+     "text": "Tu as faim?",
+     "native": {
+      "tr": "Karnın aç mı?",
+      "en": "Are you hungry?"
+     },
+     "extra": [
+      "es",
+      "est",
+      "a"
+     ],
+     "alt": []
+    },
+    {
+     "type": "build",
+     "text": "Ils ont une voiture.",
+     "native": {
+      "tr": "Onların bir arabası var.",
+      "en": "They have a car."
+     },
+     "extra": [
+      "sont",
+      "avons",
+      "un"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Les enfants ___ à l'école.",
+     "native": {
+      "tr": "Çocuklar okulda.",
+      "en": "The children are at school."
+     },
+     "options": [
+      "sont",
+      "ont",
+      "est",
+      "a"
+     ],
+     "answer": 0
+    },
+    {
+     "type": "build",
+     "text": "Vous êtes très gentils.",
+     "native": {
+      "tr": "Çok naziksiniz.",
+      "en": "You are very kind."
+     },
+     "extra": [
+      "avez",
+      "sommes",
+      "est"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Tu ___ un chat?",
+     "native": {
+      "tr": "Bir kedin var mı?",
+      "en": "Do you have a cat?"
+     },
+     "options": [
+      "es",
+      "as",
+      "est"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "build",
+     "text": "J'ai vingt ans.",
+     "native": {
+      "tr": "Yirmi yaşındayım.",
+      "en": "I am twenty years old."
+     },
+     "extra": [
+      "suis",
+      "as",
+      "est"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Vous ___ prêts?",
+     "native": {
+      "tr": "Hazır mısınız?",
+      "en": "Are you ready?"
+     },
+     "options": [
+      "avez",
+      "êtes",
+      "sommes",
+      "ont"
+     ],
+     "answer": 1
+    }
+   ],
+   "learn": {
+    "explain": {
+     "tr": "Être «olmak», avoir «sahip olmak» demektir. İkisi de çok sık kullanılır ve düzensizdir.\nÖrüntü: je suis, tu es, il est, nous sommes, vous êtes, ils sont / j'ai, tu as, il a, nous avons, vous avez, ils ont.\nFransızca'da yaş, açlık ve susuzluk avoir ile söylenir: j'ai vingt ans, j'ai faim.\nSık hata: «Je suis 20 ans» demek. Doğrusu «J'ai 20 ans».",
+     "en": "Être means 'to be' and avoir means 'to have'. Both are very common and irregular.\nPattern: je suis, tu es, il est, nous sommes, vous êtes, ils sont / j'ai, tu as, il a, nous avons, vous avez, ils ont.\nIn French, age, hunger and thirst use avoir: j'ai vingt ans, j'ai faim.\nCommon mistake: saying 'Je suis 20 ans'. The correct form is 'J'ai 20 ans'."
+    },
+    "examples": [
+     {
+      "text": "Nous sommes en retard.",
+      "native": {
+       "tr": "Geç kaldık.",
+       "en": "We are late."
+      }
+     },
+     {
+      "text": "Elle a un grand jardin.",
+      "native": {
+       "tr": "Onun büyük bir bahçesi var.",
+       "en": "She has a big garden."
+      }
+     },
+     {
+      "text": "Vous avez froid?",
+      "native": {
+       "tr": "Üşüyor musunuz?",
+       "en": "Are you cold?"
+      }
+     },
+     {
+      "text": "Mes parents sont à Paris.",
+      "native": {
+       "tr": "Annemle babam Paris'te.",
+       "en": "My parents are in Paris."
+      }
+     }
+    ]
+   }
+  },
+  {
+   "id": "articles",
+   "level": "A1",
+   "title": {
+    "tr": "Artikeller: le, la, les, un, une, des",
+    "en": "Articles: le, la, les, un, une, des"
+   },
+   "tip": {
+    "tr": "Eril isimlerde le/un, dişil isimlerde la/une, çoğulda les/des kullanılır: le chat, une pomme, des amis.",
+    "en": "Use le/un with masculine nouns, la/une with feminine ones, and les/des for plurals: le chat, une pomme, des amis."
+   },
+   "items": [
+    {
+     "type": "build",
+     "text": "Le chat dort.",
+     "native": {
+      "tr": "Kedi uyuyor.",
+      "en": "The cat is sleeping."
+     },
+     "extra": [
+      "la",
+      "un",
+      "les"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "J'ai ___ frère et deux sœurs.",
+     "native": {
+      "tr": "Bir erkek kardeşim ve iki kız kardeşim var.",
+      "en": "I have a brother and two sisters."
+     },
+     "options": [
+      "une",
+      "des",
+      "un"
+     ],
+     "answer": 2
+    },
+    {
+     "type": "build",
+     "text": "J'aime la musique.",
+     "native": {
+      "tr": "Müziği severim.",
+      "en": "I like music."
+     },
+     "extra": [
+      "le",
+      "une",
+      "les"
+     ],
+     "alt": []
+    },
+    {
+     "type": "build",
+     "text": "Elle a une sœur.",
+     "native": {
+      "tr": "Onun bir kız kardeşi var.",
+      "en": "She has a sister."
+     },
+     "extra": [
+      "un",
+      "des",
+      "le"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "___ fille de Paul est gentille.",
+     "native": {
+      "tr": "Paul'ün kızı naziktir.",
+      "en": "Paul's daughter is nice."
+     },
+     "options": [
+      "Le",
+      "La",
+      "Les",
+      "Un"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "build",
+     "text": "Nous mangeons des pommes.",
+     "native": {
+      "tr": "Elma yiyoruz.",
+      "en": "We are eating apples."
+     },
+     "extra": [
+      "une",
+      "un",
+      "la"
+     ],
+     "alt": []
+    },
+    {
+     "type": "build",
+     "text": "Les enfants jouent dans le jardin.",
+     "native": {
+      "tr": "Çocuklar bahçede oynuyor.",
+      "en": "The children are playing in the garden."
+     },
+     "extra": [
+      "la",
+      "un",
+      "l'"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Je mange ___ pomme.",
+     "native": {
+      "tr": "Bir elma yiyorum.",
+      "en": "I am eating an apple."
+     },
+     "options": [
+      "un",
+      "une",
+      "des"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "build",
+     "text": "L'école est près de la gare.",
+     "native": {
+      "tr": "Okul garın yakınında.",
+      "en": "The school is near the station."
+     },
+     "extra": [
+      "le",
+      "un",
+      "les"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "___ élèves sont en classe.",
+     "native": {
+      "tr": "Öğrenciler sınıfta.",
+      "en": "The students are in class."
+     },
+     "options": [
+      "La",
+      "Le",
+      "Les",
+      "L'"
+     ],
+     "answer": 2
+    },
+    {
+     "type": "build",
+     "text": "Je cherche un stylo.",
+     "native": {
+      "tr": "Bir kalem arıyorum.",
+      "en": "I am looking for a pen."
+     },
+     "extra": [
+      "une",
+      "la",
+      "des"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Tu as ___ amis à Lyon?",
+     "native": {
+      "tr": "Lyon'da arkadaşların var mı?",
+      "en": "Do you have friends in Lyon?"
+     },
+     "options": [
+      "des",
+      "une",
+      "le"
+     ],
+     "answer": 0
+    }
+   ],
+   "learn": {
+    "explain": {
+     "tr": "Fransızca'da her isim eril ya da dişildir ve önünde genelde bir artikel durur.\nBelirli: le (eril), la (dişil), les (çoğul). Belirsiz: un, une, des. Ünlüyle başlayan kelimede le/la, l' olur: l'ami.\nİsmin cinsiyetini kelimeyle birlikte öğren: une table, un livre.\nSık hata: Türkçe'de artikel olmadığı için onu unutmak. «J'ai chien» yanlış, «J'ai un chien» doğru.",
+     "en": "Every French noun is masculine or feminine and usually comes with an article.\nDefinite: le (masc.), la (fem.), les (plural). Indefinite: un, une, des. Before a vowel, le/la becomes l': l'ami.\nLearn each noun together with its article: une table, un livre.\nCommon mistake: leaving the article out. 'J'ai chien' is wrong, 'J'ai un chien' is right."
+    },
+    "examples": [
+     {
+      "text": "La voiture est devant la maison.",
+      "native": {
+       "tr": "Araba evin önünde.",
+       "en": "The car is in front of the house."
+      }
+     },
+     {
+      "text": "Je cherche un stylo.",
+      "native": {
+       "tr": "Bir kalem arıyorum.",
+       "en": "I am looking for a pen."
+      }
+     },
+     {
+      "text": "Les enfants jouent dans le parc.",
+      "native": {
+       "tr": "Çocuklar parkta oynuyor.",
+       "en": "The children are playing in the park."
+      }
+     },
+     {
+      "text": "Elle achète des fleurs.",
+      "native": {
+       "tr": "Çiçek satın alıyor.",
+       "en": "She is buying some flowers."
+      }
+     }
+    ]
+   }
+  },
+  {
+   "id": "verbes-er",
+   "level": "A1",
+   "title": {
+    "tr": "-er fiilleri: je parle, nous parlons",
+    "en": "-er verbs: je parle, nous parlons"
+   },
+   "tip": {
+    "tr": "-er fiillerinde -er atılır ve ekler gelir: je parle, tu parles, il parle, nous parlons, vous parlez, ils parlent.",
+    "en": "For -er verbs drop -er and add endings: je parle, tu parles, il parle, nous parlons, vous parlez, ils parlent."
+   },
+   "items": [
+    {
+     "type": "build",
+     "text": "Je parle français.",
+     "native": {
+      "tr": "Fransızca konuşuyorum.",
+      "en": "I speak French."
+     },
+     "extra": [
+      "parles",
+      "parlons",
+      "parlez"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Tu ___ la télévision.",
+     "native": {
+      "tr": "Televizyon izliyorsun.",
+      "en": "You are watching television."
+     },
+     "options": [
+      "regarde",
+      "regardes",
+      "regardons"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "build",
+     "text": "Tu aimes le café.",
+     "native": {
+      "tr": "Kahveyi seversin.",
+      "en": "You like coffee."
+     },
+     "extra": [
+      "aime",
+      "aimons",
+      "la"
+     ],
+     "alt": []
+    },
+    {
+     "type": "build",
+     "text": "Il habite à Paris.",
+     "native": {
+      "tr": "Paris'te yaşıyor.",
+      "en": "He lives in Paris."
+     },
+     "extra": [
+      "habites",
+      "habitons",
+      "en"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Nous ___ au parc.",
+     "native": {
+      "tr": "Parkta yürüyoruz.",
+      "en": "We are walking in the park."
+     },
+     "options": [
+      "marchez",
+      "marche",
+      "marchons"
+     ],
+     "answer": 2
+    },
+    {
+     "type": "build",
+     "text": "Nous mangeons à midi.",
+     "native": {
+      "tr": "Öğlen yemek yiyoruz.",
+      "en": "We eat at noon."
+     },
+     "extra": [
+      "mange",
+      "mangez",
+      "mangent"
+     ],
+     "alt": []
+    },
+    {
+     "type": "build",
+     "text": "Elles travaillent beaucoup.",
+     "native": {
+      "tr": "Çok çalışıyorlar.",
+      "en": "They work a lot."
+     },
+     "extra": [
+      "travaille",
+      "travaillez",
+      "travaillons"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Ils ___ le dîner.",
+     "native": {
+      "tr": "Akşam yemeğini hazırlıyorlar.",
+      "en": "They are preparing dinner."
+     },
+     "options": [
+      "préparent",
+      "prépare",
+      "préparez"
+     ],
+     "answer": 0
+    },
+    {
+     "type": "build",
+     "text": "Vous chantez bien.",
+     "native": {
+      "tr": "İyi şarkı söylüyorsunuz.",
+      "en": "You sing well."
+     },
+     "extra": [
+      "chante",
+      "chantons",
+      "chantent"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Vous ___ trop vite.",
+     "native": {
+      "tr": "Çok hızlı konuşuyorsunuz.",
+      "en": "You speak too fast."
+     },
+     "options": [
+      "parlons",
+      "parle",
+      "parlent",
+      "parlez"
+     ],
+     "answer": 3
+    },
+    {
+     "type": "build",
+     "text": "J'écoute la radio.",
+     "native": {
+      "tr": "Radyo dinliyorum.",
+      "en": "I am listening to the radio."
+     },
+     "extra": [
+      "écoutes",
+      "écoutons",
+      "le"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Je ___ à la maison.",
+     "native": {
+      "tr": "Evde kalıyorum.",
+      "en": "I am staying at home."
+     },
+     "options": [
+      "restons",
+      "restes",
+      "reste"
+     ],
+     "answer": 2
+    }
+   ],
+   "learn": {
+    "explain": {
+     "tr": "-er ile biten fiiller Fransızca'daki fiillerin çoğunu oluşturur ve düzenli çekilir.\nÖrüntü: -er'i at, ekle: -e, -es, -e, -ons, -ez, -ent. Örnek: parler → je parle, nous parlons, ils parlent.\nBugün konuşma dilinde «ils parlent» sonundaki -ent okunmaz.\nSık hata: «nous» ve «vous» ile de -e eklemek. Doğrusu nous parlons, vous parlez.",
+     "en": "Verbs ending in -er are the largest group in French and follow one regular pattern.\nPattern: drop -er and add -e, -es, -e, -ons, -ez, -ent. Example: parler → je parle, nous parlons, ils parlent.\nThe -ent ending of 'ils parlent' is silent when you speak.\nCommon mistake: using -e with nous and vous. The right forms are nous parlons, vous parlez."
+    },
+    "examples": [
+     {
+      "text": "J'habite à Lyon.",
+      "native": {
+       "tr": "Lyon'da yaşıyorum.",
+       "en": "I live in Lyon."
+      }
+     },
+     {
+      "text": "Nous mangeons à midi.",
+      "native": {
+       "tr": "Öğlen yemek yiyoruz.",
+       "en": "We eat at noon."
+      }
+     },
+     {
+      "text": "Tu aimes le café?",
+      "native": {
+       "tr": "Kahveyi sever misin?",
+       "en": "Do you like coffee?"
+      }
+     },
+     {
+      "text": "Ils travaillent beaucoup.",
+      "native": {
+       "tr": "Çok çalışıyorlar.",
+       "en": "They work a lot."
+      }
+     }
+    ]
+   }
+  },
+  {
+   "id": "negation",
+   "level": "A1",
+   "title": {
+    "tr": "Olumsuzluk: ne … pas",
+    "en": "Negation: ne … pas"
+   },
+   "tip": {
+    "tr": "Olumsuz cümle için fiilin etrafına ne … pas konur: je ne parle pas. Ünlüden önce n': il n'aime pas.",
+    "en": "Put ne … pas around the verb: je ne parle pas. Before a vowel use n': il n'aime pas."
+   },
+   "items": [
+    {
+     "type": "build",
+     "text": "Je ne parle pas anglais.",
+     "native": {
+      "tr": "İngilizce konuşmam.",
+      "en": "I don't speak English."
+     },
+     "extra": [
+      "non",
+      "sans",
+      "aucun"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Je ne mange ___ de pain.",
+     "native": {
+      "tr": "Ekmek yemiyorum.",
+      "en": "I don't eat bread."
+     },
+     "options": [
+      "non",
+      "sans",
+      "pas"
+     ],
+     "answer": 2
+    },
+    {
+     "type": "build",
+     "text": "Il n'aime pas le thé.",
+     "native": {
+      "tr": "Çayı sevmez.",
+      "en": "He doesn't like tea."
+     },
+     "extra": [
+      "ne",
+      "non",
+      "sans"
+     ],
+     "alt": []
+    },
+    {
+     "type": "build",
+     "text": "Nous ne sommes pas fatigués.",
+     "native": {
+      "tr": "Yorgun değiliz.",
+      "en": "We are not tired."
+     },
+     "extra": [
+      "non",
+      "sans",
+      "rien"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Elle ___ travaille pas ici.",
+     "native": {
+      "tr": "Burada çalışmıyor.",
+      "en": "She doesn't work here."
+     },
+     "options": [
+      "n'",
+      "ne",
+      "non"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "build",
+     "text": "Tu n'as pas de chien.",
+     "native": {
+      "tr": "Köpeğin yok.",
+      "en": "You don't have a dog."
+     },
+     "extra": [
+      "des",
+      "du",
+      "non"
+     ],
+     "alt": []
+    },
+    {
+     "type": "build",
+     "text": "Elle ne mange pas de viande.",
+     "native": {
+      "tr": "Et yemiyor.",
+      "en": "She doesn't eat meat."
+     },
+     "extra": [
+      "des",
+      "du",
+      "non"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Nous n'avons ___ de voiture.",
+     "native": {
+      "tr": "Arabamız yok.",
+      "en": "We don't have a car."
+     },
+     "options": [
+      "pas",
+      "ne",
+      "non"
+     ],
+     "answer": 0
+    },
+    {
+     "type": "build",
+     "text": "Je ne sais pas.",
+     "native": {
+      "tr": "Bilmiyorum.",
+      "en": "I don't know."
+     },
+     "extra": [
+      "non",
+      "sans",
+      "aucun"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Il ___ est pas content.",
+     "native": {
+      "tr": "Memnun değil.",
+      "en": "He is not happy."
+     },
+     "options": [
+      "ne",
+      "n'",
+      "non",
+      "pas"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "build",
+     "text": "Ils ne sont pas à la maison.",
+     "native": {
+      "tr": "Evde değiller.",
+      "en": "They are not at home."
+     },
+     "extra": [
+      "non",
+      "sans",
+      "aucun"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Tu ne ___ pas la réponse?",
+     "native": {
+      "tr": "Cevabı bilmiyor musun?",
+      "en": "Don't you know the answer?"
+     },
+     "options": [
+      "sait",
+      "savez",
+      "sais"
+     ],
+     "answer": 2
+    }
+   ],
+   "learn": {
+    "explain": {
+     "tr": "Olumsuz cümle yapmak için fiilin etrafına ne ... pas koyarsın.\nÖrüntü: özne + ne + fiil + pas. Ünlüyle başlayan fiilden önce ne, n' olur: il n'aime pas.\nKonuşmada çoğu kişi ne'yi söylemez, ama yazıda mutlaka kullan.\nSık hata: yalnızca pas koymak veya ne'yi fiilin sonuna koymak. Doğrusu «Je ne parle pas anglais».",
+     "en": "To make a sentence negative, put ne ... pas around the verb.\nPattern: subject + ne + verb + pas. Before a vowel, ne becomes n': il n'aime pas.\nIn speech many people drop ne, but always use it when writing.\nCommon mistake: using only pas, or putting ne after the verb. The right form is 'Je ne parle pas anglais'."
+    },
+    "examples": [
+     {
+      "text": "Je ne comprends pas.",
+      "native": {
+       "tr": "Anlamıyorum.",
+       "en": "I don't understand."
+      }
+     },
+     {
+      "text": "Elle n'habite pas ici.",
+      "native": {
+       "tr": "O burada yaşamıyor.",
+       "en": "She doesn't live here."
+      }
+     },
+     {
+      "text": "Nous ne mangeons pas de viande.",
+      "native": {
+       "tr": "Et yemiyoruz.",
+       "en": "We don't eat meat."
+      }
+     },
+     {
+      "text": "Ils ne sont pas à la maison.",
+      "native": {
+       "tr": "Evde değiller.",
+       "en": "They are not at home."
+      }
+     }
+    ]
+   }
+  },
+  {
+   "id": "questions",
+   "level": "A1",
+   "title": {
+    "tr": "Sorular: est-ce que, où, quand",
+    "en": "Questions: est-ce que, où, quand"
+   },
+   "tip": {
+    "tr": "Evet/hayır sorusu için cümlenin başına est-ce que koyun: Est-ce que tu viens? Soru sözcükleri (où, quand, pourquoi) başa gelir.",
+    "en": "For yes/no questions put est-ce que first: Est-ce que tu viens? Question words (où, quand, pourquoi) go at the start."
+   },
+   "items": [
+    {
+     "type": "build",
+     "text": "Est-ce que tu viens?",
+     "native": {
+      "tr": "Geliyor musun?",
+      "en": "Are you coming?"
+     },
+     "extra": [
+      "es",
+      "vient",
+      "qui"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "___ tu t'appelles?",
+     "native": {
+      "tr": "Adın ne?",
+      "en": "What is your name?"
+     },
+     "options": [
+      "Où",
+      "Quand",
+      "Comment"
+     ],
+     "answer": 2
+    },
+    {
+     "type": "build",
+     "text": "Où habites-tu maintenant?",
+     "native": {
+      "tr": "Şimdi nerede yaşıyorsun?",
+      "en": "Where do you live now?"
+     },
+     "extra": [
+      "habite",
+      "est",
+      "que"
+     ],
+     "alt": []
+    },
+    {
+     "type": "build",
+     "text": "Qu'est-ce que tu manges?",
+     "native": {
+      "tr": "Ne yiyorsun?",
+      "en": "What are you eating?"
+     },
+     "extra": [
+      "qui",
+      "où",
+      "mange"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "___ est ton père? — Il est au travail.",
+     "native": {
+      "tr": "Baban nerede? — İşte.",
+      "en": "Where is your father? — He is at work."
+     },
+     "options": [
+      "Qui",
+      "Où",
+      "Pourquoi"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "build",
+     "text": "Parlez-vous anglais à la maison?",
+     "native": {
+      "tr": "Evde İngilizce konuşuyor musunuz?",
+      "en": "Do you speak English at home?"
+     },
+     "extra": [
+      "parlez",
+      "tu",
+      "est-ce"
+     ],
+     "alt": []
+    },
+    {
+     "type": "build",
+     "text": "Quand est-ce que le train part?",
+     "native": {
+      "tr": "Tren ne zaman kalkıyor?",
+      "en": "When does the train leave?"
+     },
+     "extra": [
+      "où",
+      "qui",
+      "partez"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "___ est-ce que tu pars? — Demain.",
+     "native": {
+      "tr": "Ne zaman gidiyorsun? — Yarın.",
+      "en": "When are you leaving? — Tomorrow."
+     },
+     "options": [
+      "Qui",
+      "Quand",
+      "Que"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "build",
+     "text": "Pourquoi tu pleures?",
+     "native": {
+      "tr": "Neden ağlıyorsun?",
+      "en": "Why are you crying?"
+     },
+     "extra": [
+      "quand",
+      "où",
+      "pleure"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "___ est ce garçon? — C'est mon cousin.",
+     "native": {
+      "tr": "Bu çocuk kim? — Kuzenim.",
+      "en": "Who is this boy? — He is my cousin."
+     },
+     "options": [
+      "Où",
+      "Combien",
+      "Quand",
+      "Qui"
+     ],
+     "answer": 3
+    },
+    {
+     "type": "build",
+     "text": "Combien coûte ce livre?",
+     "native": {
+      "tr": "Bu kitap kaç para?",
+      "en": "How much does this book cost?"
+     },
+     "extra": [
+      "coûtent",
+      "cette",
+      "qui"
+     ],
+     "alt": [
+      "Combien ce livre coûte?"
+     ]
+    },
+    {
+     "type": "choice",
+     "text": "Est-___ que vous avez faim?",
+     "native": {
+      "tr": "Acıktınız mı?",
+      "en": "Are you hungry?"
+     },
+     "options": [
+      "ce",
+      "ça",
+      "il"
+     ],
+     "answer": 0
+    }
+   ],
+   "learn": {
+    "explain": {
+     "tr": "Fransızca'da evet/hayır sorusu kurmanın en kolay yolu cümlenin başına est-ce que koymaktır.\nÖrüntü: Est-ce que + normal cümle? Soru sözcükleri başa gelir: où (nerede), quand (ne zaman), pourquoi (neden), comment (nasıl).\nSes tonunu yükseltmek de yeter: Tu viens? Ünlüden önce est-ce qu' olur.\nSık hata: soru sözcüğünü cümlenin sonuna koymak. Doğrusu «Où est-ce que tu habites?»",
+     "en": "The easiest way to ask a yes/no question in French is to put est-ce que at the start.\nPattern: Est-ce que + normal sentence? Question words go first: où (where), quand (when), pourquoi (why), comment (how).\nRaising your voice also works: Tu viens? Before a vowel it is est-ce qu'.\nCommon mistake: putting the question word at the end. Say 'Où est-ce que tu habites?'"
+    },
+    "examples": [
+     {
+      "text": "Est-ce que tu as faim?",
+      "native": {
+       "tr": "Acıktın mı?",
+       "en": "Are you hungry?"
+      }
+     },
+     {
+      "text": "Où est-ce que vous travaillez?",
+      "native": {
+       "tr": "Nerede çalışıyorsunuz?",
+       "en": "Where do you work?"
+      }
+     },
+     {
+      "text": "Quand est-ce qu'il arrive?",
+      "native": {
+       "tr": "O ne zaman geliyor?",
+       "en": "When does he arrive?"
+      }
+     },
+     {
+      "text": "Pourquoi tu pleures?",
+      "native": {
+       "tr": "Neden ağlıyorsun?",
+       "en": "Why are you crying?"
+      }
+     }
+    ]
+   }
+  },
+  {
+   "id": "futur-proche",
+   "level": "A1",
+   "title": {
+    "tr": "Yakın gelecek: aller + mastar",
+    "en": "Near future: aller + infinitive"
+   },
+   "tip": {
+    "tr": "«-ecek» için aller + mastar kullanılır: je vais manger, nous allons partir.",
+    "en": "Use aller + infinitive for what is about to happen: je vais manger, nous allons partir."
+   },
+   "items": [
+    {
+     "type": "build",
+     "text": "Je vais manger.",
+     "native": {
+      "tr": "Yiyeceğim.",
+      "en": "I am going to eat."
+     },
+     "extra": [
+      "vas",
+      "mangé",
+      "va"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Demain, je ___ travailler.",
+     "native": {
+      "tr": "Yarın çalışacağım.",
+      "en": "Tomorrow I am going to work."
+     },
+     "options": [
+      "vas",
+      "va",
+      "vais"
+     ],
+     "answer": 2
+    },
+    {
+     "type": "build",
+     "text": "Tu vas partir demain.",
+     "native": {
+      "tr": "Yarın gideceksin.",
+      "en": "You are going to leave tomorrow."
+     },
+     "extra": [
+      "vais",
+      "partis",
+      "va"
+     ],
+     "alt": []
+    },
+    {
+     "type": "build",
+     "text": "Nous allons visiter Paris.",
+     "native": {
+      "tr": "Paris'i ziyaret edeceğiz.",
+      "en": "We are going to visit Paris."
+     },
+     "extra": [
+      "allez",
+      "visité",
+      "vont"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Tu ___ rester à la maison?",
+     "native": {
+      "tr": "Evde kalacak mısın?",
+      "en": "Are you going to stay home?"
+     },
+     "options": [
+      "vas",
+      "allez",
+      "vont"
+     ],
+     "answer": 0
+    },
+    {
+     "type": "build",
+     "text": "Elle va acheter du pain.",
+     "native": {
+      "tr": "Ekmek alacak.",
+      "en": "She is going to buy bread."
+     },
+     "extra": [
+      "vas",
+      "de",
+      "achète"
+     ],
+     "alt": []
+    },
+    {
+     "type": "build",
+     "text": "Ils vont arriver à midi.",
+     "native": {
+      "tr": "Öğlen gelecekler.",
+      "en": "They are going to arrive at noon."
+     },
+     "extra": [
+      "allons",
+      "va",
+      "arrivé"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Nous ___ voyager en été.",
+     "native": {
+      "tr": "Yazın seyahat edeceğiz.",
+      "en": "We are going to travel in summer."
+     },
+     "options": [
+      "vont",
+      "allons",
+      "allez"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "build",
+     "text": "Vous allez chanter ce soir.",
+     "native": {
+      "tr": "Bu akşam şarkı söyleyeceksiniz.",
+      "en": "You are going to sing tonight."
+     },
+     "extra": [
+      "allons",
+      "vont",
+      "chanté"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Elles ___ venir avec nous.",
+     "native": {
+      "tr": "Bizimle gelecekler.",
+      "en": "They are going to come with us."
+     },
+     "options": [
+      "va",
+      "vas",
+      "vont",
+      "allez"
+     ],
+     "answer": 2
+    },
+    {
+     "type": "build",
+     "text": "On va regarder un film.",
+     "native": {
+      "tr": "Bir film izleyeceğiz.",
+      "en": "We are going to watch a film."
+     },
+     "extra": [
+      "vont",
+      "vas",
+      "regardé"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Vous ___ finir bientôt.",
+     "native": {
+      "tr": "Yakında bitireceksiniz.",
+      "en": "You are going to finish soon."
+     },
+     "options": [
+      "allez",
+      "allons",
+      "vais"
+     ],
+     "answer": 0
+    }
+   ],
+   "learn": {
+    "explain": {
+     "tr": "Yakın gelecek, birazdan olacak ya da planlanmış şeyleri anlatır.\nÖrüntü: aller (je vais, tu vas, il va, nous allons, vous allez, ils vont) + fiilin mastarı.\nGünlük konuşmada gelecek zamanın yerine çok kullanılır.\nSık hata: ikinci fiili de çekmek. «Je vais mange» yanlış, doğrusu «Je vais manger».",
+     "en": "The near future describes what is about to happen or what is planned.\nPattern: aller (je vais, tu vas, il va, nous allons, vous allez, ils vont) + infinitive.\nIn everyday speech it is used much more than the real future tense.\nCommon mistake: conjugating the second verb too. 'Je vais mange' is wrong, 'Je vais manger' is right."
+    },
+    "examples": [
+     {
+      "text": "Ce soir, je vais regarder un film.",
+      "native": {
+       "tr": "Bu akşam bir film izleyeceğim.",
+       "en": "Tonight I am going to watch a film."
+      }
+     },
+     {
+      "text": "Il va pleuvoir demain.",
+      "native": {
+       "tr": "Yarın yağmur yağacak.",
+       "en": "It is going to rain tomorrow."
+      }
+     },
+     {
+      "text": "Nous allons visiter Rome.",
+      "native": {
+       "tr": "Roma'yı gezeceğiz.",
+       "en": "We are going to visit Rome."
+      }
+     },
+     {
+      "text": "Tu vas être en retard!",
+      "native": {
+       "tr": "Geç kalacaksın!",
+       "en": "You are going to be late!"
+      }
+     }
+    ]
+   }
+  },
+  {
+   "id": "partitif",
+   "level": "A2",
+   "title": {
+    "tr": "Belirsiz miktar: du, de la, de l'",
+    "en": "Partitive: du, de la, de l'"
+   },
+   "tip": {
+    "tr": "Sayılamayan şeyler için du (eril), de la (dişil), de l' (ünlü) kullanılır: du pain. Olumsuzda pas de olur.",
+    "en": "For uncountable things use du (masc.), de la (fem.), de l' (vowel): du pain. After a negative it becomes pas de."
+   },
+   "items": [
+    {
+     "type": "build",
+     "text": "Je bois de l'eau.",
+     "native": {
+      "tr": "Su içiyorum.",
+      "en": "I am drinking water."
+     },
+     "extra": [
+      "du",
+      "des",
+      "un"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Je mange ___ riz.",
+     "native": {
+      "tr": "Pilav yiyorum.",
+      "en": "I am eating rice."
+     },
+     "options": [
+      "de la",
+      "des",
+      "du"
+     ],
+     "answer": 2
+    },
+    {
+     "type": "build",
+     "text": "Elle mange du pain.",
+     "native": {
+      "tr": "Ekmek yiyor.",
+      "en": "She is eating bread."
+     },
+     "extra": [
+      "de",
+      "la",
+      "des"
+     ],
+     "alt": []
+    },
+    {
+     "type": "build",
+     "text": "Nous achetons de la farine.",
+     "native": {
+      "tr": "Un alıyoruz.",
+      "en": "We are buying flour."
+     },
+     "extra": [
+      "du",
+      "des",
+      "un"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Elle boit ___ eau.",
+     "native": {
+      "tr": "Su içiyor.",
+      "en": "She is drinking water."
+     },
+     "options": [
+      "du",
+      "de l'",
+      "de la"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "build",
+     "text": "Tu veux du café?",
+     "native": {
+      "tr": "Kahve ister misin?",
+      "en": "Do you want some coffee?"
+     },
+     "extra": [
+      "de",
+      "la",
+      "l'"
+     ],
+     "alt": []
+    },
+    {
+     "type": "build",
+     "text": "Il ne mange pas de viande.",
+     "native": {
+      "tr": "Et yemiyor.",
+      "en": "He doesn't eat meat."
+     },
+     "extra": [
+      "du",
+      "des",
+      "jamais"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Nous avons ___ chance.",
+     "native": {
+      "tr": "Şansımız var.",
+      "en": "We have luck."
+     },
+     "options": [
+      "de la",
+      "du",
+      "des"
+     ],
+     "answer": 0
+    },
+    {
+     "type": "build",
+     "text": "Il y a des pommes sur la table.",
+     "native": {
+      "tr": "Masanın üzerinde elmalar var.",
+      "en": "There are apples on the table."
+     },
+     "extra": [
+      "du",
+      "de",
+      "une"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Il n'y a pas ___ sucre.",
+     "native": {
+      "tr": "Şeker yok.",
+      "en": "There is no sugar."
+     },
+     "options": [
+      "du",
+      "de la",
+      "de",
+      "des"
+     ],
+     "answer": 2
+    },
+    {
+     "type": "build",
+     "text": "Je voudrais du lait chaud.",
+     "native": {
+      "tr": "Sıcak süt isterim.",
+      "en": "I would like some hot milk."
+     },
+     "extra": [
+      "de",
+      "la",
+      "des"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Tu prends ___ salade?",
+     "native": {
+      "tr": "Salata alıyor musun?",
+      "en": "Are you having some salad?"
+     },
+     "options": [
+      "de la",
+      "du",
+      "des"
+     ],
+     "answer": 0
+    }
+   ],
+   "learn": {
+    "explain": {
+     "tr": "Sayılamayan ya da miktarı belli olmayan şeyler için «biraz» anlamında partitif kullanılır.\nÖrüntü: du (eril), de la (dişil), de l' (ünlüyle başlayan), des (çoğul): du pain, de la soupe, de l'eau.\nOlumsuz cümlede hepsi de / d' olur: je ne mange pas de pain.\nSık hata: Türkçe'deki gibi artikeli atmak. «Je bois café» yanlış, doğrusu «Je bois du café».",
+     "en": "The partitive article means 'some' and is used for things you cannot count or when the amount is not specific.\nPattern: du (masc.), de la (fem.), de l' (before a vowel), des (plural): du pain, de la soupe, de l'eau.\nAfter a negative they all become de / d': je ne mange pas de pain.\nCommon mistake: dropping the article. 'Je bois café' is wrong, 'Je bois du café' is right."
+    },
+    "examples": [
+     {
+      "text": "Je voudrais de la salade.",
+      "native": {
+       "tr": "Biraz salata istiyorum.",
+       "en": "I would like some salad."
+      }
+     },
+     {
+      "text": "Il boit du lait le matin.",
+      "native": {
+       "tr": "Sabahları süt içiyor.",
+       "en": "He drinks milk in the morning."
+      }
+     },
+     {
+      "text": "Nous avons de l'argent.",
+      "native": {
+       "tr": "Paramız var.",
+       "en": "We have some money."
+      }
+     },
+     {
+      "text": "Elle ne mange pas de fromage.",
+      "native": {
+       "tr": "Peynir yemiyor.",
+       "en": "She doesn't eat cheese."
+      }
+     }
+    ]
+   }
+  },
+  {
+   "id": "passe-compose-avoir",
+   "level": "A2",
+   "title": {
+    "tr": "Passé composé: avoir + participe",
+    "en": "Passé composé with avoir"
+   },
+   "tip": {
+    "tr": "Geçmiş için avoir + participe kullanılır: j'ai mangé, nous avons fini. Olumsuzda: je n'ai pas mangé.",
+    "en": "Past actions use avoir + participle: j'ai mangé, nous avons fini. Negative: je n'ai pas mangé."
+   },
+   "items": [
+    {
+     "type": "build",
+     "text": "J'ai mangé une pizza.",
+     "native": {
+      "tr": "Bir pizza yedim.",
+      "en": "I ate a pizza."
+     },
+     "extra": [
+      "suis",
+      "mange",
+      "mangez"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Hier, je ___ travaillé.",
+     "native": {
+      "tr": "Dün çalıştım.",
+      "en": "Yesterday I worked."
+     },
+     "options": [
+      "suis",
+      "ai",
+      "as"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "build",
+     "text": "Tu as fini le travail.",
+     "native": {
+      "tr": "İşi bitirdin.",
+      "en": "You finished the work."
+     },
+     "extra": [
+      "es",
+      "finis",
+      "avez"
+     ],
+     "alt": []
+    },
+    {
+     "type": "build",
+     "text": "Il a regardé un film.",
+     "native": {
+      "tr": "Bir film izledi.",
+      "en": "He watched a film."
+     },
+     "extra": [
+      "est",
+      "regarde",
+      "ont"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Marie ___ téléphoné à sa mère.",
+     "native": {
+      "tr": "Marie annesini aradı.",
+      "en": "Marie called her mother."
+     },
+     "options": [
+      "a",
+      "est",
+      "as"
+     ],
+     "answer": 0
+    },
+    {
+     "type": "build",
+     "text": "Nous avons parlé hier.",
+     "native": {
+      "tr": "Dün konuştuk.",
+      "en": "We spoke yesterday."
+     },
+     "extra": [
+      "sommes",
+      "parle",
+      "avez"
+     ],
+     "alt": []
+    },
+    {
+     "type": "build",
+     "text": "Elle a acheté du pain.",
+     "native": {
+      "tr": "Ekmek aldı.",
+      "en": "She bought bread."
+     },
+     "extra": [
+      "est",
+      "achète",
+      "ont"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Nous ___ fini le repas.",
+     "native": {
+      "tr": "Yemeği bitirdik.",
+      "en": "We finished the meal."
+     },
+     "options": [
+      "sommes",
+      "avez",
+      "avons"
+     ],
+     "answer": 2
+    },
+    {
+     "type": "build",
+     "text": "Ils ont joué au foot.",
+     "native": {
+      "tr": "Futbol oynadılar.",
+      "en": "They played football."
+     },
+     "extra": [
+      "sont",
+      "jouent",
+      "a"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Tu ___ vu ce film?",
+     "native": {
+      "tr": "Bu filmi gördün mü?",
+      "en": "Did you see this film?"
+     },
+     "options": [
+      "es",
+      "a",
+      "ai",
+      "as"
+     ],
+     "answer": 3
+    },
+    {
+     "type": "build",
+     "text": "Vous avez écouté la radio?",
+     "native": {
+      "tr": "Radyo dinlediniz mi?",
+      "en": "Did you listen to the radio?"
+     },
+     "extra": [
+      "êtes",
+      "écoutez",
+      "as"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Ils ___ pris le bus.",
+     "native": {
+      "tr": "Otobüse bindiler.",
+      "en": "They took the bus."
+     },
+     "options": [
+      "ont",
+      "sont",
+      "a"
+     ],
+     "answer": 0
+    }
+   ],
+   "learn": {
+    "explain": {
+     "tr": "Passé composé, bitmiş geçmiş eylemleri anlatır. Fiillerin çoğu avoir ile kurulur.\nÖrüntü: avoir (j'ai, tu as, il a, nous avons, vous avez, ils ont) + ortaç. -er fiilleri için ortaç -é: manger → mangé.\nOlumsuzda ne ... pas, avoir'ın etrafına gelir: je n'ai pas mangé.\nSık hata: ortacı unutup mastarı kullanmak. «J'ai manger» yanlış, doğrusu «J'ai mangé».",
+     "en": "The passé composé describes finished actions in the past. Most verbs form it with avoir.\nPattern: avoir (j'ai, tu as, il a, nous avons, vous avez, ils ont) + past participle. For -er verbs the participle ends in -é: manger → mangé.\nIn the negative, ne ... pas goes around avoir: je n'ai pas mangé.\nCommon mistake: using the infinitive instead of the participle. 'J'ai manger' is wrong, 'J'ai mangé' is right."
+    },
+    "examples": [
+     {
+      "text": "Hier, j'ai acheté un livre.",
+      "native": {
+       "tr": "Dün bir kitap aldım.",
+       "en": "Yesterday I bought a book."
+      }
+     },
+     {
+      "text": "Elle a fini son travail.",
+      "native": {
+       "tr": "İşini bitirdi.",
+       "en": "She finished her work."
+      }
+     },
+     {
+      "text": "Nous avons regardé un film.",
+      "native": {
+       "tr": "Bir film izledik.",
+       "en": "We watched a film."
+      }
+     },
+     {
+      "text": "Tu n'as pas répondu.",
+      "native": {
+       "tr": "Cevap vermedin.",
+       "en": "You didn't answer."
+      }
+     }
+    ]
+   }
+  },
+  {
+   "id": "passe-compose-etre",
+   "level": "A2",
+   "title": {
+    "tr": "Passé composé: être ile",
+    "en": "Passé composé with être"
+   },
+   "tip": {
+    "tr": "Gitmek, gelmek, kalmak gibi hareket fiilleri être ile kurulur ve özneyle uyuşur: elle est arrivée, nous sommes partis.",
+    "en": "Verbs of movement like aller, venir, rester use être and agree with the subject: elle est arrivée, nous sommes partis."
+   },
+   "items": [
+    {
+     "type": "build",
+     "text": "Je suis allé au cinéma.",
+     "native": {
+      "tr": "Sinemaya gittim.",
+      "en": "I went to the cinema."
+     },
+     "extra": [
+      "ai",
+      "vais",
+      "allés"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Hier, nous ___ allés au parc.",
+     "native": {
+      "tr": "Dün parka gittik.",
+      "en": "Yesterday we went to the park."
+     },
+     "options": [
+      "avons",
+      "sommes",
+      "sont"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "build",
+     "text": "Elle est arrivée hier.",
+     "native": {
+      "tr": "Dün geldi.",
+      "en": "She arrived yesterday."
+     },
+     "extra": [
+      "a",
+      "arrivé",
+      "ont"
+     ],
+     "alt": []
+    },
+    {
+     "type": "build",
+     "text": "Nous sommes partis tôt.",
+     "native": {
+      "tr": "Erken ayrıldık.",
+      "en": "We left early."
+     },
+     "extra": [
+      "avons",
+      "partons",
+      "parti"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Elle ___ née en 1990.",
+     "native": {
+      "tr": "1990'da doğdu.",
+      "en": "She was born in 1990."
+     },
+     "options": [
+      "a",
+      "es",
+      "est"
+     ],
+     "answer": 2
+    },
+    {
+     "type": "build",
+     "text": "Ils sont restés à la maison.",
+     "native": {
+      "tr": "Evde kaldılar.",
+      "en": "They stayed at home."
+     },
+     "extra": [
+      "ont",
+      "resté",
+      "restent"
+     ],
+     "alt": []
+    },
+    {
+     "type": "build",
+     "text": "Tu es venu avec Paul?",
+     "native": {
+      "tr": "Paul'le mi geldin?",
+      "en": "Did you come with Paul?"
+     },
+     "extra": [
+      "as",
+      "vient",
+      "venus"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Ils ___ montés au premier étage.",
+     "native": {
+      "tr": "Birinci kata çıktılar.",
+      "en": "They went up to the first floor."
+     },
+     "options": [
+      "sont",
+      "ont",
+      "est"
+     ],
+     "answer": 0
+    },
+    {
+     "type": "build",
+     "text": "Elles sont tombées dans la rue.",
+     "native": {
+      "tr": "Sokakta düştüler.",
+      "en": "They fell in the street."
+     },
+     "extra": [
+      "ont",
+      "tombés",
+      "tombe"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Je ___ tombé dans l'escalier.",
+     "native": {
+      "tr": "Merdivenlerde düştüm.",
+      "en": "I fell on the stairs."
+     },
+     "options": [
+      "ai",
+      "est",
+      "es",
+      "suis"
+     ],
+     "answer": 3
+    },
+    {
+     "type": "build",
+     "text": "Vous êtes sortis ce soir.",
+     "native": {
+      "tr": "Bu akşam dışarı çıktınız.",
+      "en": "You went out this evening."
+     },
+     "extra": [
+      "avez",
+      "sortez",
+      "sortons"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Tu ___ rentrée tard hier?",
+     "native": {
+      "tr": "Dün geç mi döndün?",
+      "en": "Did you get back late yesterday?"
+     },
+     "options": [
+      "as",
+      "es",
+      "est"
+     ],
+     "answer": 1
+    }
+   ],
+   "learn": {
+    "explain": {
+     "tr": "Bazı fiiller, özellikle hareket ve durum değiştirme bildirenler, geçmişte être ile kurulur: aller, venir, arriver, partir, rester, naître.\nÖrüntü: être (je suis, tu es, il est ...) + ortaç. Ortaç özneye uyar: elle est arrivée, ils sont partis.\nKendine dönüşlü fiiller de hep être alır.\nSık hata: «J'ai allé» demek. Doğrusu «Je suis allé(e)».",
+     "en": "Some verbs, mostly movement or change of state, use être in the past: aller, venir, arriver, partir, rester, naître.\nPattern: être (je suis, tu es, il est ...) + past participle. The participle agrees with the subject: elle est arrivée, ils sont partis.\nReflexive verbs also always take être.\nCommon mistake: saying 'J'ai allé'. The right form is 'Je suis allé(e)'."
+    },
+    "examples": [
+     {
+      "text": "Je suis allé au cinéma.",
+      "native": {
+       "tr": "Sinemaya gittim.",
+       "en": "I went to the cinema."
+      }
+     },
+     {
+      "text": "Elle est née en 1995.",
+      "native": {
+       "tr": "1995'te doğdu.",
+       "en": "She was born in 1995."
+      }
+     },
+     {
+      "text": "Nous sommes restés à la maison.",
+      "native": {
+       "tr": "Evde kaldık.",
+       "en": "We stayed at home."
+      }
+     },
+     {
+      "text": "Ils sont arrivés hier soir.",
+      "native": {
+       "tr": "Dün akşam geldiler.",
+       "en": "They arrived last night."
+      }
+     }
+    ]
+   }
+  },
+  {
+   "id": "reflexifs",
+   "level": "A2",
+   "title": {
+    "tr": "Dönüşlü fiiller: se lever, s'appeler",
+    "en": "Reflexive verbs: se lever, s'appeler"
+   },
+   "tip": {
+    "tr": "Dönüşlü fiillerde özneye uygun me, te, se, nous, vous, se gelir: je me lève, il se couche, nous nous habillons.",
+    "en": "Reflexive verbs take me, te, se, nous, vous, se before the verb: je me lève, il se couche, nous nous habillons."
+   },
+   "items": [
+    {
+     "type": "build",
+     "text": "Je me lève à sept heures.",
+     "native": {
+      "tr": "Saat yedide kalkarım.",
+      "en": "I get up at seven."
+     },
+     "extra": [
+      "te",
+      "se",
+      "lèves"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Je ___ réveille tôt.",
+     "native": {
+      "tr": "Erken uyanırım.",
+      "en": "I wake up early."
+     },
+     "options": [
+      "se",
+      "te",
+      "me"
+     ],
+     "answer": 2
+    },
+    {
+     "type": "build",
+     "text": "Tu te laves les mains.",
+     "native": {
+      "tr": "Ellerini yıkarsın.",
+      "en": "You wash your hands."
+     },
+     "extra": [
+      "me",
+      "se",
+      "lave"
+     ],
+     "alt": []
+    },
+    {
+     "type": "build",
+     "text": "Il se couche tard.",
+     "native": {
+      "tr": "Geç yatar.",
+      "en": "He goes to bed late."
+     },
+     "extra": [
+      "te",
+      "me",
+      "couches"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Tu ___ brosses les dents.",
+     "native": {
+      "tr": "Dişlerini fırçalarsın.",
+      "en": "You brush your teeth."
+     },
+     "options": [
+      "te",
+      "me",
+      "se"
+     ],
+     "answer": 0
+    },
+    {
+     "type": "build",
+     "text": "Nous nous habillons vite.",
+     "native": {
+      "tr": "Çabuk giyiniriz.",
+      "en": "We get dressed quickly."
+     },
+     "extra": [
+      "me",
+      "vous",
+      "habillez"
+     ],
+     "alt": []
+    },
+    {
+     "type": "build",
+     "text": "Elle s'appelle Claire.",
+     "native": {
+      "tr": "Adı Claire.",
+      "en": "Her name is Claire."
+     },
+     "extra": [
+      "se",
+      "t'",
+      "appelle"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Nous ___ amusons beaucoup.",
+     "native": {
+      "tr": "Çok eğleniyoruz.",
+      "en": "We have a lot of fun."
+     },
+     "options": [
+      "vous",
+      "nous",
+      "se"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "build",
+     "text": "Vous vous reposez le dimanche.",
+     "native": {
+      "tr": "Pazar günleri dinlenirsiniz.",
+      "en": "You rest on Sundays."
+     },
+     "extra": [
+      "nous",
+      "te",
+      "reposes"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Elles ___ douchent le matin.",
+     "native": {
+      "tr": "Sabahları duş alırlar.",
+      "en": "They take a shower in the morning."
+     },
+     "options": [
+      "me",
+      "nous",
+      "te",
+      "se"
+     ],
+     "answer": 3
+    },
+    {
+     "type": "build",
+     "text": "Ils se promènent dans le parc.",
+     "native": {
+      "tr": "Parkta gezerler.",
+      "en": "They walk in the park."
+     },
+     "extra": [
+      "me",
+      "nous",
+      "promène"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Vous ___ souvenez de lui?",
+     "native": {
+      "tr": "Onu hatırlıyor musunuz?",
+      "en": "Do you remember him?"
+     },
+     "options": [
+      "se",
+      "nous",
+      "vous"
+     ],
+     "answer": 2
+    }
+   ],
+   "learn": {
+    "explain": {
+     "tr": "Dönüşlü fiiller, eylemin özneye geri döndüğünü gösterir: se lever (kalkmak), se coucher (yatmak), s'appeler (adı olmak).\nÖrüntü: özne + me/te/se/nous/vous/se + fiil: je me lève, tu te lèves, nous nous habillons. Ünlüden önce me, te, se → m', t', s'.\nOlumsuzda ne ... pas, zamir ve fiili birlikte sarar: je ne me lève pas.\nSık hata: zamiri unutmak. «Je lève à sept heures» yanlış, doğrusu «Je me lève à sept heures».",
+     "en": "Reflexive verbs show that the action goes back to the subject: se lever (to get up), se coucher (to go to bed), s'appeler (to be called).\nPattern: subject + me/te/se/nous/vous/se + verb: je me lève, tu te lèves, nous nous habillons. Before a vowel, me, te, se become m', t', s'.\nIn the negative, ne ... pas wraps pronoun and verb together: je ne me lève pas.\nCommon mistake: forgetting the pronoun. 'Je lève à sept heures' is wrong, 'Je me lève à sept heures' is right."
+    },
+    "examples": [
+     {
+      "text": "Je m'appelle Julien.",
+      "native": {
+       "tr": "Benim adım Julien.",
+       "en": "My name is Julien."
+      }
+     },
+     {
+      "text": "Elle se réveille tôt.",
+      "native": {
+       "tr": "Erken uyanıyor.",
+       "en": "She wakes up early."
+      }
+     },
+     {
+      "text": "Nous nous promenons le dimanche.",
+      "native": {
+       "tr": "Pazar günleri yürüyüşe çıkıyoruz.",
+       "en": "We go for a walk on Sundays."
+      }
+     },
+     {
+      "text": "Tu ne te couches pas?",
+      "native": {
+       "tr": "Yatmıyor musun?",
+       "en": "Aren't you going to bed?"
+      }
+     }
+    ]
+   }
+  },
+  {
+   "id": "possessifs",
+   "level": "A2",
+   "title": {
+    "tr": "İyelik sıfatları: mon, ton, son…",
+    "en": "Possessives: mon, ton, son, notre…"
+   },
+   "tip": {
+    "tr": "İyelik sıfatı sahibe değil, sahip olunan isme uyar: son père, sa mère, ses parents.",
+    "en": "The possessive agrees with the thing owned, not the owner: son père, sa mère, ses parents."
+   },
+   "learn": {
+    "explain": {
+     "tr": "mon/ma/mes, ton/ta/tes, son/sa/ses, notre/nos, votre/vos, leur/leurs. Çoğul isim için çoğul biçim kullanılır.\nson/sa/ses hem «onun» (erkek) hem «onun» (kadın) anlamına gelir; cinsiyeti sahip değil isim belirler.\nSesli harfle başlayan dişil isimden önce mon/ton/son: mon amie.\nSık hata: sa père veya ma amie demek. Doğrusu son père, mon amie.",
+     "en": "mon/ma/mes, ton/ta/tes, son/sa/ses, notre/nos, votre/vos, leur/leurs. Plural nouns need the plural form.\nson/sa/ses means both 'his' and 'her'; the gender comes from the noun, not the owner.\nBefore a feminine noun starting with a vowel use mon/ton/son: mon amie.\nCommon mistake: 'sa père' or 'ma amie'. Say son père, mon amie."
+    },
+    "examples": [
+     {
+      "text": "Voilà notre maison.",
+      "native": {
+       "tr": "İşte evimiz.",
+       "en": "Here is our house."
+      }
+     },
+     {
+      "text": "Tu as ton passeport?",
+      "native": {
+       "tr": "Pasaportun yanında mı?",
+       "en": "Do you have your passport?"
+      }
+     },
+     {
+      "text": "Ils aiment leurs voisins.",
+      "native": {
+       "tr": "Komşularını seviyorlar.",
+       "en": "They like their neighbours."
+      }
+     },
+     {
+      "text": "Mon amie habite ici.",
+      "native": {
+       "tr": "Arkadaşım burada oturuyor.",
+       "en": "My friend lives here."
+      }
+     }
+    ]
+   },
+   "items": [
+    {
+     "type": "build",
+     "text": "Où est ton téléphone?",
+     "native": {
+      "tr": "Telefonun nerede?",
+      "en": "Where is your phone?"
+     },
+     "extra": [
+      "ta",
+      "tes",
+      "ma"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Léa et Tom aiment ___ chien.",
+     "native": {
+      "tr": "Léa ve Tom köpeklerini seviyor.",
+      "en": "Léa and Tom love their dog."
+     },
+     "options": [
+      "leur",
+      "leurs",
+      "ses"
+     ],
+     "answer": 0
+    },
+    {
+     "type": "build",
+     "text": "Nous aimons notre quartier.",
+     "native": {
+      "tr": "Mahallemizi seviyoruz.",
+      "en": "We like our neighbourhood."
+     },
+     "extra": [
+      "nos",
+      "ton",
+      "ma"
+     ],
+     "alt": []
+    },
+    {
+     "type": "build",
+     "text": "Elle cherche ses clés.",
+     "native": {
+      "tr": "Anahtarlarını arıyor.",
+      "en": "She is looking for her keys."
+     },
+     "extra": [
+      "sa",
+      "ces",
+      "son"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Tu as ___ clés?",
+     "native": {
+      "tr": "Anahtarların yanında mı?",
+      "en": "Do you have your keys?"
+     },
+     "options": [
+      "ta",
+      "tes",
+      "ton"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "build",
+     "text": "Ils invitent leurs amis.",
+     "native": {
+      "tr": "Arkadaşlarını davet ediyorlar.",
+      "en": "They invite their friends."
+     },
+     "extra": [
+      "leur",
+      "mon",
+      "ma"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Nous cherchons ___ enfants.",
+     "native": {
+      "tr": "Çocuklarımızı arıyoruz.",
+      "en": "We are looking for our children."
+     },
+     "options": [
+      "notre",
+      "votre",
+      "nos"
+     ],
+     "answer": 2
+    },
+    {
+     "type": "build",
+     "text": "Vous avez votre billet?",
+     "native": {
+      "tr": "Biletiniz yanınızda mı?",
+      "en": "Do you have your ticket?"
+     },
+     "extra": [
+      "vos",
+      "ses",
+      "as"
+     ],
+     "alt": []
+    },
+    {
+     "type": "build",
+     "text": "Mon amie habite à Lyon.",
+     "native": {
+      "tr": "Arkadaşım Lyon'da yaşıyor.",
+      "en": "My friend lives in Lyon."
+     },
+     "extra": [
+      "ma",
+      "mes",
+      "est"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Paul aime ___ mère.",
+     "native": {
+      "tr": "Paul annesini seviyor.",
+      "en": "Paul loves his mother."
+     },
+     "options": [
+      "sa",
+      "son",
+      "ses"
+     ],
+     "answer": 0
+    },
+    {
+     "type": "build",
+     "text": "Marc prend sa veste.",
+     "native": {
+      "tr": "Marc ceketini alıyor.",
+      "en": "Marc takes his jacket."
+     },
+     "extra": [
+      "son",
+      "ses",
+      "leur"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "___ amie s'appelle Julie.",
+     "native": {
+      "tr": "Arkadaşımın adı Julie.",
+      "en": "My friend is called Julie."
+     },
+     "options": [
+      "Ma",
+      "Mon",
+      "Mes"
+     ],
+     "answer": 1
+    }
+   ]
+  },
+  {
+   "id": "comparatifs",
+   "level": "A2",
+   "title": {
+    "tr": "Karşılaştırma: plus … que",
+    "en": "Comparatives: plus … que"
+   },
+   "tip": {
+    "tr": "Üstünlük plus … que, eşitlik aussi … que, azlık moins … que ile kurulur.",
+    "en": "Use plus … que, aussi … que, moins … que to compare."
+   },
+   "learn": {
+    "explain": {
+     "tr": "Sıfat veya zarfın önüne plus (daha), moins (daha az), aussi (kadar) koyarsın; karşılaştırılan şeyden önce que gelir.\nEn üstünlük: le/la/les plus + sıfat: le plus grand.\nDüzensizler: bon → meilleur, bien → mieux. Plus bon ve plus bien denmez.\nSık hata: Ce gâteau est plus bon demek. Doğrusu Ce gâteau est meilleur.",
+     "en": "Put plus (more), moins (less) or aussi (as) before an adjective or adverb; que introduces what you compare with.\nSuperlative: le/la/les plus + adjective: le plus grand.\nIrregular: bon → meilleur, bien → mieux. 'Plus bon' and 'plus bien' are wrong.\nCommon mistake: 'Ce gâteau est plus bon'. Say Ce gâteau est meilleur."
+    },
+    "examples": [
+     {
+      "text": "Il est aussi grand que son père.",
+      "native": {
+       "tr": "O babası kadar uzun.",
+       "en": "He is as tall as his father."
+      }
+     },
+     {
+      "text": "Ce film est moins long que l'autre.",
+      "native": {
+       "tr": "Bu film ötekinden daha kısa.",
+       "en": "This film is shorter than the other."
+      }
+     },
+     {
+      "text": "Le train est le plus rapide.",
+      "native": {
+       "tr": "En hızlısı tren.",
+       "en": "The train is the fastest."
+      }
+     },
+     {
+      "text": "Ma sœur est plus jeune que moi.",
+      "native": {
+       "tr": "Kız kardeşim benden küçük.",
+       "en": "My sister is younger than me."
+      }
+     }
+    ]
+   },
+   "items": [
+    {
+     "type": "build",
+     "text": "Mon frère est plus grand que moi.",
+     "native": {
+      "tr": "Erkek kardeşim benden daha uzun.",
+      "en": "My brother is taller than me."
+     },
+     "extra": [
+      "très",
+      "bon",
+      "meilleur"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Mon vélo est ___ rapide que ta voiture.",
+     "native": {
+      "tr": "Bisikletim senin arabandan daha yavaş.",
+      "en": "My bike is less fast than your car."
+     },
+     "options": [
+      "très",
+      "le",
+      "moins"
+     ],
+     "answer": 2
+    },
+    {
+     "type": "build",
+     "text": "Ce café est meilleur que l'autre.",
+     "native": {
+      "tr": "Bu kahve ötekinden daha iyi.",
+      "en": "This coffee is better than the other."
+     },
+     "extra": [
+      "plus",
+      "bon",
+      "mieux"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Cette pizza est ___ que l'autre.",
+     "native": {
+      "tr": "Bu pizza ötekinden daha iyi.",
+      "en": "This pizza is better than the other."
+     },
+     "options": [
+      "plus bon",
+      "meilleure",
+      "mieux"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "build",
+     "text": "Elle court plus vite que Paul.",
+     "native": {
+      "tr": "O Paul'dan daha hızlı koşuyor.",
+      "en": "She runs faster than Paul."
+     },
+     "extra": [
+      "très",
+      "bon",
+      "mieux"
+     ],
+     "alt": []
+    },
+    {
+     "type": "build",
+     "text": "Ce sac est moins cher que ce manteau.",
+     "native": {
+      "tr": "Bu çanta bu paltodan daha ucuz.",
+      "en": "This bag is cheaper than this coat."
+     },
+     "extra": [
+      "très",
+      "bon",
+      "meilleur"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Il a dix ans, moi vingt: il est ___ jeune que moi.",
+     "native": {
+      "tr": "Onun on, benim yirmi yaşım var: o benden daha genç.",
+      "en": "He is ten, I am twenty: he is younger than me."
+     },
+     "options": [
+      "moins",
+      "plus",
+      "aussi"
+     ],
+     "answer": 0
+    },
+    {
+     "type": "build",
+     "text": "Je parle aussi bien que toi.",
+     "native": {
+      "tr": "Senin kadar iyi konuşuyorum.",
+      "en": "I speak as well as you."
+     },
+     "extra": [
+      "très",
+      "meilleur",
+      "bon"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "C'est le ___ beau jour de ma vie.",
+     "native": {
+      "tr": "Hayatımın en güzel günü bu.",
+      "en": "It is the most beautiful day of my life."
+     },
+     "options": [
+      "que",
+      "aussi",
+      "plus"
+     ],
+     "answer": 2
+    },
+    {
+     "type": "build",
+     "text": "C'est le plus grand musée de Paris.",
+     "native": {
+      "tr": "Paris'in en büyük müzesi bu.",
+      "en": "It is the biggest museum in Paris."
+     },
+     "extra": [
+      "très",
+      "la",
+      "aussi"
+     ],
+     "alt": []
+    },
+    {
+     "type": "build",
+     "text": "Il fait plus chaud en été.",
+     "native": {
+      "tr": "Yazın hava daha sıcak.",
+      "en": "It is warmer in summer."
+     },
+     "extra": [
+      "que",
+      "très",
+      "bon"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Tu chantes ___ que moi!",
+     "native": {
+      "tr": "Benden daha iyi şarkı söylüyorsun!",
+      "en": "You sing better than me!"
+     },
+     "options": [
+      "meilleur",
+      "mieux",
+      "bon",
+      "bien"
+     ],
+     "answer": 1
+    }
+   ]
+  },
+  {
+   "id": "imparfait-pc",
+   "level": "B1",
+   "title": {
+    "tr": "Imparfait ve passé composé: il pleuvait / il a plu",
+    "en": "Imparfait vs passé composé: il pleuvait / il a plu"
+   },
+   "tip": {
+    "tr": "Imparfait fon, alışkanlık ve süren durumu anlatır; passé composé ise tek ve bitmiş olayı. Ex: Je lisais quand il est entré.",
+    "en": "The imparfait gives background, habits and ongoing states; the passé composé gives single finished events. Ex: Je lisais quand il est entré."
+   },
+   "items": [
+    {
+     "type": "build",
+     "text": "Quand j'étais petit, je jouais dehors.",
+     "native": {
+      "tr": "Küçükken dışarıda oynardım.",
+      "en": "When I was little, I used to play outside."
+     },
+     "extra": [
+      "joué",
+      "jouerai",
+      "étiez"
+     ],
+     "alt": [
+      "Je jouais dehors quand j'étais petit."
+     ]
+    },
+    {
+     "type": "build",
+     "text": "Il pleuvait quand nous sommes sortis.",
+     "native": {
+      "tr": "Dışarı çıktığımızda yağmur yağıyordu.",
+      "en": "It was raining when we went out."
+     },
+     "extra": [
+      "plu",
+      "sortions",
+      "avons"
+     ],
+     "alt": [
+      "Quand nous sommes sortis il pleuvait."
+     ]
+    },
+    {
+     "type": "choice",
+     "text": "Hier soir, nous ___ un film.",
+     "native": {
+      "tr": "Dün akşam bir film izledik.",
+      "en": "Last night, we watched a film."
+     },
+     "options": [
+      "regardions",
+      "avons regardé",
+      "regardaient"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "build",
+     "text": "Hier, j'ai mangé une pizza avec Paul.",
+     "native": {
+      "tr": "Dün Paul'le pizza yedim.",
+      "en": "Yesterday I ate a pizza with Paul."
+     },
+     "extra": [
+      "mangeais",
+      "mangeait",
+      "a"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Quand j'étais enfant, je ___ au foot tous les samedis.",
+     "native": {
+      "tr": "Çocukken her cumartesi futbol oynardım.",
+      "en": "When I was a child, I played football every Saturday."
+     },
+     "options": [
+      "jouais",
+      "ai joué",
+      "jouerai",
+      "jouant"
+     ],
+     "answer": 0
+    },
+    {
+     "type": "build",
+     "text": "Elle lisait pendant que je cuisinais.",
+     "native": {
+      "tr": "Ben yemek yaparken o kitap okuyordu.",
+      "en": "She was reading while I was cooking."
+     },
+     "extra": [
+      "lu",
+      "ai",
+      "cuisiné"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Il ___ très chaud, donc nous sommes allés à la plage.",
+     "native": {
+      "tr": "Hava çok sıcaktı, bu yüzden plaja gittik.",
+      "en": "It was very hot, so we went to the beach."
+     },
+     "options": [
+      "fait",
+      "fera",
+      "a fait",
+      "faisait"
+     ],
+     "answer": 3
+    },
+    {
+     "type": "build",
+     "text": "Nous habitions à Lyon quand il est né.",
+     "native": {
+      "tr": "O doğduğunda Lyon'da oturuyorduk.",
+      "en": "We were living in Lyon when he was born."
+     },
+     "extra": [
+      "habité",
+      "sommes",
+      "naissait"
+     ],
+     "alt": [
+      "Quand il est né nous habitions à Lyon."
+     ]
+    },
+    {
+     "type": "choice",
+     "text": "Tout à coup, la porte ___.",
+     "native": {
+      "tr": "Birden kapı açıldı.",
+      "en": "Suddenly, the door opened."
+     },
+     "options": [
+      "s'ouvrait",
+      "s'ouvrirait",
+      "s'est ouverte"
+     ],
+     "answer": 2
+    },
+    {
+     "type": "build",
+     "text": "Soudain, le téléphone a sonné.",
+     "native": {
+      "tr": "Birden telefon çaldı.",
+      "en": "Suddenly, the phone rang."
+     },
+     "extra": [
+      "sonnait",
+      "ont",
+      "soudaine"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Je ___ mes devoirs quand mon frère est entré.",
+     "native": {
+      "tr": "Kardeşim içeri girdiğinde ödevimi yapıyordum.",
+      "en": "I was doing my homework when my brother came in."
+     },
+     "options": [
+      "faisais",
+      "ai fait",
+      "ferais"
+     ],
+     "answer": 0
+    },
+    {
+     "type": "build",
+     "text": "Quand elle est arrivée, nous dînions déjà.",
+     "native": {
+      "tr": "O geldiğinde biz zaten akşam yemeği yiyorduk.",
+      "en": "When she arrived, we were already having dinner."
+     },
+     "extra": [
+      "arrivait",
+      "dîné",
+      "avons"
+     ],
+     "alt": [
+      "Nous dînions déjà quand elle est arrivée."
+     ]
+    }
+   ],
+   "learn": {
+    "explain": {
+     "tr": "Geçmişte iki zaman kullanırız. Imparfait fon, alışkanlık ve süren durumları anlatır; passé composé tek ve bitmiş olayı.\nÖrüntü: imparfait = nous formunun kökü + -ais, -ais, -ait, -ions, -iez, -aient (nous parlons → je parlais). Passé composé = avoir/être + ortaç.\nSık birleşim: bir eylem sürerken (imparfait) başka bir olay araya girer (passé composé): Je lisais quand il est entré.\nSık hata: alışkanlık için passé composé kullanmak. «Enfant, j'ai joué dehors tous les jours» yerine «je jouais» de.",
+     "en": "French has two main past tenses. The imparfait gives background, habits and ongoing states; the passé composé gives one finished event.\nPattern: imparfait = stem of the nous form + -ais, -ais, -ait, -ions, -iez, -aient (nous parlons → je parlais). Passé composé = avoir/être + participle.\nA common combination: something was going on (imparfait) when an event interrupted it (passé composé): Je lisais quand il est entré.\nCommon mistake: using the passé composé for habits. Say 'Enfant, je jouais dehors' rather than 'j'ai joué'."
+    },
+    "examples": [
+     {
+      "text": "Quand j'étais petit, j'habitais à Nice.",
+      "native": {
+       "tr": "Küçükken Nice'te yaşıyordum.",
+       "en": "When I was little, I lived in Nice."
+      }
+     },
+     {
+      "text": "Il pleuvait quand nous sommes sortis.",
+      "native": {
+       "tr": "Dışarı çıktığımızda yağmur yağıyordu.",
+       "en": "It was raining when we went out."
+      }
+     },
+     {
+      "text": "Elle dormait quand le téléphone a sonné.",
+      "native": {
+       "tr": "Telefon çaldığında uyuyordu.",
+       "en": "She was sleeping when the phone rang."
+      }
+     },
+     {
+      "text": "Hier, j'ai vu Marc, il avait l'air fatigué.",
+      "native": {
+       "tr": "Dün Marc'ı gördüm, yorgun görünüyordu.",
+       "en": "Yesterday I saw Marc, he looked tired."
+      }
+     }
+    ]
+   }
+  },
+  {
+   "id": "futur-simple",
+   "level": "B1",
+   "title": {
+    "tr": "Futur simple: je partirai, nous irons",
+    "en": "Futur simple: je partirai, nous irons"
+   },
+   "tip": {
+    "tr": "Gelecek zamanı infinitif + -ai, -as, -a, -ons, -ez, -ont ile kurarız. Ex: Demain, je partirai tôt. Düzensizler: irai, serai, aurai, ferai.",
+    "en": "Form the future with the infinitive + -ai, -as, -a, -ons, -ez, -ont. Ex: Demain, je partirai tôt. Irregulars: irai, serai, aurai, ferai."
+   },
+   "items": [
+    {
+     "type": "build",
+     "text": "Demain, nous partirons à huit heures.",
+     "native": {
+      "tr": "Yarın saat sekizde yola çıkacağız.",
+      "en": "Tomorrow, we will leave at eight o'clock."
+     },
+     "extra": [
+      "partons",
+      "partiront",
+      "partirez"
+     ],
+     "alt": []
+    },
+    {
+     "type": "build",
+     "text": "Elle sera médecin dans dix ans.",
+     "native": {
+      "tr": "On yıl sonra doktor olacak.",
+      "en": "She will be a doctor in ten years."
+     },
+     "extra": [
+      "serai",
+      "serait",
+      "années"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "L'année prochaine, je ___ en Italie.",
+     "native": {
+      "tr": "Gelecek yıl İtalya'ya gideceğim.",
+      "en": "Next year, I will go to Italy."
+     },
+     "options": [
+      "allais",
+      "irais",
+      "irai"
+     ],
+     "answer": 2
+    },
+    {
+     "type": "build",
+     "text": "Je te téléphonerai dès que j'arriverai.",
+     "native": {
+      "tr": "Varır varmaz seni arayacağım.",
+      "en": "I will call you as soon as I arrive."
+     },
+     "extra": [
+      "téléphonerais",
+      "arrive",
+      "arriverais"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Demain, il ___ du soleil partout.",
+     "native": {
+      "tr": "Yarın her yerde güneş olacak.",
+      "en": "Tomorrow, it will be sunny everywhere."
+     },
+     "options": [
+      "fera",
+      "fait",
+      "faisait",
+      "ferait"
+     ],
+     "answer": 0
+    },
+    {
+     "type": "build",
+     "text": "Vous aurez les résultats la semaine prochaine.",
+     "native": {
+      "tr": "Sonuçları gelecek hafta alacaksınız.",
+      "en": "You will get the results next week."
+     },
+     "extra": [
+      "avez",
+      "aurait",
+      "résultat"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Un jour, tu ___ célèbre.",
+     "native": {
+      "tr": "Bir gün ünlü olacaksın.",
+      "en": "One day, you will be famous."
+     },
+     "options": [
+      "étais",
+      "seras",
+      "es"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "build",
+     "text": "Quand il fera beau, nous irons à la plage.",
+     "native": {
+      "tr": "Hava güzel olunca plaja gideceğiz.",
+      "en": "When the weather is nice, we will go to the beach."
+     },
+     "extra": [
+      "ferait",
+      "allons",
+      "iront"
+     ],
+     "alt": [
+      "Nous irons à la plage quand il fera beau."
+     ]
+    },
+    {
+     "type": "choice",
+     "text": "L'été prochain, nous ___ une grande fête.",
+     "native": {
+      "tr": "Gelecek yaz büyük bir parti vereceğiz.",
+      "en": "Next summer, we will have a big party."
+     },
+     "options": [
+      "faisions",
+      "avons fait",
+      "ferons"
+     ],
+     "answer": 2
+    },
+    {
+     "type": "build",
+     "text": "Ils viendront nous voir en juillet.",
+     "native": {
+      "tr": "Temmuzda bizi görmeye gelecekler.",
+      "en": "They will come to see us in July."
+     },
+     "extra": [
+      "viennent",
+      "viendraient",
+      "venir"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Ils ___ la réponse la semaine prochaine.",
+     "native": {
+      "tr": "Cevabı gelecek hafta alacaklar.",
+      "en": "They will get the answer next week."
+     },
+     "options": [
+      "auront",
+      "avaient",
+      "ont",
+      "aurait"
+     ],
+     "answer": 0
+    },
+    {
+     "type": "build",
+     "text": "Tu verras, tout se passera bien.",
+     "native": {
+      "tr": "Göreceksin, her şey iyi geçecek.",
+      "en": "You'll see, everything will go well."
+     },
+     "extra": [
+      "vois",
+      "passerait",
+      "verrais"
+     ],
+     "alt": []
+    }
+   ],
+   "learn": {
+    "explain": {
+     "tr": "Futur simple, daha uzak ya da kesin gelecekten söz ederken kullanılır.\nÖrüntü: mastar + -ai, -as, -a, -ons, -ez, -ont: je parlerai, nous finirons. -re ile biten fiillerde e düşer: prendre → je prendrai.\nDüzensiz kökler: aller → ir-, être → ser-, avoir → aur-, faire → fer-.\nSık hata: düzensiz kökü düzenliymiş gibi kurmak. «J'allerai» yanlış, doğrusu «J'irai».",
+     "en": "The futur simple talks about the more distant or certain future.\nPattern: infinitive + -ai, -as, -a, -ons, -ez, -ont: je parlerai, nous finirons. With -re verbs, drop the final e: prendre → je prendrai.\nIrregular stems: aller → ir-, être → ser-, avoir → aur-, faire → fer-.\nCommon mistake: building an irregular verb as if it were regular. 'J'allerai' is wrong, 'J'irai' is right."
+    },
+    "examples": [
+     {
+      "text": "Demain, il fera beau.",
+      "native": {
+       "tr": "Yarın hava güzel olacak.",
+       "en": "Tomorrow the weather will be nice."
+      }
+     },
+     {
+      "text": "Je t'appellerai ce soir.",
+      "native": {
+       "tr": "Seni bu akşam arayacağım.",
+       "en": "I will call you tonight."
+      }
+     },
+     {
+      "text": "Nous serons là à huit heures.",
+      "native": {
+       "tr": "Saat sekizde orada olacağız.",
+       "en": "We will be there at eight."
+      }
+     },
+     {
+      "text": "Ils voyageront l'été prochain.",
+      "native": {
+       "tr": "Gelecek yaz seyahat edecekler.",
+       "en": "They will travel next summer."
+      }
+     }
+    ]
+   }
+  },
+  {
+   "id": "conditionnel",
+   "level": "B1",
+   "title": {
+    "tr": "Conditionnel présent: je voudrais, si j'avais…",
+    "en": "Conditional: je voudrais, si j'avais…"
+   },
+   "tip": {
+    "tr": "Kibar rica, tavsiye ve hayali durumlar için koşul kipi kullanılır: infinitif + imparfait sonları. Ex: Si j'avais le temps, je voyagerais.",
+    "en": "The conditional (infinitive + imparfait endings) is for polite requests, advice and unreal situations. Ex: Si j'avais le temps, je voyagerais."
+   },
+   "items": [
+    {
+     "type": "build",
+     "text": "Je voudrais un café, s'il vous plaît.",
+     "native": {
+      "tr": "Bir kahve istiyorum, lütfen.",
+      "en": "I would like a coffee, please."
+     },
+     "extra": [
+      "veux",
+      "voulais",
+      "voudrai"
+     ],
+     "alt": []
+    },
+    {
+     "type": "build",
+     "text": "Pourriez-vous m'aider, s'il vous plaît?",
+     "native": {
+      "tr": "Bana yardım edebilir misiniz, lütfen?",
+      "en": "Could you help me, please?"
+     },
+     "extra": [
+      "pouvez-vous",
+      "pourrez",
+      "aidé"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Si j'avais plus d'argent, j'___ une grande maison.",
+     "native": {
+      "tr": "Daha çok param olsa büyük bir ev alırdım.",
+      "en": "If I had more money, I would buy a big house."
+     },
+     "options": [
+      "achèterais",
+      "achetais",
+      "achèterai"
+     ],
+     "answer": 0
+    },
+    {
+     "type": "build",
+     "text": "Si j'avais le temps, je voyagerais plus.",
+     "native": {
+      "tr": "Vaktim olsa daha çok seyahat ederdim.",
+      "en": "If I had time, I would travel more."
+     },
+     "extra": [
+      "aurais",
+      "voyageais",
+      "voyagerai"
+     ],
+     "alt": [
+      "Je voyagerais plus si j'avais le temps."
+     ]
+    },
+    {
+     "type": "choice",
+     "text": "Ce serait super si tu ___ venir.",
+     "native": {
+      "tr": "Gelebilsen harika olurdu.",
+      "en": "It would be great if you could come."
+     },
+     "options": [
+      "peux",
+      "pouvais",
+      "pourras"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "build",
+     "text": "À ta place, je ne dirais rien.",
+     "native": {
+      "tr": "Senin yerinde olsam hiçbir şey söylemezdim.",
+      "en": "In your place, I wouldn't say anything."
+     },
+     "extra": [
+      "dis",
+      "dirai",
+      "disais"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "À ta place, je ___ ce travail.",
+     "native": {
+      "tr": "Senin yerinde olsam bu işi alırdım.",
+      "en": "In your place, I would take this job."
+     },
+     "options": [
+      "prendrai",
+      "prenais",
+      "prendrais"
+     ],
+     "answer": 2
+    },
+    {
+     "type": "build",
+     "text": "Nous aimerions habiter près de la mer.",
+     "native": {
+      "tr": "Denize yakın bir yerde oturmak isterdik.",
+      "en": "We would like to live near the sea."
+     },
+     "extra": [
+      "aimons",
+      "aimerons",
+      "habité"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Si nous gagnions au loto, nous ___ le tour du monde.",
+     "native": {
+      "tr": "Piyangoyu kazansak dünya turuna çıkardık.",
+      "en": "If we won the lottery, we would go around the world."
+     },
+     "options": [
+      "ferons",
+      "faisons",
+      "faisions",
+      "ferions"
+     ],
+     "answer": 3
+    },
+    {
+     "type": "build",
+     "text": "Tu devrais te reposer un peu.",
+     "native": {
+      "tr": "Biraz dinlenmelisin.",
+      "en": "You should rest a little."
+     },
+     "extra": [
+      "dois",
+      "devras",
+      "reposé"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Si tu étudiais plus, tu ___ ton examen.",
+     "native": {
+      "tr": "Daha çok çalışsan sınavını geçerdin.",
+      "en": "If you studied more, you would pass your exam."
+     },
+     "options": [
+      "réussirais",
+      "réussiras",
+      "réussissais"
+     ],
+     "answer": 0
+    },
+    {
+     "type": "build",
+     "text": "Si elle venait, nous serions très contents.",
+     "native": {
+      "tr": "Gelse çok sevinirdik.",
+      "en": "If she came, we would be very happy."
+     },
+     "extra": [
+      "viendrait",
+      "sommes",
+      "serons"
+     ],
+     "alt": [
+      "Nous serions très contents si elle venait."
+     ]
+    }
+   ],
+   "learn": {
+    "explain": {
+     "tr": "Conditionnel nazik istekler, tavsiyeler ve gerçek olmayan durumlar için kullanılır.\nÖrüntü: futur kökü + imparfait ekleri: je voudrais, tu aimerais, nous irions. «Si + imparfait, conditionnel» kalıbı: Si j'avais le temps, je voyagerais.\nJe veux yerine je voudrais demek çok daha kibardır.\nSık hata: si'den sonra da conditionnel kullanmak. «Si j'aurais» yanlış, doğrusu «Si j'avais».",
+     "en": "The conditional is used for polite requests, advice and unreal situations.\nPattern: future stem + imparfait endings: je voudrais, tu aimerais, nous irions. The 'si + imparfait, conditional' pattern: Si j'avais le temps, je voyagerais.\nSaying je voudrais instead of je veux is much more polite.\nCommon mistake: using the conditional after si too. 'Si j'aurais' is wrong, 'Si j'avais' is right."
+    },
+    "examples": [
+     {
+      "text": "Pourriez-vous m'aider, s'il vous plaît?",
+      "native": {
+       "tr": "Bana yardım edebilir misiniz, lütfen?",
+       "en": "Could you help me, please?"
+      }
+     },
+     {
+      "text": "Tu devrais dormir plus.",
+      "native": {
+       "tr": "Daha çok uyumalısın.",
+       "en": "You should sleep more."
+      }
+     },
+     {
+      "text": "Si j'étais riche, j'achèterais une maison.",
+      "native": {
+       "tr": "Zengin olsam bir ev alırdım.",
+       "en": "If I were rich, I would buy a house."
+      }
+     },
+     {
+      "text": "Nous aimerions un café.",
+      "native": {
+       "tr": "Bir kahve isterdik.",
+       "en": "We would like a coffee."
+      }
+     }
+    ]
+   }
+  },
+  {
+   "id": "pronoms-cod-coi",
+   "level": "B1",
+   "title": {
+    "tr": "Nesne zamirleri: le, la, les / lui, leur",
+    "en": "Object pronouns: le, la, les / lui, leur"
+   },
+   "tip": {
+    "tr": "Zamir fiilin önüne gelir. le/la/les doğrudan nesnenin, lui/leur 'à' ile gelen kişinin yerini tutar. Ex: Je le vois. Je lui parle.",
+    "en": "The pronoun goes before the verb. le/la/les replace a direct object, lui/leur replace 'à + person'. Ex: Je le vois. Je lui parle."
+   },
+   "items": [
+    {
+     "type": "build",
+     "text": "Je le vois tous les jours.",
+     "native": {
+      "tr": "Onu her gün görüyorum.",
+      "en": "I see him every day."
+     },
+     "extra": [
+      "lui",
+      "la",
+      "voit"
+     ],
+     "alt": []
+    },
+    {
+     "type": "build",
+     "text": "Elle les achète au marché.",
+     "native": {
+      "tr": "Onları pazardan alıyor.",
+      "en": "She buys them at the market."
+     },
+     "extra": [
+      "leur",
+      "le",
+      "achetons"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Tu connais Marie ? Oui, je ___ vois souvent.",
+     "native": {
+      "tr": "Marie'yi tanıyor musun? Evet, onu sık sık görüyorum.",
+      "en": "Do you know Marie? Yes, I see her often."
+     },
+     "options": [
+      "lui",
+      "la",
+      "leur",
+      "le"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "build",
+     "text": "Nous leur parlons souvent.",
+     "native": {
+      "tr": "Onlarla sık sık konuşuyoruz.",
+      "en": "We often talk to them."
+     },
+     "extra": [
+      "les",
+      "lui",
+      "parle"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Mes parents habitent loin, alors je ___ téléphone le dimanche.",
+     "native": {
+      "tr": "Ailem uzakta oturuyor, bu yüzden onlara pazar günleri telefon ederim.",
+      "en": "My parents live far away, so I call them on Sundays."
+     },
+     "options": [
+      "les",
+      "leur",
+      "lui"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "build",
+     "text": "Tu lui as téléphoné hier?",
+     "native": {
+      "tr": "Dün ona telefon ettin mi?",
+      "en": "Did you call him yesterday?"
+     },
+     "extra": [
+      "le",
+      "a",
+      "les"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Il a perdu ses clés et il ___ cherche partout.",
+     "native": {
+      "tr": "Anahtarlarını kaybetti ve onları her yerde arıyor.",
+      "en": "He lost his keys and he is looking for them everywhere."
+     },
+     "options": [
+      "lui",
+      "leur",
+      "les"
+     ],
+     "answer": 2
+    },
+    {
+     "type": "build",
+     "text": "Je ne la connais pas encore.",
+     "native": {
+      "tr": "Onu henüz tanımıyorum.",
+      "en": "I don't know her yet."
+     },
+     "extra": [
+      "lui",
+      "les",
+      "connaît"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Paul est malade : je ___ ai apporté des fruits.",
+     "native": {
+      "tr": "Paul hasta: ona meyve getirdim.",
+      "en": "Paul is ill: I brought him some fruit."
+     },
+     "options": [
+      "lui",
+      "l'",
+      "leur"
+     ],
+     "answer": 0
+    },
+    {
+     "type": "build",
+     "text": "Je vais le lui donner demain.",
+     "native": {
+      "tr": "Onu ona yarın vereceğim.",
+      "en": "I'm going to give it to him tomorrow."
+     },
+     "extra": [
+      "donné",
+      "donnent",
+      "y"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Où sont mes lunettes ? Tu ___ as vues ?",
+     "native": {
+      "tr": "Gözlüğüm nerede? Onları gördün mü?",
+      "en": "Where are my glasses? Have you seen them?"
+     },
+     "options": [
+      "leur",
+      "l'",
+      "les",
+      "lui"
+     ],
+     "answer": 2
+    },
+    {
+     "type": "build",
+     "text": "Ne les attends pas, ils sont en retard.",
+     "native": {
+      "tr": "Onları bekleme, geç kaldılar.",
+      "en": "Don't wait for them, they are late."
+     },
+     "extra": [
+      "leur",
+      "lui",
+      "attendre"
+     ],
+     "alt": []
+    }
+   ],
+   "learn": {
+    "explain": {
+     "tr": "Zamirler, daha önce söylenmiş bir ismin yerine geçer ve tekrarı önler.\nCOD (doğrudan nesne): le, la, les. COI («à + kişi»): lui, leur. Zamir fiilden önce gelir: Je le vois. Je lui parle.\nPassé composé'de zamir avoir'dan önce gelir: Je l'ai vu. Olumsuzda: Je ne le vois pas.\nSık hata: zamiri fiilden sonraya koymak. «Je vois le» yanlış, doğrusu «Je le vois».",
+     "en": "Object pronouns replace a noun that was already mentioned, so you do not repeat it.\nDirect object: le, la, les. Indirect object ('à + person'): lui, leur. The pronoun goes before the verb: Je le vois. Je lui parle.\nIn the passé composé the pronoun comes before avoir: Je l'ai vu. Negative: Je ne le vois pas.\nCommon mistake: putting the pronoun after the verb. 'Je vois le' is wrong, 'Je le vois' is right."
+    },
+    "examples": [
+     {
+      "text": "Je la connais bien.",
+      "native": {
+       "tr": "Onu iyi tanıyorum.",
+       "en": "I know her well."
+      }
+     },
+     {
+      "text": "Il leur téléphone tous les jours.",
+      "native": {
+       "tr": "Onlara her gün telefon ediyor.",
+       "en": "He phones them every day."
+      }
+     },
+     {
+      "text": "Tu as acheté les billets? Oui, je les ai achetés.",
+      "native": {
+       "tr": "Biletleri aldın mı? Evet, onları aldım.",
+       "en": "Did you buy the tickets? Yes, I bought them."
+      }
+     },
+     {
+      "text": "Nous lui donnons un cadeau.",
+      "native": {
+       "tr": "Ona bir hediye veriyoruz.",
+       "en": "We give him a present."
+      }
+     }
+    ]
+   }
+  },
+  {
+   "id": "y-en",
+   "level": "B1",
+   "title": {
+    "tr": "Y ve en zamirleri: j'y vais, j'en ai",
+    "en": "The pronouns y and en: j'y vais, j'en ai"
+   },
+   "tip": {
+    "tr": "y yer veya 'à + şey' yerine geçer; en 'de + şey' ve miktar yerine geçer. Ex: J'y vais. J'en ai trois.",
+    "en": "y replaces a place or 'à + thing'; en replaces 'de + thing' and quantities. Ex: J'y vais. J'en ai trois."
+   },
+   "items": [
+    {
+     "type": "build",
+     "text": "J'y vais demain avec mes amis.",
+     "native": {
+      "tr": "Yarın arkadaşlarımla oraya gidiyorum.",
+      "en": "I'm going there tomorrow with my friends."
+     },
+     "extra": [
+      "en",
+      "vas",
+      "là"
+     ],
+     "alt": []
+    },
+    {
+     "type": "build",
+     "text": "Nous en avons acheté trois hier.",
+     "native": {
+      "tr": "Dün ondan üç tane aldık.",
+      "en": "We bought three of them yesterday."
+     },
+     "extra": [
+      "y",
+      "avoir",
+      "acheter"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Tu vas à la bibliothèque ? Oui, j'___ vais.",
+     "native": {
+      "tr": "Kütüphaneye gidiyor musun? Evet, oraya gidiyorum.",
+      "en": "Are you going to the library? Yes, I'm going there."
+     },
+     "options": [
+      "en",
+      "y",
+      "lui"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "build",
+     "text": "Elle y habite depuis dix ans.",
+     "native": {
+      "tr": "On yıldır orada oturuyor.",
+      "en": "She has lived there for ten years."
+     },
+     "extra": [
+      "en",
+      "habiter",
+      "vit"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Elle a beaucoup de livres et elle ___ prête volontiers.",
+     "native": {
+      "tr": "Çok kitabı var ve memnuniyetle ödünç veriyor.",
+      "en": "She has many books and happily lends some."
+     },
+     "options": [
+      "y",
+      "les",
+      "en",
+      "lui"
+     ],
+     "answer": 2
+    },
+    {
+     "type": "build",
+     "text": "Je n'en veux plus, merci.",
+     "native": {
+      "tr": "Artık istemiyorum, teşekkürler.",
+      "en": "I don't want any more, thank you."
+     },
+     "extra": [
+      "y",
+      "voulez",
+      "moi"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Tu as besoin d'aide ? Oui, j'___ ai besoin.",
+     "native": {
+      "tr": "Yardıma ihtiyacın var mı? Evet, ihtiyacım var.",
+      "en": "Do you need help? Yes, I need some."
+     },
+     "options": [
+      "y",
+      "en",
+      "lui",
+      "leur"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "build",
+     "text": "Il y pense tout le temps.",
+     "native": {
+      "tr": "Her an onu düşünüyor.",
+      "en": "He thinks about it all the time."
+     },
+     "extra": [
+      "en",
+      "pensent",
+      "penser"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Tu manges des légumes ? Oui, j'___ mange chaque jour.",
+     "native": {
+      "tr": "Sebze yer misin? Evet, her gün yerim.",
+      "en": "Do you eat vegetables? Yes, I eat some every day."
+     },
+     "options": [
+      "en",
+      "y",
+      "les",
+      "leur"
+     ],
+     "answer": 0
+    },
+    {
+     "type": "build",
+     "text": "Vous y allez ou vous restez ici?",
+     "native": {
+      "tr": "Oraya mı gidiyorsunuz, yoksa burada mı kalıyorsunuz?",
+      "en": "Are you going there or are you staying here?"
+     },
+     "extra": [
+      "en",
+      "allons",
+      "rester"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Tu viens de Turquie ? Oui, j'___ viens.",
+     "native": {
+      "tr": "Türkiye'den mi geliyorsun? Evet, oradan geliyorum.",
+      "en": "Do you come from Turkey? Yes, I come from there."
+     },
+     "options": [
+      "y",
+      "le",
+      "lui",
+      "en"
+     ],
+     "answer": 3
+    },
+    {
+     "type": "build",
+     "text": "Elle m'en a parlé hier soir.",
+     "native": {
+      "tr": "Dün akşam bana bundan bahsetti.",
+      "en": "She told me about it last night."
+     },
+     "extra": [
+      "y",
+      "lui",
+      "parlée"
+     ],
+     "alt": []
+    }
+   ],
+   "learn": {
+    "explain": {
+     "tr": "Y ve en, iki küçük ama çok işe yarar zamirdir.\nY bir yerin ya da «à + şey»in yerini tutar: Tu vas à Paris? Oui, j'y vais. En «de + şey»in ve miktarın yerini tutar: Tu veux du pain? J'en ai trois.\nİkisi de fiilden önce gelir. Sayı ya da miktar kalır: J'en veux deux.\nSık hata: en'i söyleyip miktarı unutmak ya da zamiri atmak. «J'ai trois» yerine «J'en ai trois».",
+     "en": "Y and en are two small but very useful pronouns.\nY replaces a place or 'à + thing': Tu vas à Paris? Oui, j'y vais. En replaces 'de + thing' and quantities: Tu veux du pain? J'en ai trois.\nBoth go before the verb. A number or quantity stays in the sentence: J'en veux deux.\nCommon mistake: dropping the pronoun when you give a quantity. Say 'J'en ai trois', not 'J'ai trois'."
+    },
+    "examples": [
+     {
+      "text": "Tu penses à ton voyage? Oui, j'y pense.",
+      "native": {
+       "tr": "Yolculuğunu düşünüyor musun? Evet, onu düşünüyorum.",
+       "en": "Are you thinking about your trip? Yes, I am thinking about it."
+      }
+     },
+     {
+      "text": "Il y a du monde, nous y allons demain.",
+      "native": {
+       "tr": "Çok insan var, yarın oraya gidiyoruz.",
+       "en": "It's busy, we are going there tomorrow."
+      }
+     },
+     {
+      "text": "Vous avez des enfants? Oui, nous en avons deux.",
+      "native": {
+       "tr": "Çocuğunuz var mı? Evet, iki tane.",
+       "en": "Do you have children? Yes, we have two."
+      }
+     },
+     {
+      "text": "Elle a besoin d'argent, elle en cherche.",
+      "native": {
+       "tr": "Paraya ihtiyacı var, para arıyor.",
+       "en": "She needs money, she is looking for some."
+      }
+     }
+    ]
+   }
+  },
+  {
+   "id": "pronoms-relatifs",
+   "level": "B1",
+   "title": {
+    "tr": "Relatif zamirler: qui, que, où, dont",
+    "en": "Relative pronouns: qui, que, où, dont"
+   },
+   "tip": {
+    "tr": "qui özne, que nesne, où yer/zaman, dont 'de' ile gelen bağlacın yerini tutar. Ex: Le livre que tu lis. L'homme dont je parle.",
+    "en": "qui is the subject, que the object, où place/time, dont replaces 'de + noun'. Ex: Le livre que tu lis. L'homme dont je parle."
+   },
+   "items": [
+    {
+     "type": "build",
+     "text": "Le livre que tu m'as prêté est génial.",
+     "native": {
+      "tr": "Bana ödünç verdiğin kitap harika.",
+      "en": "The book you lent me is great."
+     },
+     "extra": [
+      "qui",
+      "dont",
+      "où"
+     ],
+     "alt": []
+    },
+    {
+     "type": "build",
+     "text": "La femme qui habite ici est ma tante.",
+     "native": {
+      "tr": "Burada oturan kadın benim teyzem.",
+      "en": "The woman who lives here is my aunt."
+     },
+     "extra": [
+      "que",
+      "où",
+      "dont"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "La maison ___ nous habitons est très vieille.",
+     "native": {
+      "tr": "Oturduğumuz ev çok eski.",
+      "en": "The house we live in is very old."
+     },
+     "options": [
+      "que",
+      "où",
+      "dont",
+      "qui"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "build",
+     "text": "Voici la ville où je suis né.",
+     "native": {
+      "tr": "İşte doğduğum şehir.",
+      "en": "This is the city where I was born."
+     },
+     "extra": [
+      "que",
+      "qui",
+      "dont"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Le garçon ___ joue du piano est mon cousin.",
+     "native": {
+      "tr": "Piyano çalan çocuk kuzenim.",
+      "en": "The boy who plays the piano is my cousin."
+     },
+     "options": [
+      "qui",
+      "que",
+      "dont"
+     ],
+     "answer": 0
+    },
+    {
+     "type": "build",
+     "text": "C'est l'homme dont je t'ai parlé.",
+     "native": {
+      "tr": "Sana bahsettiğim adam bu.",
+      "en": "That is the man I told you about."
+     },
+     "extra": [
+      "que",
+      "qui",
+      "où"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Voilà le professeur ___ j'admire beaucoup.",
+     "native": {
+      "tr": "İşte çok hayran olduğum öğretmen.",
+      "en": "There is the teacher whom I admire a lot."
+     },
+     "options": [
+      "qui",
+      "dont",
+      "que"
+     ],
+     "answer": 2
+    },
+    {
+     "type": "build",
+     "text": "Le film que nous avons vu était long.",
+     "native": {
+      "tr": "Izlediğimiz film uzundu.",
+      "en": "The film we saw was long."
+     },
+     "extra": [
+      "qui",
+      "dont",
+      "vue"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "C'est un film ___ je me souviens très bien.",
+     "native": {
+      "tr": "Çok iyi hatırladığım bir film bu.",
+      "en": "It's a film that I remember very well."
+     },
+     "options": [
+      "que",
+      "qui",
+      "où",
+      "dont"
+     ],
+     "answer": 3
+    },
+    {
+     "type": "build",
+     "text": "J'ai un ami qui travaille à Londres.",
+     "native": {
+      "tr": "Londra'da çalışan bir arkadaşım var.",
+      "en": "I have a friend who works in London."
+     },
+     "extra": [
+      "que",
+      "où",
+      "travaillent"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Les amis ___ j'ai invités sont arrivés.",
+     "native": {
+      "tr": "Davet ettiğim arkadaşlar geldi.",
+      "en": "The friends I invited have arrived."
+     },
+     "options": [
+      "que",
+      "dont",
+      "qui"
+     ],
+     "answer": 0
+    },
+    {
+     "type": "build",
+     "text": "Elle cherche le sac dont elle a besoin.",
+     "native": {
+      "tr": "İhtiyacı olan çantayı arıyor.",
+      "en": "She is looking for the bag she needs."
+     },
+     "extra": [
+      "que",
+      "qui",
+      "où"
+     ],
+     "alt": []
+    }
+   ],
+   "learn": {
+    "explain": {
+     "tr": "Zamir relatif iki cümleyi tek cümlede birleştirir; Türkçe'deki «-en, -diği» yapısına benzer.\nQui öznenin yerini tutar: L'homme qui parle. Que nesnenin yerini tutar: Le livre que tu lis. Où yer ve zaman, dont «de + isim» içindir: Le film dont je parle.\nQue ünlüden önce qu' olur, qui olmaz.\nSık hata: qui ile que'yi karıştırmak. Qui'den sonra fiil gelir, que'den sonra genelde özne.",
+     "en": "A relative pronoun joins two sentences into one, like 'who', 'that' or 'where' in English.\nQui replaces the subject: L'homme qui parle. Que replaces the object: Le livre que tu lis. Où is for place and time, and dont replaces 'de + noun': Le film dont je parle.\nQue becomes qu' before a vowel, qui never changes.\nCommon mistake: mixing up qui and que. After qui comes a verb, after que usually a subject."
+    },
+    "examples": [
+     {
+      "text": "La femme qui habite ici est médecin.",
+      "native": {
+       "tr": "Burada yaşayan kadın doktor.",
+       "en": "The woman who lives here is a doctor."
+      }
+     },
+     {
+      "text": "Le gâteau que tu as fait est délicieux.",
+      "native": {
+       "tr": "Yaptığın pasta çok lezzetli.",
+       "en": "The cake you made is delicious."
+      }
+     },
+     {
+      "text": "C'est la ville où je suis né.",
+      "native": {
+       "tr": "Burası doğduğum şehir.",
+       "en": "This is the city where I was born."
+      }
+     },
+     {
+      "text": "Voilà le livre dont j'ai besoin.",
+      "native": {
+       "tr": "İşte ihtiyacım olan kitap.",
+       "en": "Here is the book I need."
+      }
+     }
+    ]
+   }
+  },
+  {
+   "id": "depuis-il-y-a",
+   "level": "B1",
+   "title": {
+    "tr": "Süre: depuis, il y a, pendant",
+    "en": "Time: depuis, il y a, pendant"
+   },
+   "tip": {
+    "tr": "Il y a geçmişte «önce», depuis «-den beri», pendant «boyunca» demektir.",
+    "en": "Il y a means 'ago', depuis means 'since / for', pendant means 'for (a duration)'."
+   },
+   "learn": {
+    "explain": {
+     "tr": "Il y a + süre: geçmişte bir olay (passé composé): Je l'ai vu il y a deux jours.\nDepuis + süre/tarih: hâlâ süren durum, présent ile: J'habite ici depuis 2020.\nPendant + süre: bitmiş ya da planlı bir süre: Il a dormi pendant dix heures.\nSık hata: J'ai habité ici depuis cinq ans demek. Süren durum için présent: J'habite ici depuis cinq ans.",
+     "en": "Il y a + duration: a finished event in the past (passé composé): Je l'ai vu il y a deux jours.\nDepuis + duration/date: a situation that still continues, with the présent: J'habite ici depuis 2020.\nPendant + duration: a finished or planned stretch of time: Il a dormi pendant dix heures.\nCommon mistake: 'J'ai habité ici depuis cinq ans'. For something ongoing use the présent: J'habite ici depuis cinq ans."
+    },
+    "examples": [
+     {
+      "text": "Il est parti il y a une heure.",
+      "native": {
+       "tr": "Bir saat önce gitti.",
+       "en": "He left an hour ago."
+      }
+     },
+     {
+      "text": "Elle étudie le français depuis deux ans.",
+      "native": {
+       "tr": "İki yıldır Fransızca öğreniyor.",
+       "en": "She has been studying French for two years."
+      }
+     },
+     {
+      "text": "Nous avons attendu pendant une heure.",
+      "native": {
+       "tr": "Bir saat boyunca bekledik.",
+       "en": "We waited for an hour."
+      }
+     },
+     {
+      "text": "Je vis ici depuis 2020.",
+      "native": {
+       "tr": "2020'den beri burada yaşıyorum.",
+       "en": "I have lived here since 2020."
+      }
+     }
+    ]
+   },
+   "items": [
+    {
+     "type": "build",
+     "text": "J'habite ici depuis cinq ans.",
+     "native": {
+      "tr": "Beş yıldır burada yaşıyorum.",
+      "en": "I have lived here for five years."
+     },
+     "extra": [
+      "dans",
+      "en",
+      "il"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Il pleut ___ ce matin.",
+     "native": {
+      "tr": "Bu sabahtan beri yağmur yağıyor.",
+      "en": "It has been raining since this morning."
+     },
+     "options": [
+      "depuis",
+      "il y a",
+      "pendant"
+     ],
+     "answer": 0
+    },
+    {
+     "type": "build",
+     "text": "Nous sommes arrivés il y a une heure.",
+     "native": {
+      "tr": "Bir saat önce geldik.",
+      "en": "We arrived an hour ago."
+     },
+     "extra": [
+      "depuis",
+      "pendant",
+      "dans"
+     ],
+     "alt": []
+    },
+    {
+     "type": "build",
+     "text": "Elle a dormi pendant dix heures.",
+     "native": {
+      "tr": "On saat uyudu.",
+      "en": "She slept for ten hours."
+     },
+     "extra": [
+      "depuis",
+      "il",
+      "dans"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Je l'ai rencontré ___ trois ans.",
+     "native": {
+      "tr": "Onunla üç yıl önce tanıştım.",
+      "en": "I met him three years ago."
+     },
+     "options": [
+      "depuis",
+      "pendant",
+      "il y a"
+     ],
+     "answer": 2
+    },
+    {
+     "type": "build",
+     "text": "Il travaille ici depuis lundi.",
+     "native": {
+      "tr": "Pazartesiden beri burada çalışıyor.",
+      "en": "He has worked here since Monday."
+     },
+     "extra": [
+      "pendant",
+      "a",
+      "dans"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Nous avons marché ___ deux heures.",
+     "native": {
+      "tr": "İki saat boyunca yürüdük.",
+      "en": "We walked for two hours."
+     },
+     "options": [
+      "depuis",
+      "pendant",
+      "il y a"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "build",
+     "text": "Tu apprends le français depuis quand?",
+     "native": {
+      "tr": "Ne zamandan beri Fransızca öğreniyorsun?",
+      "en": "Since when have you been learning French?"
+     },
+     "extra": [
+      "pendant",
+      "il",
+      "quel"
+     ],
+     "alt": [
+      "Depuis quand tu apprends le français?"
+     ]
+    },
+    {
+     "type": "build",
+     "text": "J'ai vu Marie il y a deux jours.",
+     "native": {
+      "tr": "Marie'yi iki gün önce gördüm.",
+      "en": "I saw Marie two days ago."
+     },
+     "extra": [
+      "depuis",
+      "pendant",
+      "dans"
+     ],
+     "alt": [
+      "Il y a deux jours, j'ai vu Marie."
+     ]
+    },
+    {
+     "type": "choice",
+     "text": "Nous apprenons l'anglais ___ 2022.",
+     "native": {
+      "tr": "2022'den beri İngilizce öğreniyoruz.",
+      "en": "We have been learning English since 2022."
+     },
+     "options": [
+      "il y a",
+      "pendant",
+      "depuis"
+     ],
+     "answer": 2
+    },
+    {
+     "type": "build",
+     "text": "Ils ont voyagé pendant un mois.",
+     "native": {
+      "tr": "Bir ay boyunca seyahat ettiler.",
+      "en": "They travelled for a month."
+     },
+     "extra": [
+      "depuis",
+      "avons",
+      "dans"
+     ],
+     "alt": [
+      "Pendant un mois, ils ont voyagé."
+     ]
+    },
+    {
+     "type": "choice",
+     "text": "J'ai fini mes devoirs ___ dix minutes.",
+     "native": {
+      "tr": "Ödevlerimi on dakika önce bitirdim.",
+      "en": "I finished my homework ten minutes ago."
+     },
+     "options": [
+      "il y a",
+      "depuis",
+      "pendant",
+      "dans"
+     ],
+     "answer": 0
+    }
+   ]
+  },
+  {
+   "id": "gerondif",
+   "level": "B1",
+   "title": {
+    "tr": "Gérondif: en + -ant",
+    "en": "Gerund: en + -ant"
+   },
+   "tip": {
+    "tr": "Gérondif iki işi aynı anda ya da bir yolu anlatır: Je mange en lisant.",
+    "en": "The gérondif shows two actions at once, or a means: Je mange en lisant."
+   },
+   "learn": {
+    "explain": {
+     "tr": "Kuruluş: en + nous biçiminin kökü + -ant: parler → en parlant, finir → en finissant, prendre → en prenant.\nKullanım: aynı anda olan iki eylem (aynı özne) ya da bir yöntem: On apprend en jouant.\nDüzensizler: être → en étant, avoir → en ayant, savoir → en sachant.\nSık hata: en'i unutmak (je mange lisant) ya da iki farklı özne kullanmak. İki eylemin öznesi aynı olmalı.",
+     "en": "Form: en + the nous-stem + -ant: parler → en parlant, finir → en finissant, prendre → en prenant.\nUse: two simultaneous actions by the same subject, or a means: On apprend en jouant.\nIrregular: être → en étant, avoir → en ayant, savoir → en sachant.\nCommon mistake: forgetting en (je mange lisant) or using two different subjects. Both actions need the same subject."
+    },
+    "examples": [
+     {
+      "text": "Il chante en se douchant.",
+      "native": {
+       "tr": "Duş alırken şarkı söylüyor.",
+       "en": "He sings while showering."
+      }
+     },
+     {
+      "text": "Elle apprend en lisant.",
+      "native": {
+       "tr": "Okuyarak öğreniyor.",
+       "en": "She learns by reading."
+      }
+     },
+     {
+      "text": "En traversant la rue, j'ai vu Paul.",
+      "native": {
+       "tr": "Caddeyi geçerken Paul'ü gördüm.",
+       "en": "While crossing the street I saw Paul."
+      }
+     },
+     {
+      "text": "Je mange en regardant la télé.",
+      "native": {
+       "tr": "Televizyon izlerken yemek yiyorum.",
+       "en": "I eat while watching TV."
+      }
+     }
+    ]
+   },
+   "items": [
+    {
+     "type": "build",
+     "text": "Je travaille en écoutant de la musique.",
+     "native": {
+      "tr": "Müzik dinleyerek çalışıyorum.",
+      "en": "I work while listening to music."
+     },
+     "extra": [
+      "écoute",
+      "écouter",
+      "est"
+     ],
+     "alt": [
+      "En écoutant de la musique, je travaille."
+     ]
+    },
+    {
+     "type": "choice",
+     "text": "Je chante en me ___.",
+     "native": {
+      "tr": "Duş alırken şarkı söylüyorum.",
+      "en": "I sing while showering."
+     },
+     "options": [
+      "douche",
+      "douchant",
+      "doucher"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "build",
+     "text": "Elle conduit en parlant au téléphone.",
+     "native": {
+      "tr": "Telefonla konuşarak araba kullanıyor.",
+      "en": "She drives while talking on the phone."
+     },
+     "extra": [
+      "parle",
+      "parler",
+      "à"
+     ],
+     "alt": [
+      "En parlant au téléphone, elle conduit."
+     ]
+    },
+    {
+     "type": "build",
+     "text": "Nous apprenons en jouant.",
+     "native": {
+      "tr": "Oynayarak öğreniyoruz.",
+      "en": "We learn by playing."
+     },
+     "extra": [
+      "joue",
+      "jouons",
+      "sur"
+     ],
+     "alt": [
+      "En jouant, nous apprenons."
+     ]
+    },
+    {
+     "type": "choice",
+     "text": "Elle s'est blessée en ___ du ski.",
+     "native": {
+      "tr": "Kayak yaparken yaralandı.",
+      "en": "She got hurt while skiing."
+     },
+     "options": [
+      "fait",
+      "faire",
+      "faisant"
+     ],
+     "answer": 2
+    },
+    {
+     "type": "build",
+     "text": "Il est tombé en courant.",
+     "native": {
+      "tr": "Koşarken düştü.",
+      "en": "He fell while running."
+     },
+     "extra": [
+      "court",
+      "a",
+      "sur"
+     ],
+     "alt": [
+      "En courant, il est tombé."
+     ]
+    },
+    {
+     "type": "build",
+     "text": "On apprend le français en regardant des films.",
+     "native": {
+      "tr": "Film izleyerek Fransızca öğreniriz.",
+      "en": "You learn French by watching films."
+     },
+     "extra": [
+      "regarde",
+      "regarder",
+      "dans"
+     ],
+     "alt": [
+      "En regardant des films, on apprend le français."
+     ]
+    },
+    {
+     "type": "choice",
+     "text": "Nous finissons nos devoirs en ___ le café.",
+     "native": {
+      "tr": "Kahve içerek ödevlerimizi bitiriyoruz.",
+      "en": "We finish our homework while drinking coffee."
+     },
+     "options": [
+      "buvons",
+      "buvant",
+      "boire"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "build",
+     "text": "J'ai vu un accident en allant au travail.",
+     "native": {
+      "tr": "İşe giderken bir kaza gördüm.",
+      "en": "I saw an accident on my way to work."
+     },
+     "extra": [
+      "aller",
+      "vais",
+      "du"
+     ],
+     "alt": [
+      "En allant au travail, j'ai vu un accident."
+     ]
+    },
+    {
+     "type": "choice",
+     "text": "Il a réussi ___ travaillant dur.",
+     "native": {
+      "tr": "Sıkı çalışarak başardı.",
+      "en": "He succeeded by working hard."
+     },
+     "options": [
+      "en",
+      "à",
+      "de"
+     ],
+     "answer": 0
+    },
+    {
+     "type": "build",
+     "text": "Elle sourit en me regardant.",
+     "native": {
+      "tr": "Bana bakarak gülümsüyor.",
+      "en": "She smiles while looking at me."
+     },
+     "extra": [
+      "regarde",
+      "regarder",
+      "avant"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "En ___ le journal, il a trouvé une annonce.",
+     "native": {
+      "tr": "Gazeteyi okurken bir ilan buldu.",
+      "en": "While reading the paper, he found an ad."
+     },
+     "options": [
+      "lire",
+      "lu",
+      "lisant"
+     ],
+     "answer": 2
+    }
+   ]
+  },
+  {
+   "id": "subjonctif",
+   "level": "B2",
+   "title": {
+    "tr": "Subjonctif présent: il faut que tu viennes",
+    "en": "Present subjunctive: il faut que tu viennes"
+   },
+   "tip": {
+    "tr": "il faut que, vouloir que, bien que, pour que gibi ifadelerden sonra subjonctif gelir. Ex: Il faut que tu viennes. Düzensizler: sois, aie, fasse.",
+    "en": "After il faut que, vouloir que, bien que, pour que… use the subjunctive. Ex: Il faut que tu viennes. Irregulars: sois, aie, fasse."
+   },
+   "items": [
+    {
+     "type": "build",
+     "text": "Il faut que tu viennes demain.",
+     "native": {
+      "tr": "Yarın gelmen gerekiyor.",
+      "en": "You have to come tomorrow."
+     },
+     "extra": [
+      "viens",
+      "venir",
+      "viendras"
+     ],
+     "alt": []
+    },
+    {
+     "type": "build",
+     "text": "Je veux que vous partiez avant midi.",
+     "native": {
+      "tr": "Öğleden önce gitmenizi istiyorum.",
+      "en": "I want you to leave before noon."
+     },
+     "extra": [
+      "partez",
+      "partirez",
+      "partir"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Il faut que je ___ à la maison avant dix heures.",
+     "native": {
+      "tr": "Saat ondan önce evde olmam gerekiyor.",
+      "en": "I have to be at home before ten o'clock."
+     },
+     "options": [
+      "sois",
+      "suis",
+      "serai"
+     ],
+     "answer": 0
+    },
+    {
+     "type": "build",
+     "text": "Il est important que nous soyons à l'heure.",
+     "native": {
+      "tr": "Zamanında orada olmamız önemli.",
+      "en": "It is important that we are on time."
+     },
+     "extra": [
+      "sommes",
+      "serons",
+      "être"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Je suis content que tu ___ venu.",
+     "native": {
+      "tr": "Geldiğine memnunum.",
+      "en": "I'm happy that you came."
+     },
+     "options": [
+      "es",
+      "sois",
+      "seras",
+      "étais"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "build",
+     "text": "Elle voudrait que je fasse la vaisselle.",
+     "native": {
+      "tr": "Bulaşıkları yıkamamı istiyor.",
+      "en": "She would like me to do the dishes."
+     },
+     "extra": [
+      "fais",
+      "ferai",
+      "faire"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Elle veut que nous ___ la vérité.",
+     "native": {
+      "tr": "Gerçeği söylememizi istiyor.",
+      "en": "She wants us to tell the truth."
+     },
+     "options": [
+      "disons",
+      "dirons",
+      "disions"
+     ],
+     "answer": 2
+    },
+    {
+     "type": "build",
+     "text": "Bien qu'il pleuve, nous sortons ce soir.",
+     "native": {
+      "tr": "Yağmur yağmasına rağmen bu akşam çıkıyoruz.",
+      "en": "Although it is raining, we are going out tonight."
+     },
+     "extra": [
+      "pleut",
+      "pleuvait",
+      "sortirons"
+     ],
+     "alt": [
+      "Nous sortons ce soir bien qu'il pleuve."
+     ]
+    },
+    {
+     "type": "choice",
+     "text": "Il faut qu'ils ___ plus d'efforts.",
+     "native": {
+      "tr": "Daha çok çaba göstermeleri gerekiyor.",
+      "en": "They have to make more effort."
+     },
+     "options": [
+      "font",
+      "feront",
+      "faisaient",
+      "fassent"
+     ],
+     "answer": 3
+    },
+    {
+     "type": "build",
+     "text": "Je ne pense pas qu'il ait raison.",
+     "native": {
+      "tr": "Haklı olduğunu düşünmüyorum.",
+      "en": "I don't think he is right."
+     },
+     "extra": [
+      "a",
+      "avait",
+      "aura"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Je doute qu'elle ___ la réponse.",
+     "native": {
+      "tr": "Cevabı bildiğinden şüpheliyim.",
+      "en": "I doubt that she knows the answer."
+     },
+     "options": [
+      "sache",
+      "sait",
+      "saura"
+     ],
+     "answer": 0
+    },
+    {
+     "type": "build",
+     "text": "Pour que tu comprennes, je vais t'expliquer.",
+     "native": {
+      "tr": "Anlayasın diye sana açıklayacağım.",
+      "en": "So that you understand, I'm going to explain."
+     },
+     "extra": [
+      "comprends",
+      "comprendras",
+      "expliqué"
+     ],
+     "alt": [
+      "Je vais t'expliquer pour que tu comprennes."
+     ]
+    }
+   ],
+   "learn": {
+    "explain": {
+     "tr": "Subjonctif, gereklilik, istek, duygu ve şüphe bildiren ifadelerden sonra kullanılır: il faut que, vouloir que, bien que, pour que.\nÖrüntü: ils formunun kökü + -e, -es, -e, -ions, -iez, -ent: ils parlent → que je parle. Aynı özne için mastar kullanılır: Je veux partir.\nDüzensizler: être → sois, avoir → aie, faire → fasse, aller → aille.\nSık hata: il faut que'den sonra mastar ya da indicatif kullanmak. «Il faut que tu viens» yanlış, doğrusu «Il faut que tu viennes».",
+     "en": "The subjunctive is used after expressions of necessity, wish, emotion and doubt: il faut que, vouloir que, bien que, pour que.\nPattern: stem of the ils form + -e, -es, -e, -ions, -iez, -ent: ils parlent → que je parle. When the subject is the same, use the infinitive: Je veux partir.\nIrregulars: être → sois, avoir → aie, faire → fasse, aller → aille.\nCommon mistake: using the infinitive or the indicative after il faut que. 'Il faut que tu viens' is wrong, 'Il faut que tu viennes' is right."
+    },
+    "examples": [
+     {
+      "text": "Il faut que je finisse ce travail.",
+      "native": {
+       "tr": "Bu işi bitirmem gerekiyor.",
+       "en": "I have to finish this work."
+      }
+     },
+     {
+      "text": "Je veux que tu sois heureux.",
+      "native": {
+       "tr": "Mutlu olmanı istiyorum.",
+       "en": "I want you to be happy."
+      }
+     },
+     {
+      "text": "Bien qu'il pleuve, nous sortons.",
+      "native": {
+       "tr": "Yağmur yağmasına rağmen dışarı çıkıyoruz.",
+       "en": "Although it is raining, we are going out."
+      }
+     },
+     {
+      "text": "Elle part pour que nous puissions parler.",
+      "native": {
+       "tr": "Konuşabilmemiz için gidiyor.",
+       "en": "She is leaving so that we can talk."
+      }
+     }
+    ]
+   }
+  },
+  {
+   "id": "plus-que-parfait",
+   "level": "B2",
+   "title": {
+    "tr": "Plus-que-parfait: j'avais mangé",
+    "en": "Past perfect: j'avais mangé"
+   },
+   "tip": {
+    "tr": "Geçmişteki başka bir olaydan önce olanı anlatır: avoir/être imparfait + participe passé. Ex: J'avais déjà mangé quand il est arrivé.",
+    "en": "It describes what happened before another past event: avoir/être in the imparfait + past participle. Ex: J'avais déjà mangé quand il est arrivé."
+   },
+   "items": [
+    {
+     "type": "build",
+     "text": "J'avais déjà mangé quand il est arrivé.",
+     "native": {
+      "tr": "O geldiğinde ben zaten yemek yemiştim.",
+      "en": "I had already eaten when he arrived."
+     },
+     "extra": [
+      "ai",
+      "mangeais",
+      "avait"
+     ],
+     "alt": [
+      "Quand il est arrivé, j'avais déjà mangé."
+     ]
+    },
+    {
+     "type": "build",
+     "text": "Elle était partie avant mon arrivée.",
+     "native": {
+      "tr": "Ben gelmeden önce gitmişti.",
+      "en": "She had left before I arrived."
+     },
+     "extra": [
+      "avait",
+      "parti",
+      "serait"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Quand nous sommes arrivés, le film ___ déjà commencé.",
+     "native": {
+      "tr": "Geldiğimizde film çoktan başlamıştı.",
+      "en": "When we arrived, the film had already started."
+     },
+     "options": [
+      "a",
+      "avait",
+      "aura",
+      "avons"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "build",
+     "text": "Nous avions fini le travail avant midi.",
+     "native": {
+      "tr": "İşi öğleden önce bitirmiştik.",
+      "en": "We had finished the work before noon."
+     },
+     "extra": [
+      "avons",
+      "finissions",
+      "finis"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Il m'a dit qu'il ___ son portefeuille.",
+     "native": {
+      "tr": "Cüzdanını kaybettiğini söyledi.",
+      "en": "He told me he had lost his wallet."
+     },
+     "options": [
+      "perdait",
+      "a perdu",
+      "avait perdu",
+      "perdrait"
+     ],
+     "answer": 2
+    },
+    {
+     "type": "build",
+     "text": "Ils n'avaient jamais vu la mer.",
+     "native": {
+      "tr": "Hiç deniz görmemişlerdi.",
+      "en": "They had never seen the sea."
+     },
+     "extra": [
+      "étaient",
+      "vus",
+      "voyaient"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Elle était fatiguée parce qu'elle ___ mal dormi.",
+     "native": {
+      "tr": "Kötü uyuduğu için yorgundu.",
+      "en": "She was tired because she had slept badly."
+     },
+     "options": [
+      "avait",
+      "était",
+      "a"
+     ],
+     "answer": 0
+    },
+    {
+     "type": "build",
+     "text": "Tu ne m'avais pas dit la vérité.",
+     "native": {
+      "tr": "Bana doğruyu söylememiştin.",
+      "en": "You had not told me the truth."
+     },
+     "extra": [
+      "as",
+      "dis",
+      "étais"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Ils ___ déjà partis quand j'ai appelé.",
+     "native": {
+      "tr": "Aradığımda onlar çoktan gitmişti.",
+      "en": "They had already left when I called."
+     },
+     "options": [
+      "avaient",
+      "sont",
+      "seraient",
+      "étaient"
+     ],
+     "answer": 3
+    },
+    {
+     "type": "build",
+     "text": "Je savais qu'il avait déjà quitté la ville.",
+     "native": {
+      "tr": "Şehri çoktan terk ettiğini biliyordum.",
+      "en": "I knew that he had already left the city."
+     },
+     "extra": [
+      "a",
+      "était",
+      "quittait"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Si j'___ su, je serais venu plus tôt.",
+     "native": {
+      "tr": "Bilseydim daha erken gelirdim.",
+      "en": "If I had known, I would have come earlier."
+     },
+     "options": [
+      "avais",
+      "ai",
+      "aurais"
+     ],
+     "answer": 0
+    },
+    {
+     "type": "build",
+     "text": "Si tu m'avais appelé, je serais venu.",
+     "native": {
+      "tr": "Beni arasaydın gelirdim.",
+      "en": "If you had called me, I would have come."
+     },
+     "extra": [
+      "appelais",
+      "viendrais",
+      "suis"
+     ],
+     "alt": [
+      "Je serais venu si tu m'avais appelé."
+     ]
+    }
+   ],
+   "learn": {
+    "explain": {
+     "tr": "Plus-que-parfait, başka bir geçmiş olaydan önce olmuş eylemi anlatır; Türkçe'deki «-mişti» gibidir.\nÖrüntü: avoir ya da être imparfait'da (j'avais, tu avais, j'étais ...) + ortaç: j'avais mangé, elle était partie.\nÖn plandaki olay passé composé'dedir: J'avais déjà mangé quand il est arrivé.\nSık hata: ikisini de passé composé'ye koymak, sıra belirsizleşir. Önce olan eylem plus-que-parfait'de olmalı.",
+     "en": "The plus-que-parfait describes something that happened before another past event, like 'had done' in English.\nPattern: avoir or être in the imparfait (j'avais, tu avais, j'étais ...) + past participle: j'avais mangé, elle était partie.\nThe later event is in the passé composé: J'avais déjà mangé quand il est arrivé.\nCommon mistake: putting both in the passé composé, which blurs the order. The earlier action should be in the plus-que-parfait."
+    },
+    "examples": [
+     {
+      "text": "Quand je suis arrivé, le film avait commencé.",
+      "native": {
+       "tr": "Vardığımda film başlamıştı.",
+       "en": "When I arrived, the film had started."
+      }
+     },
+     {
+      "text": "Elle avait déjà fini ses devoirs.",
+      "native": {
+       "tr": "Ödevlerini çoktan bitirmişti.",
+       "en": "She had already finished her homework."
+      }
+     },
+     {
+      "text": "Nous étions partis avant la pluie.",
+      "native": {
+       "tr": "Yağmurdan önce çıkmıştık.",
+       "en": "We had left before the rain."
+      }
+     },
+     {
+      "text": "Il ne m'avait pas dit la vérité.",
+      "native": {
+       "tr": "Bana gerçeği söylememişti.",
+       "en": "He hadn't told me the truth."
+      }
+     }
+    ]
+   }
+  },
+  {
+   "id": "passif",
+   "level": "B2",
+   "title": {
+    "tr": "Edilgen çatı: a été construit, est fermée",
+    "en": "Passive voice: a été construit, est fermée"
+   },
+   "tip": {
+    "tr": "Edilgen: être + participe passé; participe özneyle uyum yapar, fail 'par' ile gelir. Ex: Le voleur a été arrêté par la police.",
+    "en": "Passive: être + past participle, which agrees with the subject; the agent comes with 'par'. Ex: Le voleur a été arrêté par la police."
+   },
+   "items": [
+    {
+     "type": "build",
+     "text": "Ce château a été construit au XVe siècle.",
+     "native": {
+      "tr": "Bu şato on beşinci yüzyılda inşa edildi.",
+      "en": "This castle was built in the 15th century."
+     },
+     "extra": [
+      "est",
+      "construite",
+      "construire"
+     ],
+     "alt": []
+    },
+    {
+     "type": "build",
+     "text": "La porte est fermée à vingt heures.",
+     "native": {
+      "tr": "Kapı saat yirmide kapatılır.",
+      "en": "The door is closed at eight p.m."
+     },
+     "extra": [
+      "ferme",
+      "fermé",
+      "sont"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "La lettre a été ___ hier matin.",
+     "native": {
+      "tr": "Mektup dün sabah gönderildi.",
+      "en": "The letter was sent yesterday morning."
+     },
+     "options": [
+      "envoyé",
+      "envoyée",
+      "envoyer",
+      "envoyant"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "build",
+     "text": "Le voleur a été arrêté par la police.",
+     "native": {
+      "tr": "Hırsız polis tarafından yakalandı.",
+      "en": "The thief was arrested by the police."
+     },
+     "extra": [
+      "ont",
+      "arrêtée",
+      "arrêtent"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Ces tableaux ___ par un artiste célèbre.",
+     "native": {
+      "tr": "Bu tablolar ünlü bir sanatçı tarafından yapıldı.",
+      "en": "These paintings were painted by a famous artist."
+     },
+     "options": [
+      "a été peint",
+      "ont peint",
+      "sont peindre",
+      "ont été peints"
+     ],
+     "answer": 3
+    },
+    {
+     "type": "build",
+     "text": "Les fenêtres seront nettoyées demain matin.",
+     "native": {
+      "tr": "Pencereler yarın sabah temizlenecek.",
+      "en": "The windows will be cleaned tomorrow morning."
+     },
+     "extra": [
+      "sont",
+      "nettoyé",
+      "nettoient"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Le musée ___ chaque année par des milliers de touristes.",
+     "native": {
+      "tr": "Müze her yıl binlerce turist tarafından ziyaret edilir.",
+      "en": "The museum is visited every year by thousands of tourists."
+     },
+     "options": [
+      "visite",
+      "est visité",
+      "visitait",
+      "a visité"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "build",
+     "text": "Ce roman a été écrit par une jeune femme.",
+     "native": {
+      "tr": "Bu roman genç bir kadın tarafından yazıldı.",
+      "en": "This novel was written by a young woman."
+     },
+     "extra": [
+      "écrite",
+      "ont",
+      "écrire"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Les résultats ___ demain.",
+     "native": {
+      "tr": "Sonuçlar yarın açıklanacak.",
+      "en": "The results will be announced tomorrow."
+     },
+     "options": [
+      "annonceront",
+      "ont été annoncés",
+      "seront annoncés",
+      "était annoncé"
+     ],
+     "answer": 2
+    },
+    {
+     "type": "build",
+     "text": "Le dîner était préparé par mon père.",
+     "native": {
+      "tr": "Akşam yemeği babam tarafından hazırlanırdı.",
+      "en": "Dinner used to be prepared by my father."
+     },
+     "extra": [
+      "préparée",
+      "étaient",
+      "préparait"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Ma voiture ___ hier par un mécanicien.",
+     "native": {
+      "tr": "Arabam dün bir tamirci tarafından onarıldı.",
+      "en": "My car was repaired yesterday by a mechanic."
+     },
+     "options": [
+      "a été réparée",
+      "a réparé",
+      "a été réparé",
+      "est réparer"
+     ],
+     "answer": 0
+    },
+    {
+     "type": "build",
+     "text": "Elle a été invitée à la fête par ses collègues.",
+     "native": {
+      "tr": "O, iş arkadaşları tarafından partiye davet edildi.",
+      "en": "She was invited to the party by her colleagues."
+     },
+     "extra": [
+      "invité",
+      "est",
+      "ont"
+     ],
+     "alt": []
+    }
+   ],
+   "learn": {
+    "explain": {
+     "tr": "Passif, eylemi yapandan çok eylemden etkilenen şeyi öne çıkarır; Türkçe'deki «yapıldı, kapatıldı» gibidir.\nÖrüntü: être (uygun zamanda) + ortaç, ortaç özneye uyar. Yapan kişi par ile gelir: Le voleur a été arrêté par la police.\nYapan belli değilse par kullanmayabilirsin: La porte est fermée.\nSık hata: ortacı özneye uydurmamak. «Les portes sont fermé» yanlış, doğrusu «Les portes sont fermées».",
+     "en": "The passive puts the focus on the thing that receives the action, like 'was built' or 'is closed' in English.\nPattern: être (in the right tense) + past participle, which agrees with the subject. The doer comes with par: Le voleur a été arrêté par la police.\nIf the doer is unknown you can leave par out: La porte est fermée.\nCommon mistake: not making the participle agree. 'Les portes sont fermé' is wrong, 'Les portes sont fermées' is right."
+    },
+    "examples": [
+     {
+      "text": "Ce pont a été construit en 1900.",
+      "native": {
+       "tr": "Bu köprü 1900'de inşa edildi.",
+       "en": "This bridge was built in 1900."
+      }
+     },
+     {
+      "text": "La réunion est annulée.",
+      "native": {
+       "tr": "Toplantı iptal edildi.",
+       "en": "The meeting is cancelled."
+      }
+     },
+     {
+      "text": "Les clés ont été trouvées par un enfant.",
+      "native": {
+       "tr": "Anahtarlar bir çocuk tarafından bulundu.",
+       "en": "The keys were found by a child."
+      }
+     },
+     {
+      "text": "Elle sera invitée à la fête.",
+      "native": {
+       "tr": "Partiye davet edilecek.",
+       "en": "She will be invited to the party."
+      }
+     }
+    ]
+   }
+  },
+  {
+   "id": "discours-rapporte",
+   "level": "B2",
+   "title": {
+    "tr": "Dolaylı anlatım: il a dit que… / demandé si…",
+    "en": "Reported speech: il a dit que… / demandé si…"
+   },
+   "tip": {
+    "tr": "Geçmişte aktarırken zamanlar kayar: présent → imparfait, futur → conditionnel, passé composé → plus-que-parfait. Soru: si, ce que.",
+    "en": "When reporting in the past, tenses shift: présent → imparfait, futur → conditionnel, passé composé → plus-que-parfait. Questions: si, ce que."
+   },
+   "items": [
+    {
+     "type": "build",
+     "text": "Il m'a dit qu'il était fatigué.",
+     "native": {
+      "tr": "Bana yorgun olduğunu söyledi.",
+      "en": "He told me he was tired."
+     },
+     "extra": [
+      "est",
+      "soit",
+      "fatiguée"
+     ],
+     "alt": []
+    },
+    {
+     "type": "build",
+     "text": "Elle a dit qu'elle viendrait demain.",
+     "native": {
+      "tr": "Yarın geleceğini söyledi.",
+      "en": "She said she would come tomorrow."
+     },
+     "extra": [
+      "viendra",
+      "venait",
+      "vient"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Hier, il m'a dit qu'il ___ content de venir.",
+     "native": {
+      "tr": "Dün bana gelmekten memnun olduğunu söyledi.",
+      "en": "Yesterday he told me he was happy to come."
+     },
+     "options": [
+      "est",
+      "était",
+      "sera"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "build",
+     "text": "Je lui ai demandé où il habitait.",
+     "native": {
+      "tr": "Ona nerede oturduğunu sordum.",
+      "en": "I asked him where he lived."
+     },
+     "extra": [
+      "habite",
+      "habitera",
+      "habiter"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "« Je partirai demain. » Elle a dit qu'elle ___ le lendemain.",
+     "native": {
+      "tr": "« Yarın gideceğim. » Ertesi gün gideceğini söyledi.",
+      "en": "\"I will leave tomorrow.\" She said she would leave the next day."
+     },
+     "options": [
+      "partira",
+      "partait",
+      "partirait"
+     ],
+     "answer": 2
+    },
+    {
+     "type": "build",
+     "text": "Ils ont répondu qu'ils ne savaient pas.",
+     "native": {
+      "tr": "Bilmediklerini cevapladılar.",
+      "en": "They answered that they didn't know."
+     },
+     "extra": [
+      "savent",
+      "sauront",
+      "sait"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Il m'a demandé ___ je voulais un café.",
+     "native": {
+      "tr": "Bana kahve isteyip istemediğimi sordu.",
+      "en": "He asked me whether I wanted a coffee."
+     },
+     "options": [
+      "si",
+      "que",
+      "quoi",
+      "où"
+     ],
+     "answer": 0
+    },
+    {
+     "type": "build",
+     "text": "Elle m'a demandé si j'avais faim.",
+     "native": {
+      "tr": "Bana aç olup olmadığımı sordu.",
+      "en": "She asked me whether I was hungry."
+     },
+     "extra": [
+      "que",
+      "ai",
+      "aurais"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Elle a expliqué qu'elle ___ déjà vu ce film.",
+     "native": {
+      "tr": "Bu filmi daha önce izlediğini açıkladı.",
+      "en": "She explained that she had already seen this film."
+     },
+     "options": [
+      "a",
+      "aura",
+      "ait",
+      "avait"
+     ],
+     "answer": 3
+    },
+    {
+     "type": "build",
+     "text": "Mon frère m'a dit de ne pas m'inquiéter.",
+     "native": {
+      "tr": "Kardeşim endişelenmememi söyledi.",
+      "en": "My brother told me not to worry."
+     },
+     "extra": [
+      "que",
+      "t'inquiéter",
+      "inquiète"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Il m'a demandé ___ je faisais dans la vie.",
+     "native": {
+      "tr": "Bana hayatta ne yaptığımı sordu.",
+      "en": "He asked me what I did for a living."
+     },
+     "options": [
+      "ce que",
+      "ce qui",
+      "qui",
+      "que"
+     ],
+     "answer": 0
+    },
+    {
+     "type": "build",
+     "text": "Tu as dit que tu avais déjà fini.",
+     "native": {
+      "tr": "Zaten bitirdiğini söyledin.",
+      "en": "You said that you had already finished."
+     },
+     "extra": [
+      "a",
+      "finissais",
+      "aurais"
+     ],
+     "alt": []
+    }
+   ],
+   "learn": {
+    "explain": {
+     "tr": "Başkasının sözünü aktarırken il a dit que ... / elle a demandé si ... kalıplarını kullanırız.\nGeçmişte aktarırken zaman bir adım geriye kayar: présent → imparfait, futur → conditionnel, passé composé → plus-que-parfait. Evet/hayır sorusu si ile aktarılır.\nÖrnek: «Je viens demain» → Il a dit qu'il venait le lendemain.\nSık hata: zamanı kaydırmamak. «Il a dit qu'il vient» yerine «Il a dit qu'il venait».",
+     "en": "When we report what someone said, we use patterns like il a dit que ... / elle a demandé si ...\nWhen reporting in the past, tenses shift back one step: présent → imparfait, futur → conditionnel, passé composé → plus-que-parfait. Yes/no questions are reported with si.\nExample: 'Je viens demain' → Il a dit qu'il venait le lendemain.\nCommon mistake: not shifting the tense. Say 'Il a dit qu'il venait', not 'Il a dit qu'il vient'."
+    },
+    "examples": [
+     {
+      "text": "Elle a dit qu'elle était fatiguée.",
+      "native": {
+       "tr": "Yorgun olduğunu söyledi.",
+       "en": "She said she was tired."
+      }
+     },
+     {
+      "text": "Il a répondu qu'il viendrait demain.",
+      "native": {
+       "tr": "Yarın geleceğini söyledi.",
+       "en": "He answered that he would come tomorrow."
+      }
+     },
+     {
+      "text": "Je lui ai demandé s'il avait faim.",
+      "native": {
+       "tr": "Ona aç olup olmadığını sordum.",
+       "en": "I asked him whether he was hungry."
+      }
+     },
+     {
+      "text": "Ils ont dit qu'ils avaient déjà mangé.",
+      "native": {
+       "tr": "Çoktan yemek yediklerini söylediler.",
+       "en": "They said they had already eaten."
+      }
+     }
+    ]
+   }
+  },
+  {
+   "id": "conditionnel-passe",
+   "level": "B2",
+   "title": {
+    "tr": "Conditionnel passé: j'aurais mangé",
+    "en": "Past conditional: j'aurais mangé"
+   },
+   "tip": {
+    "tr": "Pişmanlık, sitem ya da gerçekleşmemiş bir durum için: J'aurais dû t'appeler.",
+    "en": "For regrets, reproaches and unreal past situations: J'aurais dû t'appeler."
+   },
+   "learn": {
+    "explain": {
+     "tr": "Kuruluş: avoir ya da être'ün conditionnel présent'ı + participe passé: j'aurais mangé, je serais parti.\nSi + plus-que-parfait → conditionnel passé: Si j'avais su, je serais venu.\nPişmanlık için aurais dû / aurais pu: J'aurais dû rester.\nSık hata: si'den sonra conditionnel kullanmak (si j'aurais su). Doğrusu si j'avais su; être'li fiillerde özneye uymayı unutma: elle serait partie.",
+     "en": "Form: conditionnel présent of avoir or être + past participle: j'aurais mangé, je serais parti.\nSi + plus-que-parfait → conditionnel passé: Si j'avais su, je serais venu.\nFor regrets and reproaches: aurais dû / aurais pu: J'aurais dû rester.\nCommon mistake: using the conditional after si (si j'aurais su). It is si j'avais su; with être verbs remember agreement: elle serait partie."
+    },
+    "examples": [
+     {
+      "text": "J'aurais dû t'appeler.",
+      "native": {
+       "tr": "Seni aramalıydım.",
+       "en": "I should have called you."
+      }
+     },
+     {
+      "text": "Elle serait venue avec nous.",
+      "native": {
+       "tr": "O bizimle gelirdi.",
+       "en": "She would have come with us."
+      }
+     },
+     {
+      "text": "À ta place, j'aurais accepté.",
+      "native": {
+       "tr": "Senin yerinde olsam kabul ederdim.",
+       "en": "In your place, I would have accepted."
+      }
+     },
+     {
+      "text": "Nous aurions préféré rester.",
+      "native": {
+       "tr": "Kalmayı tercih ederdik.",
+       "en": "We would have preferred to stay."
+      }
+     }
+    ]
+   },
+   "items": [
+    {
+     "type": "build",
+     "text": "Si j'avais su, je serais venu.",
+     "native": {
+      "tr": "Bilseydim gelirdim.",
+      "en": "If I had known, I would have come."
+     },
+     "extra": [
+      "aurais",
+      "viendrais",
+      "étais"
+     ],
+     "alt": [
+      "Je serais venu si j'avais su."
+     ]
+    },
+    {
+     "type": "choice",
+     "text": "Si j'avais eu le temps, je ___ allé au cinéma.",
+     "native": {
+      "tr": "Vaktim olsaydı sinemaya giderdim.",
+      "en": "If I had had time, I would have gone to the cinema."
+     },
+     "options": [
+      "serais",
+      "suis",
+      "irais"
+     ],
+     "answer": 0
+    },
+    {
+     "type": "build",
+     "text": "J'aurais voulu rester plus longtemps.",
+     "native": {
+      "tr": "Daha uzun kalmak isterdim.",
+      "en": "I would have liked to stay longer."
+     },
+     "extra": [
+      "serais",
+      "avais",
+      "très"
+     ],
+     "alt": []
+    },
+    {
+     "type": "build",
+     "text": "Elle serait partie sans nous.",
+     "native": {
+      "tr": "O bensiz giderdi.",
+      "en": "She would have left without us."
+     },
+     "extra": [
+      "aurait",
+      "est",
+      "partirait"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Nous ___ pu éviter cet accident.",
+     "native": {
+      "tr": "Bu kazadan kaçınabilirdik.",
+      "en": "We could have avoided this accident."
+     },
+     "options": [
+      "serions",
+      "aurons",
+      "aurions"
+     ],
+     "answer": 2
+    },
+    {
+     "type": "build",
+     "text": "À ta place, j'aurais refusé.",
+     "native": {
+      "tr": "Senin yerinde olsam reddederdim.",
+      "en": "In your place, I would have refused."
+     },
+     "extra": [
+      "serais",
+      "mon",
+      "refuse"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Si tu avais étudié, tu ___ réussi.",
+     "native": {
+      "tr": "Çalışsaydın başarırdın.",
+      "en": "If you had studied, you would have passed."
+     },
+     "options": [
+      "réussirais",
+      "aurais",
+      "serais"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "build",
+     "text": "Nous aurions dû partir plus tôt.",
+     "native": {
+      "tr": "Daha erken çıkmalıydık.",
+      "en": "We should have left earlier."
+     },
+     "extra": [
+      "serions",
+      "avons",
+      "trop"
+     ],
+     "alt": []
+    },
+    {
+     "type": "build",
+     "text": "Ils auraient gagné s'ils avaient joué mieux.",
+     "native": {
+      "tr": "Daha iyi oynasalardı kazanırlardı.",
+      "en": "They would have won if they had played better."
+     },
+     "extra": [
+      "seraient",
+      "étaient",
+      "ont"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Il ___ venu, mais il était malade.",
+     "native": {
+      "tr": "Gelirdi ama hastaydı.",
+      "en": "He would have come, but he was ill."
+     },
+     "options": [
+      "aurait",
+      "avait",
+      "serait"
+     ],
+     "answer": 2
+    },
+    {
+     "type": "build",
+     "text": "Tu aurais pu m'appeler.",
+     "native": {
+      "tr": "Beni arayabilirdin.",
+      "en": "You could have called me."
+     },
+     "extra": [
+      "serais",
+      "as",
+      "peux"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Elles ___ restées à la maison.",
+     "native": {
+      "tr": "Evde kalırlardı.",
+      "en": "They would have stayed at home."
+     },
+     "options": [
+      "auraient",
+      "seraient",
+      "auront"
+     ],
+     "answer": 1
+    }
+   ]
+  },
+  {
+   "id": "cause-consequence",
+   "level": "B2",
+   "title": {
+    "tr": "Neden ve sonuç: grâce à, donc…",
+    "en": "Cause and consequence: grâce à, donc…"
+   },
+   "tip": {
+    "tr": "Neden: parce que, comme, à cause de, grâce à. Sonuç: donc, alors.",
+    "en": "Cause: parce que, comme, à cause de, grâce à. Consequence: donc, alors."
+   },
+   "learn": {
+    "explain": {
+     "tr": "Parce que ve car bir fiilli cümleyi bağlar; comme cümlenin başında neden bildirir: Comme il pleut, je reste.\nÀ cause de (olumsuz) ve grâce à (olumlu) isimle kullanılır: à cause de la pluie, grâce à ton aide.\nSonuç için donc ve alors: Il pleut, donc je reste.\nSık hata: à cause de'dan sonra fiil getirmek, ya da parce que'yi isimle kullanmak. Fiil için parce que, isim için à cause de.",
+     "en": "Parce que and car link a clause; comme starts a sentence and gives the cause: Comme il pleut, je reste.\nÀ cause de (negative) and grâce à (positive) go with a noun: à cause de la pluie, grâce à ton aide.\nFor a result use donc and alors: Il pleut, donc je reste.\nCommon mistake: putting a verb after à cause de, or parce que before a noun. Use parce que + verb, à cause de + noun."
+    },
+    "examples": [
+     {
+      "text": "Comme il pleut, nous restons à la maison.",
+      "native": {
+       "tr": "Yağmur yağdığı için evde kalıyoruz.",
+       "en": "As it is raining, we stay at home."
+      }
+     },
+     {
+      "text": "Il a gagné grâce à son travail.",
+      "native": {
+       "tr": "Çalışması sayesinde kazandı.",
+       "en": "He won thanks to his work."
+      }
+     },
+     {
+      "text": "Le vol est annulé à cause de la neige.",
+      "native": {
+       "tr": "Uçuş kar yüzünden iptal edildi.",
+       "en": "The flight is cancelled because of the snow."
+      }
+     },
+     {
+      "text": "Je suis fatigué, donc je me couche.",
+      "native": {
+       "tr": "Yorgunum, bu yüzden yatıyorum.",
+       "en": "I am tired, so I am going to bed."
+      }
+     }
+    ]
+   },
+   "items": [
+    {
+     "type": "build",
+     "text": "Je suis en retard à cause du trafic.",
+     "native": {
+      "tr": "Trafik yüzünden geciktim.",
+      "en": "I am late because of the traffic."
+     },
+     "extra": [
+      "grâce",
+      "parce",
+      "car"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Il a gagné ___ son entraînement.",
+     "native": {
+      "tr": "Antrenmanı sayesinde kazandı.",
+      "en": "He won thanks to his training."
+     },
+     "options": [
+      "à cause de",
+      "grâce à",
+      "parce que"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "build",
+     "text": "Il a réussi grâce à ses efforts.",
+     "native": {
+      "tr": "Çabaları sayesinde başardı.",
+      "en": "He succeeded thanks to his efforts."
+     },
+     "extra": [
+      "cause",
+      "parce",
+      "donc"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Je reste à la maison ___ je suis malade.",
+     "native": {
+      "tr": "Hasta olduğum için evde kalıyorum.",
+      "en": "I stay at home because I am ill."
+     },
+     "options": [
+      "parce que",
+      "à cause de",
+      "grâce à"
+     ],
+     "answer": 0
+    },
+    {
+     "type": "build",
+     "text": "Comme il pleut, je prends un parapluie.",
+     "native": {
+      "tr": "Yağmur yağdığı için şemsiye alıyorum.",
+      "en": "As it is raining, I take an umbrella."
+     },
+     "extra": [
+      "parce",
+      "donc",
+      "car"
+     ],
+     "alt": []
+    },
+    {
+     "type": "build",
+     "text": "Elle est malade, donc elle reste au lit.",
+     "native": {
+      "tr": "Hasta, bu yüzden yatakta kalıyor.",
+      "en": "She is ill, so she stays in bed."
+     },
+     "extra": [
+      "parce",
+      "grâce",
+      "cause"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "___ il neige, la route est fermée.",
+     "native": {
+      "tr": "Kar yağdığı için yol kapalı.",
+      "en": "As it is snowing, the road is closed."
+     },
+     "options": [
+      "Donc",
+      "Grâce",
+      "Comme"
+     ],
+     "answer": 2
+    },
+    {
+     "type": "build",
+     "text": "Nous restons parce que nous sommes fatigués.",
+     "native": {
+      "tr": "Yorgun olduğumuz için kalıyoruz.",
+      "en": "We stay because we are tired."
+     },
+     "extra": [
+      "grâce",
+      "cause",
+      "alors"
+     ],
+     "alt": []
+    },
+    {
+     "type": "build",
+     "text": "Le match est annulé à cause de la pluie.",
+     "native": {
+      "tr": "Maç yağmur yüzünden iptal edildi.",
+      "en": "The match is cancelled because of the rain."
+     },
+     "extra": [
+      "grâce",
+      "parce",
+      "donc"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Il n'a pas dormi, ___ il est fatigué.",
+     "native": {
+      "tr": "Uyumadı, bu yüzden yorgun.",
+      "en": "He did not sleep, so he is tired."
+     },
+     "options": [
+      "à cause de",
+      "parce que",
+      "grâce à",
+      "donc"
+     ],
+     "answer": 3
+    },
+    {
+     "type": "build",
+     "text": "J'ai raté le bus, donc j'ai pris un taxi.",
+     "native": {
+      "tr": "Otobüsü kaçırdım, bu yüzden taksiye bindim.",
+      "en": "I missed the bus, so I took a taxi."
+     },
+     "extra": [
+      "parce",
+      "grâce",
+      "cause"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Elle a échoué ___ sa paresse.",
+     "native": {
+      "tr": "Tembelliği yüzünden başarısız oldu.",
+      "en": "She failed because of her laziness."
+     },
+     "options": [
+      "grâce à",
+      "à cause de",
+      "parce que"
+     ],
+     "answer": 1
+    }
+   ]
+  }
+ ]
+}
