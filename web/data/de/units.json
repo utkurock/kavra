@@ -1,6 +1,862 @@
 {
  "units": [
   {
+   "id": "begruessung",
+   "level": "A1",
+   "basics": true,
+   "title": {
+    "tr": "Selamlaşma ve tanışma: Ich heiße …",
+    "en": "Greetings and introductions: Ich heiße …"
+   },
+   "tip": {
+    "tr": "Adını söylemek için 'Ich heiße …' de, sormak için 'Wie heißt du?' diye sor.",
+    "en": "To say your name use 'Ich heiße …'; to ask, say 'Wie heißt du?'."
+   },
+   "learn": {
+    "explain": {
+     "tr": "Hallo, Guten Morgen, Guten Tag, Guten Abend: selamlaşma sözleridir.\nAdını söylemek: Ich heiße Anna. Sormak: Wie heißt du? Nereli olduğunu: Ich komme aus …\nFiil kişiye göre değişir: ich heiße, du heißt.\nSık hata: 'Ich heißt' demek. 'ich' ile fiil -e alır: ich heiße.",
+     "en": "Hallo, Guten Morgen, Guten Tag, Guten Abend are greetings.\nSay your name: Ich heiße Anna. Ask: Wie heißt du? Say where you are from: Ich komme aus …\nThe verb changes with the person: ich heiße, du heißt.\nCommon mistake: 'Ich heißt'. With 'ich' the verb ends in -e: ich heiße."
+    },
+    "examples": [
+     {
+      "text": "Guten Tag, ich bin Paul.",
+      "native": {
+       "tr": "İyi günler, ben Paul.",
+       "en": "Good day, I am Paul."
+      }
+     },
+     {
+      "text": "Wie heißen Sie?",
+      "native": {
+       "tr": "Adınız nedir?",
+       "en": "What is your name? (formal)"
+      }
+     },
+     {
+      "text": "Ich komme aus Spanien.",
+      "native": {
+       "tr": "İspanya'dan geliyorum.",
+       "en": "I come from Spain."
+      }
+     },
+     {
+      "text": "Auf Wiedersehen!",
+      "native": {
+       "tr": "Hoşça kalın!",
+       "en": "Goodbye!"
+      }
+     }
+    ]
+   },
+   "items": [
+    {
+     "type": "build",
+     "text": "Hallo, ich heiße Anna.",
+     "native": {
+      "tr": "Merhaba, benim adım Anna.",
+      "en": "Hello, my name is Anna."
+     },
+     "extra": [
+      "heißt",
+      "bist"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Ich ___ Max.",
+     "native": {
+      "tr": "Benim adım Max.",
+      "en": "My name is Max."
+     },
+     "options": [
+      "heiße",
+      "heißt",
+      "heiß"
+     ],
+     "answer": 0
+    },
+    {
+     "type": "build",
+     "text": "Wie heißt du?",
+     "native": {
+      "tr": "Adın ne?",
+      "en": "What is your name?"
+     },
+     "extra": [
+      "heiße",
+      "heißen"
+     ],
+     "alt": []
+    },
+    {
+     "type": "build",
+     "text": "Woher kommst du?",
+     "native": {
+      "tr": "Nerelisin?",
+      "en": "Where are you from?"
+     },
+     "extra": [
+      "komme",
+      "kommt"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Woher ___ du?",
+     "native": {
+      "tr": "Nerelisin?",
+      "en": "Where are you from?"
+     },
+     "options": [
+      "komme",
+      "kommst",
+      "kommt"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "build",
+     "text": "Ich komme aus der Türkei.",
+     "native": {
+      "tr": "Türkiye'den geliyorum.",
+      "en": "I come from Turkey."
+     },
+     "extra": [
+      "in",
+      "kommst"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Gute ___, schlaf gut!",
+     "native": {
+      "tr": "İyi geceler, iyi uyu!",
+      "en": "Good night, sleep well!"
+     },
+     "options": [
+      "Morgen",
+      "Tag",
+      "Nacht"
+     ],
+     "answer": 2
+    },
+    {
+     "type": "build",
+     "text": "Freut mich, dich kennenzulernen.",
+     "native": {
+      "tr": "Tanıştığımıza memnun oldum.",
+      "en": "Nice to meet you."
+     },
+     "extra": [
+      "dir",
+      "euch"
+     ],
+     "alt": []
+    },
+    {
+     "type": "build",
+     "text": "Guten Morgen, wie geht es dir?",
+     "native": {
+      "tr": "Günaydın, nasılsın?",
+      "en": "Good morning, how are you?"
+     },
+     "extra": [
+      "dich",
+      "ihnen"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Wie geht es ___, Frau Müller?",
+     "native": {
+      "tr": "Nasılsınız, Frau Müller?",
+      "en": "How are you, Mrs Müller?"
+     },
+     "options": [
+      "Ihnen",
+      "Sie",
+      "Ihr"
+     ],
+     "answer": 0
+    },
+    {
+     "type": "build",
+     "text": "Mir geht es gut, danke.",
+     "native": {
+      "tr": "İyiyim, teşekkürler.",
+      "en": "I am fine, thanks."
+     },
+     "extra": [
+      "gehe",
+      "dich"
+     ],
+     "alt": [
+      "Es geht mir gut, danke."
+     ]
+    },
+    {
+     "type": "choice",
+     "text": "Ich komme ___ Italien.",
+     "native": {
+      "tr": "İtalya'dan geliyorum.",
+      "en": "I come from Italy."
+     },
+     "options": [
+      "in",
+      "bei",
+      "nach",
+      "aus"
+     ],
+     "answer": 3
+    }
+   ]
+  },
+  {
+   "id": "zahlen-alter",
+   "level": "A1",
+   "basics": true,
+   "title": {
+    "tr": "Sayılar ve yaş: Ich bin zwanzig",
+    "en": "Numbers and age: Ich bin zwanzig"
+   },
+   "tip": {
+    "tr": "Yaş için 'sein' kullanılır: 'Ich bin 20 Jahre alt.' 'Ich habe 20 Jahre' demek yanlıştır.",
+    "en": "Age uses 'sein': 'Ich bin 20 Jahre alt.' Not 'Ich habe 20 Jahre'."
+   },
+   "learn": {
+    "explain": {
+     "tr": "Sayılar: eins, zwei, drei, vier, fünf, sechs, sieben, acht, neun, zehn.\nYirmi birden itibaren önce birler söylenir: 21 = einundzwanzig (bir-ve-yirmi).\nYaş: Ich bin dreißig Jahre alt. Sormak: Wie alt bist du?\nSık hata: Türkçe 'yaşındayım' gibi 'haben' kullanmak. Almanca'da 'sein' gerekir.",
+     "en": "Numbers: eins, zwei, drei, vier, fünf, sechs, sieben, acht, neun, zehn.\nFrom 21 on, the ones come first: 21 = einundzwanzig (one-and-twenty).\nAge: Ich bin dreißig Jahre alt. Ask: Wie alt bist du?\nCommon mistake: using 'haben' for age. German needs 'sein'."
+    },
+    "examples": [
+     {
+      "text": "Ich bin dreißig Jahre alt.",
+      "native": {
+       "tr": "Otuz yaşındayım.",
+       "en": "I am thirty years old."
+      }
+     },
+     {
+      "text": "Das Buch kostet zehn Euro.",
+      "native": {
+       "tr": "Kitap on euro.",
+       "en": "The book costs ten euros."
+      }
+     },
+     {
+      "text": "Wir sind vier Personen.",
+      "native": {
+       "tr": "Dört kişiyiz.",
+       "en": "We are four people."
+      }
+     },
+     {
+      "text": "Zwanzig plus fünf ist fünfundzwanzig.",
+      "native": {
+       "tr": "Yirmi artı beş yirmi beş eder.",
+       "en": "Twenty plus five is twenty-five."
+      }
+     }
+    ]
+   },
+   "items": [
+    {
+     "type": "build",
+     "text": "Ich bin zwanzig Jahre alt.",
+     "native": {
+      "tr": "Yirmi yaşındayım.",
+      "en": "I am twenty years old."
+     },
+     "extra": [
+      "habe",
+      "bist"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Zwei plus drei ist ___.",
+     "native": {
+      "tr": "İki artı üç beş eder.",
+      "en": "Two plus three is five."
+     },
+     "options": [
+      "vier",
+      "sechs",
+      "fünf"
+     ],
+     "answer": 2
+    },
+    {
+     "type": "build",
+     "text": "Wie alt bist du?",
+     "native": {
+      "tr": "Kaç yaşındasın?",
+      "en": "How old are you?"
+     },
+     "extra": [
+      "ist",
+      "viel"
+     ],
+     "alt": []
+    },
+    {
+     "type": "build",
+     "text": "Meine Schwester ist acht Jahre alt.",
+     "native": {
+      "tr": "Kız kardeşim sekiz yaşında.",
+      "en": "My sister is eight years old."
+     },
+     "extra": [
+      "sind",
+      "habe"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Ich bin 30 Jahre ___.",
+     "native": {
+      "tr": "Otuz yaşındayım.",
+      "en": "I am 30 years old."
+     },
+     "options": [
+      "alte",
+      "alt",
+      "alter"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "build",
+     "text": "Ich habe zwei Brüder.",
+     "native": {
+      "tr": "İki erkek kardeşim var.",
+      "en": "I have two brothers."
+     },
+     "extra": [
+      "bin",
+      "hat"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Ich ___ 25 Jahre alt.",
+     "native": {
+      "tr": "Yirmi beş yaşındayım.",
+      "en": "I am 25 years old."
+     },
+     "options": [
+      "habe",
+      "ist",
+      "bin"
+     ],
+     "answer": 2
+    },
+    {
+     "type": "build",
+     "text": "Das kostet fünf Euro.",
+     "native": {
+      "tr": "Bu beş euro.",
+      "en": "That costs five euros."
+     },
+     "extra": [
+      "kosten",
+      "Euros"
+     ],
+     "alt": []
+    },
+    {
+     "type": "build",
+     "text": "Wie viele Kinder hast du?",
+     "native": {
+      "tr": "Kaç çocuğun var?",
+      "en": "How many children do you have?"
+     },
+     "extra": [
+      "viel",
+      "hat"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Zehn minus ___ ist sieben.",
+     "native": {
+      "tr": "On eksi üç yedi eder.",
+      "en": "Ten minus three is seven."
+     },
+     "options": [
+      "drei",
+      "vier",
+      "fünf"
+     ],
+     "answer": 0
+    },
+    {
+     "type": "build",
+     "text": "Er ist einundzwanzig Jahre alt.",
+     "native": {
+      "tr": "O yirmi bir yaşında.",
+      "en": "He is twenty-one years old."
+     },
+     "extra": [
+      "sind",
+      "habe"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Ich habe ___ Schwester.",
+     "native": {
+      "tr": "Bir kız kardeşim var.",
+      "en": "I have one sister."
+     },
+     "options": [
+      "ein",
+      "einen",
+      "einem",
+      "eine"
+     ],
+     "answer": 3
+    }
+   ]
+  },
+  {
+   "id": "tage-uhrzeit",
+   "level": "A1",
+   "basics": true,
+   "title": {
+    "tr": "Günler, aylar, saat: am Montag, um drei Uhr",
+    "en": "Days, months, time: am Montag, um drei Uhr"
+   },
+   "tip": {
+    "tr": "Gün için 'am', ay için 'im', saat için 'um': am Montag, im Mai, um acht Uhr.",
+    "en": "'am' for days, 'im' for months, 'um' for clock times: am Montag, im Mai, um acht Uhr."
+   },
+   "learn": {
+    "explain": {
+     "tr": "Günler: Montag, Dienstag, Mittwoch, Donnerstag, Freitag, Samstag, Sonntag. Aylar: Januar, Februar, März …\nSaati sormak: Wie spät ist es? Cevap: Es ist drei Uhr.\nGün: am Montag. Ay: im Mai. Saat: um neun Uhr.\nSık hata: 'in Montag' demek. Günlerle 'am' kullanılır.",
+     "en": "Days: Montag, Dienstag, Mittwoch, Donnerstag, Freitag, Samstag, Sonntag. Months: Januar, Februar, März …\nAsk the time: Wie spät ist es? Answer: Es ist drei Uhr.\nDay: am Montag. Month: im Mai. Clock time: um neun Uhr.\nCommon mistake: 'in Montag'. Use 'am' with days."
+    },
+    "examples": [
+     {
+      "text": "Heute ist Dienstag.",
+      "native": {
+       "tr": "Bugün salı.",
+       "en": "Today is Tuesday."
+      }
+     },
+     {
+      "text": "Im Juli ist es warm.",
+      "native": {
+       "tr": "Temmuzda hava sıcak.",
+       "en": "It is warm in July."
+      }
+     },
+     {
+      "text": "Es ist halb acht.",
+      "native": {
+       "tr": "Saat yedi buçuk.",
+       "en": "It is half past seven."
+      }
+     },
+     {
+      "text": "Der Kurs beginnt um neun Uhr.",
+      "native": {
+       "tr": "Kurs saat dokuzda başlıyor.",
+       "en": "The course starts at nine o'clock."
+      }
+     }
+    ]
+   },
+   "items": [
+    {
+     "type": "build",
+     "text": "Heute ist Montag.",
+     "native": {
+      "tr": "Bugün pazartesi.",
+      "en": "Today is Monday."
+     },
+     "extra": [
+      "bin",
+      "am"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Ich arbeite ___ Montag.",
+     "native": {
+      "tr": "Pazartesi günü çalışıyorum.",
+      "en": "I work on Monday."
+     },
+     "options": [
+      "im",
+      "am",
+      "um"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "build",
+     "text": "Wie spät ist es?",
+     "native": {
+      "tr": "Saat kaç?",
+      "en": "What time is it?"
+     },
+     "extra": [
+      "viel",
+      "bin"
+     ],
+     "alt": []
+    },
+    {
+     "type": "build",
+     "text": "Es ist drei Uhr.",
+     "native": {
+      "tr": "Saat üç.",
+      "en": "It is three o'clock."
+     },
+     "extra": [
+      "sind",
+      "um"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Wir fahren ___ Juli nach Italien.",
+     "native": {
+      "tr": "Temmuzda İtalya'ya gidiyoruz.",
+      "en": "We are going to Italy in July."
+     },
+     "options": [
+      "am",
+      "um",
+      "im"
+     ],
+     "answer": 2
+    },
+    {
+     "type": "build",
+     "text": "Am Samstag habe ich frei.",
+     "native": {
+      "tr": "Cumartesi boşum.",
+      "en": "I am free on Saturday."
+     },
+     "extra": [
+      "im",
+      "um"
+     ],
+     "alt": [
+      "Ich habe am Samstag frei."
+     ]
+    },
+    {
+     "type": "choice",
+     "text": "Der Zug kommt ___ zehn Uhr.",
+     "native": {
+      "tr": "Tren saat onda geliyor.",
+      "en": "The train arrives at ten o'clock."
+     },
+     "options": [
+      "um",
+      "am",
+      "im"
+     ],
+     "answer": 0
+    },
+    {
+     "type": "build",
+     "text": "Mein Geburtstag ist im Mai.",
+     "native": {
+      "tr": "Doğum günüm mayısta.",
+      "en": "My birthday is in May."
+     },
+     "extra": [
+      "am",
+      "um"
+     ],
+     "alt": []
+    },
+    {
+     "type": "build",
+     "text": "Der Unterricht beginnt um neun Uhr.",
+     "native": {
+      "tr": "Ders saat dokuzda başlıyor.",
+      "en": "The lesson starts at nine o'clock."
+     },
+     "extra": [
+      "am",
+      "im"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Nach Sonntag kommt ___.",
+     "native": {
+      "tr": "Pazardan sonra pazartesi gelir.",
+      "en": "After Sunday comes Monday."
+     },
+     "options": [
+      "Samstag",
+      "Freitag",
+      "Dienstag",
+      "Montag"
+     ],
+     "answer": 3
+    },
+    {
+     "type": "build",
+     "text": "Wann stehst du auf?",
+     "native": {
+      "tr": "Ne zaman kalkıyorsun?",
+      "en": "When do you get up?"
+     },
+     "extra": [
+      "aufstehst",
+      "bist"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Wie ___ ist es?",
+     "native": {
+      "tr": "Saat kaç?",
+      "en": "What time is it?"
+     },
+     "options": [
+      "viel",
+      "alt",
+      "spät"
+     ],
+     "answer": 2
+    }
+   ]
+  },
+  {
+   "id": "familie-beschreibung",
+   "level": "A1",
+   "basics": true,
+   "title": {
+    "tr": "Aile ve kişi tarifi: Mein Vater ist groß",
+    "en": "Family and describing people: Mein Vater ist groß"
+   },
+   "tip": {
+    "tr": "'sein' ile sıfat değişmez: 'Mein Vater ist groß.' 'Er ist große' yanlıştır.",
+    "en": "After 'sein' the adjective does not change: 'Mein Vater ist groß.' Not 'Er ist große'."
+   },
+   "learn": {
+    "explain": {
+     "tr": "Aile: die Mutter, der Vater, die Eltern, der Bruder, die Schwester, die Großeltern.\nTarif: Er ist groß, klein, jung, alt, nett. Saç ve göz: Sie hat braune Haare.\nAile üyesini tanıtmak: Das ist meine Mutter.\nSık hata: 'ist' den sonra sıfata -e eklemek. Doğrusu: Er ist groß.",
+     "en": "Family: die Mutter, der Vater, die Eltern, der Bruder, die Schwester, die Großeltern.\nDescribe: Er ist groß, klein, jung, alt, nett. Hair and eyes: Sie hat braune Haare.\nIntroduce someone: Das ist meine Mutter.\nCommon mistake: adding -e to the adjective after 'ist'. Correct: Er ist groß."
+    },
+    "examples": [
+     {
+      "text": "Das ist meine Mutter.",
+      "native": {
+       "tr": "Bu benim annem.",
+       "en": "This is my mother."
+      }
+     },
+     {
+      "text": "Mein Vater ist groß.",
+      "native": {
+       "tr": "Babam uzun boylu.",
+       "en": "My father is tall."
+      }
+     },
+     {
+      "text": "Sie hat zwei Brüder.",
+      "native": {
+       "tr": "Onun iki erkek kardeşi var.",
+       "en": "She has two brothers."
+      }
+     },
+     {
+      "text": "Meine Großeltern sind sehr nett.",
+      "native": {
+       "tr": "Büyükanne ve büyükbabam çok sevimli.",
+       "en": "My grandparents are very nice."
+      }
+     }
+    ]
+   },
+   "items": [
+    {
+     "type": "build",
+     "text": "Das ist meine Mutter.",
+     "native": {
+      "tr": "Bu benim annem.",
+      "en": "This is my mother."
+     },
+     "extra": [
+      "mein",
+      "bin"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Mein Bruder ___ groß.",
+     "native": {
+      "tr": "Erkek kardeşim uzun boylu.",
+      "en": "My brother is tall."
+     },
+     "options": [
+      "bin",
+      "ist",
+      "sind"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "build",
+     "text": "Mein Vater ist sehr nett.",
+     "native": {
+      "tr": "Babam çok iyi biri.",
+      "en": "My father is very nice."
+     },
+     "extra": [
+      "meine",
+      "nette"
+     ],
+     "alt": []
+    },
+    {
+     "type": "build",
+     "text": "Meine Schwester ist klein.",
+     "native": {
+      "tr": "Kız kardeşim kısa boylu.",
+      "en": "My sister is short."
+     },
+     "extra": [
+      "kleine",
+      "sind"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Das sind meine ___.",
+     "native": {
+      "tr": "Bunlar benim büyükanne ve büyükbabam.",
+      "en": "These are my grandparents."
+     },
+     "options": [
+      "Großvater",
+      "Großeltern",
+      "Onkel"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "build",
+     "text": "Ich habe einen Bruder.",
+     "native": {
+      "tr": "Bir erkek kardeşim var.",
+      "en": "I have a brother."
+     },
+     "extra": [
+      "eine",
+      "ein"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Meine Mutter ___ blaue Augen.",
+     "native": {
+      "tr": "Annemin mavi gözleri var.",
+      "en": "My mother has blue eyes."
+     },
+     "options": [
+      "hat",
+      "ist",
+      "haben"
+     ],
+     "answer": 0
+    },
+    {
+     "type": "build",
+     "text": "Meine Eltern sind nicht alt.",
+     "native": {
+      "tr": "Annem babam yaşlı değil.",
+      "en": "My parents are not old."
+     },
+     "extra": [
+      "ist",
+      "bin"
+     ],
+     "alt": []
+    },
+    {
+     "type": "build",
+     "text": "Hast du Geschwister?",
+     "native": {
+      "tr": "Kardeşin var mı?",
+      "en": "Do you have siblings?"
+     },
+     "extra": [
+      "hat",
+      "bist"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Der Vater von meiner Mutter ist mein ___.",
+     "native": {
+      "tr": "Annemin babası benim dedemdir.",
+      "en": "My mother's father is my grandpa."
+     },
+     "options": [
+      "Onkel",
+      "Bruder",
+      "Vater",
+      "Opa"
+     ],
+     "answer": 3
+    },
+    {
+     "type": "build",
+     "text": "Sie hat lange braune Haare.",
+     "native": {
+      "tr": "Onun uzun kahverengi saçları var.",
+      "en": "She has long brown hair."
+     },
+     "extra": [
+      "haben",
+      "lang"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Meine Cousine ___ sehr jung.",
+     "native": {
+      "tr": "Kuzenim çok genç.",
+      "en": "My cousin is very young."
+     },
+     "options": [
+      "bin",
+      "bist",
+      "ist"
+     ],
+     "answer": 2
+    }
+   ]
+  },
+  {
    "id": "sein-haben",
    "level": "A1",
    "title": {
@@ -2150,6 +3006,436 @@
    }
   },
   {
+   "id": "possessivartikel",
+   "level": "A2",
+   "title": {
+    "tr": "İyelik sözcükleri: mein, dein, sein, ihr",
+    "en": "Possessive articles: mein, dein, sein, ihr"
+   },
+   "tip": {
+    "tr": "mein/dein/sein/ihr 'ein' gibi çekimlenir: mein Vater, meine Mutter, meinen Bruder.",
+    "en": "mein/dein/sein/ihr decline like 'ein': mein Vater, meine Mutter, meinen Bruder."
+   },
+   "learn": {
+    "explain": {
+     "tr": "İyelik sözcükleri sahibini gösterir: mein, dein, sein, ihr, unser, euer, ihr, Ihr.\nSonları 'ein/kein' gibi değişir: dişil ve çoğulda -e (meine Mutter, meine Eltern), eril Akkusativ'de -en (meinen Bruder).\nsein = onun (erkek), ihr = onun (kadın). Seçimi sahip belirler, isim değil.\nSık hata: 'Ich liebe mein Mutter'. Doğrusu: meine Mutter.",
+     "en": "Possessives show who owns something: mein, dein, sein, ihr, unser, euer, ihr, Ihr.\nThey take the endings of 'ein/kein': -e for feminine and plural (meine Mutter, meine Eltern), -en for masculine accusative (meinen Bruder).\nsein = his, ihr = her. The owner decides, not the noun.\nCommon mistake: 'Ich liebe mein Mutter'. Correct: meine Mutter."
+    },
+    "examples": [
+     {
+      "text": "Das ist unser Haus.",
+      "native": {
+       "tr": "Bu bizim evimiz.",
+       "en": "This is our house."
+      }
+     },
+     {
+      "text": "Sie liebt ihren Hund.",
+      "native": {
+       "tr": "O köpeğini seviyor.",
+       "en": "She loves her dog."
+      }
+     },
+     {
+      "text": "Er besucht seine Oma.",
+      "native": {
+       "tr": "O büyükannesini ziyaret ediyor.",
+       "en": "He visits his grandma."
+      }
+     },
+     {
+      "text": "Wo ist dein Handy?",
+      "native": {
+       "tr": "Telefonun nerede?",
+       "en": "Where is your phone?"
+      }
+     }
+    ]
+   },
+   "items": [
+    {
+     "type": "build",
+     "text": "Das ist mein Bruder.",
+     "native": {
+      "tr": "Bu benim erkek kardeşim.",
+      "en": "This is my brother."
+     },
+     "extra": [
+      "meine",
+      "meinen"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Das ist ___ Tasche. (ich)",
+     "native": {
+      "tr": "Bu benim çantam.",
+      "en": "This is my bag."
+     },
+     "options": [
+      "meine",
+      "mein",
+      "meinen"
+     ],
+     "answer": 0
+    },
+    {
+     "type": "build",
+     "text": "Ich besuche meinen Onkel.",
+     "native": {
+      "tr": "Amcamı ziyaret ediyorum.",
+      "en": "I am visiting my uncle."
+     },
+     "extra": [
+      "mein",
+      "meine"
+     ],
+     "alt": []
+    },
+    {
+     "type": "build",
+     "text": "Sie liebt ihre Katze.",
+     "native": {
+      "tr": "O kedisini seviyor.",
+      "en": "She loves her cat."
+     },
+     "extra": [
+      "ihr",
+      "ihren"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Er ruft ___ Vater an.",
+     "native": {
+      "tr": "O babasını arıyor.",
+      "en": "He is calling his father."
+     },
+     "options": [
+      "seine",
+      "seinen",
+      "ihre"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "build",
+     "text": "Wo ist dein Handy?",
+     "native": {
+      "tr": "Telefonun nerede?",
+      "en": "Where is your phone?"
+     },
+     "extra": [
+      "deine",
+      "deinen"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Hast du ___ Buch dabei?",
+     "native": {
+      "tr": "Kitabın yanında mı?",
+      "en": "Do you have your book with you?"
+     },
+     "options": [
+      "deine",
+      "deinen",
+      "dein"
+     ],
+     "answer": 2
+    },
+    {
+     "type": "build",
+     "text": "Unsere Kinder spielen im Garten.",
+     "native": {
+      "tr": "Çocuklarımız bahçede oynuyor.",
+      "en": "Our children are playing in the garden."
+     },
+     "extra": [
+      "unser",
+      "euer"
+     ],
+     "alt": [
+      "Im Garten spielen unsere Kinder."
+     ]
+    },
+    {
+     "type": "build",
+     "text": "Er hat seinen Schlüssel verloren.",
+     "native": {
+      "tr": "O anahtarını kaybetti.",
+      "en": "He has lost his key."
+     },
+     "extra": [
+      "seine",
+      "sein"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Lisa und ___ Mann wohnen in Berlin.",
+     "native": {
+      "tr": "Lisa ve kocası Berlin'de yaşıyor.",
+      "en": "Lisa and her husband live in Berlin."
+     },
+     "options": [
+      "ihr",
+      "sein",
+      "euer"
+     ],
+     "answer": 0
+    },
+    {
+     "type": "build",
+     "text": "Ist das euer Auto?",
+     "native": {
+      "tr": "Bu sizin arabanız mı?",
+      "en": "Is that your car?"
+     },
+     "extra": [
+      "eure",
+      "euren"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Wir lieben ___ Stadt.",
+     "native": {
+      "tr": "Şehrimizi seviyoruz.",
+      "en": "We love our city."
+     },
+     "options": [
+      "unser",
+      "unseren",
+      "unserem",
+      "unsere"
+     ],
+     "answer": 3
+    }
+   ]
+  },
+  {
+   "id": "komparativ",
+   "level": "A2",
+   "title": {
+    "tr": "Karşılaştırma: größer als, am größten",
+    "en": "Comparison: größer als, am größten"
+   },
+   "tip": {
+    "tr": "Karşılaştırmada sıfata -er eklenir ve 'als' gelir: Er ist größer als ich.",
+    "en": "For comparisons add -er to the adjective and use 'als': Er ist größer als ich."
+   },
+   "learn": {
+    "explain": {
+     "tr": "Karşılaştırma: sıfat + -er + als: schneller als, älter als.\nEşitlik: so … wie: Sie ist so alt wie ich.\nEn üstünlük: am + sıfat + -sten: am schnellsten. Düzensiz: gut, besser, am besten; gern, lieber, am liebsten.\nSık hata: 'größer wie'. Üstünlükte 'als', eşitlikte 'wie' kullanılır.",
+     "en": "Comparative: adjective + -er + als: schneller als, älter als.\nEquality: so … wie: Sie ist so alt wie ich.\nSuperlative: am + adjective + -sten: am schnellsten. Irregular: gut, besser, am besten; gern, lieber, am liebsten.\nCommon mistake: 'größer wie'. Use 'als' for more, 'wie' for equal."
+    },
+    "examples": [
+     {
+      "text": "Mein Bruder ist größer als ich.",
+      "native": {
+       "tr": "Erkek kardeşim benden uzun.",
+       "en": "My brother is taller than me."
+      }
+     },
+     {
+      "text": "Ich esse gern Pizza, aber lieber Pasta.",
+      "native": {
+       "tr": "Pizzayı severek yerim, ama makarnayı daha çok.",
+       "en": "I like pizza, but I prefer pasta."
+      }
+     },
+     {
+      "text": "Sie ist so alt wie ich.",
+      "native": {
+       "tr": "O benim kadar yaşlı.",
+       "en": "She is as old as I am."
+      }
+     },
+     {
+      "text": "Das ist das beste Eis der Stadt.",
+      "native": {
+       "tr": "Bu şehrin en iyi dondurması.",
+       "en": "That is the best ice cream in town."
+      }
+     }
+    ]
+   },
+   "items": [
+    {
+     "type": "build",
+     "text": "Mein Bruder ist größer als ich.",
+     "native": {
+      "tr": "Erkek kardeşim benden uzun.",
+      "en": "My brother is taller than me."
+     },
+     "extra": [
+      "wie",
+      "groß"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Anna ist ___ als Tom.",
+     "native": {
+      "tr": "Anna Tom'dan daha genç.",
+      "en": "Anna is younger than Tom."
+     },
+     "options": [
+      "jünger",
+      "junger",
+      "jung"
+     ],
+     "answer": 0
+    },
+    {
+     "type": "build",
+     "text": "Der Zug ist schneller als der Bus.",
+     "native": {
+      "tr": "Tren otobüsten daha hızlı.",
+      "en": "The train is faster than the bus."
+     },
+     "extra": [
+      "wie",
+      "schnell"
+     ],
+     "alt": []
+    },
+    {
+     "type": "build",
+     "text": "Heute ist es wärmer als gestern.",
+     "native": {
+      "tr": "Bugün dünden daha sıcak.",
+      "en": "Today is warmer than yesterday."
+     },
+     "extra": [
+      "wie",
+      "warm"
+     ],
+     "alt": [
+      "Es ist heute wärmer als gestern."
+     ]
+    },
+    {
+     "type": "choice",
+     "text": "Er ist so groß ___ sein Vater.",
+     "native": {
+      "tr": "O babası kadar uzun.",
+      "en": "He is as tall as his father."
+     },
+     "options": [
+      "als",
+      "wie",
+      "wenn"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "build",
+     "text": "Ich trinke lieber Tee als Kaffee.",
+     "native": {
+      "tr": "Çayı kahveden daha çok içerim.",
+      "en": "I prefer tea to coffee."
+     },
+     "extra": [
+      "gern",
+      "mehr"
+     ],
+     "alt": [
+      "Lieber trinke ich Tee als Kaffee."
+     ]
+    },
+    {
+     "type": "choice",
+     "text": "Berlin ist ___ als Hamburg.",
+     "native": {
+      "tr": "Berlin Hamburg'dan büyüktür.",
+      "en": "Berlin is bigger than Hamburg."
+     },
+     "options": [
+      "großer",
+      "am größten",
+      "größer"
+     ],
+     "answer": 2
+    },
+    {
+     "type": "build",
+     "text": "Sie ist so alt wie ich.",
+     "native": {
+      "tr": "O benim kadar yaşlı.",
+      "en": "She is as old as me."
+     },
+     "extra": [
+      "als",
+      "älter"
+     ],
+     "alt": []
+    },
+    {
+     "type": "build",
+     "text": "Das Buch ist besser als der Film.",
+     "native": {
+      "tr": "Kitap filmden daha iyi.",
+      "en": "The book is better than the film."
+     },
+     "extra": [
+      "gut",
+      "mehr"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Ich esse ___ Fisch als Fleisch.",
+     "native": {
+      "tr": "Balığı etten daha çok severek yerim.",
+      "en": "I prefer eating fish to meat."
+     },
+     "options": [
+      "gern",
+      "besser",
+      "am liebsten",
+      "lieber"
+     ],
+     "answer": 3
+    },
+    {
+     "type": "build",
+     "text": "Dieses Auto ist am teuersten.",
+     "native": {
+      "tr": "Bu araba en pahalısı.",
+      "en": "This car is the most expensive."
+     },
+     "extra": [
+      "teurer",
+      "mehr"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Im Sommer ist es ___ als im Winter.",
+     "native": {
+      "tr": "Yazın kışa göre daha sıcak.",
+      "en": "It is warmer in summer than in winter."
+     },
+     "options": [
+      "wärmer",
+      "warmer",
+      "am wärmsten"
+     ],
+     "answer": 0
+    }
+   ]
+  },
+  {
    "id": "praeteritum",
    "level": "B1",
    "title": {
@@ -3434,6 +4720,431 @@
    }
   },
   {
+   "id": "wechselpraepositionen",
+   "level": "B1",
+   "title": {
+    "tr": "Hem Akkusativ hem Dativ alan edatlar: in, auf, an",
+    "en": "Two-way prepositions: in, auf, an"
+   },
+   "tip": {
+    "tr": "Wo? (yer) için Dativ, wohin? (yön) için Akkusativ: auf dem Tisch / auf den Tisch.",
+    "en": "Wo? (location) takes Dative, wohin? (direction) takes Accusative: auf dem Tisch / auf den Tisch."
+   },
+   "learn": {
+    "explain": {
+     "tr": "Dokuz edat iki hâl alır: an, auf, in, über, unter, vor, hinter, neben, zwischen.\nWo? (nerede, duran yer) = Dativ: Das Buch liegt auf dem Tisch.\nWohin? (nereye, hareket) = Akkusativ: Ich lege das Buch auf den Tisch.\nSık hata: 'Ich gehe in dem Park'. Hareket varsa Akkusativ gerekir: in den Park.",
+     "en": "Nine prepositions take two cases: an, auf, in, über, unter, vor, hinter, neben, zwischen.\nWo? (where, a place) = Dative: Das Buch liegt auf dem Tisch.\nWohin? (where to, movement) = Accusative: Ich lege das Buch auf den Tisch.\nCommon mistake: 'Ich gehe in dem Park'. Movement needs the accusative: in den Park."
+    },
+    "examples": [
+     {
+      "text": "Das Buch liegt auf dem Tisch.",
+      "native": {
+       "tr": "Kitap masanın üzerinde duruyor.",
+       "en": "The book is lying on the table."
+      }
+     },
+     {
+      "text": "Ich lege das Buch auf den Tisch.",
+      "native": {
+       "tr": "Kitabı masanın üzerine koyuyorum.",
+       "en": "I put the book on the table."
+      }
+     },
+     {
+      "text": "Wir gehen in die Stadt.",
+      "native": {
+       "tr": "Şehre gidiyoruz.",
+       "en": "We are going into town."
+      }
+     },
+     {
+      "text": "Der Ball ist hinter dem Haus.",
+      "native": {
+       "tr": "Top evin arkasında.",
+       "en": "The ball is behind the house."
+      }
+     }
+    ]
+   },
+   "items": [
+    {
+     "type": "build",
+     "text": "Das Buch liegt auf dem Tisch.",
+     "native": {
+      "tr": "Kitap masanın üzerinde duruyor.",
+      "en": "The book is on the table."
+     },
+     "extra": [
+      "den",
+      "die"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Wir sind ___ Park.",
+     "native": {
+      "tr": "Parktayız.",
+      "en": "We are in the park."
+     },
+     "options": [
+      "ins",
+      "in den",
+      "im"
+     ],
+     "answer": 2
+    },
+    {
+     "type": "build",
+     "text": "Ich lege das Buch auf den Tisch.",
+     "native": {
+      "tr": "Kitabı masanın üzerine koyuyorum.",
+      "en": "I put the book on the table."
+     },
+     "extra": [
+      "dem",
+      "liege"
+     ],
+     "alt": []
+    },
+    {
+     "type": "build",
+     "text": "Wir gehen ins Kino.",
+     "native": {
+      "tr": "Sinemaya gidiyoruz.",
+      "en": "We are going to the cinema."
+     },
+     "extra": [
+      "im",
+      "in"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Ich gehe ___ Küche.",
+     "native": {
+      "tr": "Mutfağa gidiyorum.",
+      "en": "I am going into the kitchen."
+     },
+     "options": [
+      "in der",
+      "in die",
+      "im"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "build",
+     "text": "Der Hund schläft unter dem Bett.",
+     "native": {
+      "tr": "Köpek yatağın altında uyuyor.",
+      "en": "The dog sleeps under the bed."
+     },
+     "extra": [
+      "das",
+      "den"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Das Bild hängt ___ Wand.",
+     "native": {
+      "tr": "Resim duvarda asılı.",
+      "en": "The picture hangs on the wall."
+     },
+     "options": [
+      "an der",
+      "an die",
+      "an den"
+     ],
+     "answer": 0
+    },
+    {
+     "type": "build",
+     "text": "Sie hängt das Bild an die Wand.",
+     "native": {
+      "tr": "O resmi duvara asıyor.",
+      "en": "She hangs the picture on the wall."
+     },
+     "extra": [
+      "der",
+      "dem"
+     ],
+     "alt": []
+    },
+    {
+     "type": "build",
+     "text": "Die Katze sitzt hinter dem Sofa.",
+     "native": {
+      "tr": "Kedi kanepenin arkasında oturuyor.",
+      "en": "The cat is sitting behind the sofa."
+     },
+     "extra": [
+      "das",
+      "den"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Das Auto steht ___ Haus.",
+     "native": {
+      "tr": "Araba evin önünde duruyor.",
+      "en": "The car is standing in front of the house."
+     },
+     "options": [
+      "vor das",
+      "vor den",
+      "vor dem"
+     ],
+     "answer": 2
+    },
+    {
+     "type": "build",
+     "text": "Er stellt die Lampe neben das Bett.",
+     "native": {
+      "tr": "O lambayı yatağın yanına koyuyor.",
+      "en": "He puts the lamp next to the bed."
+     },
+     "extra": [
+      "dem",
+      "der"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Wir fahren ___ Berge.",
+     "native": {
+      "tr": "Dağlara gidiyoruz.",
+      "en": "We are driving to the mountains."
+     },
+     "options": [
+      "in den",
+      "in die",
+      "in der"
+     ],
+     "answer": 1
+    }
+   ]
+  },
+  {
+   "id": "futur1",
+   "level": "B1",
+   "title": {
+    "tr": "Gelecek zaman: ich werde kommen",
+    "en": "Future tense: ich werde kommen"
+   },
+   "tip": {
+    "tr": "Futur I: werden + sonda mastar: Ich werde morgen kommen.",
+    "en": "Futur I: werden + infinitive at the end: Ich werde morgen kommen."
+   },
+   "learn": {
+    "explain": {
+     "tr": "Futur I plan, tahmin ve söz için kullanılır: Es wird regnen.\nOluşumu: werden (ikinci sırada) + mastar (cümle sonunda).\nwerden: ich werde, du wirst, er wird, wir werden, ihr werdet, sie werden.\nSık hata: mastarı unutmak veya 'würde' kullanmak. Günlük dilde 'Ich komme morgen' da yaygındır.",
+     "en": "Futur I is used for plans, predictions and promises: Es wird regnen.\nFormation: werden (second place) + infinitive (at the end).\nwerden: ich werde, du wirst, er wird, wir werden, ihr werdet, sie werden.\nCommon mistake: forgetting the final infinitive or using 'würde'. In everyday speech 'Ich komme morgen' is also common."
+    },
+    "examples": [
+     {
+      "text": "Es wird bald regnen.",
+      "native": {
+       "tr": "Yakında yağmur yağacak.",
+       "en": "It will rain soon."
+      }
+     },
+     {
+      "text": "Wir werden nächstes Jahr umziehen.",
+      "native": {
+       "tr": "Seneye taşınacağız.",
+       "en": "We will move next year."
+      }
+     },
+     {
+      "text": "Du wirst das schaffen.",
+      "native": {
+       "tr": "Bunu başaracaksın.",
+       "en": "You will manage it."
+      }
+     },
+     {
+      "text": "Sie wird Ärztin werden.",
+      "native": {
+       "tr": "O doktor olacak.",
+       "en": "She will become a doctor."
+      }
+     }
+    ]
+   },
+   "items": [
+    {
+     "type": "build",
+     "text": "Ich werde morgen früh aufstehen.",
+     "native": {
+      "tr": "Yarın erkenden kalkacağım.",
+      "en": "I will get up early tomorrow."
+     },
+     "extra": [
+      "wirst",
+      "wurde"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Ich ___ nächste Woche nach Wien fahren.",
+     "native": {
+      "tr": "Gelecek hafta Viyana'ya gideceğim.",
+      "en": "I will go to Vienna next week."
+     },
+     "options": [
+      "werde",
+      "wirst",
+      "wird"
+     ],
+     "answer": 0
+    },
+    {
+     "type": "build",
+     "text": "Es wird heute Abend regnen.",
+     "native": {
+      "tr": "Bu akşam yağmur yağacak.",
+      "en": "It will rain this evening."
+     },
+     "extra": [
+      "werde",
+      "regnet"
+     ],
+     "alt": []
+    },
+    {
+     "type": "build",
+     "text": "Wir werden nächstes Jahr umziehen.",
+     "native": {
+      "tr": "Seneye taşınacağız.",
+      "en": "We will move next year."
+     },
+     "extra": [
+      "wird",
+      "umzieht"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Er ___ morgen ankommen.",
+     "native": {
+      "tr": "O yarın varacak.",
+      "en": "He will arrive tomorrow."
+     },
+     "options": [
+      "werden",
+      "wird",
+      "wirst"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "build",
+     "text": "Du wirst das schaffen.",
+     "native": {
+      "tr": "Bunu başaracaksın.",
+      "en": "You will manage that."
+     },
+     "extra": [
+      "werde",
+      "schafft"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Wir werden das Haus ___.",
+     "native": {
+      "tr": "Evi satın alacağız.",
+      "en": "We will buy the house."
+     },
+     "options": [
+      "gekauft",
+      "kauft",
+      "kaufen"
+     ],
+     "answer": 2
+    },
+    {
+     "type": "build",
+     "text": "Wirst du morgen kommen?",
+     "native": {
+      "tr": "Yarın gelecek misin?",
+      "en": "Will you come tomorrow?"
+     },
+     "extra": [
+      "werde",
+      "kommst"
+     ],
+     "alt": []
+    },
+    {
+     "type": "build",
+     "text": "Sie wird bald Ärztin werden.",
+     "native": {
+      "tr": "O yakında doktor olacak.",
+      "en": "She will soon become a doctor."
+     },
+     "extra": [
+      "wirst",
+      "wurde"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Ihr ___ viel Spaß haben.",
+     "native": {
+      "tr": "Çok eğleneceksiniz.",
+      "en": "You will have a lot of fun."
+     },
+     "options": [
+      "werde",
+      "wirst",
+      "werden",
+      "werdet"
+     ],
+     "answer": 3
+    },
+    {
+     "type": "build",
+     "text": "Ihr werdet uns bestimmt besuchen.",
+     "native": {
+      "tr": "Bizi mutlaka ziyaret edeceksiniz.",
+      "en": "You will surely visit us."
+     },
+     "extra": [
+      "werde",
+      "besucht"
+     ],
+     "alt": [
+      "Bestimmt werdet ihr uns besuchen."
+     ]
+    },
+    {
+     "type": "choice",
+     "text": "Morgen ___ es sonnig sein.",
+     "native": {
+      "tr": "Yarın hava güneşli olacak.",
+      "en": "Tomorrow it will be sunny."
+     },
+     "options": [
+      "wird",
+      "werde",
+      "werdet"
+     ],
+     "answer": 0
+    }
+   ]
+  },
+  {
    "id": "passiv",
    "level": "B2",
    "title": {
@@ -4282,6 +5993,430 @@
      }
     ]
    }
+  },
+  {
+   "id": "plusquamperfekt",
+   "level": "B2",
+   "title": {
+    "tr": "Plusquamperfekt: ich hatte gegessen",
+    "en": "Past perfect: ich hatte gegessen"
+   },
+   "tip": {
+    "tr": "Plusquamperfekt: hatte/war + Partizip II. Geçmişte daha önce olanı anlatır.",
+    "en": "Past perfect: hatte/war + past participle. It describes what happened earlier in the past."
+   },
+   "learn": {
+    "explain": {
+     "tr": "Geçmişteki iki olaydan önce olanı anlatır: Ich hatte gegessen, als er kam.\nOluşumu: hatte veya war (Präteritum) + Partizip II sonda. Hareket ve değişim fiilleri war alır, diğerleri hatte.\nSık kullanım: nachdem (…-dikten sonra): Nachdem ich gegessen hatte, ging ich los.\nSık hata: nachdem'den sonra Perfekt kullanmak ve hatte/war'ı karıştırmak.",
+     "en": "It describes the earlier of two past events: Ich hatte gegessen, als er kam.\nFormation: hatte or war (simple past) + past participle at the end. Verbs of movement and change take war, the rest hatte.\nTypical use: nachdem (after): Nachdem ich gegessen hatte, ging ich los.\nCommon mistake: mixing hatte and war, or using Perfekt after nachdem."
+    },
+    "examples": [
+     {
+      "text": "Nachdem ich gegessen hatte, ging ich spazieren.",
+      "native": {
+       "tr": "Yemek yedikten sonra yürüyüşe çıktım.",
+       "en": "After I had eaten, I went for a walk."
+      }
+     },
+     {
+      "text": "Er war schon gegangen, als ich kam.",
+      "native": {
+       "tr": "Ben geldiğimde o çoktan gitmişti.",
+       "en": "He had already left when I arrived."
+      }
+     },
+     {
+      "text": "Sie hatte den Ausweis vergessen.",
+      "native": {
+       "tr": "O kimliğini unutmuştu.",
+       "en": "She had forgotten her ID."
+      }
+     },
+     {
+      "text": "Wir hatten lange gewartet.",
+      "native": {
+       "tr": "Uzun süre beklemiştik.",
+       "en": "We had waited for a long time."
+      }
+     }
+    ]
+   },
+   "items": [
+    {
+     "type": "build",
+     "text": "Ich hatte schon gegessen.",
+     "native": {
+      "tr": "Ben zaten yemek yemiştim.",
+      "en": "I had already eaten."
+     },
+     "extra": [
+      "habe",
+      "war"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Sie ___ vorher schon in Berlin gewesen.",
+     "native": {
+      "tr": "O daha önce Berlin'de bulunmuştu.",
+      "en": "She had been to Berlin before."
+     },
+     "options": [
+      "hat",
+      "hatte",
+      "war"
+     ],
+     "answer": 2
+    },
+    {
+     "type": "build",
+     "text": "Er war schon gegangen.",
+     "native": {
+      "tr": "O çoktan gitmişti.",
+      "en": "He had already left."
+     },
+     "extra": [
+      "hatte",
+      "ist"
+     ],
+     "alt": []
+    },
+    {
+     "type": "build",
+     "text": "Wir hatten lange gewartet.",
+     "native": {
+      "tr": "Uzun süre beklemiştik.",
+      "en": "We had waited for a long time."
+     },
+     "extra": [
+      "waren",
+      "haben"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Nachdem wir gegessen ___, gingen wir.",
+     "native": {
+      "tr": "Yemek yedikten sonra çıktık.",
+      "en": "After we had eaten, we left."
+     },
+     "options": [
+      "haben",
+      "hatten",
+      "waren"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "build",
+     "text": "Sie hatte den Schlüssel vergessen.",
+     "native": {
+      "tr": "O anahtarı unutmuştu.",
+      "en": "She had forgotten the key."
+     },
+     "extra": [
+      "war",
+      "hat"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Er ___ den Film schon gesehen.",
+     "native": {
+      "tr": "O filmi zaten izlemişti.",
+      "en": "He had already seen the film."
+     },
+     "options": [
+      "hatte",
+      "war",
+      "ist"
+     ],
+     "answer": 0
+    },
+    {
+     "type": "build",
+     "text": "Nachdem er gegessen hatte, ging er schlafen.",
+     "native": {
+      "tr": "Yemek yedikten sonra yatmaya gitti.",
+      "en": "After he had eaten, he went to sleep."
+     },
+     "extra": [
+      "war",
+      "gegangen"
+     ],
+     "alt": []
+    },
+    {
+     "type": "build",
+     "text": "Der Zug war schon abgefahren.",
+     "native": {
+      "tr": "Tren çoktan kalkmıştı.",
+      "en": "The train had already left."
+     },
+     "extra": [
+      "hatte",
+      "wurde"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Ich ___ eingeschlafen, bevor der Film endete.",
+     "native": {
+      "tr": "Film bitmeden önce uyuyakalmıştım.",
+      "en": "I had fallen asleep before the film ended."
+     },
+     "options": [
+      "habe",
+      "hatte",
+      "bin",
+      "war"
+     ],
+     "answer": 3
+    },
+    {
+     "type": "build",
+     "text": "Als ich ankam, hatten sie schon gegessen.",
+     "native": {
+      "tr": "Ben vardığımda onlar yemeğini yemişti.",
+      "en": "When I arrived, they had already eaten."
+     },
+     "extra": [
+      "waren",
+      "wurden"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Wir ___ das Auto schon verkauft.",
+     "native": {
+      "tr": "Arabayı zaten satmıştık.",
+      "en": "We had already sold the car."
+     },
+     "options": [
+      "waren",
+      "hatten",
+      "sind"
+     ],
+     "answer": 1
+    }
+   ]
+  },
+  {
+   "id": "n-deklination",
+   "level": "B2",
+   "title": {
+    "tr": "n-Deklination: den Jungen, dem Studenten",
+    "en": "N-declension: den Jungen, dem Studenten"
+   },
+   "tip": {
+    "tr": "Bazı eril isimler Nominativ dışında -n/-en alır: der Junge, den Jungen.",
+    "en": "Some masculine nouns add -n/-en in every case except the nominative: der Junge, den Jungen."
+   },
+   "learn": {
+    "explain": {
+     "tr": "Bu grupta eril canlı isimler vardır: der Junge, der Student, der Kollege, der Mensch, der Herr, der Nachbar.\nNominativ tekil değişmez: der Junge. Diğer tüm hâllerde -n veya -en eklenir: den Jungen, dem Jungen, des Jungen.\nHerr -n alır: den Herrn. Çoğul da aynıdır: die Jungen.\nSık hata: 'Ich kenne den Student'. Doğrusu: den Studenten.",
+     "en": "This group has masculine, mostly living nouns: der Junge, der Student, der Kollege, der Mensch, der Herr, der Nachbar.\nThe nominative singular stays the same: der Junge. All other cases add -n or -en: den Jungen, dem Jungen, des Jungen.\nHerr takes -n: den Herrn. The plural is the same: die Jungen.\nCommon mistake: 'Ich kenne den Student'. Correct: den Studenten."
+    },
+    "examples": [
+     {
+      "text": "Ich kenne den Jungen.",
+      "native": {
+       "tr": "O çocuğu tanıyorum.",
+       "en": "I know the boy."
+      }
+     },
+     {
+      "text": "Er hilft dem Studenten.",
+      "native": {
+       "tr": "O öğrenciye yardım ediyor.",
+       "en": "He helps the student."
+      }
+     },
+     {
+      "text": "Das ist das Auto des Kollegen.",
+      "native": {
+       "tr": "Bu meslektaşın arabası.",
+       "en": "That is the colleague's car."
+      }
+     },
+     {
+      "text": "Wir fragen den Herrn.",
+      "native": {
+       "tr": "Beyefendiye soruyoruz.",
+       "en": "We ask the gentleman."
+      }
+     }
+    ]
+   },
+   "items": [
+    {
+     "type": "build",
+     "text": "Ich kenne den Jungen.",
+     "native": {
+      "tr": "O çocuğu tanıyorum.",
+      "en": "I know the boy."
+     },
+     "extra": [
+      "Junge",
+      "dem"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Ich sehe den ___.",
+     "native": {
+      "tr": "Çocuğu görüyorum.",
+      "en": "I see the boy."
+     },
+     "options": [
+      "Junge",
+      "Jungen",
+      "Jungens"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "build",
+     "text": "Sie fragt den Studenten.",
+     "native": {
+      "tr": "O öğrenciye soruyor.",
+      "en": "She asks the student."
+     },
+     "extra": [
+      "Student",
+      "der"
+     ],
+     "alt": []
+    },
+    {
+     "type": "build",
+     "text": "Er hilft dem Kollegen.",
+     "native": {
+      "tr": "O meslektaşına yardım ediyor.",
+      "en": "He helps the colleague."
+     },
+     "extra": [
+      "Kollege",
+      "den"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Das Buch gehört dem ___.",
+     "native": {
+      "tr": "Kitap öğrenciye ait.",
+      "en": "The book belongs to the student."
+     },
+     "options": [
+      "Student",
+      "Studente",
+      "Studenten"
+     ],
+     "answer": 2
+    },
+    {
+     "type": "build",
+     "text": "Wir sehen den Herrn nicht.",
+     "native": {
+      "tr": "Beyefendiyi görmüyoruz.",
+      "en": "We do not see the gentleman."
+     },
+     "extra": [
+      "Herr",
+      "dem"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Der ___ heißt Tom.",
+     "native": {
+      "tr": "Çocuğun adı Tom.",
+      "en": "The boy is called Tom."
+     },
+     "options": [
+      "Junge",
+      "Jungen",
+      "Jungens"
+     ],
+     "answer": 0
+    },
+    {
+     "type": "build",
+     "text": "Der Student wohnt in Köln.",
+     "native": {
+      "tr": "Öğrenci Köln'de yaşıyor.",
+      "en": "The student lives in Cologne."
+     },
+     "extra": [
+      "Studenten",
+      "dem"
+     ],
+     "alt": []
+    },
+    {
+     "type": "build",
+     "text": "Ich danke dem Nachbarn sehr.",
+     "native": {
+      "tr": "Komşuya çok teşekkür ediyorum.",
+      "en": "I thank the neighbour very much."
+     },
+     "extra": [
+      "Nachbar",
+      "den"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Er arbeitet mit dem ___ zusammen.",
+     "native": {
+      "tr": "O meslektaşıyla birlikte çalışıyor.",
+      "en": "He works together with the colleague."
+     },
+     "options": [
+      "Kollege",
+      "Kollegen",
+      "Kollegn"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "build",
+     "text": "Der Name des Jungen ist Paul.",
+     "native": {
+      "tr": "Çocuğun adı Paul.",
+      "en": "The boy's name is Paul."
+     },
+     "extra": [
+      "Junge",
+      "dem"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Wir kennen diesen ___ nicht.",
+     "native": {
+      "tr": "Bu insanı tanımıyoruz.",
+      "en": "We do not know this person."
+     },
+     "options": [
+      "Mensch",
+      "Menschs",
+      "Mensche",
+      "Menschen"
+     ],
+     "answer": 3
+    }
+   ]
   }
  ]
 }

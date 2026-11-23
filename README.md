@@ -107,10 +107,12 @@ level; Settings changes them later, and progress is kept per language.
   you didn't know; Lists shows them all, searchable, and exports the open list as a CSV file
   (Excel, Google Sheets, Anki).
 - **Sentences:** practice starts as soon as the page opens, like the cards: exercises keep coming
-  from the grammar units of the chosen levels (20–22 units per language from A1 to B2, 12 exercises
-  each), the ones not mastered yet first. Build the sentence from shuffled word tiles, or pick the
-  word for a gap; a wrong answer comes back a few exercises later. Topics lists the units, to practise
-  one on its own.
+  from the units of the chosen levels (30–32 per language, 12 exercises each), the ones not mastered
+  yet first. Each language starts with four foundation units (greetings, numbers and age, days and
+  time, family), then grammar from A1 to B2. The first time a topic comes up, a short lesson comes
+  first: what it is, how it's formed, a common mistake, and examples to hear. Build the sentence from
+  shuffled word tiles, or pick the word for a gap; a wrong answer comes back a few exercises later.
+  Topics lists the units, each with its lesson, to practise one on its own.
 - A tab bar on phones and a sidebar on wide screens. On phones the level filter folds into one
   button beside the view's tabs, so the cards and exercises get most of the screen. Light and dark themes; it can be
   added to the home screen.

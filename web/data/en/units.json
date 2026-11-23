@@ -1,6 +1,885 @@
 {
  "units": [
   {
+   "id": "greetings-intro",
+   "level": "A1",
+   "basics": true,
+   "title": {
+    "tr": "Selamlaşma ve tanışma",
+    "en": "Greetings and introductions"
+   },
+   "tip": {
+    "tr": "Tanışırken My name is ... ve I am ... deriz. Nasılsın? için How are you? sorulur.",
+    "en": "Say My name is ... or I am ... to introduce yourself. Ask How are you? to greet someone."
+   },
+   "learn": {
+    "explain": {
+     "tr": "Selamlaşırken Hello, Hi, Good morning (günaydın) ve Good night (iyi geceler) kullanırız.\nKendini tanıtırken My name is Ali. ya da I am Ali. deriz.\nNasılsın? için How are you? sorulur; cevap I am fine. olur.\nSık hata: Adımı söylerken name önüne My koymayı unutmak. Name is Ali. değil, My name is Ali. denir.",
+     "en": "Greet people with Hello, Hi, Good morning and Good night.\nIntroduce yourself with My name is Ali. or I am Ali.\nAsk How are you? and answer I am fine.\nCommon mistake: forgetting My. Say My name is Ali., not Name is Ali."
+    },
+    "examples": [
+     {
+      "text": "Good morning, teacher.",
+      "native": {
+       "tr": "Günaydın öğretmenim.",
+       "en": "Good morning, teacher."
+      }
+     },
+     {
+      "text": "Hi, I am Mehmet.",
+      "native": {
+       "tr": "Merhaba, ben Mehmet.",
+       "en": "Hi, I am Mehmet."
+      }
+     },
+     {
+      "text": "I am from Turkey.",
+      "native": {
+       "tr": "Ben Türkiye'denim.",
+       "en": "I am from Turkey."
+      }
+     },
+     {
+      "text": "Goodbye, see you tomorrow.",
+      "native": {
+       "tr": "Hoşça kal, yarın görüşürüz.",
+       "en": "Goodbye, see you tomorrow."
+      }
+     }
+    ]
+   },
+   "items": [
+    {
+     "type": "build",
+     "text": "My name is Ali.",
+     "native": {
+      "tr": "Benim adım Ali.",
+      "en": "My name is Ali."
+     },
+     "extra": [
+      "are",
+      "be",
+      "an"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "It is ten at night. Good ___!",
+     "native": {
+      "tr": "Saat gece on. İyi geceler!",
+      "en": "It is ten at night. Good night!"
+     },
+     "options": [
+      "night",
+      "morning",
+      "afternoon"
+     ],
+     "answer": 0
+    },
+    {
+     "type": "build",
+     "text": "How are you?",
+     "native": {
+      "tr": "Nasılsın?",
+      "en": "How are you?"
+     },
+     "extra": [
+      "is",
+      "am",
+      "do"
+     ],
+     "alt": []
+    },
+    {
+     "type": "build",
+     "text": "I am fine today.",
+     "native": {
+      "tr": "Bugün iyiyim.",
+      "en": "I am fine today."
+     },
+     "extra": [
+      "is",
+      "are",
+      "have"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "___ you from Turkey?",
+     "native": {
+      "tr": "Sen Türkiyeli misin?",
+      "en": "Are you from Turkey?"
+     },
+     "options": [
+      "Is",
+      "Are",
+      "Am"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "build",
+     "text": "Nice to meet you.",
+     "native": {
+      "tr": "Tanıştığımıza memnun oldum.",
+      "en": "Nice to meet you."
+     },
+     "extra": [
+      "meets",
+      "at",
+      "is"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "I ___ a teacher.",
+     "native": {
+      "tr": "Ben öğretmenim.",
+      "en": "I am a teacher."
+     },
+     "options": [
+      "is",
+      "are",
+      "am"
+     ],
+     "answer": 2
+    },
+    {
+     "type": "build",
+     "text": "What is your name?",
+     "native": {
+      "tr": "Adın ne?",
+      "en": "What is your name?"
+     },
+     "extra": [
+      "are",
+      "am",
+      "does"
+     ],
+     "alt": []
+    },
+    {
+     "type": "build",
+     "text": "Where are you from?",
+     "native": {
+      "tr": "Nerelisin?",
+      "en": "Where are you from?"
+     },
+     "extra": [
+      "is",
+      "do",
+      "am"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Nice to ___ you.",
+     "native": {
+      "tr": "Tanıştığımıza memnun oldum.",
+      "en": "Nice to meet you."
+     },
+     "options": [
+      "meets",
+      "meet",
+      "meeting"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "build",
+     "text": "This is my friend.",
+     "native": {
+      "tr": "Bu benim arkadaşım.",
+      "en": "This is my friend."
+     },
+     "extra": [
+      "are",
+      "am",
+      "an"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "How ___ you?",
+     "native": {
+      "tr": "Nasılsın?",
+      "en": "How are you?"
+     },
+     "options": [
+      "is",
+      "am",
+      "do",
+      "are"
+     ],
+     "answer": 3
+    }
+   ]
+  },
+  {
+   "id": "numbers-age",
+   "level": "A1",
+   "basics": true,
+   "title": {
+    "tr": "Sayılar ve yaş",
+    "en": "Numbers and age"
+   },
+   "tip": {
+    "tr": "Yaşı I am twenty years old. diye söyleriz. Sayı ve eşya sayarken have ve there are kullanılır.",
+    "en": "Say age with I am twenty years old. Count things with have and there are."
+   },
+   "learn": {
+    "explain": {
+     "tr": "Sayılar: one, two, three, ten, twenty, thirty...\nYaşı sorarken How old are you? deriz; cevap I am twenty years old. olur.\nBir şeyin sayısını söylerken I have two sisters. ya da There are five books. deriz.\nSık hata: Türkçedeki gibi I have twenty years. demek. Yaş için have değil, am / is / are kullanılır.",
+     "en": "Numbers: one, two, three, ten, twenty, thirty...\nAsk How old are you? and answer I am twenty years old.\nTo count things say I have two sisters. or There are five books.\nCommon mistake: I have twenty years. For age use am / is / are, not have."
+    },
+    "examples": [
+     {
+      "text": "I am twenty five years old.",
+      "native": {
+       "tr": "Ben yirmi beş yaşındayım.",
+       "en": "I am twenty five years old."
+      }
+     },
+     {
+      "text": "He has one brother.",
+      "native": {
+       "tr": "Onun bir erkek kardeşi var.",
+       "en": "He has one brother."
+      }
+     },
+     {
+      "text": "There are seven days in a week.",
+      "native": {
+       "tr": "Bir haftada yedi gün var.",
+       "en": "There are seven days in a week."
+      }
+     },
+     {
+      "text": "How many pens do you have?",
+      "native": {
+       "tr": "Kaç kalemin var?",
+       "en": "How many pens do you have?"
+      }
+     }
+    ]
+   },
+   "items": [
+    {
+     "type": "build",
+     "text": "I am twenty years old.",
+     "native": {
+      "tr": "Ben yirmi yaşındayım.",
+      "en": "I am twenty years old."
+     },
+     "extra": [
+      "have",
+      "is",
+      "are"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "I am thirty ___ old.",
+     "native": {
+      "tr": "Ben otuz yaşındayım.",
+      "en": "I am thirty years old."
+     },
+     "options": [
+      "year",
+      "years",
+      "yearly"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "build",
+     "text": "How old are you?",
+     "native": {
+      "tr": "Kaç yaşındasın?",
+      "en": "How old are you?"
+     },
+     "extra": [
+      "is",
+      "many",
+      "am"
+     ],
+     "alt": []
+    },
+    {
+     "type": "build",
+     "text": "She is ten years old.",
+     "native": {
+      "tr": "O on yaşında.",
+      "en": "She is ten years old."
+     },
+     "extra": [
+      "are",
+      "has",
+      "am"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "He ___ twelve years old.",
+     "native": {
+      "tr": "O on iki yaşında.",
+      "en": "He is twelve years old."
+     },
+     "options": [
+      "have",
+      "are",
+      "is"
+     ],
+     "answer": 2
+    },
+    {
+     "type": "build",
+     "text": "I have three brothers.",
+     "native": {
+      "tr": "Üç erkek kardeşim var.",
+      "en": "I have three brothers."
+     },
+     "extra": [
+      "am",
+      "has",
+      "are"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Five and five is ___.",
+     "native": {
+      "tr": "Beş artı beş on eder.",
+      "en": "Five and five is ten."
+     },
+     "options": [
+      "ten",
+      "tin",
+      "tens"
+     ],
+     "answer": 0
+    },
+    {
+     "type": "build",
+     "text": "There are five books.",
+     "native": {
+      "tr": "Beş kitap var.",
+      "en": "There are five books."
+     },
+     "extra": [
+      "is",
+      "have",
+      "am"
+     ],
+     "alt": []
+    },
+    {
+     "type": "build",
+     "text": "We have two children.",
+     "native": {
+      "tr": "İki çocuğumuz var.",
+      "en": "We have two children."
+     },
+     "extra": [
+      "has",
+      "are",
+      "is"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "How ___ apples are there?",
+     "native": {
+      "tr": "Kaç elma var?",
+      "en": "How many apples are there?"
+     },
+     "options": [
+      "much",
+      "many",
+      "old"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "build",
+     "text": "My brother is fifteen years old.",
+     "native": {
+      "tr": "Erkek kardeşim on beş yaşında.",
+      "en": "My brother is fifteen years old."
+     },
+     "extra": [
+      "are",
+      "have",
+      "am"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "The number after nine is ___.",
+     "native": {
+      "tr": "Dokuzdan sonraki sayı on'dur.",
+      "en": "The number after nine is ten."
+     },
+     "options": [
+      "eleven",
+      "eight",
+      "twelve",
+      "ten"
+     ],
+     "answer": 3
+    }
+   ]
+  },
+  {
+   "id": "days-months-time",
+   "level": "A1",
+   "basics": true,
+   "title": {
+    "tr": "Günler, aylar ve saat",
+    "en": "Days, months and time"
+   },
+   "tip": {
+    "tr": "Gün için on, ay için in, saat için at kullanırız: on Monday, in May, at nine.",
+    "en": "Use on for days, in for months and at for clock times: on Monday, in May, at nine."
+   },
+   "learn": {
+    "explain": {
+     "tr": "Günler: Monday, Tuesday, Wednesday... Aylar: January, February, May...\nSaati sorarken What time is it? deriz; cevap It is half past seven. olabilir.\nEdat seçimi: on + gün (on Friday), in + ay (in June), at + saat (at eight).\nSık hata: Türkçede hepsi için tek ek var, bu yüzden in Monday gibi yanlış edat seçilir. Gün için on kullanın.",
+     "en": "Days: Monday, Tuesday, Wednesday... Months: January, February, May...\nAsk What time is it? and answer It is half past seven.\nPrepositions: on + day (on Friday), in + month (in June), at + time (at eight).\nCommon mistake: in Monday. Use on for days."
+    },
+    "examples": [
+     {
+      "text": "Today is Friday.",
+      "native": {
+       "tr": "Bugün cuma.",
+       "en": "Today is Friday."
+      }
+     },
+     {
+      "text": "The class is at ten o'clock.",
+      "native": {
+       "tr": "Ders saat onda.",
+       "en": "The class is at ten o'clock."
+      }
+     },
+     {
+      "text": "My holiday is in August.",
+      "native": {
+       "tr": "Tatilim ağustosta.",
+       "en": "My holiday is in August."
+      }
+     },
+     {
+      "text": "We play football on Sunday.",
+      "native": {
+       "tr": "Pazar günü futbol oynarız.",
+       "en": "We play football on Sunday."
+      }
+     }
+    ]
+   },
+   "items": [
+    {
+     "type": "build",
+     "text": "Today is Monday.",
+     "native": {
+      "tr": "Bugün pazartesi.",
+      "en": "Today is Monday."
+     },
+     "extra": [
+      "are",
+      "in",
+      "at"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "My birthday is ___ June.",
+     "native": {
+      "tr": "Doğum günüm haziranda.",
+      "en": "My birthday is in June."
+     },
+     "options": [
+      "in",
+      "on",
+      "at"
+     ],
+     "answer": 0
+    },
+    {
+     "type": "build",
+     "text": "What time is it?",
+     "native": {
+      "tr": "Saat kaç?",
+      "en": "What time is it?"
+     },
+     "extra": [
+      "are",
+      "does",
+      "at"
+     ],
+     "alt": []
+    },
+    {
+     "type": "build",
+     "text": "It is half past seven.",
+     "native": {
+      "tr": "Saat yedi buçuk.",
+      "en": "It is half past seven."
+     },
+     "extra": [
+      "are",
+      "to",
+      "on"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "I have a class ___ Friday.",
+     "native": {
+      "tr": "Cuma günü dersim var.",
+      "en": "I have a class on Friday."
+     },
+     "options": [
+      "in",
+      "at",
+      "on"
+     ],
+     "answer": 2
+    },
+    {
+     "type": "build",
+     "text": "My birthday is in May.",
+     "native": {
+      "tr": "Doğum günüm mayısta.",
+      "en": "My birthday is in May."
+     },
+     "extra": [
+      "on",
+      "at",
+      "are"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "The film starts ___ eight o'clock.",
+     "native": {
+      "tr": "Film saat sekizde başlıyor.",
+      "en": "The film starts at eight o'clock."
+     },
+     "options": [
+      "on",
+      "at",
+      "in"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "build",
+     "text": "The shop opens at nine.",
+     "native": {
+      "tr": "Dükkan dokuzda açılır.",
+      "en": "The shop opens at nine."
+     },
+     "extra": [
+      "in",
+      "on",
+      "open"
+     ],
+     "alt": []
+    },
+    {
+     "type": "build",
+     "text": "I wake up at seven.",
+     "native": {
+      "tr": "Yedide uyanırım.",
+      "en": "I wake up at seven."
+     },
+     "extra": [
+      "in",
+      "on",
+      "wakes"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "The day after Tuesday is ___.",
+     "native": {
+      "tr": "Salıdan sonraki gün çarşambadır.",
+      "en": "The day after Tuesday is Wednesday."
+     },
+     "options": [
+      "Monday",
+      "Thursday",
+      "Wednesday"
+     ],
+     "answer": 2
+    },
+    {
+     "type": "build",
+     "text": "We have English on Tuesday.",
+     "native": {
+      "tr": "Salı günü İngilizcemiz var.",
+      "en": "We have English on Tuesday."
+     },
+     "extra": [
+      "in",
+      "at",
+      "has"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "What ___ is it? It is five o'clock.",
+     "native": {
+      "tr": "Saat kaç? Saat beş.",
+      "en": "What time is it? It is five o'clock."
+     },
+     "options": [
+      "hour",
+      "time",
+      "clock"
+     ],
+     "answer": 1
+    }
+   ]
+  },
+  {
+   "id": "family-people",
+   "level": "A1",
+   "basics": true,
+   "title": {
+    "tr": "Aile ve insanları anlatma",
+    "en": "Family and describing people"
+   },
+   "tip": {
+    "tr": "Aileyi anlatırken my, her, his kullanırız: My father is tall. Saç ve göz için have / has kullanılır.",
+    "en": "Use my, her and his for family: My father is tall. Use have / has for hair and eyes."
+   },
+   "learn": {
+    "explain": {
+     "tr": "Aile: mother, father, brother, sister, grandmother, uncle, aunt, cousin.\nKişiyi anlatmak için is / are kullanırız: My father is tall.\nSaç ve göz için has kullanılır: He has short black hair.\nSık hata: Türkçede o hem erkek hem kadın için kullanılır. İngilizcede erkek için he, kadın için she demeyi unutmayın.",
+     "en": "Family: mother, father, brother, sister, grandmother, uncle, aunt, cousin.\nTo describe people use is / are: My father is tall.\nFor hair and eyes use has: He has short black hair.\nCommon mistake: Turkish o means he and she. In English choose he or she."
+    },
+    "examples": [
+     {
+      "text": "My sister is twelve.",
+      "native": {
+       "tr": "Kız kardeşim on iki yaşında.",
+       "en": "My sister is twelve."
+      }
+     },
+     {
+      "text": "She has long brown hair.",
+      "native": {
+       "tr": "Onun uzun kahverengi saçları var.",
+       "en": "She has long brown hair."
+      }
+     },
+     {
+      "text": "My uncle is a doctor.",
+      "native": {
+       "tr": "Amcam doktor.",
+       "en": "My uncle is a doctor."
+      }
+     },
+     {
+      "text": "We are a big family.",
+      "native": {
+       "tr": "Biz büyük bir aileyiz.",
+       "en": "We are a big family."
+      }
+     }
+    ]
+   },
+   "items": [
+    {
+     "type": "build",
+     "text": "She is my mother.",
+     "native": {
+      "tr": "O benim annem.",
+      "en": "She is my mother."
+     },
+     "extra": [
+      "are",
+      "am",
+      "an"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "She is my mother. ___ name is Ayşe.",
+     "native": {
+      "tr": "O benim annem. Onun adı Ayşe.",
+      "en": "She is my mother. Her name is Ayşe."
+     },
+     "options": [
+      "His",
+      "Her",
+      "She"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "build",
+     "text": "My father is tall.",
+     "native": {
+      "tr": "Babam uzun boylu.",
+      "en": "My father is tall."
+     },
+     "extra": [
+      "are",
+      "am",
+      "has"
+     ],
+     "alt": []
+    },
+    {
+     "type": "build",
+     "text": "I have two sisters.",
+     "native": {
+      "tr": "İki kız kardeşim var.",
+      "en": "I have two sisters."
+     },
+     "extra": [
+      "am",
+      "has",
+      "sister"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "My brother ___ blue eyes.",
+     "native": {
+      "tr": "Erkek kardeşimin mavi gözleri var.",
+      "en": "My brother has blue eyes."
+     },
+     "options": [
+      "have",
+      "is",
+      "has"
+     ],
+     "answer": 2
+    },
+    {
+     "type": "build",
+     "text": "He has short black hair.",
+     "native": {
+      "tr": "Onun kısa siyah saçları var.",
+      "en": "He has short black hair."
+     },
+     "extra": [
+      "have",
+      "is",
+      "are"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "My mother's sister is my ___.",
+     "native": {
+      "tr": "Annemin kız kardeşi benim teyzemdir.",
+      "en": "My mother's sister is my aunt."
+     },
+     "options": [
+      "aunt",
+      "uncle",
+      "cousin"
+     ],
+     "answer": 0
+    },
+    {
+     "type": "build",
+     "text": "Her eyes are blue.",
+     "native": {
+      "tr": "Onun gözleri mavi.",
+      "en": "Her eyes are blue."
+     },
+     "extra": [
+      "is",
+      "am",
+      "has"
+     ],
+     "alt": []
+    },
+    {
+     "type": "build",
+     "text": "They are my cousins.",
+     "native": {
+      "tr": "Onlar benim kuzenlerim.",
+      "en": "They are my cousins."
+     },
+     "extra": [
+      "is",
+      "am",
+      "has"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Ali is my uncle's son. He is my ___.",
+     "native": {
+      "tr": "Ali amcamın oğlu. O benim kuzenim.",
+      "en": "Ali is my uncle's son. He is my cousin."
+     },
+     "options": [
+      "brother",
+      "father",
+      "uncle",
+      "cousin"
+     ],
+     "answer": 3
+    },
+    {
+     "type": "build",
+     "text": "My grandmother is very kind.",
+     "native": {
+      "tr": "Büyükannem çok nazik.",
+      "en": "My grandmother is very kind."
+     },
+     "extra": [
+      "are",
+      "am",
+      "has"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "My parents ___ teachers.",
+     "native": {
+      "tr": "Anne babam öğretmen.",
+      "en": "My parents are teachers."
+     },
+     "options": [
+      "am",
+      "is",
+      "are"
+     ],
+     "answer": 2
+    }
+   ]
+  },
+  {
    "id": "be-present",
    "title": {
     "tr": "am / is / are"
@@ -2871,6 +3750,442 @@
    }
   },
   {
+   "id": "object-pronouns",
+   "level": "A2",
+   "title": {
+    "tr": "me, you, him, her, us, them",
+    "en": "Object pronouns: me, him, them"
+   },
+   "tip": {
+    "tr": "Fiilden sonra I yerine me, he yerine him, they yerine them gelir: She likes me.",
+    "en": "After a verb use me, him, her, us, them: She likes me."
+   },
+   "learn": {
+    "explain": {
+     "tr": "Özne yerine I, he, she, we, they; fiilden sonra me, him, her, us, them kullanırız.\nI see Ali. = I see him. They help us. = Onlar bize yardım eder.\nit ve you hem özne hem nesne olarak aynı kalır.\nSık hata: I like she. demek. Fiilden sonra özne zamiri değil, nesne zamiri gelir: I like her.",
+     "en": "Subjects are I, he, she, we, they; after a verb we use me, him, her, us, them.\nI see Ali. = I see him. They help us.\nit and you stay the same as subject and object.\nCommon mistake: I like she. After a verb use the object pronoun: I like her."
+    },
+    "examples": [
+     {
+      "text": "My teacher knows me.",
+      "native": {
+       "tr": "Öğretmenim beni tanıyor.",
+       "en": "My teacher knows me."
+      }
+     },
+     {
+      "text": "Ali loves them.",
+      "native": {
+       "tr": "Ali onları seviyor.",
+       "en": "Ali loves them."
+      }
+     },
+     {
+      "text": "Please wait for us.",
+      "native": {
+       "tr": "Lütfen bizi bekle.",
+       "en": "Please wait for us."
+      }
+     },
+     {
+      "text": "I miss him a lot.",
+      "native": {
+       "tr": "Onu çok özlüyorum.",
+       "en": "I miss him a lot."
+      }
+     }
+    ]
+   },
+   "items": [
+    {
+     "type": "build",
+     "text": "She likes me.",
+     "native": {
+      "tr": "O benden hoşlanıyor.",
+      "en": "She likes me."
+     },
+     "extra": [
+      "I",
+      "my",
+      "like"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "I like Ali. I see ___ every day.",
+     "native": {
+      "tr": "Ali'yi seviyorum. Onu her gün görüyorum.",
+      "en": "I like Ali. I see him every day."
+     },
+     "options": [
+      "he",
+      "him",
+      "his"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "build",
+     "text": "Please help us.",
+     "native": {
+      "tr": "Lütfen bize yardım et.",
+      "en": "Please help us."
+     },
+     "extra": [
+      "we",
+      "our",
+      "helps"
+     ],
+     "alt": []
+    },
+    {
+     "type": "build",
+     "text": "I see them every day.",
+     "native": {
+      "tr": "Onları her gün görüyorum.",
+      "en": "I see them every day."
+     },
+     "extra": [
+      "they",
+      "their",
+      "sees"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Ayşe is here. Please call ___.",
+     "native": {
+      "tr": "Ayşe burada. Lütfen onu ara.",
+      "en": "Ayşe is here. Please call her."
+     },
+     "options": [
+      "her",
+      "she",
+      "hers"
+     ],
+     "answer": 0
+    },
+    {
+     "type": "build",
+     "text": "He gives her a book.",
+     "native": {
+      "tr": "O ona bir kitap veriyor.",
+      "en": "He gives her a book."
+     },
+     "extra": [
+      "she",
+      "hers",
+      "give"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "It is cute. Look at ___!",
+     "native": {
+      "tr": "Çok tatlı. Ona bak!",
+      "en": "It is cute. Look at it!"
+     },
+     "options": [
+      "they",
+      "its",
+      "it"
+     ],
+     "answer": 2
+    },
+    {
+     "type": "build",
+     "text": "Can you call me tomorrow?",
+     "native": {
+      "tr": "Yarın beni arayabilir misin?",
+      "en": "Can you call me tomorrow?"
+     },
+     "extra": [
+      "I",
+      "my",
+      "calls"
+     ],
+     "alt": []
+    },
+    {
+     "type": "build",
+     "text": "We love him very much.",
+     "native": {
+      "tr": "Onu çok seviyoruz.",
+      "en": "We love him very much."
+     },
+     "extra": [
+      "he",
+      "his",
+      "loves"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "My parents are home. I visit ___ on Sunday.",
+     "native": {
+      "tr": "Anne babam evde. Pazar günü onları ziyaret ederim.",
+      "en": "My parents are home. I visit them on Sunday."
+     },
+     "options": [
+      "them",
+      "they",
+      "their"
+     ],
+     "answer": 0
+    },
+    {
+     "type": "build",
+     "text": "Tell them the truth.",
+     "native": {
+      "tr": "Onlara gerçeği söyle.",
+      "en": "Tell them the truth."
+     },
+     "extra": [
+      "they",
+      "their",
+      "tells"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "We are lost. Can you help ___?",
+     "native": {
+      "tr": "Kayboldum. Bize yardım edebilir misin?",
+      "en": "We are lost. Can you help us?"
+     },
+     "options": [
+      "we",
+      "our",
+      "us"
+     ],
+     "answer": 2
+    }
+   ]
+  },
+  {
+   "id": "adverbs-frequency",
+   "level": "A2",
+   "title": {
+    "tr": "Sıklık zarfları: always, never",
+    "en": "Adverbs of frequency"
+   },
+   "tip": {
+    "tr": "always, usually, often, sometimes, never ana fiilden önce, be fiilinden sonra gelir: I often go. She is never late.",
+    "en": "Put always, usually, often, sometimes, never before the main verb but after be: I often go. She is never late."
+   },
+   "learn": {
+    "explain": {
+     "tr": "Bir şeyin ne sıklıkta olduğunu söylerken kullanırız: always (hep), usually (genellikle), often (sık sık), sometimes (bazen), never (hiç).\nAna fiilden önce gelir: I always drink tea.\nbe fiilinden sonra gelir: He is usually late.\nSık hata: I go always to school. Zarf fiilden sonra değil, önce gelir: I always go to school.",
+     "en": "They tell how often something happens: always, usually, often, sometimes, never.\nPut them before the main verb: I always drink tea.\nPut them after be: He is usually late.\nCommon mistake: I go always to school. Say I always go to school."
+    },
+    "examples": [
+     {
+      "text": "I usually get up at seven.",
+      "native": {
+       "tr": "Genellikle yedide kalkarım.",
+       "en": "I usually get up at seven."
+      }
+     },
+     {
+      "text": "My dad is always busy.",
+      "native": {
+       "tr": "Babam hep meşgul.",
+       "en": "My dad is always busy."
+      }
+     },
+     {
+      "text": "We sometimes eat out.",
+      "native": {
+       "tr": "Bazen dışarıda yeriz.",
+       "en": "We sometimes eat out."
+      }
+     },
+     {
+      "text": "She never eats meat.",
+      "native": {
+       "tr": "O hiç et yemez.",
+       "en": "She never eats meat."
+      }
+     }
+    ]
+   },
+   "items": [
+    {
+     "type": "build",
+     "text": "I always drink tea in the morning.",
+     "native": {
+      "tr": "Sabahları hep çay içerim.",
+      "en": "I always drink tea in the morning."
+     },
+     "extra": [
+      "drinks",
+      "are",
+      "on"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "I am on time every day. I am ___ late.",
+     "native": {
+      "tr": "Her gün zamanındayım. Hiç geç kalmam.",
+      "en": "I am on time every day. I am never late."
+     },
+     "options": [
+      "never",
+      "often",
+      "sometimes"
+     ],
+     "answer": 0
+    },
+    {
+     "type": "build",
+     "text": "She is usually late.",
+     "native": {
+      "tr": "O genellikle geç kalır.",
+      "en": "She is usually late."
+     },
+     "extra": [
+      "are",
+      "am",
+      "does"
+     ],
+     "alt": []
+    },
+    {
+     "type": "build",
+     "text": "We often eat out.",
+     "native": {
+      "tr": "Sık sık dışarıda yeriz.",
+      "en": "We often eat out."
+     },
+     "extra": [
+      "eats",
+      "are",
+      "at"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Every day, I ___ eat breakfast.",
+     "native": {
+      "tr": "Her gün her zaman kahvaltı ederim.",
+      "en": "Every day, I always eat breakfast."
+     },
+     "options": [
+      "never",
+      "always",
+      "sometimes"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "build",
+     "text": "He never watches television.",
+     "native": {
+      "tr": "O hiç televizyon izlemez.",
+      "en": "He never watches television."
+     },
+     "extra": [
+      "watch",
+      "is",
+      "does"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "She ___ drinks coffee. She hates it.",
+     "native": {
+      "tr": "O hiç kahve içmez. Ondan nefret eder.",
+      "en": "She never drinks coffee. She hates it."
+     },
+     "options": [
+      "always",
+      "often",
+      "never"
+     ],
+     "answer": 2
+    },
+    {
+     "type": "build",
+     "text": "They sometimes play football.",
+     "native": {
+      "tr": "Bazen futbol oynarlar.",
+      "en": "They sometimes play football."
+     },
+     "extra": [
+      "plays",
+      "are",
+      "do"
+     ],
+     "alt": []
+    },
+    {
+     "type": "build",
+     "text": "I do not often go out.",
+     "native": {
+      "tr": "Sık sık dışarı çıkmam.",
+      "en": "I do not often go out."
+     },
+     "extra": [
+      "does",
+      "am",
+      "goes"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Do you ___ eat fish?",
+     "native": {
+      "tr": "Hiç balık yer misin?",
+      "en": "Do you ever eat fish?"
+     },
+     "options": [
+      "yet",
+      "already",
+      "ever"
+     ],
+     "answer": 2
+    },
+    {
+     "type": "build",
+     "text": "Do you always walk to school?",
+     "native": {
+      "tr": "Okula hep yürüyerek mi gidersin?",
+      "en": "Do you always walk to school?"
+     },
+     "extra": [
+      "does",
+      "are",
+      "walks"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "We are ___ at home on Sunday.",
+     "native": {
+      "tr": "Pazar günleri genellikle evdeyiz.",
+      "en": "We are usually at home on Sunday."
+     },
+     "options": [
+      "usual",
+      "use",
+      "usually"
+     ],
+     "answer": 2
+    }
+   ]
+  },
+  {
    "id": "present-perfect",
    "title": {
     "tr": "Present perfect: I have been"
@@ -3712,6 +5027,444 @@
    }
   },
   {
+   "id": "used-to",
+   "level": "B1",
+   "title": {
+    "tr": "used to: eskiden yapardım",
+    "en": "used to"
+   },
+   "tip": {
+    "tr": "Geçmişte bırakılmış alışkanlıklar için used to + fiil kullanılır: I used to live in Izmir.",
+    "en": "Use used to + verb for past habits that have stopped: I used to live in Izmir."
+   },
+   "learn": {
+    "explain": {
+     "tr": "used to, geçmişte olan ama artık olmayan alışkanlık ve durumları anlatır.\nOlumlu: I used to play. Olumsuz ve soru: did not use to / Did you use to?\ndid ile birlikte used değil use yazılır.\nSık hata: I did not used to like fish. Did olunca fiil yalın olur: I did not use to like fish.",
+     "en": "used to talks about past habits and states that are no longer true.\nPositive: I used to play. Negative and question: did not use to / Did you use to?\nWith did we write use, not used.\nCommon mistake: I did not used to like fish. Say I did not use to like fish."
+    },
+    "examples": [
+     {
+      "text": "I used to have long hair.",
+      "native": {
+       "tr": "Eskiden uzun saçlarım vardı.",
+       "en": "I used to have long hair."
+      }
+     },
+     {
+      "text": "We used to play outside.",
+      "native": {
+       "tr": "Eskiden dışarıda oynardık.",
+       "en": "We used to play outside."
+      }
+     },
+     {
+      "text": "She did not use to drink coffee.",
+      "native": {
+       "tr": "Eskiden kahve içmezdi.",
+       "en": "She did not use to drink coffee."
+      }
+     },
+     {
+      "text": "Did he use to live here?",
+      "native": {
+       "tr": "Eskiden burada mı yaşardı?",
+       "en": "Did he use to live here?"
+      }
+     }
+    ]
+   },
+   "items": [
+    {
+     "type": "build",
+     "text": "I used to live in Izmir.",
+     "native": {
+      "tr": "Eskiden İzmir'de yaşardım.",
+      "en": "I used to live in Izmir."
+     },
+     "extra": [
+      "use",
+      "living",
+      "am"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "When I was a child, I ___ ride a bike every day.",
+     "native": {
+      "tr": "Çocukken her gün bisiklete binerdim.",
+      "en": "When I was a child, I used to ride a bike every day."
+     },
+     "options": [
+      "used to",
+      "use to",
+      "am used to"
+     ],
+     "answer": 0
+    },
+    {
+     "type": "build",
+     "text": "She used to play the piano.",
+     "native": {
+      "tr": "Eskiden piyano çalardı.",
+      "en": "She used to play the piano."
+     },
+     "extra": [
+      "uses",
+      "playing",
+      "is"
+     ],
+     "alt": []
+    },
+    {
+     "type": "build",
+     "text": "We did not use to have a car.",
+     "native": {
+      "tr": "Eskiden arabamız yoktu.",
+      "en": "We did not use to have a car."
+     },
+     "extra": [
+      "used",
+      "uses",
+      "are"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "I did not ___ like fish, but now I love it.",
+     "native": {
+      "tr": "Eskiden balığı sevmezdim ama şimdi bayılıyorum.",
+      "en": "I did not use to like fish, but now I love it."
+     },
+     "options": [
+      "used to",
+      "use to",
+      "using to"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "build",
+     "text": "Did you use to smoke?",
+     "native": {
+      "tr": "Eskiden sigara içer miydin?",
+      "en": "Did you use to smoke?"
+     },
+     "extra": [
+      "used",
+      "are",
+      "do"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "There ___ be a cinema here.",
+     "native": {
+      "tr": "Burada eskiden bir sinema vardı.",
+      "en": "There used to be a cinema here."
+     },
+     "options": [
+      "use to",
+      "is used to",
+      "used to"
+     ],
+     "answer": 2
+    },
+    {
+     "type": "build",
+     "text": "He used to walk to school.",
+     "native": {
+      "tr": "Eskiden okula yürüyerek giderdi.",
+      "en": "He used to walk to school."
+     },
+     "extra": [
+      "walking",
+      "uses",
+      "is"
+     ],
+     "alt": []
+    },
+    {
+     "type": "build",
+     "text": "They used to be good friends.",
+     "native": {
+      "tr": "Eskiden iyi arkadaştılar.",
+      "en": "They used to be good friends."
+     },
+     "extra": [
+      "use",
+      "are",
+      "been"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "___ you use to live near the sea?",
+     "native": {
+      "tr": "Eskiden denize yakın mı yaşardın?",
+      "en": "Did you use to live near the sea?"
+     },
+     "options": [
+      "Do",
+      "Were",
+      "Are",
+      "Did"
+     ],
+     "answer": 3
+    },
+    {
+     "type": "build",
+     "text": "My grandfather used to tell us stories.",
+     "native": {
+      "tr": "Büyükbabam bize eskiden hikaye anlatırdı.",
+      "en": "My grandfather used to tell us stories."
+     },
+     "extra": [
+      "use",
+      "tells",
+      "told"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "He ___ be shy, but he is confident now.",
+     "native": {
+      "tr": "Eskiden utangaçtı ama şimdi kendinden emin.",
+      "en": "He used to be shy, but he is confident now."
+     },
+     "options": [
+      "uses to",
+      "used to",
+      "is use to"
+     ],
+     "answer": 1
+    }
+   ]
+  },
+  {
+   "id": "gerund-infinitive",
+   "level": "B1",
+   "title": {
+    "tr": "-ing mi, to mu? enjoy doing, want to do",
+    "en": "Gerund or infinitive"
+   },
+   "tip": {
+    "tr": "Bazı fiillerden sonra -ing (enjoy reading), bazılarından sonra to + fiil (want to learn) gelir.",
+    "en": "Some verbs take -ing (enjoy reading), others take to + verb (want to learn)."
+   },
+   "learn": {
+    "explain": {
+     "tr": "Fiilden sonra gelen ikinci fiilin biçimi, ilk fiile bağlıdır.\n-ing alanlar: enjoy, avoid, finish, stop. I enjoy reading.\nto alanlar: want, decide, hope, promise. She wants to learn.\nEdattan sonra da -ing gelir: good at swimming. Sık hata: I enjoy to read. demek; enjoy ile -ing kullanılır.",
+     "en": "The form of the second verb depends on the first verb.\nVerbs with -ing: enjoy, avoid, finish, stop. I enjoy reading.\nVerbs with to: want, decide, hope, promise. She wants to learn.\nAfter a preposition we also use -ing: good at swimming. Common mistake: I enjoy to read. Say I enjoy reading."
+    },
+    "examples": [
+     {
+      "text": "I like cooking dinner.",
+      "native": {
+       "tr": "Akşam yemeği pişirmeyi severim.",
+       "en": "I like cooking dinner."
+      }
+     },
+     {
+      "text": "He wants to buy a car.",
+      "native": {
+       "tr": "O bir araba almak istiyor.",
+       "en": "He wants to buy a car."
+      }
+     },
+     {
+      "text": "We finished eating at nine.",
+      "native": {
+       "tr": "Dokuzda yemeği bitirdik.",
+       "en": "We finished eating at nine."
+      }
+     },
+     {
+      "text": "They plan to travel next year.",
+      "native": {
+       "tr": "Gelecek yıl seyahat etmeyi planlıyorlar.",
+       "en": "They plan to travel next year."
+      }
+     }
+    ]
+   },
+   "items": [
+    {
+     "type": "build",
+     "text": "I enjoy reading books.",
+     "native": {
+      "tr": "Kitap okumaktan hoşlanırım.",
+      "en": "I enjoy reading books."
+     },
+     "extra": [
+      "read",
+      "to",
+      "reads"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "I enjoy ___ to music.",
+     "native": {
+      "tr": "Müzik dinlemekten hoşlanırım.",
+      "en": "I enjoy listening to music."
+     },
+     "options": [
+      "listen",
+      "listening",
+      "to listen"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "build",
+     "text": "She wants to learn French.",
+     "native": {
+      "tr": "O Fransızca öğrenmek istiyor.",
+      "en": "She wants to learn French."
+     },
+     "extra": [
+      "learning",
+      "wanting",
+      "learns"
+     ],
+     "alt": []
+    },
+    {
+     "type": "build",
+     "text": "We decided to stay at home.",
+     "native": {
+      "tr": "Evde kalmaya karar verdik.",
+      "en": "We decided to stay at home."
+     },
+     "extra": [
+      "staying",
+      "decide",
+      "stays"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "She decided ___ a new job.",
+     "native": {
+      "tr": "Yeni bir iş bulmaya karar verdi.",
+      "en": "She decided to find a new job."
+     },
+     "options": [
+      "to find",
+      "finding",
+      "find"
+     ],
+     "answer": 0
+    },
+    {
+     "type": "build",
+     "text": "He avoids eating sweets.",
+     "native": {
+      "tr": "Tatlı yemekten kaçınır.",
+      "en": "He avoids eating sweets."
+     },
+     "extra": [
+      "eat",
+      "to",
+      "eats"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "He is afraid of ___ alone.",
+     "native": {
+      "tr": "Yalnız gitmekten korkuyor.",
+      "en": "He is afraid of going alone."
+     },
+     "options": [
+      "to go",
+      "go",
+      "going"
+     ],
+     "answer": 2
+    },
+    {
+     "type": "build",
+     "text": "I hope to see you soon.",
+     "native": {
+      "tr": "Seni yakında görmeyi umuyorum.",
+      "en": "I hope to see you soon."
+     },
+     "extra": [
+      "seeing",
+      "hopes",
+      "saw"
+     ],
+     "alt": []
+    },
+    {
+     "type": "build",
+     "text": "My brother is good at swimming.",
+     "native": {
+      "tr": "Erkek kardeşim yüzmede iyidir.",
+      "en": "My brother is good at swimming."
+     },
+     "extra": [
+      "swim",
+      "to",
+      "swims"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "I promise ___ you tomorrow.",
+     "native": {
+      "tr": "Yarın seni arayacağıma söz veriyorum.",
+      "en": "I promise to call you tomorrow."
+     },
+     "options": [
+      "calling",
+      "call",
+      "to call"
+     ],
+     "answer": 2
+    },
+    {
+     "type": "build",
+     "text": "I am learning to drive.",
+     "native": {
+      "tr": "Araba kullanmayı öğreniyorum.",
+      "en": "I am learning to drive."
+     },
+     "extra": [
+      "driving",
+      "learn",
+      "drives"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Stop ___! The baby is sleeping.",
+     "native": {
+      "tr": "Bağırmayı kes! Bebek uyuyor.",
+      "en": "Stop shouting! The baby is sleeping."
+     },
+     "options": [
+      "to shout",
+      "shout",
+      "shouts",
+      "shouting"
+     ],
+     "answer": 3
+    }
+   ]
+  },
+  {
    "id": "relative-clauses",
    "title": {
     "tr": "who / which / that / where"
@@ -4316,6 +6069,442 @@
      }
     ]
    }
+  },
+  {
+   "id": "modal-deduction",
+   "level": "B2",
+   "title": {
+    "tr": "must be, might be, cannot be",
+    "en": "Deduction: must, might, cannot"
+   },
+   "tip": {
+    "tr": "Bir şeyden eminsen must be, ihtimal varsa might be, imkansızsa cannot be kullan.",
+    "en": "Use must be when you are sure, might be when it is possible, cannot be when it is impossible."
+   },
+   "learn": {
+    "explain": {
+     "tr": "Elimizdeki ipuçlarına bakarak tahmin yürütürüz.\nÇok eminsek: He must be tired. Mümkünse: She might be at home. İmkansızsa: It cannot be true.\nGeçmiş için: must have + V3: It must have been a mistake.\nSık hata: Türkçedeki -mez olmalı gibi must not be kullanmak. İmkansızlık için cannot be denir.",
+     "en": "We guess using clues.\nVery sure: He must be tired. Possible: She might be at home. Impossible: It cannot be true.\nFor the past use must have + V3: It must have been a mistake.\nCommon mistake: must not be for impossible things. Say cannot be."
+    },
+    "examples": [
+     {
+      "text": "You must be hungry.",
+      "native": {
+       "tr": "Aç olmalısın.",
+       "en": "You must be hungry."
+      }
+     },
+     {
+      "text": "She might come later.",
+      "native": {
+       "tr": "Daha sonra gelebilir.",
+       "en": "She might come later."
+      }
+     },
+     {
+      "text": "That cannot be his car.",
+      "native": {
+       "tr": "Bu onun arabası olamaz.",
+       "en": "That cannot be his car."
+      }
+     },
+     {
+      "text": "They must have left early.",
+      "native": {
+       "tr": "Erken ayrılmış olmalılar.",
+       "en": "They must have left early."
+      }
+     }
+    ]
+   },
+   "items": [
+    {
+     "type": "build",
+     "text": "He must be very tired.",
+     "native": {
+      "tr": "O çok yorgun olmalı.",
+      "en": "He must be very tired."
+     },
+     "extra": [
+      "is",
+      "are",
+      "been"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "He has been working all day. He ___ be tired.",
+     "native": {
+      "tr": "Bütün gün çalıştı. Yorgun olmalı.",
+      "en": "He has been working all day. He must be tired."
+     },
+     "options": [
+      "must",
+      "cannot",
+      "might not"
+     ],
+     "answer": 0
+    },
+    {
+     "type": "build",
+     "text": "She cannot be at home now.",
+     "native": {
+      "tr": "Şu an evde olamaz.",
+      "en": "She cannot be at home now."
+     },
+     "extra": [
+      "is",
+      "are",
+      "been"
+     ],
+     "alt": []
+    },
+    {
+     "type": "build",
+     "text": "They might be late today.",
+     "native": {
+      "tr": "Bugün geç kalabilirler.",
+      "en": "They might be late today."
+     },
+     "extra": [
+      "is",
+      "are",
+      "been"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Ali is in my room, so he ___ be at school.",
+     "native": {
+      "tr": "Ali benim odamda, yani okulda olamaz.",
+      "en": "Ali is in my room, so he cannot be at school."
+     },
+     "options": [
+      "must",
+      "cannot",
+      "might"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "build",
+     "text": "It must have been a mistake.",
+     "native": {
+      "tr": "Bir hata olmuş olmalı.",
+      "en": "It must have been a mistake."
+     },
+     "extra": [
+      "be",
+      "is",
+      "has"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "I am not sure, but it ___ rain later.",
+     "native": {
+      "tr": "Emin değilim ama sonra yağmur yağabilir.",
+      "en": "I am not sure, but it might rain later."
+     },
+     "options": [
+      "must",
+      "cannot",
+      "might"
+     ],
+     "answer": 2
+    },
+    {
+     "type": "build",
+     "text": "She may not know the answer.",
+     "native": {
+      "tr": "Cevabı bilmiyor olabilir.",
+      "en": "She may not know the answer."
+     },
+     "extra": [
+      "knows",
+      "is",
+      "are"
+     ],
+     "alt": []
+    },
+    {
+     "type": "build",
+     "text": "That cannot be the right house.",
+     "native": {
+      "tr": "Bu doğru ev olamaz.",
+      "en": "That cannot be the right house."
+     },
+     "extra": [
+      "is",
+      "are",
+      "been"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "The street is wet. It ___ rained last night.",
+     "native": {
+      "tr": "Sokak ıslak. Dün gece yağmur yağmış olmalı.",
+      "en": "The street is wet. It must have rained last night."
+     },
+     "options": [
+      "must have",
+      "must",
+      "cannot"
+     ],
+     "answer": 0
+    },
+    {
+     "type": "build",
+     "text": "He could be waiting outside.",
+     "native": {
+      "tr": "Dışarıda bekliyor olabilir.",
+      "en": "He could be waiting outside."
+     },
+     "extra": [
+      "been",
+      "is",
+      "waits"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "He is not answering. He ___ be asleep.",
+     "native": {
+      "tr": "Cevap vermiyor. Uyuyor olabilir.",
+      "en": "He is not answering. He could be asleep."
+     },
+     "options": [
+      "could",
+      "cannot",
+      "must have"
+     ],
+     "answer": 0
+    }
+   ]
+  },
+  {
+   "id": "causative-have",
+   "level": "B2",
+   "title": {
+    "tr": "have something done",
+    "en": "have something done"
+   },
+   "tip": {
+    "tr": "Bir işi başkasına yaptırırken have + nesne + V3 kullanırız: I had my car repaired.",
+    "en": "To say someone else does a job for you, use have + object + V3: I had my car repaired."
+   },
+   "learn": {
+    "explain": {
+     "tr": "Bir işi kendimiz yapmayıp başkasına yaptırdığımızda kullanılır.\nYapı: have / has / had + nesne + V3. She has her hair cut every month.\nZamanı have fiili gösterir: I had my phone fixed. We are having the house painted.\nSık hata: I cut my hair. demek; bu kendi saçını kendin kestin anlamına gelir. Kuaförde kestirdiysen I had my hair cut. de.",
+     "en": "Use it when someone else does a job for you.\nForm: have / has / had + object + V3. She has her hair cut every month.\nThe tense shows in have: I had my phone fixed. We are having the house painted.\nCommon mistake: I cut my hair. means you did it yourself. At the hairdresser say I had my hair cut."
+    },
+    "examples": [
+     {
+      "text": "I had my hair cut yesterday.",
+      "native": {
+       "tr": "Dün saçımı kestirdim.",
+       "en": "I had my hair cut yesterday."
+      }
+     },
+     {
+      "text": "She is having her house cleaned.",
+      "native": {
+       "tr": "Evini temizlettiriyor.",
+       "en": "She is having her house cleaned."
+      }
+     },
+     {
+      "text": "We had our photos taken.",
+      "native": {
+       "tr": "Fotoğraflarımızı çektirdik.",
+       "en": "We had our photos taken."
+      }
+     },
+     {
+      "text": "He has his shirts ironed.",
+      "native": {
+       "tr": "Gömleklerini ütületiyor.",
+       "en": "He has his shirts ironed."
+      }
+     }
+    ]
+   },
+   "items": [
+    {
+     "type": "build",
+     "text": "I had my car repaired.",
+     "native": {
+      "tr": "Arabamı tamir ettirdim.",
+      "en": "I had my car repaired."
+     },
+     "extra": [
+      "repair",
+      "repairing",
+      "did"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "I had my teeth ___ yesterday.",
+     "native": {
+      "tr": "Dün dişlerimi temizlettim.",
+      "en": "I had my teeth cleaned yesterday."
+     },
+     "options": [
+      "clean",
+      "cleaned",
+      "cleaning"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "build",
+     "text": "She has her hair cut every month.",
+     "native": {
+      "tr": "Her ay saçını kestirir.",
+      "en": "She has her hair cut every month."
+     },
+     "extra": [
+      "cuts",
+      "cutting",
+      "does"
+     ],
+     "alt": []
+    },
+    {
+     "type": "build",
+     "text": "We are having the house painted.",
+     "native": {
+      "tr": "Evi boyatıyoruz.",
+      "en": "We are having the house painted."
+     },
+     "extra": [
+      "paint",
+      "paints",
+      "do"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "We are ___ our kitchen painted.",
+     "native": {
+      "tr": "Mutfağımızı boyatıyoruz.",
+      "en": "We are having our kitchen painted."
+     },
+     "options": [
+      "making",
+      "doing",
+      "having"
+     ],
+     "answer": 2
+    },
+    {
+     "type": "build",
+     "text": "He had his phone fixed yesterday.",
+     "native": {
+      "tr": "Dün telefonunu tamir ettirdi.",
+      "en": "He had his phone fixed yesterday."
+     },
+     "extra": [
+      "fix",
+      "fixing",
+      "did"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "She has her nails ___ every week.",
+     "native": {
+      "tr": "Her hafta tırnaklarını yaptırır.",
+      "en": "She has her nails done every week."
+     },
+     "options": [
+      "done",
+      "do",
+      "doing"
+     ],
+     "answer": 0
+    },
+    {
+     "type": "build",
+     "text": "I need to have my eyes tested.",
+     "native": {
+      "tr": "Gözlerimi test ettirmem gerek.",
+      "en": "I need to have my eyes tested."
+     },
+     "extra": [
+      "test",
+      "testing",
+      "do"
+     ],
+     "alt": []
+    },
+    {
+     "type": "build",
+     "text": "They had a new door installed.",
+     "native": {
+      "tr": "Yeni bir kapı taktırdılar.",
+      "en": "They had a new door installed."
+     },
+     "extra": [
+      "install",
+      "installing",
+      "did"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "He ___ his car washed on Sundays.",
+     "native": {
+      "tr": "Pazar günleri arabasını yıkatır.",
+      "en": "He has his car washed on Sundays."
+     },
+     "options": [
+      "does",
+      "is",
+      "has"
+     ],
+     "answer": 2
+    },
+    {
+     "type": "build",
+     "text": "Did you have your hair cut?",
+     "native": {
+      "tr": "Saçını kestirdin mi?",
+      "en": "Did you have your hair cut?"
+     },
+     "extra": [
+      "cuts",
+      "cutting",
+      "does"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "I want to ___ my passport renewed.",
+     "native": {
+      "tr": "Pasaportumu yenilettirmek istiyorum.",
+      "en": "I want to have my passport renewed."
+     },
+     "options": [
+      "do",
+      "have",
+      "make"
+     ],
+     "answer": 1
+    }
+   ]
   }
  ]
 }

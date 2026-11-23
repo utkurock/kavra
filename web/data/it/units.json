@@ -1,6 +1,856 @@
 {
  "units": [
   {
+   "id": "saluti-presentazioni",
+   "level": "A1",
+   "basics": true,
+   "title": {
+    "tr": "Selamlaşma ve tanışma: ciao, mi chiamo",
+    "en": "Greetings and introductions: ciao, mi chiamo"
+   },
+   "tip": {
+    "tr": "Adını söylemek için 'Mi chiamo ...' dersin. Sormak için: Come ti chiami? Örnek: Mi chiamo Anna.",
+    "en": "To say your name use 'Mi chiamo ...'. To ask: Come ti chiami? Example: Mi chiamo Anna."
+   },
+   "learn": {
+    "explain": {
+     "tr": "Gün içinde: buongiorno (sabah/gün), buonasera (akşam), ciao (arkadaşlara). Veda: arrivederci.\nAdını 'Mi chiamo ...' ile söylersin, 'Come ti chiami?' ile sorarsın. Nazik hitapta 'Come si chiama?' denir.\nHal hatır: Come stai? — Sto bene, grazie.\nSık hata: 'Io chiamo Anna' demek; doğrusu 'Mi chiamo Anna' (chiamarsi dönüşlü fiildir).",
+     "en": "During the day: buongiorno (morning/day), buonasera (evening), ciao (to friends). Goodbye: arrivederci.\nYou say your name with 'Mi chiamo ...' and ask with 'Come ti chiami?'. Formally: 'Come si chiama?'.\nHow are you: Come stai? — Sto bene, grazie.\nCommon mistake: 'Io chiamo Anna'; correct is 'Mi chiamo Anna' (chiamarsi is reflexive)."
+    },
+    "examples": [
+     {
+      "text": "Buonasera a tutti.",
+      "native": {
+       "tr": "Herkese iyi akşamlar.",
+       "en": "Good evening, everyone."
+      }
+     },
+     {
+      "text": "Piacere, sono Marco.",
+      "native": {
+       "tr": "Memnun oldum, ben Marco.",
+       "en": "Nice to meet you, I'm Marco."
+      }
+     },
+     {
+      "text": "Come si chiama lei?",
+      "native": {
+       "tr": "Sizin adınız ne?",
+       "en": "What is your name? (formal)"
+      }
+     },
+     {
+      "text": "Arrivederci e a domani.",
+      "native": {
+       "tr": "Hoşça kalın ve yarın görüşürüz.",
+       "en": "Goodbye and see you tomorrow."
+      }
+     }
+    ]
+   },
+   "items": [
+    {
+     "type": "build",
+     "text": "Buongiorno signora Rossi.",
+     "native": {
+      "tr": "Günaydın Bayan Rossi.",
+      "en": "Good morning, Mrs Rossi."
+     },
+     "extra": [
+      "mi",
+      "chiamo"
+     ],
+     "alt": []
+    },
+    {
+     "type": "build",
+     "text": "Come ti chiami?",
+     "native": {
+      "tr": "Adın ne?",
+      "en": "What is your name?"
+     },
+     "extra": [
+      "chiamo",
+      "stai"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Mi ___ Marco.",
+     "native": {
+      "tr": "Adım Marco.",
+      "en": "My name is Marco."
+     },
+     "options": [
+      "chiami",
+      "chiamo",
+      "chiama"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "build",
+     "text": "Mi chiamo Anna e sono italiana.",
+     "native": {
+      "tr": "Adım Anna ve İtalyanım.",
+      "en": "My name is Anna and I am Italian."
+     },
+     "extra": [
+      "chiami",
+      "sei"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "___ stai?",
+     "native": {
+      "tr": "Nasılsın?",
+      "en": "How are you?"
+     },
+     "options": [
+      "Come",
+      "Quanto",
+      "Dove"
+     ],
+     "answer": 0
+    },
+    {
+     "type": "build",
+     "text": "Piacere di conoscerti.",
+     "native": {
+      "tr": "Tanıştığımıza memnun oldum.",
+      "en": "Nice to meet you."
+     },
+     "extra": [
+      "conoscere",
+      "incontro"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Lei ___ chiama Giulia.",
+     "native": {
+      "tr": "Onun adı Giulia.",
+      "en": "Her name is Giulia."
+     },
+     "options": [
+      "ti",
+      "mi",
+      "si"
+     ],
+     "answer": 2
+    },
+    {
+     "type": "build",
+     "text": "Come stai oggi?",
+     "native": {
+      "tr": "Bugün nasılsın?",
+      "en": "How are you today?"
+     },
+     "extra": [
+      "sto",
+      "bene"
+     ],
+     "alt": [
+      "Oggi come stai?"
+     ]
+    },
+    {
+     "type": "choice",
+     "text": "Grazie mille! — ___.",
+     "native": {
+      "tr": "Çok teşekkürler! — Rica ederim.",
+      "en": "Thanks a lot! — You're welcome."
+     },
+     "options": [
+      "Scusi",
+      "Prego",
+      "Buonanotte"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "build",
+     "text": "Sto bene grazie e tu?",
+     "native": {
+      "tr": "İyiyim teşekkürler, ya sen?",
+      "en": "I'm fine thanks, and you?"
+     },
+     "extra": [
+      "stai",
+      "come"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "___ dove sei? Sono di Roma.",
+     "native": {
+      "tr": "Nerelisin? Roma'danım.",
+      "en": "Where are you from? I'm from Rome."
+     },
+     "options": [
+      "Chi",
+      "Come",
+      "Di"
+     ],
+     "answer": 2
+    },
+    {
+     "type": "build",
+     "text": "Di dove sei?",
+     "native": {
+      "tr": "Nerelisin?",
+      "en": "Where are you from?"
+     },
+     "extra": [
+      "sono",
+      "nome"
+     ],
+     "alt": []
+    }
+   ]
+  },
+  {
+   "id": "numeri-eta",
+   "level": "A1",
+   "basics": true,
+   "title": {
+    "tr": "Sayılar ve yaş: uno, due, tre... ho venti anni",
+    "en": "Numbers and age: uno, due, tre... ho venti anni"
+   },
+   "tip": {
+    "tr": "Yaşı 'avere' ile söylersin: Ho venti anni. Sormak için: Quanti anni hai?",
+    "en": "You say age with 'avere': Ho venti anni. To ask: Quanti anni hai?"
+   },
+   "learn": {
+    "explain": {
+     "tr": "Sayılar: 1 uno, 2 due, 3 tre, 4 quattro, 5 cinque, 6 sei, 7 sette, 8 otto, 9 nove, 10 dieci. 11 undici, 12 dodici, 20 venti, 30 trenta.\nİtalyanca'da yaş 'sahip olmak' fiiliyle söylenir: Ho venti anni (yirmi yaşındayım).\nSoru: Quanti anni hai? Üçüncü kişi: Ha dodici anni.\nSık hata: 'Sono venti anni' demek; doğrusu 'Ho venti anni'.",
+     "en": "Numbers: 1 uno, 2 due, 3 tre, 4 quattro, 5 cinque, 6 sei, 7 sette, 8 otto, 9 nove, 10 dieci. 11 undici, 12 dodici, 20 venti, 30 trenta.\nIn Italian age uses the verb 'to have': Ho venti anni (I have twenty years).\nQuestion: Quanti anni hai? Third person: Ha dodici anni.\nCommon mistake: 'Sono venti anni'; correct is 'Ho venti anni'."
+    },
+    "examples": [
+     {
+      "text": "Ho trentacinque anni.",
+      "native": {
+       "tr": "Otuz beş yaşındayım.",
+       "en": "I am thirty-five years old."
+      }
+     },
+     {
+      "text": "Mia figlia ha sei anni.",
+      "native": {
+       "tr": "Kızım altı yaşında.",
+       "en": "My daughter is six years old."
+      }
+     },
+     {
+      "text": "Ci sono dodici studenti.",
+      "native": {
+       "tr": "On iki öğrenci var.",
+       "en": "There are twelve students."
+      }
+     },
+     {
+      "text": "Quanti anni ha tuo padre?",
+      "native": {
+       "tr": "Baban kaç yaşında?",
+       "en": "How old is your father?"
+      }
+     }
+    ]
+   },
+   "items": [
+    {
+     "type": "build",
+     "text": "Ho venti anni.",
+     "native": {
+      "tr": "Yirmi yaşındayım.",
+      "en": "I am twenty years old."
+     },
+     "extra": [
+      "sono",
+      "il"
+     ],
+     "alt": []
+    },
+    {
+     "type": "build",
+     "text": "Quanti anni hai?",
+     "native": {
+      "tr": "Kaç yaşındasın?",
+      "en": "How old are you?"
+     },
+     "extra": [
+      "sei",
+      "quanto"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Mia nonna ___ settant'anni.",
+     "native": {
+      "tr": "Büyükannem yetmiş yaşında.",
+      "en": "My grandmother is seventy years old."
+     },
+     "options": [
+      "è",
+      "ha",
+      "sono"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "build",
+     "text": "Mio fratello ha dodici anni.",
+     "native": {
+      "tr": "Erkek kardeşim on iki yaşında.",
+      "en": "My brother is twelve years old."
+     },
+     "extra": [
+      "è",
+      "sono"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Dopo sette viene ___.",
+     "native": {
+      "tr": "Yediden sonra sekiz gelir.",
+      "en": "After seven comes eight."
+     },
+     "options": [
+      "otto",
+      "nove",
+      "sei"
+     ],
+     "answer": 0
+    },
+    {
+     "type": "build",
+     "text": "Ho due sorelle e un fratello.",
+     "native": {
+      "tr": "İki kız kardeşim ve bir erkek kardeşim var.",
+      "en": "I have two sisters and a brother."
+     },
+     "extra": [
+      "sono",
+      "hanno"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Io ___ ventidue anni.",
+     "native": {
+      "tr": "Yirmi iki yaşındayım.",
+      "en": "I am twenty-two years old."
+     },
+     "options": [
+      "ha",
+      "sono",
+      "ho"
+     ],
+     "answer": 2
+    },
+    {
+     "type": "build",
+     "text": "Quanti anni ha tua madre?",
+     "native": {
+      "tr": "Annen kaç yaşında?",
+      "en": "How old is your mother?"
+     },
+     "extra": [
+      "hai",
+      "è"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Due più tre fa ___.",
+     "native": {
+      "tr": "İki artı üç beş eder.",
+      "en": "Two plus three makes five."
+     },
+     "options": [
+      "quattro",
+      "cinque",
+      "sei"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "build",
+     "text": "Ci sono cinque mele sul tavolo.",
+     "native": {
+      "tr": "Masanın üstünde beş elma var.",
+      "en": "There are five apples on the table."
+     },
+     "extra": [
+      "è",
+      "sei"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Lei ___ trent'anni.",
+     "native": {
+      "tr": "O otuz yaşında.",
+      "en": "She is thirty years old."
+     },
+     "options": [
+      "ha",
+      "hai",
+      "ho"
+     ],
+     "answer": 0
+    },
+    {
+     "type": "build",
+     "text": "Ho dieci euro nel portafoglio.",
+     "native": {
+      "tr": "Cüzdanımda on avro var.",
+      "en": "I have ten euros in my wallet."
+     },
+     "extra": [
+      "sono",
+      "ha"
+     ],
+     "alt": []
+    }
+   ]
+  },
+  {
+   "id": "giorni-mesi-ora",
+   "level": "A1",
+   "basics": true,
+   "title": {
+    "tr": "Günler, aylar ve saat: lunedì, maggio, che ore sono?",
+    "en": "Days, months and time: lunedì, maggio, che ore sono?"
+   },
+   "tip": {
+    "tr": "Saati sormak: Che ore sono? Cevap: Sono le tre. Bir için: È l'una.",
+    "en": "Ask the time: Che ore sono? Answer: Sono le tre. For one o'clock: È l'una."
+   },
+   "learn": {
+    "explain": {
+     "tr": "Günler: lunedì, martedì, mercoledì, giovedì, venerdì, sabato, domenica. Aylar: gennaio, febbraio, marzo... dicembre. Hepsi küçük harfle yazılır.\nSaat: Sono le due, sono le tre e mezza (buçuk), sono le quattro e dieci.\nBir tanedir: È l'una (tekil).\nSık hata: 'Sono l'una' demek; doğrusu 'È l'una'.",
+     "en": "Days: lunedì, martedì, mercoledì, giovedì, venerdì, sabato, domenica. Months: gennaio, febbraio, marzo... dicembre. All are written in lowercase.\nTime: Sono le due, sono le tre e mezza (half past), sono le quattro e dieci.\nOne o'clock is singular: È l'una.\nCommon mistake: 'Sono l'una'; correct is 'È l'una'."
+    },
+    "examples": [
+     {
+      "text": "Domani è sabato.",
+      "native": {
+       "tr": "Yarın cumartesi.",
+       "en": "Tomorrow is Saturday."
+      }
+     },
+     {
+      "text": "Sono le otto e un quarto.",
+      "native": {
+       "tr": "Saat sekizi çeyrek geçiyor.",
+       "en": "It is a quarter past eight."
+      }
+     },
+     {
+      "text": "Il mio mese preferito è giugno.",
+      "native": {
+       "tr": "En sevdiğim ay haziran.",
+       "en": "My favourite month is June."
+      }
+     },
+     {
+      "text": "Che giorno è oggi?",
+      "native": {
+       "tr": "Bugün günlerden ne?",
+       "en": "What day is it today?"
+      }
+     }
+    ]
+   },
+   "items": [
+    {
+     "type": "build",
+     "text": "Che ore sono?",
+     "native": {
+      "tr": "Saat kaç?",
+      "en": "What time is it?"
+     },
+     "extra": [
+      "quando",
+      "è"
+     ],
+     "alt": []
+    },
+    {
+     "type": "build",
+     "text": "Sono le tre e mezza.",
+     "native": {
+      "tr": "Saat üç buçuk.",
+      "en": "It is half past three."
+     },
+     "extra": [
+      "è",
+      "l'una"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "___ le due.",
+     "native": {
+      "tr": "Saat iki.",
+      "en": "It is two o'clock."
+     },
+     "options": [
+      "Sono",
+      "È",
+      "Ho"
+     ],
+     "answer": 0
+    },
+    {
+     "type": "build",
+     "text": "Oggi è lunedì.",
+     "native": {
+      "tr": "Bugün pazartesi.",
+      "en": "Today is Monday."
+     },
+     "extra": [
+      "sono",
+      "le"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Dopo martedì viene ___.",
+     "native": {
+      "tr": "Salıdan sonra çarşamba gelir.",
+      "en": "After Tuesday comes Wednesday."
+     },
+     "options": [
+      "giovedì",
+      "mercoledì",
+      "lunedì"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "build",
+     "text": "Il mio compleanno è a maggio.",
+     "native": {
+      "tr": "Doğum günüm mayısta.",
+      "en": "My birthday is in May."
+     },
+     "extra": [
+      "sono",
+      "giorno"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Il sabato e la ___ sono il fine settimana.",
+     "native": {
+      "tr": "Cumartesi ve pazar hafta sonudur.",
+      "en": "Saturday and Sunday are the weekend."
+     },
+     "options": [
+      "venerdì",
+      "lunedì",
+      "domenica"
+     ],
+     "answer": 2
+    },
+    {
+     "type": "build",
+     "text": "A che ora mangiamo?",
+     "native": {
+      "tr": "Saat kaçta yemek yiyoruz?",
+      "en": "What time do we eat?"
+     },
+     "extra": [
+      "quando",
+      "ore"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "A che ___ arrivi?",
+     "native": {
+      "tr": "Saat kaçta geliyorsun?",
+      "en": "What time do you arrive?"
+     },
+     "options": [
+      "giorno",
+      "ora",
+      "mese"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "build",
+     "text": "La lezione inizia alle nove.",
+     "native": {
+      "tr": "Ders dokuzda başlıyor.",
+      "en": "The lesson starts at nine."
+     },
+     "extra": [
+      "sono",
+      "le"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Dicembre è l'ultimo ___ dell'anno.",
+     "native": {
+      "tr": "Aralık yılın son ayıdır.",
+      "en": "December is the last month of the year."
+     },
+     "options": [
+      "giorno",
+      "anno",
+      "mese"
+     ],
+     "answer": 2
+    },
+    {
+     "type": "build",
+     "text": "È l'una e dieci.",
+     "native": {
+      "tr": "Saat bir on.",
+      "en": "It is ten past one."
+     },
+     "extra": [
+      "sono",
+      "le"
+     ],
+     "alt": []
+    }
+   ]
+  },
+  {
+   "id": "famiglia-descrizioni",
+   "level": "A1",
+   "basics": true,
+   "title": {
+    "tr": "Aile ve kişileri tarif etme: mia madre è alta",
+    "en": "Family and describing people: mia madre è alta"
+   },
+   "tip": {
+    "tr": "Aile üyelerinden önce mio/mia gelir: mia madre, mio padre. Sıfatlar cinsiyete uyar: alto, alta.",
+    "en": "Family members take mio/mia: mia madre, mio padre. Adjectives agree: alto, alta."
+   },
+   "learn": {
+    "explain": {
+     "tr": "Aile: madre, padre, fratello, sorella, nonno, nonna, zio, zia, cugino, cugina.\nTarif için essere ve avere kullanılır: È alta. Ha i capelli neri.\nSıfat cinsiyete ve sayıya uyar: alto/alta/alti/alte; -e ile bitenler sadece sayıya uyar: grande/grandi.\nSık hata: 'Mia sorella è alto'; doğrusu 'alta'.",
+     "en": "Family: madre, padre, fratello, sorella, nonno, nonna, zio, zia, cugino, cugina.\nTo describe, use essere and avere: È alta. Ha i capelli neri.\nAdjectives agree in gender and number: alto/alta/alti/alte; adjectives in -e just change number: grande/grandi.\nCommon mistake: 'Mia sorella è alto'; correct is 'alta'."
+    },
+    "examples": [
+     {
+      "text": "Mio zio è molto simpatico.",
+      "native": {
+       "tr": "Amcam/dayım çok sempatik.",
+       "en": "My uncle is very nice."
+      }
+     },
+     {
+      "text": "Mia cugina ha gli occhi verdi.",
+      "native": {
+       "tr": "Kuzenimin gözleri yeşil.",
+       "en": "My cousin has green eyes."
+      }
+     },
+     {
+      "text": "Il mio nonno è anziano.",
+      "native": {
+       "tr": "Büyükbabam yaşlı.",
+       "en": "My grandfather is elderly."
+      }
+     },
+     {
+      "text": "Sua sorella è bionda.",
+      "native": {
+       "tr": "Onun kız kardeşi sarışın.",
+       "en": "His sister is blonde."
+      }
+     }
+    ]
+   },
+   "items": [
+    {
+     "type": "build",
+     "text": "Mia madre è molto alta.",
+     "native": {
+      "tr": "Annem çok uzun boylu.",
+      "en": "My mother is very tall."
+     },
+     "extra": [
+      "alto",
+      "sono"
+     ],
+     "alt": []
+    },
+    {
+     "type": "build",
+     "text": "Mio padre ha i capelli neri.",
+     "native": {
+      "tr": "Babamın saçları siyah.",
+      "en": "My father has black hair."
+     },
+     "extra": [
+      "nero",
+      "è"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Mia sorella è ___.",
+     "native": {
+      "tr": "Kız kardeşim uzun boylu.",
+      "en": "My sister is tall."
+     },
+     "options": [
+      "alto",
+      "alta",
+      "alti"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "build",
+     "text": "Ho una sorella piccola.",
+     "native": {
+      "tr": "Küçük bir kız kardeşim var.",
+      "en": "I have a little sister."
+     },
+     "extra": [
+      "un",
+      "piccolo"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Mio zio ha i capelli ___.",
+     "native": {
+      "tr": "Amcamın saçları uzun.",
+      "en": "My uncle has long hair."
+     },
+     "options": [
+      "lunghi",
+      "lunga",
+      "lungo"
+     ],
+     "answer": 0
+    },
+    {
+     "type": "build",
+     "text": "Mio fratello è simpatico.",
+     "native": {
+      "tr": "Erkek kardeşim sempatik.",
+      "en": "My brother is nice."
+     },
+     "extra": [
+      "simpatica",
+      "sono"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Il padre di mio padre è mio ___.",
+     "native": {
+      "tr": "Babamın babası benim dedemdir.",
+      "en": "My father's father is my grandfather."
+     },
+     "options": [
+      "zio",
+      "fratello",
+      "nonno"
+     ],
+     "answer": 2
+    },
+    {
+     "type": "build",
+     "text": "Com'è tua nonna?",
+     "native": {
+      "tr": "Büyükannen nasıl biri?",
+      "en": "What is your grandmother like?"
+     },
+     "extra": [
+      "sei",
+      "ha"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "I miei fratelli sono ___.",
+     "native": {
+      "tr": "Erkek kardeşlerim kısa boylu.",
+      "en": "My brothers are short."
+     },
+     "options": [
+      "basso",
+      "bassi",
+      "bassa"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "build",
+     "text": "I miei nonni sono molto simpatici.",
+     "native": {
+      "tr": "Büyükanne ve büyükbabam çok sempatik.",
+      "en": "My grandparents are very nice."
+     },
+     "extra": [
+      "simpatico",
+      "è"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "La mamma di mia mamma è mia ___.",
+     "native": {
+      "tr": "Annemin annesi benim ninemdir.",
+      "en": "My mother's mother is my grandmother."
+     },
+     "options": [
+      "nonna",
+      "zia",
+      "cugina"
+     ],
+     "answer": 0
+    },
+    {
+     "type": "build",
+     "text": "Lei ha gli occhi azzurri.",
+     "native": {
+      "tr": "Onun gözleri mavi.",
+      "en": "She has blue eyes."
+     },
+     "extra": [
+      "azzurro",
+      "è"
+     ],
+     "alt": []
+    }
+   ]
+  },
+  {
    "id": "essere",
    "level": "A1",
    "title": {
@@ -2117,6 +2967,428 @@
    }
   },
   {
+   "id": "piacere",
+   "level": "A2",
+   "title": {
+    "tr": "Piacere: mi piace, mi piacciono",
+    "en": "Liking things: mi piace, mi piacciono"
+   },
+   "tip": {
+    "tr": "Piacere'de beğenilen şey özne olur: Mi piace la pizza (bana pizza hoş gelir). Çoğulda: Mi piacciono i gatti.",
+    "en": "With piacere the thing liked is the subject: Mi piace la pizza. Plural: Mi piacciono i gatti."
+   },
+   "learn": {
+    "explain": {
+     "tr": "Piacere 'hoşa gitmek' demektir. Beğenen kişi mi, ti, gli/le, ci, vi, gli ile gösterilir.\nBeğenilen tekil veya fiil ise 'piace', çoğul ise 'piacciono': Mi piace cantare. Mi piacciono le scarpe.\nKişi isimle: A Marco piace il calcio.\nSık hata: 'Io piaccio la pizza' demek; doğrusu 'Mi piace la pizza'.",
+     "en": "Piacere means 'to be pleasing'. The person who likes is shown by mi, ti, gli/le, ci, vi, gli.\nUse 'piace' for a singular thing or a verb, 'piacciono' for plurals: Mi piace cantare. Mi piacciono le scarpe.\nWith a name: A Marco piace il calcio.\nCommon mistake: 'Io piaccio la pizza'; correct is 'Mi piace la pizza'."
+    },
+    "examples": [
+     {
+      "text": "Ti piace il caffè?",
+      "native": {
+       "tr": "Kahve hoşuna gider mi?",
+       "en": "Do you like coffee?"
+      }
+     },
+     {
+      "text": "Ai miei amici piace viaggiare.",
+      "native": {
+       "tr": "Arkadaşlarım seyahat etmeyi sever.",
+       "en": "My friends like to travel."
+      }
+     },
+     {
+      "text": "Non mi piacciono i film horror.",
+      "native": {
+       "tr": "Korku filmlerini sevmem.",
+       "en": "I don't like horror films."
+      }
+     },
+     {
+      "text": "A Marta piace la musica.",
+      "native": {
+       "tr": "Marta müziği sever.",
+       "en": "Marta likes music."
+      }
+     }
+    ]
+   },
+   "items": [
+    {
+     "type": "build",
+     "text": "Mi piace la pizza.",
+     "native": {
+      "tr": "Pizzayı severim.",
+      "en": "I like pizza."
+     },
+     "extra": [
+      "piacciono",
+      "io"
+     ],
+     "alt": []
+    },
+    {
+     "type": "build",
+     "text": "Mi piacciono i gatti.",
+     "native": {
+      "tr": "Kedileri severim.",
+      "en": "I like cats."
+     },
+     "extra": [
+      "piace",
+      "gli"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "A me ___ la musica.",
+     "native": {
+      "tr": "Ben müziği severim.",
+      "en": "I like music."
+     },
+     "options": [
+      "piaccio",
+      "piace",
+      "piacciono"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "build",
+     "text": "Ti piace il caffè?",
+     "native": {
+      "tr": "Kahve hoşuna gider mi?",
+      "en": "Do you like coffee?"
+     },
+     "extra": [
+      "piacciono",
+      "tu"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Ti ___ i film italiani?",
+     "native": {
+      "tr": "İtalyan filmlerini seviyor musun?",
+      "en": "Do you like Italian films?"
+     },
+     "options": [
+      "piaci",
+      "piace",
+      "piacciono"
+     ],
+     "answer": 2
+    },
+    {
+     "type": "build",
+     "text": "A mia sorella piace ballare.",
+     "native": {
+      "tr": "Kız kardeşim dans etmeyi sever.",
+      "en": "My sister likes to dance."
+     },
+     "extra": [
+      "piacciono",
+      "mi"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Non gli ___ il pesce.",
+     "native": {
+      "tr": "Balığı sevmez.",
+      "en": "He doesn't like fish."
+     },
+     "options": [
+      "piace",
+      "piacciono",
+      "piacere"
+     ],
+     "answer": 0
+    },
+    {
+     "type": "build",
+     "text": "Non mi piacciono le verdure.",
+     "native": {
+      "tr": "Sebzeleri sevmem.",
+      "en": "I don't like vegetables."
+     },
+     "extra": [
+      "piace",
+      "ti"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Vi ___ questa città?",
+     "native": {
+      "tr": "Bu şehri sever misiniz?",
+      "en": "Do you like this city?"
+     },
+     "options": [
+      "piacciono",
+      "piacete",
+      "piace"
+     ],
+     "answer": 2
+    },
+    {
+     "type": "build",
+     "text": "Ci piace molto viaggiare.",
+     "native": {
+      "tr": "Seyahat etmeyi çok severiz.",
+      "en": "We really like to travel."
+     },
+     "extra": [
+      "piacciono",
+      "io"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Mi ___ le tue scarpe.",
+     "native": {
+      "tr": "Ayakkabılarını beğendim.",
+      "en": "I like your shoes."
+     },
+     "options": [
+      "piacciono",
+      "piace",
+      "piaccio"
+     ],
+     "answer": 0
+    },
+    {
+     "type": "build",
+     "text": "Ai bambini piace giocare.",
+     "native": {
+      "tr": "Çocuklar oynamayı sever.",
+      "en": "Children like to play."
+     },
+     "extra": [
+      "piacciono",
+      "mi"
+     ],
+     "alt": []
+    }
+   ]
+  },
+  {
+   "id": "possessivi",
+   "level": "A2",
+   "title": {
+    "tr": "Sahiplik: il mio, la tua, i suoi",
+    "en": "Possessives: il mio, la tua, i suoi"
+   },
+   "tip": {
+    "tr": "Sahiplik sözcüğü varlığa uyar: il mio libro, la mia casa, i miei amici. Tekil akraba adlarında artikel yok: mia madre.",
+    "en": "The possessive agrees with the thing: il mio libro, la mia casa, i miei amici. No article with singular relatives: mia madre."
+   },
+   "learn": {
+    "explain": {
+     "tr": "Mio, tuo, suo, nostro, vostro, loro: sahibe değil, sahip olunan şeyin cinsiyet ve sayısına uyar.\nGenelde artikel ile kullanılır: il mio telefono, la tua borsa, i suoi amici, le nostre chiavi.\nTekil akraba adlarında artikel düşer: mio padre, tua sorella. Ama 'i miei fratelli', 'la loro madre'.\nSık hata: 'mio madre'; doğrusu 'mia madre' ('il suo' erkek de kadın da sahip olabilir).",
+     "en": "Mio, tuo, suo, nostro, vostro, loro agree with the thing owned, not with the owner.\nThey usually take the article: il mio telefono, la tua borsa, i suoi amici, le nostre chiavi.\nWith singular relatives the article drops: mio padre, tua sorella. But 'i miei fratelli', 'la loro madre'.\nCommon mistake: 'mio madre'; correct is 'mia madre' ('il suo' can mean his or her)."
+    },
+    "examples": [
+     {
+      "text": "Il mio telefono è nuovo.",
+      "native": {
+       "tr": "Telefonum yeni.",
+       "en": "My phone is new."
+      }
+     },
+     {
+      "text": "La tua borsa è bellissima.",
+      "native": {
+       "tr": "Çantan çok güzel.",
+       "en": "Your bag is beautiful."
+      }
+     },
+     {
+      "text": "Tuo padre è gentile.",
+      "native": {
+       "tr": "Baban nazik.",
+       "en": "Your father is kind."
+      }
+     },
+     {
+      "text": "Le nostre chiavi sono qui.",
+      "native": {
+       "tr": "Anahtarlarımız burada.",
+       "en": "Our keys are here."
+      }
+     }
+    ]
+   },
+   "items": [
+    {
+     "type": "build",
+     "text": "Questa è la mia casa.",
+     "native": {
+      "tr": "Bu benim evim.",
+      "en": "This is my house."
+     },
+     "extra": [
+      "mio",
+      "tuo"
+     ],
+     "alt": []
+    },
+    {
+     "type": "build",
+     "text": "Dov'è il tuo telefono?",
+     "native": {
+      "tr": "Telefonun nerede?",
+      "en": "Where is your phone?"
+     },
+     "extra": [
+      "tua",
+      "dove"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Ho dimenticato ___ chiavi.",
+     "native": {
+      "tr": "Anahtarlarımı unuttum.",
+      "en": "I forgot my keys."
+     },
+     "options": [
+      "i miei",
+      "la mia",
+      "le mie"
+     ],
+     "answer": 2
+    },
+    {
+     "type": "build",
+     "text": "I miei amici abitano a Roma.",
+     "native": {
+      "tr": "Arkadaşlarım Roma'da oturuyor.",
+      "en": "My friends live in Rome."
+     },
+     "extra": [
+      "mie",
+      "sono"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "___ madre è medico.",
+     "native": {
+      "tr": "Annem doktor.",
+      "en": "My mother is a doctor."
+     },
+     "options": [
+      "La mia",
+      "Mia",
+      "Le mie"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "build",
+     "text": "Le mie scarpe sono nuove.",
+     "native": {
+      "tr": "Ayakkabılarım yeni.",
+      "en": "My shoes are new."
+     },
+     "extra": [
+      "mio",
+      "tue"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Questi sono i ___ libri.",
+     "native": {
+      "tr": "Bunlar senin kitapların.",
+      "en": "These are your books."
+     },
+     "options": [
+      "tue",
+      "tua",
+      "tuoi"
+     ],
+     "answer": 2
+    },
+    {
+     "type": "build",
+     "text": "Mia sorella lavora in banca.",
+     "native": {
+      "tr": "Kız kardeşim bankada çalışıyor.",
+      "en": "My sister works in a bank."
+     },
+     "extra": [
+      "la",
+      "mio"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Maria e ___ fidanzato.",
+     "native": {
+      "tr": "Maria ve erkek arkadaşı.",
+      "en": "Maria and her boyfriend."
+     },
+     "options": [
+      "il suo",
+      "la sua",
+      "i suoi"
+     ],
+     "answer": 0
+    },
+    {
+     "type": "build",
+     "text": "Quella è la loro macchina.",
+     "native": {
+      "tr": "Şu onların arabası.",
+      "en": "That is their car."
+     },
+     "extra": [
+      "suoi",
+      "miei"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Noi amiamo la ___ città.",
+     "native": {
+      "tr": "Şehrimizi seviyoruz.",
+      "en": "We love our city."
+     },
+     "options": [
+      "nostro",
+      "nostra",
+      "nostre"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "build",
+     "text": "Il suo cane è molto grande.",
+     "native": {
+      "tr": "Onun köpeği çok büyük.",
+      "en": "His dog is very big."
+     },
+     "extra": [
+      "sua",
+      "tua"
+     ],
+     "alt": []
+    }
+   ]
+  },
+  {
    "id": "imperfetto-passato",
    "level": "B1",
    "title": {
@@ -3433,6 +4705,428 @@
    }
   },
   {
+   "id": "comparativi",
+   "level": "B1",
+   "title": {
+    "tr": "Karşılaştırma: più di, meno di, il migliore",
+    "en": "Comparisons: più di, meno di, il migliore"
+   },
+   "tip": {
+    "tr": "İki şeyi karşılaştırırken 'più ... di' ve 'meno ... di' kullanılır: Marco è più alto di Luca. İki sıfat/fiil arasında 'che' gelir.",
+    "en": "To compare two things use 'più ... di' and 'meno ... di': Marco è più alto di Luca. Between two adjectives or verbs use 'che'."
+   },
+   "learn": {
+    "explain": {
+     "tr": "Üstünlük: più + sıfat + di (iki isim) → Sei più alto di me. Eşitlik: Sei alto come me.\nİki sıfat, fiil veya yer arasında 'che': È più simpatico che bello. Mi piace più leggere che scrivere.\nEn üstünlük: il più + sıfat: la più bella della città.\nDüzensiz: buono → migliore, cattivo → peggiore, bene → meglio. Sık hata: 'più buono'; doğrusu 'migliore'.",
+     "en": "More/less: più + adjective + di (two nouns) → Sei più alto di me. Equal: Sei alto come me.\nBetween two adjectives, verbs or places use 'che': È più simpatico che bello. Mi piace più leggere che scrivere.\nSuperlative: il più + adjective: la più bella della città.\nIrregular: buono → migliore, cattivo → peggiore, bene → meglio. Common mistake: 'più buono'; correct is 'migliore'."
+    },
+    "examples": [
+     {
+      "text": "Oggi fa più caldo di ieri.",
+      "native": {
+       "tr": "Bugün dünden daha sıcak.",
+       "en": "It is hotter today than yesterday."
+      }
+     },
+     {
+      "text": "È più comodo che economico.",
+      "native": {
+       "tr": "Ucuzdan çok rahat.",
+       "en": "It is more comfortable than cheap."
+      }
+     },
+     {
+      "text": "Sei la persona più gentile.",
+      "native": {
+       "tr": "Sen en nazik kişisin.",
+       "en": "You are the kindest person."
+      }
+     },
+     {
+      "text": "Questo vino è migliore.",
+      "native": {
+       "tr": "Bu şarap daha iyi.",
+       "en": "This wine is better."
+      }
+     }
+    ]
+   },
+   "items": [
+    {
+     "type": "build",
+     "text": "Marco è più alto di Luca.",
+     "native": {
+      "tr": "Marco Luca'dan daha uzun.",
+      "en": "Marco is taller than Luca."
+     },
+     "extra": [
+      "che",
+      "come"
+     ],
+     "alt": []
+    },
+    {
+     "type": "build",
+     "text": "Questo libro è meno caro di quello.",
+     "native": {
+      "tr": "Bu kitap ötekinden daha ucuz.",
+      "en": "This book is less expensive than that one."
+     },
+     "extra": [
+      "che",
+      "tanto"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "L'aereo è ___ veloce del treno.",
+     "native": {
+      "tr": "Uçak trenden daha hızlı.",
+      "en": "The plane is faster than the train."
+     },
+     "options": [
+      "meno",
+      "tanto",
+      "più"
+     ],
+     "answer": 2
+    },
+    {
+     "type": "build",
+     "text": "Mi piace più il mare che la montagna.",
+     "native": {
+      "tr": "Denizi dağdan daha çok severim.",
+      "en": "I like the sea more than the mountains."
+     },
+     "extra": [
+      "di",
+      "quanto"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Sono più stanco ___ ieri.",
+     "native": {
+      "tr": "Dünden daha yorgunum.",
+      "en": "I am more tired than yesterday."
+     },
+     "options": [
+      "di",
+      "che",
+      "come"
+     ],
+     "answer": 0
+    },
+    {
+     "type": "build",
+     "text": "Sei alto come tuo padre.",
+     "native": {
+      "tr": "Baban kadar uzunsun.",
+      "en": "You are as tall as your father."
+     },
+     "extra": [
+      "di",
+      "più"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Questa torta è la ___ di tutte.",
+     "native": {
+      "tr": "Bu pasta hepsinin en iyisi.",
+      "en": "This cake is the best of all."
+     },
+     "options": [
+      "meglio",
+      "migliore",
+      "bene"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "build",
+     "text": "Questa è la pizza migliore della città.",
+     "native": {
+      "tr": "Bu şehrin en iyi pizzası.",
+      "en": "This is the best pizza in the city."
+     },
+     "extra": [
+      "meglio",
+      "che"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Parlo italiano ___ di te.",
+     "native": {
+      "tr": "İtalyancayı senden daha iyi konuşuyorum.",
+      "en": "I speak Italian better than you."
+     },
+     "options": [
+      "migliore",
+      "più bene",
+      "meglio"
+     ],
+     "answer": 2
+    },
+    {
+     "type": "build",
+     "text": "Oggi sto meglio di ieri.",
+     "native": {
+      "tr": "Bugün dünden daha iyiyim.",
+      "en": "I feel better today than yesterday."
+     },
+     "extra": [
+      "migliore",
+      "che"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Leggere è più rilassante ___ guardare la tv.",
+     "native": {
+      "tr": "Okumak televizyon izlemekten daha rahatlatıcıdır.",
+      "en": "Reading is more relaxing than watching TV."
+     },
+     "options": [
+      "che",
+      "di",
+      "quanto"
+     ],
+     "answer": 0
+    },
+    {
+     "type": "build",
+     "text": "Lui è il più simpatico della classe.",
+     "native": {
+      "tr": "O sınıfın en sempatik kişisi.",
+      "en": "He is the nicest in the class."
+     },
+     "extra": [
+      "migliore",
+      "che"
+     ],
+     "alt": []
+    }
+   ]
+  },
+  {
+   "id": "stare-gerundio",
+   "level": "B1",
+   "title": {
+    "tr": "Şu an olan: sto mangiando, stai facendo",
+    "en": "Right now: sto mangiando, stai facendo"
+   },
+   "tip": {
+    "tr": "Şu anda olan bir eylemi 'stare + gerundio' ile söylersin: Sto mangiando (şu an yemek yiyorum).",
+    "en": "For an action happening right now use 'stare + gerundio': Sto mangiando (I am eating right now)."
+   },
+   "learn": {
+    "explain": {
+     "tr": "Stare fiilini çekersin (sto, stai, sta, stiamo, state, stanno), sonra gerundio eklersin.\nGerundio: -are → -ando (mangiare → mangiando); -ere/-ire → -endo (leggere → leggendo, dormire → dormendo).\nDüzensiz: fare → facendo, bere → bevendo, dire → dicendo.\nSık hata: 'Sono mangiando'; doğrusu 'Sto mangiando' (essere değil, stare).",
+     "en": "Conjugate stare (sto, stai, sta, stiamo, state, stanno), then add the gerundio.\nGerundio: -are → -ando (mangiare → mangiando); -ere/-ire → -endo (leggere → leggendo, dormire → dormendo).\nIrregular: fare → facendo, bere → bevendo, dire → dicendo.\nCommon mistake: 'Sono mangiando'; correct is 'Sto mangiando' (stare, not essere)."
+    },
+    "examples": [
+     {
+      "text": "Sto studiando italiano.",
+      "native": {
+       "tr": "İtalyanca çalışıyorum.",
+       "en": "I am studying Italian."
+      }
+     },
+     {
+      "text": "Che cosa stai bevendo?",
+      "native": {
+       "tr": "Ne içiyorsun?",
+       "en": "What are you drinking?"
+      }
+     },
+     {
+      "text": "Stanno cenando fuori.",
+      "native": {
+       "tr": "Dışarıda akşam yemeği yiyorlar.",
+       "en": "They are having dinner out."
+      }
+     },
+     {
+      "text": "Sta piovendo molto.",
+      "native": {
+       "tr": "Çok yağmur yağıyor.",
+       "en": "It is raining a lot."
+      }
+     }
+    ]
+   },
+   "items": [
+    {
+     "type": "build",
+     "text": "Sto mangiando una mela.",
+     "native": {
+      "tr": "Bir elma yiyorum.",
+      "en": "I am eating an apple."
+     },
+     "extra": [
+      "sono",
+      "mangio"
+     ],
+     "alt": []
+    },
+    {
+     "type": "build",
+     "text": "Che cosa stai facendo?",
+     "native": {
+      "tr": "Ne yapıyorsun?",
+      "en": "What are you doing?"
+     },
+     "extra": [
+      "sei",
+      "fai"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Maria ___ cucinando la cena.",
+     "native": {
+      "tr": "Maria akşam yemeği pişiriyor.",
+      "en": "Maria is cooking dinner."
+     },
+     "options": [
+      "è",
+      "sta",
+      "ha"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "build",
+     "text": "Marco sta dormendo adesso.",
+     "native": {
+      "tr": "Marco şu an uyuyor.",
+      "en": "Marco is sleeping now."
+     },
+     "extra": [
+      "è",
+      "dorme"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Noi stiamo ___ la TV.",
+     "native": {
+      "tr": "Televizyon izliyoruz.",
+      "en": "We are watching TV."
+     },
+     "options": [
+      "guardiamo",
+      "guardare",
+      "guardando"
+     ],
+     "answer": 2
+    },
+    {
+     "type": "build",
+     "text": "Stiamo guardando un film.",
+     "native": {
+      "tr": "Bir film izliyoruz.",
+      "en": "We are watching a film."
+     },
+     "extra": [
+      "siamo",
+      "guardiamo"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Sto ___ una lettera.",
+     "native": {
+      "tr": "Bir mektup yazıyorum.",
+      "en": "I am writing a letter."
+     },
+     "options": [
+      "scritto",
+      "scrivendo",
+      "scrivere"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "build",
+     "text": "I bambini stanno giocando in giardino.",
+     "native": {
+      "tr": "Çocuklar bahçede oynuyor.",
+      "en": "The children are playing in the garden."
+     },
+     "extra": [
+      "sono",
+      "giocano"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Che cosa ___ facendo, ragazzi?",
+     "native": {
+      "tr": "Ne yapıyorsunuz çocuklar?",
+      "en": "What are you doing, guys?"
+     },
+     "options": [
+      "siete",
+      "avete",
+      "state"
+     ],
+     "answer": 2
+    },
+    {
+     "type": "build",
+     "text": "Sto leggendo un libro interessante.",
+     "native": {
+      "tr": "İlginç bir kitap okuyorum.",
+      "en": "I am reading an interesting book."
+     },
+     "extra": [
+      "sono",
+      "leggo"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "I miei genitori stanno ___ la spesa.",
+     "native": {
+      "tr": "Annemle babam alışveriş yapıyor.",
+      "en": "My parents are doing the shopping."
+     },
+     "options": [
+      "facendo",
+      "fare",
+      "fatto"
+     ],
+     "answer": 0
+    },
+    {
+     "type": "build",
+     "text": "Stai ascoltando la musica?",
+     "native": {
+      "tr": "Müzik mi dinliyorsun?",
+      "en": "Are you listening to music?"
+     },
+     "extra": [
+      "sei",
+      "ascolti"
+     ],
+     "alt": []
+    }
+   ]
+  },
+  {
    "id": "relativi-che-cui",
    "level": "B2",
    "title": {
@@ -4319,6 +6013,432 @@
      }
     ]
    }
+  },
+  {
+   "id": "congiuntivo-imperfetto",
+   "level": "B2",
+   "title": {
+    "tr": "Congiuntivo imperfetto: pensavo che fosse, volevo che venissi",
+    "en": "Imperfect subjunctive: pensavo che fosse, volevo che venissi"
+   },
+   "tip": {
+    "tr": "Ana fiil geçmişteyse 'che' sonrası congiuntivo imperfetto gelir: Pensavo che fosse a casa.",
+    "en": "When the main verb is in the past, 'che' is followed by the imperfect subjunctive: Pensavo che fosse a casa."
+   },
+   "learn": {
+    "explain": {
+     "tr": "Pensavo/credevo/speravo/volevo/vorrei + che: arkasından congiuntivo imperfetto gelir.\nBiçim: parlare → parlassi, parlassi, parlasse, parlassimo, parlaste, parlassero. Essere: fossi, fossi, fosse, fossimo, foste, fossero. Avere: avessi...\nGeçmiş ya da dilek dile getirilir: Volevo che venissi (gelmeni istedim).\nSık hata: 'Pensavo che è a casa'; doğrusu 'che fosse a casa'.",
+     "en": "Pensavo/credevo/speravo/volevo/vorrei + che take the imperfect subjunctive.\nForms: parlare → parlassi, parlassi, parlasse, parlassimo, parlaste, parlassero. Essere: fossi, fossi, fosse, fossimo, foste, fossero. Avere: avessi...\nIt expresses a past belief, hope or wish: Volevo che venissi (I wanted you to come).\nCommon mistake: 'Pensavo che è a casa'; correct is 'che fosse a casa'."
+    },
+    "examples": [
+     {
+      "text": "Speravo che stesse meglio.",
+      "native": {
+       "tr": "Daha iyi olmasını umuyordum.",
+       "en": "I hoped he was feeling better."
+      }
+     },
+     {
+      "text": "Credevo che voi foste stanchi.",
+      "native": {
+       "tr": "Yorgun olduğunuzu sanıyordum.",
+       "en": "I thought you were tired."
+      }
+     },
+     {
+      "text": "Volevo che mi aiutasse.",
+      "native": {
+       "tr": "Bana yardım etmesini istedim.",
+       "en": "I wanted him to help me."
+      }
+     },
+     {
+      "text": "Vorrei che tu capissi.",
+      "native": {
+       "tr": "Anlamanı isterdim.",
+       "en": "I wish you understood."
+      }
+     }
+    ]
+   },
+   "items": [
+    {
+     "type": "build",
+     "text": "Pensavo che fosse a casa.",
+     "native": {
+      "tr": "Evde olduğunu sanıyordum.",
+      "en": "I thought he was at home."
+     },
+     "extra": [
+      "è",
+      "sia"
+     ],
+     "alt": []
+    },
+    {
+     "type": "build",
+     "text": "Volevo che tu venissi con me.",
+     "native": {
+      "tr": "Benimle gelmeni istedim.",
+      "en": "I wanted you to come with me."
+     },
+     "extra": [
+      "vieni",
+      "venga"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Pensavo che Luca ___ più giovane.",
+     "native": {
+      "tr": "Luca'nın daha genç olduğunu sanıyordum.",
+      "en": "I thought Luca was younger."
+     },
+     "options": [
+      "fosse",
+      "è",
+      "sia"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "build",
+     "text": "Credevo che loro parlassero italiano.",
+     "native": {
+      "tr": "Onların İtalyanca konuştuğunu sanıyordum.",
+      "en": "I thought they spoke Italian."
+     },
+     "extra": [
+      "parlano",
+      "parlino"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Speravo che voi ___ presto.",
+     "native": {
+      "tr": "Erken döneceğinizi umuyordum.",
+      "en": "I hoped you would come back soon."
+     },
+     "options": [
+      "tornaste",
+      "tornate",
+      "torniate"
+     ],
+     "answer": 0
+    },
+    {
+     "type": "build",
+     "text": "Vorrei che fossi più paziente.",
+     "native": {
+      "tr": "Daha sabırlı olmanı isterdim.",
+      "en": "I wish you were more patient."
+     },
+     "extra": [
+      "sei",
+      "sia"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Era necessario che noi ___ presto.",
+     "native": {
+      "tr": "Erken yola çıkmamız gerekiyordu.",
+      "en": "It was necessary that we leave early."
+     },
+     "options": [
+      "partiamo",
+      "partiremo",
+      "partissimo"
+     ],
+     "answer": 2
+    },
+    {
+     "type": "build",
+     "text": "Sembrava che nevicasse tutto il giorno.",
+     "native": {
+      "tr": "Bütün gün kar yağacak gibiydi.",
+      "en": "It seemed to snow all day."
+     },
+     "extra": [
+      "nevica",
+      "nevichi"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Credevo che tu ___ ragione.",
+     "native": {
+      "tr": "Haklı olduğunu sanıyordum.",
+      "en": "I thought you were right."
+     },
+     "options": [
+      "hai",
+      "avessi",
+      "abbia"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "build",
+     "text": "Mia madre voleva che studiassi medicina.",
+     "native": {
+      "tr": "Annem tıp okumamı istiyordu.",
+      "en": "My mother wanted me to study medicine."
+     },
+     "extra": [
+      "studio",
+      "studi"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Volevano che io ___ la verità.",
+     "native": {
+      "tr": "Gerçeği söylememi istiyorlardı.",
+      "en": "They wanted me to tell the truth."
+     },
+     "options": [
+      "dicessi",
+      "dico",
+      "dica"
+     ],
+     "answer": 0
+    },
+    {
+     "type": "build",
+     "text": "Non sapevo che avesse tre figli.",
+     "native": {
+      "tr": "Üç çocuğu olduğunu bilmiyordum.",
+      "en": "I didn't know he had three children."
+     },
+     "extra": [
+      "ha",
+      "abbia"
+     ],
+     "alt": []
+    }
+   ]
+  },
+  {
+   "id": "trapassato-prossimo",
+   "level": "B2",
+   "title": {
+    "tr": "Daha önce olmuş: avevo mangiato, ero andato",
+    "en": "Earlier past: avevo mangiato, ero andato"
+   },
+   "tip": {
+    "tr": "Başka bir geçmiş olaydan önce olan eylem için trapassato prossimo kullanılır: Avevo già mangiato quando sei arrivato.",
+    "en": "For an action before another past action use the trapassato prossimo: Avevo già mangiato quando sei arrivato."
+   },
+   "learn": {
+    "explain": {
+     "tr": "Biçim: avere/essere imperfetto + participio passato: avevo mangiato, eri partito, ero uscita.\nBir geçmiş olaydan 'önce' olanı anlatır: Quando sono arrivato, il film era già iniziato.\nEssere ile participio özneye uyar: Maria era uscita; i ragazzi erano usciti.\nSık hata: iki olayı da passato prossimo ile söylemek; önce olanı trapassato yap.",
+     "en": "Form: imperfect of avere/essere + past participle: avevo mangiato, eri partito, ero uscita.\nIt describes what happened before another past event: Quando sono arrivato, il film era già iniziato.\nWith essere the participle agrees with the subject: Maria era uscita; i ragazzi erano usciti.\nCommon mistake: using the passato prossimo for both events; put the earlier one in the trapassato."
+    },
+    "examples": [
+     {
+      "text": "Avevo già letto quel libro.",
+      "native": {
+       "tr": "O kitabı zaten okumuştum.",
+       "en": "I had already read that book."
+      }
+     },
+     {
+      "text": "Eravamo arrivati in ritardo.",
+      "native": {
+       "tr": "Geç varmıştık.",
+       "en": "We had arrived late."
+      }
+     },
+     {
+      "text": "Non era mai stata a Roma.",
+      "native": {
+       "tr": "Daha önce hiç Roma'da bulunmamıştı.",
+       "en": "She had never been to Rome."
+      }
+     },
+     {
+      "text": "Mi avevano detto la verità.",
+      "native": {
+       "tr": "Bana gerçeği söylemişlerdi.",
+       "en": "They had told me the truth."
+      }
+     }
+    ]
+   },
+   "items": [
+    {
+     "type": "build",
+     "text": "Avevo già mangiato quando sei arrivato.",
+     "native": {
+      "tr": "Sen geldiğinde ben zaten yemiştim.",
+      "en": "I had already eaten when you arrived."
+     },
+     "extra": [
+      "ho",
+      "ero"
+     ],
+     "alt": [
+      "Quando sei arrivato avevo già mangiato."
+     ]
+    },
+    {
+     "type": "build",
+     "text": "Non avevo mai visto il mare.",
+     "native": {
+      "tr": "Daha önce hiç deniz görmemiştim.",
+      "en": "I had never seen the sea."
+     },
+     "extra": [
+      "ero",
+      "ho"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Quando sono arrivata, il treno era già ___.",
+     "native": {
+      "tr": "Ben vardığımda tren çoktan kalkmıştı.",
+      "en": "When I arrived, the train had already left."
+     },
+     "options": [
+      "partito",
+      "partita",
+      "partire"
+     ],
+     "answer": 0
+    },
+    {
+     "type": "build",
+     "text": "Lei era già uscita di casa.",
+     "native": {
+      "tr": "O zaten evden çıkmıştı.",
+      "en": "She had already left the house."
+     },
+     "extra": [
+      "aveva",
+      "uscito"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Prima di quel giorno non ___ mai mangiato il sushi.",
+     "native": {
+      "tr": "O günden önce hiç suşi yememiştim.",
+      "en": "Before that day I had never eaten sushi."
+     },
+     "options": [
+      "ero",
+      "ho",
+      "avevo"
+     ],
+     "answer": 2
+    },
+    {
+     "type": "build",
+     "text": "Quando sono tornato avevano già cenato.",
+     "native": {
+      "tr": "Döndüğümde akşam yemeğini yemişlerdi.",
+      "en": "When I came back they had already had dinner."
+     },
+     "extra": [
+      "erano",
+      "hanno"
+     ],
+     "alt": [
+      "Avevano già cenato quando sono tornato."
+     ]
+    },
+    {
+     "type": "choice",
+     "text": "Maria era ___ presto quella mattina.",
+     "native": {
+      "tr": "Maria o sabah erken çıkmıştı.",
+      "en": "Maria had gone out early that morning."
+     },
+     "options": [
+      "uscito",
+      "uscita",
+      "uscire"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "build",
+     "text": "Eravamo andati al cinema prima di cena.",
+     "native": {
+      "tr": "Akşam yemeğinden önce sinemaya gitmiştik.",
+      "en": "We had gone to the cinema before dinner."
+     },
+     "extra": [
+      "abbiamo",
+      "avevamo"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Gli studenti erano tranquilli perché ___ già studiato.",
+     "native": {
+      "tr": "Öğrenciler sakindi çünkü zaten çalışmışlardı.",
+      "en": "The students were calm because they had already studied."
+     },
+     "options": [
+      "hanno",
+      "avevano",
+      "avranno"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "build",
+     "text": "Avevi già finito i compiti?",
+     "native": {
+      "tr": "Ödevlerini zaten bitirmiş miydin?",
+      "en": "Had you already finished your homework?"
+     },
+     "extra": [
+      "eri",
+      "hai"
+     ],
+     "alt": []
+    },
+    {
+     "type": "choice",
+     "text": "Non sapevo che voi ___ già partiti.",
+     "native": {
+      "tr": "Sizin zaten gittiğinizi bilmiyordum.",
+      "en": "I didn't know you had already left."
+     },
+     "options": [
+      "eravate",
+      "avevate",
+      "siete"
+     ],
+     "answer": 0
+    },
+    {
+     "type": "build",
+     "text": "Ero stanco perché avevo lavorato tutto il giorno.",
+     "native": {
+      "tr": "Yorgundum çünkü bütün gün çalışmıştım.",
+      "en": "I was tired because I had worked all day."
+     },
+     "extra": [
+      "sono",
+      "avrei"
+     ],
+     "alt": []
+    }
+   ]
   }
  ]
 }
