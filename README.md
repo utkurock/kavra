@@ -98,7 +98,10 @@ To add an interface language, copy `extension/_locales/en/messages.json` to a fo
 
 `web/` is a separate, phone-first site with only the word cards: the same 5000 words with Turkish
 meanings and an estimated CEFR level (A1–C2) each, a level filter, swipe right / left / up, undo,
-Review and the three word lists. It's plain static files with no build step, no account and no API
+Review and the three word lists. A second section, Sentences, has 22 grammar units from A1 to B2
+(am/is/are, was/were, I am going, past simple, going to, if sentences, passive and more), each with
+12 exercises: build the English sentence from shuffled word tiles, or pick the word for a gap. A
+wrong answer comes back at the end of the lesson. It's plain static files with no build step, no account and no API
 key; progress is kept in the browser's local storage, so it stays on that device. It can be added to
 the home screen and opens full screen.
 
@@ -110,7 +113,8 @@ python3 -m http.server -d web 8000
 ```
 
 `web/words.tsv` holds one word per line, most frequent first: `word`, level, part of speech and
-meaning, separated by tabs. The meanings and levels were written with an AI model and are estimates.
+meaning, separated by tabs. `web/sentences.json` holds the units. The meanings, levels and lessons
+were written with an AI model.
 
 ## License
 

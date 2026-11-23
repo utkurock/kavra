@@ -18,11 +18,15 @@
 <header class="top">
   <div class="title-row">
     <h1>5000 Kelime</h1>
-    <span id="seen" class="seen"></span>
+    <span id="seen" class="seen words-only"></span>
   </div>
-  <div class="split" aria-hidden="true"><span class="known"></span><span class="unsure"></span><span class="unknown"></span></div>
+  <nav class="modes" role="tablist" aria-label="Bölüm">
+    <button role="tab" data-mode="words" aria-selected="true">Kelimeler</button>
+    <button role="tab" data-mode="sentences" aria-selected="false">Cümleler</button>
+  </nav>
+  <div class="split words-only" aria-hidden="true"><span class="known"></span><span class="unsure"></span><span class="unknown"></span></div>
   <div class="levels" role="group" aria-label="Seviyeler" id="levels"></div>
-  <nav class="tabs" role="tablist">
+  <nav class="tabs words-only" role="tablist">
     <button role="tab" data-view="new" aria-selected="true">Yeni <span class="count"></span></button>
     <button role="tab" data-view="review" aria-selected="false">Tekrar <span class="count"></span></button>
     <button role="tab" data-view="lists" aria-selected="false">Listeler</button>
@@ -56,6 +60,22 @@
   </div>
   <ul id="wordList" class="wlist"></ul>
 </main>
+<main id="units" class="units" hidden></main>
+
+<section id="lesson" class="lesson" hidden>
+  <div class="lesson-top">
+    <button id="quit" class="icon-btn" type="button" aria-label="Dersi bitir">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+    </button>
+    <div class="lbar" role="progressbar" aria-valuemin="0" aria-valuemax="100"><span></span></div>
+  </div>
+  <div id="exercise" class="exercise"></div>
+  <footer id="sheet" class="sheet">
+    <div class="verdict" aria-live="polite"></div>
+    <button id="check" class="primary" type="button" disabled>Kontrol et</button>
+  </footer>
+</section>
+<script src="sentences.js"></script>
 <script src="app.js"></script>
 </body>
 </html>

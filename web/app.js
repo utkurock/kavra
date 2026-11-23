@@ -1,6 +1,6 @@
 // 5000 Kelime: the most frequent English words as a pile of cards, with Turkish meanings and a CEFR
 // level each. Swipe right (→) for a word you know, left (←) for one you don't, up (↑) when you're not
-// sure. Progress stays in this browser.
+// sure. The Sentences section (sentences.js) shares the level filter. Progress stays in this browser.
 const $ = (id) => document.getElementById(id);
 const STATES = ["known", "unsure", "unknown"];
 const LEVELS = ["A1", "A2", "B1", "B2", "C1", "C2"];
@@ -20,6 +20,7 @@ const levelClass = (level) => level[0].toLowerCase(); // "a", "b" or "c"
 let words = []; // { word, level, pos, meaning, rank }, most frequent first
 let deck = {}; // word -> { s, at }
 let levels = new Set(LEVELS);
+let mode = "words"; // "words" or "sentences"
 let view = "new";
 let list = "unknown";
 let review = [];
@@ -32,13 +33,14 @@ function load() {
     const saved = JSON.parse(localStorage.getItem(SAVE_KEY) || "{}");
     deck = saved.deck || {};
     if (Array.isArray(saved.levels) && saved.levels.length) levels = new Set(saved.levels.filter((l) => LEVELS.includes(l)));
+    if (saved.mode === "sentences") mode = "sentences";
   } catch {
     // private mode or blocked storage: start fresh, nothing is kept
   }
 }
 function save() {
   try {
-    localStorage.setItem(SAVE_KEY, JSON.stringify({ deck, levels: [...levels] }));
+    localStorage.setItem(SAVE_KEY, JSON.stringify({ deck, levels: [...levels], mode }));
   } catch {
     // storage full or blocked
   }
@@ -213,7 +215,14 @@ function renderHeader() {
     new: shown.filter((w) => !deck[w.word]).length,
     review: shown.filter((w) => deck[w.word] && deck[w.word].s !== "known").length,
   };
-  for (const button of document.querySelectorAll(".tabs button")) {
+  for (const button of document.querySelectorAll(".modes button")) {
+  button.addEventListener("click", () => {
+    mode = button.dataset.mode;
+    save();
+    render();
+  });
+}
+for (const button of document.querySelectorAll(".tabs button")) {
     button.ariaSelected = String(button.dataset.view === view);
     const count = button.querySelector(".count");
     if (count) count.textContent = counts[button.dataset.view].toLocaleString("tr");
@@ -244,9 +253,14 @@ function renderLists() {
 
 function render() {
   renderHeader();
-  $("study").hidden = view === "lists";
-  $("lists").hidden = view !== "lists";
-  if (view === "lists") renderLists();
+  document.body.dataset.mode = mode;
+  for (const button of document.querySelectorAll(".modes button")) button.ariaSelected = String(button.dataset.mode === mode);
+  const inWords = mode === "words";
+  $("study").hidden = !inWords || view === "lists";
+  $("lists").hidden = !inWords || view !== "lists";
+  $("units").hidden = inWords;
+  if (!inWords) Sentences.showUnits(levels);
+  else if (view === "lists") renderLists();
   else renderPile();
 }
 
@@ -264,6 +278,13 @@ for (const level of LEVELS) {
   });
   $("levels").append(button);
 }
+for (const button of document.querySelectorAll(".modes button")) {
+  button.addEventListener("click", () => {
+    mode = button.dataset.mode;
+    save();
+    render();
+  });
+}
 for (const button of document.querySelectorAll(".tabs button")) {
   button.addEventListener("click", () => {
     view = button.dataset.view;
@@ -280,7 +301,7 @@ for (const button of $("listTabs").children) {
 for (const button of document.querySelectorAll(".sbtn[data-state]")) button.addEventListener("click", () => swipe(button.dataset.state));
 $("undo").addEventListener("click", undo);
 document.addEventListener("keydown", (e) => {
-  if (view === "lists" || e.metaKey || e.ctrlKey || e.altKey) return;
+  if (mode !== "words" || view === "lists" || e.metaKey || e.ctrlKey || e.altKey) return;
   const action = {
     ArrowRight: () => swipe("known"),
     ArrowLeft: () => swipe("unknown"),
